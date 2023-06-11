@@ -8,7 +8,7 @@ The principles of this work are to use well-known and maintained libraries for n
 
 ## Implementation
 
-For purposes of coherence, until the sequence alignment, hapaxes, and ruleset are complete and working, all notes are now in my thesis document. Otherwise I end up duplicating and poorly copying rules. 
+For purposes of implementation see notes file.
 
 ## Installation
 
