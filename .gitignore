@@ -1,0 +1,11 @@
+**/.DS_Store
+.DS_Store
+*.npy
+*.compressed
+*.db
+*.db-shm
+*.db-wal
+alignments.jsonl
+__pycache__/*
+__pycache__/*.pyc
+*.pyc
