@@ -1,0 +1,97 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Red as a rose is she : VWWP edition </title><author>Broughton, Rhoda (1840-1920)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1887</date></publicationStmt></teiHeader><text><body><div type="chapter" n="1">
+CHAPTER I.
+HAVE you ever been to Wales? I do not ask this question of any one in particular; I merely
+     address it to the universal British public, or, rather, to such member or members of the same
+     as shall be wise enough to sit down and read the ensuing true and moving love story—true as the
+     loves of wicked Abelard and Heloise, moving as those of good Paul and Virginia. Probably those
+     wise ones will be very few; numerable by tens, or even units: they will, I may very safely
+     aver, not form the bulk of the nation. However high may be my estimate of my own powers of
+     narration, however amply Providence may have gifted me with self-appreciation, I may be sure of
+     that, seeing that the only books I know of which enjoy so wide a circulation are the
+     Prayer-book and Bradshaw. I am not going to instruct any one in religion or trains, so I may as
+     well make up my mind to a more limited audience, while I pipe my simple lay (rather squeakily
+     and out of tune, perhaps), and may think myself very lucky if that same kind, limited audience
+     do not hiss me down before I have got through half a dozen staves of the dull old ditty.
+Have you ever been to Wales? If you have ever visited
+      the pretty, dirty, green spot where Pat and his brogue, where
+     potatoes and absenteeism and head-centres flourish, alias Ireland, you have no doubt
+     passed through a part of it, rushing by, most likely, in the Irish mail; but in that case your
+     eyes and nose and ears were all so very full of dust and cinders—you were so fully employed in
+     blinking and coughing and enjoying the poetry of motion—as to be totally incapable of seeing,
+     hearing, or smelling any of the beauties, agreeable noises, or good smells, which in happier
+     circumstances might have offered themselves to your notice. Perhaps you are in the habit, every
+     midsummer, of taking your half-dozen male and female olive shoots to have the roses restored to
+     their twelve fat cheeks by blowy scrambles about the great frowning Orme's Head, or by
+     excavations in the Rhyl Sands. Perhaps you have gone wedding-touring to Llanberis on the top of
+     a heavy-laden coach, swinging unsafely round sharp corners, and nearly flinging your Angelina
+     from your side on to the hard Welsh road below. Perhaps you have wept with Angelina at the
+     spurious grave of the martyred Gelert, or eaten pink trout voraciously at Capel Curig, and
+     found out what a startlingly good appetite Angelina had. But have you ever lived in the land of
+     the Cymri? Have you ever seen how drunk the masculine Cymri can be on market days, or what
+     grievous old hags the feminine Cymri become towards their thirtieth year? have you ever, by
+     bitter experience, discovered the truth of that couplet—
+
+"Taffy was a Welshman,
+Taffy was a thief?"
+
+I have lived in Wales, so I speak with authority; and for my part I don't think that
+     Taffy is much more given to the breaking of the eighth commandment than the canaille of any other country. He is not a bright fellow, is not
+     Taffy;
+      happiest, I think, when rather tipsy, or when yelling psalms
+     in his conventicle or schism-shop—for Taffy is addicted to schism; he will tell you plenty of
+     lies, too, and will not season them with the salt of a racy, devil-me-care wit, as Pat would.
+     But he is very civil-spoken, and rather harmless; seldomer, I think, than his cleverer
+     neighbour over the border does he hanker feloniously after his neighbour's spoons, or hammer
+     his wife's head with the domestic poker.
+But why am I drivelling on, like a sort of Murray and water, on the manners and character of
+     this, to my thinking, not very interesting nation? I will waste no more "prave 'ords" upon
+     them, as the few men and women whom I am going to tell you about, and whom I shall want you to
+     like a little, or dislike a little, as the case may be, are not Taffies, only they happen to
+     have stuck up their tent-poles in Taffy-land when they first make their low bow to you. These
+     men and women were nothing out of the way for goodness, or beauty, or talent; they did a
+     hundred thousand naughty things, each one of them. Some of them did them with impunity, as far
+     as this world goes; some of them, capricious Megæra and Tisyphone lashed with scorpions for
+     their derelictions. This is going to be neither a "Life of Saints," nor a "History of Devils;"
+     these are memoirs neither of a "Hedley Vicars," nor of a "Dame aux Camellias;" so, whoso
+     expects and relishes either of those styles of composition may forthwith close this volume, and
+     pitch it (if it be his own, and not the battered property of a circulating library) into the
+     fire. Those who love a violent moral, or violent judgment for sins and follies—a man struck
+     dead for saying "damn," or a woman for going to a ball, as the Record would charitably
+     have us believe is the way of Providence—equally with those who enjoy the flavour of violent
+     immorality, will be disappointed if they look this way for the gratification of their peculiar
+     idiosyncracies.
+      Of my friends presently to be made known to you, and
+     criticised by you, "the more part remain unto this present, but some have fallen asleep."
+Once upon a time—I like that old, time-honoured opening; it makes one so nobly free, gives
+     one so much room to stretch one's wings in, ties one down to no king's reign, no hampering,
+     clogging century—once upon a time there was a valley in Taffy-land; there is still, unless some
+     very recent convulsion has upheaved it to the top of a mountain, or submerged it beneath the
+     big Atlantic waves; a valley lovelier than that one in " Ida," where "beautiful Paris,
+      evil-hearted Paris," pastured his sheep and his jet-black goats, and inaugurated his
+     rakish course; a valley where there are no dangerous, good-looking Parises, only one or two
+     red-headed Welsh squires, who have each married, or will in the fulness of time each marry, one
+     lawful wife—red-headed, too, very likely; and have never made, will never make, love to any
+     Enones or other ill-conducted young shepherdesses. In fact, in that Arcadia there are no such
+     shepherdesses; the daughters of the Cymri do not "ply the homely shepherd's
+      trade," nor would they shed much romance over it if they did; for with sorrow be it
+     spoken, blowsy are they mostly, hard-featured, toothless; and, moreover, the little nimble,
+     lean sheep that go scrambling and jumping and skurrying about the rough crags and steep
+     hill-sides do not need any crook'd and melodious Dowsabellas or Neæras to look after them and
+     guide them in the way they should go.
+In that valley there are plenty of houses, squires' houses and peasants' houses, where the
+     propagation of the Cambrian is conducted with much success; houses big and little, red-faced
+     and white-faced and dirty-faced, old and new. But we have at present to do with only one of
+     those houses, and it comes under the head of the littles and the olds. Halfway
+      up a hill-side it stands, looking across the valley to other
+     higher hills that swell out softly against the sky, and go sloping gently down to the sea
+     twenty miles away. They always remind me—I don't know why—of the distant hills in Martin's
+     picture of the "Plains of Heaven;" so mistily do they rise in their hazy blueness. It is a
+     snug, unpretending little house enough, with its black and white cross-beamed front and
+     unwalled kitchen-garden straggling steeply up the slope at the back. Many and many a day has it
+     stood there, seeing generations and fashions come in and go out; has stood there since the
+     far-away days when men wore curly wigs half-way down their backs, and sky-blue coats, and
+     fought and died for prerogative and King Charles, or fought and lived for England and liberty:
+     when most houses were black and white, like its little elderly self, before plate glass or
+     stucco, or commodious villa residences, five minutes' walk from a station, were dreamed of. The
+     name of the little house is Glan-yr-Afon.
+</div></body></text></TEI>

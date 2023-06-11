@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "thesis-code"
+version = "0.1.0"
+description = ""
+authors = ["Tarah Wheeler <tarah@redqueentech.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "thesis_code"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.3.2"
+tqdm = "^4.65.0"
+pandas = "^2.0.0"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+plotly-express = "^0.4.1"
+nltk = "^3.8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

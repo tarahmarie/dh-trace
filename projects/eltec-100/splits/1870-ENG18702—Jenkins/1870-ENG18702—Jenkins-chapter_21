@@ -1,0 +1,11 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Ginx's Baby, by Edward Jenkins</title><author>Jenkins, John Edward (1838-1910).</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1870</date></publicationStmt></teiHeader><text><body><div type="chapter" n="21">
+XIII.—In transitu.
+One night, near twelve o'clock, a shrewd tradesman, looking out of his shopdoor before
+            he turned into bed, heard a cry which proceeded from a bundle on the pavement. This he
+            discovered to be an infant wrapt in a potato-sack. He was quick enough to observe that
+            it had been deftly laid over a line chiselled across the pavement to the corner of his
+            house, which line he knew to be the boundary between his own parish of St. Simon Magus
+            and the adjacent parish of St. Bartimeus. He took note, being a business man, of the
+            exact position of the child's body in relation to this line, and then conveyed it to the
+            workhouse of the other parish.
+</div></body></text></TEI>

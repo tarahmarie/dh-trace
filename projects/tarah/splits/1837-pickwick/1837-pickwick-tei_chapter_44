@@ -1,0 +1,155 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Pickwick Papers</title><author>Dickens</author></titleStmt><publicationStmt><publisher></publisher><pubPlace>London</pubPlace><date>1837</date></publicationStmt></teiHeader><text><body><div type="chapter" n="44">CHAPTER LXIV. TREATS OF DIVERS LITTLE MATTERS WHICH OCCURRED IN THE FLEET, AND OF MR. WINKLE’S MYSTERIOUS BEHAVIOUR; AND SHOWS HOW THE POOR CHANCERY PRISONER OBTAINED HIS RELEASE AT LAST
+Mr. Pickwick felt a great deal too much touched by the warmth of Sam’s attachment, to be able to exhibit any manifestation of anger or displeasure at the precipitate course he had adopted, in voluntarily consigning himself to a debtor’s prison for an indefinite period. The only point on which he persevered in demanding an explanation, was, the name of Sam’s detaining creditor; but this Mr. Weller as perseveringly withheld.
+‘It ain’t o’ no use, sir,’ said Sam, again and again; ‘he’s a malicious, bad-disposed, vorldly-minded, spiteful, windictive creetur, with a hard heart as there ain’t no soft’nin’, as the wirtuous clergyman remarked of the old gen’l’m’n with the dropsy, ven he said, that upon the whole he thought he’d rayther leave his property to his vife than build a chapel vith it.’
+‘But consider, Sam,’ Mr. Pickwick remonstrated, ‘the sum is so small that it can very easily be paid; and having made up my mind that you shall stop with me, you should recollect how much more useful you would be, if you could go outside the walls.’
+Wery much obliged to you, sir,’ replied Mr. Weller gravely; ‘but I’d rayther not.’
+‘Rather not do what, Sam?’
+‘Wy, I’d rayther not let myself down to ask a favour o’ this here unremorseful enemy.’
+‘But it is no favour asking him to take his money, Sam,’ reasoned Mr. Pickwick.
+‘Beg your pardon, sir,’ rejoined Sam, ‘but it ‘ud be a wery great favour to pay it, and he don’t deserve none; that’s where it is, sir.’
+Here Mr. Pickwick, rubbing his nose with an air of some vexation, Mr. Weller thought it prudent to change the theme of the discourse.
+‘I takes my determination on principle, Sir,’ remarked Sam, ‘and you takes yours on the same ground; wich puts me in mind o’ the man as killed his-self on principle, wich o’ course you’ve heerd on, Sir.’ Mr. Weller paused when he arrived at this point, and cast a comical look at his master out of the corners of his eyes.
+‘There is no “of course” in the case, Sam,’ said Mr. Pickwick, gradually breaking into a smile, in spite of the uneasiness which Sam’s obstinacy had given him. ‘The fame of the gentleman in question, never reached my ears.’
+‘No, sir!’ exclaimed Mr. Weller. ‘You astonish me, Sir; he wos a clerk in a gov’ment office, sir.’
+‘Was he?’ said Mr. Pickwick.
+‘Yes, he wos, Sir,’ rejoined Mr. Weller; ‘and a wery pleasant gen’l’m’n too—one o’ the precise and tidy sort, as puts their feet in little India-rubber fire-buckets wen it’s wet weather, and never has no other bosom friends but hare-skins; he saved up his money on principle, wore a clean shirt ev’ry day on principle; never spoke to none of his relations on principle, ‘fear they shou’d want to borrow money of him; and wos altogether, in fact, an uncommon agreeable character. He had his hair cut on principle vunce a fortnight, and contracted for his clothes on the economic principle—three suits a year, and send back the old uns. Being a wery reg’lar gen’l’m’n, he din’d ev’ry day at the same place, where it was one-and-nine to cut off the joint, and a wery good one-and-nine’s worth he used to cut, as the landlord often said, with the tears a-tricklin’ down his face, let alone the way he used to poke the fire in the vinter time, which wos a dead loss o’ four-pence ha’penny a day, to say nothin’ at all o’ the aggrawation o’ seein’ him do it. So uncommon grand with it too! “Post arter the next gen’l’m’n,” he sings out ev’ry day ven he comes in. “See arter the TIMES, Thomas; let me look at the MORNIN’ HERALD, when it’s out o’ hand; don’t forget to bespeak the CHRONICLE; and just bring the ‘TIZER, vill you:” and then he’d set vith his eyes fixed on the clock, and rush out, just a quarter of a minit ‘fore the time to waylay the boy as wos a-comin’ in with the evenin’ paper, which he’d read with sich intense interest and persewerance as worked the other customers up to the wery confines o’ desperation and insanity, ‘specially one i-rascible old gen’l’m’n as the vaiter wos always obliged to keep a sharp eye on, at sich times, fear he should be tempted to commit some rash act with the carving-knife. Vell, Sir, here he’d stop, occupyin’ the best place for three hours, and never takin’ nothin’ arter his dinner, but sleep, and then he’d go away to a coffee-house a few streets off, and have a small pot o’ coffee and four crumpets, arter wich he’d walk home to Kensington and go to bed. One night he wos took very ill; sends for a doctor; doctor comes in a green fly, with a kind o’ Robinson Crusoe set o’ steps, as he could let down wen he got out, and pull up arter him wen he got in, to perwent the necessity o’ the coachman’s gettin’ down, and thereby undeceivin’ the public by lettin’ ‘em see that it wos only a livery coat as he’d got on, and not the trousers to match. “Wot’s the matter?” says the doctor. “Wery ill,” says the patient. “Wot have you been a-eatin’ on?” says the doctor. “Roast weal,” says the patient. “Wot’s the last thing you dewoured?” says the doctor. “Crumpets,” says the patient. “That’s it!” says the doctor. “I’ll send you a box of pills directly, and don’t you never take no more of ‘em,” he says. “No more o’ wot?” says the patient—“pills?” “No; crumpets,” says the doctor. “Wy?” says the patient, starting up in bed; “I’ve eat four crumpets, ev’ry night for fifteen year, on principle.” “Well, then, you’d better leave ‘em off, on principle,” says the doctor. “Crumpets is not wholesome, Sir,” says the doctor, wery fierce. “But they’re so cheap,” says the patient, comin’ down a little, “and so wery fillin’ at the price.” “They’d be dear to you, at any price; dear if you wos paid to eat ‘em,” says the doctor. “Four crumpets a night,” he says, “vill do your business in six months!” The patient looks him full in the face, and turns it over in his mind for a long time, and at last he says, “Are you sure o’ that ‘ere, Sir?” “I’ll stake my professional reputation on it,” says the doctor. “How many crumpets, at a sittin’, do you think ‘ud kill me off at once?” says the patient. “I don’t know,” says the doctor. “Do you think half-a-crown’s wurth ‘ud do it?” says the patient. “I think it might,” says the doctor. “Three shillins’ wurth ‘ud be sure to do it, I s’pose?” says the patient. “Certainly,” says the doctor. “Wery good,” says the patient; “good-night.” Next mornin’ he gets up, has a fire lit, orders in three shillins’ wurth o’ crumpets, toasts ‘em all, eats ‘em all, and blows his brains out.’
+‘What did he do that for?’ inquired Mr. Pickwick abruptly; for he was considerably startled by this tragical termination of the narrative.
+‘Wot did he do it for, Sir?’ reiterated Sam. ‘Wy, in support of his great principle that crumpets wos wholesome, and to show that he wouldn’t be put out of his way for nobody!’
+With such like shiftings and changings of the discourse, did Mr. Weller meet his master’s questioning on the night of his taking up his residence in the Fleet. Finding all gentle remonstrance useless, Mr. Pickwick at length yielded a reluctant consent to his taking lodgings by the week, of a bald-headed cobbler, who rented a small slip room in one of the upper galleries. To this humble apartment Mr. Weller moved a mattress and bedding, which he hired of Mr. Roker; and, by the time he lay down upon it at night, was as much at home as if he had been bred in the prison, and his whole family had vegetated therein for three generations.
+‘Do you always smoke arter you goes to bed, old cock?’ inquired Mr. Weller of his landlord, when they had both retired for the night.
+‘Yes, I does, young bantam,’ replied the cobbler.
+‘Will you allow me to in-quire wy you make up your bed under that ‘ere deal table?’ said Sam.
+‘’Cause I was always used to a four-poster afore I came here, and I find the legs of the table answer just as well,’ replied the cobbler.
+‘You’re a character, sir,’ said Sam.
+‘I haven’t got anything of the kind belonging to me,’ rejoined the cobbler, shaking his head; ‘and if you want to meet with a good one, I’m afraid you’ll find some difficulty in suiting yourself at this register office.’
+The above short dialogue took place as Mr. Weller lay extended on his mattress at one end of the room, and the cobbler on his, at the other; the apartment being illumined by the light of a rush-candle, and the cobbler’s pipe, which was glowing below the table, like a red-hot coal. The conversation, brief as it was, predisposed Mr. Weller strongly in his landlord’s favour; and, raising himself on his elbow, he took a more lengthened survey of his appearance than he had yet had either time or inclination to make.
+He was a sallow man—all cobblers are; and had a strong bristly beard—all cobblers have. His face was a queer, good-tempered, crooked-featured piece of workmanship, ornamented with a couple of eyes that must have worn a very joyous expression at one time, for they sparkled yet. The man was sixty, by years, and Heaven knows how old by imprisonment, so that his having any look approaching to mirth or contentment, was singular enough. He was a little man, and, being half doubled up as he lay in bed, looked about as long as he ought to have been without his legs. He had a great red pipe in his mouth, and was smoking, and staring at the rush-light, in a state of enviable placidity.
+‘Have you been here long?’ inquired Sam, breaking the silence which had lasted for some time.
+‘Twelve year,’ replied the cobbler, biting the end of his pipe as he spoke.
+‘Contempt?’ inquired Sam.
+The cobbler nodded.
+‘Well, then,’ said Sam, with some sternness, ‘wot do you persevere in bein’ obstinit for, vastin’ your precious life away, in this here magnified pound? Wy don’t you give in, and tell the Chancellorship that you’re wery sorry for makin’ his court contemptible, and you won’t do so no more?’
+The cobbler put his pipe in the corner of his mouth, while he smiled, and then brought it back to its old place again; but said nothing.
+‘Wy don’t you?’ said Sam, urging his question strenuously.
+‘Ah,’ said the cobbler, ‘you don’t quite understand these matters. What do you suppose ruined me, now?’
+‘Wy,’ said Sam, trimming the rush-light, ‘I s’pose the beginnin’ wos, that you got into debt, eh?’
+‘Never owed a farden,’ said the cobbler; ‘try again.’
+‘Well, perhaps,’ said Sam, ‘you bought houses, wich is delicate English for goin’ mad; or took to buildin’, wich is a medical term for bein’ incurable.’
+The cobbler shook his head and said, ‘Try again.’
+‘You didn’t go to law, I hope?’ said Sam suspiciously.
+‘Never in my life,’ replied the cobbler. ‘The fact is, I was ruined by having money left me.’
+‘Come, come,’ said Sam, ‘that von’t do. I wish some rich enemy ‘ud try to vork my destruction in that ‘ere vay. I’d let him.’
+‘Oh, I dare say you don’t believe it,’ said the cobbler, quietly smoking his pipe. ‘I wouldn’t if I was you; but it’s true for all that.’
+‘How wos it?’ inquired Sam, half induced to believe the fact already, by the look the cobbler gave him.
+‘Just this,’ replied the cobbler; ‘an old gentleman that I worked for, down in the country, and a humble relation of whose I married—she’s dead, God bless her, and thank Him for it!—was seized with a fit and went off.’
+‘Where?’ inquired Sam, who was growing sleepy after the numerous events of the day.
+‘How should I know where he went?’ said the cobbler, speaking through his nose in an intense enjoyment of his pipe. ‘He went off dead.’
+‘Oh, that indeed,’ said Sam. ‘Well?’
+‘Well,’ said the cobbler, ‘he left five thousand pound behind him.’
+‘And wery gen-teel in him so to do,’ said Sam.
+‘One of which,’ continued the cobbler, ‘he left to me, ‘cause I married his relation, you see.’
+‘Wery good,’ murmured Sam.
+‘And being surrounded by a great number of nieces and nevys, as was always quarrelling and fighting among themselves for the property, he makes me his executor, and leaves the rest to me in trust, to divide it among ‘em as the will prowided.’
+‘Wot do you mean by leavin’ it on trust?’ inquired Sam, waking up a little. ‘If it ain’t ready-money, were’s the use on it?’
+‘It’s a law term, that’s all,’ said the cobbler.
+‘I don’t think that,’ said Sam, shaking his head. ‘There’s wery little trust at that shop. Hows’ever, go on.’
+Well,’ said the cobbler, ‘when I was going to take out a probate of the will, the nieces and nevys, who was desperately disappointed at not getting all the money, enters a caveat against it.’
+What’s that?’ inquired Sam.
+‘A legal instrument, which is as much as to say, it’s no go,’ replied the cobbler.
+‘I see,’ said Sam, ‘a sort of brother-in-law o’ the have-his-carcass. Well.’
+‘But,’ continued the cobbler, ‘finding that they couldn’t agree among themselves, and consequently couldn’t get up a case against the will, they withdrew the caveat, and I paid all the legacies. I’d hardly done it, when one nevy brings an action to set the will aside. The case comes on, some months afterwards, afore a deaf old gentleman, in a back room somewhere down by Paul’s Churchyard; and arter four counsels had taken a day a-piece to bother him regularly, he takes a week or two to consider, and read the evidence in six volumes, and then gives his judgment that how the testator was not quite right in his head, and I must pay all the money back again, and all the costs. I appealed; the case come on before three or four very sleepy gentlemen, who had heard it all before in the other court, where they’re lawyers without work; the only difference being, that, there, they’re called doctors, and in the other place delegates, if you understand that; and they very dutifully confirmed the decision of the old gentleman below. After that, we went into Chancery, where we are still, and where I shall always be. My lawyers have had all my thousand pound long ago; and what between the estate, as they call it, and the costs, I’m here for ten thousand, and shall stop here, till I die, mending shoes. Some gentlemen have talked of bringing it before Parliament, and I dare say would have done it, only they hadn’t time to come to me, and I hadn’t power to go to them, and they got tired of my long letters, and dropped the business. And this is God’s truth, without one word of suppression or exaggeration, as fifty people, both in this place and out of it, very well know.’
+The cobbler paused to ascertain what effect his story had produced on Sam; but finding that he had dropped asleep, knocked the ashes out of his pipe, sighed, put it down, drew the bed-clothes over his head, and went to sleep, too.
+Mr. Pickwick was sitting at breakfast, alone, next morning (Sam being busily engaged in the cobbler’s room, polishing his master’s shoes and brushing the black gaiters) when there came a knock at the door, which, before Mr. Pickwick could cry ‘Come in!’ was followed by the appearance of a head of hair and a cotton-velvet cap, both of which articles of dress he had no difficulty in recognising as the personal property of Mr. Smangle.
+‘How are you?’ said that worthy, accompanying the inquiry with a score or two of nods; ‘I say—do you expect anybody this morning? Three men—devilish gentlemanly fellows—have been asking after you downstairs, and knocking at every door on the hall flight; for which they’ve been most infernally blown up by the collegians that had the trouble of opening ‘em.’
+‘Dear me! How very foolish of them,’ said Mr. Pickwick, rising. ‘Yes; I have no doubt they are some friends whom I rather expected to see, yesterday.’
+‘Friends of yours!’ exclaimed Smangle, seizing Mr. Pickwick by the hand. ‘Say no more. Curse me, they’re friends of mine from this minute, and friends of Mivins’s, too. Infernal pleasant, gentlemanly dog, Mivins, isn’t he?’ said Smangle, with great feeling.
+‘I know so little of the gentleman,’ said Mr. Pickwick, hesitating, ‘that I—’
+‘I know you do,’ interrupted Smangle, clasping Mr. Pickwick by the shoulder. ‘You shall know him better. You’ll be delighted with him. That man, Sir,’ said Smangle, with a solemn countenance, ‘has comic powers that would do honour to Drury Lane Theatre.’
+‘Has he indeed?’ said Mr. Pickwick.
+‘Ah, by Jove he has!’ replied Smangle. ‘Hear him come the four cats in the wheel-barrow—four distinct cats, sir, I pledge you my honour. Now you know that’s infernal clever! Damme, you can’t help liking a man, when you see these traits about him. He’s only one fault—that little failing I mentioned to you, you know.’
+As Mr. Smangle shook his head in a confidential and sympathising manner at this juncture, Mr. Pickwick felt that he was expected to say something, so he said, ‘Ah!’ and looked restlessly at the door.
+‘Ah!’ echoed Mr. Smangle, with a long-drawn sigh. ‘He’s delightful company, that man is, sir. I don’t know better company anywhere; but he has that one drawback. If the ghost of his grandfather, Sir, was to rise before him this minute, he’d ask him for the loan of his acceptance on an eightpenny stamp.’
+Dear me!’ exclaimed Mr. Pickwick.
+‘Yes,’ added Mr. Smangle; ‘and if he’d the power of raising him again, he would, in two months and three days from this time, to renew the bill!’
+‘Those are very remarkable traits,’ said Mr. Pickwick; ‘but I’m afraid that while we are talking here, my friends may be in a state of great perplexity at not finding me.’
+‘I’ll show ‘em the way,’ said Smangle, making for the door. ‘Good-day. I won’t disturb you while they’re here, you know. By the bye—’
+As Smangle pronounced the last three words, he stopped suddenly, reclosed the door which he had opened, and, walking softly back to Mr. Pickwick, stepped close up to him on tiptoe, and said, in a very soft whisper—
+‘You couldn’t make it convenient to lend me half-a-crown till the latter end of next week, could you?’
+Mr. Pickwick could scarcely forbear smiling, but managing to preserve his gravity, he drew forth the coin, and placed it in Mr. Smangle’s palm; upon which, that gentleman, with many nods and winks, implying profound mystery, disappeared in quest of the three strangers, with whom he presently returned; and having coughed thrice, and nodded as many times, as an assurance to Mr. Pickwick that he would not forget to pay, he shook hands all round, in an engaging manner, and at length took himself off.
+‘My dear friends,’ said Mr. Pickwick, shaking hands alternately with Mr. Tupman, Mr. Winkle, and Mr. Snodgrass, who were the three visitors in question, ‘I am delighted to see you.’
+The triumvirate were much affected. Mr. Tupman shook his head deploringly, Mr. Snodgrass drew forth his handkerchief, with undisguised emotion; and Mr. Winkle retired to the window, and sniffed aloud.
+‘Mornin’, gen’l’m’n,’ said Sam, entering at the moment with the shoes and gaiters. ‘Avay vith melincholly, as the little boy said ven his schoolmissus died. Velcome to the college, gen’l’m’n.’
+‘This foolish fellow,’ said Mr. Pickwick, tapping Sam on the head as he knelt down to button up his master’s gaiters—‘this foolish fellow has got himself arrested, in order to be near me.’
+‘What!’ exclaimed the three friends.
+‘Yes, gen’l’m’n,’ said Sam, ‘I’m a—stand steady, sir, if you please—I’m a prisoner, gen’l’m’n. Con-fined, as the lady said.’
+‘A prisoner!’ exclaimed Mr. Winkle, with unaccountable vehemence.
+‘Hollo, sir!’ responded Sam, looking up. ‘Wot’s the matter, Sir?’
+‘I had hoped, Sam, that—Nothing, nothing,’ said Mr. Winkle precipitately.
+There was something so very abrupt and unsettled in Mr. Winkle’s manner, that Mr. Pickwick involuntarily looked at his two friends for an explanation.
+‘We don’t know,’ said Mr. Tupman, answering this mute appeal aloud. ‘He has been much excited for two days past, and his whole demeanour very unlike what it usually is. We feared there must be something the matter, but he resolutely denies it.’
+‘No, no,’ said Mr. Winkle, colouring beneath Mr. Pickwick’s gaze; ‘there is really nothing. I assure you there is nothing, my dear sir. It will be necessary for me to leave town, for a short time, on private business, and I had hoped to have prevailed upon you to allow Sam to accompany me.’
+Mr. Pickwick looked more astonished than before.
+‘I think,’ faltered Mr. Winkle, ‘that Sam would have had no objection to do so; but, of course, his being a prisoner here, renders it impossible. So I must go alone.’
+As Mr. Winkle said these words, Mr. Pickwick felt, with some astonishment, that Sam’s fingers were trembling at the gaiters, as if he were rather surprised or startled. Sam looked up at Mr. Winkle, too, when he had finished speaking; and though the glance they exchanged was instantaneous, they seemed to understand each other.
+‘Do you know anything of this, Sam?’ said Mr. Pickwick sharply.
+‘No, I don’t, sir,’ replied Mr. Weller, beginning to button with extraordinary assiduity.
+‘Are you sure, Sam?’ said Mr. Pickwick.
+‘Wy, sir,’ responded Mr. Weller; ‘I’m sure so far, that I’ve never heerd anythin’ on the subject afore this moment. If I makes any guess about it,’ added Sam, looking at Mr. Winkle, ‘I haven’t got any right to say what it is, ‘fear it should be a wrong ‘un.’
+‘I have no right to make any further inquiry into the private affairs of a friend, however intimate a friend,’ said Mr. Pickwick, after a short silence; ‘at present let me merely say, that I do not understand this at all. There. We have had quite enough of the subject.’
+Thus expressing himself, Mr. Pickwick led the conversation to different topics, and Mr. Winkle gradually appeared more at ease, though still very far from being completely so. They had all so much to converse about, that the morning very quickly passed away; and when, at three o’clock, Mr. Weller produced upon the little dining-table, a roast leg of mutton and an enormous meat-pie, with sundry dishes of vegetables, and pots of porter, which stood upon the chairs or the sofa bedstead, or where they could, everybody felt disposed to do justice to the meal, notwithstanding that the meat had been purchased, and dressed, and the pie made, and baked, at the prison cookery hard by.
+To these succeeded a bottle or two of very good wine, for which a messenger was despatched by Mr. Pickwick to the Horn Coffee-house, in Doctors’ Commons. The bottle or two, indeed, might be more properly described as a bottle or six, for by the time it was drunk, and tea over, the bell began to ring for strangers to withdraw.
+But, if Mr. Winkle’s behaviour had been unaccountable in the morning, it became perfectly unearthly and solemn when, under the influence of his feelings, and his share of the bottle or six, he prepared to take leave of his friend. He lingered behind, until Mr. Tupman and Mr. Snodgrass had disappeared, and then fervently clenched Mr. Pickwick’s hand, with an expression of face in which deep and mighty resolve was fearfully blended with the very concentrated essence of gloom.
+‘Good-night, my dear Sir!’ said Mr. Winkle between his set teeth.
+‘Bless you, my dear fellow!’ replied the warm-hearted Mr. Pickwick, as he returned the pressure of his young friend’s hand.
+‘Now then!’ cried Mr. Tupman from the gallery.
+‘Yes, yes, directly,’ replied Mr. Winkle. ‘Good-night!’
+‘Good-night,’ said Mr. Pickwick.
+There was another good-night, and another, and half a dozen more after that, and still Mr. Winkle had fast hold of his friend’s hand, and was looking into his face with the same strange expression.
+‘Is anything the matter?’ said Mr. Pickwick at last, when his arm was quite sore with shaking.
+‘Nothing,’ said Mr. Winkle.
+‘Well then, good-night,’ said Mr. Pickwick, attempting to disengage his hand.
+‘My friend, my benefactor, my honoured companion,’ murmured Mr. Winkle, catching at his wrist. ‘Do not judge me harshly; do not, when you hear that, driven to extremity by hopeless obstacles, I—’
+‘Now then,’ said Mr. Tupman, reappearing at the door. ‘Are you coming, or are we to be locked in?’
+‘Yes, yes, I am ready,’ replied Mr. Winkle. And with a violent effort he tore himself away.
+As Mr. Pickwick was gazing down the passage after them in silent astonishment, Sam Weller appeared at the stair-head, and whispered for one moment in Mr. Winkle’s ear.
+‘Oh, certainly, depend upon me,’ said that gentleman aloud.
+‘Thank’ee, sir. You won’t forget, sir?’ said Sam.
+‘Of course not,’ replied Mr. Winkle.
+‘Wish you luck, Sir,’ said Sam, touching his hat. ‘I should very much liked to ha’ joined you, Sir; but the gov’nor, o’ course, is paramount.’
+‘It is very much to your credit that you remain here,’ said Mr. Winkle. With these words they disappeared down the stairs.
+‘Very extraordinary,’ said Mr. Pickwick, going back into his room, and seating himself at the table in a musing attitude. ‘What can that young man be going to do?’
+He had sat ruminating about the matter for some time, when the voice of Roker, the turnkey, demanded whether he might come in.
+‘By all means,’ said Mr. Pickwick.
+‘I’ve brought you a softer pillow, Sir,’ said Mr. Roker, ‘instead of the temporary one you had last night.’
+‘Thank you,’ said Mr. Pickwick. ‘Will you take a glass of wine?’
+‘You’re wery good, Sir,’ replied Mr. Roker, accepting the proffered glass. ‘Yours, sir.’
+‘Thank you,’ said Mr. Pickwick.
+‘I’m sorry to say that your landlord’s wery bad to-night, Sir,’ said Roker, setting down the glass, and inspecting the lining of his hat preparatory to putting it on again.
+‘What! The Chancery prisoner!’ exclaimed Mr. Pickwick.
+‘He won’t be a Chancery prisoner wery long, Sir,’ replied Roker, turning his hat round, so as to get the maker’s name right side upwards, as he looked into it.
+‘You make my blood run cold,’ said Mr. Pickwick. ‘What do you mean?’
+‘He’s been consumptive for a long time past,’ said Mr. Roker, ‘and he’s taken wery bad in the breath to-night. The doctor said, six months ago, that nothing but change of air could save him.’
+‘Great Heaven!’ exclaimed Mr. Pickwick; ‘has this man been slowly murdered by the law for six months?’
+‘I don’t know about that,’ replied Roker, weighing the hat by the brim in both hands. ‘I suppose he’d have been took the same, wherever he was. He went into the infirmary, this morning; the doctor says his strength is to be kept up as much as possible; and the warden’s sent him wine and broth and that, from his own house. It’s not the warden’s fault, you know, sir.’
+‘Of course not,’ replied Mr. Pickwick hastily.
+‘I’m afraid, however,’ said Roker, shaking his head, ‘that it’s all up with him. I offered Neddy two six-penn’orths to one upon it just now, but he wouldn’t take it, and quite right. Thank’ee, Sir. Good-night, sir.’
+‘Stay,’ said Mr. Pickwick earnestly. ‘Where is this infirmary?’
+‘Just over where you slept, sir,’ replied Roker. ‘I’ll show you, if you like to come.’ Mr. Pickwick snatched up his hat without speaking, and followed at once.
+The turnkey led the way in silence; and gently raising the latch of the room door, motioned Mr. Pickwick to enter. It was a large, bare, desolate room, with a number of stump bedsteads made of iron, on one of which lay stretched the shadow of a man—wan, pale, and ghastly. His breathing was hard and thick, and he moaned painfully as it came and went. At the bedside sat a short old man in a cobbler’s apron, who, by the aid of a pair of horn spectacles, was reading from the Bible aloud. It was the fortunate legatee.
+The sick man laid his hand upon his attendant’s arm, and motioned him to stop. He closed the book, and laid it on the bed.
+‘Open the window,’ said the sick man.
+He did so. The noise of carriages and carts, the rattle of wheels, the cries of men and boys, all the busy sounds of a mighty multitude instinct with life and occupation, blended into one deep murmur, floated into the room. Above the hoarse loud hum, arose, from time to time, a boisterous laugh; or a scrap of some jingling song, shouted forth, by one of the giddy crowd, would strike upon the ear, for an instant, and then be lost amidst the roar of voices and the tramp of footsteps; the breaking of the billows of the restless sea of life, that rolled heavily on, without. These are melancholy sounds to a quiet listener at any time; but how melancholy to the watcher by the bed of death!
+‘There is no air here,’ said the man faintly. ‘The place pollutes it. It was fresh round about, when I walked there, years ago; but it grows hot and heavy in passing these walls. I cannot breathe it.’
+‘We have breathed it together, for a long time,’ said the old man. ‘Come, come.’
+There was a short silence, during which the two spectators approached the bed. The sick man drew a hand of his old fellow-prisoner towards him, and pressing it affectionately between both his own, retained it in his grasp.
+‘I hope,’ he gasped after a while, so faintly that they bent their ears close over the bed to catch the half-formed sounds his pale lips gave vent to—‘I hope my merciful Judge will bear in mind my heavy punishment on earth. Twenty years, my friend, twenty years in this hideous grave! My heart broke when my child died, and I could not even kiss him in his little coffin. My loneliness since then, in all this noise and riot, has been very dreadful. May God forgive me! He has seen my solitary, lingering death.’
+He folded his hands, and murmuring something more they could not hear, fell into a sleep—only a sleep at first, for they saw him smile.
+They whispered together for a little time, and the turnkey, stooping over the pillow, drew hastily back. ‘He has got his discharge, by G—!’ said the man.
+He had. But he had grown so like death in life, that they knew not when he died.
+
+
+
+
+
+
+</div></body></text></TEI>

@@ -1,0 +1,133 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Coningsby: or, The New Generation</title><author>Disraeli, Benjamin (1804-1881)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1844</date></publicationStmt></teiHeader><text><body><div type="chapter" n="1">
+CHAPTER I.
+It was a bright May morning some twelve years ago, when a youth of still tender
+       age, for he had certainly not entered his teens by more than two years, was ushered into the
+       waiting-room of a house in the vicinity of St. James's Square, which, though with the general
+       appearance of a private residence, and that too of no very ambitious character, exhibited at
+       this period
+        symptoms of being occupied for some public purpose.
+The house door was constantly open, and frequent guests even at this early hour crossed the
+       threshold. The hall table was covered with sealed letters; and the hall porter inscribed in a
+       book the name of every individual who entered.
+The young gentleman we have mentioned found himself in a room which offered few resources
+       for his amusement. A large table amply covered with writing materials, and a few chairs were
+       its sole furniture, except the grey drugget that covered the floor, and a muddy mezzotinto of
+       the Duke of Wellington that adorned its cold walls. There was not even a newspaper; and the
+       only books were the Court Guide and the London Directory. For some time, he remained with
+       patient endurance planted against the wall, with his feet resting on the rail of his chair;
+       but at length in his shifting posture he gave evidence of his restlessness, rose from his
+       seat, looked out of the window into
+        a small side court of the house surrounded with dead walls, paced the room, took up the
+       Court Guide, changed it for the London Directory, then wrote his name over several sheets of
+       foolscap paper, drew various landscapes and faces of his friends; and then, splitting up a
+       pen or two, delivered himself of a yawn, which seemed the climax of his weariness.
+And yet the youth's appearance did not betoken a character that, if the opportunity had
+       offered, could not have found amusement and even instruction. His countenance, radiant with
+       health and lustre of innocence, was at the same time thoughtful and resolute. The expression
+       of his deep blue eye was serious. Without extreme regularity of features, the face was one
+       that would never have passed unobserved. His short upper lip indicated a good breed; and his
+       chestnut curls clustered over his open brow, while his shirt collar thrown over his shoulders
+       was unrestrained by handkerchief or ribbon. Add to this, a limber and graceful figure, which
+       the jacket
+        of his boyish dress exhibited to great advantage.
+Just as the youth, mounted on a chair, was adjusting the portrait of the Duke which he had
+       observed to be awry, the gentleman for whom he had been all this time waiting entered the
+       room.
+"Floreat Etona!" hastily exclaimed the gentleman in a sharp voice, "you are setting the
+       Duke to rights. I have left you a long time a prisoner; but I found them so busy here, that I
+       myself made my escape with difficulty."
+He who uttered these words was a man of middle size and age, originally in all probability
+       of a spare habit, but now a little inclined to corpulency. Baldness perhaps contributed to
+       the spiritual expression of a brow, which was however essentially intellectual, and gave some
+       character of openness to a countenance which, though not ill-favoured, was unhappily stamped
+       by a sinister character that was not to be mistaken. His manner was easy, but rather
+       audacious
+        than well-bred. Indeed, while a visage which might otherwise be described as handsome
+       was spoilt by a dishonest glance, so a demeanour that was by no means deficient in
+       self-possession and facility, was tainted by an innate vulgarity, which in the long run,
+       though seldom, yet surely, developed itself.
+The youth had jumped off his chair on the entrance of the gentleman, and then taking up his
+       hat, said:
+"Shall we go to grand-papa now, sir?"
+"By all means, my dear boy," said the gentleman, putting his arm within that of the youth;
+       and they were just on the point of leaving the waiting-room, when the door was suddenly
+       thrown open and two individuals, in a state of very great excitement, rushed into the
+       apartment.
+"Rigby—Rigby!" they both exclaimed at the same moment. "By G—they're out."
+"Who told you?"
+"The best authority; one of themselves."
+"Who—who?"
+
+"Paul Evelyn; I met him as I passed Brookes', and he told me that Lord Grey had resigned,
+       and the King had accepted his resignation."
+But Mr. Rigby, who, though very fond of news and much interested in the present, was
+       extremely jealous of any one giving him information, was sceptical. He declared that Paul
+       Evelyn was always wrong; that it was morally impossible that Paul Evelyn could ever be right;
+       that he knew, from the highest authority, that Lord Grey had been twice yesterday with the
+       King; that on the last visit nothing was settled; that if he had been at the palace again
+       to-day, he could not have been there before twelve o'clock; that it was only now one quarter
+       to one; that Lord Grey would have called his colleagues together on his return; that at least
+       an hour must have elapsed before anything could possibly have transpired. Then he compared
+       and criticised the dates of every rumoured incident of the last twenty-four hours;
+        (and nobody was stronger in dates than Mr. Rigby); counted even the number of stairs
+       which the minister had to ascend and descend in his visit to the palace, and the time their
+       mountings and dismountings must have absorbed, (detail was Mr. Rigby's forte); and finally,
+       what with his dates, his private information, his knowledge of palace localities, his
+       contempt for Paul Evelyn, and his confidence in himself, he succeeded in persuading his
+       downcast and disheartened friends, that their comfortable intelligence had not the slightest
+       foundation.
+They all left the room together; they were in the hall; the gentlemen who brought the news
+       looking somewhat depressed but Mr. Rigby gay even amid the prostration of his party, from the
+       consciousness that he had most critically demolished a piece of political gossip, and
+       conveyed a certain degree of mortification to a couple of his companions; when a travelling
+       carriage and four with a ducal coronet drove up to the house. The door was thrown open, the
+        steps dashed down, and a youthful noble sprang from his chariot into the hall.
+"Good morning, Rigby," said the Duke.
+"I see your Grace well, I am sure," said Mr. Rigby, with a very softened manner.
+"You have heard the news, gentlemen?" he continued.
+"What news? Yes—no—that is to say— Mr. Rigby thinks—"
+"You know, of course, that Lord Lyndhurst is with the King?"
+"It is impossible," said Mr. Rigby.
+"I don't think I can be mistaken," said the Duke smiling.
+"I will show your Grace that it is impossible," said Mr. Rigby. "Lord Lyndhurst slept at
+       Wimbledon. Lord Grey could not have seen the King until twelve o'clock; it is now five
+       minutes to one. It is impossible, therefore, that any message from the King could have
+       reached Lord Lyndhurst in time for his Lordship to be at the palace at this moment."
+
+"But my authority is a very high one," said the Duke.
+"Authority is a phrase," said Mr. Rigby; "we must look to time and place, dates and
+       localities, to discover the truth."
+"Your Grace was saying that your authority—" ventured to observe Mr. Tadpole, emboldened by
+       the presence of a duke, his patron, to struggle against the despotism of a Rigby, his
+       tyrant.
+"Was the highest," rejoined the Duke smiling; "for it was Lord Lyndhurst himself. I came up
+       from Nuneham this morning, passed his Lordship's house in Hyde Park Place as he was getting
+       into his carriage in full dress, stopped my own, and learned in a breath, that the Whigs were
+       out, and that the King had sent for the Chief Baron. So I came on here at once."
+"I always thought the country was sound at bottom," exclaimed Mr. Taper, who, under the old
+       system, had sneaked into the Treasury Board.
+
+Tadpole and Taper were great friends. Neither of them ever despaired of the Commonwealth.
+       Even if the Reform Bill were passed, Taper was convinced that the Whigs would never prove men
+       of business; and when his friends confessed among themselves that a Tory Government was for
+       the future impossible, Taper would remark in a confidential whisper, that for his part he
+       believed before the year was over, the Whigs would be turned out by the clerks.
+"There is no doubt that there is considerable re-action," said Mr. Tadpole. "The infamous
+       conduct of the Whigs in the Amersham case, has opened the public mind more than
+       anything."
+"Aldborough was worse," said Mr. Taper.
+"Terrible!" said Tadpole. "They said there was no use discussing the Reform Bill in our
+       house. I believe Rigby's great speech on Aldborough has done more towards the re-action than
+       all the violence of all the political Unions together."
+"Let us hope for the best," said the Duke
+        mildly. "'Tis a bold step on the part of the Sovereign, and I am free to say I
+       could have wished it postponed; but we must support the King like men. What say you, Rigby?
+       You are silent."
+"I am thinking what an unfortunate circumstance it was for the Sovereign, the country, and
+       the party, that I did not breakfast with Lord Lyndhurst this morning, as I was nearly doing,
+       instead of going down to Eton."
+"To Eton, and why to Eton?"
+"For the sake of my young friend here; Lord Monmouth's grandson. By the bye, you are
+       kinsmen. Let me present to your Grace— Mr. Coningsby ."
+
+</div></body></text></TEI>

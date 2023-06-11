@@ -1,0 +1,196 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Pickwick Papers</title><author>Dickens</author></titleStmt><publicationStmt><publisher></publisher><pubPlace>London</pubPlace><date>1837</date></publicationStmt></teiHeader><text><body><div type="chapter" n="15">CHAPTER XV. IN WHICH IS GIVEN A FAITHFUL PORTRAITURE OF TWO DISTINGUISHED PERSONS; AND AN ACCURATE DESCRIPTION OF A PUBLIC BREAKFAST IN THEIR HOUSE AND GROUNDS: WHICH PUBLIC BREAKFAST LEADS TO THE RECOGNITION OF AN OLD ACQUAINTANCE, AND THE COMMENCEMENT OF ANOTHER CHAPTER
+Mr. Pickwick’s conscience had been somewhat reproaching him for his recent neglect of his friends at the Peacock; and he was just on the point of walking forth in quest of them, on the third morning after the election had terminated, when his faithful valet put into his hand a card, on which was engraved the following inscription:—
+
+     Mrs. Leo Hunter
+     THE DEN. EATANSWILL.
+
+‘Person’s a-waitin’,’ said Sam, epigrammatically.
+‘Does the person want me, Sam?’ inquired Mr. Pickwick.
+‘He wants you partickler; and no one else ‘ll do, as the devil’s private secretary said ven he fetched avay Doctor Faustus,’ replied Mr. Weller.
+‘He. Is it a gentleman?’ said Mr. Pickwick.
+‘A wery good imitation o’ one, if it ain’t,’ replied Mr. Weller.
+‘But this is a lady’s card,’ said Mr. Pickwick.
+‘Given me by a gen’l’m’n, howsoever,’ replied Sam, ‘and he’s a-waitin’ in the drawing-room—said he’d rather wait all day, than not see you.’
+Mr. Pickwick, on hearing this determination, descended to the drawing-room, where sat a grave man, who started up on his entrance, and said, with an air of profound respect:—
+‘Mr. Pickwick, I presume?’
+‘The same.’
+‘Allow me, Sir, the honour of grasping your hand. Permit me, Sir, to shake it,’ said the grave man.
+‘Certainly,’ said Mr. Pickwick. The stranger shook the extended hand, and then continued—
+‘We have heard of your fame, sir. The noise of your antiquarian discussion has reached the ears of Mrs. Leo Hunter—my wife, sir; I am Mr. Leo Hunter’—the stranger paused, as if he expected that Mr. Pickwick would be overcome by the disclosure; but seeing that he remained perfectly calm, proceeded—
+‘My wife, sir—Mrs. Leo Hunter—is proud to number among her acquaintance all those who have rendered themselves celebrated by their works and talents. Permit me, sir, to place in a conspicuous part of the list the name of Mr. Pickwick, and his brother-members of the club that derives its name from him.’
+‘I shall be extremely happy to make the acquaintance of such a lady, sir,’ replied Mr. Pickwick.
+‘You shall make it, sir,’ said the grave man. ‘To-morrow morning, sir, we give a public breakfast—a fete champetre—to a great number of those who have rendered themselves celebrated by their works and talents. Permit Mrs. Leo Hunter, Sir, to have the gratification of seeing you at the Den.’
+‘With great pleasure,’ replied Mr. Pickwick.
+‘Mrs. Leo Hunter has many of these breakfasts, Sir,’ resumed the new acquaintance—‘"feasts of reason,” sir, “and flows of soul,” as somebody who wrote a sonnet to Mrs. Leo Hunter on her breakfasts, feelingly and originally observed.’
+‘Was he celebrated for his works and talents?’ inquired Mr. Pickwick.
+‘He was Sir,’ replied the grave man, ‘all Mrs. Leo Hunter’s acquaintances are; it is her ambition, sir, to have no other acquaintance.’
+‘It is a very noble ambition,’ said Mr. Pickwick.
+‘When I inform Mrs. Leo Hunter, that that remark fell from your lips, sir, she will indeed be proud,’ said the grave man. ‘You have a gentleman in your train, who has produced some beautiful little poems, I think, sir.’
+‘My friend Mr. Snodgrass has a great taste for poetry,’ replied Mr. Pickwick.
+‘So has Mrs. Leo Hunter, Sir. She dotes on poetry, sir. She adores it; I may say that her whole soul and mind are wound up, and entwined with it. She has produced some delightful pieces, herself, sir. You may have met with her “Ode to an Expiring Frog,” sir.’
+‘I don’t think I have,’ said Mr. Pickwick.
+‘You astonish me, Sir,’ said Mr. Leo Hunter. ‘It created an immense sensation. It was signed with an “L” and eight stars, and appeared originally in a lady’s magazine. It commenced—
+
+     ‘“Can I view thee panting, lying
+     On thy stomach, without sighing;
+     Can I unmoved see thee dying
+       On a log
+       Expiring frog!”’ 
+
+
+‘Beautiful!’ said Mr. Pickwick.
+‘Fine,’ said Mr. Leo Hunter; ‘so simple.’
+‘Very,’ said Mr. Pickwick.
+‘The next verse is still more touching. Shall I repeat it?’
+‘If you please,’ said Mr. Pickwick.
+‘It runs thus,’ said the grave man, still more gravely.
+
+     ‘“Say, have fiends in shape of boys,
+     With wild halloo, and brutal noise,
+     Hunted thee from marshy joys,
+       With a dog,
+       Expiring frog!”’ 
+
+
+‘Finely expressed,’ said Mr. Pickwick.
+‘All point, Sir,’ said Mr. Leo Hunter; ‘but you shall hear Mrs. Leo Hunter repeat it. She can do justice to it, Sir. She will repeat it, in character, Sir, to-morrow morning.’
+‘In character!’
+‘As Minerva. But I forgot—it’s a fancy-dress dejeune.’
+‘Dear me,’ said Mr. Pickwick, glancing at his own figure—‘I can’t possibly—’
+‘Can’t, sir; can’t!’ exclaimed Mr. Leo Hunter. ‘Solomon Lucas, the Jew in the High Street, has thousands of fancy-dresses. Consider, Sir, how many appropriate characters are open for your selection. Plato, Zeno, Epicurus, Pythagoras—all founders of clubs.’
+‘I know that,’ said Mr. Pickwick; ‘but as I cannot put myself in competition with those great men, I cannot presume to wear their dresses.’
+The grave man considered deeply, for a few seconds, and then said—
+‘On reflection, Sir, I don’t know whether it would not afford Mrs. Leo Hunter greater pleasure, if her guests saw a gentleman of your celebrity in his own costume, rather than in an assumed one. I may venture to promise an exception in your case, sir—yes, I am quite certain that, on behalf of Mrs. Leo Hunter, I may venture to do so.’
+‘In that case,’ said Mr. Pickwick, ‘I shall have great pleasure in coming.’
+‘But I waste your time, Sir,’ said the grave man, as if suddenly recollecting himself. ‘I know its value, sir. I will not detain you. I may tell Mrs. Leo Hunter, then, that she may confidently expect you and your distinguished friends? Good-morning, Sir, I am proud to have beheld so eminent a personage—not a step sir; not a word.’ And without giving Mr. Pickwick time to offer remonstrance or denial, Mr. Leo Hunter stalked gravely away.
+Mr. Pickwick took up his hat, and repaired to the Peacock, but Mr. Winkle had conveyed the intelligence of the fancy-ball there, before him.
+‘Mrs. Pott’s going,’ were the first words with which he saluted his leader.
+‘Is she?’ said Mr. Pickwick.
+‘As Apollo,’ replied Winkle. ‘Only Pott objects to the tunic.’
+‘He is right. He is quite right,’ said Mr. Pickwick emphatically.
+‘Yes; so she’s going to wear a white satin gown with gold spangles.’
+‘They’ll hardly know what she’s meant for; will they?’ inquired Mr. Snodgrass.
+‘Of course they will,’ replied Mr. Winkle indignantly. ‘They’ll see her lyre, won’t they?’
+‘True; I forgot that,’ said Mr. Snodgrass.
+‘I shall go as a bandit,’ interposed Mr. Tupman.
+‘What!’ said Mr. Pickwick, with a sudden start.
+‘As a bandit,’ repeated Mr. Tupman, mildly.
+‘You don’t mean to say,’ said Mr. Pickwick, gazing with solemn sternness at his friend—‘you don’t mean to say, Mr. Tupman, that it is your intention to put yourself into a green velvet jacket, with a two-inch tail?’
+‘Such is my intention, Sir,’ replied Mr. Tupman warmly. ‘And why not, sir?’
+‘Because, Sir,’ said Mr. Pickwick, considerably excited—‘because you are too old, Sir.’
+‘Too old!’ exclaimed Mr. Tupman.
+‘And if any further ground of objection be wanting,’ continued Mr. Pickwick, ‘you are too fat, sir.’
+‘Sir,’ said Mr. Tupman, his face suffused with a crimson glow, ‘this is an insult.’
+‘Sir,’ replied Mr. Pickwick, in the same tone, ‘it is not half the insult to you, that your appearance in my presence in a green velvet jacket, with a two-inch tail, would be to me.’
+‘Sir,’ said Mr. Tupman, ‘you’re a fellow.’
+‘Sir,’ said Mr. Pickwick, ‘you’re another!’
+Mr. Tupman advanced a step or two, and glared at Mr. Pickwick. Mr. Pickwick returned the glare, concentrated into a focus by means of his spectacles, and breathed a bold defiance. Mr. Snodgrass and Mr. Winkle looked on, petrified at beholding such a scene between two such men.
+‘Sir,’ said Mr. Tupman, after a short pause, speaking in a low, deep voice, ‘you have called me old.’
+‘I have,’ said Mr. Pickwick.
+‘And fat.’
+‘I reiterate the charge.’
+‘And a fellow.’
+‘So you are!’
+There was a fearful pause.
+‘My attachment to your person, sir,’ said Mr. Tupman, speaking in a voice tremulous with emotion, and tucking up his wristbands meanwhile, ‘is great—very great—but upon that person, I must take summary vengeance.’
+‘Come on, Sir!’ replied Mr. Pickwick. Stimulated by the exciting nature of the dialogue, the heroic man actually threw himself into a paralytic attitude, confidently supposed by the two bystanders to have been intended as a posture of defence.
+‘What!’ exclaimed Mr. Snodgrass, suddenly recovering the power of speech, of which intense astonishment had previously bereft him, and rushing between the two, at the imminent hazard of receiving an application on the temple from each—‘what! Mr. Pickwick, with the eyes of the world upon you! Mr. Tupman! who, in common with us all, derives a lustre from his undying name! For shame, gentlemen; for shame.’
+The unwonted lines which momentary passion had ruled in Mr. Pickwick’s clear and open brow, gradually melted away, as his young friend spoke, like the marks of a black-lead pencil beneath the softening influence of india-rubber. His countenance had resumed its usual benign expression, ere he concluded.
+‘I have been hasty,’ said Mr. Pickwick, ‘very hasty. Tupman; your hand.’
+The dark shadow passed from Mr. Tupman’s face, as he warmly grasped the hand of his friend.
+‘I have been hasty, too,’ said he.
+‘No, no,’ interrupted Mr. Pickwick, ‘the fault was mine. You will wear the green velvet jacket?’
+‘No, no,’ replied Mr. Tupman.
+‘To oblige me, you will,’ resumed Mr. Pickwick.
+‘Well, well, I will,’ said Mr. Tupman.
+
+
+
+
+It was accordingly settled that Mr. Tupman, Mr. Winkle, and Mr. Snodgrass, should all wear fancy-dresses. Thus Mr. Pickwick was led by the very warmth of his own good feelings to give his consent to a proceeding from which his better judgment would have recoiled—a more striking illustration of his amiable character could hardly have been conceived, even if the events recorded in these pages had been wholly imaginary.
+Mr. Leo Hunter had not exaggerated the resources of Mr. Solomon Lucas. His wardrobe was extensive—very extensive—not strictly classical perhaps, not quite new, nor did it contain any one garment made precisely after the fashion of any age or time, but everything was more or less spangled; and what can be prettier than spangles! It may be objected that they are not adapted to the daylight, but everybody knows that they would glitter if there were lamps; and nothing can be clearer than that if people give fancy-balls in the day-time, and the dresses do not show quite as well as they would by night, the fault lies solely with the people who give the fancy-balls, and is in no wise chargeable on the spangles. Such was the convincing reasoning of Mr. Solomon Lucas; and influenced by such arguments did Mr. Tupman, Mr. Winkle, and Mr. Snodgrass engage to array themselves in costumes which his taste and experience induced him to recommend as admirably suited to the occasion.
+A carriage was hired from the Town Arms, for the accommodation of the Pickwickians, and a chariot was ordered from the same repository, for the purpose of conveying Mr. and Mrs. Pott to Mrs. Leo Hunter’s grounds, which Mr. Pott, as a delicate acknowledgment of having received an invitation, had already confidently predicted in the Eatanswill Gazette ‘would present a scene of varied and delicious enchantment—a bewildering coruscation of beauty and talent—a lavish and prodigal display of hospitality—above all, a degree of splendour softened by the most exquisite taste; and adornment refined with perfect harmony and the chastest good keeping—compared with which, the fabled gorgeousness of Eastern fairyland itself would appear to be clothed in as many dark and murky colours, as must be the mind of the splenetic and unmanly being who could presume to taint with the venom of his envy, the preparations made by the virtuous and highly distinguished lady at whose shrine this humble tribute of admiration was offered.’ This last was a piece of biting sarcasm against the Independent, who, in consequence of not having been invited at all, had been, through four numbers, affecting to sneer at the whole affair, in his very largest type, with all the adjectives in capital letters.
+The morning came: it was a pleasant sight to behold Mr. Tupman in full brigand’s costume, with a very tight jacket, sitting like a pincushion over his back and shoulders, the upper portion of his legs incased in the velvet shorts, and the lower part thereof swathed in the complicated bandages to which all brigands are peculiarly attached. It was pleasing to see his open and ingenuous countenance, well mustachioed and corked, looking out from an open shirt collar; and to contemplate the sugar-loaf hat, decorated with ribbons of all colours, which he was compelled to carry on his knee, inasmuch as no known conveyance with a top to it, would admit of any man’s carrying it between his head and the roof. Equally humorous and agreeable was the appearance of Mr. Snodgrass in blue satin trunks and cloak, white silk tights and shoes, and Grecian helmet, which everybody knows (and if they do not, Mr. Solomon Lucas did) to have been the regular, authentic, everyday costume of a troubadour, from the earliest ages down to the time of their final disappearance from the face of the earth. All this was pleasant, but this was as nothing compared with the shouting of the populace when the carriage drew up, behind Mr. Pott’s chariot, which chariot itself drew up at Mr. Pott’s door, which door itself opened, and displayed the great Pott accoutred as a Russian officer of justice, with a tremendous knout in his hand—tastefully typical of the stern and mighty power of the Eatanswill Gazette, and the fearful lashings it bestowed on public offenders.
+‘Bravo!’ shouted Mr. Tupman and Mr. Snodgrass from the passage, when they beheld the walking allegory.
+‘Bravo!’ Mr. Pickwick was heard to exclaim, from the passage.
+‘Hoo-roar Pott!’ shouted the populace. Amid these salutations, Mr. Pott, smiling with that kind of bland dignity which sufficiently testified that he felt his power, and knew how to exert it, got into the chariot.
+Then there emerged from the house, Mrs. Pott, who would have looked very like Apollo if she hadn’t had a gown on, conducted by Mr. Winkle, who, in his light-red coat could not possibly have been mistaken for anything but a sportsman, if he had not borne an equal resemblance to a general postman. Last of all came Mr. Pickwick, whom the boys applauded as loud as anybody, probably under the impression that his tights and gaiters were some remnants of the dark ages; and then the two vehicles proceeded towards Mrs. Leo Hunter’s; Mr. Weller (who was to assist in waiting) being stationed on the box of that in which his master was seated.
+Every one of the men, women, boys, girls, and babies, who were assembled to see the visitors in their fancy-dresses, screamed with delight and ecstasy, when Mr. Pickwick, with the brigand on one arm, and the troubadour on the other, walked solemnly up the entrance. Never were such shouts heard as those which greeted Mr. Tupman’s efforts to fix the sugar-loaf hat on his head, by way of entering the garden in style.
+The preparations were on the most delightful scale; fully realising the prophetic Pott’s anticipations about the gorgeousness of Eastern fairyland, and at once affording a sufficient contradiction to the malignant statements of the reptile Independent. The grounds were more than an acre and a quarter in extent, and they were filled with people! Never was such a blaze of beauty, and fashion, and literature. There was the young lady who ‘did’ the poetry in the Eatanswill Gazette, in the garb of a sultana, leaning upon the arm of the young gentleman who ‘did’ the review department, and who was appropriately habited in a field-marshal’s uniform—the boots excepted. There were hosts of these geniuses, and any reasonable person would have thought it honour enough to meet them. But more than these, there were half a dozen lions from London—authors, real authors, who had written whole books, and printed them afterwards—and here you might see ‘em, walking about, like ordinary men, smiling, and talking—aye, and talking pretty considerable nonsense too, no doubt with the benign intention of rendering themselves intelligible to the common people about them. Moreover, there was a band of music in pasteboard caps; four something-ean singers in the costume of their country, and a dozen hired waiters in the costume of their country—and very dirty costume too. And above all, there was Mrs. Leo Hunter in the character of Minerva, receiving the company, and overflowing with pride and gratification at the notion of having called such distinguished individuals together.
+‘Mr. Pickwick, ma’am,’ said a servant, as that gentleman approached the presiding goddess, with his hat in his hand, and the brigand and troubadour on either arm.
+‘What! Where!’ exclaimed Mrs. Leo Hunter, starting up, in an affected rapture of surprise.
+‘Here,’ said Mr. Pickwick.
+‘Is it possible that I have really the gratification of beholding Mr. Pickwick himself!’ ejaculated Mrs. Leo Hunter.
+‘No other, ma’am,’ replied Mr. Pickwick, bowing very low. ‘Permit me to introduce my friends—Mr. Tupman—Mr. Winkle—Mr. Snodgrass—to the authoress of “The Expiring Frog.”’
+Very few people but those who have tried it, know what a difficult process it is to bow in green velvet smalls, and a tight jacket, and high-crowned hat; or in blue satin trunks and white silks, or knee-cords and top-boots that were never made for the wearer, and have been fixed upon him without the remotest reference to the comparative dimensions of himself and the suit. Never were such distortions as Mr. Tupman’s frame underwent in his efforts to appear easy and graceful—never was such ingenious posturing, as his fancy-dressed friends exhibited.
+‘Mr. Pickwick,’ said Mrs. Leo Hunter, ‘I must make you promise not to stir from my side the whole day. There are hundreds of people here, that I must positively introduce you to.’
+‘You are very kind, ma’am,’ said Mr. Pickwick.
+‘In the first place, here are my little girls; I had almost forgotten them,’ said Minerva, carelessly pointing towards a couple of full-grown young ladies, of whom one might be about twenty, and the other a year or two older, and who were dressed in very juvenile costumes—whether to make them look young, or their mamma younger, Mr. Pickwick does not distinctly inform us.
+‘They are very beautiful,’ said Mr. Pickwick, as the juveniles turned away, after being presented.
+‘They are very like their mamma, Sir,’ said Mr. Pott, majestically.
+‘Oh, you naughty man,’ exclaimed Mrs. Leo Hunter, playfully tapping the editor’s arm with her fan (Minerva with a fan!).
+‘Why now, my dear Mrs. Hunter,’ said Mr. Pott, who was trumpeter in ordinary at the Den, ‘you know that when your picture was in the exhibition of the Royal Academy, last year, everybody inquired whether it was intended for you, or your youngest daughter; for you were so much alike that there was no telling the difference between you.’
+‘Well, and if they did, why need you repeat it, before strangers?’ said Mrs. Leo Hunter, bestowing another tap on the slumbering lion of the Eatanswill Gazette.
+‘Count, count,’ screamed Mrs. Leo Hunter to a well-whiskered individual in a foreign uniform, who was passing by.
+‘Ah! you want me?’ said the count, turning back.
+‘I want to introduce two very clever people to each other,’ said Mrs. Leo Hunter. ‘Mr. Pickwick, I have great pleasure in introducing you to Count Smorltork.’ She added in a hurried whisper to Mr. Pickwick—‘The famous foreigner—gathering materials for his great work on England—hem!—Count Smorltork, Mr. Pickwick.’
+Mr. Pickwick saluted the count with all the reverence due to so great a man, and the count drew forth a set of tablets.
+‘What you say, Mrs. Hunt?’ inquired the count, smiling graciously on the gratified Mrs. Leo Hunter, ‘Pig Vig or Big Vig—what you call—lawyer—eh? I see—that is it. Big Vig’—and the count was proceeding to enter Mr. Pickwick in his tablets, as a gentleman of the long robe, who derived his name from the profession to which he belonged, when Mrs. Leo Hunter interposed.
+‘No, no, count,’ said the lady, ‘Pick-wick.’
+‘Ah, ah, I see,’ replied the count. ‘Peek—christian name; Weeks—surname; good, ver good. Peek Weeks. How you do, Weeks?’
+‘Quite well, I thank you,’ replied Mr. Pickwick, with all his usual affability. ‘Have you been long in England?’
+‘Long—ver long time—fortnight—more.’
+‘Do you stay here long?’
+‘One week.’
+‘You will have enough to do,’ said Mr. Pickwick smiling, ‘to gather all the materials you want in that time.’
+‘Eh, they are gathered,’ said the count.
+‘Indeed!’ said Mr. Pickwick.
+‘They are here,’ added the count, tapping his forehead significantly. ‘Large book at home—full of notes—music, picture, science, potry, poltic; all tings.’
+‘The word politics, sir,’ said Mr. Pickwick, ‘comprises in itself, a difficult study of no inconsiderable magnitude.’
+‘Ah!’ said the count, drawing out the tablets again, ‘ver good—fine words to begin a chapter. Chapter forty-seven. Poltics. The word poltic surprises by himself—’ And down went Mr. Pickwick’s remark, in Count Smorltork’s tablets, with such variations and additions as the count’s exuberant fancy suggested, or his imperfect knowledge of the language occasioned.
+‘Count,’ said Mrs. Leo Hunter.
+‘Mrs. Hunt,’ replied the count.
+‘This is Mr. Snodgrass, a friend of Mr. Pickwick’s, and a poet.’
+‘Stop,’ exclaimed the count, bringing out the tablets once more. ‘Head, potry—chapter, literary friends—name, Snowgrass; ver good. Introduced to Snowgrass—great poet, friend of Peek Weeks—by Mrs. Hunt, which wrote other sweet poem—what is that name?—Fog—Perspiring Fog—ver good—ver good indeed.’ And the count put up his tablets, and with sundry bows and acknowledgments walked away, thoroughly satisfied that he had made the most important and valuable additions to his stock of information.
+‘Wonderful man, Count Smorltork,’ said Mrs. Leo Hunter.
+‘Sound philosopher,’ said Mr. Pott.
+‘Clear-headed, strong-minded person,’ added Mr. Snodgrass.
+A chorus of bystanders took up the shout of Count Smorltork’s praise, shook their heads sagely, and unanimously cried, ‘Very!’
+As the enthusiasm in Count Smorltork’s favour ran very high, his praises might have been sung until the end of the festivities, if the four something-ean singers had not ranged themselves in front of a small apple-tree, to look picturesque, and commenced singing their national songs, which appeared by no means difficult of execution, inasmuch as the grand secret seemed to be, that three of the something-ean singers should grunt, while the fourth howled. This interesting performance having concluded amidst the loud plaudits of the whole company, a boy forthwith proceeded to entangle himself with the rails of a chair, and to jump over it, and crawl under it, and fall down with it, and do everything but sit upon it, and then to make a cravat of his legs, and tie them round his neck, and then to illustrate the ease with which a human being can be made to look like a magnified toad—all which feats yielded high delight and satisfaction to the assembled spectators. After which, the voice of Mrs. Pott was heard to chirp faintly forth, something which courtesy interpreted into a song, which was all very classical, and strictly in character, because Apollo was himself a composer, and composers can very seldom sing their own music or anybody else’s, either. This was succeeded by Mrs. Leo Hunter’s recitation of her far-famed ‘Ode to an Expiring Frog,’ which was encored once, and would have been encored twice, if the major part of the guests, who thought it was high time to get something to eat, had not said that it was perfectly shameful to take advantage of Mrs. Hunter’s good nature. So although Mrs. Leo Hunter professed her perfect willingness to recite the ode again, her kind and considerate friends wouldn’t hear of it on any account; and the refreshment room being thrown open, all the people who had ever been there before, scrambled in with all possible despatch—Mrs. Leo Hunter’s usual course of proceedings being, to issue cards for a hundred, and breakfast for fifty, or in other words to feed only the very particular lions, and let the smaller animals take care of themselves.
+‘Where is Mr. Pott?’ said Mrs. Leo Hunter, as she placed the aforesaid lions around her.
+‘Here I am,’ said the editor, from the remotest end of the room; far beyond all hope of food, unless something was done for him by the hostess.
+‘Won’t you come up here?’
+‘Oh, pray don’t mind him,’ said Mrs. Pott, in the most obliging voice—‘you give yourself a great deal of unnecessary trouble, Mrs. Hunter. You’ll do very well there, won’t you—dear?’
+‘Certainly—love,’ replied the unhappy Pott, with a grim smile. Alas for the knout! The nervous arm that wielded it, with such a gigantic force on public characters, was paralysed beneath the glance of the imperious Mrs. Pott.
+Mrs. Leo Hunter looked round her in triumph. Count Smorltork was busily engaged in taking notes of the contents of the dishes; Mr. Tupman was doing the honours of the lobster salad to several lionesses, with a degree of grace which no brigand ever exhibited before; Mr. Snodgrass having cut out the young gentleman who cut up the books for the Eatanswill Gazette, was engaged in an impassioned argument with the young lady who did the poetry; and Mr. Pickwick was making himself universally agreeable. Nothing seemed wanting to render the select circle complete, when Mr. Leo Hunter—whose department on these occasions, was to stand about in doorways, and talk to the less important people—suddenly called out—
+‘My dear; here’s Mr. Charles Fitz-Marshall.’
+‘Oh dear,’ said Mrs. Leo Hunter, ‘how anxiously I have been expecting him. Pray make room, to let Mr. Fitz-Marshall pass. Tell Mr. Fitz-Marshall, my dear, to come up to me directly, to be scolded for coming so late.’
+‘Coming, my dear ma’am,’ cried a voice, ‘as quick as I can—crowds of people—full room—hard work—very.’
+Mr. Pickwick’s knife and fork fell from his hand. He stared across the table at Mr. Tupman, who had dropped his knife and fork, and was looking as if he were about to sink into the ground without further notice.
+‘Ah!’ cried the voice, as its owner pushed his way among the last five-and-twenty Turks, officers, cavaliers, and Charles the Seconds, that remained between him and the table, ‘regular mangle—Baker’s patent—not a crease in my coat, after all this squeezing—might have “got up my linen” as I came along—ha! ha! not a bad idea, that—queer thing to have it mangled when it’s upon one, though—trying process—very.’
+With these broken words, a young man dressed as a naval officer made his way up to the table, and presented to the astonished Pickwickians the identical form and features of Mr. Alfred Jingle.
+The offender had barely time to take Mrs. Leo Hunter’s proffered hand, when his eyes encountered the indignant orbs of Mr. Pickwick.
+‘Hollo!’ said Jingle. ‘Quite forgot—no directions to postillion—give ‘em at once—back in a minute.’
+‘The servant, or Mr. Hunter will do it in a moment, Mr. Fitz-Marshall,’ said Mrs. Leo Hunter.
+‘No, no—I’ll do it—shan’t be long—back in no time,’ replied Jingle. With these words he disappeared among the crowd.
+‘Will you allow me to ask you, ma’am,’ said the excited Mr. Pickwick, rising from his seat, ‘who that young man is, and where he resides?’
+‘He is a gentleman of fortune, Mr. Pickwick,’ said Mrs. Leo Hunter, ‘to whom I very much want to introduce you. The count will be delighted with him.’
+‘Yes, yes,’ said Mr. Pickwick hastily. ‘His residence—’
+‘Is at present at the Angel at Bury.’
+‘At Bury?’
+‘At Bury St. Edmunds, not many miles from here. But dear me, Mr. Pickwick, you are not going to leave us; surely Mr. Pickwick you cannot think of going so soon?’
+But long before Mrs. Leo Hunter had finished speaking, Mr. Pickwick had plunged through the throng, and reached the garden, whither he was shortly afterwards joined by Mr. Tupman, who had followed his friend closely.
+‘It’s of no use,’ said Mr. Tupman. ‘He has gone.’
+‘I know it,’ said Mr. Pickwick, ‘and I will follow him.’
+‘Follow him! Where?’ inquired Mr. Tupman.
+‘To the Angel at Bury,’ replied Mr. Pickwick, speaking very quickly. ‘How do we know whom he is deceiving there? He deceived a worthy man once, and we were the innocent cause. He shall not do it again, if I can help it; I’ll expose him! Sam! Where’s my servant?’
+‘Here you are, Sir,’ said Mr. Weller, emerging from a sequestered spot, where he had been engaged in discussing a bottle of Madeira, which he had abstracted from the breakfast-table an hour or two before. ‘Here’s your servant, Sir. Proud o’ the title, as the living skellinton said, ven they show’d him.’
+‘Follow me instantly,’ said Mr. Pickwick. ‘Tupman, if I stay at Bury, you can join me there, when I write. Till then, good-bye!’
+Remonstrances were useless. Mr. Pickwick was roused, and his mind was made up. Mr. Tupman returned to his companions; and in another hour had drowned all present recollection of Mr. Alfred Jingle, or Mr. Charles Fitz-Marshall, in an exhilarating quadrille and a bottle of champagne. By that time, Mr. Pickwick and Sam Weller, perched on the outside of a stage-coach, were every succeeding minute placing a less and less distance between themselves and the good old town of Bury St. Edmunds.
+
+
+
+
+
+
+</div></body></text></TEI>

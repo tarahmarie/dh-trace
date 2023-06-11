@@ -1,0 +1,32 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Project Gutenberg's The Parisians, Complete, by Edward
+     Bulwer-Lytton</title><author>Lytton, Edward Bulwer (1803-1873)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1874</date></publicationStmt></teiHeader><text><body><div type="chapter" n="6">
+CHAPTER VI.
+“I believe,” said Lemercier, as the coupe rolled through the lively alleys of the Bois de
+      Boulogne, “that Paris is built on a loadstone, and that every Frenchman with some iron
+      globules in his blood is irresistibly attracted towards it. The English never seem to feel for
+      London the passionate devotion that we feel for Paris. On the contrary, the London middle
+      class, the commercialists, the shopkeepers, the clerks, even the superior artisans compelled
+      to do their business in the capital, seem always scheming and pining to have their home out of
+      it, though but in a suburb.”
+“You have been in London, Frederic?”
+“Of course; it is the mode to visit that dull and hideous metropolis.”
+“If it be dull and hideous, no wonder the people who are compelled to do business in it seek
+      the pleasures of home out of it.”
+“It is very droll that though the middle class entirely govern the melancholy Albion, it is
+      the only country in Europe in which the middle class seem to have no amusements; nay, they
+      legislate against amusement. They have no leisure-day but Sunday; and on that day they close
+      all their theatres, even their museums and picture-galleries. What amusements there may be in
+      England are for the higher classes and the lowest.”
+“What are the amusements of the lowest class?”
+“Getting drunk.”
+“Nothing else?”
+“Yes. I was taken at night under protection of a policeman to some cabarets, where I found
+      crowds of that class which is the stratum below the working class; lads who sweep crossings
+      and hold horses, mendicants, and, I was told, thieves, girls whom a servant-maid would not
+      speak to, very merry, dancing quadrilles and waltzes, and regaling themselves on sausages,—the
+      happiest-looking folks I found in all London; and, I must say, conducting themselves very
+      decently.”
+“Ah!” Here Lemercier pulled the check-string. “Will you object to a walk in this quiet
+      alley? I see some one whom I have promised the Englishman to—But heed me, Alain, don’t fall in
+      love with her.”
+</div></body></text></TEI>

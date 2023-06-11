@@ -1,0 +1,41 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Coningsby: or, The New Generation</title><author>Disraeli, Benjamin (1804-1881)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1844</date></publicationStmt></teiHeader><text><body><div type="chapter" n="77">
+CHAPTER VII.
+The marriage of Coningsby and Edith took place early in the autumn. It was
+       solemnized at Millbank, and they passed their first moon at Hellingsley, which place was in
+       future to be the residence of the member for Darlford. The estate was to devolve to Coningsby
+       after the death of Mr. Millbank who in the meantime made arrangements which permitted the
+       newlymarried couple to reside at the Hall in a manner becoming its occupants. All these
+       settlements, as Mr. Millbank assured Coningsby, were effected not only with the sanction, but
+       at the express instance, of his son.
+
+An event however occurred not very long after the marriage of Coningsby which rendered this
+       generous conduct of his father-in-law no longer necessary to his fortunes, though he never
+       forgot its exercise. The gentle and unhappy daughter of Lord Monmouth quitted a scene with
+       which her spirit had never greatly sympathized. Perhaps she might have lingered in life for
+       yet a little while, had it not been for that fatal inheritance which disturbed her peace and
+       embittered her days, haunting her heart with the recollection that she had been the
+       unconscious instrument of injuring the only being whom she loved, and embarrassing and
+       encumbering her with duties foreign to her experience and her nature. The marriage of
+       Coningsby had greatly affected her, and from that day she seemed gradually to decline. She
+       died towards the end of the autumn, and subject to an ample annuity to Villebecque, she
+       bequeathed the whole of her fortune to the husband of Edith. Gratifying as it was to him to
+       present such an inheritance to his wife, it was not without a pang that he received the
+       intelligence of the death of Flora. Edith sympathized in his affectionate feelings,
+        and they raised a monument to her memory in the gardens of Hellingsley.
+Coningsby passed his next Christmas in his own hall with his beautiful and gifted wife by
+       his side and surrounded by the friends of his heart and his youth.
+They stand now on the threshold of public life. They are in the leash, but in a moment they
+       will be slipped. What will be their fate? Will they maintain in august assemblies and high
+       places the great truths which in study and in solitude they have embraced? Or will their
+       courage exhaust itself in the struggle, their enthusiasm evaporate before hollow-hearted
+       ridicule, their generous impulses yield with a vulgar catastrophe to the tawdry temptations
+       of a low ambition? Will their skilled intelligence subside into being the adroit tool of a
+       corrupt party? Will Vanity confound their fortunes, or Jealousy wither their sympathies? Or
+       will they remain brave, single and true; refuse to bow before shadows and worship phrases;
+       sensible of the greatness of their position recognise the greatness of their duties; denounce
+       to a perplexed and disheartened world the frigid theories of
+        a generalizing age that have destroyed the individuality of man; and restore
+       the happiness of their country by believing in their own energies, and daring to be
+       great!
+THE END.
+</div></body></text></TEI>

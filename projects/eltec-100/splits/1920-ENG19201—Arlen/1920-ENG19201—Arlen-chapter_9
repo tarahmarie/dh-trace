@@ -1,0 +1,750 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The Project Gutenberg eBook of The London Venture, by Michael
+      Arlen. </title><author>Arlen, Michael [pseud.] (1895-1956)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1920</date></publicationStmt></teiHeader><text><body><div type="chapter" n="9">
+IX
+SOMEWHERE in these papers I have said that Shelmerdene left England, but I touched on it very
+     lightly, for I am only half-heartedly a realist, and may yet live to be accused of shuffling
+     humanity behind a phrase.... Youth must endure its periods of loneliness with what grace it
+     can; and youth could endure them as resignedly as its preceptors, if it were not for its
+     grotesque self-importance, which inflates loneliness to such a size that it envelopes a young
+     man's whole being, leaving him at the end a sorry wreck of what was once a happy mortal.
+     Anyway, that is what happened to me; I took the whole affair in the worst possible spirit, and,
+     during that probation time to wisdom, thought and wrote and did so many silly things, smashed
+     ideals and cursed idols with such morbid thoroughness and conviction (after the fashion of all
+     the bitterest young men), that I must have been as detestable
+      a person as ever trickled wheezily from the, well, pessimistic pen of a Mr.
+     Wyndham Lewis.... But it takes very little effort to forget that time entirely, to let it bury
+     itself with what mourning it can muster from the Shades which sent it to plague me. Enough that
+     it passed, but not before it had, as they say, "put me wise" about the world and its ways.
+For Shelmerdene had left behind her much more than just loneliness; much that was more
+     precious and, thankfully, more lasting; for she had found a young man shaped entirely of acute
+     angles and sharp corners, and had rubbed and polished them over with such delicate tact that it
+     was only months, after she had gone that I suddenly realised how much more fit I was to cope
+     with a complicated world since I had known her. But, more importantly, Shelmerdene to me was
+     England. Before I met her I did not know England; I knew English, but England only as a man
+     knows the landmarks about him in a strange country. But when she had come and gone England was
+     a discovered country, a vast and ever-increasing panorama
+      in which discoveries were continually made, leaving yet more hidden valleys of
+     discoveries still to be made—and to be enjoyed! So much and much more, O unbeliever, I learnt
+     from Shelmerdene, and in the learning of it lay the best and gladdest lesson of all.
+Time, they say, can efface all things, but in truth it can efface nothing but its own
+     inability to smooth out the real problems of life; so at least I have found in the one instance
+     in which I have challenged time to do its best for me, a slave bound down by an unholy
+     wizardry; or else, perhaps, it was that Shelmerdene was not made of the stuff which fades into
+     the years and becomes musty and haggard in their increasing company. I do not know. But, take
+     it as I will, all the service time has been able to do for me has been negative, for without
+     disarranging one hair of her head it has only emphasised in me the profound and subtle
+     influence of that gracefully licentious woman whom I once called Shelmerdene, because, I told
+     her, "it is the name of an American girl which I found in a very bad American novel about
+      the fanatical Puritans of New England, and the name seems to suit you because in
+     New England they would have treated you exactly as they treated Shelmerdene Gray, the heroine
+     of this book, whom they branded and burnt as a shameless woman, but loved in their withered
+     hearts for her gaiety, and elegance, and wit, which they couldn't understand, but vaguely felt
+     was as much an expression of Christ as their own wizened virtue."
+Out of the silence of two years at last came a letter from her. I found it when I came in
+     very late one night, and for a long time I stood in my little hall and examined the Eastern
+     stamp and postmark; and the writing on the envelope was so exactly the same as on the last note
+     she had sent me before leaving England that I had to smile at the idea of Shelmerdene, in the
+     rush of her last pursuit of her perfect fate, laying in a sufficient store of her own special
+     nibs to last her for the lifetime she intended to spend abroad; for when I opened the letter I
+     found that, as I had guessed, she would never come back to England, saying, "I am a fugitive
+      branch which has at last found its parent tree.... I have run my perfect fate to
+     earth, Dikran! more perfect than any dream, more lasting than the most perfect dream. And life
+     is so beautiful that I can scarcely bear your not being here to share it, for, you see, I am
+     quite sure that you are still the dear you were two years ago. But it is so tiresome of you to
+     be so young, and to have to experience so many things before you can qualify for my sort of
+     happiness; and on top of being young you are so restless and fussy, too, with your ideas of
+     what you are going to do, and your ambitions—how it must tire the mind to be ambitious! It
+     would certainly tire mine in this climate, so will you please make a note of the fact that I
+     simply forbid you to come out here to join me! You are too young to be happy, and you aren't
+     wise enough to be contented; and you can't hope to be wise enough until you begin to lose a bit
+     of that mane of hair of yours, which I hope you never will, for I remember how I loved one
+     particular wave in it in the far-off age when I thought I was in love with you.... It is
+     terrible, but I am forgetting
+      England. Terrible, because it must be wrong to forget one's country, seeing how
+     you oppressed nationalities go on remembering your wretched countries for centuries of years,
+     and throwing bombs and murdering policemen for all the world as though you weren't just as
+     happy as every one else, while I, with a country, which is after all worth remembering, go and
+     forget it after a paltry two years! Of course it will always be my country, and I shall always
+     love it for the good things it has given me, but as a fact in my life it has
+     faded into something more dim than a memory. A spell has been put upon me, Dikran, to prevent a
+     possible ache in my heart for the things I was born among, a spell which has made me forget
+     Europe and all my friends in it except just you, and you because, in spite of all your English
+     airs, you will always be a pathetic little stranger in a very strange land, fumbling for the
+     key.... Ah, this wise old East of mine! so old and so wise, my dear, that it knows for certain
+     that nothing is worth doing; and as you happen, perhaps, on the ruins of a long-dead city by
+     the desert, you can almost hear it
+      chuckling to itself in its hard-earned wisdom, as though to say that since God
+     Himself is that very same Law which creates men, and cities, and religions only to level them
+     into the dust of the roads and the sands of the desert, why fight against God! It is a corrupt
+     and deadening creed, this of the East, but it has a weight of ancestral will behind it which
+     forces you to believe in it; and belief in it leaves you without your Western defences, and
+     open to be charmed into non-resistance, as I and my Blue Bird have been charmed, else perhaps I
+     would not now be so happy, and might even be dining with you on the terrace of the Hyde Park
+     Hotel.... Rather bitterly you have often called me the slave of Ishtar, though at the time I
+     did not know who the lady was, for I was always rather weak about goddesses and such like; but
+     I guessed she had something to do with love because of the context, for you were developing
+     your pleasant theory about how I would come to a bad end, someday.... Well, Dikran, that
+     'someday' of your prophecy has come. I've never belonged so wholly to Ishtar as I do now that I
+     am perhaps
+      in the very same country in which she once haunted the imagination of the myriad
+     East. I've made a mess of life, I've come to my bad end, and, as I tell you, I have never known
+     such perfect happiness. The world couldn't wish me a worse fate, and I couldn't wish myself a
+     better.... Don't write to me, please. I can always imagine you much more clearly than your
+     letters can express you, and if I think of you as doing big things, as I pray you may, it will
+     be better for me than knowing that you are doing nothing at all, which might easily happen,
+     seeing how lazy you are.... In the dim ages I was all wrong about life. For I know now that
+     restraint in itself is the most perfect emotion...."
+I laid the letter down, and as the windows were already greying with the March dawn it did
+     not seem worth while going to a sleepless bed; and so I sat on in my chair, drawing my overcoat
+     round me for warmth, and smoked many cigarettes. I felt very old indeed, for was not that
+     letter the echo of a long-dead experience, and are not long-dead experiences the peculiar
+     property of old men?
+     
+
+No visions of the Shelmerdene of that letter came up to disturb my peace, for she did not fit
+     in with my ideas of the East, she had never appealed to that Eastern side which must be
+     somewhere in me, but had always been to me a perfect symbol of the grace and kindliness and
+     devilry of the arrogant West. I could not see her as she described herself, happy, meditative,
+     wise in contentment.... Her contentment is too much like an emotion, and therefore spurious, I
+     thought, and so she will still dine with me on the terrace of the Hyde Park Hotel, and will
+     wonder why I look so differently at her, for I will still be young while she will be
+      middle-aged.... No, that letter conjured up no perfect vision of her in the East,
+     except that I saw her, melodramatically perhaps, pleading on her knees for release from the
+     bonds of Ishtar, for I knew that not even a Shelmerdene among women can evade the penalty of so
+     many unsuccessful love-affairs just by the success of one.
+The grey of the March dawn became paler, and the furniture and books in my room seemed so wan
+     and unreal that I thought drowsily that they were a dream of last night and were fading before
+     the coming daylight; and later, when my thoughts had mellowed into a security of retrospect, I
+     may have slept, for I realised with a start that the maid had come in to tidy up the room for
+     breakfast, but had got no further than the door, perhaps wondering whether I had been very
+     drunk the night before, or only just "gay."
+Retrospect came naturally after that letter, for she had written at the end how she had found
+     the true worth of "restraint"; it would have been just a phrase in a letter if I had not
+     remembered, as she must have
+      when she wrote it, that the word had a context, and that the context lay in a
+     long summer afternoon on a silent reach of the river many miles from Maidenhead.... One day
+     that summer I had suggested to her that, as the world was becoming a nuisance with its heat and
+     dust, we might go and stay on the river for a few days, but she had said, quite firmly, "No, I
+     can't do that. I am not yet old enough to put my name down for the divorce stakes, so if you
+     don't mind, Dikran, we will call that bet off and think of something else. For if that same
+     husband heard of my staying on the river with a young man of uncelibate eye and uncertain
+     occupation, he would at once take steps about it, and although I like you well enough as a man,
+     I couldn't bear you as a co-respondent.... But if you really do want to stay on the river, I
+     will get the Hartshorns to ask us both down, for they have a delightful house on a little hill,
+     from which you can see the twilight creeping over the Berkshire downs across the river."
+"Oh, we can't do that," I said; "Guy
+      Hartshorn is such a stiffnecked ass and his wife is dull enough to spoil any
+     river—"
+"Tolerance, my dear, is what you lack," she said; "tolerance and a proper understanding of
+     the relation between a stiffnecked ass and a possible host. And Guy, poor dear, always does his
+     duty by his guests.... Please don't be silly about it, Dikran. The Hartshorns distinctly need
+     encouragement as hosts, so you and I will go down and encourage them. And if you can manage to
+     cloak your evil thoughts behind a hearty manner and watch Guy as he swings a racing punt down
+     the river, you will learn more about punting and the reason why Englishmen are generally
+     considered to be superior to foreigners than I could teach you in a lifetime."
+We had been two days at the house on the little hill by the river (for, of course, we went
+     there) before, on the third afternoon, after lunch, our chance came, and Shelmerdene and I were
+     at last alone on the river; I had not the energy to do more than paddle very leisurely and look
+     from here to there, but always in the end to come back to the
+      woman who lay facing me against the pale green cushions of the Hartshorn punt,
+     steeped in the happy sunshine of one of those few really warm days which England now and again
+     manages to steal from the molten South, and exhibits in a new green and golden loveliness. From
+     round a bend of the river we could quite clearly see the ivy-covered Georgian house of our
+     host, perched imperiously up on the top of its little hill, but not imperiously enough to
+     prevent the outlet of two days' impatience in the curse I vented on it.
+"Little man with little toy wants big toy of the same pattern and cries when he can't have
+     it," she mocked me, and smiled away my bad temper, which had only a shallow root in impatience.
+     But I would not let it go all at once, for man is allowed licence on summer afternoons on the
+     river, and I challenged her to say if she did not know of better ways of spending the whole
+     glorious time between dinner and midnight than by playing bridge, "as we tiresomely do at the
+     house on the hill, much to the delight of that sombre weeping elm which looks in at the
+      window and can then share the burden of its complaining leaves with my
+     pessimistic soul."
+"We will leave your soul severely alone for the moment, but as for playing bridge, I think it
+     is very good for you," she said. "It is very good for you to call three No Trumps, and be
+     doubled by some one who won't stand any nonsense, and go down four hundred or so. It teaches
+     you restraint."
+"Restraint," I said, "is the Englishman's art of concealing his emotions in such a way that
+     every one can guess exactly what they are. And I have acquired it so perfectly that you know
+     very well that only the other day you told me how you admired my restraint, and how I would
+     never say to a man's face what I couldn't say just as well behind his back." But she did not
+     answer, and in silence I pulled into a little aimless backwater, and moored by a willow which
+     let through just enough sun to speck Shelmerdene's dress with bright arabesques.
+I changed my seat for the cushions and lay full length in front of Shelmerdene, but it was as
+     though she had become part of the
+      river, she was so silent. I said something, I can't remember what it was, but it
+     must have suited the day and my mood. I could not see her face because she had turned it
+     towards the bank and it was hidden under the brim of her pale blue hat, but when my words had
+     broken the quietness and she turned it towards me, I was surprised at the firm set of her lips
+     and the sadness of her smile.
+"You are making love to me, and that is quite as it should be," she said. "But on the most
+     beautiful of all days I have the saddest thoughts, for though you laughed at me when I talked
+     about restraint, I was really very serious indeed. I know a lot about restraint, my dear, and
+     how the lack of it can make life suddenly very horrible ... for once upon a time I killed an
+     old man because I didn't know the line between my desires and his endurance." She shook her
+     head at me gently. "No, that won't do, Dikran. You were going to say something pretty about my
+     good manners, but that is all so much play-acting, and, besides, good manners are my trade and
+     profession, and
+      without them I should long ago have been down and under, as I deserve to be much
+     more than Emma Hamilton ever did.... The tragedy about people like me is that we step into life
+     at the deep end and find only the shallow people there, and when we meet some one really deep
+     and very sincere, like that old man, we rather resent it, for we can't gauge him by the
+     standards we use for each other. Men like that bring a sudden reality into life, but the
+     reality is unacceptable and always ugly because it is forced upon one, while the only realities
+     that are beautiful are those that were born in your heart when you were born; just like your
+     country for you, which you have never seen and may never see, and yet has been your main
+     reality in life since you were born; a reality as sad and beautiful as the ancestral memories
+     which must lurk somewhere in you, but which you can't express because you have not learnt yet
+     how to be really natural with yourself. And when you have learnt that you will have learnt the
+     secret of great writing, for literature is the natural raw material which every man secretes
+     within himself, but
+      only a few can express it to the world. But I may be wrong about all that, and
+     anyway you must know a great deal more about great thinking and great writing than I do, for
+     you have read about it in dull books while I have only sensed it in my trivial way...."
+"Shelmerdene, I want to hear about your old man," I said, "whom you say you killed. But that
+     is only your way of saying that he was in love with you, and that you hurt him so much that he
+     died of it."
+"Ah, if it had been only that I would not be so sad this afternoon! In fact, I would not be
+     sad at all, for he was old and had to die, and all that about love and being hurt is fair and
+     open warfare. But it was something much beastlier than that, something animal in me, which will
+     make me ashamed whenever I think of that day when we three gave our horses rein down to the
+     Breton coast, and I turned on the old man, a very spitfire of a girl broken loose from the
+     restraint of English generations, forgetting for one fierce moment that her saddle was not
+     covered with the purple of a Roman Augusta, and that she couldn't do as she
+      liked in a world of old men.... Have you ever seen a quarrel, a real quarrel,
+     Dikran? When some one is so bitterly and intensely angry that he loses all hold on everything
+     but his wretched desire to hurt, and unchains a beast which in a second maims him as deeply as
+     his enemy—no, it maims him more.
+"The old Frenchman was my guardian," she said, "and the last of a name which you can find
+     here and there in Court Memoirs, in the thick of that riot of gallantry and intrigue which
+     passed for life at old Versailles. But the world has grown out of that and does things much
+     better now, for gallantry has been scattered to the four winds of democracy and is the navvy's
+     part as much as the gentleman's, while intrigue has become the monopoly of the few darling old
+     men who lead governments, more as a way of amusing their daughters than for any special purpose
+     of their own. But if the world has grown old since then so had my old man, for he was none of
+     your rigid-minded cidevant aristos whom you can see any day at the Ritz
+     keeping up appearances on an occasional
+      cocktail and the use of the hotel note-paper; but the air of the grand
+      seigneur hadn't weathered proscriptions and revolutions for nothing, and so still
+     clung rather finely to him in spite of himself, and made him seem as old and faded as his
+     ancestors in the world in which he had to live, poor old dear! It was cruel of that other nice
+     old gentleman above him to put him through the ordeal, for he did so bitterly and genuinely
+     resent a world in which honour was second to most things and above nothing. He couldn't
+     forgive, you see. He couldn't forgive himself, nor France, nor God, but especially he couldn't
+     forgive France. Sedan, revolution, republic—and no Turenne or Bonaparte to thrash a Moltke with
+     the flat of his sword, for he wasn't worth more! And all a France could muster were the
+     trinkets of her monde and demimonde, and a threatening
+     murmur of 'revanche' and 'Alsace-Lorraine'—as though
+     threats and hatred could wipe out the memory of that day of surrender at Sedan, when he stood
+     not ten yards away among only too polite Prussian aides-de-camp while Napoleon put the seal
+      on his last mistake, and signed away an empire.... And allowing for exaggeration,
+     and the white-hot excitement to which folk who fuss about honour, etc., are liable, there may
+     have been something in his point of view about it all, for I once heard a man with a lot of
+     letters behind his name say that when a country gives up a limb it also gives up its body; but
+     he may have been wrong, for after all France is still France!
+"But you would have adored my old man, Dikran, just as I did. He treated life, and men, and
+     women with all that etiquette which you so admire, he was simply bristling with etiquette—a
+     deal too much of it for my taste, for I was only seventeen then and liked my freedom like any
+     other Englander.... But I'm finding it very difficult to describe the man he was, my dear, for
+     in our slovenly sort of English we've got used to describing a person by saying he is like
+     another person, and I can't do that in this case because he belongs as much to a past age as
+     Hannibal, and there isn't any one like him now. And even when he was alive there were very
+     few—two or three old
+      men as fierce and unyielding and vital as himself, who used to come and dine, and
+     say pretty things to little me who sat at the end of the table with very large eyes and
+     fast-beating heart, wondering why they weren't all leading Cabinets and squashing revolutions,
+     for they seemed to know the secrets of every secret cabal and camarilla in Europe.
+"Yes, my old guardian was a remnant of an empire—but what a remnant! Such a fierce-looking
+     little man he was, with pale, steel-blue eyes which pierced into you from under a precipice of
+     a forehead, a bristling Second Empire moustache, and thin bloodless lips which parted before
+     the most exquisite French I've ever heard; I can scarcely bear it when you say I talk French
+     divinely, for I know how pitiful mine is compared to the real thing, as done by that old man
+     and Sarah Bernhardt, for they were very old friends and she used often to come and lunch with
+     us.
+"He talked well, too, and all the better for having something to say, as well he might have
+     since he had been everything and
+      known every one worth knowing of his time—ministers, and rebels, and artists, and
+     all the best-known prostitutes of the day; but they did those things better then, Dikran. In
+     fact, more as an excuse for getting away from a parvenu Paris than from any Bonapartist
+     feelings, for he was always an Orleanist, I think he had represented Louis Napoleon at every
+     city which could run to an Embassy from London to Pekin; from where he brought back that ivory
+     Buddha which is on my writing-table, and which has an inscription in ancient Chinese saying
+     that every man is his own god, but that Buddha is every man's God, which goes a long way to
+     prove that the wisdom of the East wasn't as wise as all that, after all.
+"But you are getting restless," she said suddenly. "You probably want to open the tea-basket
+     to see what's inside, or you've just seen a water rat——"
+"No, it's a little more subtle than that, Shelmerdene, although as a fact I do see a water
+     rat not a yard from you on the bank.... I merely wanted to know how it was that, since you had
+     a perfectly good father
+      alive in England, you were allowed to go gadding about in France with a guardian,
+     soi-disant——"
+"We will ignore your soi-disant, young man. But I'll allow your interruption, for it may seem
+     a bit complicated.... It was like this: as the fortunes of our family had run rather to seed
+     through generations of fast women and slow horses, my father who was utterly a pet, succumbed
+     to politics for an honest living, or, if you pull a face like that about it, for a dishonest
+     living. For up to that time, in spite of having exactly the figure for it, he had always
+     refused to enter Parliament, because his idea was that the House was just a club, and one
+     already belonged to so many better clubs. But once there nothing could stop him, and when he
+     entered for the Cabinet stakes he simply romped home with a soft job and a fat income.... But
+     all that is really beside the point, for between politics and guineas father and I had had a
+     slight disagreement about a certain young man whom I was inclined to marry offhand, being only
+     sixteen, you know, and liking the young man—and, of course,
+      my father did the correct thing, as he always did, gave the young man a glass of
+     port and told him not to be an ass, and shipped me off to Paris to his very old friend. You
+     see, he knew about that old Marquis, and how I'd be quite safe in his care, for any young man
+     who as much as looked at me would have a pair of gimlet eyes asking him who the devil he might
+     be and why he chose to desecrate a young lady's virginal beauty by his so fatuous gaze.
+"I've been saying a lot of nice things about that old man to you, but I didn't feel quite
+     like that about him at the time. I liked him, of course, because he was a man; but all that
+     French business about the sanctity of a young maid's innocence got badly on my nerves, for
+     innocence was never my long suit even from childhood, having ears to hear and eyes to see; and
+     I soon began to get very bored with life as my old Frenchman saw it. So it wasn't surprising
+     that I broke out now and again just to shock him, he was so rigid, but I was always sorry for
+     it afterwards because he just looked at me and said not a word for a minute or so, and then
+     went
+      on talking as though I hadn't hurt him—but I had, Dikran! I had hurt him so much
+     that for the rest of the day he often couldn't bear to see me.... But though I was ashamed of
+     myself for hurting him, I couldn't stop; life with him was interesting enough in a way, of
+     course, but it left out so much, you see; it entirely left out the stupendous fact that I was
+     almost a woman, and a very feminine one at that, who liked an odd young man about now and again
+     just to play about with. But I wasn't allowed any young men, except a twenty-five-year-old
+     over-manicured Vicomte who was so unbearably worldly and useless that I wanted to hit him on
+     the head with my guardian's sword-stick, which he always carried about with him, as a sort of
+     mental solace, I think. No, there weren't any young men, nor any restaurants, for the old man
+     simply ignored them; my dear, there wasn't anything at all in my young life except a few old
+     dukes and dowagers, and the aforesaid young Vicomte, who had manicured himself out of existence
+     and was considered harmless. And so Paris was a dead city to me who lived in the heart
+      of it, and all the more dead for the faded old people who moved about in my life,
+     and tried to change my heart into a Louis-Quinze drawing-room hung with just enough beautiful
+     and musty tapestries to keep out the bourgeois sunshine and carelessness, which I so longed
+     for.
+"So I had to amuse myself somehow.... I was a bad young woman then, as I am a bad woman now,
+     Dikran; for I've always had a particular sort of vanity which, though it doesn't show on the
+     surface like most silly women's, is deep down in me and has never left me alone; a sort of
+     vanity which makes itself felt in me only in the off-seasons when no one happens to be in love
+     with me and I in love with no one, and tells me that I must be dull and unattractive, utterly
+     insignificant and non-existent; it is a weakness in me, but much stronger than I am, for I've
+     never resisted it, but been only too glad to fall in love again as soon as I could; and that is
+     why I've never made a stand against my impressionableness, why I've never run away from or
+     scotched a love-affair which I knew wouldn't last two weeks, however much
+      I loved the wretched man at the time; it was so much the line of least
+     resistance, it drowned that infernal whisper in me that I was of no account at all in the
+     world. But the tragedy of it was, and is, my dear, that indulgence made the monster grow; it
+     was like a drug, for as soon as the off-season came again it was at its old tricks with twice
+     its old virulence and malice, and, of course, I gave way again. And so on, and so on—did you
+     murmur dies iræ, Dikran? Well, perhaps, but who knows? There's a Perfect
+     Fate for every one in this world, and if any one deserves to find it, it's myself who has
+     failed to find it so often....
+"At that time that wretched vanity of mine was only a faint whisper, but there it was, and it
+     had to be satisfied, or else I should have become a good woman, which never did attract me very
+     much. I simply had to amuse myself somehow—and so I formed la grande idée of
+     my young life, just as Napoleon III had long ago formed his equally grande
+      idée about Mexico and Maximilian, and with the same disastrous results. True, there
+     was no young man about, but there was a man, anyway,
+      and a Marquis to boot, even though he was a bit old and rigid. But it was exactly
+     that rigidity of his which I wanted to see about; I wanted to find out things, and in my own
+     way, don't you see? And so, deliberately and with all the malice in me, I set out to subdue the
+     old man. Not childishly and gushingly, although I was so young, but with all the finesse of the
+     eternal game, for clever women are born with rouge on their cheeks.
+"But it was a disappointing business; I didn't seem to make the impression I wanted to make;
+     all my finesse went for nothing, except as signs of the affection of a ward. Obviously, I
+     thought hopelessly, I don't know all there is to be known about subduing old French marquises,
+     and I had almost decided to try some other amusement when one May morning, a few months after
+     my father had died and appointed him as my guardian and executor, he came into my little
+     boudoir, looking more stern and adorable than ever. And as he came in I knew somehow that big
+     things were coming into my little life; I don't know how, but I knew it
+      as surely as I knew that for all his grand air of calmness he was as shy as any
+     schoolboy.
+"'My child,' he said very gently, 'I am intruding on you only because I have something to say
+     to you of the utmost importance and delicacy. I am too old and too much of the world to do
+     things by impulse, and so if I seem to offend against your unworldliness now it is not because
+     I have not thought very carefully about what I am going to say.... And I beg you not to count
+     it as any more than the suggestion of an old man who thinks only of your good, and to tell me
+     quite frankly at the end what you think of it.
+"'My old friend, your father,' he said, 'honoured me by placing you entirely in my charge as
+     guardian and executor; but on looking into matters I find that he has left very little for me
+     to do in the latter capacity—very little, in fact, besides that small estate in Shropshire
+     which is entailed on you and your children, as with all its associations of that beautiful
+     girl—scarcely older than you are now, your mother—your father could not
+      bear the thought of it ever passing to strangers. And so, my child, without any
+     reflection on my friend, when you leave my care you enter the world with an old enough name to
+     ensure your position, but without the income to maintain it, and, if you will forgive me, a
+     quite insignificant dot; though in your case, as in your beautiful
+     mother's,' he added, with his little gallant smile, the first and last of the morning, 'a
+      dot would be the requirement of a blind man.
+"'All this preamble must seem very aimless and tiresome to you, but I wish to put all the
+     facts before you, my dear, before asking you to take the responsibility, as indeed it is, of
+     weighing the suggestion I am going to make.... You must have seen that I am out of sympathy
+     with this modern world of yours, that I belong to some other period, better or worse, what does
+     it matter? And this world, my child, has little use for those hard-headed persons who cannot
+     change the bent of their minds according to its passing whims, and so it has little use for me
+     who cannot and will not change.... Do you understand? I mean that I am an old
+      man who is every day losing touch with life, and that I know here, quite
+     certainly, that I have only a very few more years to live. Do not look sad, child,' he said,
+     almost impatiently, 'it is not that I am complaining, but that I wish you to understand my
+     thoughts.... Into an old life you have come like a ray of sunshine which is even now making
+     light of your little puzzled frown; and I have a debt of gratitude to pay to you, my child,
+     which I wish to pay at the expense even of your young peace of mind this morning. Although this
+     new world has passed out of my grasp, and will soon pass out of my understanding, I know that
+     it is the proper setting for you, the only subtle and beautiful thing that I have found in it,
+     and my greatest wish is to leave you in a position worthy of your beauty and intelligence. It
+     is not that I am afraid for you, for you are no trivial chit of a girl, but merely that I wish
+     to leave you both happy and independent.... And, as it is, I can do nothing, nothing at all!
+     For it has been a fixed rule of our family that we may not leave our fortune and property to
+     any one
+      who does not bear our name, and thus, though my nephew and I have had no occasion
+     to meet for some fifteen years, I must leave him such money as I have and all this not
+     unappreciated furniture.... And that is why, my child, because of my wish to leave you all I
+     have, I have been forced to suggest the only alternative, for I would not have even considered
+     it otherwise, that you should consent to bear my name with me for the few years I have to live,
+     and then, as a young and beautiful widow of means, and bearing an old French name which may
+     still be worth a little consideration, you can take your fit position in the world in which
+     you, and not I, were born to be happy....'
+"There it is, Dikran, or as much of it as I can remember. And do you need a setting for it?
+     Oh, yes, you do, for you are a little lost. Imagine then, sitting by a window of a large house
+     in the Rue Colbert, a young girl with a battered copy of Madame Bovary
+     skilfully hidden beside her, and a little erect old man, very stiff but
+      soigné, and cruelly aged by the sunlight which poured blessedly into the
+     room, standing by the arm of her
+      chair, asking her to marry him. Oh! but you can't imagine it, you will think of
+     him as pleading, and of me as surprised. He didn't plead, he couldn't and I, my dear, by the
+     time he had finished, wasn't surprised.... I knew, you see. Why, I knew everything! Lexicons
+     and encyclopædias had toppled off their dusty shelves, and the Sibylline books had come running
+     to my feet, and the whole world had come trotting out with its wisdom, wisdom as clear and cold
+     as any Dán-nan-Rón that your friend Gloom ever played on his feadan, and all
+     in the few minutes that an old man was speaking to me! Of course, it should all have happened
+     differently; I should have been just a 'trivial chit of a girl,' and then I would have accepted
+     all the old darling said, and gaped, and cried, and said 'thank you.' But as it was I did none
+     of those things; I'm not quite sure what I did, unless it was nothing at all.... It all seems
+     rather mixed now, but on that May morning it was as clear as the sunlight in my cruel young
+     mind—how young and how cruel, Dikran!
+"You see, as he spoke, he opened out the
+      world which he so despised to me; page by page he showed me life, how beastly and
+     how beautiful; he showed me both sides, because he himself was both beastly and beautiful....
+     And I gloried in it all! At my knowledge and the power it gave me over life. After a while the
+     old man didn't seem to matter—there he was, talking away! I knew about him, and just how
+     beastly and beautiful he was. For he was beautiful in his sincerity; I knew that
+     he wished for my good, that to leave me well provided was the only condition he made with
+     death; but I knew too that there was a beastly little imp somewhere in him, as in other men,
+     which turned his finest thoughts into so much bluff, which told him through the locked and
+     bolted doors of his honour that he wanted me for my own sake, and just for that, because I was
+     young and because he loved me, and, stripped of all his honour and guardianship, because he
+     loved me just as Solomon loved his wives, and Lucifer loved Lilith, and as you love me
+     now....
+"There it was, then, the whole damnable world, and I, only eighteen, in the middle
+      of it! And there he was, my dear old man, more rigid and more adorable than ever;
+     for, cruel as I was in seeing through him, I loved him all the more for his sweet naïveté and
+     for his old, so old illusions about his motives. While as for being shocked at the way he loved
+     me, I've never been shocked by anything but the vulgarity and the indecencies of respectable
+     people, who seem to think that sex is purely a sort of indoor sport to be indulged in darkness
+     and behind barricaded doors, while it is really a setting for the most beautiful Bacchanal that
+     was ever devised by the fairest and purest of God's children. In spite of bibles and the Bishop
+     of London, Mary knew what she was about, Dikran. Love doesn't grow anywhere, to be picked up by
+     the wayside. Pure beauty grows only where beauty already is....
+"But, wise as I was, I didn't know what to say; what could I say? He was waiting; I had to
+     say, do something. I did—flung my arms round his neck and told him he was a pet to be so nice
+     to me, and that I must think about it. For the first time that he had wanted me to behave like
+     a woman
+      I behaved consciously like a child—it seemed the easiest way out. And I think he
+     saw that I was acting; he had expected something else, for he smiled very sadly down at me, and
+     patted my hair, saying I was a sweet child not to be angry with him for making life so suddenly
+     serious, and then, very gently, he went away, leaving me in the sunshine, a playmate of the
+     gods.... And yet I was so sorry for him that I almost cried when I thought of him sitting alone
+     and lonely in his library.
+"We never spoke of it again. At first it was as though he was waiting for me to say yes, or
+     no, or something, but I didn't say anything, and, later, he seemed to forget. I didn't do it
+     out of cruelty, my dear; I simply couldn't say anything, that's all. After sunshine, rain, you
+     know; I was dismal, frightened of him a little. The romance of that May morning when he had
+     come to me in my room had become a ridiculous fantasy, so that it seemed to me that any
+     reference to it would rather tarnish the very splendid dignity which he had kept, and sort of
+     increased, through it all. Besides,
+      anyway, what was there to say? I had made up my mind as he spoke that morning,
+     through all the clearness of my new-found knowledge. I had never a doubt as to what I was going
+     to do. It wasn't in me to do as he asked, or rather, as he advised, the old dear! I wish it had
+     been in me, for to be a rich French marquise without a marquis is no bad fate for any girl, and
+     it might have helped me to steer clear of many complications. But I couldn't, because all my
+     life, Dikran, I've been cursed by an utter inability to make any money out of love. And that is
+     why I would never be a success in my mother's country of America, where men throw pearls and
+     beauty roses about as a matter of course and are very offended if one suggests an economical
+     flirtation on a gross of diamonds and a hundredweight of Russian sables.... It isn't that I am
+     mean-minded, but I cannot take presents from men who love me, for, after all, the old Marquis'
+     offer was a present. When I see other women with relays of fur coats, and pearl necklaces, and
+     no visible means of support, I am thoroughly sorry for myself,
+      for it isn't through any excess of morals that I haven't just as many furs and
+     pearls; it is simply because I don't see life that way, as, ten years ago, I didn't see life as
+     the wife of an old man, whom I adored but didn't love, and couldn't have thought of marrying
+     him even if he had promised to arrange for his death an hour after the wedding.... Do you
+     understand, Dikran? For all this while I've been trying to tell you that whatever else I am
+     not, I am an honest woman; a very upright gentleman in my way, which is more than you can say
+     for most really nice women.
+"The reason why realistic tragedies are impossible, or at best only melodramatic, on the
+     stage is that the Person who arranges life has no sense of drama at all. Imagine how Sardou,
+     the wretched man who turned Sarah Bernhardt into an exhibition, would have worked it out: the
+     young girl would have run away from the lustful old man to Nice; the old man would have
+     followed her to her boarding-house and made faces at the landlady's fair-haired son, who was
+     the girl's destiny; a duel, tears, another duel, more tears, and Sarah falling about the stage
+     in exhausted
+      attitudes, as well she might.... And then imagine how life worked out the tragedy
+     of that girl and old man; it let them be, or it seemed to let them be! No, God can have no
+     dramatic sense, as we know it, because all the tragedies He arranges for us are slow-moving, so
+     slow and moving none of the actors know whither; perhaps this tragedy we are acting will fade
+     away, they say hopefully to themselves, and leave us again happy and careless; a little later
+     they are happily sure that their tragedy is fading, there is no possible climax in sight, and
+     then suddenly, out of the inmost earth, from some really foul spot of their animal natures,
+     come the sudden ingredients for the tragical climax; the climax lasts only a second, but after
+     it no blessed curtain falls; God has interfered again, Life is more cruel than Art, He says, so
+     away with your tricks, your curtains and your finales. And I suppose He is right, you know; it
+     must be right that shameful memories live beside the beautiful ones, as twenty years from now
+     the memory of that old man and myself will live beside this very moment of you and I under this
+     willow; for
+      my abundant confession of it all seems to make it as much yours as mine,
+     Dikran.
+"My guardian and I lived on smoothly enough, then; as before I broke out now and again when
+     he stepped too sternly between myself and an amusing indiscretion, but rebellions always ended
+     in my smiling at some cutting remark of his, and in his always sweet dismissal of the subject;
+     there was nothing to show that we were different with each other. But we were, indeed we were.
+     I did not know it then, but I knew it very clearly later; how we two people, really loving each
+     other, though in our different ways, had found a deep, subtle antagonism in each other, a very
+     real antagonism, which it would have shamed us to realise at the time, and with a very real and
+     inevitable climax; but like God's creatures, mummers in yet another of His cruelly monstrous
+     plays, we thought the tragedy was fading, had faded, and were forgetting it, for what climax
+     could there possibly be?
+"Four or five months after that May morning he took me to stay at a château in Brittany; a
+     very beautiful, tumble-down,
+      draughty place, my dear, standing proudly at the head of a valley like a
+     dissipated actor who feels that he must have done great things in the past to be what he now
+     is, and with nothing to show for its draughty arrogance but a few rakish stones which were once
+     the embattlement from which the Huguenot seigneur of the day defied the old
+     Medici; and the slim, white-haired old woman who charmingly met me at the door, the châtelaine
+     of only one castle, but with the dignity of an empire in her kind, calm elegance. My hostess
+     and my guardian were old, old friends, and to watch them in their gentle, courteous intimacy
+     was a lesson on the perfect management of such things. When we are old and white-haired, will
+     you come and stay at my place, Dikran, and will you pretend that you have forgotten that you
+     ever liked me for anything else than my mind? Just like those two old people in the Breton
+     château, who a thousand years ago may have been lovers or may have only loved one another....
+     Who knows? and does it matter?
+"The idea of this visit, on my guardian's part, to the solitary château from whose highest
+      windows one could just see the sea curling round the Breton coast, was of course
+     excellent. He wanted me to be out of harm's way and entirely his own, and was there any better
+     way of achieving that than by putting me in a lonely château with only my hostess as an
+     alternative to himself? But, poor old dear, it didn't fall out like that; for we had only been
+     there two days when the alternative presented himself in the person of the young man of the
+     house, my hostess's son, the young lord of Tumbledown Castle.... He went and spoilt it all,
+     good and proper, did that young man. His mother hadn't expected him, my guardian didn't want
+     him, and I didn't mind him—there he was, all the way from England on a sudden desire to see his
+     mother, the only woman whom Raoul had ever a decent thought about, I suppose. (His name wasn't
+     really Raoul, you know, but it is a sort of convention that all young Frenchmen with the title
+     of Vicomte and with languid eyes and fragile natures are called Raoul.) For he wasn't by any
+     means a nice young man, except facially, but how was I to know that! And besides, the man
+      could sit a horse as gallantly as any young prince who ever went crusading, and I
+     strained my eyes in prolonging the little thrill I had when, the morning after he came, I saw
+     him from a window riding out of the gates and down into the valley, very much the young lord of
+     the manor, on the huge white stallion which, with such a master, defied a Republic and still
+     proclaimed him as the Sieur du Château-Mauvrai to the dour and morose-minded
+     peasants of the Breton villages....
+"When I say that Raoul was not a nice young man, I mean that he was a very agreeable
+     companion; but, like little Billee, in 'Trilby,' and Maurice, the stone-image of my dreams,
+     that poor young man couldn't love, it wasn't in him to love; but unlike the other two, who were
+     sweet about it and made up for it as much as they could, Raoul had taken it into his head that
+     love was all stuff and nonsense, anyway, and that he could do a deal better with the very
+     frequent and not very fastidious pretences of it; and, according to his little-minded lights,
+     he seems to have been right, for he had already done
+      fairly well for himself in London—this I found much later, of course—with a flat
+     in Mayfair which was much more consistent with the various middle-aged ladies who came to tea
+     with him than with the extent of his income.
+"No reasonable person could expect that a young man like that and I could stay in the same
+     house and no trouble come of it. But my guardian wasn't reasonable. He seemed still to expect
+     me to go riding with him, and let a perfectly good young man run to waste for want of a
+     companion to say pretty things to. Raoul and I, in that beautiful spot, were scarcely ever
+     allowed to be alone, and only twice did we manage to ride away together to the sea for a
+     delicious, exciting few hours; only twice, I said, for the second time was very definitely the
+     last.... Somehow the Marquis was always there. Not in any unpleasant way, but he would just
+     happen to come into the room or the particular corner of the large garden where we also
+     happened to be; he didn't rebuke or look sulky, he was just the same, except, perhaps, for a
+     little irony to Raoul, whom
+      he refused to take seriously as a young man of the world. And there is where the
+     old man made his mistake with me, for I, too, didn't take Raoul seriously; I took him for just
+     what he was, more knave than fool, a charming companion, and a very personable young man, as
+     far as being just 'personable' counts, and only so far. If I had been allowed to deal with the
+     matter in my own way, without let or hindrance, it would only have been very pleasant trifling,
+     and certainly no more; even as it was, the 'no more' part of it was still safe in my keeping,
+     thanks entirely to my having brought myself up properly; but for the rest a simple amusement
+     became a rather sordid tragedy, for God and guardian had combined to use a commonplace young
+     man as the climax to a faded and forgotten little fantasy, once sun-kissed by a May morning,
+     now to be shivered and scattered by the shrieking sea wind, discordant chorus enough for the
+     unmingled destinies of any Tristans and Isoldas, which kept forcing our horses apart on that
+     last morning of all, when we three rode by the sea, and made a world of anger for ourselves
+      because some one, something, had suddenly pushed us out of the other world where
+     we had been so careless and happy....
+"Once things happened, they happened quickly. For all my not taking him at all seriously, I
+     suppose I liked him quite a lot, really—I must have done, else I would not have been such a
+     fool. He was my first experience of dishonesty in man, and I suppose I wanted to plumb this
+     dishonesty of his to the depths, which was very stupid of me because he was much more likely to
+     find out about me than I about him.... Raoul had been at the château two weeks, and our little
+     affair had taken the important and unpleasant air of a conspiracy. Our own stay was to last
+     another month, and if it hadn't been that my guardian would not for the world have offended his
+     old friend by cutting short this long-looked-for visit, he would very soon have taken me away
+     from the so desecrating gaze of young Raoul.
+"On that day, towards evening, he and I had managed to steal out walking for an hour.
+     Agreeable enough as he was, he would have bored me if I had let him. But I
+      wanted him, I intended to keep him in my mind; I wanted him as an assertion of my
+     independence from the old man. As we went back up the drive to the château I carefully became
+     as animated and smiling as I could, for I knew that he would be watching us from the
+     drawing-room windows, and I wanted to irritate him as much as his incessant care was irritating
+     me, though that would have been impossible, for that evening I was absurdly, fiercely angry
+     with him. Life seemed made up of the interferences of old men. I didn't want old men in my
+     life. I wanted young men, and sunshine, and fun. And so, as Raoul and I went up the steps to
+     the massive door, and as I turned to him just below the drawing-room window and gave him my
+     most trustful smile, I was feeling reckless, unrestrained, fiercely independent.... Oh, Dikran!
+     what idiocies we do for the fancied sake of independence!
+"It was time to dress for dinner, so I left Raoul and went straight to my room. A minute
+     later came a knock on the door, and as I turned sharply from the mirror, it
+      opened and Raoul stood there, rather shy, smiling. I wasn't old enough to know
+     the proper way of dealing with young men in one's bedroom, even if I had overpoweringly wanted
+     to.
+"'I had an impulse,' he said, but he still stood in the doorway, a little question somewhere
+     about him. I didn't answer it; just watched him, rather interested in his methods.
+"'Because,' he went on, 'I used to sleep in this room once, and remember it as a dreary
+     little place, and I wanted to see what it looked like with you in it.' Poor silly fool, I
+     thought, but rather loved him. I have found since then, though, that his fatuous speech was
+     quite the proper one to make, for the established way of entering a woman's room is by
+     expressing an interest in the furniture, thus making the lady self-conscious and not so sure
+     about her dignity; seductions are successful through women fearing to look fools if they refuse
+     to be seduced.
+"But this time, as he spoke, he closed the door behind him and came into the room towards
+      me. 'This isn't playing fair, Raoul,' I only said; 'you will get me into a
+     row.'
+"'Fair!' he said, lifting his eyebrows, the gallant ass. 'My sweet, do you think anything
+     real is fair in this world? And don't you trust me? That isn't fair of you, you know—haven't I
+     made love to you for two weeks, haven't I loved you for two weeks, haven't I loved you all my
+     life—and now?' And with that he had me in his arms, not for the first time, mind you, but this
+     time very differently; and, over his shoulder, as he held me, I saw the door open, and the
+     Marquis stood there, outraged. Raoul didn't seem to know, still held me, and I, for a paralysed
+     moment, couldn't move, just stared at the old man standing very stiffly in the doorway, a hand
+     outstretched on the door-knob—hell seemed to have opened for him through that door, and he
+     could move as little as I. At last I jumped away from Raoul with a sort of cry, and he turned
+     quickly round to the door. He didn't go pale, or look a fool; he must have made a study of such
+     contretemps; nothing was said,
+      the old man waiting in the doorway, with words terribly smothered; he moved aside
+     a little from the door as though to let a dog slink through. But Raoul wasn't going to slink;
+     he was rather pink, negligent, resigned; and as, without the least hurry, he bent over my
+     fingers and his eyes smiled gently at me, I found myself admiring him, really loving him for
+     the first time. Women are like that.... All this, of course, had happened in less than a
+     minute; from point of time my guardian came into my room and Raoul left it—but in point of fact
+     a great deal happened. For, as Raoul left me and walked across the room to the door, and
+     through it without taking the least notice of the old man, and as I heard his even steps
+     receding down the parquet corridor, my first paralysed fear simmered in me
+     and boiled up into a fierce, vixen anger. I simply trembled now with anger at the old man as I
+     had first trembled with fear of him. What right had he to be standing there, ordering about my
+     life and my young men? What right had he to be closing the door, as he was doing now? What
+     right, what right? The
+      words were throbbing inside me, just those words, fixed unrestrainedly on the old
+     man, who had made a step towards me, and stopped again....
+"'Child!' the pain in that one word, the lack of anger in it, an utter, absolute pain
+     accusing me, did not soothe. Accuse me? By what right?
+"The scene was dreadful, Dikran. I can't tell you what we said, what I said, for I did most
+     of the scene-making. He just forbade me to talk again alone with Raoul or to go out with him;
+     said he would take me away to-morrow if it weren't that explanations would then be necessary to
+     our hostess, who was in feeble health and might be killed by such a disgrace as this in her own
+     house. As for Monsieur le Vicomte, he himself would arrange that I did not see him for longer
+     time than could be helped. That's all he said, but my white heat took little notice of his
+     commands. I said I don't know what—it must all have been terrible, for it ended on a terrible
+     note. Dikran, how could I have done it? I pointed at the door and asked him how he could think
+     he had more
+      right in my room than Raoul, for though he was my guardian our relations had been
+     changed by a certain proposal, which perhaps he remembered.... A look at me, in which was the
+     first and last contempt that's ever been given me, and the door closed on the wonderful old
+     man.
+"Dinner that night passed off quite well considering the unsettled climatic conditions
+     aforesaid. Myself didn't contribute much, but my guardian and Raoul talked smoothly away about
+     anything that came, while Madame, our hostess, smiled sweetly at us all, on brooding me in
+     particular.... Quite early I made for bed; the old man and I hadn't exchanged a word all
+     evening, and his 'good night' was a little bow, and mine cold. As I passed Raoul he cleverly
+     put a small piece of paper into my hand. Upstairs in my room, that piece of paper said that he
+     would be going away in a day or two, and would I ride with him to-morrow morning before
+     breakfast, at seven o'clock. Of course I would.
+"It was all a silly business, Dikran. If I had ever been in love with Raoul, I certainly
+      wasn't that morning when we rode away from the gloomy, silent château, a little
+     frightened by our own bravado; for that is all it was. But later, as we reached the sands, I
+     forgot that, I forgot Raoul, though of course he always talked; I was enjoying the horse under
+     me, the summer morning, the high sea wind dashing its salt air against my cheeks; I was
+     enjoying every one of those things more than the company of the young man, but, tragically, my
+     guardian could not know that.
+"We had been out about half an hour when Raoul, looking back over his shoulder, murmured,
+     'Ah!' 'What is it?' I asked. I could barely force my little voice through the wind. 'That old
+     man,' Raoul said indifferently. 'It seems that he too is out to take the salt air.' Yes, there
+     was a figure on horseback, perhaps half a mile behind us but rapidly gaining on our slow
+     canter. I had forgotten my anger, but now again it thrust itself viciously on me.
+"'Come on, let's give him a run,' I said, a little excitedly.
+"'Oh, no! I am not a baby to be chased
+      about by my own guests or other people's grandfathers!'
+"Affected idiot, I thought, and we rode on in silence. So really silly it all was, my dear;
+     for if it hadn't been for my anger, the natural reaction, in a way, of the muffled life I had
+     led with him, I had much sooner been riding with the old man than with the young one. But that
+     feeling didn't last long—no one gave it a chance to last. For at last, after what seemed an
+     age, his horse drew beside mine, and I heard his voice distantly through the wind, saying,
+     'Sandra! You must come back.' I didn't answer, but worse, I looked sideways at him and laughed.
+     It was the first time that I had ever seen him in the least bit ridiculous, and my laugh took
+     advantage of it. Raoul was a yard or so ahead of us and was giving his horse rein, and so I put
+     mine to the gallop—and heigh-ho! there were the three of us racing away on the Breton
+     sands—until, with wonderful and dangerous horsemanship, my guardian's horse leapt a yard or so
+     ahead and swung broadside round in front of our startled horses. Near as anything there were
+      broken collar-bones. Our horses reared high up, almost fell backwards, nearly
+     braining the old man with their frantic hoofs, and then at last took the ground, startled and
+     panting. My guardian didn't wait. He pointed his whip at Raoul and said sternly, 'If I were not
+     a guest at your mother's house I would thrash you, for that is what you need'; and then to me,
+     harshly, 'Come, Sandra. Enough of this nonsense. Home.'
+"'Not I,' I cried against the wind. 'I'm enjoying my ride.' And round his horse I went,
+     towards the sea, leaving them to their argument. I almost wanted him to follow me, I was so
+     bitterly angry. I don't know what I thought I would do—but I suppose I didn't think.
+"I must have galloped two hundred yards or so when he was beside me again. I took no notice;
+     we rode on, almost knee to knee. And then I saw his hand stretch out, clutch my rein, and pull;
+     I saw red, I saw nothing, or just his old, lined face bending over ... and, my dear, I swung my
+     riding-whip as hard as I could across it. The hand left my rein, but my horse had already been
+     pulled
+      up. I don't remember what happened. I stared at him as unbelievingly as he stared
+     at me. I seemed to see a weal across his face, where my whip had struck him—had I done that?
+     And then he smiled. Dikran, that dear old man smiled after that horrible insult, so sweetly and
+     sadly.
+"'That then is the end, my child,' he said very gently; and then he left me, and for a long
+     time I watched him as he rode slowly away. Frightfully ashamed.
+"It was done, irretrievably; such things can't be forgiven, except in words; and as far as
+     words went he, of course, forgave me. A few hours later I saw him in the hall; he was going to
+     pass me, but suddenly I flung my arms about him, begging him ... very pitiful, dreadful thing I
+     was. He was splendid. He said very softly into my ear that of course he forgave me, but that he
+     was too old to have a proper control over his memory, and so couldn't forget, and that he was
+     too old to be hurt any more, and so this would be the very last time, for he didn't think it
+     would be wise for me to live with
+      him any more. 'Sandra, my child, you must not think me too unkind for sending you
+     away, but I think it is the best plan. You have lived with an old man long enough—it was a
+     mistake. I see now that it was a mistake. You must forgive me, child. I was wrong to keep you
+     so long. I thought, perhaps, it might have been different....' He was inexorable about that,
+     and it wasn't my place to, I couldn't, beg him to keep me. I, who had hurt him so much!
+"He must have made some excuse to our hostess, for the next day saw us in Paris. Raoul? Oh, I
+     never noticed him any more. And two days later I was with a stodgy uncle in Portman Square,
+     hating London but hating myself more. I have been miserable many times, but never so
+     shamefacedly as then, during the two weeks which passed between my arrival in London and the
+     coming of that note from the old man's valet, saying that Monsieur le Marquis was very ill, and
+     the doctor said he would die; and so he had taken the liberty of writing to me, without
+     permission, in case I should like to go and
+      see him; would I be so kind as not to tell Monsieur le Marquis that he had
+     written to me?
+"Like a young woman to a dying lover, I went to Paris, and with a terrible flutter in my
+     heart stood on the doorstep of the stern-looking house in the Rue
+     Colbert.... They hadn't told him I was coming, but he must have expected me, for
+     there was no surprise in the smile with which he met the timid little figure which came into
+     his room. He seemed to me not ill, but just dying; he looked the same, only very tired. And
+     then I realised that he was dying because he wanted to die. An angry girl had shown him that
+     life was indeed not worth living, and so he was stopping his heart with his own hand.... It was
+     terrible to realise that as I stood by his bed and he smiled quite gaily up at me. The weakness
+     was too strong inside him, and he couldn't speak, just patted my hand and held it very
+     tightly.... I was very glad when I was out of that room, and I did not see him again before he
+     died early the next morning.
+"And so you see, Dikran, for all your talk
+      of dies iræ in the future, I've already had my dies
+      iræ, and very sadly, too—and been the wiser for it in restraint."
+Then it was that I realised with a start that my housemaid was staring at me from the door in
+     the grey March morning, and that I was not listening to Shelmerdene in a backwater of the
+     Thames, but was in London, where there is less time for cherishing one's ideals than for
+     enquiring into other people's....
+</div></body></text></TEI>

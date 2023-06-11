@@ -1,0 +1,229 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Felix Holt, the Radical</title><author>Eliot, George [pseud.] (1819-1880)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1866</date></publicationStmt></teiHeader><text><body><div type="chapter" n="1">
+INTRODUCTION.
+Five-and-Thirty years ago the glory had not yet departed from the old coach-roads:
+     the great roadside inns were still brilliant with well-polished tankards, the smiling glances
+     of pretty barmaids and the repartees of jocose ostlers; the mail still announced itself by the
+     merry notes of the horn; the hedge-cutter or the rick-thatcher might still know the exact hour
+     by the unfailing yet otherwise meteoric apparition of the pea-green Tally-ho or the yellow
+     Independent; and elderly gentlemen in pony-chaises, quartering nervously to make way for the
+     rolling swinging swiftness, had not ceased
+      to remark that times were finely changed since they used to see the pack-horses and hear
+     the tinkling of their bells on this very highway.
+In those days there were pocket boroughs, a Birmingham unrepresented in Parliament and
+     compelled to make strong representations out of it, unrepealed corn-laws, three-and-sixpenny
+     letters, a brawny and many-breeding pauperism, and other departed evils; but there were some
+     pleasant things too, which have also departed. Non omnia grandior oetas quoe fugiamus
+      habet , says the wise goddess: you have not the best of it in all things, O youngsters!
+     the elderly man has his enviable memories, and not the least of them is the memory of a long
+     journey in mid-spring or autumn on the outside of a stage-coach. Posterity may be shot, like a
+     bullet through a tube, by atmospheric pressure from Winchester to Newcastle: that is a fine
+     result to have among our hopes; but the slow old-fashioned way of getting from one end of our
+     country to the other is the better thing to have in the memory. The tube-journey can never lend
+     much to picture and narrative; it is as barren as an exclamatory O! Whereas the happy outside
+     passenger seated on the box from the dawn to the gloaming gathered enough stories of English
+     life, enough of English
+      labours in town and country, enough aspects of earth and sky, to make episodes for a
+     modern Odyssey. Suppose only that his journey took him through that central plain, watered at
+     one extremity by the Avon, at the other by the Trent. As the morning silvered the meadows with
+     their long lines of bushy willows marking the watercourses, or burnished the golden corn-ricks
+     clustered near the long roofs of some midland homestead, he saw the full-uddered cows driven
+     from their pasture to the early milking. Perhaps it was the shepherd, head-servant of the farm,
+     who drove them, his sheep-dog following with a heedless unofficial air as of a beadle in
+     undress. The shepherd with a slow and slouching walk, timed by the walk of grazing beasts,
+     moved aside, as if unwillingly, throwing out a monosyllabic hint to his cattle; his glance,
+     accustomed to rest on things very near the earth, seemed to lift itself with difficulty to the
+     coachman. Mail or stage coach for him belonged to that mysterious distant system of things
+     called "Gover'ment," which, whatever it might be, was no business of his, any more than the
+     most out-lying nebula or the coal-sacks of the southern hemisphere: his solar system was the
+     parish; the master's temper and the casualties of lambing-time were his
+      region of storms. He cut his bread and bacon with his pocket-knife, and felt no
+     bitterness except in the matter of pauper labourers and the bad-luck that sent contrarious
+     seasons and the sheep-rot. He and his cows were soon left behind, and the homestead too, with
+     its pond overhung by elder-trees, its untidy kitchen-garden and cone-shaped yew-tree arbour.
+     But everywhere the bushy hedgerows wasted the land with their straggling beauty, shrouded the
+     grassy borders of the pastures with cat-kined hazels, and tossed their long blackberry branches
+     on the corn-fields. Perhaps they were white with May, or starred with pale pink dogroses;
+     perhaps the urchins were already nutting amongst them, or gathering the plenteous crabs. It was
+     worth the journey only to see those hedgerows, the liberal homes of unmarketable beauty—of the
+     purple-blossomed ruby-berried nightshade, of the wild convolvulus climbing and spreading in
+     tendrilled strength till it made a great curtain of pale-green hearts and white trumpets, of
+     the many-tubed honeysuckle which, in its most delicate fragrance, hid a charm more subtle and
+     penetrating than beauty. Even if it were winter the hedgerows showed their coral, the scarlet
+     haws, the deep-crimson hips, with lingering brown leaves to make a
+      resting-place for the jewels of the hoar-frost. Such hedgerows were often as tall as the
+     labourers' cottages dotted along the lanes, or clustered into a small hamlet, their little
+     dingy windows telling, like thick-filmed eyes, of nothing but the darkness within. The
+     passenger on the coach-box, bowled along above such a hamlet, saw chiefly the roofs of it:
+     probably it turned its back on the road, and seemed to lie away from everything but its own
+     patch of earth and sky, away from the parish church by long fields and green lanes, away from
+     all intercourse except that of tramps. If its face could be seen, it was most likely dirty; but
+     the dirt was Protestant dirt, and the big, bold, gin-breathing tramps were Protestant tramps.
+     There was no sign of superstition near, no crucifix or image to indicate a misguided reverence:
+     the inhabitants were probably so free from superstition that they were in much less awe of the
+     parson than of the overseer. Yet they were saved from the excesses of Protestantism by not
+     knowing how to read, and by the absence of handlooms and mines to be the pioneers of Dissent:
+     they were kept safely in the via media of indifference, and could have registered
+     themselves in the census by a big black mark as members of the Church of England.
+
+But there were trim cheerful villages too, with a neat or handsome parsonage and grey church
+     set in the midst; there was the pleasant tinkle of the blacksmith's anvil, the patient
+     cart-horses waiting at his door; the basket-maker peeling his willow wands in the sunshine; the
+     wheelwright putting the last touch to a blue cart with red wheels; here and there a cottage
+     with bright transparent windows showing pots full of blooming balsams or geraniums, and little
+     gardens in front all double daisies or dark wallflowers; at the well, clean and comely women
+     carrying yoked buckets, and towards the free school small Britons dawdling on, and handling
+     their marbles in the pockets of unpatched corduroys adorned with brass buttons. The land around
+     was rich and marly, great corn-stacks stood in the rick-yards— for the rick-burners had not
+     found their way hither; the homesteads were those of rich farmers who paid no rent, or had the
+     rare advantage of a lease, and could afford to keep their corn till prices had risen. The coach
+     would be sure to overtake some of them on their way to their outlying fields or to the
+     market-town, sitting heavily on their well-groomed horses, or weighing down one side of an
+     olive-green gig. They probably thought of the coach with some contempt, as an accommodation for
+     people who had
+      not their own gigs, or who, wanting to travel to London and such distant places, belonged
+     to the trading and less solid part of the nation. The passenger on the box could see that this
+     was the district of protuberant optimists, sure that old England was the best of all possible
+     countries, and that if there were any facts which had not fallen under their own observation,
+     they were facts not worth observing: the district of clean little market-towns without
+     manufactures, of fat livings, an aristocratic clergy, and low poor-rates. But as the day wore
+     on the scene would change: the land would begin to be blackened with coal-pits, the rattle of
+     handlooms to be heard in hamlets and villages. Here were powerful men walking queerly with
+     knees bent outward from squatting in the mine, going home to throw themselves down in their
+     blackened flannel and sleep through the daylight, then rise and spend much of their high wages
+     at the ale-house with their fellows of the Benefit Club; here the pale eager faces of
+     handloom-weavers, men and women, haggard from sitting up late at night to finish the week's
+     work, hardly begun till the Wednesday. Everywhere the cottages and the small children were
+     dirty, for the languid mothers gave their strength to the loom; pious Dissenting women,
+     perhaps, who
+      took life patiently, and thought that salvation depended chiefly on predestination, and
+     not at all on cleanliness. The gables of Dissenting chapels now made a visible sign of
+     religion, and of a meeting-place to counterbalance the ale-house, even in the hamlets; but if a
+     couple of old termagants were seen tearing each other's caps, it was a safe conclusion that, if
+     they had not received the sacraments of the Church, they had not at least given in to
+     schismatic rites, and were free from the errors of Voluntaryism. The breath of the
+     manufacturing town, which made a cloudy day and a red gloom by night on the horizon, diffused
+     itself over all the surrounding country, filling the air with eager unrest. Here was a
+     population not convinced that old England was as good as possible; here were multitudinous men
+     and women aware that their religion was not exactly the religion of their rulers, who might
+     therefore be better than they were, and who, if better, might alter many things which now made
+     the world perhaps more painful than it need be, and certainly more sinful. Yet there were the
+     grey steeples too, and the churchyards, with their grassy mounds and venerable headstones,
+     sleeping in the sunlight; there were broad fields and homesteads, and fine old woods covering a
+     rising ground, or
+      stretching far by the roadside, allowing only peeps at the park and mansion which they
+     shut in from the working-day world. In these midland districts the traveller passed rapidly
+     from one phase of English life to another: after looking down on a village dingy with
+     coal-dust, noisy with the shaking of looms, he might skirt a parish all of fields, high hedges,
+     and deep-rutted lanes; after the coach had rattled over the pavement of a manufacturing town,
+     the scene of riots and trades-union meetings, it would take him in another ten minutes into a
+     rural region, where the neighbourhood of the town was only felt in the advantages of a near
+     market for corn, cheese, and hay, and where men with a considerable banking account were
+     accustomed to say that "they never meddled with politics themselves." The busy scenes of the
+     shuttle and the wheel, of the roaring furnace, of the shaft and the pulley, seemed to make but
+     crowded nests in the midst of the large-spaced, slow-moving life of homesteads and far-away
+     cottages and oak-sheltered parks. Looking at the dwellings scattered amongst the woody flats
+     and the ploughed uplands, under the low grey sky which overhung them with an unchanging
+     stillness as if Time itself were pausing, it was easy for the traveller to conceive that town
+     and country had no pulse
+      in common, except where the handlooms made a far-reaching straggling fringe about
+     the great centres of manufacture; that till the agitation about the Catholics in '29, rural
+     Englishmen had hardly known more of Catholics than of the fossil mammals; and that their notion
+     of Reform was a confused combination of rick-burners, trades-unions, Nottingham riots, and in
+     general whatever required the calling-out of the yeomanry. It was still easier to see that, for
+     the most part, they resisted the rotation of crops and stood by their fallows: and the coachman
+     would perhaps tell how in one parish an innovating farmer, who talked of Sir Humphrey Davy, had
+     been fairly driven out by popular dislike, as if he had been a confounded Radical; and how, the
+     parson having one Sunday preached from the words, "Plough up the fallow-ground of your hearts,"
+     the people thought he had made the text out of his own head, otherwise it would never have come
+     "so pat" on a matter of business; but when they found it in the Bible at home, some said it was
+     an argument for fallows (else why should the Bible mention fallows?), but a few of the weaker
+     sort were shaken, and thought it was an argument that fallows should be done away with, else
+     the Bible would have said, "Let your hearts lie fallow;" and the next morning
+      the parson had a stroke of apoplexy, which, as coincident with a dispute about
+     fallows, so set the parish against the innovating farmer and the rotation of crops, that he
+     could stand his ground no longer, and transferred his lease.
+The coachman was an excellent travelling companion and commentator on the landscape: he could
+     tell the names of sites and persons, and explain the meaning of groups, as well as the shade of
+     Virgil in a more memorable journey; he had as many stories about parishes, and the men and
+     women in them, as the Wanderer in the 'Excursion,' only his style was different. His view of
+     life had originally been genial, and such as became a man who was well warmed within and
+     without, and held a position of easy, undisputed authority; but the recent initiation of
+     Railways had embittered him: he now, as in a perpetual vision, saw the ruined country strewn
+     with shattered limbs, and regarded Mr Huskisson's death as a proof of God's anger against
+     Stephenson. "Why, every inn on the road would be shut up!" and at that word the coachman looked
+     before him with the blank gaze of one who had driven his coach to the outermost edge of the
+     universe, and saw his leaders plunging into the abyss. Still he would soon relapse from the
+     high
+      prophetic strain to the familiar one of narrative. He knew whose the land was
+     wherever he drove; what noblemen had half-ruined themselves by gambling; who made handsome
+     returns of rent; and who was at daggers-drawn with his eldest son. He perhaps remembered the
+     fathers of actual baronets, and knew stories of their extravagant or stingy housekeeping; whom
+     they had married, whom they had horsewhipped, whether they were particular about preserving
+     their game, and whether they had had much to do with canal companies. About any actual landed
+     proprietor he could also tell whether he was a Reformer or an Anti-Reformer. That was a
+     distinction which had "turned up" in latter times, and along with it the paradox, very puzzling
+     to the coachman's mind, that there were men of old family and large estate who voted for the
+     Bill. He did not grapple with the paradox; he let it pass, with all the discreetness of an
+     experienced theologian or learned scholiast, preferring to point his whip at some object which
+     could raise no questions.
+No such paradox troubled our coachman when, leaving the town of Treby Magna behind him, he
+     drove between the hedges for a mile or so, crossed the queer long bridge over the river Lapp,
+     and then put his horses to a swift gallop up the hill
+      by the low-nestled village of Little Treby, till they were on the fine level road,
+     skirted on one side by grand larches, oaks, and wych elms, which sometimes opened so far as to
+     let the traveller see that there was a park behind them.
+How many times in the year, as the coach rolled past the neglected-looking lodges which
+     interrupted the screen of trees, and showed the river winding through a finely-timbered park,
+     had the coachman answered the same questions, or told the same things without being questioned!
+     That?—oh, that was Transome Court, a place there had been a fine sight of lawsuits about.
+     Generations back, the heir of the Transome name had somehow bargained away the estate, and it
+     fell to the Durfeys, very distant connections, who only called themselves Transomes because
+     they had got the estate. But the Durfeys' claim had been disputed over and over again; and the
+     coachman, if he had been asked, would have said, though he might have to fall down dead the
+     next minute, that property didn't always get into the right hands. However, the lawyers had
+     found their luck in it; and people who inherited estates that were lawed about often lived in
+     them as poorly as a mouse in a hollow cheese; and, by what he could make out, that had
+      been the way with these present Durfeys, or Transomes, as they called themselves.
+     As for Mr Transome, he was as poor, half-witted a fellow as you'd wish to see; but she
+     was master, had come of a high family, and had a spirit—you might see it in her eye and the way
+     she sat her horse. Forty years ago, when she came into this country, they said she was a
+     picture; but her family was poor, and so she took up with a hatchet-faced fellow like this
+     Transome. And the eldest son had been just such another as his father, only worse—a wild sort
+     of half-natural, who got into bad company. They said his mother hated him and wished him dead;
+     for she'd got another son, quite of a different cut, who had gone to foreign parts when he was
+     a youngster, and she wanted her favourite to be heir. But heir or no heir, Lawyer Jermyn had
+     had his picking out of the estate. Not a door in his big house but what was the finest
+     polished oak, all got off the Transome estate. If anybody liked to believe he paid for it, they
+     were welcome. However, Lawyer Jermyn had sat on that box-seat many and many a time. He had made
+     the wills of most people thereabout. The coachman would not say that Lawyer Jermyn was not the
+     man he would choose to make his own will some day. It was not so well for a lawyer to
+      be over-honest, else he might not be up to other people's tricks. And as for the
+     Transome business, there had been ins and outs in time gone by, so that you couldn't look into
+     it straight backward. At this Mr Sampson (everybody in North Loamshire knew Sampson's coach)
+     would screw his features into a grimace expressive of entire neutrality, and appear to aim his
+     whip at a particular spot on the horse's flank. If the passenger was curious for further
+     knowledge concerning the Transome affairs, Sampson would shake his head and say there had been
+     fine stories in his time; but he never condescended to state what the stories were. Some
+     attributed this reticence to a wise incredulity, others to a want of memory, others to simple
+     ignorance. But at least Sampson was right in saying that there had been fine stories—meaning,
+     ironically, stories not altogether creditable to the parties concerned.
+And such stories often come to be fine in a sense that is not ironical. For there is seldom
+     any wrong-doing which does not carry along with it some downfall of blindly-climbing hopes,
+     some hard entail of suffering, some quickly-satiated desire that survives, with the life in
+     death of old paralytic vice, to see itself cursed by its woeful progeny—some tragic mark of
+     kinship in the one brief life to the
+      far-stretching life that went before, and to the life that is to come after, such
+     as has raised the pity and terror of men ever since they began to discern between will and
+     destiny. But these things are often unknown to the world; for there is much pain that is quite
+     noiseless; and vibrations that make human agonies are often a mere whisper in the roar of
+     hurrying existence. There are glances of hatred that stab and raise no cry of murder; robberies
+     that leave man or woman for ever beggared of peace and joy, yet kept secret by the sufferer—
+     committed to no sound except that of low moans in the night, seen in no writing except that
+     made on the face by the slow months of suppressed anguish and early morning tears. Many an
+     inherited sorrow that has marred a life has been breathed into no human ear.
+The poets have told us of a dolorous enchanted forest in the under world. The thorn-bushes
+     there, and the thick-barked stems, have human histories hidden in them; the power of unuttered
+     cries dwells in the passionless-seeming branches, and the red warm blood is darkly feeding the
+     quivering nerves of a sleepless memory that watches through all dreams. These things are a
+     parable.
+</div></body></text></TEI>

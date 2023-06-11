@@ -1,0 +1,22 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Collected Works of Edgar Allan Poe</title><author>Edgar Allan Poe</author></titleStmt><publicationStmt><publisher></publisher><pubPlace>Baltimore</pubPlace><date>1849</date></publicationStmt></teiHeader><text><body><div type="chapter" n="143">
+
+TO ——
+
+     I heed not that my earthly lot
+
+         Hath-little of Earth in it—
+
+     That years of love have been forgot
+
+     In the hatred of a minute:—
+
+     I mourn not that the desolate
+
+         Are happier, sweet, than I,
+
+     But that you sorrow for my fate
+
+     Who am a passer-by.
+
+1829.
+</div></body></text></TEI>
