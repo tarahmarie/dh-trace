@@ -6,7 +6,7 @@ from util import create_author_pair_for_lookups, get_project_name
 
 #Create the disk database (for backups) and a cursor to handle transactions.
 project_name = get_project_name()
-disk_con = sqlite3.connect(f"./projects/{project_name}/db/{project_name}-predictions.db")
+disk_con = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
 disk_con.row_factory = sqlite3.Row
 disk_cur = disk_con.cursor()
 
@@ -20,7 +20,6 @@ disk_cur = disk_con.cursor()
 disk_cur.execute("PRAGMA synchronous = OFF;")
 disk_cur.execute("PRAGMA cache_size = 100000;")
 disk_cur.execute("PRAGMA journal_mode = MEMORY;")
-disk_cur.execute("PRAGMA locking_mode = EXCLUSIVE;")
 disk_cur.execute("PRAGMA temp_store = MEMORY;")
 
 ##
@@ -34,11 +33,9 @@ def setup_author_prediction():
     disk_cur.execute("DROP TABLE IF EXISTS author_prediction;")
 
     #Now, we make our stuff.
-    disk_cur.execute(f"ATTACH DATABASE './projects/{project_name}/db/{project_name}.db' AS original_db;")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS author_prediction AS SELECT source_auth, source_year, source_text, target_auth, target_year, target_text, hap_jac_dis, ng_jac_dis, al_jac_dis FROM original_db.combined_jaccard;")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS author_prediction AS SELECT source_auth, source_year, source_text, target_auth, target_year, target_text, hap_jac_dis, al_jac_dis FROM original_db.combined_jaccard;")
     disk_cur.execute("ALTER TABLE author_prediction ADD COLUMN score REAL DEFAULT 0.0;")
     disk_cur.execute("ALTER TABLE author_prediction ADD COLUMN same_author TEXT;")
-    disk_cur.execute("DETACH DATABASE original_db;")
     disk_con.commit()
 
 def compute_author_scores(hapax_weight, ngram_weight, align_weight, threshold):
@@ -46,7 +43,6 @@ def compute_author_scores(hapax_weight, ngram_weight, align_weight, threshold):
     the_rows = disk_cur.fetchall()
     for row in the_rows:
         hap_score = 0.0
-        ng_score = 0.0
         al_score = 0.0
         outcome = "TBD"
         source_auth = ""
@@ -56,25 +52,23 @@ def compute_author_scores(hapax_weight, ngram_weight, align_weight, threshold):
             source_auth = row[1]
         if row[4] is not None:
             target_auth = row[4]
-        #Columns 6, 7, 8 of author_prediction are hapax_dist, ngram_dist, and align_dist
+        #Columns 6, 7, 8 of author_prediction are hapax_dist and align_dist
         if row[7] is not None:
             hap_score = row[7] * hapax_weight
         if row[8] is not None:
-            ng_score = row[8] * ngram_weight
-        if row[9] is not None:
-            al_score = row[9] * align_weight
+            al_score = row[8] * align_weight
         
-        if sum([hap_score, ng_score, al_score]) < threshold:
+        if sum([hap_score, al_score]) < threshold:
             if source_auth == target_auth:
                 outcome = "I"
             else:
                 outcome = "N"
-        elif sum([hap_score, ng_score, al_score]) >= threshold:
+        elif sum([hap_score, al_score]) >= threshold:
             outcome = "Y"
         else:
             outcome = "N"
 
-        disk_cur.execute("UPDATE author_prediction SET score = ?, same_author = ? WHERE rowid = ?;", [sum([hap_score, ng_score, al_score]), outcome, row[0]])
+        disk_cur.execute("UPDATE author_prediction SET score = ?, same_author = ? WHERE rowid = ?;", [sum([hap_score, al_score]), outcome, row[0]])
     
     optimize()
     disk_con.commit()
@@ -85,7 +79,8 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP TABLE IF EXISTS auto_author_accuracy;")
     disk_cur.execute("DROP TABLE IF EXISTS calculations;")
     disk_cur.execute("DROP TABLE IF EXISTS pair_counts;")
-    disk_cur.execute("DROP INDEX IF EXISTS calculations_idx;")
+    disk_cur.execute("DROP INDEX IF EXISTS calculations_author_pair_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
     disk_con.commit()
 
     #Now, we make our stuff.
@@ -111,7 +106,6 @@ def setup_auto_author_prediction_tables():
         CREATE TABLE IF NOT EXISTS weights(
         `weight_id` INT UNIQUE,
         `hap_weight` REAL,
-        `ng_weight` REAL,
         `al_weight` REAL
         );
     """
@@ -123,7 +117,8 @@ def setup_auto_author_prediction_tables():
 
 def setup_auto_indices():
     #Look, all this stuff is slow.  But it will make the plot script so much faster, so...
-    disk_cur.execute("CREATE INDEX IF NOT EXISTS calculations_idx ON calculations(author_pair, pair_id);")
+    disk_cur.execute("CREATE INDEX calculations_author_pair_index ON calculations(author_pair);")
+    disk_cur.execute("CREATE INDEX combined_jaccard_pair_id_index ON combined_jaccard(pair_id);")
     disk_con.commit()
 
 def setup_auto_author_accuracy_table():
@@ -156,7 +151,7 @@ def insert_author_pair_counts(data):
     disk_con.commit()
 
 def insert_weights(data):
-    insert_statement = "INSERT OR IGNORE INTO weights VALUES(?,?,?,?);"
+    insert_statement = "INSERT OR IGNORE INTO weights VALUES(?,?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
@@ -178,7 +173,6 @@ def get_all_weights():
         SELECT
         weight_id,
         hap_weight,
-        ng_weight,
         al_weight
         FROM weights
     """
@@ -186,13 +180,11 @@ def get_all_weights():
     disk_cur.execute(weights_query)
     result = disk_cur.fetchall()
     for item in result:
-        temp_dict[item[0]] = item[1], item[2], item[3]
+        temp_dict[item[0]] = item[1], item[2]
     
     return temp_dict
 
-def create_author_view(author_pair, sample_size):
-    disk_cur.execute(f"ATTACH DATABASE './projects/{project_name}/db/{project_name}.db' AS original_db;")
-
+def create_author_view(author_pair):
     query = """
         SELECT 
         ocj.source_auth,
@@ -203,21 +195,17 @@ def create_author_view(author_pair, sample_size):
         calc.same_author,
         calc.threshold,
         calc.weight_id
-        FROM original_db.combined_jaccard AS ocj
+        FROM combined_jaccard AS ocj
         JOIN calculations AS calc ON ocj.pair_id = calc.pair_id
         WHERE calc.author_pair = ? 
-        ORDER BY RANDOM()
-        LIMIT ?;
     """
     weights_dict = get_all_weights()
-    params = [author_pair, sample_size]
+    params = [author_pair]
     the_predictions = pd.read_sql_query(query, disk_con, params=params)
     the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'comp_score', 'same_author', 'threshold', 'weight_id']
     the_predictions['hap_weight'] = the_predictions['weight_id'].apply(lambda x: weights_dict.get(x, ())[0]) #type: ignore
-    the_predictions['ng_weight'] = the_predictions['weight_id'].apply(lambda x: weights_dict.get(x, ())[1]) #type: ignore
-    the_predictions['al_weight'] = the_predictions['weight_id'].apply(lambda x: weights_dict.get(x, ())[2]) #type: ignore
+    the_predictions['al_weight'] = the_predictions['weight_id'].apply(lambda x: weights_dict.get(x, ())[1]) #type: ignore
 
-    disk_cur.execute("DETACH DATABASE original_db;")
     return the_predictions
 
 def assess_auto_author_accuracy(data):
@@ -258,3 +246,12 @@ def get_length_of_author_predicition_table(author_a, author_b):
 def read_author_attribution_from_db(author_a, author_b):
     the_predictions = pd.read_sql_query(f'''SELECT source_auth, target_auth, score, source_text, target_text, same_author FROM author_prediction WHERE source_auth LIKE "{author_a}" AND target_auth LIKE "{author_b}"''', disk_con)
     return the_predictions
+
+def close_db_connection():
+    """Close the SQLite database connection."""
+    try:
+        if disk_con:
+            disk_con.close()
+            print("Database connection closed.")
+    except Exception as e:
+        print(f"Error while closing the database connection: {str(e)}")
