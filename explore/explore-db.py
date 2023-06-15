@@ -568,7 +568,6 @@ disk_cur.execute("PRAGMA synchronous = OFF;")
 disk_cur.execute("PRAGMA cache_size = 30000000000;")
 disk_cur.execute("PRAGMA journal_mode = WAL;")
 disk_cur.execute("PRAGMA temp_store = MEMORY;")
-disk_cur.execute("PRAGMA locking_mode = EXCLUSIVE;")
 
 get_all_table_names_from_db()
 for table_name in tables_and_columns.keys():

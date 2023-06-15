@@ -335,6 +335,7 @@ if __name__ == "__main__":
             update_the_chapters_table(column_names)
             insert_chapter_data(chapter_transactions)
             generate_prediction_data()
+            unseen_test()
         else:
             unseen_test()
     else:
