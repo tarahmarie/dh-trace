@@ -339,7 +339,24 @@ if __name__ == "__main__":
         else:
             unseen_test()
     else:
-        print("The file does not exist.")
-    # Handle the case where the file doesn't exist
+        print("Continuing...")
+        prepare_the_db()
+        
+        print("\nTesting the model before proceeding...\n")
+        #test_model()
+
+        outcomes_dict, column_names = assess_authorship_likelihood()
+        chapter_transactions = []
+        for key, value in outcomes_dict.items():
+            novel = key.split('-')[0]
+            chap_num = key.split('-')[1]
+            temp_transaction_tuple = (novel, chap_num)
+            for author, score in sorted(value.items()):
+                temp_transaction_tuple = temp_transaction_tuple + (score,)
+            chapter_transactions.append(temp_transaction_tuple)
+        update_the_chapters_table(column_names)
+        insert_chapter_data(chapter_transactions)
+        generate_prediction_data()
+        unseen_test()
 
     close_db_connection()
