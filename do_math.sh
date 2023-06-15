@@ -11,7 +11,7 @@ RESET='\033[0m'
 #Let's get the current project name
 current_project=$(<.current_project)
 
-printf "\nOk, do you want to generate some predictions for %s ${BOLD}(${GREEN}y${RESET}${BOLD}/${RED}n${RESET}${BOLD})${RESET}?\nWhen that's done, we'll launch the plotting tool.\n\n" "$current_project"
+printf "\nOk, do you want to generate some predictions for %s ${BOLD}(${GREEN}y${RESET}${BOLD} / ${RED}n${RESET}${BOLD})${RESET}?\nWhen that's done, we'll launch the plotting tool.\n\n" "$current_project"
 
 
 exercise_choice () {
@@ -19,6 +19,7 @@ exercise_choice () {
 
     case $choice in 
         y|Y)
+            printf "\nOk, hold on while I load data... this could take a few minutes.\n"
             python auto_author_prediction.py;
             python make_auto_scatterplot.py
             ;;

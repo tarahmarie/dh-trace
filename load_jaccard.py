@@ -4,8 +4,8 @@ from rich.status import Status
 from database_ops import (calculate_alignments_jaccard_similarity,
                           calculate_hapax_jaccard_similarity,
                           calculate_ngram_jaccard_similarity,
-                          create_alignments_jaccard, create_hapax_jaccard,
-                          create_ngrams_jaccard,
+                          close_db_connection, create_alignments_jaccard,
+                          create_hapax_jaccard, create_ngrams_jaccard,
                           make_the_combined_jaccard_table,
                           populate_alignments_jaccard, populate_hapax_jaccard,
                           populate_ngrams_jaccard, vacuum_the_db)
@@ -45,6 +45,6 @@ with console.status("\tDoing Science...", spinner="dots") as status:
     make_the_combined_jaccard_table()
     status.update("\tVacuuming the DB...", spinner="dots")
     vacuum_the_db()
-
+    close_db_connection()
     status.stop()
     print("\nAll done!")

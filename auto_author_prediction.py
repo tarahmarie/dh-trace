@@ -3,7 +3,7 @@ from itertools import permutations
 from tqdm import tqdm
 
 from database_ops import read_all_combined_jaccard_from_db
-from predict_ops import (assess_auto_author_accuracy,
+from predict_ops import (assess_auto_author_accuracy, close_db_connection,
                          insert_author_pair_counts, insert_calculations,
                          insert_weights, optimize,
                          setup_auto_author_accuracy_table,
@@ -24,25 +24,23 @@ def get_temp_copy_for_processing():
     for item in copy_of_combined_jaccard:
         #Reference
         #0: source_auth, 1: source_year, 2: source_text, 3: target_auth, 4: target_year, 5: target_text, 6: hap_jac_sim
-        #7: hap_jac_dis, 8: pair_id, 9: ng_jac_sim, 10: ng_jac_dis, 11: al_jac_sim, 12: al_jac_dis
+        #7: hap_jac_dis, 8: pair_id, 9: al_jac_sim, 10: al_jac_dis
         #NOTE: I am selecting only the ones I need for do_math(). Change these if your needs change.
-        temp_list.append((item[0], item[3], item[7], item[8], item[10], item[12]))
+        temp_list.append((item[0], item[3], item[7], item[8], item[10]))
         current_item += 1
     copy_of_combined_jaccard = "" #Flush it to free memory.
     return temp_list
 
 temp_db_copy = get_temp_copy_for_processing()
 
-def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, ng_jac_dis, ngram_weight, al_jac_dis, align_weight, threshold):
+def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac_dis, align_weight, threshold):
     hap_score = 0.0
-    ng_score = 0.0
     al_score = 0.0
     outcome = "No" #Base case.
     
     hap_score = round((hap_jac_dis * hapax_weight), 8)
-    ng_score = round((ng_jac_dis * ngram_weight), 8)
     al_score = round((al_jac_dis * align_weight), 8)
-    comp_score = sum([hap_score, ng_score, al_score])
+    comp_score = sum([hap_score, al_score])
     
     #Computer says no.
     if comp_score < threshold and source_auth == target_auth: #Computer should have said yes.
@@ -72,17 +70,15 @@ def get_values_to_permutate():
     #Set one of them super high, and walk the others up while gradually stepping down
     weight_a = round(upper_weight, 3)
     weight_b = round((1.0 - weight_a) / 2, 3)
-    weight_c = round((1.0 - weight_a) / 2, 3)
     
     while weight_a >= floor:
-        temp_set.append([weight_a, weight_b, weight_c])
+        temp_set.append([weight_a, weight_b])
         weight_b = round((1.0 - weight_a) / 2, 3)
-        weight_c = round((1.0 - weight_a) / 2, 3)      
         weight_a = round(weight_a - step, 3)
     
     i = 0
     for item in temp_set:
-        for entry in set(permutations(item, 3)):
+        for entry in set(permutations(item, 2)):
             completed_set[i] = entry
             i+=1
 
@@ -105,8 +101,7 @@ def do_math(threshold, pretty_threshold):
             target_auth = item[1]
             hap_jac_dis = item[2]
             pair_id = item[3]
-            ng_jac_dis = item[4]
-            al_jac_dis = item[5]
+            al_jac_dis = item[4]
             author_pair = create_author_pair_for_lookups(source_auth, target_auth)
             
             if author_pair not in author_pair_count_transactions.keys():
@@ -116,10 +111,9 @@ def do_math(threshold, pretty_threshold):
 
             for key, thing in values_to_permutate.items():
                 hap_weight = thing[0]
-                ng_weight = thing[1]
-                al_weight = thing[2]
+                al_weight = thing[1]
                 
-                comp_score, outcome = calculate_scores(source_auth, target_auth, hap_jac_dis, hap_weight, ng_jac_dis, ng_weight, al_jac_dis, al_weight, threshold)
+                comp_score, outcome = calculate_scores(source_auth, target_auth, hap_jac_dis, hap_weight, al_jac_dis, al_weight, threshold)
                 
                 match outcome:
                     case "Y":
@@ -207,6 +201,7 @@ def main():
     insert_author_pair_counts(temp_author_pair_counts_transactions)
     insert_weights(temp_weights_transactions)
     optimize()
+    close_db_connection()
     print("\nPhew. Ok, to plot these values, run 'python make_auto_scatterplot.py")
 
 if __name__ == "__main__":

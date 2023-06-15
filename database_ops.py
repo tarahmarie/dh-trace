@@ -19,7 +19,6 @@ disk_cur = disk_con.cursor()
 disk_cur.execute("PRAGMA synchronous = OFF;")
 disk_cur.execute("PRAGMA cache_size = 10000000;")
 disk_cur.execute("PRAGMA journal_mode = MEMORY;")
-disk_cur.execute("PRAGMA locking_mode = EXCLUSIVE;")
 
 #Create the Database and Tables
 def create_db_and_tables():
@@ -482,6 +481,7 @@ def calculate_alignments_jaccard_similarity():
 def make_the_combined_jaccard_table():
     #Start Fresh
     disk_cur.execute("DROP TABLE IF EXISTS combined_jaccard;")
+    disk_cur.execute("DROP INDEX IF EXISTS comjac_idx;")
     disk_con.commit()
 
     #Create the table structure and populate from hapax_jaccard as a starter.
@@ -493,6 +493,16 @@ def make_the_combined_jaccard_table():
     disk_cur.execute("CREATE TABLE temp_jaccard AS SELECT combined_jaccard.source_auth, combined_jaccard.source_year, combined_jaccard.source_text, combined_jaccard.target_auth, combined_jaccard.target_year, combined_jaccard.target_text, combined_jaccard.hap_jac_sim, combined_jaccard.hap_jac_dis, combined_jaccard.pair_id, ngrams_jaccard.ng_jac_sim, ngrams_jaccard.ng_jac_dis, alignments_jaccard.al_jac_sim, alignments_jaccard.al_jac_dis FROM combined_jaccard JOIN ngrams_jaccard ON combined_jaccard.pair_id = ngrams_jaccard.pair_id JOIN alignments_jaccard ON ngrams_jaccard.pair_id = alignments_jaccard.pair_id")
     disk_cur.execute("DROP TABLE IF EXISTS combined_jaccard;")
     disk_cur.execute("ALTER TABLE temp_jaccard RENAME TO combined_jaccard;")
+    disk_cur.execute("CREATE INDEX comjac_idx ON combined_jaccard(source_auth, target_auth, source_text, target_text, pair_id);")
     disk_con.commit()
+
+def close_db_connection():
+    """Close the SQLite database connection."""
+    try:
+        if disk_con:
+            disk_con.close()
+            print("Database connection closed.")
+    except Exception as e:
+        print(f"Error while closing the database connection: {str(e)}")
 
 create_db_and_tables()
