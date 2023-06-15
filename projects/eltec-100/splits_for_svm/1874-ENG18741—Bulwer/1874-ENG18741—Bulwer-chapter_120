@@ -1,0 +1,28 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Project Gutenberg's The Parisians, Complete, by Edward
+     Bulwer-Lytton</title><author>Lytton, Edward Bulwer (1803-1873)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1874</date></publicationStmt></teiHeader><text><body><div type="chapter" n="120">
+CHAPTER THE LAST.
+Among the refugees which the convoi from Versailles disgorged on the Paris station were two
+      men, who, in pushing through the crowd, came suddenly face to face with each other.
+“Aha! Bon jour, M. Duplessis,” said a burly voice. “Bon jour, M. Louvier,” replied
+      Duplessis.
+“How long have you left Bretagne?”
+“On the day that the news of the armistice reached it, in order to be able to enter Paris
+      the first day its gates were open. And you—where have you been?”
+“In London.”
+“Ah! in London!” said Duplessis, paling. “I knew I had an enemy there.”
+“Enemy! I? Bah! my dear Monsieur. What makes you think me your enemy?”
+“I remember your threats.”
+“A propos of Rochebriant. By the way, when would it be convenient to you and the dear
+      Marquis to let me into prompt possession of that property? You can no longer pretend to buy it
+      as a dot for Mademoiselle Valerie.”
+“I know not that yet. It is true that all the financial operations attempted by my agent in
+      London have failed. But I may recover myself yet, now that I re-enter Paris. In the mean time,
+      we have still six months before us; for, as you will find—if you know it not already—the
+      interest due to you has been lodged with Messrs. —— of ———, and you cannot foreclose, even if
+      the law did not take into consideration the national calamities as between debtor and
+      creditor.”
+“Quite true. But if you cannot buy the property it must pass into my hands in a very short
+      time. And you and the Marquis had better come to an amicable arrangement with me. Apropos, I
+      read in the Times newspaper that Alain was among the wounded in the sortie of December.”
+“Yes; we learnt that through a pigeon-post. We were afraid....”
+</div></body></text></TEI>

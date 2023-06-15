@@ -1,0 +1,9 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Lady Audley's Secret</title><author>Braddon, Mary Elizabeth (1835-1915).</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1862</date></publicationStmt></teiHeader><text><body><div type="chapter" n="33">
+CHAPTER XXXII.
+THE RED LIGHT IN THE SKY.
+My lady crushed the letter fiercely in her hand, and flung it from her into the flames.
+"If he stood before me now, and I could kill him," she muttered in a strange, inward whisper,
+     "I would do it—I would do it!" She snatched up the lamp and rushed into the adjoining room. She
+     shut the door behind her. She could not endure any witness of her horrible despair—she could
+     endure nothing, neither herself nor her surroundings.
+</div></body></text></TEI>

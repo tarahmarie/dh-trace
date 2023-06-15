@@ -1,0 +1,285 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Auriol or the elixir of life</title><author>Ainsworth, William Harrison (1805-1882)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1850</date></publicationStmt></teiHeader><text><body><div type="chapter" n="2">
+Chapter 2
+The Dog-fancier
+The Rookery! Who that has passed Saint Giles’s, on the way to the city, or coming from it,
+     but has caught a glimpse, through some narrow opening, of its squalid habitations, and wretched
+     and ruffianly occupants! Who but must have been struck with amazement, that such a huge
+     receptacle of vice and crime should be allowed to exist in the very heart of the metropolis,
+     like an ulcerated spot, capable of tainting the whole system! Of late, the progress of
+     improvement has caused its removal; but whether any less cogent motive would have abated the
+     nuisance may be questioned. For years the evil was felt and complained of, but no effort was
+     made to remedy it, or to cleanse these worse than Augean stables. As the place is now
+     partially, if not altogether, swept away, and a wide and airy street passes through the midst
+     of its foul recesses, a slight sketch may be given of its former appearance.
+Entering a narrow street, guarded by posts and cross-bars, a few steps from the crowded
+     thoroughfare brought you into a frightful region, the refuge, it was easy to perceive, of half
+     the lawless characters infesting the metropolis. The coarsest ribaldry assailed your ears, and
+     noisome odours afflicted your sense of smell. As you advanced, picking your way through kennels
+     flowing with filth, or over putrescent heaps of rubbish and oyster-shells, all the repulsive
+     and hideous features of the place were displayed before you. There was something savagely
+     picturesque in the aspect of the place, but its features were too loathsome to be regarded with
+     any other feeling than disgust. The houses looked as sordid, and as thickly crusted with the
+     leprosy of vice, as their tenants. Horrible habitations they were, in truth. Many of them were
+     without windows, and where the frames were left, brown paper or tin supplied the place of
+     glass; some even wanted doors, and no effort was made to conceal the squalor within. On the
+     contrary, it seemed to be intruded on observation. Miserable rooms, almost destitute of
+     furniture; floors and walls caked with dirt, or decked with coarse flaring prints; shameless
+     and abandoned-looking women; children without shoes and stockings, and with scarcely a rag to
+     their backs: these were the chief objects that met the view. Of men, few were visible—the
+     majority being out on business, it is to be presumed; but where a solitary straggler was seen,
+     his sinister looks and mean attire were in perfect keeping with the spot. So thickly inhabited
+     were these wretched dwellings, that every chamber, from garret to cellar, swarmed with inmates.
+     As to the cellars, they looked like dismal caverns, which a wild beast would shun.
+     Clothes-lines were hung from house to house, festooned with every kind of garment. Out of the
+     main street branched several alleys and passages, all displaying the same degree of misery, or,
+     if possible, worse, and teeming with occupants. Personal security, however, forbade any attempt
+     to track these labyrinths; but imagination, after the specimen afforded, could easily picture
+     them. It was impossible to move a step without insult or annoyance. Every human being seemed
+     brutalised and degraded; and the women appeared utterly lost to decency, and made the street
+     ring with their cries, their quarrels, and their imprecations. It was a positive relief to
+     escape from this hotbed of crime to the world without, and breathe a purer atmosphere.
+Such being the aspect of the Rookery in the daytime, what must it have been when crowded with
+     its denizens at night! Yet at such an hour it will now be necessary to enter its
+     penetralia.
+After escaping from the ruined house in the Vauxhall Road, the two ruffians shaped their
+     course towards Saint Giles’s, running the greater part of the way, and reaching the Broadway
+     just as the church clock struck two. Darting into a narrow alley, and heedless of any
+     obstructions they encountered in their path, they entered a somewhat wider cross-street, which
+     they pursued for a short distance, and then struck into an entry, at the bottom of which was a
+     swing-door that admitted them into a small court, where they found a dwarfish person wrapped in
+     a tattered watchman’s greatcoat, seated on a stool with a horn lantern in his hand and a cutty
+     in his mouth, the glow of which lighted up his hard, withered features. This was the
+     deputy-porter of the lodging-house they were about to enter. Addressing him by the name of Old
+     Parr, the ruffians passed on, and lifting the latch of another door, entered a sort of kitchen,
+     at the farther end of which blazed a cheerful fire, with a large copper kettle boiling upon it.
+     On one side of the room was a deal table, round which several men of sinister aspect and sordid
+     attire were collected, playing, at cards. A smaller table of the same material stood near the
+     fire, and opposite it was a staircase leading to the upper rooms. The place was dingy and dirty
+     in the extreme, the floors could not have been scoured for years, and the walls were begrimed
+     with filth. In one corner, with his head resting on a heap of coals and coke, lay a boy almost
+     as black as a chimney-sweep, fast asleep. He was the waiter. The principal light was afforded
+     by a candle stuck against the wall, with a tin reflector behind it. Before the fire, with his
+     back turned towards it, stood a noticeable individual, clad in a velveteen jacket with ivory
+     buttons, a striped waistcoat, drab knees, a faded black silk neckcloth tied in a great bow, and
+     a pair of ancient Wellingtons ascending half-way up his legs, which looked disproportionately
+     thin when compared with the upper part of his square, robustious, and somewhat pursy frame. His
+     face was broad, jolly, and good-humoured, with a bottle-shaped nose, fleshy lips, and light
+     grey eyes, glistening with cunning and roguery. His hair, which dangled in long flakes over his
+     ears and neck, was of a dunnish red, as were also his whiskers and beard. A superannuated white
+     castor, with a black hat-band round it, was cocked knowingly on one side of his head, and gave
+     him a flashy and sporting look. His particular vocation was made manifest by the number of dogs
+     he had about him. A beautiful black-and-tan spaniel, of Charles the Second’s breed, popped its
+     short snubby nose and long silken ears out of each coat-pocket. A pug was thrust into his
+     breast, and he carried an exquisite Blenheim under either arm. At his feet reposed an Isle of
+     Skye terrier, and a partly cropped French poodle, of snowy whiteness, with a red worsted riband
+     round his throat. This person, it need scarcely be said, was a dog-fancier, or, in other words,
+     a dealer in, and a stealer of, dogs, as well as a practiser of all the tricks connected with
+     that nefarious trade. His self-satisfied air made it evident he thought himself a smart, clever
+     fellow,—and adroit and knavish he was, no doubt,—while his droll, plausible, and rather winning
+     manners helped him materially to impose upon his customers. His real name was Taylor, but he
+     was known among his companions by the appellation of Ginger. On the entrance of the Sandman and
+     the Tinker, he nodded familiarly to them, and with a sly look inquired—“Vell, my ‘arties—wot
+     luck?”
+“Oh, pretty middlin’,” replied the Sandman gruffly.
+And seating himself at the table, near the fire, he kicked up the lad, who was lying fast
+     asleep on the coals, and bade him fetch a pot of half-and-half. The Tinker took a place beside
+     him, and they waited in silence the arrival of the liquor, which, when it came, was disposed of
+     at a couple of pulls; while Mr. Ginger, seeing they were engaged, sauntered towards the
+     card-table, attended by his four-footed companions.
+“And now,” said the Sandman, unable to control his curiosity longer, and taking out his
+     pocket-book, “we’ll see what fortun’ has given us.”
+
+So saying, he unclasped the pocket-book, while the Tinker bent over him in eager curiosity.
+     But their search for money was fruitless. Not a single bank-note was forthcoming. There were
+     several memoranda and slips of paper, a few cards, and an almanac for the year—that was all. It
+     was a great disappointment.
+“So we’ve had all this trouble for nuffin’, and nearly got shot into the bargain,” cried the
+     Sandman, slapping down the book on the table with an oath. “I vish I’d never undertaken the
+     job.”
+“Don’t let’s give it up in sich an ‘urry,” replied the Tinker; “summat may be made on it yet.
+     Let’s look over them papers.”
+“Look ’em over yourself,” rejoined the Sandman, pushing the book towards him. “I’ve done wi’
+     ’em. Here, lazy-bones, bring two glasses o’ rum-and-water—stiff, d’ye hear?”
+While the sleepy youth bestirred himself to obey these injunctions, the Tinker read over
+     every memorandum in the pocket-book, and then proceeded carefully to examine the different
+     scraps of paper with which it was filled. Not content with one perusal, he looked them all over
+     again, and then began to rub his hands with great glee.
+“Wot’s the matter?” cried the Sandman, who had lighted a cutty, and was quietly smoking it.
+     “Wot’s the row, eh?”
+“Vy, this is it,” replied the Tinker, unable to contain his satisfaction; “there’s secrets
+     contained in this here pocket-book as’ll be worth a hundred pound and better to us. We ha’n’t
+     had our trouble for nuffin’.”
+“Glad to hear it!” said the Sandman, looking hard at him. “Wot kind o’ secrets are they?”
+“Vy, hangin’ secrets,” replied the Tinker, with mysterious emphasis. “He seems to be
+     a terrible chap, and to have committed murder wholesale.”
+“Wholesale!” echoed the Sandman, removing the pipe from his lips. “That sounds awful. But
+     what a precious donkey he must be to register his crimes i’ that way.”
+“He didn’t expect the pocket-book to fall into our hands,” said the Tinker.
+“Werry likely not,” replied the Sandman; “but somebody else might see it. I repeat, he must
+     be a fool. S’pose we wos to make a entry of everythin’ we does. Wot a nice balance there’d be
+     agin us ven our accounts comed to be wound up!”
+“Ourn is a different bus’ness altogether,” replied the Tinker. “This seems a werry mysterious
+     sort o’ person. Wot age should you take him to be?”
+“Vy, five-an’-twenty at the outside,” replied the Sandman.
+“Five-an’-sixty ‘ud be nearer the mark,” replied the Tinker. “There’s dates as far back as
+     that.”
+“Five-an’-sixty devils!” cried the Sandman; “there must be some mistake i’ the reckonin’
+     there.”
+“No, it’s all clear an’ reg’lar,” rejoined the other; “and that doesn’t seem to be the end of
+     it neither. I looked over the papers twice, and one, dated 1780, refers to some other
+     dokiments.”
+“They must relate to his granddad, then,” said the Sandman; “it’s impossible they can refer
+     to him.”
+“But I tell ‘ee they do refer to him,” said the Tinker, somewhat angrily, at having
+     his assertion denied; “at least, if his own word’s to be taken. Anyhow, these papers is
+     waluable to us. If no one else believes in ’em, it’s clear he believes in ’em hisself, and will
+     be glad to buy ’em from us.”
+“That’s a view o’ the case worthy of an Old Bailey lawyer,” replied the Sandman. “Wot’s the
+     gemman’s name?”
+“The name on the card is Auriol Darcy,” replied the Tinker.
+“Any address?” asked the Sandman.
+The Tinker shook his head.
+“That’s unlucky agin,” said the Sandman. “Ain’t there no sort o’ clue?”
+“None votiver, as I can perceive,” said the Tinker.
+“Vy, zounds, then, ve’re jist vere ve started from,” cried the Sandman. “But it don’t matter.
+     There’s not much chance o’ makin’ a bargin vith him. The crack o’ the skull I gave him has done
+     his bus’ness.”
+“Nuffin’ o’ the kind,” replied the Tinker. “He alvays recovers from every kind of
+     accident.”
+“Alvays recovers!” exclaimed the Sandman, in amazement. “Wot a constitootion he must
+     have!”
+“Surprisin’!” replied the Tinker; “he never suffers from injuries—at least, not much; never
+     grows old; and never expects to die; for he mentions wot he intends doin’ a hundred years
+     hence.”
+“Oh, he’s a lu-nattic!” exclaimed the Sandman, “a downright lu-nattic; and that accounts for
+     his wisitin’ that ’ere ruined house, and a-fancyin’ he heerd some one talk to him. He’s mad,
+     depend upon it. That is, if I ain’t cured him.”
+“I’m of a different opinion,” said the Tinker.
+“And so am I,” said Mr. Ginger, who had approached unobserved, and overheard the greater part
+     of their discourse.
+“Vy, vot can you know about it, Ginger?” said the Sandman, looking up, evidently rather
+     annoyed.
+“I only know this,” replied Ginger, “that you’ve got a good case, and if you’ll let me into
+     it, I’ll engage to make summat of it.”
+“Vell, I’m agreeable,” said the Sandman.
+“And so am I,” added the Tinker.
+“Not that I pays much regard to wot you’ve bin a readin’ in his papers,” purused Ginger; “the
+     gemman’s evidently half-cracked, if he ain’t cracked altogether—but he’s jist the person to
+     work upon. He fancies hisself immortal—eh?”
+“Exactly so,” replied the Tinker.
+“And he also fancies he’s committed a lot o’ murders?” perused Ginger.
+“A desperate lot,” replied the Tinker.
+“Then he’ll be glad to buy those papers at any price,” said Ginger. “Ve’ll deal vith him in
+     regard to the pocket-book, as I deals vith regard to a dog—ask a price for its
+     restitootion.”
+“We must find him out first,” said the Sandman.
+“There’s no difficulty in that,” rejoined Ginger. “You must be constantly on the look-out.
+     You’re sure to meet him some time or other.”
+“That’s true,” replied the Sandman; “and there’s no fear of his knowin’ us, for the werry
+     moment he looked round I knocked him on the head.”
+“Arter all,” said the Tinker, “there’s no branch o’ the perfession so safe as yours, Ginger.
+     The law is favourable to you, and the beaks is afeerd to touch you. I think I shall turn
+     dog-fancier myself.”
+“It’s a good business,” replied Ginger, “but it requires a hedication. As I wos sayin’, we
+     gets a high price sometimes for restorin’ a favourite, especially ven ve’ve a soft-hearted lady
+     to deal vith. There’s some vimen as fond o’ dogs as o’ their own childer, and ven ve gets one
+     o’ their precious pets, ve makes ’em ransom it as the brigands you see at the Adelphi or the
+     Surrey sarves their prisoners, threatenin’ to send first an ear, and then a paw, or a tail, and
+     so on. I’ll tell you wot happened t’other day. There wos a lady—a Miss Vite—as was desperate
+     fond of her dog. It wos a ugly warmint, but no matter for that—the creater had gained her
+     heart. Vell, she lost it; and, somehow or other, I found it. She vos in great trouble, and a
+     friend o’ mine calls to say she can have the dog agin, but she must pay eight pound for it. She
+     thinks this dear, and a friend o’ her own adwises her to wait, sayin’ better terms will be
+     offered; so I sends vord by my friend that if she don’t come down at once the poor animal’s
+     throat vill be cut that werry night.”
+“Ha!—ha!—ha!” laughed the others.
+“Vell, she sent four pound, and I put up with it,” pursued Ginger; “but about a month
+     arterwards she loses her favourite agin, and, strange to say, I finds it. The same game is
+     played over agin, and she comes down with another four pound. But she takes care this time that
+     I shan’t repeat the trick; for no sooner does she obtain persession of her favourite than she
+     embarks in the steamer for France, in the hope of keeping her dog safe there.”
+“Oh! Miss Bailey, unfortinate Miss Bailey!—Fol-de-riddle-tol-ol-lol—unfortinate Miss Bailey!”
+     sang the Tinker.
+“But there’s dog-fanciers in France, ain’t there?” asked the Sandman.
+“Lor’ bless ‘ee, yes,” replied Ginger; “there’s as many fanciers i’ France as here. Vy, ve
+     drives a smartish trade wi’ them through them foreign steamers. There’s scarcely a steamer as
+     leaves the port o’ London but takes out a cargo o’ dogs. Ve sells ’em to the stewards, stokers,
+     and sailors—cheap—and no questins asked. They goes to Ostend, Antverp, Rotterdam, Hamburg, and
+     sometimes to Havre. There’s a Mounseer Coqquilu as comes over to buy dogs, and ve takes ’em to
+     him at a house near Billinsgit market.”
+“Then you’re alvays sure o’ a ready market somehow,” observed the Sandman.
+“Sartin,” replied Ginger, “cos the law’s so kind to us. Vy, bless you, a perliceman can’t
+     detain us, even if he knows ve’ve a stolen dog in our persession, and ve svears it’s our own;
+     and yet he’d stop you in a minnit if he seed you with a suspicious-lookin’ bundle under your
+     arm. Now, jist to show you the difference atwixt the two perfessions:—I steals a dog—walue,
+     maybe, fifty pound, or p’raps more. Even if I’m catched i’ the fact I may get fined twenty
+     pound, or have six months’ imprisonment; vile, if you steals an old fogle, walue three fardens,
+     you’ll get seven years abroad, to a dead certainty.”
+“That seems hard on us,” observed the Sandman reflectively.
+“It’s the law!” exclaimed Ginger triumphantly. “Now, ve generally escapes by payin’
+     the fine, ‘cos our pals goes and steals more dogs to raise the money. Ve alvays stands by each
+     other. There’s a reg’lar horganisation among us; so ve can alvays bring vitnesses to svear vot
+     ve likes, and ve so puzzles the beaks, that the case gets dismissed, and the constable says,
+     ‘Vich party shall I give the dog to, your vorship?’ Upon vich, the beak replies, a-shakin’ of
+     his vise noddle, ‘Give it to the person in whose persession it was found. I have nuffin’ more
+     to do vith it.’ In course the dog is delivered up to us.”
+“The law seems made for dog-fanciers,” remarked the Tinker.
+“Wot d’ye think o’ this?” pursued Ginger. “I wos a-standin’ at the corner o’ Gray’s Inn Lane
+     vith some o’ my pals near a coach-stand, ven a lady passes by vith this here dog—an’ a beauty
+     it is, a real long-eared Charley—a follerin’ of her. Vell, the moment I spies it, I unties my
+     apron, whips up the dog, and covers it up in a trice. Vell, the lady sees me, an’ gives me in
+     charge to a perliceman. But that si’nifies nuffin’. I brings six vitnesses to svear the dog vos
+     mine, and I actually had it since it vos a blind little puppy; and, wot’s more, I brings its
+      mother, and that settles the pint. So in course I’m discharged; the dog is given up
+     to me; and the lady goes avay lamentin’. I then plays the amiable, an’ offers to sell it her
+     for twenty guineas, seein’ as how she had taken a fancy to it; but she von’t bite. So if I
+     don’t sell it next week, I shall send it to Mounseer Coqquilu. The only vay you can go wrong is
+     to steal a dog wi’ a collar on, for if you do, you may get seven years’ transportation for a
+     bit o’ leather and a brass plate vorth a shillin’, vile the animal, though vorth a hundred
+     pound, can’t hurt you. There’s law again—ha, ha!”
+“Dog-fancier’s law!” laughed the Sandman.
+“Some of the Fancy is given to cruelty,” pursued Ginger, “and crops a dog’s ears, or pulls
+     out his teeth to disguise him; but I’m too fond o’ the animal for that. I may frighten old
+     ladies sometimes, as I told you afore, but I never seriously hurts their pets. Nor did I ever
+     kill a dog for his skin, as some on ’em does.”
+“And you’re always sure o’ gettin’ a dog, if you vants it, I s’pose?” inquired the
+     Tinker.
+“Alvays,” replied Ginger. “No man’s dog is safe. I don’t care how he’s kept, ve’re sure to
+     have him at last. Ve feels our vay with the sarvents, and finds out from them the walley the
+     master or missis sets on the dog, and soon after that the animal’s gone. Vith a bit o’ liver,
+     prepared in my partic’lar vay, I can tame the fiercest dog as ever barked, take him off his
+     chain, an’ bring him arter me at a gallop.”
+“And do respectable parties ever buy dogs knowin’ they’re stolen?” inquired the Tinker.
+“Ay, to be sure,” replied Ginger; “sometimes first-rate nobs. They put us up to it
+     themselves; they’ll say, ‘I’ve jist left my Lord So-and-So’s, and there I seed a couple o’ the
+     finest pointers I ever clapped eyes on. I vant you to get me jist sich another
+     couple.’ Vell, ve understands in a minnit, an’ in doo time the identicle dogs finds their
+     vay to our customer.”
+“Oh! that’s how it’s done?” remarked the Sandman.
+“Yes, that’s the vay,” replied Ginger. “Sometimes a party’ll vant a couple o’ dogs for the
+     shootin’ season; and then ve asks, ‘Vich vay are you a-goin’—into Surrey or Kent?’ And
+     accordin’ as the answer is given ve arranges our plans.”
+“Vell, yourn appears a profitable and safe employment, I must say,” remarked the Sandman.
+“Perfectly so,” replied Ginger. “Nothin’ can touch us till dogs is declared by statute to be
+     property, and stealin’ ’em a misdemeanour. And that won’t occur in my time.”
+“Let’s hope not,” rejoined the other two.
+“To come back to the pint from vich we started,” said the Tinker; “our gemman’s case is not
+     so surprisin’ as it at first appears. There are some persons as believe they never will die—and
+     I myself am of the same opinion. There’s our old deputy here—him as ve calls Old Parr—vy, he
+     declares he lived in Queen Bess’s time, recollects King Charles bein’ beheaded perfectly vell,
+     and remembers the Great Fire o’ London, as if it only occurred yesterday.”
+“Walker!” exclaimed Ginger, putting his finger to his nose.
+“You may larf, but it’s true,” replied the Tinker. “I recollect an old man tellin’ me that he
+     knew the deputy sixty years ago, and he looked jist the same then as now,—neither older nor
+     younger.”
+“Humph!” exclaimed Ginger. “He don’t look so old now.”
+“That’s the cur’ousest part of it,” said the Tinker. “He don’t like to talk of his age unless
+     you can get him i’ the humour; but he once told me he didn’t know why he lived so long, unless
+     it were owin’ to a potion he’d swallowed, vich his master, who was a great conjurer in Queen
+     Bess’s days, had brew’d.”
+“Pshaw!” exclaimed Ginger. “I thought you too knowin’ a cove, Tinker, to be gulled by such an
+     old vife’s story as that.”
+“Let’s have the old fellow in and talk to him,” replied the Tinker. “Here, lazy-bones,” he
+     added, rousing the sleeping youth, “go an’ tell Old Parr ve vants his company over a glass o’
+     rum-an’-vater.”
+</div></body></text></TEI>

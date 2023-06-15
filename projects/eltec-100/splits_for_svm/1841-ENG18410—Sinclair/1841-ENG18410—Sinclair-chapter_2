@@ -1,0 +1,348 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Modern Flirtations, A Novel, by Catherine Sinclair—A Project
+      Gutenberg eBook</title><author>Sinclair, Catherine (1800-1864)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1841</date></publicationStmt></teiHeader><text><body><div type="chapter" n="2">
+  CHAPTER II.
+The two most dashing, bold, and mischievous boys at Eton during their day, had formerly been
+     Sir Patrick Dunbar and Louis De Crespigny, who astonished the weak minds of masters and pupils,
+     by the strange and startling invention displayed in their exploits, as well as by the ingenuity
+     with which both got safely out of every threatening predicament, and the sly humor or cunning
+     with which they frequently shifted the disgrace, or even the punishment, of their offences, on
+     others who deserved it less, or perhaps not at all. Invariably at the head of every mad
+     exploit, or at the bottom of every secret design, how they could possibly have escaped being
+     expelled was a frequent topic of subsequent wonder among their contemporaries in the classes;
+     but their delight was to run as near the wind as possible, and still to display their skilful
+     pilotage by baffling justice, and evading the utmost rigor of the law, while always ready
+     rather to do harm than to do nothing.
+When very young, the two enterprising friends, both since gazetted into the 15th Light
+     Huzzars, had shown an early predilection for military life, by frequently escaping to the
+     neighbouring barracks, assisted by a ladder of rope on which they descended every night from
+     the windows. A gay, joyous reception invariably awaited these lively boys at the mess-table,
+     where they sung many a jovial song, and cracked many a merry jest over their claret, till,
+     after some hours spent in rapturous festivity, they stole silently back within bounds, and were
+     re-admitted at the window, by their respective fags, who had received orders, under pain of
+     death, to keep awake and answer their signals for the ladder by instantly lowering it. The
+     spirits of both these young companions were more like the effect of intoxication, than mere
+     sober enjoyment; and, on one occasion, they set the table in a roar, by having a rivalship
+     which would best imitate the gradual progress of becoming tipsy, though drinking nothing but
+     cold water; in which exhibition they showed so much talent for mimicry, taking off the
+     surrounding officers before their faces, and making so many home-thrusts and personal remarks,
+     that the scene was never afterwards forgotten in the regiment. On another occasion Sir Patrick
+     caused himself to be placed in a coffin, stolen from the undertakers, and was carried through
+     the barracks by his companions, who made paper trumpets with which they played the dead march
+     in Saul, while all the sentries saluted as they passed. Such juvenile exploits in the dawn of
+     life were now the subject of many a laughing reminiscence, and had been followed by others on a
+     more extended scale and of more matured enterprise, at Mr. Brownlow's, a private tutor, where
+     the two young men afterwards distinguished themselves in a way not easily to be forgotten,
+     causing their better disciplined companions to wonder, though in very few instances to
+     admire.
+In the favorite aristocratic achievements of driving stage-coaches, breaking lamps, wringing
+     off knockers, assaulting watchmen, with other fistic and pugilistic exploits, they were nearly
+     unrivalled; and occasionally their genius had soared into an extraordinary display of
+     dexterity, in transposing the signs suspended over shops, and in filching silk handkerchiefs
+     from the pockets of their friends, merely as amateurs, but still the deed was done, and the
+     laugh raised literally at the expense of the sufferer, as the plunder was retained to be a
+     future trophy of success. Each successive stage of their youth, in short, supplied an
+     inexhaustible fund of standing jests and lively anecdotes, the wit of which mainly consisted in
+     their mischief, while they betrayed an utter recklessness about the opinions or the feelings of
+     others, till at length the patience of their unfortunate private tutor was so completely
+     exhausted that he gave them a secret hint to withdraw, which they accordingly lost no time in
+     preparing to do, but not till they had enjoyed a very characteristic revenge. When Mr. Brownlow
+     had taken a party of friends with him one evening to the theatre, Sir Patrick suddenly
+     discharged from the gallery the whole contents of a prodigious bag of flour, which powdered all
+     the heads, faces, and coats, in the pit, perfectly white, and caused an uproar of anger and of
+     irresistible laughter throughout the house; and the same evening Louis De Crespigny, as a
+     farewell frolic, abstracted a stuffed bear from the neighbouring hair-dresser's, and having
+     equipped it in the costume of Mr. Brownlow, hung it from the lamp-post, where a panic-struck
+     crowd was speedily assembled by the alarming report that the reverend gentleman had committed
+     suicide. A strict investigation took place respecting the authors of these unpardonable tricks,
+     but, though suspicion fell at once upon the real culprits, and the circumstantial evidence
+     against them seemed irresistibly strong, Sir Patrick argued his own cause with so much skill
+     and vivacity, while De Crespigny looked so innocently unconscious of the whole affair, that,
+     with a silent frown from the master, of stern reproof and suspicion, they were, not honorably
+     acquitted, but allowed to return home without any public mark of censure or disgrace; and soon
+     after both joined their regiment at Dublin.
+De Crespigny and Sir Patrick had but one companion whom they acknowledged as their equal at
+     Eton, in all the spirit, enterprise, and vivacity of their characters, but who was, in a
+     thousand other respects their superior, for seldom, indeed, has there been known, in one so
+     young, a character of as much intensity, or which displayed a combination so singular, of
+     superb talents, rare judgment, sound principle, deep piety, and energetic feeling, as in
+     Richard Granville, an object of admiration to all, and of envy to many; though jealously lost
+     half of its bitterness in association with one so eloquent and single-hearted in conversation,
+     so courteously amiable and conciliatory in manner, and with so fine a principle of tact, ready
+     as far as possible to enhance the pleasures, to palliate the faults, and to share the sorrows
+     of all his companions. Cultivated in all that could adorn the heart as well as the head, in
+     whatever was amiable, high-spirited and generous, Richard Granville had but to follow the
+     impulse of natural feeling as well as of principle, and he out-did the very wishes of his
+     friends, while no one excelled him in all the manly exercises suited to his early years. His
+     countenance was illuminated with an expression of intellectual energy, at times almost sublime,
+     while there was a living grace and amiability in his manner irresistibly attractive. Brave,
+     liberal, and resolute, he entered with eagerness into all the offensive recreations of his
+     companions, and no one excelled him in riding, fencing, and cricket, while he was the best shot
+     in his own country; but he firmly declined ever to squander his time or money on any game of
+     chance, cards, billiards, or gambling in any form. While Sir Patrick's betting-book was from
+     the first a model of skill, in hedging bets, and all the manœuvres of jockey-ology, young
+     Granville said all that eloquence and affection could dictate, to point out how dangerous and
+     dishonorable was the course on which he seemed about to enter, but in vain, for Sir Patrick
+     finished the discussion by offering to bet him £5 he would not be ruined in less than ten
+     years. "I have a fortune and constitution which will last me till thirty," said the young
+     baronet; "and I do not wish to live a day longer."
+"It is easy," said Prince Eugene, "to be modest when one is successful; but it is difficult
+     not to be envied." While the very presence of young Granville in the room, with his riotous
+     young associates, seemed as if it held up a glass to their mind's eye, testifying the folly and
+     evil of their course, yet Richard Granville abhorred display, while Sir Patrick and De
+     Crespigny frequently declared he was "too clever and too good for them;" and unavoidable
+     circumstances afterwards combined to estrange the young men still more. A law-suit had been
+     going on almost since the period of their birth, conducted in an amicable way by their
+     guardians, in which the interests of all three were so deeply concerned, and the case so
+     exceedingly complicated, that years passed on, during which the youths had all grown to
+     manhood, and the case remained still undecided; while the one-sided view which was given to
+     Dunbar and De Crespigny on the subject caused in them an angry feeling of hostility and rancour
+     against their amiable and high-minded young relative, who was so enthusiastically desirous to
+     enter the English church, and devote himself to those sacred duties, that he scarcely wished a
+     favorable decree, which would prevent the necessity for his pursuing a profession at all.
+A Scotch law-suit may be compared to a game at battle-dore between the tribunals of England
+     and Scotland, while the gaping client sees the shuttle-cock for ever flying over his head,
+     higher and higher out of reach, and sent backwards and forwards with ceaseless diligence, but
+     no apparent progress; or it is like a kitten playing with a ball of worsted, which is allowed
+     to come often apparently within her grasp, and is then, when she least expects, twitched away
+     farther than before. The Granville case had been decided by the Court of Session, against the
+     two cousins, Dunbar and Crespigny, but being appealed to the House of Lords, was recommended
+     for consideration, re-argued, re-considered, and nearly reversed, while replies and duplies,
+     remits and re-revisals, commissions of inquiry, and new cases, followed each other in ceaseless
+     succession, and many of the lawyers who were young men when the case began, grew grey in the
+     service, while it yet remained in suspense. A grand-uncle of Sir Patrick's had fifty years
+     before, bought an estate of £12,000 a-year from the Marquis of Doncaster, to whom young De
+     Crespigny was now heir presumptive; but Mr. Dunbar having, it was conjectured, entertained some
+     suspicion that the title deeds were not perfectly valid, as an entail had been discovered
+     afterwards, by which it was generally thought that the land must be restored to the original
+     owner, he hastily and most unfairly sold the property to the late Mr. Granville for £350,000,
+     and dying intestate, after having lost nearly the whole sum in a mining speculation, it could
+     not be proved whether Sir Patrick's father had acted as an executor for the deceased or not, so
+     as to render himself responsible for his debts, and liable to refund the sum paid by Mr.
+     Granville. Thus, whether the entail held good, and carried the estate back to Lord Doncaster,
+     or whether it had been legally broken, so as to entitle the Granville family to keep it, or
+     whether, if it were refunded, the price could be claimed from the heirs of Mr. Dunbar, still
+     continued a mystery never apparently to be solved.
+For many generations past, the ancient Marquisate of Doncaster had been inherited by a
+     succession of only sons, all strict Papists, who had each in his turn been reckoned by the next
+     heirs exceedingly sickly and unpromising, but still the wonder grew, for not one had ever died,
+     till he left a substitute in regular rotation, to supply the vacancy which he created himself;
+     and a long train of minorities in the family had caused the accumulation of wealth and property
+     to be enormous, when the present proprietor succeeded fifty years before our story commences.
+     Nothing could exceed his own astonishment at the unembarrassed magnificence of the fortune, of
+     which he most unexpectedly found himself in possession, as his father had been in the habit of
+     concealing the amount of his own income, and allowing his heir rather less than nothing,
+     saying, that as he himself had never had anything to eat till he had no teeth to eat with, he
+     was resolved that his successor should be similarly treated. In pursuance of this plan, the old
+     nobleman even on his death-bed, had actually expired with a practical joke on his lips. He sent
+     for his son, gravely told him that with debts, mortgages, and settlements, the very encumbered
+     estate he was about to inherit would scarcely pay its own expenses, and recommended him to live
+     in future with the most penurious economy. When the will was opened, finding to his unutterable
+     joy, that he had merely been played upon by the old humorist, who, in reality left him £40,000
+     per annum clear, so great was Lord Doncaster's surprise, that he declared his good fortune at
+     the time to be "almost incredible;" and it might have been supposed, that he never afterwards
+     completely believed it, as his personal expenses were always in a style more suited to the old
+     Lord's threat than his performance, and he became a fresh instance of what may be so often
+     remarked, that the most extravagant heirs in expectancy become the most avaricious in
+     possession.
+There was one singular peculiarity in the settlements of Lord Doncaster's family, that so
+     long as he had no son, or if his son at twenty-one declared himself a Protestant, he had the
+     power of selling or bequeathing the estates according to his own pleasure or caprice; and the
+     ancestor who had inserted this clause in his deed of entail, made his intention evident, that
+     the succession should go to the Roman Catholic Church, rather than to a Protestant heir; but
+     the present peer had taken advantage, on so large a scale, of his own childless privilege, to
+     sell the family estates, that his two deceased sisters, Lady Charlotte De Crespigny, and Lady
+     Caroline Smytheson, used secretly to complain, that little would be left for their children, if
+     he persevered in turning every acre into gold; yet no one ever could guess how the large sums
+     were squandered or melted away, which the old Marquis was continually raising, unless they
+     went, as was strongly suspected, in the form of "secret service money," among the priests by
+     whom he was surrounded.
+Nobody had a better right to be eccentric than Lord Doncaster!—old, rich, unmarried, and
+     originally educated at home,—a misfortune sufficient in itself to engender so many
+     peculiarities, as to render a man unfit for society ever afterwards. The aged peer was shy,
+     proud, and arbitrary beyond all conception, avaricious about trifles, yet lavish to excess on
+     great occasions, suspicious of all men's motives and intentions, and yet confiding to the last
+     extreme of weakness, in the Abbe Mordaunt, his confessor, despising all men, and yet anxious
+     beyond measure for the world's good opinion, addicted to the very worst female society, when he
+     might have enjoyed the best, hating company, and yet sometimes plunging into it, when and where
+     he was least expected, jealous to excess of his next heir, Louis De Crespigny, whom he enslaved
+     to his caprices, as if even his existence were to be given or withheld at his option, yet
+     sometimes whimsically cordial in his manner to him, though ready to take fire in an instant if
+     his condescension led the lively youth into the slightest approach towards confidence or
+     familiarity.
+Mr. Howard Smytheson, the wealthy brother-in-law of Lord Doncaster, having purchased most of
+     the De Crespigny estates, as acre after acre, farm after farm, and house after house, came
+     successively into the market, bequeathed them on his decease to an only daughter then an
+     infant, and it became a favorite day-dream with the old peer, that his nephew and niece should
+     be educated for each other, while to this end he tried his utmost power of conciliation with
+     the maiden sister of Mr. Howard Smytheson, to whose care the young heiress had been consigned,
+     hoping that thus all the amputated limbs of his vast property might yet be reunited in their
+     pristine magnitude, to which very desirable end he thenceforth directed his whole conversations
+     with young De Crespigny, to whom he more than hinted that, unless their will were the same
+     about this marriage, his own will after death would be found very different from what his
+     nephew probably anticipated and wished.
+The private vices of Lord Doncaster had been so very private, that though much was suspected,
+     little could be known; yet, while he had few visible or personal expenses, and no imaginable
+     outlet for his fortune, he invariably spent all his income, and considerably more, being one of
+     those personages occasionally seen who excite the wonder and speculation of relations and
+     neighbours, by unaccountably frittering away fortunes of almost royal splendor, without any
+     appearance of royal luxury or royal liberality. Wearied of the world, in which he had nothing
+     more to desire, and of himself, as he had nothing to think of or to do,—bored in short with the
+     want of a want, Lord Doncaster's life was indeed a mere heartless pageant of mean ostentation
+     and fretful pride, sternly insulated in a state of solitary old-bachelor despotism, and
+     absorbed in himself to a degree which no ordinary mind could conceive or comprehend. Encumbered
+     with so many unoccupied hours, it was a subject of as much wonder how he disposed of his
+     superfluous time, as of his superfluous fortune; but he settled that question, by remarking one
+     day to his nephew, that "the great business of life is, to shuffle through the day anyhow till
+     dinner time." Like all parsimonious men, Lord Doncaster could not endure to hear any one else
+     reckoned affluent, and Louis De Crespigny knew that a certain receipt for irritating him was,
+     to over-estimate everybody's income, consequently he amused himself occasionally by audibly
+     giving out Lord Towercliffe's fortune to be £15,000 a-year, and estimating his friend Sir
+     Patrick Dunbar's rent-roll at a clear sum of £20,000 per annum, while he slyly watched his
+     uncle's rising choler, and patiently heard, for the fiftieth time, an elaborate explanation,
+     that it was impossible, and a sober calculation which reduced both the offending parties almost
+     to beggary.
+In the month of August, as regularly as time revolved, Lord Doncaster delighted to read in
+     the newspapers, his own pompous advertisement, the only original composition he was ever known
+     to attempt, in which he prohibited poachers and strangers from shooting on his moors in
+     Argyleshire, Mid-Lothian, Yorkshire, Galloway, Cromarty, and Caithness, but except the annual
+     appearance of this spirited manifesto, no public evidence ever came forth of that extraordinary
+     wealth which property so extensive must be supposed to produce. No charitable donations bore
+     witness to Lord Doncaster's liberality—no country objects were encouraged by his public
+     spirit—and the monuments daily arising in memory of departed merit, made a vain appeal for his
+     pecuniary tribute of respect and regret, for Lord Doncaster neither respected nor regretted any
+     man.
+It was an often-repeated axiom of Lord Doncaster's, that every man cheats or is cheated; but
+     in one instance, and one only, his Lordship had shown apparently some kind feeling, or rather
+     perhaps he might be said to have exhibited a capricious freak of benevolence, though the result
+     had been such as to afford him an excuse ever afterwards for not again attempting a single act
+     of gratuitous liberality.
+The nearest relative to his ancient family, after Louis De Crespigny and Miss Howard, was
+     Mrs. Anstruther, a distant cousin, who, after making a low and almost disgraceful marriage, had
+     suddenly died, it was believed by her own hands, thus consigning her two young children to
+     helpless, and apparently hopeless poverty, till at length they were very unwillingly invited,
+     or rather permitted to become residents in an almost menial capacity at Beaujolie Castle, in
+     Yorkshire, where, as they could neither be drowned like kittens, nor shot like puppy-dogs, the
+     Marquis caused them to be treated like the "whipping boys" in Charles the First's
+     time—sometimes employed as playmates to amuse his nephew and niece during their holiday visits
+     to his residence, but more frequently treated in a sort of mongrel way between dependents and
+     slaves by the heartless and tyrannical old peer, who considered them as mere poachers on the
+     preserve of his family honors, having forced their way into existence by some untoward
+     accident, and become absolute blots in the creation, liable to be suspected, and even accused
+     to their faces of every low and vicious propensity, in consequence of which, from an early age,
+     he destroyed their self-respect, and irritated their evil passions by the most rash and
+     unfounded aspersions—theft, swindling, lying, and gluttony, were among the principal counts in
+     his Lordship's indictment, when he sometimes vented a paroxysm of ill-humor on these his
+     unhappy dependents; and many a time the tears of Mary Anstruther, and the flashing eye of her
+     brother Ernest, bore witness to the anger and grief with which they listened to his bitter and
+     often unmerited upbraidings.
+At times, however, Lord Doncaster found it convenient for his own private purposes to
+     patronize the Anstruthers, and threatened, in the hearing of all his young relatives, that if
+     Louis De Crespigny's conduct did not in all respects satisfy him, an heir more subservient to
+     his wishes might be found, and though the culprit must be his nephew, he need not be his
+     successor, while the glance of his eye towards Ernest aroused hopes, wishes, and even
+     expectations of the wildest extravagance, which were then confirmed for a time by his being
+     promoted to temporary attention and consideration, not only displayed ostentatiously by their
+     capricious patron, but extending to the increased respect and observance of the servants, the
+     thermometer of whose obedience rose and fell according as the sunshine of Lord Doncaster's
+     favor shone upon his young relative or not; yet brief as these periods of increased importance
+     had always been, they made an indelible impression on the young and ambitious minds of those
+     usually neglected children. "The child becomes a boy, the boy a youth, and then the game of
+     life begins in earnest."
+Without education or principle, and with no friend on the wide earth to confide in or to
+     consult, the two young Anstruthers, like weeds that will yet flourish though trampled upon,
+     grew up vigorous in body, and enthusiastically as well as devotedly attached to each other,
+     with a depth and power of affection which appeared, before long, the only redeeming quality in
+     characters wherein strong passions and weak principles promised little, and threatened much, to
+     all with whom they might hereafter become associated.
+The resemblance between them was as remarkable as their attachment, both having dark
+     Italian-looking countenances, of remarkable symmetry, with a singularly excitable and
+     determined expression in their large lustrous eyes, while it was remarkable that neither could
+     by possibility look any one steadily in the face. There was a wild, almost feverish brilliancy
+     in the eye of Ernest, expressive of a fiery impetuosity, amounting at times almost to an
+     appearance of insanity, when, after being obliged to crouch and flatter for his bread before
+     Lord Doncaster, he would retire with Mary, and give loose to all the angry torrent of his
+     long-suppressed emotions. The sister's heart cowered sometimes before the flood of invectives
+     and imprecations with which he relieved his heart by speaking of his wrongs, while he seemed to
+     cherish a gnawing belief that fortune herself had shown him a most unaccountable and undeserved
+     enmity, which he was resolved, by fair or by foul means, to subvert. "I shall yet rise above
+     all the accidents of fortune! It shall be done, I care not how, Mary," said he sternly. "We
+     must not be over-particular on that score, for, as the proverb says, 'a cat in mittens will
+     never catch mice!'"
+Bold, fearless, and ready, with a keen appetite for danger, a fearless ambition, consummate
+     cunning, and an insatiable thirst for adventure, it seemed sometimes as if he would put his
+     mind into a pugilistic attitude, and buffet his way forward to pre-eminence in spite of all the
+     malice of fortune and of mankind. With a temper vindictive, harsh, and deadly, his blood
+     mounted like mercury in a thermometer at the very thought of success, and often when he spoke
+     to his sister in the lowest whisper of their future prospects, she would start and look hastily
+     round as if in terror, lest the wild dreams of his undisciplined mind might be overheard and
+     resented, for he nourished a feverish hope, which he called a presentiment, but which amounted
+     almost to a monomania, that the splendid residence in which they were now only tolerated on
+     sufferance, "as reptile dependents," would one day become his own.
+If every man living might remove at pleasure all those who stand inconveniently in his way,
+     political economists would have nothing to fear from a too rapidly increasing population, and
+     the day-dreams of Ernest, which gained strength and consistency every hour, were prolific in
+     both deaths and marriages. He carefully collected in the Peerage all the instances there
+     recorded, in which distant relations had succeeded through a long mortality of twenty or
+     five-and-twenty intermediate heirs,—he remembered that neither Louis nor Caroline had yet
+     endured the measles,—he thought their Shetland ponies very dangerous, and, in short, if their
+     days had been measured by him, the measure would have been short indeed. His personal vanity
+     was excessive, and amidst his wild schemes of aggrandisement, the first and foremost had lately
+     been to marry his lively, frolicsome, little cousin, and occasional playmate, Caroline Howard
+     Smytheson, in whose infant manner, heedless and good-humored as she was, he flattered himself
+     there might be traced an evident appearance of preference, while he could not but also remark,
+     that before any of the young party had attained the age of maturity, and Caroline was yet a
+     mere infant. Louis De Crespigny had already begun to exercise his genius for flirtation in the
+     society of his humble cousin Mary Anstruther,—humble only in circumstances, but possessing that
+     pride without principle, which goes before a fall.
+Time had ripened the faults of the two young Anstruthers, and perfected also their
+     extraordinary beauty of person, when, after Ernest had attained the age of nineteen, a whim as
+     sudden, and apparently as unaccountable as their adoption, caused Lord Doncaster, or rather the
+     Abbe Mordaunt, unexpectedly to announce that they were dismissed from the house. Various
+     rumours were circulated among the servants to account for this harsh and hasty decision, but
+     nothing could be discovered for certain. Ernest was reported to have expressed himself with the
+     greatest rancour and contempt respecting a report in circulation, that Lord Doncaster intended
+     to marry the Abbe Mordaunt's beautiful niece, then on a visit at Kilmarnock Abbey, near
+     Edinburgh. The Abbe was said to have missed some valuable jewels belonging to his niece Laura,
+     who accused both the Anstruthers of having been seen in her room,—a large sum of money, it was
+     hinted, had mysteriously disappeared—some people said that Ernest had been discovered at a late
+     hour of the night attempting to enter the sleeping apartment of Lord Doncaster, without being
+     able to give any satisfactory account of his intentions, and others declared that Louis De
+     Crespigny's assiduities to Mary Anstruther had recently become rather too obvious, while
+     surmises arose against her character; but whatever might be the cause, they were both hastily
+     transferred on a few hours' notice from the splendors of Kilmarnock Abbey, to a small obscure
+     lodging at Portobello. As Ernest was about to leave that house which had so long been his home,
+     with Mary sobbing in uncontrollable grief on his arm, anger and despair were fearfully stamped
+     on their young faces, when the Abbe Mordaunt advancing silently, placed a small sum of money in
+     their hands, which the young man furiously dashed upon the ground, and trampled upon, saying in
+     accents of strong and almost terrifying vehemence, while his countenance exhibited a dark
+     insidious expression of almost maniacal fury, "I would not be human if I did not hate your
+     niece and you!—my curse shall rest on both till I am revenged! Take back your paltry gold, I
+     shall build up my own fortune, or perish in the ruins! I shall live by my own hands, or—by own
+     hands I shall die!"
+From that day forward the names of Mary and Ernest Anstruther never passed the lips of Lord
+     Doncaster or the Abbe, who ordered the servants also to abstain from ever mentioning them,
+     which only piqued the curiosity of the second table into greater activity than ever; but though
+     many vague conjectures, dark suspicions, and absurd rumours, were promulgated throughout the
+     establishment, nothing certain could be ascertained, except that they returned no more to
+     Kilmarnock Abbey, and that a final extinguisher had been placed on all their prospects and
+     hopes from Lord Doncaster.
+About this time Mrs. Bridget Smytheson sent Miss Howard, then only six years old, to school,
+     and seemed so little anxious to encourage an intimacy between the young heiress and Louis De
+     Crespigny, whom she had long disliked, that Lord Doncaster, piqued and indignant, angrily
+     reminded her of his sister Lady Caroline's dying injunction, to which she had promised implicit
+     attention, that if the cousins, after they were grown up, could be ascertained to have to have
+     a disinterested preference for each other, every opportunity should be given them to become
+     attached and engaged.
+"Certainly, Lord Doncaster; and I shall fulfil my pledge," replied the over-dressed, and
+     rather under-bred aunt, in her usual tone of fantastic affectation; "but these boy-and-girl
+     intimacies are not the most likely to produce that romantic love with which young people ought
+     to begin their married lives; and besides, how could their preference be disinterested, where
+     the brilliant prospects of both are continually descanted on as motives to their union. No! I
+     have a considerable spice of romance in my composition; and when they do meet again, it shall
+     be under very different circumstances."
+"What a creature to have the charge of any girl!" thought Lord Doncaster, as he returned from
+     handing her, with every appearance of profound respect, into her pony-carriage. "There is
+     another woman half so insane out of bedlam; and that mad-cap child herself is as wild as a
+     horse with the reins broke. The greatest annoyance on earth is, to have a rich and vulgar
+     upstart among on's near connections."
+</div></body></text></TEI>

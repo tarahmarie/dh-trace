@@ -17,7 +17,6 @@ from hapaxes_1tM import remove_tei_lines_from_text
 from util import get_project_name, getListOfFiles
 
 project_name = get_project_name()
-all_files = getListOfFiles(f'./projects/{project_name}/splits')
 
 raw_data = []
 chapter_labels = []
@@ -47,8 +46,9 @@ def close_db_connection():
     except Exception as e:
         print(f"Error while closing the database connection: {str(e)}")
 
-def insert_predictions_data(data):
-    cursor.execute("INSERT INTO predictions VALUES (?,?,?,?,?,?,?,?,?)", data)
+def insert_predictions_data(transactions):
+    query = "INSERT INTO predictions VALUES (?,?,?,?,?,?,?,?,?)"
+    cursor.executemany(query, transactions)
     connection.commit()
 
 def insert_chapter_data(data):
@@ -73,19 +73,17 @@ def update_the_chapters_table(column_names):
         connection.commit()
 
 def process_raw_files():
-    for i, file in enumerate(all_files):        
+    all_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
+    for i, file in enumerate(all_files):
         with open(file, 'r') as f:
             body = f.read()
 
             if "—" in file:
                 author = file.split('/')[4].split('—')[-1] #Because Eltec uses em dash. ffs.
+                title = file.split('/')[4].split('—')[0].split('-')[1]
             else:   
                 author = body.split('<author>')[1]
                 author = author.split('</')[0]
-
-            if "—" in file:
-                title = file.split('/')[4].split('—')[0].split('-')[1] #Because Eltec uses em dash. ffs.
-            else:   
                 title = file.split('/')[4].split('-')[1]
 
             text = preprocess_text(body)
@@ -93,6 +91,7 @@ def process_raw_files():
             chapter_num = file.split('_')[-1]
 
             raw_data.append((author, title, chapter_num, text))
+
 
 def build_lists():
     # Sometimes, our old friend Eltec doesn't parse right. So, we check.
@@ -136,15 +135,10 @@ def preprocess_text(text):
     return processed_text
 
 def test_model():
-    # Feature extraction
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(chapters)
-
     # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.30, random_state=42)
 
     # Train the SVM classifier
-    svm = SVC()
     svm.fit(X_train, y_train)
 
     # Evaluate the classifier
@@ -161,13 +155,8 @@ def assess_authorship_likelihood():
     outcomes_dict = {}
     column_names = []  # Move the column_names list creation here
 
-    # Feature extraction
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(chapters)
-
     # Split the dataset into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
-    svm = SVC()
     svm.fit(X_train, y_train)
 
     pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#a361f3", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
@@ -201,27 +190,22 @@ def unseen_test():
             body = file.read()
             text = preprocess_text(body)
             unseen_chapters.append(text)
-
-    # Fit the vectorizer on the entire dataset
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(chapters)
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    # Train the SVM classifier
+    svm.fit(X_train, y_train)
+    # Extract features from the seen chapters
+    seen_features = vectorizer.transform(chapters)
+    # Predict authors for unseen chapters
+    seen_predictions = svm.predict(seen_features)
+    confidence_scores = svm.decision_function(seen_features)
 
     # Extract features from the unseen chapters
     unseen_features = vectorizer.transform(unseen_chapters)
 
-    # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
-
-    # Train the SVM classifier
-    svm = SVC()
-    svm.fit(X_train, y_train)
-
     # Predict authors for unseen chapters
     unseen_predictions = svm.predict(unseen_features)
     confidence_scores = svm.decision_function(unseen_features)
-
-    # Get the unique author labels
-    unique_labels = np.unique(authors)
 
     # Compute basic statistics of confidence scores
     min_score = np.min(confidence_scores)
@@ -251,10 +235,7 @@ def unseen_test():
     insert_test_set_data(test_transactions)
    
 def generate_prediction_data():
-    """ This function serves as a kind of debug output. """
-    # Fit the vectorizer on the entire dataset
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(chapters)
+    temp_transactions = []
 
     # Extract features from the unseen chapters
     seen_features = vectorizer.transform(chapters)
@@ -263,16 +244,17 @@ def generate_prediction_data():
     X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
 
     # Train the SVM classifier
-    svm = SVC()
     svm.fit(X_train, y_train)
 
     # Predict authors for unseen chapters
     seen_predictions = svm.predict(seen_features)
     confidence_scores = svm.decision_function(seen_features)
-    #Get the number of combinations in the slowest way possible
-    total_iterations = 0
-    for i in itertools.combinations(raw_data, 2):
-        total_iterations += 1
+
+    # Calculate total_iterations directly
+    total_iterations = len(raw_data) * (len(raw_data) - 1) // 2
+
+    # Create a dictionary to map authors to indices
+    author_indices = {author: index for index, author in enumerate(unique_labels)}
 
     # Iterate through all pairs of chapters
     pbar = tqdm(desc='Computing Chapter Pair Predictions: ', total=total_iterations, colour="#ffaf87", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
@@ -289,27 +271,36 @@ def generate_prediction_data():
         else:
             outcome = "N"
 
-        author1_index = np.where(unique_labels == author1)[0][0]
-        author2_index = np.where(unique_labels == author2)[0][0]
+        author1_index = author_indices[author1]
+        author2_index = author_indices[author2]
         score1 = confidence1[author1_index]
         score2 = confidence2[author2_index]
 
-        # Assuming you have the confidence scores in a variable called 'confidence_scores'
-        data = [author1, novel1, chapnum1, author2, novel2, chapnum2, outcome, score1, score2]
-        insert_predictions_data(data)
+        # Append the tuple to the list
+        temp_transactions.append((author1, novel1, chapnum1, author2, novel2, chapnum2, outcome, score1, score2))
 
         pbar.update(1)
 
+    # Convert the list of transactions to a tuple
+    temp_transactions = tuple(temp_transactions)
+
+    insert_predictions_data(temp_transactions)
     connection.commit()
     pbar.close()
 
 
+
 if __name__ == "__main__":
+    vectorizer = TfidfVectorizer()
+    svm = SVC()
     print("\nLoading raw files...\n")
     process_raw_files()
     authors, novels, chap_nums, chapters = build_lists()
     prepare_labels()
     unique_labels = np.unique(authors)
+
+    # Feature extraction
+    X = vectorizer.fit_transform(chapters)
 
     # Check if the file exists
     if os.path.exists(f'./projects/{project_name}/db/svm.db'):
@@ -321,7 +312,7 @@ if __name__ == "__main__":
             prepare_the_db()
             
             print("\nTesting the model before proceeding...\n")
-            #test_model()
+            test_model()
 
             outcomes_dict, column_names = assess_authorship_likelihood()
             chapter_transactions = []
@@ -348,11 +339,8 @@ if __name__ == "__main__":
         outcomes_dict, column_names = assess_authorship_likelihood()
         chapter_transactions = []
         for key, value in outcomes_dict.items():
-            novel = key.split('-')[0]
-            chap_num = key.split('-')[1]
-            temp_transaction_tuple = (novel, chap_num)
-            for author, score in sorted(value.items()):
-                temp_transaction_tuple = temp_transaction_tuple + (score,)
+            novel, chap_num = key.split('-')
+            temp_transaction_tuple = (novel, chap_num, *sorted(value.items(), key=lambda x: x[0]))
             chapter_transactions.append(temp_transaction_tuple)
         update_the_chapters_table(column_names)
         insert_chapter_data(chapter_transactions)

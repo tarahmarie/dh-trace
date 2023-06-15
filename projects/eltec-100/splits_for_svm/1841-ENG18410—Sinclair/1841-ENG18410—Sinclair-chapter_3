@@ -1,0 +1,305 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Modern Flirtations, A Novel, by Catherine Sinclair—A Project
+      Gutenberg eBook</title><author>Sinclair, Catherine (1800-1864)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1841</date></publicationStmt></teiHeader><text><body><div type="chapter" n="3">
+  CHAPTER III.
+The life of Louis De Crespigny, from the hour he entered the army, was one continued
+     steeple-chase after pleasure and amusement, in whatever form they could be courted, or at
+     whatever expense they could be enjoyed. At a very early age, he was already a veteran in the
+     world and its ways; for he stood "alone in his glory," the most admired, courted, and idolized
+     of mankind, a perfect adept in all the arts of rendering himself agreeable in society, and
+     possessing many pleasant qualities, but none that were valuable. During a gay career of
+     dissipation and frivolity, he had entered with successive eagerness on a thousand flirtations,
+     though he always forgot to marry in the end, while his heart, like a phœnix, was frequently
+     consumed, yet never destroyed, and always ready at the service of any young lady, with youth,
+     beauty, and accomplishments enough to excite his temporary interest. Being of opinion, that,
+     though not yet a peer, he ought speedily to be one, young De Crespigny openly avowed the
+     impossibility of marrying while Lord Doncaster survived, and jocularly remarked, that it would
+     be a pity prematurely to cut off the hopes of his hundred and one Scotch cousins, who lived,
+     like Ernest Anstruther, on the hope, that if his neck were broken at Melton, his succession
+     might yet be "cut up" amongst them; and to the friendly inquiries of his many relatives, he
+     frequently replied with a condoling look, that he and his uncle were both "hopelessly
+     well."
+Lord Doncaster was not even yet, by any means, so great a Methusalemite in age, nor so
+     weighed down by infirmities, as his lively nephew chose among the mothers and daughters of his
+     intimate acquaintance to represent; and some ladies whom young De Crespigny had piqued or
+     affronted, were actually ill-natured enough to hint, that Lord Doncaster was still almost young
+     and almost handsome! They had even been so malicious as to insinuate, that his Lordship might
+     possibly have a genius for marrying his house-keeper, almost the only respectable female who
+     ever crossed his threshold; but Mrs. Fireland's very mature age, and very antiquated dress,
+     shewed how completely she must have given up that point; and even her desire to please him in
+     her own department, became every hour so increasingly difficult, and was attended with failures
+     and disappointments so unforeseen and unaccountable, that the good woman often shook her head
+     ominously, in alluding to his Lordship's numerous whims, saying, in a confidential under tone,
+     which seemed to mean more than met the ear, to the steward, "he's petiklar! he's very petiklar!
+     It would require a person bespoke to order to please his Lordship." And certainly he had become
+     of late years more particular than ever.
+One personage only seemed to have the art of doing no wrong in the estimation of Lord
+     Doncaster; and the respect which he withheld from all mankind, was concentrated to an
+     immeasurable degree on the Abbe Mordaunt, who was the Cardinal Wolsey of Kilmarnock Abbey and
+     Beaujolie Castle. Proud, overbearing, harsh, and arbitrary, he ruled over the house, the purse,
+     and even the will of his patron, with despotic and unlimited sway. Men are generally advanced
+     in years before the passions and feelings have stamped their indelible traces, like the
+     impression of a seal, which becomes permanent only after the wax has began to cool; but in
+     every feature of the Abbe's countenance, might now be seen the evidences of a gloomy, severe,
+     and almost ferocious temper, yet never was there a greater triumph of art over nature, than in
+     the skill with which he adapted his looks and conversation to the taste or caprice of those
+     whom it was his interest to govern, and the astonishing facility with which he could call up a
+     bland smile and insinuating voice, to supersede the habitual haughtiness of his tone and
+     manner.
+Educated at St. Omers, in all the dark superstitions of that bigoted college, the Abbe was
+     nevertheless far from desirous to seek within the walls of a cloister any protection from those
+     temptations to worldly indulgence, which he had not even the wish to resist. He neither
+     preached nor practised the virtues of his vocation, but paraded a whole troop of vices openly
+     in the public eye; and far from attempting to reform mankind, he never attempted even to reform
+     himself. Though in personal appearance of distinguished ugliness, yet such was the magic of his
+     manner, that even by ladies he was considered perfectly irresistible; and to all, whether old
+     or young, he generally succeeded in imparting a conviction, that he saw in her, for the first
+     time, a realization of female perfection and female fascination. The Abbe was never known to
+     stop half-way in arduously pursuing any object of pleasure, profit, or ambition, nor, whatever
+     might be the impediments, was he ever seen to fail of success; for, like Bonaparte, he did not
+     know the meaning of the word "impossible."
+After having recklessly squandered, in a career of almost startling dissipation, the whole of
+     his own patrimony, it was believed that he had obtained fraudulent possession of £10,000
+     belonging to his very beautiful niece, to whom he must have refunded it had she lived to come
+     of age, or had she married it must have been restored to her children, but about the time our
+     story commences, she was supposed either to have died, or to have retired to a convent abroad,
+     though whether upon conviction or not, might be considered very doubtful, as she had been
+     educated by her mother in the Protestant faith, and it was generally conjectured that to so
+     sudden and entire a removal from all former connections, her poverty more than her will must
+     have consented. Laura Mordaunt had resided much at Kilmarnock Abbe with her uncle, to whom she
+     seemed warmly and blindly attached, but the gossiping world sometimes conjectured that perhaps
+     the evident partiality and admiration of Lord Doncaster might have roused in her some ambitious
+     thoughts, backed by the influence of the Abbe. Among the peculiarities of the Marquis he had
+     always professed a decided contempt for all respectable ladies, and therefore his attentions to
+     Laura Mordaunt were at best a very questionable compliment, and became naturally of a nature
+     which few relatives would have wished to encourage, yet Miss Mordaunt still remained a guest at
+     Kilmarnock Abbey, till the period of her sudden disappearance, which caused so much
+     astonishment among her intimate friends and near connections, that the father of Richard
+     Granville, her cousin, shortly before his own death, wrote an affectionate letter, entreating
+     her to return, were it but for a few months, and to make a home of his house for the future,
+     should it suit her to do so; but to this kind and generous offer no reply ever came, and as all
+     communications were to pass through the Abbe's hands, who alone knew his niece's direction, it
+     might be doubted whether the invitation ever reached that hand for which it was intended.
+That Lord Doncaster had cruelly disappointed Laura Mordaunt, as he had already disappointed
+     many others, her friend and cousin had good reason to believe; and though unable to imagine any
+     really romantic or lasting attachment to a man, however elevated in rank or agreeable in
+     manners, of at least fifty years old, yet he knew that Laura, who lived so retired that she
+     could boast of few friends and no admirers, might really have been dazzled with the splendour
+     of his rank or the fascination of his conversation; while it seemed the most unaccountable part
+     of the whole affair, that if such were the case, the attachment had not been reciprocal,
+     between a young and beautiful girl, thrown so continually in his way, and an aged roue, who had
+     so evidently admired her.
+If the probable duration of Lord Doncaster's life had been measured according to the estimate
+     formed of it in many an Edinburgh drawing-room, it would have brought a very small premium
+     indeed at the insurance offices. By referring to that valuable record, Debrett's peerage, it
+     was satisfactorily proved that the De Crespignys were a very short-lived family! One Lord
+     Doncaster had died of a fall from his horse at thirty-five; another had been killed in battle,
+     at forty-two; and not one of them had contrived very much to exceed eighty, therefore hopes
+     might be entertained of the popular and fascinating Louis De Crespigny at last gaining the
+     long-expected "step." It might have been supposed by strangers in Edinburgh, that there was but
+     one marquisate in Britain, so frequently were the strawberry-leaves of Lord Doncaster under
+     animated discussion; and any visitor who accidentally took Burke or Debrett in his hand, might
+     smile to observe that the pages naturally fell open where that interesting paragraph presented
+     itself to notice,
+"Doncaster, Marquis of. Heir presumptive, Louis Henry De Crespigny."
+A tradition prevailed among the elder ladies of fashion now in society, that a splendid set
+     of diamonds, which had been long the ornament and admiration of Queen Charlotte's
+     drawing-rooms, were since entailed, by an old Lady Doncaster, in the family; and many a young
+     beauty, in arranging a bright futurity on her own plan, had frequently worn these far-famed
+     jewels in her imagination, when presented at Court as a Marchioness, the envy and admiration of
+     all her contemporaries. Meantime nothing could be more astonishing than to find how much was
+     known in Edinburgh concerning the modes of life, temper, and character of the present Lord
+     Doncaster, though he lived not only secluded from society, but made it his peculiar study to
+     evade the scrutiny of impertinent curiosity, and was so anxious to check the loquaciousness of
+     servants, that his butler and housekeeper had strict orders to keep up a sort of prison
+     discipline in the establishment, and not to allow a word to be spoken when at meals. It was,
+     however, authentically ascertained by some unknown means, that Lord Doncaster, who had formerly
+     been a man of dissipated habits and irregular hours, now devoted himself to the care of his
+     health as diligently and intensely as a miser does to the care of his money, and that to him it
+     had become a subject of almost avaricious interest. If the Marquis had a finger-ache, it was
+     magnified in Edinburgh into a case of certain death; but after a really severe illness, he was
+     heard jocularly to remark, in sporting phrase, "I have had another round with death!" while he
+     seemed confident, on these occasions, of always coming off victorious, though few among the
+     young ladies of his nephew's acquaintance would have been found ready to back his expectations,
+     while Agnes Dunbar impatiently remarked, that Lord Doncaster had been so long in the world, he
+     seemed not to know how to leave it.
+It was generally understood by the juries who sat upon Lord Doncaster's case in society, that
+     his breakfast consisted of strong gravy-soup and poached eggs, which were pronounced to be very
+     plethoric,—he ate no luncheon, which must be very exhausting at his time of life,—he had an
+     enormous appetite for dinner, which would certainly drive blood to his head,—and above all, he
+     took a hot supper, which must be fatal at last;—every newspaper tends to prove, that after
+     eating a hearty supper the night before, people are invariably found dead in their beds the
+     next morning;—and it was already unaccountable how many mornings Lord Doncaster had survived!
+     Any day in the world might bring accounts of his death,—some day must do so, sooner or
+     later,—hundreds of old people were dying continually, and so might the superannuated peer; yet
+     though his days were numbered in so many houses, they nevertheless seemed to be numberless,
+     while gentlemen, older than himself, were often heard impatiently speculating and wondering
+     what will he would make, and declaring they only wished to live, in order to know the result of
+     so many anxious conjectures, while his dutiful nephew gayly remarked, that his uncle need never
+     wait for parchment to write his will upon, while the skin on his face looked so like it.
+Still Lord Doncaster obstinately persevered in living on, while, strange to say, many of the
+     manœuvring mamas who had been heard to declare, that if an old person must die at any rate,
+     they could spare his Lordship better than any other mortal, became mortal themselves, and were
+     first consigned to the tomb. Even some of the young and lovely girls, who had thought, in the
+     morning of life, before the freshness of their bloom had been dimmed, or the lustre of their
+     beauty had decayed, that this one obstacle to their happiness must be removed,—many of these
+     gay, joyous, and unthinking beings had sunk unexpectedly into an early grave, while still Lord
+     Doncaster, in a most provoking and unprincipled manner, disappointed everybody, and continued
+     to exist in a world where he was anything but welcome, resolved apparently, never, in an
+     every-day vulgar way, to die at all.
+In the mean time, Louis De Crespigny, devoted to the amusements of life, but independent of
+     all its finer sympathies, seemed to breathe nothing but the exhilarating ether of life, joyous,
+     giddy, and intoxicating. He revelled in a laughing, lively, satirical consciousness of his own
+     exact position in society, and privately resolved to make the most of it,—not that he
+     deliberately made up his mind to deceive,—his code of honor was rigid enough in respect to his
+     transactions with gentlemen, but in the case of young ladies it was otherwise,—
+
+"Man, to man so oft unjust,
+Is always so to woman."
+
+With ladies Mr. De Crespigny considered his own brilliant prospects and personal fascinations
+     to be fair, marketable produce, which there could be no objection that he should use to the
+     utmost advantage, for bringing in the largest possible return of pleasure, profit, and
+     amusement. Accordingly, the gay young Cornet, living upon what he could borrow, on the
+     disinterested attentions of manœuvring mothers, and on the expectation of his uncle's speedy
+     demise, made himself the chosen attendant of half a hundred accomplished and perfectly amiable
+     young ladies, who laughed, talked, sang, and danced with him, while he soon became but too
+     intimately known as a ruthless flirt, to many a young heart, and to many a happy home, where he
+     took care that it should be distinctly implied and understood, that nothing but the jealous
+     penuriousness of "that old quiz, Lord Doncaster," impeded his ardent wish to settle for life;
+     while in the mean time, wherever a good table and cellar were kept, he testified exactly such a
+     degree of partiality for the sister or daughter of his host, as made her be considered his
+     wife-presumptive, and secured him a regular knife and fork in the house on all family festivals
+     and state occasions, without any trouble in either ordering or paying for the entertainment. It
+     has been said, that as a rolling stone gathers no moss, neither does a roving heart gain any
+     affection; but whatever might be the case with others, Louis De Crespigny felt himself without
+     a doubt the idol of every drawing-room, where he sentimentalized, rattled, and flirted in every
+     style, with every girl under twenty, as diligently as if he were canvassing for an election,
+     while they talked, looked, smiled, and dressed their very best; and the excellence of any
+     gentleman's wine might be accurately estimated by the thermometer of Mr. De Crespigny's
+     attention to the daughters; but he had a declared abhorrence of family dinners, which looked
+     too business-like and domestic, as if he had really committed himself; though, as Lady
+     Towercliffe remarked to her four daughters one day, "he never said anything to the purpose,
+     when the purpose was marriage."
+Though Mr. De Crespigny seemed, at the "dignity dinners" in Edinburgh, to live for no other
+     object on earth, but the one fascinating young lady, with whom it was his game at the time to
+     appear epris, and though she might probably be astonished and piqued
+     during the following week, to observe this indefatigable amateur in flirtations equally
+     assiduous in his attentions to another, and shooting like a brilliant meteor in the ball-room,
+     unheedingly past herself, yet she might console herself by reflecting, that Mr. De Crespigny
+     was in the habit of confidentially hinting how much he felt embarrassed and annoyed by the
+     necessity of generalizing his intimacies, that no gossiping reports might reach his whimsical
+     relative. "Because actually!" he one day whispered in confidence to Lady Towercliffe, "when my
+     uncle becomes irritable, he threatens to make all sorts of ridiculous marriages himself; and it
+     would be my last hour in his will, if he thought me heretic enough merely to dance with a
+     Protestant partner. He would not engage so much as a housemaid of your persuasion; but for my
+     own part, I leave all these concerns to the Abbe Mordaunt, who, to do him justice, lets me off
+     very easily."
+The difference of faith made wonderfully little difference in the intentions of those young
+     ladies who believed themselves the objects of Mr. De Crespigny's unacknowledged preference, for
+     every bit of millinery in a ball-room was in a flutter of agitation whenever he approached; and
+     certainly no one ever excelled more in making those he conversed with rise in their own
+     opinion, from his tact in showing how very high they stood in his, and the consequence was,
+     that he already possessed a rare and romantic collection of sentimental valentines, sketches
+     with his figure in the foreground, songs with the magical name of Louis conspicuously
+     introduced, withered bouquets, anagrams, anonymous letters, and anonymous verses, all with a
+     too-well-remembered history belonging to them, which called up a smile of derision, or a sigh
+     of self-reproach, according as the case required, but all treasured as relics of former happy
+     hours, which had perhaps been the history of a lifetime to the fair donors, and the diversion
+     of a few days only to himself, while he secretly applauded his own dexterity in escaping the
+     matrimonial noose, and to them there remained only the silent remembrance of that intercourse,
+     now for ever at an end, which they had believed was to last for life.
+Mr. De Crespigny's engagement book was nearly as complicated an affair as any ledger or
+     day-book, and much more so than his own banker's account, for he arranged it on the most
+     systematic principles of profit and loss. In whatever house he had been invited to dine, he
+     considered himself as "owing a quadrille" to one of the young ladies at the next assembly. If
+     he had actually "sat under her father's mahogany," as he termed it, she might be perhaps
+     entitled to two dances; and when he had spent the greater part of a summer in her mother's
+     country house, that established a sort of sinking fund in her behalf, which entitled him to
+     have the use of him as a partner, whenever he happened accidentally to be disengaged, though
+     indeed nothing ever occurred accidentally in Captain De Crespigny's arrangements, for he never
+     acted on impulse, but always on systematic calculation. He seemed, with his gay pell-mell
+     manner, the most off-hand, careless, and undesigning of men; but even in the trifling affair of
+     going to a ball, where he might literally have exclaimed, "I am monarch of all I survey," he
+     invariably carried in his mind's eye a list of all those partners with whom policy or
+     self-interest directed him to dance, and very seldom indeed did he swerve from his
+     pre-conceived muster-roll.
+It was a singular evidence of young De Crespigny's discretion and skill, that, while paying
+     attentions which should either have never been paid at all, or never afterwards discontinued,
+     and while, with all its fascinations, Lady Towercliffe declared it was dangerous to a young
+     lady's happiness to be even introduced to him, still, in not one instance had "his intentions"
+     ever yet been asked, and neither fathers, uncles, nor brothers had betrayed the slightest
+     symptoms of insurrection against his universal dominion, believing, as his excuse for delaying
+     to propose was so perfectly unanswerable and respectable, that his intentions might safely be
+     allowed to "lie on the table," while they awaited in breathless suspense the denouement, certainly to take place on Lord Doncaster's death.
+Some of Mr. De Crespigny's brother officers, envious perhaps of his extraordinary success in
+     society, threw out sceptical hints respecting the certainty of his succession, and laughed
+     sarcastically at the indefatigable vanity with which he evidently liked being thus torn to
+     pieces among the chaperons and dowagers of society; but he laughed as heartily as themselves.
+     No one could ever get the start of him in a joke; and his associates, when he came in
+     competition with any one of them, found it no laughing matter. He knew his own power—who does
+     not know that?—and difficulties only enhanced his triumph.
+Lord Doncaster often dryly remarked, that the best economist in Britain must certainly be
+     Louis De Crespigny, as, to his certain knowledge, he possessed only £300 a year, and yet he
+     seemed to revel in all the luxuries of life, besides having a great deal over for extravagance.
+     There was no occasion for the young Cornet ever to think of dining at his club, as he might be
+     entertained at the houses of three or four friends in a day, if he could have mustered as many
+     appetites. In summer he incurred no expense, except to pay for his place occasionally on the
+     top of a coach, or in a steam-boat, from one hospitable country house to another, where gigs
+     were sent a stage to meet him on the way, if he were expected by the mail, or if by sea, a
+     chariot might be seen waiting on the pier. He got "a mount" from one friend, the best seat in a
+     barouche from another, and often the vacant place in a britschska from a third party, even to
+     the expulsion of its more legitimate occupiers.
+"De Crespigny has nothing on earth, and you see how he looks!" remarked his handsome friend
+     Sir Patrick one day to Sir Arthur Dunbar; "yet how magnificently he contrives to live at the
+     expense of all those deluded mortals who have disposable or indisposable daughters. His future
+     prospects act like a cork jacket in society, keeping him always at the top. Last summer worthy
+     Lord Towercliffe, with his rapidly increasing family and rapidly decreasing income, took De
+     Crespigny in his gig to that old tumble-down castle of his in Argyleshire, where he spent six
+     weeks, ruining the family in champagne and wax candles. The house became rather cold in
+     September, so at last he accepted a cast in Lady Winandermere's carriage to that nest of nieces
+     and daughters at Castle Highcombe, where he found excellent yachting and sea-bathing. There he
+     lingered a month, till the brother of those four pretty Miss Vavasours bid still higher for his
+     company, by offering him a mount at Kelso, and mentioning that he had a first-rate French cook
+     a 'cordon bleu,' who hires his own stall at the opera during the London
+     season, and enjoys a salary and perquisites amounting to more than the best curacy in the
+     English Church; and all this De Crespigny repays with a few frothy nothings, which he is for
+     ever repeating to any young lady who will lend an ear. Those who beat the bush do not always
+     snare the bird; and I wonder the manœuvring world does not yet see that he is evidently no
+     marrying man."
+"What sort of looking individual, is a marrying man?" asked Sir Arthur, slyly. "I am often
+     told that you, for instance, do not look like a marrying man; but pray point me out any one who
+     does, that I may become more a connoisseur on the subject than I am. As for what you say of
+     Louis De Crespigny, it sounds to my unpractised ear very like swindling; and he is not the
+     youth I took him for if he live in such an element of deceit, sacrificing all sense of honor,
+     all confidence, and all good feeling, for a worthless and transient popularity, or worse than
+     all, for motives of mean, heartless self-interest. Such a man is not worth the space he
+     occupies in the world!"
+The Admiral's honest indignation would have been vented in still stronger terms, could his
+     upright and honorable mind have been made to understand how entirely every thought, word, and
+     action of Mr. De Crespigny's life was based on the most unswerving principles of cold, hard,
+     unrelenting selfishness, and with what utter carelessness he seemed ready to trample on the
+     wounded feelings of others; for it mattered not to him what degree of confidence he betrayed,
+     or what degree of sorrow he inflicted. If in one house where he had been received as a son or a
+     brother, he no longer found the cordial welcome of other days, a hundred other doors were still
+     opened wide to receive him, where he could boast of having been "very nearly caught," and carry
+     on the same game as before, which was a pastime to him, though fatal to the peace of many, who
+     would willingly have died rather than betray the injury their feelings had suffered, when,
+     after passing through the ordeal of his assiduities, they found themselves beguiled and cheated
+     of all that was deepest and most sacred in their earthly affections—robbed without compunction
+     by one who gave no return—who watched with elated triumph the growing delusion of those whom he
+     had marked as victims to his own self-love, and whom he appeared to consider all in all to his
+     happiness, till they found out at last that they were in reality less than nothing to him; yet
+     the deception admitted of no redress. He lived on in a sort of cowardly impunity; for no young
+     girl endowed with sensibility, and conscious of her own injuries, could desire, after
+     entrusting him with the whole story of her hopes and affections, that the truth should be
+     known; and his was a crime against which no evidence can be brought; for who could describe the
+     tender nothings—the refined insinuations—the looks which say everything and mean nothing—the
+     wordless language of the eyes, with which an undeclared love may be safely and yet obviously
+     professed? What but a smile of ridicule or of censure could attend on such a detail of
+     "unutterable things?" But with Louis De Crespigny nothing was unutterable; for he could say and
+     unsay the same things two hundred times, and they always seemed to carry as much or as little
+     weight as he pleased at the moment, while he entered society as a school-boy rushes into a
+     garden, eagerly to pursue the brilliant insects fluttering in the sunbeams, ready to crush and
+     injure them all for his momentary diversion, and yet on his guard to retreat in good order,
+     should there appear to be the slightest danger of annoyance or discomfort to himself.
+</div></body></text></TEI>

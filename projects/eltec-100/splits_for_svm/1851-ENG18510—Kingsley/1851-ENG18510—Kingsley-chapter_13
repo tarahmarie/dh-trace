@@ -1,0 +1,686 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The Project Gutenberg eBook, Yeast: A
+      Problem</title><author>Kingsley, Charles (1819-1875)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1851</date></publicationStmt></teiHeader><text><body><div type="chapter" n="13">
+CHAPTER XIII: THE VILLAGE REVEL
+At dusk that same evening the two had started for the village fair.  A velveteen
+     shooting-jacket, a pair of corduroy trousers, and a waistcoat, furnished by Tregarva, covered
+     with flowers of every imaginable hue, tolerably disguised Lancelot, who was recommended by his
+     conductor to keep his hands in his pockets as much as possible, lest their delicacy, which was,
+     as it happened, not very remarkable, might betray him.  As they walked together along the
+     plashy turnpike road, overtaking, now and then, groups of two or three who were out on the same
+     errand as themselves, Lancelot could not help remarking to the keeper how superior was the look
+     of comfort in the boys and young men, with their ruddy cheeks and smart dresses, to the worn
+     and haggard appearance of the elder men.
+‘Let them alone, poor fellows,’ said Tregarva; ‘it won’t last long.  When they’ve got two or
+     three children at their heels, they’ll look as thin and shabby as their own fathers.’
+‘They must spend a great deal of money on their clothes.’
+‘And on their stomachs, too, sir.  They never lay by a farthing; and I don’t see how they
+     can, when their club-money’s paid, and their insides are well filled.’
+‘Do you mean to say that they actually have not as much to eat after they marry?’
+‘Indeed and I do, sir.  They get no more wages afterwards round here, and have four or five
+     to clothe and feed off the same money that used to keep one; and that sum won’t take long to
+     work out, I think.’
+‘But do they not in some places pay the married men higher wages than the unmarried?’
+‘That’s a worse trick still, sir; for it tempts the poor thoughtless boys to go and marry the
+     first girl they can get hold of; and it don’t want much persuasion to make them do that at any
+     time.’
+‘But why don’t the clergymen teach them to put into the savings banks?’
+‘One here and there, sir, says what he can, though it’s of very little use.  Besides, every
+     one is afraid of savings banks now; not a year but one reads of some breaking and the lawyers
+     going off with the earnings of the poor.  And if they didn’t, youth’s a foolish time at best;
+     and the carnal man will be hankering after amusement, sir—amusement.’
+‘And no wonder,’ said Lancelot; ‘at all events, I should not think they got much of it.  But
+     it does seem strange that no other amusement can be found for them than the beer-shop.  Can’t
+     they read?  Can’t they practise light and interesting handicrafts at home, as the German
+     peasantry do?’
+‘Who’ll teach ’em, sir?  From the plough-tail to the reaping-hook, and back again, is all
+     they know.  Besides, sir, they are not like us Cornish; they are a stupid pigheaded generation
+     at the best, these south countrymen.  They’re grown-up babies who want the parson and the
+     squire to be leading them, and preaching to them, and spurring them on, and coaxing them up,
+     every moment.  And as for scholarship, sir, a boy leaves school at nine or ten to follow the
+     horses; and between that time and his wedding-day he forgets every word he ever learnt, and
+     becomes, for the most part, as thorough a heathen savage at heart as those wild Indians in the
+     Brazils used to be.’
+‘And then we call them civilised Englishmen!’ said Lancelot.  ‘We can see that your Indian is
+     a savage, because he wears skins and feathers; but your Irish cottar or your English labourer,
+     because he happens to wear a coat and trousers, is to be considered a civilised man.’
+‘It’s the way of the world, sir,’ said Tregarva, ‘judging carnal judgment, according to the
+     sight of its own eyes; always looking at the outsides of things and men, sir, and never much
+     deeper.  But as for reading, sir, it’s all very well for me, who have been a keeper and dawdled
+     about like a gentleman with a gun over my arm; but did you ever do a good day’s farm-work in
+     your life?  If you had, man or boy, you wouldn’t have been game for much reading when you got
+     home; you’d do just what these poor fellows do,—tumble into bed at eight o’clock, hardly
+     waiting to take your clothes off, knowing that you must turn up again at five o’clock the next
+     morning to get a breakfast of bread, and, perhaps, a dab of the squire’s dripping, and then
+     back to work again; and so on, day after day, sir, week after week, year after year, without a
+     hope or a chance of being anything but what you are, and only too thankful if you can get work
+     to break your back, and catch the rheumatism over.’
+‘But do you mean to say that their labour is so severe and incessant?’
+‘It’s only God’s blessing if it is incessant, sir, for if it stops, they starve, or go to the
+     house to be worse fed than the thieves in gaol.  And as for its being severe, there’s many a
+     boy, as their mothers will tell you, comes home night after night, too tired to eat their
+     suppers, and tumble, fasting, to bed in the same foul shirt which they’ve been working in all
+     the day, never changing their rag of calico from week’s end to week’s end, or washing the skin
+     that’s under it once in seven years.’
+‘No wonder,’ said Lancelot, ‘that such a life of drudgery makes them brutal and
+     reckless.’
+‘No wonder, indeed, sir: they’ve no time to think; they’re born to be machines, and machines
+     they must be; and I think, sir,’ he added bitterly, ‘it’s God’s mercy that they daren’t think. 
+     It’s God’s mercy that they don’t feel.  Men that write books and talk at elections call this a
+     free country, and say that the poorest and meanest has a free opening to rise and become prime
+     minister, if he can.  But you see, sir, the misfortune is, that in practice he can’t; for one
+     who gets into a gentleman’s family, or into a little shop, and so saves a few pounds, fifty
+     know that they’ve no chance before them, but day-labourer born, day-labourer live, from hand to
+     mouth, scraping and pinching to get not meat and beer even, but bread and potatoes; and then,
+     at the end of it all, for a worthy reward, half-a-crown a-week of parish pay—or the workhouse. 
+     That’s a lively hopeful prospect for a Christian man!’
+‘But,’ said Lancelot, ‘I thought this New Poor-law was to stir them up to independence?’
+‘Oh, sir, the old law has bit too deep: it made them slaves and beggars at heart.  It taught
+     them not to be ashamed of parish pay—to demand it as a right.’
+‘And so it is their right,’ said Lancelot.  ‘In God’s name, if a country is so
+     ill-constituted that it cannot find its own citizens in work, it is bound to find them in
+     food.’
+‘Maybe, sir, maybe.  God knows I don’t grudge it them.  It’s a poor pittance at best, when
+     they have got it.  But don’t you see, sir, how all poor-laws, old or new either, suck the
+     independent spirit out of a man; how they make the poor wretch reckless; how they tempt him to
+     spend every extra farthing in amusement?’
+‘How then?’
+‘Why, he is always tempted to say to himself, “Whatever happens to me, the parish must keep
+     me.  If I am sick it must doctor me; if I am worn out it must feed me; if I die it must bury
+     me; if I leave my children paupers the parish must look after them, and they’ll be as well off
+     with the parish as they were with me.  Now they’ve only got just enough to keep body and soul
+     together, and the parish can’t give them less than that.  What’s the use of cutting myself off
+     from sixpenny-worth of pleasure here, and sixpenny-worth there.  I’m not saving money for my
+     children, I’m only saving the farmers’ rates.”  There it is, sir,’ said Tregarva; ‘that’s the
+     bottom of it, sir,—“I’m only saving the farmers’ rates.  Let us eat and drink, for to-morrow we
+     die!”’
+‘I don’t see my way out of it,’ said Lancelot.
+‘So says everybody, sir.  But I should have thought those members of parliament, and
+     statesmen, and university scholars have been set up in the high places, out of the wood where
+     we are all struggling and scrambling, just that they might see their way out of it; and if they
+     don’t, sir, and that soon, as sure as God is in heaven, these poor fellows will cut their way
+     out of it.’
+‘And blindfolded and ignorant as they are,’ said Lancelot, ‘they will be certain to cut their
+     way out just in the wrong direction.’
+‘I’m not so sure of that, sir,’ said Tregarva, lowering his voice.  ‘What is written’?  That
+     there is One who hears the desire of the poor.  “Lord, Thou preparest their hearts and Thine
+     ear hearkeneth thereto, to help the fatherless and poor unto their right, that the man of the
+     earth be no more exalted against them.”’
+‘Why, you are talking like any Chartist, Tregarva!’
+‘Am I, sir?  I haven’t heard much Scripture quoted among them myself, poor fellows; but to
+     tell you the truth, sir, I don’t know what I am becoming.  I’m getting half mad with all I see
+     going on and not going on; and you will agree, sir, that what’s happened this day can’t have
+     done much to cool my temper or brighten my hopes; though, God’s my witness, there’s no spite in
+     me for my own sake.  But what makes me maddest of all, sir, is to see that everybody sees these
+     evils, except just the men who can cure them—the squires and the clergy.’
+‘Why surely, Tregarva, there are hundreds, if not thousands, of clergymen and landlords
+     working heart and soul at this moment, to better the condition of the labouring classes!’
+‘Ay, sir, they see the evils, and yet they don’t see them.  They do not see what is the
+     matter with the poor man; and the proof of it is, sir, that the poor have no confidence in
+     them.  They’ll take their alms, but they’ll hardly take their schooling, and their advice they
+     won’t take at all.  And why is it, sir?  Because the poor have got in their heads in these days
+     a strange confused fancy, maybe, but still a deep and a fierce one, that they haven’t got what
+     they call their rights.  If you were to raise the wages of every man in this country from nine
+     to twelve shillings a-week to-morrow, you wouldn’t satisfy them; at least, the only ones whom
+     you would satisfy would be the mere hogs among them, who, as long as they can get a full
+     stomach, care for nothing else.’
+‘What, in Heaven’s name, do they want?’ asked Lancelot.
+‘They hardly know yet, sir; but they know well what they don’t want.  The question with them,
+     sir, believe me, is not so much, How shall we get better fed and better housed, but whom shall
+     we depend upon for our food and for our house?  Why should we depend on the will and fancy of
+     any man for our rights?  They are asking ugly questions among themselves, sir, about what those
+     two words, rent and taxes, mean, and about what that same strange word, freedom, means.  Eight
+     or wrong, they’ve got the thought into their heads, and it’s growing there, and they will find
+     an answer for it.  Depend upon it, sir, I tell you a truth, and they expect a change.  You will
+     hear them talk of it to-night, sir, if you’ve luck.’
+‘We all expect a change, for that matter,’ said Lancelot.  ‘That feeling is common to all
+     classes and parties just now.’
+Tregarva took off his hat.
+‘“For the word of the Lord hath spoken it.”  Do you know, sir, I long at times that I did
+     agree with those Chartists?  If I did, I’d turn lecturer to-morrow.  How a man could speak out
+     then!  If he saw any door of hope, any way of salvation for these poor fellows, even if it was
+     nothing better than salvation by Act of Parliament!’
+‘But why don’t you trust the truly worthy among the clergy and the gentry to leaven their own
+     ranks and bring all right in time?’
+‘Because, sir, they seem to be going the way only to make things worse.  The people have been
+     so dependent on them heretofore, that they have become thorough beggars.  You can have no
+     knowledge, sir, of the whining, canting, deceit, and lies which those poor miserable labourers’
+     wives palm on charitable ladies.  If they weren’t angels, some of them, they’d lock up their
+     purses and never give away another farthing.  And, sir, these free-schools, and these
+     penny-clubs, and clothing clubs, and these heaps of money which are given away, all make the
+     matter worse and worse.  They make the labourer fancy that he is not to depend upon God and his
+     own right hand, but on what his wife can worm out of the good nature of the rich.  Why, sir,
+     they growl as insolently now at the parson or the squire’s wife if they don’t get as much money
+     as their neighbours, as they used to at the parish vestrymen under the old law.  Look at that
+     Lord Vieuxbois, sir, as sweet a gentleman as ever God made.  It used to do me good to walk
+     behind him when he came over here shooting, just to hear the gentle kind-hearted way in which
+     he used to speak to every old soul he met.  He spends his whole life and time about the poor, I
+     hear.  But, sir, as sure as you live he’s making his people slaves and humbugs.  He doesn’t
+     see, sir, that they want to be raised bodily out of this miserable hand-to-mouth state, to be
+     brought nearer up to him, and set on a footing where they can shift for themselves.  Without
+     meaning it, sir, all his boundless charities are keeping the people down, and telling them they
+     must stay down, and not help themselves, but wait for what he gives them.  He fats
+     prize-labourers, sir, just as Lord Minchampstead fats prize-oxen and pigs.’
+Lancelot could not help thinking of that amusingly inconsistent, however well-meant, scene in
+      Coningsby, in which Mr. Lyle is represented as trying to restore ‘the independent
+     order of peasantry,’ by making them the receivers of public alms at his own gate, as if they
+     had been middle-age serfs or vagabonds, and not citizens of modern England.
+‘It may suit the Mr. Lyles of this age,’ thought Lancelot, ‘to make the people constantly and
+     visibly comprehend that property is their protector and their friend, but I question whether it
+     will suit the people themselves, unless they can make property understand that it owes them
+     something more definite than protection.’
+Saddened by this conversation, which had helped to give another shake to the easy-going
+     complacency with which Lancelot had been used to contemplate the world below him, and look on
+     its evils as necessaries, ancient and fixed as the universe, he entered the village fair, and
+     was a little disappointed at his first glimpse of the village-green.  Certainly his
+     expectations had not been very exalted; but there had run through them a hope of something
+     melodramatic, dreams of May-pole dancing and athletic games, somewhat of village-belle rivalry,
+     of the Corin and Sylvia school; or, failing that, a few Touchstones and Audreys, some genial
+     earnest buffo humour here and there.  But there did not seem much likelihood of it.  Two or
+     three apple and gingerbread stalls, from which draggled children were turning slowly and
+     wistfully away to go home; a booth full of trumpery fairings, in front of which tawdry girls
+     were coaxing maudlin youths, with faded southernwood in their button-holes; another long low
+     booth, from every crevice of which reeked odours of stale beer and smoke, by courtesy
+     denominated tobacco, to the treble accompaniment of a jigging fiddle and a tambourine, and the
+     bass one of grumbled oaths and curses within—these were the means of relaxation which the
+     piety, freedom, and civilisation of fourteen centuries, from Hengist to Queen Victoria, had
+     devised and made possible for the English peasant!
+‘There seems very little here to see,’ said Lancelot, half peevishly.
+‘I think, sir,’ quoth Tregarva, ‘that very thing is what’s most worth seeing.’
+Lancelot could not help, even at the risk of detection, investing capital enough in
+     sugar-plums and gingerbread, to furnish the urchins around with the material for a whole
+     carnival of stomach-aches; and he felt a great inclination to clear the fairing-stall in a like
+     manner, on behalf of the poor bedizened sickly-looking girls round, but he was afraid of the
+     jealousy of some beer-bemuddled swain.  The ill-looks of the young girls surprised him much. 
+     Here and there smiled a plump rosy face enough; but the majority seemed under-sized, under-fed,
+     utterly wanting in grace, vigour, and what the penny-a-liners call ‘rude health.’  He remarked
+     it to Tregarva.  The keeper smiled mournfully.
+‘You see those little creatures dragging home babies in arms nearly as big as themselves,
+     sir.  That and bad food, want of milk especially, accounts for their growing up no bigger than
+     they do; and as for their sad countenances, sir, most of them must carry a lighter conscience
+     before they carry a brighter face.’
+‘What do you mean?’ asked Lancelot.
+‘The clergyman who enters the weddings and the baptisms knows well enough what I mean, sir. 
+     But we’ll go into that booth, if you want to see the thick of it, sir; that’s to say, if you’re
+     not ashamed.’
+‘I hope we need neither of us do anything to be ashamed of there; and as for seeing, I begin
+     to agree with you, that what makes the whole thing most curious is its intense dulness.’
+‘What upon earth is that?’
+‘I say, look out there!’
+‘Well, you look out yourself!’
+This was caused by a violent blow across the shins with a thick stick, the deed of certain
+     drunken wiseacres who were persisting in playing in the dark the never very lucrative game of
+     three sticks a penny, conducted by a couple of gipsies.  Poor fellows! there was one excuse for
+     them.  It was the only thing there to play at, except a set of skittles; and on those they had
+     lost their money every Saturday night for the last seven years each at his own village
+     beer-shop.
+So into the booth they turned; and as soon as Lancelot’s eyes were accustomed to the reeking
+     atmosphere, he saw seated at two long temporary tables of board, fifty or sixty of ‘My
+     Brethren,’ as clergymen call them in their sermons, wrangling, stupid, beery, with sodden eyes
+     and drooping lips—interspersed with more girls and brazen-faced women, with dirty flowers in
+     their caps, whose whole business seemed to be to cast jealous looks at each other, and defend
+     themselves from the coarse overtures of their swains.
+Lancelot had been already perfectly astonished at the foulness of language which prevailed;
+     and the utter absence of anything like chivalrous respect, almost of common decency, towards
+     women.  But lo! the language of the elder women was quite as disgusting as that of the men, if
+     not worse.  He whispered a remark on the point to Tregarva, who shook his head.
+‘It’s the field-work, sir—the field-work, that does it all.  They get accustomed there from
+     their childhood to hear words whose very meanings they shouldn’t know; and the older teach the
+     younger ones, and the married ones are worst of all.  It wears them out in body, sir, that
+     field-work, and makes them brutes in soul and in manners.’
+‘Why don’t they give it up?  Why don’t the respectable ones set their faces against it?’
+‘They can’t afford it, sir.  They must go a-field, or go hungered, most of them.  And they
+     get to like the gossip and scandal, and coarse fun of it, while their children are left at home
+     to play in the roads, or fall into the fire, as plenty do every year.’
+‘Why not at school?’
+‘The big ones are kept at home, sir, to play at nursing those little ones who are too young
+     to go.  Oh, sir,’ he added, in a tone of deep feeling, ‘it is very little of a father’s care,
+     or a mother’s love, that a labourer’s child knows in these days!’
+Lancelot looked round the booth with a hopeless feeling.  There was awkward dancing going on
+     at the upper end.  He was too much sickened to go and look at it.  He began examining the faces
+     and foreheads of the company, and was astonished at the first glance by the lofty and ample
+     development of brain in at least one half.  There were intellects there—or rather capacities of
+     intellect, capable, surely, of anything, had not the promise of the brow been almost always
+     belied by the loose and sensual lower features.  They were evidently rather a degraded than an
+     undeveloped race.  ‘The low forehead of the Kabyle and Koord,’ thought Lancelot, ‘is
+     compensated by the grim sharp lip, and glittering eye, which prove that all the small
+     capabilities of the man have been called out into clear and vigorous action: but here the very
+     features themselves, both by what they have and what they want, testify against that society
+     which carelessly wastes her most precious wealth, the manhood of her masses!  Tregarva! you
+     have observed a good many things—did you ever observe whether the men with the large foreheads
+     were better than the men with the small ones?’
+‘Ay, sir, I know what you are driving at.  I’ve heard of that new-fangled notion of scholars,
+     which, if you’ll forgive my plain speaking, expects man’s brains to do the work of God’s
+     grace.’
+‘But what have you remarked?’
+‘All I ever saw was, that the stupid-looking ones were the greatest blackguards, and the
+     clever-looking ones the greatest rogues.’
+Lancelot was rebuked, but not surprised.  He had been for some time past suspecting, from the
+     bitter experience of his own heart, the favourite modern theory which revives the Neo-Platonism
+     of Alexandria, by making intellect synonymous with virtue, and then jumbling, like poor
+     bewildered Proclus, the ‘physical understanding’ of the brain with the pure ‘intellect’ of the
+     spirit.
+‘You’ll see something, if you look round, sir, a great deal easier to explain—and, I should
+     have thought, a great deal easier to cure—than want of wits.’
+‘And what is that?’
+‘How different-looking the young ones are from their fathers, and still more from their
+     grandfathers!  Look at those three or four old grammers talking together there.  For all their
+     being shrunk with age and weather, you won’t see such fine-grown men anywhere else in this
+     booth.’
+It was too true.  Lancelot recollected now having remarked it before when at church; and
+     having wondered why almost all the youths were so much smaller, clumsier, lower-brained, and
+     weaker-jawed than their elders.
+‘Why is it, Tregarva?’
+‘Worse food, worse lodging, worse nursing—and, I’m sore afraid, worse blood.  There was too
+     much filthiness and drunkenness went on in the old war-times, not to leave a taint behind it,
+     for many a generation.  The prosperity of fools shall destroy them!’
+‘Oh!’ thought Lancelot, ‘for some young sturdy Lancashire or Lothian blood, to put new life
+     into the old frozen South Saxon veins!  Even a drop of the warm enthusiastic Celtic would be
+     better than none.  Perhaps this Irish immigration may do some good, after all.’
+Perhaps it may, Lancelot.  Let us hope so, since it is pretty nearly inevitable.
+Sadder and sadder, Lancelot tried to listen to the conversation of the men round him.  To his
+     astonishment he hardly understood a word of it.  It was half articulate, nasal, guttural, made
+     up almost entirely of vowels, like the speech of savages.  He had never before been struck with
+     the significant contrast between the sharp, clearly-defined articulation, the vivid and varied
+     tones of the gentleman, or even of the London street-boy when compared with the coarse,
+     half-formed growls, as of a company of seals, which he heard round him.  That single fact
+     struck him, perhaps, more deeply than any; it connected itself with many of his physiological
+     fancies; it was the parent of many thoughts and plans of his after-life.  Here and there he
+     could distinguish a half sentence.  An old shrunken man opposite him was drawing figures in the
+     spilt beer with his pipe-stem, and discoursing of the glorious times before the great war,
+     ‘when there was more food than there were mouths, and more work than there were hands.’  ‘Poor
+     human nature!’ thought Lancelot, as he tried to follow one of those unintelligible discussions
+     about the relative prices of the loaf and the bushel of flour, which ended, as usual, in more
+     swearing, and more quarrelling, and more beer to make it up—‘Poor human nature! always looking
+     back, as the German sage says, to some fancied golden age, never looking forward to the real
+     one which is coming!’
+‘But I say, vather,’ drawled out some one, ‘they say there’s a sight more money in England
+     now, than there was afore the war-time.’
+‘Eees, booy,’ said the old man; ‘but its got into too few hands.’
+‘Well,’ thought Lancelot, ‘there’s a glimpse of practical sense, at least.’  And a pedlar who
+     sat next him, a bold, black-whiskered bully, from the Potteries, hazarded a joke,—
+‘It’s all along of this new sky-and-tough-it farming.  They used to spread the money
+     broadcast, but now they drills it all in one place, like bone-dust under their fancy plants,
+     and we poor self-sown chaps gets none.’
+This garland of fancies was received with great applause; whereat the pedlar, emboldened,
+     proceeded to observe, mysteriously, that ‘donkeys took a beating, but horses kicked at it; and
+     that they’d found out that in Staffordshire long ago.  You want a good Chartist lecturer down
+     here, my covies, to show you donkeys of labouring men that you have got iron on your heels, if
+     you only know’d how to use it.’
+‘And what’s the use of rioting?’ asked some one, querulously.
+‘Why, if you don’t riot, the farmers will starve you.’
+‘And if we do, they’d turn sodgers—yeomanry, as they call it, though there ain’t a yeoman
+     among them in these parts; and then they takes sword and kills us.  So, riot or none, they has
+     it all their own way.’
+Lancelot heard many more scraps of this sort.  He was very much struck with their dread of
+     violence.  It did not seem cowardice.  It was not loyalty—the English labourer has fallen below
+     the capability of so spiritual a feeling; Lancelot had found out that already.  It could not be
+     apathy, for he heard nothing but complaint upon complaint bandied from mouth to mouth the whole
+     evening.  They seemed rather sunk too low in body and mind,—too stupefied and spiritless, to
+     follow the example of the manufacturing districts; above all, they were too ill-informed.  It
+     is not mere starvation which goads the Leicester weaver to madness.  It is starvation with
+     education,—an empty stomach and a cultivated, even though miscultivated, mind.
+At that instant, a huge hulking farm-boy rolled into the booth, roaring, dolefully, the end
+     of a song, with a punctuation of his own invention—
+‘He’ll maak me a lady.  Zo .  Vine to be zyure. And, vaithfully; love me.  Although; I; be-e;
+     poor-r-r-r.’
+Lancelot would have laughed heartily at him anywhere else; but the whole scene was past a
+     jest; and a gleam of pathos and tenderness seemed to shine even from that doggerel,—a vista, as
+     it were, of true genial nature, in the far distance.  But as he looked round again, ‘What
+     hope,’ he thought, ‘of its realisation?  Arcadian dreams of pastoral innocence and graceful
+     industry, I suppose, are to be henceforth monopolised by the stage or the boudoir?  Never, so
+     help me, God!’
+The ursine howls of the new-comer seemed to have awakened the spirit of music in the
+     party.
+‘Coom, Blackburd, gi’ us zong, Blackburd, bo’!’ cried a dozen voices to an impish, dark-eyed
+     gipsy boy, of some thirteen years old.
+‘Put ’n on taable.  Now, then, pipe up!’
+‘What will ’ee ha’?’
+‘Mary; gi’ us Mary.’
+‘I shall make a’ girls cry,’ quoth Blackbird, with a grin.
+‘Do’n good, too; they likes it: zing away.’
+And the boy began, in a broad country twang, which could not overpower the sad melody of the
+     air, or the rich sweetness of his flute-like voice,—
+‘Young Mary walked sadly down through the green clover,    And sighed as she looked at the
+     babe at her breast; “My roses are faded, my false love a rover,    The green graves they call
+     me, ‘Come home to your rest.’”
+‘Then by rode a soldier in gorgeous arraying,    And “Where is your bride-ring, my fair
+     maid?” he cried; “I ne’er had a bride-ring, by false man’s betraying,    Nor token of love but
+     this babe at my side.
+‘“Tho’ gold could not buy me, sweet words could deceive me;    So faithful and lonely till
+     death I must roam.” “Oh, Mary, sweet Mary, look up and forgive me,    With wealth and with
+     glory your true love comes home;
+‘“So give me my own babe, those soft arms adorning,    I’ll wed you and cherish you, never to
+     stray; For it’s many a dark and a wild cloudy morning,    Turns out by the noon-time a sunshiny
+     day.”’
+‘A bad moral that, sir,’ whispered Tregarva.
+‘Better than none,’ answered Lancelot.
+‘It’s well if you are right, sir, for you’ll hear no other.’
+The keeper spoke truly; in a dozen different songs, more or less coarsely, but, in general,
+     with a dash of pathetic sentiment, the same case of lawless love was embodied.  It seemed to be
+     their only notion of the romantic.  Now and then there was a poaching song; then one of the
+     lowest flash London school—filth and all—was roared in chorus in presence of the women.
+‘I am afraid that you do not thank me for having brought you to any place so unfit for a
+     gentleman,’ said Tregarva, seeing Lancelot’s sad face.
+‘Because it is so unfit for a gentleman, therefore I do thank you.  It is right to know what
+     one’s own flesh and blood are doing.’
+‘Hark to that song, sir! that’s an old one.  I didn’t think they’d get on to singing
+     that.’
+The Blackbird was again on the table, but seemed this time disinclined to exhibit.
+‘Out wi’ un, boy; it wain’t burn thy mouth!’
+‘I be afeard.’
+‘O’ who?’
+‘Keeper there.’
+He pointed to Tregarva; there was a fierce growl round the room.
+‘I am no keeper,’ shouted Tregarva, starting up.  ‘I was turned off this morning for speaking
+     my mind about the squires, and now I’m one of you, to live and die.’
+This answer was received with a murmur of applause; and a fellow in a scarlet merino
+     neckerchief, three waistcoats, and a fancy shooting-jacket, who had been eyeing Lancelot for
+     some time, sidled up behind them, and whispered in Tregarva’s ear,—
+‘Perhaps you’d like an engagement in our line, young man, and your friend there, he seems a
+     sporting gent too.—We could show him very pretty shooting.’
+Tregarva answered by the first and last oath Lancelot ever heard from him, and turning to
+     him, as the rascal sneaked off,—
+‘That’s a poaching crimp from London, sir; tempting these poor boys to sin, and deceit, and
+     drunkenness, and theft, and the hulks.’
+‘I fancy I saw him somewhere the night of our row—you understand?’
+‘So do I, sir, but there’s no use talking of it.’
+Blackbird was by this time prevailed on to sing, and burst out as melodious as ever, while
+     all heads were cocked on one side in delighted attention.
+‘I zeed a vire o’ Monday night,    A vire both great and high; But I wool not tell you where,
+     my boys,    Nor wool not tell you why. The varmer he comes screeching out,    To zave ’uns new
+     brood mare; Zays I, “You and your stock may roast,    Vor aught us poor chaps care.”
+‘Coorus, boys, coorus!’
+And the chorus burst out,—
+‘Then here’s a curse on varmers all    As rob and grind the poor; To re’p the fruit of all
+     their works    In **** for evermoor-r-r-r.
+‘A blind owld dame come to the vire,    Zo near as she could get; Zays, “Here’s a luck I
+     warn’t asleep    To lose this blessed hett.
+‘“They robs us of our turfing rights,    Our bits of chips and sticks, Till poor folks now
+     can’t warm their hands,    Except by varmer’s ricks.”       ‘Then, etc.’
+And again the boy’s delicate voice rung out the ferocious chorus, with something, Lancelot
+     fancied, of fiendish exultation, and every worn face lighted up with a coarse laugh, that
+     indicated no malice—but also no mercy.
+Lancelot was sickened, and rose to go.
+As he turned, his arm was seized suddenly and firmly.  He looked round, and saw a coarse,
+     handsome, showily-dressed girl, looking intently into his face.  He shook her angrily off.
+‘You needn’t be so proud, Mr. Smith; I’ve had my hand on the arm of as good as you.  Ah, you
+     needn’t start!  I know you—I know you, I say, well enough.  You used to be with him.  Where is
+     he?’
+‘Whom do you mean?’
+‘He!’ answered the girl, with a fierce, surprised look, as if there could be no one else in
+     the world.
+‘Colonel Bracebridge,’ whispered Tregarva.
+‘Ay, he it is!  And now walk further off, bloodhound! and let me speak to Mr. Smith.  He is
+     in Norway,’ she ran on eagerly.  ‘When will he be back?  When?’
+‘Why do you want to know?’ asked Lancelot.
+‘When will he be back?’—she kept on fiercely repeating the question; and then burst
+     out,—‘Curse you gentlemen all!  Cowards! you are all in a league against us poor girls!  You
+     can hunt alone when you betray us, and lie fast enough then?  But when we come for justice, you
+     all herd together like a flock of rooks; and turn so delicate and honourable all of a sudden—to
+     each other!  When will he be back, I say?’
+‘In a month,’ answered Lancelot, who saw that something really important lay behind the
+     girl’s wildness.
+‘Too late!’ she cried, wildly, clapping her hands together; ‘too late!  Here—tell him you saw
+     me; tell him you saw Mary; tell him where and in what a pretty place, too, for maid, master, or
+     man!  What are you doing here?’
+‘What is that to you, my good girl?’
+‘True.  Tell him you saw me here; and tell him, when next he hears of me, it will be in a
+     very different place.’
+She turned and vanished among the crowd.  Lancelot almost ran out into the night,—into a
+     triad of fights, two drunken men, two jealous wives, and a brute who struck a poor, thin,
+     worn-out woman, for trying to coax him home.  Lancelot rushed up to interfere, but a man seized
+     his uplifted arm.
+‘He’ll only beat her all the more when he getteth home.’
+‘She has stood that every Saturday night for the last seven years, to my knowledge,’ said
+     Tregarva; ‘and worse, too, at times.’
+‘Good God! is there no escape for her from her tyrant?’
+‘No, sir.  It’s only you gentlefolks who can afford such luxuries; your poor man may be tied
+     to a harlot, or your poor woman to a ruffian, but once done, done for ever.’
+‘Well,’ thought Lancelot, ‘we English have a characteristic way of proving the holiness of
+     the marriage tie.  The angel of Justice and Pity cannot sever it, only the stronger demon of
+     Money.’
+Their way home lay over Ashy Down, a lofty chalk promontory, round whose foot the river made
+     a sudden bend.  As they paced along over the dreary hedgeless stubbles, they both started, as a
+     ghostly ‘Ha! ha! ha!’ rang through the air over their heads, and was answered by a like cry,
+     faint and distant, across the wolds.
+‘That’s those stone-curlews—at least, so I hope,’ said Tregarva.  ‘He’ll be round again in a
+     minute.’
+And again, right between them and the clear, cold moon, ‘Ha! ha! ha!’ resounded over their
+     heads.  They gazed up into the cloudless star-bespangled sky, but there was no sign of living
+     thing.
+‘It’s an old sign to me,’ quoth Tregarva; ‘God grant that I may remember it in this black day
+     of mine.’
+‘How so!’ asked Lancelot; ‘I should not have fancied you a superstitious man.’
+‘Names go for nothing, sir, and what my forefathers believed in I am not going to be
+     conceited enough to disbelieve in a hurry.  But if you heard my story you would think I had
+     reason enough to remember that devil’s laugh up there.’
+‘Let me hear it then.’
+‘Well, sir, it may be a long story to you, but it was a short one to me, for it was the
+     making of me, out of hand, there and then, blessed be God!  But if you will have it—’
+‘And I will have it, friend Tregarva,’ quoth Lancelot, lighting his cigar.
+‘I was about sixteen years old, just after I came home from the Brazils—’
+‘What! have you been in the Brazils?’
+‘Indeed and I have, sir, for three years; and one thing I learnt there, at least, that’s
+     worth going for.’
+‘What’s that?’
+‘What the Garden of Eden must have been like.  But those Brazils, under God, were the cause
+     of my being here; for my father, who was a mine-captain, lost all his money there, by no man’s
+     fault but his own, and not his either, the world would say, and when we came back to Cornwall
+     he could not stand the bal work, nor I neither.  Out of that burning sun, sir, to come home
+     here, and work in the levels, up to our knees in warm water, with the thermometer at 85°, and
+     then up a thousand feet of ladder to grass, reeking wet with heat, and find the easterly sleet
+     driving across those open furze-crofts—he couldn’t stand it, sir—few stand it long, even of
+     those who stay in Cornwall.  We miners have a short lease of life; consumption and strains
+     break us down before we’re fifty.’
+‘But how came you here?’
+‘The doctor told my father, and me too, sir, that we must give up mining, or die of decline:
+     so he came up here, to a sister of his that was married to the squire’s gardener, and here he
+     died; and the squire, God bless him and forgive him, took a fancy to me, and made me
+     under-keeper.  And I loved the life, for it took me among the woods and the rivers, where I
+     could think of the Brazils, and fancy myself back again.  But mustn’t talk of that—where God
+     wills is all right.  And it is a fine life for reading and thinking, a gamekeeper’s, for it’s
+     an idle life at best.  Now that’s over,’ he added, with a sigh, ‘and the Lord has fulfilled His
+     words to me, that He spoke the first night that ever I heard a stone-plover cry.’
+‘What on earth can you mean?’ asked Lancelot, deeply interested.
+‘Why, sir, it was a wild, whirling gray night, with the air full of sleet and rain, and my
+     father sent me over to Redruth town to bring home some trade or other.  And as I came back I
+     got blinded with the sleet, and I lost my way across the moors.  You know those Cornish
+     furze-moors, sir?’
+‘No.’
+‘Well, then, they are burrowed like a rabbit-warren with old mine-shafts.  You can’t go in
+     some places ten yards without finding great, ghastly black holes, covered in with furze, and
+     weeds, and bits of rotting timber; and when I was a boy I couldn’t keep from them.  Something
+     seemed to draw me to go and peep down, and drop pebbles in, to hear them rattle against the
+     sides, fathoms below, till they plumped into the ugly black still water at the bottom.  And I
+     used to be always after them in my dreams, when I was young, falling down them, down, down, all
+     night long, till I woke screaming; for I fancied they were hell’s mouth, every one of them. 
+     And it stands to reason, sir; we miners hold that the lake of fire can’t be far below.  For we
+     find it grow warmer, and warmer, and warmer, the farther we sink a shaft; and the learned
+     gentlemen have proved, sir, that it’s not the blasting powder, nor the men’s breaths, that heat
+     the mine.’
+Lancelot could but listen.
+‘Well, sir, I got into a great furze-croft, full of deads (those are the earth-heaps they
+     throw out of the shafts), where no man in his senses dare go forward or back in the dark, for
+     fear of the shafts; and the wind and the snow were so sharp, they made me quite stupid and
+     sleepy; and I knew if I stayed there I should be frozen to death, and if I went on, there were
+     the shafts ready to swallow me up: and what with fear and the howling and raging of the wind, I
+     was like a mazed boy, sir.  And I knelt down and tried to pray; and then, in one moment, all
+     the evil things I’d ever done, and the bad words and thoughts that ever crossed me, rose up
+     together as clear as one page of a print-book; and I knew that if I died that minute I should
+     go to hell.  And then I saw through the ground all the water in the shafts glaring like blood,
+     and all the sides of the shafts fierce red-hot, as if hell was coming up.  And I heard the
+     knockers knocking, or thought I heard them, as plain as I hear that grasshopper in the hedge
+     now.’
+‘What are the knockers?’
+‘They are the ghosts, the miners hold, of the old Jews, sir, that crucified our Lord, and
+     were sent for slaves by the Roman emperors to work the mines; and we find their old
+     smelting-houses, which we call Jews’ houses, and their blocks of tin, at the bottom of the
+     great bogs, which we call Jews’ tin; and there’s a town among us, too, which we call
+     Market-Jew—but the old name was Marazion; that means the Bitterness of Zion, they tell me. 
+     Isn’t it so, sir?’
+‘I believe it is,’ said Lancelot, utterly puzzled in this new field of romance.
+‘And bitter work it was for them, no doubt, poor souls!  We used to break into the old shafts
+     and adits which they had made, and find old stags’-horn pickaxes, that crumbled to pieces when
+     we brought them to grass; and they say, that if a man will listen, sir, of a still night, about
+     those old shafts, he may hear the ghosts of them at working, knocking, and picking, as clear as
+     if there was a man at work in the next level.  It may be all an old fancy.  I suppose it is. 
+     But I believed it when I was a boy; and it helped the work in me that night.  But I’ll go on
+     with my story.’
+‘Go on with what you like,’ said Lancelot.
+‘Well, sir, I was down on my knees among the furze-bushes, and I tried to pray; but I was too
+     frightened, for I felt the beast I had been, sir; and I expected the ground to open and let me
+     down every moment; and then there came by over my head a rushing, and a cry.  “Ha! ha! ha! 
+     Paul!” it said; and it seemed as if all the devils and witches were out on the wind, a-laughing
+     at my misery.  “Oh, I’ll mend—I’ll repent,” I said, “indeed I will:” and again it came
+     back,—“Ha! ha! ha!  Paul!” it said.  I knew afterwards that it was a bird; but the Lord sent it
+     to me for a messenger, no less, that night.  And I shook like a reed in the water; and then,
+     all at once a thought struck me.  “Why should I be a coward?  Why should I be afraid of shafts,
+     or devils, or hell, or anything else?  If I am a miserable sinner, there’s One died for me—I
+     owe him love, not fear at all.  I’ll not be frightened into doing right—that’s a rascally
+     reason for repentance.”  And so it was, sir, that I rose up like a man, and said to the Lord
+     Jesus, right out into the black, dumb air,—“If you’ll be on my side this night, good Lord, that
+     died for me, I’ll be on your side for ever, villain as I am, if I’m worth making any use of.” 
+     And there and then, sir, I saw a light come over the bushes, brighter, and brighter, up to me;
+     and there rose up a voice within me, and spoke to me, quite soft and sweet,—“Fear not, Paul,
+     for I will send thee far hence unto the Gentiles.”  And what more happened I can’t tell, for
+     when I woke I was safe at home.  My father and his folk had been out with lanterns after me;
+     and there they found me, sure enough, in a dead faint on the ground.  But this I know, sir,
+     that those words have never left my mind since for a day together; and I know that they will be
+     fulfilled in me this tide, or never.’
+Lancelot was silent a few minutes.
+‘I suppose, Tregarva, that you would call this your conversion?’
+‘I should call it one, sir, because it was one.’
+‘Tell me now, honestly, did any real, practical change in your behaviour take place after
+     that night?’
+‘As much, sir, as if you put a soul into a hog, and told him that he was a gentleman’s son;
+     and, if every time he remembered that, he got spirit enough to conquer his hoggishness, and
+     behave like a man, till the hoggishness died out of him, and the manliness grew up and bore
+     fruit in him, more and more each day.’
+Lancelot half understood him, and sighed.
+A long silence followed, as they paced on past lonely farmyards, from which the rich
+     manure-water was draining across the road in foul black streams, festering and steaming in the
+     chill night air.  Lancelot sighed as he saw the fruitful materials of food running to waste,
+     and thought of the ‘over-population’ cry; and then he looked across to the miles of brown
+     moorland on the opposite side of the valley, that lay idle and dreary under the autumn moon,
+     except where here and there a squatter’s cottage and rood of fruitful garden gave the lie to
+     the laziness and ignorance of man, who pretends that it is not worth his while to cultivate the
+     soil which God has given him.  ‘Good heavens!’ he thought, ‘had our forefathers had no more
+     enterprise than modern landlords, where should we all have been at this moment?  Everywhere
+     waste?  Waste of manure, waste of land, waste of muscle, waste of brain, waste of
+     population—and we call ourselves the workshop of the world!’
+As they passed through the miserable hamlet-street of Ashy, they saw a light burning in
+     window.  At the door below, a haggard woman was looking anxiously down the village.
+‘What’s the matter, Mistress Cooper?’ asked Tregarva.
+‘Here’s Mrs. Grane’s poor girl lying sick of the fever—the Lord help her! and the boy died of
+     it last week.  We sent for the doctor this afternoon, and he’s busy with a poor soul that’s in
+     her trouble; and now we’ve sent down to the squire’s, and the young ladies, God bless them!
+     sent answer they’d come themselves straightway.’
+‘No wonder you have typhus here,’ said Lancelot, ‘with this filthy open drain running right
+     before the door.  Why can’t you clean it out?’
+‘Why, what harm does that do?’ answered the woman, peevishly.  ‘Besides, here’s my master
+     gets up to his work by five in the morning, and not back till seven at night, and by then he
+     ain’t in no humour to clean out gutters.  And where’s the water to come from to keep a place
+     clean?  It costs many a one of us here a shilling a week the summer through to pay fetching
+     water up the hill.  We’ve work enough to fill our kettles.  The muck must just lie in the road,
+     smell or none, till the rain carries it away.’
+Lancelot sighed again.
+‘It would be a good thing for Ashy, Tregarva, if the weir-pool did, some fine morning, run up
+     to Ashy Down, as poor Harry Verney said on his deathbed.’
+‘There won’t be much of Ashy left by that time, sir, if the landlords go on pulling down
+     cottages at their present rate; driving the people into the towns, to herd together there like
+     hogs, and walk out to their work four or five miles every morning.’
+‘Why,’ said Lancelot, ‘wherever one goes one sees commodious new cottages springing up.’
+‘Wherever you go, sir; but what of wherever you don’t go?  Along the roadsides, and round the
+     gentlemen’s parks, where the cottages are in sight, it’s all very smart; but just go into the
+     outlying hamlets—a whited sepulchre, sir, is many a great estate; outwardly swept and
+     garnished, and inwardly full of all uncleanliness, and dead men’s bones.’
+At this moment two cloaked and veiled figures came up to the door, followed by a servant. 
+     There was no mistaking those delicate footsteps, and the two young men drew back with
+     fluttering hearts, and breathed out silent blessings on the ministering angels, as they entered
+     the crazy and reeking house.
+‘I’m thinking, sir,’ said Tregarva, as they walked slowly and reluctantly away, ‘that it is
+     hard of the gentlemen to leave all God’s work to the ladies, as nine-tenths of them do.’
+‘And I am thinking, Tregarva, that both for ladies and gentlemen, prevention is better than
+     cure.’
+‘There’s a great change come over Miss Argemone, sir.  She used not to be so ready to start
+     out at midnight to visit dying folk.  A blessed change!’
+Lancelot thought so too, and he thought that he knew the cause of it.
+Argemone’s appearance, and their late conversation, had started a new covey of strange
+     fancies.  Lancelot followed them over hill and dale, glad to escape a moment from the mournful
+     lessons of that evening; but even over them there was a cloud of sadness.  Harry Verney’s last
+     words, and Argemone’s accidental whisper about ‘a curse upon the Lavingtons,’ rose to his
+     mind.  He longed to ask Tregarva, but he was afraid—not of the man, for there was a delicacy in
+     his truthfulness which encouraged the most utter confidence; but of the subject itself; but
+     curiosity conquered.
+‘What did Old Harry mean about the Nun-pool?’ he said at last.  ‘Every one seemed to
+     understand him.’
+‘Ah, sir, he oughtn’t to have talked of it!  But dying men, at times, see over the dark water
+     into deep things—deeper than they think themselves.  Perhaps there’s one speaks through them. 
+     But I thought every one knew the story.’
+‘I do not, at least.’
+‘Perhaps it’s so much the better, sir.’
+‘Why?  I must insist on knowing.  It is necessary—proper, that is—that I should hear
+     everything that concerns—’
+‘I understand, sir; so it is; and I’ll tell you.  The story goes, that in the old Popish
+     times, when the nuns held Whitford Priors, the first Mr. Lavington that ever was came from the
+     king with a warrant to turn them all out, poor souls, and take the lands for his own.  And they
+     say the head lady of them—prioress, or abbess, as they called her—withstood him, and cursed
+     him, in the name of the Lord, for a hypocrite who robbed harmless women under the cloak of
+     punishing them for sins they’d never committed (for they say, sir, he went up to court, and
+     slandered the nuns there for drunkards and worse).  And she told him, “That the curse of the
+     nuns of Whitford should be on him and his, till they helped the poor in the spirit of the nuns
+     of Whitford, and the Nun-pool ran up to Ashy Down.’”
+‘That time is not come yet,’ said Lancelot.
+‘But the worst is to come, sir.  For he or his, sir, that night, said or did something to the
+     lady, that was more than woman’s heart could bear: and the next morning she was found dead and
+     cold, drowned in that weir-pool.  And there the gentleman’s eldest son was drowned, and more
+     than one Lavington beside.  Miss Argemone’s only brother, that was the heir, was drowned there
+     too, when he was a little one.’
+‘I never heard that she had a brother.’
+‘No, sir, no one talks of it.  There are many things happen in the great house that you must
+     go to the little house to hear of.  But the country-folk believe, sir, that the nun’s curse
+     holds true; and they say, that Whitford folks have been getting poorer and wickeder ever since
+     that time, and will, till the Nun-pool runs up to Ashy, and the Lavingtons’ name goes out of
+     Whitford Priors.’
+Lancelot said nothing.  A presentiment of evil hung over him.  He was utterly down-hearted
+     about Tregarva, about Argemone, about the poor.  The truth was, he could not shake off the
+     impression of the scene he had left, utterly disappointed and disgusted with the ‘revel.’  He
+     had expected, as I said before, at least to hear something of pastoral sentiment, and of genial
+     frolicsome humour; to see some innocent, simple enjoyment: but instead, what had he seen but
+     vanity, jealousy, hoggish sensuality, dull vacuity? drudges struggling for one night to forget
+     their drudgery.  And yet withal, those songs, and the effect which they produced, showed that
+     in these poor creatures, too, lay the germs of pathos, taste, melody, soft and noble
+     affections.  ‘What right have we,’ thought he, ‘to hinder their development?  Art, poetry,
+     music, science,—ay, even those athletic and graceful exercises on which we all pride ourselves,
+     which we consider necessary to soften and refine ourselves, what God has given us a monopoly of
+     them?—what is good for the rich man is good for the poor.  Over-education?  And what of that? 
+     What if the poor be raised above “their station”?  What right have we to keep them down?  How
+     long have they been our born thralls in soul, as well as in body?  What right have we to say
+     that they shall know no higher recreation than the hogs, because, forsooth, if we raised them,
+     they might refuse to work—for us?  Are we to fix how far their minds may be
+     developed?  Has not God fixed it for us, when He gave them the same passions, talents, tastes,
+     as our own?’
+Tregarva’s meditations must have been running in a very different channel, for he suddenly
+     burst out, after a long silence—
+‘It’s a pity these fairs can’t be put down.  They do a lot of harm; ruin all the young girls
+     round, the Dissenters’ children especially, for they run utterly wild; their parents have no
+     hold on them at all.’
+‘They tell them that they are children of the devil,’ said Lancelot.  ‘What wonder if the
+     children take them at their word, and act accordingly?’
+‘The parson here, sir, who is a God-fearing man enough, tried hard to put down this one, but
+     the innkeepers were too strong for him.’
+‘To take away their only amusement, in short.  He had much better have set to work to amuse
+     them himself.’
+‘His business is to save souls, sir, and not to amuse them.  I don’t see, sir, what Christian
+     people want with such vanities.’
+Lancelot did not argue the point, for he knew the prejudices of Dissenters on the subject;
+     but it did strike him that if Tregarva’s brain had been a little less preponderant, he, too,
+     might have found the need of some recreation besides books and thought.
+By this time they were at Lancelot’s door.  He bid the keeper a hearty good-night, made him
+     promise to see him next day, and went to bed and slept till nearly noon.
+When he walked into his breakfast-room, he found a note on the table in his uncle’s
+     handwriting.  The vicar’s servant had left it an hour before.  He opened it listlessly, rang
+     the bell furiously, ordered out his best horse, and, huddling on his clothes, galloped to the
+     nearest station, caught the train, and arrived at his uncle’s bank—it had stopped payment two
+     hours before.
+</div></body></text></TEI>

@@ -1,0 +1,203 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The New Republic by W.H. Mallock : HTML
+                        version</title><author>Mallock, William Hurrell (1849-1923)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1877</date></publicationStmt></teiHeader><text><body><div type="chapter" n="1">
+BOOK I.
+CHAPTER I.
+TOWARDS the close of last July, when the London season was fast dying of the
+                        dust, Otho Laurence had invited what the Morning Post called
+                        ‘a select circle of friends,’ to spend a quiet Sunday with him at his cool
+                        villa by the sea. 
+ This singular retreat was the work of a very singular man, Otho Laurence’s
+                        uncle, who had squandered on it an immense fortune, and had designed it as
+                        far as possible to embody his own tastes and character. He was a member of a
+                        Tory family of some note, and had near relations in both Houses of
+                        Parliament; but he was himself possessed of a deep though quiet antipathy to
+                        the two things generally most cherished by those of his time and order, the
+                        ideas of Christianity and Feudalism; and he studiously kept himself clear of
+                        all public life. Pride of birth, indeed, he had in no small measure; but it
+                        was the pride of a Roman of the Empire rather than of an Englishman; a pride
+                        which, instead of connecting him with prince or people, made him shun the
+                        one as a Cæsar, and forget the other as slaves. All his pleasures were those
+                        of a lettered voluptuary, who would, as he himself said, have been more in
+                        place under Augustus or the Antonines; and modern existence, under most of
+                        its aspects, he affected to regard as barbarous. Next to a bishop, the thing
+                        he most disliked was a courtier; next to a courtier, a fox-hunting country
+                        gentleman. But nothing in his life, perhaps, was so characteristic of him as
+                        his leaving of it. During his last hours he was soothed by a pretty and
+                        somewhat educated housemaid, whom he called Phyllis, and whom he made sit by
+                        his bedside, and read aloud to him Gibbon’s two chapters on Christianity.
+                        Phyllis had just come to the celebrated excerpt from Tertullian, in which
+                        that father contemplates the future torments of the unbelievers, when the
+                        parish clergyman, who had been sent for by Mr. Laurence’s widowed
+                        sister-in-law, arrived to offer his services. 
+ ‘How shall I admire’—these were the words that,
+                        read in a low sweet tone, first greeted his ears when he was shown softly
+                        into the sick chamber—‘ how shall I admire, how laugh, how rejoice, how
+                        exult, when I behold so many proud monarchs, so many fancied gods, groaning
+                        in the lowest abyss of darkness; so many magistrates who persecuted the name
+                        of the Lord, liquefying in a fiercer fire than ever they kindled against the
+                        Christians!’ The clergyman was at first much reassured at hearing words so
+                        edifying; but when he turned to old Mr. Laurence, he was dismayed to see on
+                        his pale face, no signs of awe, but only a faint smile, full of sarcastic
+                        humour. He therefore glanced at the book that was lying on the girl’s lap,
+                        and discovered to his horror the work of the infidel historian. He was at
+                        first struck dumb; but, soon recovering himself, began to say something
+                        suitable at once to his own profession and to the sick man’s needs. Mr.
+                        Laurence answered him with the greatest courtesy, but with many thanks
+                        declined any assistance from him; saying wistfully that he knew he had not
+                        long to live, and that his one wish was that he could open his veins in a
+                        bath, and so fade gently into death; ‘and then,’ he added, ‘my soul, if I
+                        have one, might perhaps be with Petronius, and with Seneca. And yet sleep
+                        would, I think, be better than even their company.’ The poor clergyman bade
+                        a hasty adieu, and Phyllis resumed her reading. Mr. Laurence listened to
+                        every word: the smile returned to his lips that had for a moment left them,
+                        and was still upon them when, half-an-hour afterwards, he died, so quietly
+                        that Phyllis did not perceive it, but continued her reading for some time to
+                        ears that could hear nothing. 
+ All his property he left to his nephew Otho, including his splendid villa,
+                        which was indeed, as it was meant to be, a type of its builder. It was a
+                        house of pillars, porticoes, and statues, designed ambitiously in what was
+                        meant to be a classical style; and though its splendours might not be all
+                        perhaps in the best taste, nor even of the most strictly Roman pattern,
+                        there was yet an air about its meretricious stateliness by which the clays
+                        of the Empire were at once suggested to one, a magnificence that: would at
+                        any rate have pleased Trimalcio, though it might have scandalised Horace.
+                            
+
+ Otho Laurence inherited with his uncle’s house something of the tastes and
+                        feelings of which it was the embodiment. But, though an epicure by training
+                        and by temper, he had been open to other influences as well. At one time of
+                        his life he had, as it is expressed by some, experienced religion; and not
+                        religion only, but thought and speculation also. Indeed, ever since he was
+                        twenty-four, he had been troubled by a painful sense that he ought to have
+                        some mission in life. The only difficulty was that he could find none that
+                        would suit him. He had considerable natural powers, and was in many ways a
+                        remarkable man; but, unhappily, one of those who are remarkable because they
+                        do not become famous, not because they do. He was one of those of whom it is
+                        said till they are thirty, that they will do something; till they are
+                        thirty-five, that they might do something if they chose; and after that,
+                        that they might have done anything if they had chosen. Laurence was as yet
+                        only three years gone in the second stage, but such of his friends as were
+                        ambitious for him feared that three years more would find him landed in the
+                        third. He, too, was beginning to share this fear; and, not being humble
+                        enough to despair of himself, was by this time taking to despair of his
+                        century. He was thus hardly a happy man; but, like many unhappy men, he was
+                        capable of keen enjoyments. Chief amongst these was society in certain
+                        forms, especially a party in his own house, such as that which he had now
+                        assembled there. To this one in particular he looked forward with more than
+                        usual pleasure, partly because of the peculiar elements which he had
+                        contrived to combine in it, but chiefly because amongst them was to be his
+                        friend Robert Leslie, who had been living abroad, and whom he had not seen
+                        for two years. 
+ Laurence’s aunt, Lady Grace, helped to receive the guests, who by
+                        dinner-time on Saturday evening had all arrived. Robert Leslie was the last.
+                        The dressing-bell had just done ringing as he drove up to the door, and the
+                        others had already gone upstairs; but he found Laurence in the library,
+                        sitting with his head on his hand, and a pile of
+                        menu-cards on the desk before him. The two friends met
+                        with much warmth, and then examined each other’s faces to see if either had
+                        changed. 
+ ‘You told me you had been ill,’ said Laurence, having again looked at
+                        Leslie, ‘and I am afraid you don’t seem quite well yet.’ 
+ ‘You forget,’ said Leslie, whose laugh was a little hollow, ‘that I was on
+                        the sea six hours ago; and, as you know, I am a wretched sailor. But the
+                        worst of human maladies are the most transient also—love , that is half
+                        despairing, and sea-sickness that is quite so.’ 
+ ‘I congratulate you,’ said Laurence, again examining his friend’s face, ‘on
+                        your true cynical manner. I often thought we might have masters in cynicism
+                        just as we have masters in singing. Perhaps I shall be able to learn the art
+                        from you.’ 
+ ‘Oh!’ said Leslie, ‘the theory is simple enough. Find out, by a little
+                        suffering, what are the things you hold most sacred, and most firmly believe
+                        in, and, whenever an occasion offers, deny your faith. A cynic is a kind of
+                        inverted confessor, perpetually making enemies for the sake of what he knows
+                        to be false.’ 
+ ‘Ah!’ said Laurence, ‘but I don’t want theory. I know what is sacred just as
+                        well as you, and, when I am beast enough to be quite out of tune with it, I
+                        have the good sense to call it a phantom. But I don’t do this with
+                        sufficient energy. It is skill in cynical practice I want—a lesson in the
+                        pungent manner—the bitter tone—’ 
+ ‘Then please not to take your lessons from me,’ said Leslie. ‘Imitation may
+                        be the sincerest flattery, but it is, of all, the most irritating: and a
+                        cynic, as you are good enough to call me, feels this especially. For a cynic
+                        is the one preacher, remember, that never wants to make converts. His aim is
+                        to outrage, not to convince: to create enemies, not to conquer them. The
+                        peculiar charm that his creed has for him, is his own peculiarity in holding
+                        it. He is an acid that can only fizz with an alkali, and he therefore hates
+                        in others what he most admires in himself. So if you hear me say a bitter
+                        thing, please be good enough to brim over immediately with the milk of human
+                        kindness. If I say anything disrespectful about friendship, please be good
+                        enough to look hurt; and if I happen to say—what is the chief part of the
+                        cynic’s stock-in-trade—that no woman was ever sincere or faithful, I trust
+                        you have some lady amongst your visitors who will look at me with mournful
+                        eyes, and say to me, “Ah, if you did but know!”’ 
+ ‘Well,’ said Laurence, ‘perhaps I have; but, talking of what people are to
+                        say, I have something here about which I want you to help me. You see these
+                        cards; they are all double. Now that second half is for something quite new,
+                        and of my own invention. The cook has written his part already, so you need
+                        not look so alarmed; but he has only provided for the tongue as a tasting
+                        instrument; I am going to provide for it as a talking one. In fact, I am
+                        going to have a menu for the conversation, and to this I
+                        shall make everyone strictly adhere. For it has always seemed absurd to me
+                        to be so careful about what we put into our mouths, and to leave chance to
+                        arrange what comes out of them; to be so particular as to the order of what
+                        we eat, and to have no order at all in what we talk about. This is the case
+                        especially in parties like the present, where most of the people know each
+                        other only a little, and if left to themselves would never touch on the
+                        topics that would make them best acquainted, and best bring out their
+                        several personal flavours. That is what I like to see conversation doing. I
+                        ought to have written these menus before; but I have been
+                        busy all day, and, besides, I wanted you to help me. I was just beginning
+                        without you when you arrived, as I could wait no longer; but I have put down
+                        nothing yet: indeed I could not fix upon the first topic that is to
+                        correspond with the soup—the first vernal breath of discussion that is to
+                        open the buds of the shy and strange souls. So come, now—what shall we begin
+                        with? What we want is something that anyone can talk easily about, whether
+                        he knows anything of it or not—something, too, that may be treated in any
+                        way, either with laughter, feeling, or even a little touch of temper.’ 
+ ‘Love,’ suggested Leslie. 
+ ‘That is too strong to begin with,’ said Laurence, ‘and too real. Besides,
+                        introduced in that way, it would be, I think, rather common and vulgar.
+                        No—the only thing that suggested itself to me was religion.’ 
+ ‘Nothing could be better in some ways,’ said Leslie; ‘but might not that,
+                        too, be rather strong meat for some? I apprehend, like Bottom, that “the
+                        ladies might be afeared of the lion.” I should suggest rather the question,
+                        “Are you High-church or Low-church?” There is something in that which at
+                        once disarms reverence, and may also just titillate the interests, the
+                        temper, or the sense of humour. Quick,’ he said, taking one of the cards,
+                        ‘and let us begin to write.’ 
+ ‘Stop,’ said Laurence; ‘not so fast, let me beg of you. Instead of religion,
+                        or anything connected with it, we will have, “What is the Aim of Life?” Is
+                        not this the thing of things to suit us? About what do we know less or talk
+                        more? There is a Sphinx in each of our souls that is always asking us this
+                        riddle; and when we are lazy or disappointed, we all of us lounge up to her,
+                        and make languid guesses. So about this we shall all of us have plenty to
+                        say, and can say it in any way we like, flippant, serious, or sentimental.
+                        Think, too, how many avenues of thought and feeling it opens up! Evidently
+                        the “Aim of Life” is the thing to begin with.’ 
+ Leslie assented; and before many minutes they had made the
+                            menu complete. 
+ The ‘Aim of Life’ was to be followed by ‘Town and Country,’ which was
+                        designed to introduce a discussion as to where the Aim of Life was to be
+                        best attained. After this, by an easy transition, came ‘Society;’ next by
+                        way of entreés, ‘Art and Literature,’ ‘Love and Money,’
+                        ‘Riches and Civilisation;’ then ‘The Present,’ as something solid and
+                        satisfying; and lastly, a light superfluity to dally with, brightly coloured
+                        and unsubstantial, with the entremets came ‘The Future.’ 
+ ‘And who is here,’ said Leslie, as they were ending their labours, ‘to enjoy
+                        this feast of reason?’ 
+ ‘I will tell you,’ said Laurence. ‘In the first place, there is Lady
+                        Ambrose, a woman of a very old but poor family, who has married a modern
+                        M.P. with more than a million of money. She is very particular about knowing
+                        the right people, and has lovely, large grey eyes. Then there is Miss
+                        Merton, a Roman Catholic young lady, the daughter of old Sir Ascot Merton,
+                        the horse-racing evangelical. I knew her well five years ago, but had not
+                        seen her since her conversion, till to-day. Then we have Dr. Jenkinson, the
+                        great Broad-church divine who thinks that Christianity is not dead, but
+                        changed by himself and his followers in the twinkling of an eye.’ 
+ ‘I met Dr. Jenkinson,’ said Leslie, ‘just before I went abroad, at a great
+                        dinner given by Baron Isaacs, in honour of his horse having won the Derby.
+                        Well—and who else is there?’ 
+ ‘Two celebrated members of the Royal Society,’ said Laurence; ‘no less
+                        persons than—But, good gracious! it is time we were up-stairs dressing. Come
+                        along directly, and I will explain the other people to you before dinner.’ 
+</div></body></text></TEI>

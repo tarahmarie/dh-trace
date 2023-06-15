@@ -1,0 +1,478 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Project Gutenberg's The Parisians, Complete, by Edward
+     Bulwer-Lytton</title><author>Lytton, Edward Bulwer (1803-1873)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1874</date></publicationStmt></teiHeader><text><body><div type="chapter" n="52">
+CHAPTER VI.
+It has now become due to Graham Vane, and to his place in the estimation of my readers, to
+      explain somewhat more distinctly the nature of the quest in prosecution of which he had sought
+      the aid of the Parisian police, and under an assumed name made the acquaintance of M.
+      Lebeau.
+The best way of discharging this duty will perhaps be to place before the reader the
+      contents of the letter which passed under Graham’s eyes on the day in which the heart of the
+      writer ceased to beat.
+(Confidential. To be opened immediately after my death, and before the perusal of my
+      will.—Richard King.)
+TO GRAHAM VANE, Esq.
+My DEAR GRAHAM,—By the direction on the envelope of this letter, “Before the perusal of my
+      will,” I have wished to save you from the disappointment you would naturally experience if you
+      learned my bequest without being prevised of the conditions which I am about to impose upon
+      your honour. You will see ere you conclude this letter that you are the only man living to
+      whom I could intrust the secret it contains and the task it enjoins.
+You are aware that I was not born to the fortune that passed to me by the death of a distant
+      relation, who had, in my earlier youth, children of his own. I was an only son, left an orphan
+      at the age of sixteen with a very slender pittance. My guardians designed me for the medical
+      profession. I began my studies at Edinburgh, and was sent to Paris to complete them, It so
+      chanced that there I lodged in the same house with an artist named Auguste Duval, who, failing
+      to gain his livelihood as a painter, in what—for his style was ambitious—is termed the
+      Historical School, had accepted the humbler calling of a drawing-master. He had practised in
+      that branch of the profession for several years at Tours, having a good clientele among
+      English families settled there. This clientele, as he frankly confessed, he had lost from some
+      irregularities of conduct. He was not a bad man, but of convivial temper, and easily led into
+      temptation. He had removed to Paris a few months before I made his acquaintance. He obtained a
+      few pupils, and often lost them as soon as gained. He was unpunctual and addicted to drink.
+      But he had a small pension, accorded to him, he was wont to say mysteriously, by some
+      high-born kinsfolk, too proud to own connection with a drawing-master, and on the condition
+      that he should never name them. He never did name them to me, and I do not know to this day
+      whether the story of this noble relationship was true or false. A pension, however, he did
+      receive quarterly from some person or other, and it was an unhappy provision for him. It
+      tended to make him an idler in his proper calling; and whenever he received the payment he
+      spent it in debauch, to the neglect, while it lasted, of his pupils. This man had residing
+      with him a young daughter, singularly beautiful. You may divine the rest. I fell in love with
+      her,—a love deepened by the compassion with which she inspired me. Her father left her so
+      frequently that, living on the same floor, we saw much of each other. Parent and child were
+      often in great need,—lacking even fuel or food. Of course I assisted them to the utmost of my
+      scanty means Much as I was fascinated by Louise Duval, I was not blind to great defects in her
+      character. She was capricious, vain, aware of her beauty, and sighing for the pleasures or the
+      gauds beyond her reach. I knew that she did not love me,—there was little, indeed, to
+      captivate her fancy in a poor, thread-bare medical student,—and yet I fondly imagined that my
+      own persevering devotion would at length win her affections, I spoke to her father more than
+      once of my hope some day to make Louise my wife. This hope, I must frankly acknowledge, he
+      never encouraged. On the contrary, he treated it with scorn,—“His child with her beauty would
+      look much higher;” but be continued all the same to accept my assistance, and to sanction my
+      visits. At length my slender purse was pretty well exhausted, and the luckless drawing-master
+      was so harassed with petty debts that further credit became impossible. At this time I
+      happened to hear from a fellow-student that his sister, who was the principal of a lady’s
+      school in Cheltenham, bad commissioned him to look out for a first-rate teacher of drawing
+      with whom her elder pupils could converse in French, but who should be sufficiently acquainted
+      with English to make his instructions intelligible to the young. The salary was liberal, the
+      school large and of high repute, and his appointment to it would open to an able teacher no
+      inconsiderable connection among private families. I communicated this intelligence to Duval.
+      He caught at it eagerly. He had learned at Tours to speak English fluently; and as his
+      professional skill was of high order, and he was popular with several eminent artists, he
+      obtained certificates as to his talents, which my fellow-student forwarded to England with
+      specimens of Duval’s drawings. In a few days the offer of an engagement arrived, was accepted,
+      and Duval and his daughter set out for Cheltenham. At the eve of their departure, Louise,
+      profoundly dejected at the prospect of banishment to a foreign country, and placing no trust
+      in her father’s reform to steady habits, evinced a tenderness for me hitherto new; she wept
+      bitterly; she allowed me to believe that her tears flowed at the thought of parting with me,
+      and even besought me to accompany them to Cheltenham, if only for a few days. You may suppose
+      how delightedly I complied with the request. Duval had been about a week at the watering
+      place, and was discharging the duties he had undertaken with such unwonted steadiness and
+      regularity that I began sorrowfully to feel I had no longer an excuse for not returning to my
+      studies at Paris, when the poor teacher was seized with a fit of paralysis. He lost the power
+      of movement, and his mind was affected. The medical attendant called in said that he might
+      linger thus for some time, but that, even if he recovered his intellect, which was more than
+      doubtful, he would never be able to resume his profession. I could not leave Louise in
+      circumstances so distressing,—I remained. The little money Duval had brought from Paris was
+      now exhausted; and when the day on which he had been in the habit of receiving his quarter’s
+      pension came round, Louise was unable even to conjecture how it was to be applied for. It
+      seems he had always gone for it in person; but to whom he went was a secret which he had never
+      divulged, and at this critical juncture his mind was too enfeebled even to comprehend us when
+      we inquired. I had already drawn from the small capital on the interest of which I had
+      maintained myself; I now drew out most of the remainder. But this was a resource that could
+      not last long. Nor could I, without seriously compromising Louise’s character, be constantly
+      in the house with a girl so young, and whose sole legitimate protector was thus afflicted.
+      There seemed but one alternative to that of abandoning her altogether,—namely, to make her my
+      wife, to conclude the studies necessary to obtain my diploma, and purchase some partnership in
+      a small country practice with the scanty surplus that might be left of my capital. I placed
+      this option before Louise timidly, for I could not bear the thought of forcing her
+      inclinations. She seemed much moved by what she called my generosity: she consented; we were
+      married. I was, as you may conceive, wholly ignorant of French law. We were married according
+      to the English ceremony and the Protestant ritual. Shortly after our marriage we all three
+      returned to Paris, taking an apartment in a quarter remote from that in which we had before
+      lodged, in order to avoid any, harassment to which such small creditors as Duval had left
+      behind him might subject us. I resumed my studies with redoubled energy, and Louise was
+      necessarily left much alone with her poor father in the daytime. The defects in her character
+      became more and more visible. She reproached me for the solitude to which I condemned her; our
+      poverty galled her; she had no kind greeting for me when I returned at evening, wearied out.
+      Before marriage she had not loved me; after marriage, alas! I fear she hated. We had been
+      returned to Paris some months when poor Duval died; he had never recovered his faculties, nor
+      had we ever learned from whom his pension had been received. Very soon after her father’s
+      death I observed a singular change in the humour and manner of Louise. She was no longer
+      peevish, irascible, reproachful; but taciturn and thoughtful. She seemed to me under the
+      influence of some suppressed excitement, her cheeks flushed and her eye abstracted. At length,
+      one evening when I returned I found her gone. She did not come back that night nor the next
+      day. It was impossible for me to conjecture what had become of her. She had no friends, so far
+      as I knew; no one had visited at our squalid apartment. The poor house in which we lodged had
+      no concierge whom I could question; but the ground-floor was occupied by a small tobacconist’s
+      shop, and the woman at the counter told me that for some days before my wife’s disappearance,
+      she had observed her pass the shop-window in going out in the afternoon and returning towards
+      the evening. Two terrible conjectures beset me either in her walk she had met some admirer,
+      with whom she had fled; or, unable to bear the companionship and poverty of a union which she
+      had begun to loathe, she had gone forth to drown herself in the Seine. On the third day from
+      her flight I received the letter I enclose. Possibly the handwriting may serve you as a guide
+      in the mission I intrust to you.
+
+ MONSIEUR,—You have deceived me vilely,—taken advantage of my inexperienced youth and
+      friendless position to decoy me into an illegal marriage. My only consolation under my
+      calamity and disgrace is, that I am at least free from a detested bond. You will not see me
+      again,—it is idle to attempt to do so. I have obtained refuge with relations whom I have been
+      fortunate enough to discover, and to whom I intrust my fate; and even if you could learn the
+      shelter I have sought, and have the audacity to molest me, you would but subject yourself to
+      the chastisement you so richly deserve. Louise DUVAL. 
+At the perusal of this cold-hearted, ungrateful letter, the love I had felt for this
+      woman—already much shaken by her wayward and perverse temper—vanished from my heart, never to
+      return. But as an honest man, my conscience was terribly stung. Could it be possible that I
+      had unknowingly deceived her,—that our marriage was not legal? When I recovered from the stun
+      which was the first effect of her letter, I sought the opinion of an avoue in the
+      neighbourbood, named Sartiges, and to my dismay, I learned that while I, marrying according to
+      the customs of my own country, was legally bound to Louise in England, and could not marry
+      another, the marriage was in all ways illegal for her,—being without the consent of her
+      relations while she was under age; without the ceremonials of the Roman Catholic Church,—to
+      which, though I never heard any profession of religious belief from her or her father, it
+      might fairly be presumed that she belonged; and, above all, without the form of civil contract
+      which is indispensable to the legal marriage of a French subject.
+The avoue said that the marriage, therefore, in itself was null, and that Louise could,
+      without incurring legal penalties for bigamy, marry again in France according to the French
+      laws; but that under the circumstances it was probable that her next of kin would apply on her
+      behalf to the proper court for the formal annulment of the marriage, which would be the most
+      effectual mode of saving her from any molestation on my part, and remove all possible
+      questions hereafter as to her single state and absolute right to remarry. I had better remain
+      quiet, and wait for intimation of further proceedings. I knew not what else to do, and
+      necessarily submitted.
+From this wretched listlessness of mind, alternated now by vehement resentment against
+      Louise, now by the reproach of my own sense of honour in leaving that honour in so
+      questionable a point of view, I was aroused by a letter from the distant kinsman by whom
+      hitherto I had been so neglected. In the previous year he had lost one of his two children;
+      the other was just dead. No nearer relation now surviving stood between me and my chance of
+      inheritance from him. He wrote word of his domestic affliction with a manly sorrow which
+      touched me, said that his health was failing, and begged me, as soon as possible, to come and
+      visit him in Scotland. I went, and continued to reside with him till his death, some months
+      afterwards. By his will I succeeded to his ample fortune on condition of taking his name.
+As soon as the affairs connected with this inheritance permitted, I returned to Paris, and
+      again saw M. Sartiges. I had never heard from Louise, nor from any one connected with her
+      since the letter you have read. No steps had been taken to annul the marriage, and sufficient
+      time had elapsed to render it improbable that such steps would be taken now; but if no such
+      steps were taken, however free from the marriage-bond Louise might be, it clearly remained
+      binding on myself.
+At my request, M. Sartiges took the most vigorous measures that occurred to him to ascertain
+      where Louise was, and what and who was the relation with whom she asserted she had found
+      refuge. The police were employed; advertisements were issued, concealing names, but
+      sufficiently clear to be intelligible to Louise if they came under her eye, and to the effect
+      that if any informality in our marriage existed, she was implored for her own sake to remove
+      it by a second ceremonial—answer to be addressed to the avoue. No answer came; the police had
+      hitherto failed of discovering her, but were sanguine of success, when a few weeks after these
+      advertisements a packet reached M. Sartiges, enclosing the certificates annexed to this
+      letter, of the death of Louise Duval at Munich. The certificates, as you will see, are to
+      appearance officially attested and unquestionably genuine. So they were considered by M.
+      Sartiges as well as by myself. Here, then, all inquiry ceased; the police were dismissed. I
+      was free. By little and little I overcame the painful impressions which my ill-starred union
+      and the announcement of Louise’s early death bequeathed. Rich, and of active mind, I learned
+      to dismiss the trials of my youth as a gloomy dream. I entered into public life; I made myself
+      a creditable position; became acquainted with your aunt; we were wedded, and the beauty of her
+      nature embellished mine. Alas, alas! two years after our marriage—nearly five years after I
+      had received the certificates of Louise’s death—I and your aunt made a summer excursion into
+      the country of the Rhine; on our return we rested at Aix-la-Chapelle. One day while there I
+      was walking alone in the environs of the town, when, on the road, a little girl, seemingly
+      about five years old, in chase of a butterfly, stumbled and fell just before my feet; I took
+      her up, and as she was crying more from the shock of the fall than any actual hurt, I was
+      still trying my best to comfort her, when a lady some paces behind her came up, and in taking
+      the child from my arms as I was bending over her, thanked me in a voice that made my heart
+      stand still. I looked up, and beheld Louise.
+It was not till I had convulsively clasped her hand and uttered her name that she recognized
+      me. I was, no doubt, the more altered of the two,—prosperity and happiness had left little
+      trace of the needy, care worn, threadbare student. But if she were the last to recognize, she
+      was the first to recover self-possession. The expression of her face became hard and set. I
+      cannot pretend to repeat with any verbal accuracy the brief converse that took place between
+      us, as she placed the child on the grass bank beside the path, bade her stay there quietly,
+      and walked on with me some paces as if she did not wish the child to hear what was said.
+The purport of what passed was to this effect: She refused to explain the certificates of
+      her death further than that, becoming aware of what she called the “persecution” of the
+      advertisements issued and inquiries instituted, she had caused those documents to be sent to
+      the address given in the advertisement, in order to terminate all further molestation. But how
+      they could have been obtained, or by what art so ingeniously forged as to deceive the
+      acuteness of a practised lawyer, I know not to this day. She declared, indeed, that she was
+      now happy, in easy circumstances, and that if I wished to make some reparation for the wrong I
+      had done her, it would be to leave her in peace; and in case—which was not likely—we ever met
+      again, to regard and treat her as a stranger; that she, on her part, never would molest me,
+      and that the certified death of Louise Duval left me as free to marry again as she considered
+      herself to be.
+My mind was so confused, so bewildered, while she thus talked, that I did not attempt to
+      interrupt her. The blow had so crushed me that I scarcely struggled under it; only, as she
+      turned to leave me, I suddenly recollected that the child, when taken from my arms, had called
+      her “Maman,” and, judging by the apparent age of the child, it must have been born but a few
+      months after Louise had left me,—that it must be mine. And so, in my dreary woe, I faltered
+      out, “But what of your infant? Surely that has on me a claim that you relinquish for yourself.
+      You were not unfaithful to me while you deemed you were my wife?”
+“Heavens! can you insult me by such a doubt? No!” she cried out, impulsively and haughtily.
+      “But as I was not legally your wife, the child is not legally yours; it is mine, and only
+      mine. Nevertheless, if you wish to claim it”—here she paused as in doubt. I saw at once that
+      she was prepared to resign to me the child if I had urged her to do so. I must own, with a
+      pang of remorse, that I recoiled from such a proposal. What could I do with the child? How
+      explain to my wife the cause of my interest in it? If only a natural child of mine, I should
+      have shrunk from owning to Janet a youthful error. But as it was,—the child by a former
+      marriage, the former wife still living!—my blood ran cold with dread. And if I did take the
+      child, invent what story I might as to its parentage, should I not expose myself, expose
+      Janet, to terrible constant danger? The mother’s natural affection might urge her at any time
+      to seek tidings of the child, and in so doing she might easily discover my new name, and,
+      perhaps years hence, establish on me her own claim.
+No, I could not risk such perils. I replied sullenly, “You say rightly; the child is
+      yours,—only yours.” I was about to add an offer of pecuniary provision for it, but Louise had
+      already turned scornfully towards the bank on which she had left the infant. I saw her snatch
+      from the child’s hand some wild flowers the poor thing had been gathering; and how often have
+      I thought of the rude way in which she did it,—not as a mother who loves her child. Just then
+      other passengers appeared on the road; two of them I knew,—an English couple very intimate
+      with Lady Janet and myself. They stopped to accost me, while Louise passed by with the infant
+      towards the town. I turned in the opposite direction, and strove to collect my thoughts.
+      Terrible as was the discovery thus suddenly made, it was evident that Louise had as strong an
+      interest as myself to conceal it. There was little chance that it would ever be divulged. Her
+      dress and that of the child were those of persons in the richer classes of life. After all,
+      doubtless, the child needed not pecuniary assistance from me, and was surely best off under
+      the mother’s care. Thus I sought to comfort and to delude myself.
+The next day Janet and I left Aix-la-Chapelle and returned to England. But it was impossible
+      for me to banish the dreadful thought that Janet was not legally my wife; that could she even
+      guess the secret lodged in my breast she would be lost to me forever, even though she died of
+      the separation (you know well how tenderly she loved me). My nature underwent a silent
+      revolution. I had previously cherished the ambition common to most men in public life,—the
+      ambition for fame, for place, for power. That ambition left me; I shrank from the thought of
+      becoming too well known, lest Louise or her connections, as yet ignorant of my new name, might
+      more easily learn what the world knew; namely that I had previously borne another name,—the
+      name of her husband,—and finding me wealthy and honoured, might hereafter be tempted to claim
+      for herself or her daughter the ties she adjured for both while she deemed me poor and
+      despised. But partly my conscience, partly the influence of the angel by my side, compelled me
+      to seek whatever means of doing good to others position and circumstances placed at my
+      disposal. I was alarmed when even such quiet exercise of mind and fortune acquired a sort of
+      celebrity. How pain fully I shrank from it! The world attributed my dread of publicity to
+      unaffected modesty. The world praised me, and I knew myself an impostor. But the years stole
+      on. I heard no more of Louise or her child, and my fears gradually subsided. Yet I was
+      consoled when the two children born to me by Janet died in their infancy. Had they lived, who
+      can tell whether something might not have transpired to prove them illegitimate.
+I must hasten on. At last came the great and crushing calamity of my life,—I lost the woman
+      who was my all in all. At least she was spared the discovery that would have deprived me of
+      the right of tending her deathbed, and leaving within her tomb a place vacant for myself.
+But after the first agonies that followed her loss, the conscience I had so long sought to
+      tranquillize became terribly reproachful. Louise had forfeited all right to my consideration,
+      but my guiltless child had not done so. Did it live still? If so, was it not the heir to my
+      fortunes,—the only child left to me? True, I have the absolute right to dispose of my wealth:
+      it is not in land; it is not entailed: but was not the daughter I had forsaken morally the
+      first claimant; was no reparation due to her? You remember that my physician ordered me, some
+      little time after your aunt’s death, to seek a temporary change of scene. I obeyed, and went
+      away no one knew whither. Well, I repaired to Paris; there I sought M. Sartiges, the avoue. I
+      found he had been long dead. I discovered his executors, and inquired if any papers or
+      correspondence between Richard Macdonald and himself many years ago were in existence. All
+      such documents, with others not returned to correspondents at his decease, had been burned by
+      his desire. No possible clew to the whereabouts of Louise, should any have been gained since I
+      last saw her, was left. What then to do I knew not. I did not dare to make inquiries through
+      strangers, which, if discovering my child, might also bring to light a marriage that would
+      have dishonoured the memory of my lost saint. I returned to England, feeling that my days were
+      numbered. It is to you that I transmit the task of those researches which I could not
+      institute. I bequeath to you, with the exception of trifling legacies and donations to public
+      charities, the whole of my fortune; but you will understand by this letter that it is to be
+      held on a trust which I cannot specify in my will. I could not, without dishonouring the
+      venerated name of your aunt, indicate as the heiress of my wealth a child by a wife living at
+      the time I married Janet. I cannot form any words for such a devise which would not arouse
+      gossip and suspicion, and furnish ultimately a clew to the discovery I would shun. I calculate
+      that, after all deductions, the sum that will devolve to you will be about L220,000. That
+      which I mean to be absolutely and at once yours is the comparatively trifling legacy of
+      L20,000. If Louise’s child be not living, or if you find full reason to suppose that despite
+      appearances the child is not mine, the whole of my fortune lapses to you; but should Louise be
+      surviving and need pecuniary aid, you will contrive that she may have such an annuity as you
+      may deem fitting, without learning whence it come. You perceive that it is your object, if
+      possible, even more than mine, to preserve free from slur the name and memory of her who was
+      to you a second mother. All ends we desire would be accomplished could you, on discovering my
+      lost child, feel that, without constraining your inclinations, you could make her your wife.
+      She would then naturally share with you my fortune, and all claims of justice and duty would
+      be quietly appeased. She would now be of age suitable to yours. When I saw her at Aix she gave
+      promise of inheriting no small share of her mother’s beauty. If Louise’s assurance of her easy
+      circumstances were true, her daughter has possibly been educated and reared with tenderness
+      and care. You have already assured me that you have no prior attachment. But if, on
+      discovering this child, you find her already married, or one whom you could not love nor
+      esteem, I leave it implicitly to your honour and judgment to determine what share of the
+      L200,000 left in your hands should be consigned to her. She may have been corrupted by her
+      mother’s principles. She may—Heaven forbid!—have fallen into evil courses, and wealth would be
+      misspent in her hands. In that case a competence sufficing to save her from further
+      degradation, from the temptations of poverty, would be all that I desire you to devote from my
+      wealth. On the contrary, you may find in her one who, in all respects, ought to be my chief
+      inheritor. All this I leave in full confidence to you, as being, of all the men I know, the
+      one who unites the highest sense of honour with the largest share of practical sense and
+      knowledge of life. The main difficulty, whatever this lost girl may derive from my substance,
+      will be in devising some means to convey it to her so that neither she nor those around her
+      may trace the bequest to me. She can never be acknowledged as my child,—never! Your reverence
+      for the beloved dead forbids that. This difficulty your clear strong sense must overcome; mine
+      is blinded by the shades of death. You too will deliberately consider how to institute the
+      inquiries after mother and child so as not to betray our secret. This will require great
+      caution. You will probably commence at Paris, through the agency of the police, to whom you
+      will be very guarded in your communications. It is most unfortunate that I have no miniature
+      of Louise, and that any description of her must be so vague that it may not serve to discover
+      her; but such as it is, it may prevent your mistaking for her some other of her name. Louise
+      was above the common height, and looked taller than she was, with the peculiar combination of
+      very dark hair, very fair complexion, and light-gray eyes. She would now be somewhat under the
+      age of forty. She was not without accomplishments, derived from the companionship with her
+      father. She spoke English fluently; she drew with taste, and even with talent. You will see
+      the prudence of confining research at first to Louise, rather than to the child who is the
+      principal object of it; for it is not till you can ascertain what has become of her that you
+      can trust the accuracy of any information respecting the daughter, whom I assume, perhaps
+      after all erroneously, to be mine. Though Louise talked with such levity of holding herself
+      free to marry, the birth of her child might be sufficient injury to her reputation to become a
+      serious obstacle to such second nuptials, not having taken formal steps to annul her marriage
+      with myself. If not thus remarried, there would be no reason why she should not resume her
+      maiden name of Duval, as she did in the signature of her letter to me: finding that I had
+      ceased to molest her by the inquiries, to elude which she had invented the false statement of
+      her death. It seems probable, therefore, that she is residing somewhere in Paris, and in the
+      name of Duval. Of course the burden of uncertainty as to your future cannot be left to oppress
+      you for an indefinite length of time. If at the end, say, of two years, your researches have
+      wholly failed, consider three-fourths of my whole fortune to have passed to you, and put by
+      the fourth to accumulate, should the child afterwards be discovered, and satisfy your judgment
+      as to her claims on me as her father. Should she not, it will be a reserve fund for your own
+      children. But oh, if my child could be found in time! and oh, if she be all that could win
+      your heart, and be the wife you would select from free choice! I can say no more. Pity me, and
+      judge leniently of Janet’s husband.
+
+ R. K. 
+The key to Graham’s conduct is now given,—the deep sorrow that took him to the tomb of the
+      aunt he so revered, and whose honoured memory was subjected to so great a risk; the slightness
+      of change in his expenditure and mode of life, after an inheritance supposed to be so ample;
+      the abnegation of his political ambition; the subject of his inquiries, and the cautious
+      reserve imposed upon them; above all, the position towards Isaura in which he was so cruelly
+      placed.
+Certainly, his first thought in revolving the conditions of his trust had been that of
+      marriage with this lost child of Richard King’s, should she be discovered single, disengaged,
+      and not repulsive to his inclinations. Tacitly he subscribed to the reasons for this course
+      alleged by the deceased. It was the simplest and readiest plan of uniting justice to the
+      rightful inheritor with care for a secret so important to the honour of his aunt, of Richard
+      King himself,—his benefactor,—of the illustrious house from which Lady Janet had sprung.
+      Perhaps, too, the consideration that by this course a fortune so useful to his career was
+      secured was not without influence on the mind of a man naturally ambitious. But on that
+      consideration he forbade himself to dwell. He put it away from him as a sin. Yet, to marriage
+      with any one else, until his mission was fulfilled, and the uncertainty as to the extent of
+      his fortune was dispelled, there interposed grave practical obstacles. How could he honestly
+      present himself to a girl and to her parents in the light of a rich man, when in reality he
+      might be but a poor man? How could he refer to any lawyer the conditions which rendered
+      impossible any settlement that touched a shilling of the large sum which at any day he might
+      have to transfer to another? Still, when once fully conspicuous how deep was the love with
+      which Isaura had inspired him, the idea of wedlock with the daughter of Richard King, if she
+      yet lived and was single, became inadmissible. The orphan condition of the young Italian
+      smoothed away the obstacles to proposals of marriage which would have embarrassed his
+      addresses to girls of his own rank, and with parents who would have demanded settlements. And
+      if he had found Isaura alone on that day on which he had seen her last, he would doubtless
+      have yielded to the voice of his heart, avowed his love, wooed her own, and committed both to
+      the tie of betrothal. We have seen how rudely such yearnings of his heart were repelled on
+      that last interview. His English prejudices were so deeply rooted, that, even if he had been
+      wholly free from the trust bequeathed to him, he would have recoiled from marriage with a girl
+      who, in the ardour for notoriety, could link herself with such associates as Gustave Rameau,
+      by habits a Bohemian, and by principles a Socialist.
+In flying from Paris, he embraced the resolve to banish all thought of wedding Isaura, and
+      to devote himself sternly to the task which had so sacred a claim upon him. Not that he could
+      endure the idea of marrying another, even if the lost heiress should be all that his heart
+      could have worshipped, had that heart been his own to give; but he was impatient of the burden
+      heaped on him,—of the fortune which might not be his, of the uncertainty which paralyzed all
+      his ambitious schemes for the future.
+Yet, strive as he would—and no man could strive more resolutely—he could not succeed in
+      banishing the image of Isaura. It was with him always; and with it a sense of irreparable
+      loss, of a terrible void, of a pining anguish.
+And the success of his inquiries at Aix-la-Chapelle, while sufficient to detain him in the
+      place, was so slight, and advanced by such slow degrees, that it furnished no continued
+      occupation to his restless mind. M. Renard was acute and painstaking. But it was no easy
+      matter to obtain any trace of a Parisian visitor to so popular a Spa so many years ago. The
+      name Duval, too, was so common, that at Aix, as we have seen at Paris, time was wasted in the
+      chase of a Duval who proved not to be the lost Louise. At last M. Renard chanced on a house in
+      which, in the year 1849, two ladies from Paris had lodged for three weeks. One was named
+      Madame Duval, the other Madame Marigny. They were both young, both very handsome, and much of
+      the same height and colouring. But Madame Marigny was the handsomer of the two. Madame Duval
+      frequented the gaming-tables and was apparently of very lively temper. Madame Marigny lived
+      very quietly, rarely or never stirred out, and seemed in delicate health. She, however,
+      quitted the apartment somewhat abruptly, and, to the best of the lodging-house-keeper’s
+      recollection, took rooms in the country near Aix—she could not remember where. About two
+      months after the departure of Madame Marigny, Madame Duval also left Aix, and in company with
+      a French gentleman who had visited her much of late,—a handsome man of striking appearance.
+      The lodging house-keeper did not know what or who he was. She remembered that he used to be
+      announced to Madame Duval by the name of M. Achille. Madame Duval had never been seen again by
+      the lodging-house-keeper after she had left. But Madame Marigny she had once seen, nearly five
+      years after she had quitted the lodgings,—seen her by chance at the railway station,
+      recognized her at once, and accosted her, offering her the old apartment. Madame Marigny had,
+      however, briefly replied that she was only at Aix for a few hours, and should quit it the same
+      day.
+The inquiry now turned towards Madame Marigny. The date on which the lodging-house-keeper
+      had last seen her coincided with the year in which Richard King had met Louise. Possibly,
+      therefore, she might have accompanied the latter to Aix at that time, and could, if found,
+      give information as to her subsequent history and present whereabouts.
+After a tedious search throughout all the environs of Aix, Graham himself came, by the
+      merest accident, upon the vestiges of Louise’s friend. He had been wandering alone in the
+      country round Aix, when a violent thunderstorm drove him to ask shelter in the house of a
+      small farmer, situated in a field, a little off the byway which he had taken. While waiting
+      for the cessation of the storm, and drying his clothes by the fire in a room that adjoined the
+      kitchen, he entered into conversation with the farmer’s wife, a pleasant, well-mannered
+      person, and made some complimentary observation on a small sketch of the house in
+      water-colours that hung upon the wall. “Ah,” said the farmer’s wife, “that was done by a
+      French lady who lodged here many years ago. She drew very prettily, poor thing.”
+“A lady who lodged here many years ago,—how many?”
+“Well, I guess somewhere about twenty.”
+“Ah, indeed! Was it a Madame Marigny?”
+“Bon Dieu! That was indeed her name. Did you know her? I should be so glad to hear she is
+      well and—I hope—happy.”
+“I do not know where she is now, and am making inquiries to ascertain. Pray help me. How
+      long did Madame Marigny lodge with you?”
+“I think pretty well two months; yes, two months. She left a month after her
+      confinement.”
+“She was confined here?”
+“Yes. When she first came, I had no idea that she was enceinte. She had a pretty figure, and
+      no one would have guessed it, in the way she wore her shawl. Indeed I only began to suspect it
+      a few days before it happened; and that was so suddenly, that all was happily over before we
+      could send for the accoucheur.”
+“And the child lived?—a girl or a boy?”
+“A girl,—the prettiest baby.”
+“Did she take the child with her when she went?”
+“No; it was put out to nurse with a niece of my husband who was confined about the same
+      time. Madame paid liberally in advance, and continued to send money half-yearly, till she came
+      herself and took away the little girl.”
+“When was that,—a little less than five years after she had left it?”
+“Why, you know all about it, Monsieur; yes, not quite five years after. She did not come to
+      see me, which I thought unkind, but she sent me, through my niece-in-law, a real gold watch
+      and a shawl. Poor dear lady—for lady she was all over,—with proud ways, and would not bear to
+      be questioned. But I am sure she was none of your French light ones, but an honest wife like
+      myself, though she never said so.”
+“And have you no idea where she was all the five years she was away, or where she went after
+      reclaiming her child?”
+“No, indeed, Monsieur.”
+“But her remittances for the infant must have been made by letters, and the letters would
+      have had post-marks?”
+“Well, I dare say; I am no scholar myself. But suppose you see Marie Hubert, that is my
+      niece-in-law, perhaps she has kept the envelopes.”
+“Where does Madame Hubert live?”
+“It is just a league off by the short path; you can’t miss the way. Her husband has a bit of
+      land of his own, but he is also a carrier—‘Max Hubert, carrier,’—written over the door, just
+      opposite the first church you get to. The rain has ceased, but it may be too far for you
+      to-day.”
+“Not a bit of it. Many thanks.”
+“But if you find out the dear lady and see her, do tell her how pleased I should be to hear
+      good news of her and the little one.”
+Graham strode on under the clearing skies to the house indicated. He found Madame Hubert at
+      home, and ready to answer all questions; but, alas! she had not the envelopes. Madame Marigny,
+      on removing the child, had asked for all the envelopes or letters, and carried them away with
+      her. Madame Hubert, who was as little of a scholar as her aunt-in-law was, had never paid much
+      attention to the post-marks on the envelopes; and the only one that she did remember was the
+      first, that contained a bank-note, and that post-mark was “Vienna.”
+“But did not Madame Marigny’s letters ever give you an address to which to write with news
+      of her child?”
+“I don’t think she cared much for her child, Monsieur. She kissed it very coldly when she
+      came to take it away. I told the poor infant that that was her own mamma; and Madame said,
+      ‘Yes, you may call me maman,’ in a tone of voice—well, not at all like that of a mother. She
+      brought with her a little bag which contained some fine clothes for the child, and was very
+      impatient till the child had got them on.”
+“Are you quite sure it was the same lady who left the child?”
+“Oh, there is no doubt of that. She was certainly tres belle, but I did not fancy her as
+      aunt did. She carried her head very high, and looked rather scornful. However, I must say she
+      behaved very generously.”
+“Still you have not answered my question whether her letters contained no address.”
+“She never wrote more than two letters. One enclosing the first remittance was but a few
+      lines, saying that if the child was well and thriving, I need not write; but if it died or
+      became dangerously ill, I might at any time write a line to Madame ——-, Poste Restante,
+      Vienna. She was travelling about, but the letter would be sure to reach her sooner or later.
+      The only other letter I had was to apprise me that she was coming to remove the child, and
+      might be expected in three days after the receipt of her letter.”
+“And all the other communications from her were merely remittances in blank envelopes?”
+“Exactly so.”
+Graham, finding he could learn no more, took his departure. On his way home, meditating the
+      new idea that his adventure that day suggested, he resolved to proceed at once, accompanied by
+      M. Renard, to Munich, and there learn what particulars could be yet ascertained respecting
+      those certificates of the death of Louise Duval, to which (sharing Richard King’s very natural
+      belief that they had been skilfully forged) he had hitherto attached no importance.
+</div></body></text></TEI>

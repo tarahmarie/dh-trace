@@ -1,0 +1,28 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Ginx's Baby, by Edward Jenkins</title><author>Jenkins, John Edward (1838-1910).</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1870</date></publicationStmt></teiHeader><text><body><div type="chapter" n="22">
+I.—Parochial Knots—to be untied without prejudice.
+The infant borne to the workhouse of St. Bartimeus was Ginx's Baby. When he had been
+            placed on the floor of the matron's room, and examined by the master, that official
+            turned to the unwelcome bearer of the burden.
+“Did you find this child?”
+“Yes.”
+“Where?”
+“Lying opposite my shop in Nether Place.”
+“What's your name?”
+“Doll.”
+“Oh! you're the cheesemonger. Your shop's on the other side of the boundary, in the
+            other parish. The child ought not to come here; it doesn't belong to us.”
+“Yes it does: it wasn't on my side of the line.”
+“But it was in front of your house?”
+“Well, the line runs crossways: it don't follow the child was in our parish.”
+“Oh, nonsense! there's no doubt about it! We can't take the child in. You must carry it
+            away again.”
+Mr. Snigger turned to leave the room.
+“Wait a bit, sir,” said Mr. Doll; “I shall leave the child here, and you can do as you
+            like with it. It ain't mine, at all events. I say it lay in your parish; and if you
+            don't look after it you may be the worse of it. The coroner's sure to try to earn his
+            fees. Good-night.”
+He hurried from the room.
+“Stop!” shouted the master, “I say: I don't accept the child. You leave it here at your
+            own risk. We keep it without prejudice, remember—without prejudice, sir!—without——”
+Mr. Doll was in the street and out of hearing.
+</div></body></text></TEI>

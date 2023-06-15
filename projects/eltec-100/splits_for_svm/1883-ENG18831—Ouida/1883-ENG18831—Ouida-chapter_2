@@ -1,0 +1,353 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Folle-Farine : VWWP edition </title><author>Ouida, [pseud.] (1839-1908)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1883</date></publicationStmt></teiHeader><text><body><div type="chapter" n="2">
+CHAPTER II.
+IN one of the most fertile and most fair districts of northern France there was a
+      little Norman town, very, very old and beautiful exceedingly by reason of its ancient streets,
+      its high peaked roofs, its marvelous galleries and carvings, its exquisite greys and browns,
+      its silence and its colour, and its rich still life.
+Its centre was a great cathedral, noble as York or Chartres; a cathedral, whose spire shot
+      to the clouds, and whose innumerable towers and pinnacles were all pierced to the day, so that
+      they blue sky shone and the birds of the air flew all through them. A slow brown river, broad
+      enough for market boats and for corn barges, stole through the place to the sea, lapping as it
+      went the wooden piles of the houses, and reflecting the quaint shapes of the carvings, the
+      hues of the signs and the draperies, the dark spaces of the dormer windows, the bright heads
+      of some casement‐cluster of carnations, the laughing face of a girl leaning out to smile on
+      her lover.
+All around it lay the deep grass unshaven, the leagues on leagues of fruitful orchards, the
+      low blue hills tenderly interlacing one another, the fields of colza, where the white
+      head‐dress of the women workers flashed in the sun like a silvery pigeon’s wing. To the west
+      there were the deep green woods, and the wide plains golden with gorse of Arthur’s and of
+      Merlin’s lands; and beyond, to the northward, was the dim stretch of the ocean breaking on a
+      yellow shore, whither the river ran, and wither led straight shady roads, hidden with linden
+      and with poplar trees, and
+       marked ever and anon by a wayside wooden Christ, or by a
+      little murmuring well crowned with a crucifix.
+A beautiful, old, shadowy, ancient place: picturesque everywhere; often silent, with a sweet
+      sad silence that was chiefly broken by the sound of bells or the chaunting of choristers. A
+      place of the Middle Ages still. With lanterns swinging on cords from house to house as the
+      only light; with wondrous scroll‐works and quaint signs at the doors of all its traders; with
+      monks’ cowls and golden croziers and white‐robed acolytes in its streets; with the subtle
+      smoke of incense coming out from the cathedral door to mingle with the odours of the fruits
+      and flowers in the market‐place; with great flat‐bottomed boats drifting down the river under
+      the leaning eaves of its dwellings; and with the galeries of its opposing houses touching so
+      nearly that a girl leaning on one could stretch a Provence rose or toss an Easter egg across
+      to her neighbour in the other.
+Doubtless, there were often squalor, poverty, dust, filth, and uncomeliness within these old
+      and beautiful homes. Doubtless often the dwellers therein were housed like cattle and slept
+      like pigs, and looked but once out the woods and waters of the landscapes round for one
+      hundred times that they looked at their hidden silver in an old delf jug, or at their tawdry
+      coloured prints of St. Victorian or St. Scævola.
+But yet much of the beauty and the nobility of the old, simple, restful rich‐hued life of
+      the past still abode there, and remained with them. In the straight, lithe form of their
+      maidens, untrammelled by modern garb, and moving with the free majestic grace of forest does.
+      In the vast, dim, sculptured chambers, where the grandam span by the wood fire, and the little
+      children played in the shadows, and the lovers whispered in the embrasured window. In the
+      broad market‐place, where the mules cropped the clover, and the tawny awnings caught the
+      sunlight, and the white caps of the girls framed faces fitted for the pencils of the missal
+      painters, and the flush of colour form mellow wall‐fruits and grape‐clusters glanced amidst
+      the shelter of deepest freshest green. In the perpetual presence of their cathedral, which
+      through sun and storm, through frost and summer, through noon and midnight stood there amidst
+      them, and watched the galled oxen tread their painful way, and the
+       scourged mules droop their humble heads, and the helpless
+      harmless flocks go forth to the slaughter, and the old weary lives of the men and women pass
+      through hunger and cold to the grave, and the sun and the moon rise and set, and the flowers
+      and the children blossom and fade, and the endless years come and go, bringing peace, bringing
+      war; bringing harvest, bringing famine; bringing life, bringing death; and beholding these,
+      still said to the multitude in its terrible irony, “Lo! your God is Love.”
+This little town lay far from the great Paris highway and all greatly frequented tracks. It
+      was but a short distance from the coast, but near no harbour of greater extent than such as
+      some small fishing village had made in the rocks for the trawlers. Few strangers ever came to
+      it, except some wandering painters or antiquaries. It sent its apples and eggs, its poultry
+      and honey, its colza and corn, to the use of the great cities; but it was rarely that any of
+      its own people went thither.
+Now and then some one of the oval‐faced, blue‐eyed, lithe‐limbed maidens of its little
+      homely households would sigh and flush and grow restless, and murmur of Paris; and would steal
+      out in the break of a warm grey morning whilst only the birds were still waking; and would
+      patter away in her wooden shoes over the broad, white, southern road, with a stick over her
+      shoulder, and a bundle of all her worldly goods upon the stick. And she would look back often,
+      often, as she went; and when all was lost in the blue haze of distance save the lofty spire
+      which she still saw through her tears, she would say in her heart, with her lips parched and
+      trembling, “I will come back again.”
+But none such ever did come back.
+They came back no more than did the white sweet sheaves of the lilies which the women
+      gathered and sent to be bought and sold in the city—to gleam one faint summer night in a
+      gilded balcony, and to be flung out the next morning, withered and dead.
+One amongst the few who had thus gone whither the lilies went, and of whom people would
+      still talk as their mules paced homewards through the lanes at twilight, had been Reine
+      Flamma, the daughter of the miller of Yprès.
+Yprès was a beechen‐wooded hamlet on the northern out‐
+       skirt of the town, a place of orchards and wooded tangle;
+      through which there ran a branch of the brimming river, hastening to seek and join the sea,
+      and caught a moment on its impetuous way, and forced to work by the grim millwheels that had
+      churned the foam‐bells there for centuries. The millhouse was very ancient; its timbers were
+      carved all over into the semblance of shields and helmets, and crosses, and fleur‐de‐lis, and
+      its frontage was of quaint parqueted work, black and white, except where the old blazonries
+      had been.
+It had been handed down from sire to son of the same race through many generations—a race
+      hard, keen, unlearned, superstitious, and caustic‐tongued—a race wedded to old ways, credulous
+      of legend, chaste of life, cruel of judgement; harshly strong, yet ignorantly weak; a race
+      holding dearer its heirloom of loveless, joyless, bigoted virtue even than those gold and
+      silver pieces which had ever been its passion, hidden away in earthen pipkins under old
+      apple‐roots, or in the crannies of wall timber, of in secret nooks of oaken cupboards.
+Claude Flamma, the last of this toilsome, God‐fearing, man‐begrudging, Norman stock, was
+      true to the type and the traditions of his people.
+He was too ignorant even to read; but priests do not deem this a fault. He was avaricious;
+      but may will honour a miser quicker than a spendthrift. He was cruel; but in the market‐place
+      he always took heed to give his mare a full feed, so that if she were pinched of her hay in
+      her stall at home none were the wiser, for she had no language but that of her wistful black
+      eyes; and this is a speech to which men stay but little to listen. The shrewd, old,
+      bitter‐tongued, stern‐living man was feared and respected with the respect that fear begets;
+      and in truth he had a rigid virtue in his way, and was proud of it, with scorn for those who
+      found it hard to walk less straightly and less circumspectly than himself.
+He married late; his wife died in childbirth; his daughter grew into the perfection of
+      womanhood under the cold, hard, narrow rule of his severity and his superstition. He loved
+      her, indeed, with as much love as it was possible for him ever to feel, and was proud of her
+      beyond all other things; saved for her, toiled for her, muttered ever that it
+       was for her when at confession he related how his measures
+      of flour had been falsely weighted, and how he had filched from the corn brought by the widow
+      and the fatherless. For her he had sinned: from one to whom the good report of his neighbours
+      and the respect of his own conscience were as the very breath of life, it was the strongest
+      proof of love that he could give. But this love never gleamed one instant in his small sharp
+      grey eyes, nor escaped ever by a single utterance from his lips. Reprimand, homily, or cynical
+      rasping sarcasm, was all she ever heard from him. She believed that he despised, and almost
+      hated her; he held it well for women to be tutored in subjection and in trembling.
+At twenty‐two Reine Flamma was the most beautiful woman in Calvados, and the most
+      wretched.
+She was straight as a pine; cold as snow; graceful as a stem of wheat: lovely and silent;
+      with a mute proud face, in which the eyes alone glowed with a strange, repressed, speechless
+      passion and wishfulness. Her life was simple, pure, chaste, blameless, as the lives of the
+      many women of her race who, before her, had lived and died in the shadow of that water‐fed
+      wood had always been. Her father rebuked and girded at her, continually dreaming that he could
+      paint whiter even the spotlessness of this lily, refine even the purity of this virgin
+      gold.
+She never answered him anything, nor in anything contradicted his will; not one amongst all
+      the youths and maidens of her birthplace had ever heard so much as a murmur of rebellion from
+      her; and the priests said that such a life as this would be fitter for the cloister than the
+      marriage‐bed. None of them ever read the warning that these dark blue slumbering eyes would
+      have given to any who should have had the skill to construe them right. There were none of
+      such skill there; and so she, holding her peace, the men and women noted her ever with a
+      curious dumb reverence, and said amongst themselves that the race of Flamma would die well and
+      nobly in her.
+“A saint!” said the good old gentle bishop of the district, as he blessed her one summer
+      evening in her father’s house, and rode his mule slowly through the pleasant poplar lanes and
+      breeze‐blown fields of colza back to his little quiet
+       homestead, where he tended his own cabbages and garnered his
+      own honey.
+Reine Flamma bowed her tall head meekly, and took his benediction in silence.
+The morning after, the miller, rising as his custom was at daybreak, and reciting his
+      paternosters, thanked the Mother of the World that she had given him thus strength and power
+      to rear up his motherless daughter in purity and peace. Then he dressed himself in his grey
+      patched blouse, groped his way down the narrow stair, and went in his daily habit to undraw
+      the bolts and unloose the chains of his dwelling.
+There was no need that morning for him; the bolts were already back; the house‐door stood
+      wide open; on the threshold a brown hen perched pluming herself; there were the ticking of the
+      clock; the chirping of the birds, the rushing of the water; these were the only sounds upon
+      the silence.
+He called his daughter’s name: there was no answer. He mounted to her chamber: it had no
+      tenant. He searched hither and thither, in the house, and the stable, and the granary: in the
+      mill, and the garden, and the wood; he shouted, he ran, he roused his neighbours, he looked in
+      every likely and unlikely place: there was no reply.
+There was only the howl of the watch‐dog, who sat with his face to the south and mourned
+      unceasingly.
+And from that day neither he nor any man living there ever heard again of Reine Flamma.
+Some indeed did notice that at the same time there disappeared from the town one who had
+      been there through all that spring and summer. One who had lived strangely, and been clad in
+      an odd rich fashion, and had been whispered as an Eastern prince by reason of his scattered
+      gold, his unfamiliar tongue, his black‐browed, star‐eyed, deep‐hued beauty, like the beauty of
+      the passion‐flower. But none had ever seen this stranger and Reine Flamma in each other’s
+      presence; and the rumour was discredited as a foulness absurd and unseemly to be said of a
+      woman whom their bishop had called a saint. So it died out, breathed only by a few mouths, and
+      it came to be accepted as a fact that she must have perished in the deep fast‐flowing river by
+      some false step on the mill‐timber, as she went at dawn to feed
+       her doves, or by some strange sad trance of sleep‐walking,
+      from which she had been known more than once to suffer.
+Claudis Flamma said little; it was a wound that bled inwardly. He toiled, and chaffered, and
+      drove hard bargains, and worked early and late with his hireling, and took for the household
+      service an old Norman peasant‐woman more aged than himself, and told no man that he suffered.
+      All that he ever said was, “She was a saint: God took her;” and in his martyrdom he found a
+      hard pride and a dull consolation.
+It was no mere metaphoric form of words with him. He believed in miracles and all manner of
+      Divine interposition, and he believed likewise that she, his angel, being too pure for earth,
+      had been taken by God’s own hand up to the bosom of Mary. This honour which had befallen his
+      first‐begotten shed both sanctity and splendour on his cheerless days; and when the little
+      children and the women saw him pass, they cleared from this way as from a prince’s, and
+      crossed themselves as they changed words with one whose daughter was the bride of Christ.
+So six years passed away; and the name of Reine Flamma was almost forgotten, but embalmed in
+      memories of religious sanctity, as the dead heart of a saint is embedded in amber and
+      myrrh.
+At the close of the sixth year there happened what many said was a thing devil‐conceived and
+      wrought out by the devil to the shame of a pure name, and to the hindrance of the people of
+      God.
+One winter’s night Claudis Flamma was seated in his kitchen, having recently ridden home his
+      mare from the market in the town.
+The fire burned in ancient fashion on the hearth, and it was so bitter without that even his
+      parsimonious habits had relaxed, and he had piled some wood, liberally mingled with dry moss,
+      that cracked, and glowed, and shot flame up the wide black shaft of the chimney.
+The day’s work was over; the old woman‐servant sat spinning flax on the other side of the
+      fire; the great mastiff was stretched sleeping quietly on the brick floor; the blue pottery,
+      the brass pans, the oaken presses that had been the riches of his race for generations,
+      glimmered in the light; the doors were barred, the shutters closed; around the
+       house the winds howled, and beneath its walls the fretting
+      water hissed.
+The miller, overcome with the past cold and present warmth, nodded on his wooden settle and
+      slept, and muttered dreamily in his sleep, “A saint—a saint!—God took her.”
+The old woman, hearing, looked across at him, and shook her head, and went on with her
+      spinning with lips that moved inaudibly: she had been wont to say, out of her taskmaster’s
+      hearing, that no women who was beautiful was ever a saint as well. And some thought that this
+      old creature, Marie Pitchou, who had used to live in a miserable hut on the other side of the
+      wood, had known more than she had chosen to tell of the true fate of Reine Flamma.
+Suddenly a blow on the panels of the door sounded through the silence. The miller, awakened
+      in a moment, started to his feet and grasped his ash staff with one hand, and with the other
+      the oil‐lamp burning on the tressel. The watch‐dog arose, but made no hostile sound.
+A step crushed the dead leaves without and passed away faintly; there was stillness again;
+      the mastiff went to the bolted door, smelt beneath it, and scratched at the panels.
+On the silence there sounded a small, timid, feeble beating on the wood from without; such a
+      slight fluttering noise as a wounded bird might make in striving to rise.
+“It is nothing evil,” muttered Flamma. “If it were, evil the beast would not want to have
+      the door opened. It may be some one sick or stray.”
+All this time he was in a manner charitable, often conquering the niggardly instincts of his
+      character to try and save his soul by serving the wretched. He was a miser, and he loved to
+      gain, and loathed to give; but since his daughter had been taken to the saints he had striven
+      with all his might to do good enough to be taken likewise to that heavenly rest.
+Any crust bestowed on the starveling, any bed of straw afforded to the tramp, caused him a
+      sharp pang; but since his daughter had been taken he had tried to please God by this
+      mortification of his own avarice and diminution of his own gains. He could not vanquish the
+      nature that was engrained in him. He would rob the widow of an ephah of wheat, and leave his
+      mare famished in her stall, because
+       it was his nature to find in all such saving a sweet savour;
+      but he would not turn away a beggar or refuse a crust to a wayfarer, lest, thus refusing, he
+      might turn away from him an angel unawares.
+The mastiff scratched still at the panels; the sound outside had ceased.
+The miller, setting the lamp down on the floor, gripped more firmly the ashen stick, undrew
+      the bolts, turned the stout key, and opened the door slowly, and with caution. A loud gust of
+      wind blew dead leaves against his face; a blinding spray of snow scattered itself over his
+      bent stretching form. In the darkness without, whitened from head to foot, there stood a
+      little child.
+The dog went up to her and licked her face with kindly welcome. Claudis Flamma drew her with
+      a rough grasp across the threshold, and went out into the air to find whose footsteps had been
+      those which had trodden heavily away after the first knock.
+The snow, however, was falling fast; it was a cloudy moonless night. He did not dare to go
+      many yards from his own portals, lest he should fall into some ambush set by robbers. The
+      mastiff too was quiet which indicated that there was no danger near, so the old man returned,
+      closed the door carefully, drew the bolts into their places, and came towards the child, whom
+      the woman Pitchou had drawn towards the fire.
+She was a child of four or five years old; huddled in coarse linen and in a little red
+      garment of fox’s skin, and blanched from head to foot, for the flakes were frozen on her and
+      on the hood that covered, gipsy‐like, her curls. It was a strange, little, ice‐cold,
+      ghost‐like figure, but out of the mass of icicles and whiteness there glowed great beaming
+      frightened eyes and a mouth like a scarlet berry; the radiance and the contrast of it were
+      like the glow of holly fruit thrust our from a pile of drifted snow.
+The miler shook her by the shoulder.
+“Who brought you?”
+“Phratos,” answered the child, with a stifled sob in her throat.
+“And who is that?”
+“Phratos,” answered the child again.
+“Is that a man or a woman?”
+
+The child made no reply; she seemed not to comprehend his meaning. The miller shook her
+      again, and some drops of water fell from the ice that was dissolving in the warmth.
+“Why are you come here?” he asked, impatiently.
+She shook her head, as though to say none knew so little of herself as she.
+“You must have a name,” he pursued harshly and in perplexity. “What are you called? Who are
+      you?”
+The child suddenly raised her great eyes that had been fastened on the leaping flames, and
+      flashed them upon his in a terror of bewildered ignorance—the piteous terror of a stray
+      dog.
+“Phratos,” she cried once more, and the cry now was half a sigh, half a shriek.
+Something in that regard pierced him and startled him; he dropped his hand off her shoulder,
+      and breathed quickly; the old woman gave a low cry, and staring with all her might at the
+      child’s small dark, fierce, lovely face, fell to counting her wooden beads and mumbling many
+      prayers.
+Claudis Flamma turned savagely on her as if stung by some unseen snake, and willing to wreak
+      his vengeance on the nearest thing that was at hand.
+“Fool! cease your prating!” he muttered, with a brutal oath. “Take the animal and search
+      her. Bring me what you find.”
+Then he sat down on the stool by the fire, and braced his lips tightly, and locked his bony
+      hands upon his knees. He knew what blow awaited him; he was no coward, and he had manhood
+      enough in him to press any iron into his soul and tell none that it hurt him.
+The old woman drew the stranger aside to a dusky corner of an inner chamber, and began to
+      despoil her of her coverings. The creature did not resist; the freezing cold and long fatigue
+      had numbed and silenced her: her eyelids were heavy with the sleep such cold produces, and she
+      had not strength, because she had not consciousness enough, to oppose whatsoever they might
+      choose to do to her. Only now and then her eyes opened, as they had opened on him, with a
+      sudden lustre and fierceness, like those in a netted animal’s impatient but untamed
+      regard.
+Pitchou seized and searched her eagerly, stripping her of
+       her warm fox‐skin wrap, her scarlet hood of wool, her little
+      rough hempen shirt, which were all dripping with the water from the melted snow.
+The skin of the young waif was brown, with a golden bloom on it; it had been tanned by hot
+      suns, but it was soft as silk in texture, and transparent, showing the course of each blue
+      vein. Her limbs were not well nourished, but they were of perfect shaped and delicate bone;
+      and the feet were the long, arched, slender feet of the southern side of the Pyrenees.
+She allowed herself to be stripped and wrapped in a coarse piece of homespun linen; she was
+      still half frozen, and in a state of stupor, either from amazement or from fear. She was quite
+      passive, and she never spoke. Her apathy deceived the old crone, who took it for docility, and
+      who, trusting to it, proceeded to take advantage of it, after the manner of her kind. About
+      the small shapely head there hung a band of glittering coins; they were not gold, but the
+      woman Pitchou thought they were, and seized them with gloating hands and ravenous eyes.
+The child started from her torpor, shook herself free, and fought to guard them—fiercely,
+      with tooth and nail, as the young fox whose skin she had worn might have fought for its dear
+      life. The old woman on her side strove as resolutely; long curls of the child’s hair were
+      clutched in the struggle; she did not wince or scream, but she fought—fought with all the
+      breath and blood that were in her tiny body.
+She was no match, with all her ferocity and fury, for the sinewy grip of the old peasant;
+      and the coins were torn off her forehead and hidden away in a hole in the wood, out of her
+      sight, where the old peasant hoarded all her precious treasures of copper coins and other
+      trifles that she managed to secrete from her master’s all‐seeing eyes.
+They were little metal sequins engraved with Arabic characters, chained together after the
+      Eastern fashion. To Pitchou they looked a diadem of gold worthy of an empress.
+The child watched them thus removed in perfect silence; from the moment they had been
+      wrenched away, and the battle had been finally lost to her, she had ceased to struggle, as
+      though disdainful of a fruitless contest. But a
+       great hate gathered in her eyes, and smouldered there like a
+      half‐stifled fire—it burnt on for many a long year afterwards, unquenched.
+When Pitchou brought her a cup of water and a roll of bread, she would neither eat nor
+      drink, but turned her face to the wall,—mute.
+“Those are just her father’s eyes,” the old woman muttered. She had seen them burn in the
+      gloom of the evening through the orchard trees, as the stars had risen, and Reine Flamma
+      listened to the voice that wooed her to her destruction.
+She let the child be, and searched her soaked garments for any written word or any token
+      that might be on them. Fastened roughly to the fox’s skin there was a faded letter. Pitchou
+      could not read; she took it to her master.
+Claudis Flamma grasped the paper and turned its superscription to the light of the lamp.
+He could not read, by yet at sight of the characters his tough frame trembled, and his
+      withered skin grew red with a sickly, feverish quickening of the blood.
+He knew them.
+Once, in a time long dead, he had been proud of those slender letters that had been so far
+      more legible than any that the women of her class could pen, and on beholding which the good
+      bishop had smiled, and passed a pleasant word concerning her being almost fitted to be his own
+      clerk and scribe.
+For a moment, watching those written cyphers that had no tongue for him, and yet seemed to
+      tell their tale so that they scorched and withered up all the fair honour and pious peace of
+      his old age, a sudden faintness, a sudden swooning sense seized him for the first time in all
+      his life; his limbs failed him, he sank down on his seat again, he gasped for breath; he
+      needed not to be told anything, he knew all. He knew that the creature whom he had believed so
+      pure that God had deemed the earth unworthy of her youth was—his throat rattled, his lips were
+      covered with foam, his ears were filled with a rushing, hollow sound, like the roaring of his
+      own mill‐waters in a time of storm.
+All at once he started to his feet, and glared at the empty space of the dim chamber, and
+      struck his hands wildly together in the air, and cried aloud:
+
+“She was a saint, I said—a saint! A saint in body and soul! And I thought that God begrudged
+      her, and held her too pure for man!”
+And he laughed aloud—thrice.
+The child hearing, and heavy with sleep, and eagerly desiring warmth, as a little frozen
+      beast that coils itself in snow to slumber into death, startled by that horrible mirth, came
+      forward.
+The shirt fell off her as she moved. Her little naked limbs glimmered like gold in the dusky
+      light; her hair was as a cloud behind her; her little scarlet mouth was half open, like the
+      mouth of a child seeking its mother’s kiss; her great eyes, dazzled by the flame, flashed and
+      burned and shone like stars. They had seen the same face ere then in Calvados.
+She came straight to Claudis Flamma as though drawn by that awful and discordant laughter,
+      and by that leaping ruddy flame upon the hearth, and she stretched out her arms and muttered a
+      word and smiled, a little dreamily, seeking to sleep, asking to be caressed, desiring she knew
+      not what.
+He clenched his fist, and struck her to the ground. She fell without a sound. The blood
+      flowed from her mouth.
+He looked at her where she lay, and laughed once more. “She was a saint!—a saint! And the
+      devil begot in her that!”
+Then he went our across the threshold and into the night, with the letter still clenched in
+      his hand.
+The snow fell, the storm raged, the earth was covered with ice and water; he took no heed,
+      but passed through it, his head bare and his eyes blind.
+The dog let him go forth alone, and waited by the child.
+</div></body></text></TEI>

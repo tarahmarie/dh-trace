@@ -1,0 +1,208 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Modern Flirtations, A Novel, by Catherine Sinclair—A Project
+      Gutenberg eBook</title><author>Sinclair, Catherine (1800-1864)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1841</date></publicationStmt></teiHeader><text><body><div type="chapter" n="1">
+  CHAPTER I.
+The newspapers have recently adopted a strange habit of sometimes unexpectedly seizing an
+     individual's name, long since retired from public notice, and gibbetting it up before the
+     world's eye, when least anticipated, by volunteering a paragraph to announce, that some aged
+     lord, or ex-minister, whom no one has remembered to think of for half a century or more, is
+     residing on his estates, and enjoying, the editor is happy to understand, astonishing health,
+     considering his advanced years. In observance of this custom, an exclamation of irritability
+     and astonishment, too violent to be worthy of record, was elicited one day, from a dignified
+     and very distinguished-looking old gentleman, with a venerable head, such as Titian might have
+     painted, and a high lofty forehead bearing the traces of deep thought and feeling, when, after
+     having seated himself on his favorite arm chair at the United Service Club in Edinburgh, his
+     eye rested with a look of kindling amazement on these few lines, in large consequential-looking
+     type, on a leading column of the Courant.
+June 1829. "We are happy to inform our readers that the brave and noble veteran,
+     once a distinguished hero in many a well-fought fight, Sir Arthur Dunbar, G.C.B., is yet alive,
+     reposing on his well-earned laurels, at a retired mansion in the marine village of Portobello.
+     Though frequently and most severely wounded in battle, besides being deprived of an arm in Lord
+     Rodney's engagement during the year '82, the Admiral's health continues unimpaired and his
+     cheerfulness invariable, at the advanced age of 70."
+"Pshaw! stuff and nonsense! Some enemy is resolved to make a laughing-stock of me in my old
+     age!" exclaimed he, angrily pointing out the paragraph to his gay young relative, Louis De
+     Crespigny, who was familiarly leaning over the high back of his chair; and then crumpling up
+     the offending Courant with an obvious wish that it might be consumed in the flames—"I hope this
+     is only the work of some wretched penny-a-liner; but if I even suspected that my conceited,
+     good-looking scoundrel of a nephew had a hand in the jest, I would cut him off with a
+     shilling,—or rather without one, for I could scarcely raise so much as a shilling to leave him,
+     and he knows that. This is most thoroughly ridiculous! I, who have been dead, buried, and
+     forgotten for years, to be made as conspicuous here, as a hair-dresser's wig-block! The editor
+     shall be prosecuted,—horse-whipped,—or—or made as absurd as he has made me!"
+"Why really, Admiral, I wish he had as much good to say of us all, and then the sooner he
+     paragraphs about me the better!—'We are happy to inform our readers that the agreeable and
+     fascinating Cornet De Crespigny, of the 15th Light Hussars, now in his eighteenth year, is
+     still alive!'—the public likes to know the exact age of distinguished men, such as you and I,
+     Admiral!"
+"The public is an ass!" replied Sir Arthur, breaking into a smile; "and perhaps I am another,
+     to mind what is said at all, but that rascal of an editor has made me ten years older than I
+     am; besides which, though a grey-haired Admiral of sixty-four is not probably much addicted to
+     blushing, he really has put my modest merit out of countenance. I would rather pay the
+     newspapers any day for overlooking than for praising me. We ought to live or die for our
+     country; but now, when I am no longer needed, let me stay in peace on the shelf, like," added
+     he, giving a comic smile at his empty sleeve, "like a cracked tea-cup with the handle off!"
+"But, Sir Arthur!" replied the young Cornet warmly, "you who never turned your back on friend
+     or foe, are not very likely to remain quietly on the shelf, as long as every man who lives must
+     respect you, and every man who dies continues to appoint you, as my father did, his executor,
+     the trustee of his estates, and the guardian of his children, asking you to lend them a hand,
+     as you have done to me in all the difficulties of life."
+"I have but one hand to lend, and that is much at your service, in whatever way it can be
+     useful! the other, though absent without leave, has been my own best friend, as the loss of
+     that arm was the luckiest hit in the world. It obtained me a step at the time, and the pension
+     has supported me ever since. What with my nephew's frantic extravagance, and my two young
+     nieces being but indifferently provided for, I often wish, like every body else, for a larger
+     income. Poor girls!" added Sir Arthur, knitting his bushy eye-brows into a portentous frown,
+     which gave to his venerable countenance a look of noble and manly sorrow. "No one can blame
+     them! but it was little short of insanity in my brother to leave such young children under the
+     sole guardianship of a heartless spendthrift like your friend and my nephew Sir Patrick, who
+     would sell his soul for sixpence."
+"Yes! and squander it the next minute," added young De Crespigny, laughing. "I saw Pat
+     produce a £20 note yesterday at Tait's auction-room, and a buzz of wonder ran all through the
+     circle of his friends. Such a sight had not been seen in his pocket for many a day, and he
+     threatened to put it up to auction, saying, he was sure we would all give double the value for
+     it, as a rarity, considering the quarter from which it came. He really seems to pique himself
+     on his poverty, and has the art of doing what another man would be cut for, with so much grace
+     and apparent unconsciousness, that his friends really forget to disapprove."
+"I never forget!" replied the Admiral, slowly rising and adjusting his spectacles. "I am even
+     told the incorrigible rascal has mortgaged the legacy he pretends to expect from me! He would
+     do anything short of a highway robbery for money, and has done some things that seem to a man
+     of honor quite as bad. But," added Sir Arthur, growing more and more angry, "as long as he can
+     give his friends a good bottle of claret, they ask no questions! Patrick Dunbar has caused me
+     the only feeling of shame I ever had occasion for, and yet to see that proud snuff-the-moon
+     look of his, you would suppose the world scarcely big enough to hold him! With his chin in the
+     air, as I saw him yesterday, he will certainly knock his forehead some day against the
+     sky!"
+"You cannot wonder, Sir Arthur, that Dunbar is in immense favor with himself, when he is so
+     admired, and almost idolized in society. He certainly has the handsomest countenance in
+     Scotland;—as my uncle Doncaster says, Pat is a portrait of Vandyke in his best style. With that
+     grand, chivalrous, Chevalier-Bayard look, he is the best rider who ever sat on horseback! I
+     could not but laugh when he mounted yesterday for a ride along Princes Street, and turned to
+     me, with his lively, victorious laugh, saying, 'Now I am going to give the ladies a
+     treat!'"
+"The insufferable coxcomb!" said Sir Arthur, relaxing into an irresistible smile of indulgent
+     affection. "From the day he first came staggering into this world to astonish us all, he has
+     thought himself the finest sight between this and Whitehall!"
+"Of course he does! Pat is asked for so many locks of his hair, by various young ladies, that
+     his valet keeps a wig to supply them; and he might almost pay his debts with the countless
+     collection he has received of sentimental rings, displaying forgotten forget-me-nots, in
+     turquoises and gold! Who, on the wide earth, except yourself, Sir Arthur, would ever dream of
+     finding fault with our gay, dashing, high-spirited friend, Dunbar, the life of society, the
+     model of dress, equipage, and good living. Why! the very instant he opens his lips, all dulness
+     vanishes like a spectre! I wish the whole world were peopled with such men; but he promises to
+     shoot himself as soon as he sees his own equal. He staked his reputation one day that he
+     would!"
+"His reputation!! the sooner he parts with it the better! Let Patrick Dunbar exchange his own
+     with the first man he meets in the street, and he will gain by the bargain."
+"Pardon me there, Sir Arthur, your nephew is universally allowed to be the best fellow upon
+     earth!"
+"Very probably! 'the best fellow upon earth' generally means a selfish, extravagant,
+     scatter-brained roue; but I must be off! There is a cold, sharp, cutting wind, blowing in at
+     the back of my neck, which makes me feel like Charles the First when the axe fell. If you have
+     any influence, De Crespigny, with my scape-grace of a nephew—all nephews are scape-graces, as
+     far as my experience goes—try to make him more like yourself, and I shall be grateful, with all
+     my heart."
+"Like me!!!" said the young Cornet, turning away with a smile; but it was a smile of
+     bitterness, almost amounting to remorse, while he hastily grasped a newspaper, and flung
+     himself into a seat. "No! no! Sir Arthur, he is not quite so bad as that. Dunbar has his
+     faults; he wears them upon his sleeve, and attempts no disguise; but there are many worse men
+     in the world, who are held up as examples by those who know no better. Whenever I reform
+     myself, you may depend upon my lecturing our friend, but not till then. We must both sow all
+     our wild oats first."
+"Yes! and endure the fruit of them afterwards," replied Sir Arthur, with a look of anxious
+     kindness at his young relative. "That is the only crop where to sow is more agreeable than to
+     reap! But I waste words! Young men will be young men, and I might as well ask this east wind
+     not to blow, or try to turn the sea from its course, as attempt to stop the mad career of that
+     scatter-brained madcap! It would matter less if he only fell himself hereafter, like a pebble
+     in the stream; but the fatal eddy extends in a wide circle, which must reach the interests of
+     those helpless young girls, my nieces; and I cannot but grieve over the consequences which may,
+     and must befall them, after I go to that rest which is in the grave, and to that hope which is
+     beyond it."
+"Never trouble your head about that which shall occur then, Sir Arthur! 'Too much care once
+     made an old man grey.' My motto is, 'apres moi le deluge!' This little
+     world of ours got on wonderfully well before we came into it, and will do astonishingly well
+     again, after we make our exit," said young De Crespigny, with a strange medley in his tone, of
+     melancholy thought, and contemptuous derision. "Pat tells me that both my young cousins promise
+     to turn out a perfect blaze of beauty, with long shining ringlets that they almost tread upon
+     in walking, teeth that would make the fortune of a dentist, and complexions that Rowland's
+     kalydor could not improve. Ten years hence, I shall propose to one or both of them myself, if
+     that will give you satisfaction."
+"Perfect! but as marrying two sisters at once is not quite customary, let your intentions be
+     limited to Agnes. She is several years the eldest; and I like the good old patriarchal rule of
+     marrying by seniority; besides which, she is quite a little flirt already, though scarcely yet
+     in her teens. She will be a young lady, entirely suited for the ordinary marrying and giving in
+     marriage of every-day life; but little Marion is the very light of my eyes, and I must match
+     her by a very high standard indeed. It will be a dark day for me, if ever I am obliged to part
+     with her at all; and being now only in her sixth year, I may, without selfishness, hope to keep
+     her beside me for my few remaining days. I must begin match-making for Agnes, however,
+     directly, and your offer shall be duly considered. A future peer, with countless thousands in
+     expectancy, and not particularly ill-looking, does not fall in our way every morning."
+"So all the young ladies seem to think!" replied the young Cornet, in his most conceited
+     tone. "Girls dislike nothing so much as to marry on a competence; there is a great deal of
+     romance in marrying on nothing, and a great deal of comfort in marrying on wealth; but a mere
+     vulgar competence has neither romance nor reality. Now I can offer both! First, actual
+     starvation on a Cornet's pay; and then, with my uncle's leave, the pumpkin will turn to a
+     carriage, and the mice into horses; but in the meantime, Sir Arthur, Pat tells me you keep a
+     capital chop-house at Portobello, so pray invite me to drop in some day at six, to begin my
+     siege of your pretty niece. I must come and see, before I can conquer," added Mr. De Crespigny,
+     in a tone of peculiar conceit, with which he always spoke either to ladies or of them.
+     "Probably next week I may find my way to this terra incognita of yours. Is it across
+     the Queensferry, or where?"
+"My good friend! you are not so pre-eminently ignorant of geography as you would appear; for
+     did I not see you honoring that dullest of all dull places, the little obscure village of
+     Portobello, with your august presence, only yesterday. I nearly spitted you on the point of my
+     umbrella, you hurried so rapidly past, evidently wishing to escape from that girl in a cloak,
+     who seemed to beset your footsteps!"
+"Impossible!!!" exclaimed young De Crespigny, coloring violently, and starting from his seat.
+     "Could it be in the nature of things that I should cut you!"
+"True enough! I might have said, like Lady Towercliffe to Prince Meimkoff, 'vous m'avez coupe.'"
+"Indeed!" continued the cornet, trying to conceal his countenance. "I wish you had cut my
+     throat in return!"
+"If it is to be done, I would rather somebody else did! Why, De Crespigny! you will set the
+     house on fire with that violent poker exercise! Your own face is on fire already! Have more
+     regard for your complexion! Ah! now it is pale enough! Are you ill? My dear fellow! what is the
+     matter?"
+"Nothing! I am merely looking at the beautiful sunset!"
+"What! does the sun set in the east to-night?" asked Sir Arthur, jestingly; "that is worth
+     looking at!"
+"I am annoyed with a spasm of toothache!" said De Crespigny, putting a handkerchief to his
+     face, which nearly covered it; and then suddenly throwing open the window, he looked far out,
+     as if in search of his groom. He leaned forward so long, however, that Sir Arthur kindly but
+     vehemently remonstrated on the danger of exposing himself, while in so much pain, to the cold
+     air; enumerated a whole host of remedies for decayed teeth; suggested the great comfort and
+     convenience of having the offender extracted by Hutchins, and ended by hoping his young friend
+     would still have a tooth left for his proposed dinner at Portobello.
+"Depend upon me for that," replied Mr. De Crespigny, with forced vivacity. "I shall ferret
+     you out next week. I have little doubt your pasture is excellent in that quarter, and there is
+     no one from whom I would be half so happy to receive a soup ticket."
+"Keep your flattery for the ladies, where it will always be acceptable, and where I hear you
+     are already an experienced practitioner in the arts of captivation. As for my dinner, I
+     consider it an imposition to ask any friend, and not give him the best my cook and cellar can
+     furnish; and you may expect whenever you do come, to find a notice over my door, 'hot joints
+     every day!'"
+"But it was the society of your house, and not the dinner, to which my agreeable
+     anticipations were directed; and there, you know, I cannot be disappointed! as somebody wisely
+     said, when shown a tempting bill of fare, 'show me a bill of the company!'"
+"That reminds me to say, you must not expect my pretty niece to be at my little bathing
+     machine of a house! It would not be fair to inveigle you under such false pretences; but I
+     promise you an old man's welcome, and the best that my cottage can produce; aged as this
+     newspaper makes me I enjoy every inch of life, and hope you, at the same age, will do the same.
+     I may almost apply to my little villa that favourite saying in Spain,
+
+'My home, my home! though thou'rt but small,
+Thou art to me th' Escurial.'"
+
+With a cordial shake of the hand, and a smile of cheerful benignity, Sir Arthur withdrew, and
+     as his firm and stately step receded, Mr. De Crespigny watched him with a look of respectful
+     interest, which ended in his turning away after the admiral had disappeared, and heaving a deep
+     sigh, while a cloud of care darkened on his forehead, and a look of angry vexation shaded his
+     previously animated eyes.
+Day after day passed on, subsequent to the preceding conversation, during which Sir Arthur
+     frequently postponed his chop, to what he considered an atrociously late hour, in hopes of his
+     promised guest appearing. Once the admiral felt positively convinced that he had seen him enter
+     a Portobello omnibus at four o'clock, but still he appeared not. Week after week elapsed, and
+     still Sir Arthur ate his dinner alone, in long-surviving expectation that either his own not
+     very dutiful nephew, or young De Crespigny, would "cast up;" but at last these hopes and wishes
+     were ended by his hearing that Sir Patrick's embarrassments had caused him to leave Edinburgh
+     by moonlight, and that, soon after, Mr. De Crespigny as suddenly departed, no one knew why,
+     when, or wherefore.
+</div></body></text></TEI>

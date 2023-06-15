@@ -1,0 +1,386 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The New Republic by W.H. Mallock : HTML
+                        version</title><author>Mallock, William Hurrell (1849-1923)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1877</date></publicationStmt></teiHeader><text><body><div type="chapter" n="8">
+BOOK III.
+CHAPTER I.
+ ‘YES,’ said Mr. Luke still more solemnly, ‘if we only follow this out—this
+                        idea of the exclusion from our society of all vulgar and extraneous
+                        elements, we shall find we have done a great deal more than we may at first
+                        think. We shall have at once a free, and liberal, and untainted social and
+                        intellectual atmosphere, in which our thoughts, and feelings, and
+                        refinements, and ways of living, may develop themselves to the utmost,
+                        unimpeded. Lady Ambrose has certainly begun with hitting the right nail on
+                        the head.’ 
+ Could Lady Ambrose have been told, when she left London the afternoon
+                        before, that in another twenty-four hours she would be taking the lead in
+                        the construction of a Utopia, or ideal state of society, suggested by the
+                        writings of a Greek philosopher, she would have been utterly at a loss to
+                        know what the prophecy meant; and had she known what it meant, she would
+                        certainly not have believed it. Indeed, as it was, she could hardly imagine
+                        that Mr. Luke was serious, and that he was not laughing at her; so she said
+                        quickly and in a tone of self-defence, 
+ ‘Of course I know that there must be something more than the mere exclusion
+                        of vulgar people, Mr. Luke. We must have religion, and all that, and—’ 
+ ‘Ah!’ exclaimed Mr. Luke, interrupting her with a grand wave of the hand;
+                        ‘my dear Lady Ambrose, let us leave all that till by-and-by. Let us be
+                        content to begin with simpler matters first.’ 
+ ‘Let us begin with the flowers of life,’ said Leslie, ‘and when we have
+                        chosen these, let us trace them back to their roots.’ 
+ ‘I quite think,’ said Miss Merton, ‘that in a really good society—one that
+                        was perfectly good even in the superficial sense of the word—we should find,
+                        if we only had eyes enough, religion lurking somewhere, and everything else
+                        we want.’ 
+ ‘And so that’s your view, my dear, is it?’ said Lady Ambrose.
+                        ‘Oh, then, I suppose since you, a Roman Catholic, think so, I may also.’ 
+ ‘Surely, too,’ said Miss Merton, ‘we must all know that nothing can be so
+                        bad, either for the pushers or the pushed, as the struggle of people to get
+                        into what they think is good society, not in the least because they care to
+                        be there, but merely because they care to be known to be there.’ 
+ Lady Ambrose, who perhaps felt unconsciously some small pricks of conscience
+                        here, again looked doubtful, and said, ‘Still, if we really want to make a
+                        perfect state, this does not seem a very serious thing to begin with.’ 
+ ‘Listen,’ exclaimed Laurence; ‘let me read you something I have
+                        here—something of my uncle’s, which I have just thought of. It is a short
+                        adaptation of Aristotle’s Ethics.’ 
+ Lady Ambrose started. Hearing two words, the one as long as
+                            Aristotle, and the other as unfamiliar as
+                            Ethics, she began to think that she had made the
+                        conversation serious with a vengeance. Indeed, the whole party, as well as
+                        herself, showed some signs of surprise. 
+ ‘It is very short,’ said Laurence, ‘and I will only read a page or two. It
+                        is called “A system of Ethics, adapted from Aristotle, for the use of the
+                        English Nation.” It was suggested to him—’ (and this bewildered Lady Ambrose
+                        still more, though at the same time it gave her some gleam of hope), ‘by a
+                        very rich vulgar family, who bought a place near here, and who much annoyed
+                        and amazed him by the great court they paid to him. This is the first
+                        chapter; it treats of “The Summum Bonum, or The Moral
+                            End of Action.” Listen— 
+ ‘Ethics being the art and science of human action, as directed towards the
+                        chief good of life—that highest and final end, to which, if we think a
+                        little, we shall see all other ends are subordinate; it is evident that our
+                        first task must be, as our master Aristotle well says, to form a clear
+                        conception of what this end, the chief good, is. 
+ ‘Now on this point Aristotle would seem to err. For he, following the common
+                        opinion of men, affirms the chief good to be happiness, holding the only
+                        question to be, in what does true happiness lie? And if he had been
+                        philosophising for savages, he would indeed have been in the right. But
+                        because savages and men in a state of nature have all one end of action,
+                        which is happiness, it by no means follows that the same is true of
+                        civilised nations, and that these may not have ends that are far higher. It
+                        is indeed evident tliat they have. And not this only, but that of such ends
+                        there is a very great variety. To describe and number these with anything
+                        like absolute accuracy is neither required nor admitted by the nature of the
+                        subject. But we shall be sufficiently near the truth if we say that there is
+                        a separate and characteristic chief good for each civilised nation—(quot
+                        gentes tot summa bona)—and that it is by this in each case that the national
+                        character is determined. A glance at the continent of Europe will at once
+                        illustrate this, and suggest examples to us of these national chief goods.
+                        We shall see the Germans, for instance, following what is called Thought to
+                        its inmost recesses, the French what is called Life. We shall find
+                        accordingly that the chief good of the former nation, which is perhaps the
+                        highest of all, is the knowledge of the unknowable; whilst that of the
+                        latter, which is next to it in dignity, is the practice of the
+                        unmentionable. And so on with all the other nations; each will be found to
+                        have its separate chief good; and none of these to have the least connection
+                        with happiness. For us, however, who are English, and writing for English
+                        readers, it will be enough to concern ourselves simply with the chief good
+                        of the English. 
+ ‘We shall discover this, in the same way as we did that of the French and
+                        Germans, in an examination of our own special national characteristic.
+                        First, however, we must be clear what this characteristic is; and here it
+                        will be well to take our neighbours’ opinions of us as well as our own. If
+                        we inquire then in what light we present ourselves to the other European
+                        nations, we shall find that just as the Germans are known mainly as a
+                        profound nation, and the French as a prurient nation, so are we, in like
+                        manner, now known as a vulgar nation. And as this view of us exactly tallies
+                        with our own, it appears evident that the special national characteristic of
+                        the English is vulgarity, and that the chief good of the English is the
+                        final end that is aimed at by the English vulgar classes. 
+ ‘This we affirm to be social distinction, to their admiration and pursuit of
+                        which is due that cardinal moral quality which they call worldliness in
+                        themselves, and snobbishness in their friends and enemies. And if any object
+                        that to a great part of the nation social distinction in its true sense is a
+                        thing unknown, and that to another part it is a thing that comes without
+                        being struggled for, and so in neither case can be the end of moral action,
+                        we shall answer them that to object this, is much the same as to argue that
+                        a peach-tree does not bear peaches because none are to be seen growing out
+                        of the roots; or that there is no meaning in the Athanasian Creed because
+                        none is attached to it by the only people who use it; or that there is no
+                        meaning in the dogma of the Pope's infallibility because its only possible
+                        meaning is repudiated by all those who defend it. For nothing will be found
+                        unless we seek it in its right place. And for the ethics of a nation we must
+                        look only in that part of the nation which is their proper sphere; and that
+                        part is, as we have already shown, the vulgar part. And should any still
+                        imagine that if we thus limit the scope of our observation, we shall not be
+                        able to treat the subject exhaustively, we shall remind him that the vulgar
+                        classes, though not yet co-extensive with the nation, are still rapidly
+                        becoming so, vulgarity ascending and descending with equal certainty; since
+                        on the one hand it ruins all society into which it contrives to enter;
+                        whilst it thrives itself, on the other hand, on all society that contrives
+                        to enter into it. To it therefore our whole study may be confined. Nor
+                        lastly (for it is well to anticipate every possible objection), is there any
+                        need that even thus we should study those classes that naturally possess
+                        social distinction, that we may so learn in what its real essence consists;
+                        since, if we do but observe facts, we shall see that ignorance of the whole
+                        inner nature of good society is the chief characteristic of those who with
+                        most single-heartedness direct their lives towards getting into it. It will
+                        be enough then, without any further explanation, to lay it down that social
+                        distinction is the chief good, and the end of all moral action; nor can the
+                        Aristotelians say that this is in reality a mediate end, and sought for only
+                        because it leads to happiness; since so far are men from seeking social
+                        distinction for the sake of happiness, that they are perpetually renouncing
+                        happiness for the sake of social distinction.’ 
+ ‘Capital, Mr. Laurence!’ exclaimed Lady Ambrose, breaking into a low silvery
+                        laugh, as soon as Laurence had ended. ‘And how true that is about those
+                        people who really ruin the society into which they contrive to push
+                        themselves!’ 
+ Lord Allen, who caught Miss Merton’s eye at this moment, gave a very faint
+                        smile. 
+ ‘So you see,’ said Laurence, ‘that you were quite right, Lady Ambrose, by
+                        instinctively beginning with exclusion.’ 
+ ‘Still,’ said Allen, ‘I’m afraid that all this is rather selfish. These
+                        people who want to to be so smart, are, I dare say, not much the worse
+                        because of it. Indeed, myself, I rather like a good snob now and then.’ 
+ ‘Well,’ said Laurence, ‘let me read a few more paragraphs, and you will see.
+                        ‘Such being the end,’ he goes on, ‘of all moral action, virtue or morality
+                        is that state of mind which desires this end; and virtuous or moral acts are
+                        those which help us on towards it, provided only that they are done with
+                        purpose. For acts done not with purpose, but by chance, are not to be held
+                        moral. Now the nature of purpose is well explained by Aristotle, when he
+                        says that its object is all such voluntary action as is the result of
+                        deliberation. And what then is the object of deliberation? Let us consider
+                        that: for men, it is evident, do not deliberate about all matters alike;
+                        since in addition to their continually not deliberating in cases when they
+                        ought, there are many matters about which deliberation is out of the
+                        question. Thus no one deliberates about what is in its nature immutable, as
+                        how to alter vulgarity of a people’s member of Parliament; nor about
+                        necessary things, as how to alleviate the misery of the starving poor; nor
+                        about things of chance, as how to prevent the dissemination of cholera; nor,
+                        again, about remote things which do not concern us, as, to use a former
+                        instance, how to alleviate the misery of the starving poor; nor does anyone
+                        deliberate about impossible things, as how to check the poisonous
+                        adulteration of food; nor about things that are past and lost, as how to do
+                        anything for the glory of England; nor, lastly, do we deliberate about
+                        things we do not care about, as how to get that lost glory back again.
+                        Deliberation, then, only takes place about such matters as our own agency
+                        can effect, and which we wish it should effect. Virtue, therefore, being
+                        thus based on deliberation, is manifestly not one of those things that come
+                        to us by nature whether we will or no; but it is acquired by habit. The
+                        genus of moral virtue is a habit. But what special sort of habit? and how
+                        does it differ from all other habits? Let us consider this. 
+ ‘We must remember, first, that it is the office of every virtue to perfect
+                        that of which it is the virtue. Thus it is the virtue of a modern London
+                        house to be as badly built as possible and not be seen to be so; it is the
+                        virtue of an insured ship not to appear unseaworthy before she does so to
+                        the crew as she is foundering; and it is the virtue of butcher’s meat,
+                        groceries and so forth, not to appear unfit for human consumption. In the
+                        same way moral virtue, or the virtue of a man, is that which makes him
+                        appear to be one thing to the world, whilst in reality he is another. Such
+                        being the case, it is plain that in trying to be virtuous, we may, as in
+                        most other things, do too much, or too little; and what is right will be a
+                        mean lying between these two extremes. Now of means there are two kinds, the
+                        absolute and the relative, either of which we can find in anything that is
+                        continuous; the former, as when we take the bisecting point in a straight
+                        line, which is for all men one and the same; the latter, as when we take the
+                        mean point or thing with reference to ourselves, in which case it will
+                        differ with our different requirements. Thus, if three be too small a
+                        number, and seventy-five too great, simply as an arithmetical problem, we
+                        take thirty-nine to be the mean, which exceeds three by as much as it is
+                        exceeded by seventy-five; but with reference to ourselves we cannot so
+                        decide. For thirty-nine articles of religion may be too few for the present
+                        Archbishop of Westminster, and three may be too many for the Dean. Or again
+                        between 100l. and 20l., the mean with regard to the matter itself would be
+                        60l., but with regard to ourselves, not so. For 60l. would be too little to
+                        offer to a cook, and too much to offer to a curate. So in like manner that
+                        equality which constitutes moral virtue is not the absolute, but the
+                        relative mean. Moral virtue, then, we shall define to be a certain state, or
+                        habit of purpose, conforming in action to the relative mean, and adjusted to
+                        that mean as the worldly or snobbish man would adjust it. At this point we
+                        shall pause a moment to make a very slight change in the accepted
+                        terminology of the subject. We have hitherto spoken of the virtue of the
+                        vulgar classes as being a mean. We consider, however, that our language will
+                        be less ambiguous, if we take another form of the same word, and agree to
+                        call it a meanness. Moral virtue, then, is a meanness lying between two
+                        vices, its extremes; the one vice being that of excess, the other that of
+                        defect. Thus it is possible for a habit of mind to be so unrestrained and
+                        vehement, that the acts it produces at once betray their motives and obtrude
+                        them on the observer; it is possible for it, also, on the other hand, to be
+                        so weak and nerveless as never to produce any acts at all. For instance, the
+                        habit of thought in a clergyman may be so strong and unrestrained as to lead
+                        him to speak his whole conclusions out, and so get deprived of his living;
+                        or on the other hand it may be so weak and undeveloped, that he comes to no
+                        conclusions at all, and so dies in a curacy; the meanness between these two
+                        extremes being what is called vagueness, or the absence of any defined
+                        opinions, which is a great merit, and leads, in the Established Church, to
+                        high preferment. So also with habits of action, the general name given to
+                        the true meanness is worldliness, whereof the excess is snobbishness, and
+                        the defect independence: worldliness being in its essence the former of
+                        these, and in its aspect the latter. Whence it follows that we may yet
+                        further generally define the moral meanness, as that which is inwardly one
+                        extreme, and which is outwardly the other.’ 
+ ‘Now,’ said Laurence, ‘though I don’t suppose the writer of this really
+                        cared two straws whether the majority of people were mean and vulgar or no,
+                        there is a great deal of truth in what he says: and I think in our ideally
+                        good society one of the first things we want is that it shall be unmixed and
+                        genuine; I mean, all its members must be of it, as well as in it. They must
+                        give it its prestige. We must have none that merely get their
+                            prestige from it.’ 
+ ‘Well,’ said Allen, ‘no doubt this exclusion is better, if it could be only
+                        managed.’ 
+ ‘Don’t let us think yet,’ said Laurence, ‘about how to manage it. Let us see
+                        what we want first, and see what it costs afterwards.’ 
+ ‘I certainly believe,’ said Miss Merton, ‘that what I consider the extremely
+                        bad manners of a great many very fine ladies would all go, if a stop were
+                        put to this jostling and scrambling that goes on about them, as Mr. Laurence
+                        proposes.’ 
+ ‘See,’ said Laurence, ‘here is one good fruit of exclusion at once—the
+                        redemption of our manners; and a most important fruit too, I think; for I
+                        hope we all start with the understanding that our society, ideally good as
+                        it is, is above none of those outward graces and refinements of behaviour
+                        and ways of living that give us such pleasure now, when we find them.’ 
+ ‘And manner too, Mr. Laurence,’ broke in Lady Ambrose, ‘as well as
+                        manners—Think what a charm there is in a really charming manner.’ 
+ ‘There is indeed,’ exclaimed Mr. Stockton. ‘The dear Duchess of ——— for
+                        instance—why, there’s a fascination even in the way in which she says good
+                        morning.’ 
+ ‘Ah yes,’ said Lady Ambrose. ‘Now, there’s what I call a really
+                        perfect manner for you.’ 
+ ‘Very well,’ said Laurence, ‘and whatever is a really perfect manner, in our
+                        ideal society we must all have it.’ 
+ ‘I must confess,’ said Allen, ‘that I get very sick sometimes of our
+                        conventional society manners; and I often long to have a good genuine savage
+                        to talk to.’ 
+ ‘That,’ said Laurence, ‘is because of all the social shams that we have just
+                        agreed to get rid of. And to call the manner of society conventional,
+                        conveys no greater blame than if you were to call language conventional. For
+                        manner is but a second language, of which the best society speaks the purest
+                        dialect—the Attic, in fact. And as with language, so with manner, the more
+                        uniformity there is in it in some ways, the nicer shades of individuality
+                        shall we be able to express by it in others.’ 
+ ‘Well,’ said Allen, shortly, ‘perhaps it is so. You are very likely right.’ 
+ ‘And in manner,’ said Laurence, ‘I include tone too—that
+                        special and indescribable way of looking at things, and speaking of things,
+                        which characterises good society, and distinguishes it from the rest of the
+                        world so completely, and yet by marks so subtle that they would utterly
+                        escape the notice of those who don’t know their meaning—that little extra
+                        stroke of polishing that brings to light such countless new delicate veins
+                        in the marble of life—the little extra stroke of the brush that puts a new
+                        refinement, and self-possession, into the face. As Browning says of a very
+                        different subject—  Oh, the little more, and how much it
+                            is, And this is something quite independent of any special
+                        ability or special quality on the part of the individual people themselves;
+                        though of course the more gifted and cultivated they are, the greater will
+                        its charm be.’ 
+ ‘Yes,’ said Miss Merton thoughtfully, and half to herself, ‘I think all that
+                        is quite true.’ 
+ ‘Of course,’ said Laurence, ‘I know that tone alone can only make society
+                        good in a very narrow sense of the word. I merely mean that no amount of
+                        other qualities can make it really good, without tone.’ 
+ ‘I don’t in the least object,’ said Allen, ‘to the marble being polished;
+                        but what I want first to be sure of is, that it is worth polishing.’ 
+ ‘Quite so,’ said Laurence. ‘What we must now consider is, what are all those
+                        special qualities and accomplishments, which will make a really perfect
+                        society the best among the best—such things as wit, knowledge, experience,
+                        humour, and so on—the veins, in fact, in the marble, that can be brought out
+                        by the polish.’ 
+ ‘Ah, yes, my dear Laurence,’ began Mr. Luke, ‘this is the great thing that
+                        we shall have to decide about; and it is this very thing that I am always
+                        telling the world is—’ 
+ But he was interrupted by the advent of Mr. Herbert, who, with the exception
+                        of Mr. Storks and Dr. Jenkinson, was the only member of the party not
+                        already there. Mr. Herbert’s whole aspect surprised everyone. At luncheon,
+                        as all remembered, he had been melancholy and desponding; but his face now
+                        wore a bright smile, and there was something that was almost gaiety in his
+                        elastic step. No one, however, ventured to ask him the reason of this
+                        pleasing change; but as he held an open newspaper in his hand, which he had
+                        apparently just received, it occurred to most that he must have seen in it
+                        ‘something to his advantage.’ 
+ ‘Well,’ he exclaimed to Laurence, in a manner quite in keeping with his
+                        look, ‘and tell me now how are you getting on with your new Republic? You
+                        ought to make a very beautiful thing out of it—all of you together, with so
+                        many charming ladies.’ 
+ ‘Do you think so?’ said Laurence, in great surprise at this cheerful view of
+                        things. 
+ ‘Yes,’ answered Mr. Herbert, slowly and with decision. ‘Ladies I always
+                        think, so long as they are good and honest, have beautiful imaginations. And
+                        now, let me ask you how you have set to work.’ 
+ Laurence explained to him that they had begun, on Leslie’s suggestion, with
+                        considering what society, or the life of the highest classes, would be at
+                        its best; and that they were going to see afterwards what was implied in
+                        this. 
+ ‘Indeed!’ said Mr, Herbert meditatively. ‘Now, that is a really beautiful
+                        way of going about the business. And how far, let me ask you, have you got
+                        with your picture of these highest classes? I trust at all events that you
+                        have made a good beginning.’ 
+ ‘A beginning,’ said Laurence, ‘is all that we have made. We have agreed that
+                        our society is to have the utmost polish, ease, and grace of manner, and the
+                        completest savoir-vivre. It is, in fact, to be a sort of
+                        exemplar of human life at its highest conceivable completeness.’ 
+ ‘Excuse me,’ said Mr. Herbert, ‘but the ways of polite life, and the manners
+                        of fine ladies and gentlemen, are beautiful only as the expression of a
+                        beautiful spirit! They are altogether hateful as the ornament or the
+                        covering of a vile one.’ 
+ ‘Yes, Herbert, yes,’ exclaimed Mr. Luke, with a long sigh. ‘And I was just
+                        going to say this, when you joined us—that to make society really good—even
+                        really brilliant and entertaining—one thing is wanted, and that is true and
+                        genuine culture. Then let us have the polish by all means; but
+                        let it be a diamond we polish, and not a pebble. Our society must be one
+                        that does not merely dance, and hunt, and shoot. It must think, and reason,
+                        and read. It must be familiar—the whole of it must be familiar—with the
+                        great thoughts of the world, the great facts of the world, and the great
+                        books of the world. You want all this, if you would be perfectly brilliant
+                        in your salons, as well as really profound in your studies.’ 
+ This was assented to by nearly all. Lady Ambrose however looked a little
+                        uncomfortable, and not quite satisfied about something. 
+ ‘Don’t you think,’ she said at last, ‘that if everyone is to have so much
+                        culture, society will tend to become—well—just a little—’ 
+ ‘Well, Lady Ambrose?’ said Laurence. 
+ ‘Well, just a little bit blue. It will be all too bookish, if
+                        you understand what I mean. Don’t you know when anyone comes to see you in
+                        London, and will talk of nothing but books, one always fancies it is because
+                        he isn’t—it’s very uncharitable to say so, but still it’s true—because he
+                        isn’t very much in society and doesn’t know many people to talk about?’ 
+ ‘I always think it such a blessing,’ said Lord Allen, ‘to find anyone who
+                        will talk about books, and will not be perpetually boring one with vulgar
+                        gossip and scandal.’ 
+ ‘Oh, so do I,’ said Lady Ambrose eagerly, ‘but that was not what I meant
+                        exactly. Mr. Laurence knows what I mean; I’m sure he does. No one can
+                        delight in a book more than I; but still—’ she said, pausing to think how
+                        much of what she considered culture was to be found in those London
+                        drawing-rooms where she felt her own life completest, ‘still—somehow—’ she
+                        said with a faint smile, ‘it is possible to be too literary, isn’t it, as
+                        well as too anything else?’ 
+ ‘Perfectly true, Lady Ambrose,’ said Mr. Luke—Lady Ambrose was
+                        delighted—‘people continually are too literary—to my cost I
+                        know it; and that is because the world at large—what is called the reading
+                        world even more than the non-reading world—are hopelessly at sea as to what
+                        books are, and what they really do for us. In other words, if you will
+                        forgive my harping as I do upon a single expression, they lack culture.’ 
+ ‘Why, I thought culture was books and literariness, and all
+                        that,’ Lady Ambrose murmured half aloud, with a look of bewilderment. Mr.
+                        Herbert however suddenly came to her rescue. 
+ ‘Now, all this,’ he said, ‘is most interesting; but I feel myself, something
+                        as I imagine Lady Ambrose does, that I should like to know a little more
+                        clearly what culture is, and what you mean by it, when you call it the
+                        essence of good society.’ 
+ ‘Yes,’ said Lady Ambrose, ‘this is just what I like. Come, Mr. Luke, suppose
+                        you were to tell us.’ 
+ ‘Suppose,’ said Mr. Luke with an august wave of his hand, ‘instead of that
+                        we ask Mr. Laurence to tell us. No one can do so better than he. I, Lady
+                        Ambrose, have perhaps grown something too much of a specialist to be able to
+                        put these things in a sufficiently popular way.’ 
+ ‘Ah,’ said Mr. Herbert,’ this is really nice. I shall like to listen to
+                        this. But you must allow me to be merely a listener, and not ask me for
+                        instruction. I assure you I am here altogether to be instructed.’ 
+ Laurence, with some diffidence, assented to what was asked of him; and there
+                        was a general rustling on all sides of the party settling themselves down
+                        more luxuriously on the grass. Every influence of the summer afternoon
+                        conspired to make all take kindly to the topic—the living airy whisper of
+                        the leaves overhead, the wandering scents of the flowers that the breeze
+                        just made perceptible, the musical splash of the fountain in its quiet
+                        restlessness, the luxury of the mossy turf as soft as sleep or rose-leaves,
+                        and a far faint murmur of church-bells that now and then invaded the ear
+                        gently, like a vague appealing dream. Mr. Saunders even was caressed by his
+                        flattered senses into peacefulness; the high and dry light of the intellect
+                        ceased to scintillate in his eyes; the spirit of progress condescended to
+                        take a temporary doze. 
+</div></body></text></TEI>

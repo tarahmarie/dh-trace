@@ -1,0 +1,815 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The New Republic by W.H. Mallock : HTML
+                        version</title><author>Mallock, William Hurrell (1849-1923)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1877</date></publicationStmt></teiHeader><text><body><div type="chapter" n="13">
+BOOK IV.
+CHAPTER II.
+ ‘WE could really, Mr. Luke, almost fancy that we heard the Sirens singing,
+                        just now,’ said Mrs. Sinclair, when the ladies of the party had returned
+                        from their ramble on the shore, with Mr. Rose amongst them, like Apollo
+                        leading the Muses. 
+ The coloured lamps were now glowing brightly, with their green and purple
+                        clusters; the table was glittering under them, a wilderness of enchanted
+                        sparklings; and outside the moonlight was bathing everything, the roof and
+                        pillars of the pavilion, the myrtles, and the multitudes of crowding roses,
+                        which trembled just a little in the air that they themselves scented. 
+ ‘Yes,’ Mrs. Sinclair said, whilst there were some arrangements going on
+                        amongst the others with shawls and opera-cloaks, ‘I never saw anything like
+                        the sea to-night. Far off the spray amongst the rocks looked like mermaids
+                        playing; and at our feet it seemed as if the little pale waves were
+                        whispering and sighing messages to us. I don’t think I should like to tell
+                        quite all I thought they said to me. And listen,’ she cried with a faint
+                        sigh, ‘is not that the nightingale? It is—I am certain it is!— 
+                                              The same that oft-times hath Charmed magic
+                                casements opening on the foam Of perilous seas in faëry lands
+                                forlorn. What a night it is, to be sure! We all felt
+                        down on the beach as if we were literally breathing in Romance—or—well, I
+                        don’t know what the right word is.’ 
+ ‘And I,’ said Mr. Rose, ‘have been explaining to them, that, had they lived
+                        in any other age, they would have felt nothing of all this; that they feel
+                        it, by virtue of senses that have only been acquired in ours.’ 
+ ‘Yes,’ said Mr. Luke, clearing his throat; ‘that’s quite true, and I want
+                        now to try and explain clearly how and why it is true. I was particularly
+                        anxious,’ he said in a whisper to Laurence as he drew his chair forward, ‘to
+                        speak of this when your Roman Catholic friend was here; as she seems a very
+                        intelligent young lady, and is, I have no doubt, fully alive to some of the
+                        grotesquenesses of what she considers to be her creed.’ 
+ Mr. Luke resettled himself. On one side of him was Miss Merton, in a pale
+                        blue opera cloak, bordered with white fur, and embroidered with gold,
+                        something in her large eyes of a subdued sadness; and on the other side was
+                        Mrs. Sinclair, all in white, who looked like a wood-anemone against a
+                        background of dark foliage. 
+ ‘Now,’ Mr. Luke continued, raising his voice a little, but speaking with a
+                        more mellow persuasiveness than usual, ‘we all of us feel, in a general
+                        way—I think I may say that we nearly all of us feel—that the cultured
+                        minority of the present age is endowed with feelings, sentiments, and powers
+                        of insight, not only in advance of its common contemporaries, but in advance
+                        of all preceding times. We understand natural beauty, and natural
+                        affections, and above all moral beauty, in a new way, all our own. Now, to
+                        what is the advance due? It is all due to culture in its highest
+                        connection—its connection with religion. We feel stronger emotions about
+                        natural scenery, for just the same reason that we feel stronger emotions
+                        about righteousness. And the reason is, that our emotions, in either case,
+                        no longer tempt us to draw grotesque inferences from themselves. There’s the
+                        whole heart of the matter. We rest gratefully content with the objects that
+                        excite our love; we don’t pass away beyond them, and forget them. You had an
+                        excellent instance of the old treatment I condemn in those verses of
+                        Euripides which Mr. Laurence has translated with so much tenderness. There,
+                        you see, you have nature—flowers, meadows, and so forth; and more important
+                        still, you have a high conception of virtue. But yet in that poem you have
+                        no real feeling for either the flowers or the virtue. The feeling only
+                        grazes these, so to speak, and glances off to a shadowy deity beyond, who
+                        was no more true, no more verifiable, than any of the rest of
+                        her kind, male or female, singular or triple. And now,’ Mr. Luke went on,
+                        turning to Miss Merton, ‘here is another illustration of the whole thing—of
+                        the advance made by culture in our entire mental state, of which I
+                        particularly wanted to talk to you (for in one point at least we agree, even
+                        professedly—the doctrine of development), and this is an illustration of it
+                        that you in a special way will appreciate. You, of course,’
+                        said Mr. Luke, ‘know something more or less about St. Augustine, I suppose.’ 
+ As it was with her reading that Father’s account of his
+                        conversion that Miss Merton in a peculiar way associated her own, she looked
+                        at Mr. Luke with increased interest, feeling at the same time that she had
+                        certainly as much knowledge on the subject as he so generously gave her
+                        credit for. 
+ ‘Well,’ Mr. Luke went on, ‘Augustine was on the whole, you know, the most
+                        cultured of all the Fathers, and, considering the early date at which he
+                        lived, had in some ways a real insight into Christianity; so we may safely
+                        consider him as the most favourable specimen of the results of the old
+                        system. Let us take then the purest and most elevating of all the pleasures
+                        of life, and enquire, through him, how it is treated and looked upon by
+                        theological Christianity. The eyes, says Augustine, love fair and various
+                        forms, and shining and lovely colours; and all day long they are before me,
+                        and solicit my contemplation. “For” (and this exquisite sentence I remember
+                        in his very words) “the Light, that queen of colours, bathing all that we
+                        can look upon, from morning till evening, let me go where I will, will still
+                        keep gliding by me in unnumbered guises, and soothes me whilst I am busy at
+                        other things, and am thinking nothing of her.’”
+
+ Miss Merton was pleased at the appreciative tone in which Mr. Luke quoted.
+                        Mr. Luke noticed this, and he was pleased also. 
+ ‘And now,’ he continued, ‘what return does our gentleman make to the light
+                        for its beautiful and constant service to him? Does he thank it? does he
+                        praise it? does he seek it? No—’ Mr. Luke here gave a little laugh—‘not a
+                        bit of it! He prays to his God that he may be delivered from its insidious
+                        snares; he envies the blindness of Tobit, and describes himself as
+                        “earnestly groaning” under the temptations of these eyes of his flesh. That
+                        is all! There,’ said Mr. Luke, with a confident appeal to Miss Merton, whose
+                        expression was now slightly altering, ‘we have in a most pointed form the
+                        barbarising results of the old theological religion. And now, put side by
+                        side with this, the following expression of the religion of sweet reason,
+                        such as culture reveals it to us. It deals with exactly the same sense, and
+                        the same pleasures:—  What soul was his, when, from the naked
+                                top Of some bold headland, he beheld the sun Rise up,
+                                and bathe the world in light! He looked— Ocean and earth, the
+                                solid frame of earth And ocean’s liquid mass beneath him
+                                lay In gladness and deep joy. The clouds were touched,
+                                And in their silent faces could be read Unutterable love.
+                                Sound needed none, Nor any voice of joy; his spirit
+                                drank The spectacle: sensation, soul, and form, All
+                                melted into him; they swallowed up His animal being; in them
+                                did he live, And by them did he live; they were his
+                                life. In such access of mind, in such high hour Of
+                                visitation from the living God, Thought was not; in enjoyment
+                                it expired; No thanks he breathed, he proffered no
+                                request.’
+
+ A sudden sigh here escaped from some one. Mr. Luke looked round. 
+ ‘Ah,’ exclaimed Mr. Stockton, ‘what a description of prayer! What a noble,
+                        what a magnificent description!’ 
+ The fashion of Mr. Luke’s countenance changed. He stopped short, he would
+                        not proceed a word farther. His whole quotation had been ruined, he felt, by
+                        this odious interruption. 
+ ‘I never supposed,’ said Miss Merton, who thought Mr. Luke pausing that she
+                        might give in her acquiescence, ‘I never supposed St. Augustine’s views
+                        quite final upon all matters. I dare say there are some things that even I
+                        could have taught him.’ 
+ She smiled as she said this; but there was a little embarrassment in her
+                        tone which was perceived by Laurence, and which brought him at once to her
+                        rescue. 
+ ‘I,’ he said, ‘think the contrast Mr. Luke has drawn even stronger than he
+                        has made it. I by no means think that Augustine was afraid of the pleasures
+                        of light and sight as they were enjoyed by Wordsworth; for I can hardly
+                        fancy that he could have had the least conception of them. They seem to me a
+                        new and peculiar heritage, which we may all more or less have
+                        part in; but which by former ages were undreamt of, not rejected. I often
+                        myself look back on a certain early walk I took one spring morning in these
+                        gardens—amongst the very trees and flowerbeds we are now looking out upon.
+                        The fresh softness that was in the air, and all the wandering scents, like
+                        dreams or prophecies of summers gone or coming, and the wet light glistening
+                        on the dewy leaves, seemed to go at once to the soul—to “melt into me,” as
+                        into Wordsworth’s herdsman. Once I surprised myself stooping under a
+                        dripping bough, to look upwards at a yellow flower, and watch it lonely
+                        against a background of blue sky; and once I started to find myself quite
+                        lost in staring at a red rock, gleaming amongst shrubs and ivy, which a
+                        plant of periwinkle spangled with a constellation of purple stars. The
+                        colour, the shape, the smell of every leaf and flower—each seemed to touch
+                        me like a note of music; and the bloom of morning mist was over everything.’ 
+ ‘Ah,’ said Mrs. Sinclair, her dark eyes gleaming in the moonlight, ‘how
+                        those spring mornings sometimes make one sick with longing!’ 
+ ‘Yes,’ said Laurence, ‘with longing—with a vague longing; not always, I am
+                        afraid, with thanksgiving or with praise. But I think the feeling in all its
+                        moods is the same in some ways. It is a mixing together of outward and
+                        inward things—our whole inward lives passing out of us into Nature; Nature
+                        melting into us, and growing part of our inward lives, so that all our hopes
+                        and fears and memories become embodied things, touching us in scents of
+                        flowers, in the breath of the air, in the sparkle of water, or mixing, like
+                        Hamadryads, their beings with the trees. Now, could I have described such
+                        feelings as these—my own state of mind during my morning walk—to Saint
+                        Augustine, he would not have understood me. He would have thought me raving.
+                        And my case is not peculiar. These feelings are no private things of my own.
+                        They belong to our whole age. And of this,’ Laurence went on, ‘you may see a
+                        very curious proof in a part of our modern literature, which as literature
+                        is least successful. I mean, a certain class of novels: not the works of the
+                        greater novelists, still less the works of the professional
+                        novel-manufacturers; not these, but a sort of production almost peculiar to
+                        our own time—the novels of amateurs, who write perhaps but a single book
+                        during their whole lives; and that one, with the simple aim of pouring out
+                        their own feelings for themselves to contemplate, or of explaining to
+                        themselves or others their own histories.’ 
+ ‘And so,’ said Mr. Storks, ‘you would gauge the refinement of the age by its
+                        silliest novels?’ 
+ ‘I think we too often forget,’ said Laurence, ‘that a very silly book may be
+                        evidently the work of a very clever person; and may show its author
+                        possessed of every gift, except that of literature. And in many of the poor
+                        novels I am speaking of, the utter failure of the expression often only
+                        calls our attention more strongly to the depth, the delicacy, and the
+                        refinement of what the writer has struggled to express. I was reading a
+                        girl’s novel in the train the other day, called Love in a
+                            Life. Its long spasms of ungrammatical verbiage, its utter want
+                        of knowledge of the world, would have turned the dullest reviewer, in spite
+                        of himself, into a caustic wit. But there was a something all through it,
+                        that its authoress was trying—trying to utter, that reminded me of Ariel
+                        trying to escape from his tree. What, Lady Ambrose! Have you
+                        written a novel? No? Then why are you looking so mysterious, and so full of
+                        meaning?’ 
+ ‘Go on, Mr. Laurence,’ said Lady Ambrose. ‘I’ll show you by-and-by.’ 
+ ‘Well,’ said Laurence, ‘take any one of these novels, and you will find the
+                        writer looking on Nature in just that peculiar modern way that we have been
+                        talking of. I don’t say you will always find the sentiment in the books, but
+                        the books will show you that you would find it in the writers. And this
+                        feeling about Nature is but an example of others. Take, as I said, the
+                        modern conception of love, and study that too, in these foolish novels. You
+                        will find half the folly comes from an attempt to express much, not from
+                        success in expressing little.’ 
+ A pause followed this. It was broken at last by Allen. 
+ ‘I quite agree with Mr. Laurence,’ he said diffidently. ‘I have not much
+                        right to judge, I dare say. I am not a great reader; and I can only speak
+                        from books. But still I know a little of the love poetry of this and of
+                        other times; and the poetry of this has always seemed to me far—far the
+                        highest. It has seemed to me to give the passion so much more meaning, and
+                        such a much greater influence over all life. And this, I suppose, must be
+                        because men, as the world goes on, are really learning to love in a higher
+                        way than perhaps they themselves are often conscious of.’ 
+ ‘I think some philosopher,’ murmured Mrs. Sinclair to Leslie, ‘says we feel
+                        that we are greater than we know. It must be a great comfort sometimes to
+                        know that we are greater than we feel.’ 
+ ‘Is it not Novalis,’ went on Allen, ‘who says that if all the human race
+                        were a single pair of lovers, the difference between mysticism and
+                        non-mysticism would cease? Would that have been understood even a hundred
+                        years ago? But as to poets, I was thinking of two English poets of our own
+                        day especially. Shakespeare may of course have exhibited the working of love
+                        more powerfully than they; yet I am sure he could never have conceived its
+                        meaning and its nature so deeply. No heroine of his could have understood
+                        Mrs. Browning’s Sonnets from the Portuguese; nor any hero of
+                        his her husband’s love lyrics. What seems to me the thing so peculiarly
+                        modern, is this notion of love as something which, once truly attained,
+                        would, as Browning says,                    make Time
+                                break, Letting us pent-up creatures through Into
+                                Eternity, our due.’
+
+ ‘Ah!’ murmured Mrs. Sinclair, ‘but suppose there is no eternity! I think we
+                        had better take what we can, and be thankful. Listen—listen again! “The
+                        nightingales, the nightingales!” There, Lord Allen, there is a bit of your
+                        Mrs. Browning for you.’ 
+ ‘What, Lord Allen!’ said Lady Ambrose, ‘and is Mr. Robert Browning a better
+                        poet than Shakespeare? I always thought Shakespeare was quite
+                        our best.’ 
+ ‘It is not a question,’ said Laurence, as Allen did not speak, ‘of different
+                        poets, but of different ages. I have often wondered myself how far
+                            Faust would have appealed to the author of
+                            Hamlet, and whether all the spiritual action of the
+                        drama, in so far as it relates to the heroine, might not be lost upon him.
+                        What a difference between Margaret and Ophelia—not between themselves, but
+                        between the parts they play! Shakespeare himself might have
+                        understood Margaret’s influence. I doubt it. But even if he had, that would
+                        prove little. Shakespeare’s was                     The prophetic
+                                soul Of the wide world dreaming on things to
+                            come; and the “wide world” of his time would itself have
+                        understood nothing of it. But what strikes me still more than the growth of
+                        particular feelings, is the infusion and the inter-penetration of all. Look
+                        at Shakespeare’s Sonnets. He loved the objects they were addressed to; he
+                        loved flowers and Nature. But these two sets of things were
+                            connected only in his mind, they were not
+                            fused. Take, however, that most typical of all modern
+                        poems—the celebrated love-song in Maud, and think of that:—
+                                 The slender acacia would not shake   One long
+                                milk-bloom on the tree; The white lake-blossom fell into the
+                                lake.   And the pimpernel dozed on the lea; But the
+                                rose was awake all night for your sake,   Knowing your
+                                promise to me; The lilies and roses were all
+                            awake, What a passion is here! We almost hear the lover’s
+                        pulses as they painfully beat quicker. Our breath catches with his; and we
+                        long and long with his longing. And yet hardly a word about his feelings is
+                        said directly. The secret is echoed back to us from the scene and from the
+                        summer night. It is the milk-bloom of the acacia, the musk of the roses, the
+                        stir of the morning breeze, that tells it all to us as if they were living
+                        things, and as if a human passion had passed into them for a soul. Now,
+                        would the world have understood this in any other times but ours? I don’t
+                        think even Shakespeare’s Jessica would, nor Dante’s Beatrice, nor Petrarch’s
+                        Laura, nor Horace’s Lydia, nor Plato’s Diotima, nor Homer’s Helen.’ 
+ ‘Listen!’ exclaimed Mr. Rose eagerly, as soon as Laurence stopped; ‘will you
+                        let me read one passage out of my work which bears upon this very point—in
+                        fact, sums up exactly what you have been saying? It occurs,’ said Mr. Rose,
+                        who was sitting ready under one of the lamps with some printer’s proofs
+                        before him, ‘in my Essay on Capacity. “But chief”—this is the
+                        passage I mean—“But chief amongst the new things which the heart of man has
+                        come to the understanding of , is the passion of love, in its distinctly
+                        modern form. The goddess of this love is no longer the Aphrodite of the
+                        Greeks, or the Mary of the Christians, She is a mysterious hybrid being, in
+                        whose veins is the blood of both of them. She is Mary in her desire of the
+                        Creator; she is Aphrodite in her desire of the creature; and in her desire
+                        of the creation, she is also Artemis.” (‘Oh, this will never
+                        do—this will never do!’ muttered Dr. Jenkinson to himself,
+                        tapping with his feet on the ground.) ‘“Into the strange passion,”’ Mr. Rose
+                        went on, ‘“of which hers is the tutelage, there have melted the sounds of
+                        woods and of waters, and the shapes and the hues of mountains, and the
+                        savour of airs and winds, and the odours of all flowers. All the joys,
+                        indeed, of the senses have fallen into it, like streams into one sea. And
+                        with the joys of the spirit it has been likewise. But whereas the senses
+                        have contributed their joys mainly, the spirit has contributed its sorrows
+                        and pains as well. Throughout this love, despite its fulness of life, there
+                        yet runs also a constant taint of death, of which it needs
+                        cleansing—grotesque troubles and misgivings of conscience, and cloistral
+                        meditations, and fantastic repentances. For this very reason, however, is it
+                        the more wholly expressive to us of the man’s inner development. It shows us
+                        how all his desires, senses, and powers of feeling have been growing
+                        together, and coalescing into a single organism, capable of quite new sets
+                        of pleasures, and responding to far finer movements from without.”’ 
+ ‘H’m,’ said Mr. Luke slowly, in a tone of meditative commendation, ‘there’s
+                        a great deal of truth in that—a very great deal—if the fellow,’ he added to
+                        himself, ‘would only put it a little better.’ 
+ ‘Are you quite sure,’ said Dr. Jenkinson, looking round him in
+                        an agony of suppressed irritation, ‘that anyone at all feels all these
+                        things, beyond the very few people who talk about them?’ 
+ ‘Yes,’ said Mr. Rose, smiling with a honeyed gravity, and wholly unconscious
+                        of the Doctor’s animus, ‘all feel thus who have any part or lot in the
+                        world’s development.’ 
+ ‘You,’ said the Doctor, turning sharply away from Mr. Rose, ‘think so,
+                        Laurence, don’t you, because you find some of the same sort of phrases in
+                        novels? I don’t think you’ll find very much thought in those novels—not very
+                        much. They are effeminate foolish books.’ 
+ ‘Yes,’ said Allen with an assenting voice that much pleased the Doctor, ‘a
+                        great deal of this increased depth and refinement of feeling, I know, is
+                        very good—all of it, I dare say, may be. But still, if left to itself, it
+                        must tend—indeed, I have often seen it tend—to make men effeminate, as Dr.
+                        Jenkinson says, and unfit for work. Now, I dare say Mr. Luke will call me a
+                        barbarian, but I am going to venture to say that, in spite of all that is
+                        said against it, that barbarous thing sport—shooting, deer-stalking,
+                        hunting—is of great value, especially to people who are not barbarians, as a
+                        kind of mental tonic. It makes them active and spirited—it must do so: it
+                        gives them presence of mind, and a readiness to exert themselves; and though
+                        sport may in one sense be a self-indulgence, it is a self-indulgence that is
+                        constantly teaching all sorts of self-denial.’ 
+ ‘My dear Lord Allen,’ said Mr. Luke, ‘I most entirely agree with you. It
+                        does seem, I admit, at first sight, a somewhat singular thing, that the
+                        result of the latest civilisation should be to give men leisure to return to
+                        the occupations of their earliest barbarism—and those too deprived of their
+                        one justification—necessity. But still these barbarous sports must, as you
+                        say, if not pursued too exclusively, give a valuable moral tone to minds
+                        whose refinement might else become weakness. Only the worst of the matter,
+                        as it actually stands, is this—that the majority of people who do follow
+                        sport, are the very people who have no refinement that needs strengthening,
+                        but merely an idle aimless strength that needs refining. And you must
+                        remember, Lord Allen, that the man who is gluttonous of aimless bodily
+                        action is no better than the man who is an epicure in aimless mental
+                        emotion.’ 
+ ‘And so,’ said Donald Gordon, with devout solemnity, ‘this is what we must
+                        remedy in our new Republic. Our gentlemen there must have both sides of
+                        their nature developed equally; and they must be at once so intellectual and
+                        so manly, as to be content that partridges and foxes shall die exclusively
+                        for them, without their living exclusively for partridges and foxes.’ 
+ ‘Exactly so,’ said Mr. Luke drily. 
+ ‘Some one observed this afternoon,’ said Allen, turning a little stiffly to
+                        Donald Gordon, ‘how one could see the expression of a girl’s face changed by
+                        the influence of a little genuine mental culture. I have noticed the same
+                        thing in men’s faces, under the influence of a little genuine bodily
+                        culture. And I think myself that the moors of your country, or a river in
+                        Norway, or a good cruise in a yacht, may go—well, at least half as far
+                        towards making a complete man, as the study of books, and art, and poetry,
+                        in an arm-chair, or in a picture-gallery.’ 
+ ‘I think that is so true,’ said Miss Merton softly to him in a whisper, for
+                        Dr. Jenkinson had begun to speak. 
+ ‘But,’ the Doctor was saying, ‘you must want something besides looking at
+                        pretty scenery, and falling in love, and shooting. I think you want
+                        something besides that to make life complete. You will want to exercise your
+                        intellect—your reason.’ 
+ ‘Yes,’ said Allen, ‘and I defend all this voluntary physical exercise and
+                        excitement, because I think it makes the mind even more healthy than it does
+                        the body.’ 
+ ‘Yes,’ said Dr. Jenkinson with a smile, ‘I think that’s right.’ 
+ ‘You, gentlemen,’ interposed Lady Grace, ‘seem to be taking very good care
+                        of yourselves; but are we women to shoot and take all this exercise also?’ 
+ ‘That,’ said Mr. Luke with a courtly smile, ‘we defer to your superior
+                        wisdom. There are, however, two helps to education, akin to exercise, in
+                        which both sexes will share, and which in a perfect state of society would
+                        be most important in their results. I mean travelling, and the halving of
+                        our lives between town and country. The completeness, the many-sidedness of
+                        such culture as there is amongst us, is in a great measure due to these; but
+                        it is only slowly that we are learning to use them properly. Of course,
+                        Jenkinson, you understand all this—no man can do so better. It is simply the
+                        music and gymnastic of the Greeks. It is simply true education, which is but
+                        another name for culture. And in the cultivated man, thought, and taste, and
+                        feeling, and spirit are really all one, and fused together. Could we but
+                        look forward to a time when all or even the greater part of those one meets
+                        would unite these priceless gifts, there might then indeed be some
+                        satisfaction and some hope in life.’ 
+ ‘And don’t you want goodness?’ said Dr. Jenkinson, all his sharpness
+                        returning; ‘do you want no sense of duty, and right, and wrong?’ 
+ ‘Yes,’ said Laurence, ‘but we have included that already. We have found that
+                        that is pre-supposed in every educated pleasure. It is that that gives even
+                        our lightest conversation its best sparkle, and beads its surface over with
+                        its bright, crisp foam of half-conscious irony. The moral ideal is a note,
+                        as it were, which we are always hearing, and with which our daily talk makes
+                        continual harmonies, because it is never pitched in unison with it. Thus we
+                        talk of killing time, and so on, as being the great end of our lives; of
+                        money or position being the only thing to marry for; and of marriage ties as
+                        if they were always a weariness, or a grotesque torture.’ 
+ ‘And thus,’ said Leslie, ‘we say a man has had, par
+                            excellence, a success, when he has, for his own selfish
+                        pleasure, done a woman the greatest injury possible.’ 
+ ‘And thus,’ said Donald Gordon softly, ‘when he does not tell all the world
+                        he has done so, we say he is a perfect gentleman.’ 
+ ‘And do you want no religion?’ said Dr. Jenkinson, paying no attention to
+                        all this, but again turning to Mr. Luke. 
+ ‘My dear Jenkinson,’ said Mr. Luke, ‘you and I agree upon these matters so
+                        well, that I think you must be trying to misunderstand us. Can religion and
+                        morals be separated? and are not they both included in what we mean by
+                        culture? Is it not in virtue of culture—of that nice and complex
+                        discrimination—that we can tell at once when we come across a genuine
+                            logion of Jesus amongst the sayings vulgarly supposed
+                        to be most distinctive of Him? Think, for instance,’ Mr. Luke continued,
+                        ‘what a beautiful and profound harmony is at once made amongst our
+                        heartstrings, if culture have really tuned them, by such a story as that of
+                        the woman taken in adultery, or by the parable of the Prodigal Son, or by
+                        such simple, pregnant sayings as, “ὑπάγω καὶ ἔρχομαι πρὸς” and then turn for
+                        a moment to the theological accounts of the Trinity! Why,’ exclaimed Mr.
+                        Luke with a sudden jauntiness, ‘to sit on the key-board of an organ would
+                        make music compared to the discord, the jangling, the string-breaking that
+                        Church Catechisms, and Athanasian Creeds, and Episcopal speculations on the
+                        personality of the Creator, make on the musical instrument of the cultured
+                        mind. Ah,’ Mr. Luke continued, ‘could the Founder of Christianity only have
+                        found men of more culture as His immediate disciples and reporters—could He
+                        only have secured a biographer as simply honest as poor Boswell was—Well,
+                        well, but it’s no use speculating about what might have been. Religion has
+                        had bad times hitherto, but now at last we—some of us, at least—are seeing
+                        the way to make them better; you yourself, Jenkinson, amongst the number.
+                        And all this is due to that very thing which we say is the essence of the
+                        best human life—culture; culture which is neither religion, nor morality,
+                        nor taste, nor intellect, nor knowledge, nor wide reading, but the single
+                        result of all—and this,’ Mr. Luke added, ‘showing itself to the full—doing
+                        itself complete justice, through—as our friends have already said— what we
+                        call polish and high-breeding, and refinement of manner, and of manners.’ 
+ ‘Surely you,’ said Mr. Stockton, turning to Dr. Jenkinson with the most
+                        mollifying deference, ‘must agree with us that the present century has seen
+                        the soul of man widening out, with all its marvellous powers, and displaying
+                        new riches of beauty like an unfolding flower. But whilst we value—and none
+                        can value more than I—our higher flights of imagination, our finer forms of
+                        love, and poetry, and worship, I am not blind to the great agent that is at
+                        the bottom of all this change. I mean the emancipated human intellect, with
+                        all its manifold apparatus of discovery and conquest—that great liberator of
+                        life, and thought, and religion.’ 
+ ‘There is some truth in that,’ said Dr. Jenkinson, not ungraciously, ‘but I
+                        think you are all putting it in a wrong way. And, Luke,’ he added with a
+                        little more causticity, ‘to understand Christianity, you must know something
+                        of other religions too. You must study the great religions of the East, and
+                        compare them with those of the West. No religion can be understood by its
+                        own light only.’ 
+ ‘In our ideal city,’ said Mr. Rose, ‘as I saw it in my brief Apocalypse, you
+                        will find a home and a temple for every creed, and for every form of
+                        worship.’ 
+ ‘What!’ exclaimed Lady Ambrose, ‘does Dr. Jenkinson want us to introduce
+                        Juggernaut and his car into England?’ 
+ ‘May I ask you one question,’ broke in Mr. Herbert suddenly, ‘a question
+                        which at times, I confess, seems to me not without importance! Will this
+                        religion of yours, as you told us in the afternoon it was based on the
+                        discrimination between good and evil, also involve a discrimination between
+                        life and death? Will it, I mean, point to any other life beyond this, or
+                        will it not? Is whatever evil and sorrow we patiently suffer, a thing which,
+                        if it do not bring its reward to us here, will never bring us any reward at
+                        all? And shall we call the death of the noble sufferer blessed for no other
+                        reason than that he rests from his labours and his works do not follow him?’ 
+ ‘Dear me! dear me!’ said Dr. Jenkinson petulantly to himself. ‘These sort of
+                        questions ought never to be asked in that hard abrupt way. You can’t answer
+                        them—you can’t answer them.’ 
+ Mr. Stockton, however, found no difficulty with his answer. 
+ ‘As to that,’ he said, ‘each man would think as he pleased, and his thoughts
+                        would shape themselves to meet the deepest needs of his life. In the state
+                        of society we long for, the belief in a future life would be open to all to
+                        accept or to reject. The only thing to guard against would be any definite
+                        public opinion on the matter, one way or the other; for in any definite
+                        public opinion, remember, there is the germ of all dogmatism and of all
+                        persecution. Public opinion, in society as it ought to be, would be a
+                        frictionless fluid, if I may borrow a metaphor from science, in which no
+                        adventitious obstacle from prejudice or otherwise would impede the progress
+                        of any view that its own merits set in motion.’ 
+ Mr. Luke was certainly an unfortunate man. Mr. Stockton had again, in part
+                        at least, expressed the exact thing which in other words he was going to
+                        have said himself. Mr. Luke, however, did not flinch. He boldly took the
+                        bull by the horns. 
+ ‘True,’ he said; ‘that metaphor is ingenious, and explains exactly what we
+                        want to explain. That is one of the great conditions of a truly
+                        cultivated society, what Mr. Stockton calls a frictionless public opinion—a
+                        public opinion which shall let every system, every creed, every philosophy
+                        of life, stand or fall on its own practical verifiable merits; and this we
+                        shall get, too, if we can only banish two things, prejudice and ignorance,
+                        of which last,’ Mr. Luke added, looking studiously away from Mr. Stockton,
+                        ‘by far the deadliest form is the fetish-worship of useless knowledge.’ 
+ ‘Well,’ said Miss Merton, ‘I suppose that this is all that any of us would
+                        ask, who really and truly believe in what we profess to believe.’ 
+ ‘Of course it is,’ said Mr. Luke, ‘everything:—everything.’ 
+ ‘And I’m quite sure,’ said Lady Grace, ‘that in a society where
+                        the tone is so nobly liberal, and where all have such a true and burning
+                        admiration of the morally beautiful, it will be quite impossible that
+                        woman’s life shall not be seen to be what it really is—a thing as capable as
+                        men’s of high aims, and independent purposes, and not, as it were, entirely
+                        sunk in theirs. I, Mr. Luke, in face of such a public opinion as you speak
+                        of, should have little fear for our cause. I think, under God, it would
+                        prosper there.’ 
+ ‘Of course it would,’ said Mr. Luke. ‘If culture enables us to detect beauty
+                        and to prize it, what should it enable us to prize more than womanhood, with
+                        all its exquisite capabilities developed to their utmost? Life has no
+                        greater ornament than cultured womanhood.’ 
+ ‘Except cultured manhood,’ said Lady Grace, unconsciously giving Mr. Luke a
+                        slight wound by her generous and unexpected return of his royal compliment.
+                        ‘Ah,’ she sighed to herself with a look at Mr. Luke, ‘and he does not
+                        believe in God—or thinks he does not! I suppose it must needs be that
+                        offences come; but I wish they did not come by such good men. However—I
+                        trust that it is all really for the best. And then—there is no such thing as
+                        eternal punishment. One may be thankful to feel sure of that.’ 
+ ‘I am afraid you will think me very troublesome,’ said Mr. Herbert, who had
+                        been talking to Laurence in a low tone for the last few minutes. ‘but there
+                        is one question more I should like to ask you. I want to know if you, who
+                        see the many delicate beauties of life, and the countless positions it may
+                        be viewed from,—I want to know if you will teach the lower, the commoner
+                        classes, who look up to you as models, to quote poetry, and to be enquiring
+                        and sceptical also?’ 
+ ‘I hope not, indeed,’ broke in Lady Ambrose with vigour; ‘and as to our
+                        being their models, Mr. Herbert, I’m sure you can’t mean that. It seems to
+                        me one of the very worst things in these times that they will take us for
+                        their models. However, I think it is really a good deal our fault, and that
+                        it comes very much from our giving our maids so many of our old clothes to
+                        wear. That sort of thing puts notions into their heads. Now, here at any
+                        rate is one reform, that is implied in our Republic;—I don’t
+                        like that word Republic, by the way—we must put a stop to all this imitation
+                        of ourselves. Isn’t that so, Mr. Laurence? ’ 
+ ‘Thank you, Lady Ambrose,’ said Mr. Herbert, rising, ‘thank you. I think it
+                        altogether a wise—nay, more than wise, an essential thing, to keep these
+                        wide speculations from spreading beyond the only circles that they are
+                        really fitted for. I have to go indoors now, as I have a few matters to
+                        arrange to-night; but I am much obliged to you all for what you have taught
+                        me about culture, and enlightenment, and society, as it ought to be.’ 
+ ‘The difficulty is,’ said Lady Ambrose, as Mr. Herbert was walking away,
+                        ‘how to keep all this thought, and so forth, to ourselves. One thing I’m
+                        quite certain of, that we really do a great deal of harm without thinking of
+                        it, by the way in which we speak our minds out before servants, and that
+                        sort of people, without in the least considering what may come of it. Now,
+                        what do you think of this, as a plan for making our ideal state a really
+                        good and contented place?—the upper classes should speak a different
+                        language from the lower classes. Of course we should be able to speak
+                        theirs, but they would not be able to speak ours. And then, you see, they
+                        would never hear us talk, or read our books, or get hold of our ideas;
+                        which, after all, is what does all the mischief. And yet,’ said Lady Ambrose
+                        with a sigh, ‘that’s not the great difficulty. The great difficulty would be
+                        about daughters and younger sons, and how to give them all enough to keep
+                        them going in the world. However, this we can talk of in a minute. But—’
+                        here Lady Ambrose put her hand in her pocket, and a sound was heard as of
+                        rustling paper. 
+ ‘I really do believe,’ said Laurence, ‘that Lady Ambrose has
+                        written a novel, although she denies it; and there she is going to read a
+                        bit of it now, as a specimen of her own culture.’ 
+ ‘No,’ said Lady Ambrose, ‘really and truly. And if I had written a novel,
+                        Mr. Laurence, I should not have the cruelty to inflict it upon you. No; but
+                        what I have here,’ she said at last, producing a manuscript, ‘though it is
+                        not mine, is next door to a novel, and in some respects better than one. It
+                        is a sort of memoir of herself, written by a certain lady I know. I am
+                        betraying no confidence in showing it to you; as she herself has lent it to
+                        a good many friends, and as long as her name is not mentioned, she is by way
+                        of wishing to have it circulated. She has, in fact, consulted me about
+                        having it printed. Now I want you, Mr. Laurence, to look through some of it,
+                        and tell me if the writer is not really a person of culture. Perhaps you
+                        would not mind reading out a little of it.’ 
+ ‘Am I to read it all through?’ asked Laurence, as he took the seat which Mr.
+                        Rose gave up to him at the table. 
+ ‘No, no,’ said Lady Ambrose. ‘Just pick out the best bits—a page here, and a
+                        page there.’ 
+ ‘Well,’ said Laurence, ‘I will, at any rate, start with the beginning. Now,
+                        are all of us ready to be let into the secrets of a young lady’s soul?— 
+ ‘“One often feels a longing—who has not felt it?—in the hurry and trouble of
+                        life to pause for a little while and look back upon the past, which we too
+                        too often forget, and see what it is we have grown from. We long to see how
+                        it has fared with ourselves—our own selves—our characters.”’ 
+ ‘I think you may skip the beginning,’ said Lady Ambrose, ‘it’s a little
+                        dull. Turn over a page or two.’ 
+ ‘“How strangely do they come back to me, those distant irrevocable days!”
+                        Will that do?’ asked Laurence. 
+ ‘Yes,’ said Lady Ambrose, ‘I think so— go on there.’ 
+ ‘“—those distant irrevocable days, when the world was all new to me, and
+                        each experience was fresh and delightful, and I knew nothing of what
+                        self-reproach could mean. Ah, me! how times have changed since then! I
+                        sometimes fancy that I am hardly worthy now to look back upon my own past. I
+                        was gifted naturally with a curious warmth and sincerity of nature, that
+                        must have been very beautiful. But my peculiar gift, my own own gift, was a
+                        power of sympathy with others, by which quite naturally I used to throw
+                        myself into their places, understand their difficulties, and excite myself
+                        with their interests. When I was yet quite a child, that, I know, is what
+                        men felt in me—I never cared for boys—one man especially. It was then that
+                        life began for me, and what it all meant broke on me like a revelation. I,
+                        in my simplicity, never dreamt of his being more than a friend—I am not sure
+                        even that he was my dearest friend. I certainly never tried to charm him.
+                        But I did charm him, nevertheless, quite unconsciously. And he loved me
+                        passionately, devotedly, child as I was. Ah, God! when will another ever
+                        feel the same for me? And I—‘O, my lost, my rejected friend! come back to
+                        me’, sometimes I still cry in my solitude; ‘poor, and obscurely connected as
+                        you are, come back to me!’ I shall never forget—poor little me!—the solemn
+                        shock of the moment, how my heart stood still, how all the blood came
+                        rushing into my cheek, when all of a sudden, as it seemed to me, and without
+                        any warning, he asked me to be his wife. Everything seemed to grow dizzy
+                        before me. It seemed to me as if the day of judgment had come. (Alas! will
+                        there ever be a day of judgment at all? is what I now ask.) I don’t know
+                        what I said. I only remember distinctly my throwing myself into my mother’s
+                        arms, and crying like a child—and I was one—as if my very heart would break.
+                        ‘I am only a child!’ that is what I said. ‘Oh, mother, I am such a child!’
+                        The pathos of the scene often comes back to me even now—a shadowy timid
+                        memory, wondering if I shall give it harbour. I remember, too, how I said my
+                        prayers that night, and how I asked God—”’ 
+ ‘I think you needn’t read that,’ said Lady Ambrose, ‘go on a page or two
+                        further.’ 
+ ‘“I spent much of my time sketching.” Shall I go on there?’ said Laurence.
+                        ‘“I had always a curiously appreciative eye for natural beauty.” Will that
+                        do? Or shall I go on here—I think this is better—at the next paragraph?—“Oh
+                        the great waste of love in this our world.”’ 
+ ‘Yes, go on there,’ said Mrs. Sinclair and several others. 
+ ‘“Oh the great waste of love in this our world! How many a true heart would
+                        have given itself to me, could I only honestly and unreservedly have opened
+                        out to it all the depths of mine, and received it! And why did I never do
+                        so? It may be that I have known none who could really understand me—none
+                        that I could really love. But does that excuse me, not for not loving them,
+                        but for making as though I did love them, and so ruining their lives and
+                        searing my own? sending them in the end to their brandy-bottles, and their
+                        gaming-hells, and their wild Cremornes, and myself—to the mental state in
+                        which I am now! 
+ ‘“Have I then lost it for ever—lost all hope of love? and must I quietly
+                        take up with my unappreciated loneliness? If it is so, if, indeed, it is so,
+                        surely I have brought it on myself. Was there not one—not my earliest
+                        lover—but another, who with a devotion I understood far more fully, laid
+                        himself at my feet, and offered me all his man’s devotion, and his man’s
+                        sympathy! Why, why in my madness did I send him from me, penniless as he
+                        was—but what of that?—driving him to death, and leaving myself to
+                        desolation? How does the image of his pale still face upturned towards the
+                        Indian star-light, with eyes which no star-light could ever touch any more,
+                        rise before me—his hand on his breast, and clasping with its last grasp a
+                        locket with my picture in it! Yes, I see him there, though I did not see
+                        him. I know how he must have looked, with his heart bullet-pierced—noble,
+                        beautiful in death. Unworthy as I was of you, my true-hearted one, too late,
+                        too late, did I learn my own unworthiness. I was sitting in the window of
+                        our house at Ventnor, when the letter came that told me. It was evening; and
+                        I had been looking out through the summer twilight at the sea and at the
+                        sunset. As I read the letter, it dropped from my hand. I gave a gasp. I
+                        repressed a shrill cry. I felt a choking sensation in my throat; but I was
+                        very proud, and I even repressed a sob. I only, with entire calmness, turned
+                        my head towards the sea, and sighed a sigh deep-drawn as if my soul were in
+                        it. My cheek was pale, my eyes were wild and wistful—full of a solemn new
+                        earnestness. What the exact thoughts were that were busy in me, I cannot
+                        tell. All I am conscious of was this, that far, far off were the great
+                        crimson spaces of evening sky and a trail of rippled splendour on the sea.
+                        One great violet cloud fringed with a border of living fire, that seemed to
+                        be eating into it, hung just above the place where the sun had gone down;
+                        and over this, in a pale liquid solitude of hushed colour, was the evening
+                        star, trembling like a tear-drop. I was always sensitive to colour; and
+                        somehow or other this sunset relieved me—went right to my heart with a quiet
+                        sense of healing. That evening was, I think, one of the great points in my
+                        life. I seemed ever after to see my own character more clearly—how deep were
+                        my own capacities for feeling, and also how strangely Nature could enter in
+                        and comfort me, when all human sympathy would have seemed intrusive. That
+                        night, when I went upstairs, I hardly knew myself. There was a wild look in
+                        my eyes—an inexpressible mournfulness and an inexpressible longing. Two or
+                        three long tendrils of hair had got loose, and hung over my forehead with a
+                        kind of wild languor. ‘What is there that men can see in me to attract
+                        them?’ I had often said to myself. I think then a something of what it was
+                        began to dawn upon me. ‘And he—he, the true, the gallant, the devoted, he
+                        has lost all this’, I gasped, turning away from the glass; and, throwing
+                        myself on my knees by the bed, the sob I had so long suppressed broke forth,
+                        and I tried to pray—” h’m—and so on, and so on, and so on—’ 
+ ‘You needn’t read all those bits about the prayers,’ said Lady Ambrose. ‘I
+                        don’t think it is quite reverent.’ 
+ ‘Well,’ said Laurence, ‘here’s a new stage of her life. Let us go on here.
+                        “And now, from the bleak desolation of my present existence, I peer
+                        wistfully out on all sides, and see if any will bring the love to me that I
+                        so much crave for.”’ 
+ ‘Poor thing!’ said Mrs. Sinclair, with a little sigh. 
+ ‘I’m afraid,’ said Lady Ambrose, ‘I must mention, by the way, that the lady
+                        is married, and remarkably well married too.’ 
+ ‘“Here in the old house with its quiet gables,” Laurence went on reading, “I
+                        sit in my own room, and watch the sunset dying away over the yellowing
+                        autumn woods, itself the colour of a belated autumn leaf. I watch it
+                        alone—yes, thank heaven, alone. I manage to steal for an hour or two away
+                        from those people of whom the house is full. Who is there amongst them that
+                        can understand me? whose spirit meets mine on equal terms? I laugh with
+                        them, I talk with them, I jest with them, and they think they know me. But
+                        ah! the weariness, the far-offness of it all—”’ 
+ ‘It is entirely her own fault,’ said Lady Ambrose,’ that she has these
+                        people here. Her husband is devoted to the country and the turnips for their
+                        own sake, and would never see a soul but a few of the neighbouring squires
+                        and parsons, if she did not make him. In London, you know, she is nearly
+                        always by herself. At least,’ Lady Ambrose added, ‘he’s very rarely with
+                        her.’ 
+ ‘A little further on,’ said Laurence, ‘it seems that all the visitors have
+                        gone; and she has been to pay a visit to the parson’s wife.’ 
+ ‘You may be sure she was quite by herself if she did that,’ said Lady
+                        Ambrose. 
+ ‘Here,’ Laurence continued, ‘is a description of the visit. “What sweet eyes
+                        the little thing had! What a look of trustfulness in her face! A good and
+                        pure, and therefore a happy woman, if ever there was one. What a trust in
+                        those eyes of hers! What an innocence! What a sweet content! There is no
+                        purple shadow of care under her eyes—(people say I darken mine
+                        artificially. Alas! heaven knows there is little need for me to do that!)
+                        There is no secret trouble discernible in her lips—no languor in her air!
+                        What does she know of life, with its troubles, its distractions, its sins?
+                        Ah! were I but like her—I, world-worn and world-weary, sickened with pomps,
+                        and vanities, and soiled affections, and hollow homage—were I but worthy
+                        that she should talk to me! ‘Don’t talk to me,’ I felt inclined to say. ‘You
+                        wouldn’t if you knew—if you could know! Oh, how far better are
+                        you than I! You little dream when I show myself demurely in my seat in the
+                        village church, bowing at the Glorias, or kneeling with my face hid in my
+                        hands, you little imagine what a woman you see there. You little dream what
+                        strange thoughts unbidden mix themselves up for me with the hymn-music; what
+                        wild regrets, what bitter reveries, what strange scenes and figures, fill my
+                        mind as I kneel before the Communion-table. Why could I not have been
+                        content like you with a quiet lot, a toiling honest husband like you? Is
+                        there not something holy, even in his dull sermons, if you only look on them
+                        in the lovely light of duty? Why does my heart vibrate with the troubled
+                        wailing music of many sorrows, many longings, of which you do not even dream
+                        the existence? Oh! what a far higher, far nobler woman are you than I, in
+                        every way!”’ 
+ ‘And now,’ said Lady Ambrose, seeing that Laurence had shut the book, ‘I
+                        want to know if all this is a specimen of culture, and if you would call the
+                        writer a cultivated person; because she is really one of the most delightful
+                        people I know to talk to; and if this is what you call culture—though I
+                        think, in her case, it’s a little bit affected, you know—but then she never
+                        lets you see all this when you talk to her—I do quite from the bottom of my
+                        heart give up about culture being priggish, and bookish, and all that; and
+                        since, as you say, it really must include religion, I don’t see what we
+                        could wish for more, to make life—humanly speaking—perfect. Of course we
+                        shall do good sometimes—I mean, not forget the poor—there’s
+                        something so wretchedly heartless in that, I think. And then, too,
+                        politics—’ 
+ ‘Yes,’ repeated Allen, ‘politics—’ 
+ ‘Of course,’ said Lady Ambrose, ‘it is necessary that some of us should look
+                        after politics, because if we did not somebody else would. But still—(are
+                        you a Liberal, Lord Allen?)—but still, within a limit, I think the
+                            less we meddle the better.’ 
+ ‘Much, Lady Ambrose,’ said Mr. Rose, who had been somewhat put out by this
+                        digression, ‘much is, no doubt, to be got over in your friend’s style; nor
+                        do I think the culture displayed in her memoirs, even apart from that—’ 
+ ‘Oh, but you mustn’t judge her only by her writings,’ said Lady Ambrose.
+                        ‘When you meet her, she is not a bit like them.’ 
+ ‘Amateurs in writing rarely are,’ said Laurence. ‘Their writings are simply
+                        the foot-notes of their lives, where they tell you what they have not skill
+                        enough to bring into the text.’ 
+ ‘She draws beautifully,’ Lady Ambrose went on, ‘and is really the brightest
+                        of creatures—so witty, and with such a sense of the ridiculous! And really,
+                        to hear her tell a bit of scandal—not that I at all approve of scandal
+                        myself—I always think it’s so uncharitable—’ 
+ ‘Ah,’ said Donald Gordon gently, ‘I have the very highest opinion of
+                        scandal. It is founded on the most sacred of things—that is, Truth, and it
+                        is built up by the most beautiful of things—that is, Imagination.’ 
+ ‘Well, Mr. Gordon,’ said Lady Ambrose, smiling, ‘we won’t talk about that
+                        now. But as for what you say about style, Mr. Rose, it is rather jerky, and
+                        so forth, I admit. However, that’s the way with us women. Indeed, I often
+                        think that if women had invented language, it would have consisted mainly of
+                        interjections, and that its only stop would have been a note of
+                        exclamation.’ 
+ Mr. Rose was much annoyed at these interruptions. 
+ ‘I wanted to say,’ he went on, as soon as Lady Ambrose had ceased, ‘that I
+                        think your friend’s memoirs more instructive from their very shortcomings,
+                        as showing how the human mind—even if not exceptionally gifted —has come to
+                        be an organism of increased delicacy and capacity, except when stunted by
+                        the necessity of work, or of occupation that is other than voluntary, and
+                        chosen for any object beyond itself. You have here, you see, that same
+                        modern sense of the blending together of the outer and inner worlds; there
+                        is the same delicate discrimination between the aesthetic aspects of the
+                        different stages of life, and the nice gradation of moral colours: there is
+                        the same fine self-consciousness, and consequent endeavour to give tone and
+                        quality to her memories as they pass by her, in exquisite and complex ways.’ 
+ ‘Yes,’ exclaimed Leslie suddenly, who had spoken but little all the evening,
+                        ‘here, I think, is the crowning work of culture. It teaches each of us to
+                        look back upon his own life, with all its wants, its relations, and its
+                        possibilities, all its wasted hours and its affections trifled away or
+                        degraded—it teaches us to look back upon all this with quite a new kind of
+                        discrimination. The beauty of youth, with all its buoyancy and innocence,
+                        wakes in us of the modern world a more wistful and solemn regret; we are
+                        more keenly alive to the pathos of failure; to the sadness of the cold
+                        shadows that will often darken the whole inward landscape, and the ravage
+                        made by the storms that will sometimes break over it; and to the gleams of
+                        sunshine fitfully reappearing, often only touching its distant wolds. And
+                        the charm of this is,’ Leslie went on, with a short laugh, ‘that however
+                        disastrous our lives may have been, whatever shipwreck we may have made of
+                        ourselves or others, let us only look back on this with the eyes of culture,
+                        whilst “es wiederholt die Klage des Lebens labyrinthisch irren
+                            Lauf,” and the whole retrospect becomes a delightful picture,
+                        the more impressive and suggestive from its landslips, its broken roads, and
+                        its waste places. I really think one is repaid for having made oneself quite
+                        lonely, and deserted, and friendless, by the pleasure one gets from
+                        contemplating one’s own situation.’ 
+ ‘I cannot bear that man,’ whispered Lady Ambrose to Miss Merton. ‘Didn’t you
+                        notice the nasty way in which all that was said? But—good gracious, Mr.
+                        Laurence, what is that bell ringing for in the house? Is that for us to
+                        leave off talking? We have not half done yet.’ 
+ Laurence smiled, and looked a little shy, and murmured that he did not think
+                        it was so late. ‘I don’t know whether you’ll mind,’ he said at last, ‘but
+                        our Rector is going to give us a little evening service. He proposed it this
+                        afternoon in the garden, and I could not well refuse.’ 
+ ‘Mind it!’ exclaimed Lady Ambrose. ‘I should think not.’ 
+ ‘Service!’ said Dr. Jenkinson briskly; ‘yes, come and let us go to that. I
+                        think,’ he said, looking round him, ‘that you will find the religion we have
+                        is the best for us at present. I think so. And Christianity,’ he added,
+                        turning to Mr. Stockton, ‘really embraces all religions, even any honest
+                        denial of itself.’ 
+ There was now a general movement towards the house. 
+ ‘I’m afraid,’ said Mrs. Sinclair to Leslie, ‘that you’re not of a very happy
+                        disposition. You don’t look happy, somehow. And yet I think you might be, if
+                        you only tried. I suppose you’re not out of spirits like Mr.
+                        Laurence, because you don’t believe in the Trinity, are you? Just look at
+                        the sea now. Isn’t that beautiful? Don’t you care for that? But I, you
+                        know,’ she added with a sigh, ‘disagree with Mr. Luke. I want
+                        the notion of a personal deity, to make me enjoy nature. I want my thought
+                        to pass away to him. But I don’t mean a vague deity; but some one whom I
+                        have myself made a deity, and who, therefore, I can be quite sure exists—do
+                        you see?’ 
+ ‘My dear,’ said Lady Ambrose again to Miss Merton, ‘I really cannot bear Mr.
+                        Leslie. I feel quite sure he’s a bad man. And the way he sneers and laughs
+                        at things does go so against me. I wouldn’t have that man inside my house,
+                        do you know, for anything. I know you don’t think so; but then you Roman
+                        Catholics believe so much, you can afford to be liberal. Not that I myself
+                        am at all bigoted; indeed, the one thing I think we want is toleration and
+                        charity. And do you know, my dear,’ Lady Ambrose added as they were entering
+                        the house, ‘I have a set of eight cousins, all unmarried; and when I look at
+                        those girls’ faces, I do confess, my dear, that I positively wish your
+                        religion was true; for then they could all go into convents. One doesn’t
+                        like those half-and-half Protestant things, you know.’ 
+ Just at this moment, emerging from the house, pale and disappointed,
+                        appeared the figure of Mr. Saunders. 
+ ‘It is thrown away,’ he exclaimed; ‘my disproof of God’s existence. The
+                        under-housemaid did it! I am pleased to discover, however, that she
+                        previously read through a part; so it has not perished, I trust, without
+                        emancipating one spirit. What! are you all going indoors?’ 
+ ‘Yes,’ said Mr. Storks, laying his arm on Mr. Saunders’s shoulder; ‘and you
+                        had better come too. Young man,’ he said in a voice of commanding kindness,
+                        ‘you should never in this virulent way deny God’s existence. What rational
+                        man believes in it?’ 
+ ‘ before dinner,’ said Mr. Rose, who with Laurence was bringing up the rear,
+                        ‘at the books in your uncle’s pavilion in the garden; and I saw there, in a
+                        closed case, a copy of the “Cultes secrets des Dames Romaines.”’ 
+ ‘Well?’ said Laurence a little stiffly. ‘It has been locked up for years.’ 
+ ‘I conceived as much,’ said Mr. Rose gently. ‘As you do not seem to set much
+                        store by the work, I will give you thirty pounds for it.’ 
+</div></body></text></TEI>
