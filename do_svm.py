@@ -4,6 +4,7 @@ import re
 import sqlite3
 
 import numpy as np
+from joblib import dump, load
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
@@ -25,7 +26,11 @@ novels = []
 chap_nums = []
 chapters = []
 
-#Prepare the db:
+# Feature extraction
+vectorizer = TfidfVectorizer()
+svm = SVC()
+
+### Database-Related:
 connection = sqlite3.connect(f'./projects/{project_name}/db/svm.db')
 cursor = connection.cursor()
 
@@ -46,9 +51,9 @@ def close_db_connection():
     except Exception as e:
         print(f"Error while closing the database connection: {str(e)}")
 
-def insert_predictions_data(transactions):
+def insert_predictions_data(data):
     query = "INSERT INTO predictions VALUES (?,?,?,?,?,?,?,?,?)"
-    cursor.executemany(query, transactions)
+    cursor.executemany(query, data)
     connection.commit()
 
 def insert_chapter_data(data):
@@ -72,6 +77,7 @@ def update_the_chapters_table(column_names):
         cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN {name};")
         connection.commit()
 
+### Utility Functions
 def process_raw_files():
     all_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
     for i, file in enumerate(all_files):
@@ -91,7 +97,6 @@ def process_raw_files():
             chapter_num = file.split('_')[-1]
 
             raw_data.append((author, title, chapter_num, text))
-
 
 def build_lists():
     # Sometimes, our old friend Eltec doesn't parse right. So, we check.
@@ -134,7 +139,21 @@ def preprocess_text(text):
 
     return processed_text
 
+def prepare_chapter_data(column_names, outcomes_dict):
+    chapter_transactions = []
+    for key, value in outcomes_dict.items():
+        novel = key.split('-')[0]
+        chap_num = key.split('-')[1]
+        temp_transaction_tuple = (novel, chap_num)
+        for author, score in sorted(value.items()):
+            temp_transaction_tuple = temp_transaction_tuple + (score,)
+        chapter_transactions.append(temp_transaction_tuple)
+    update_the_chapters_table(column_names)
+    insert_chapter_data(chapter_transactions)
+
+### SVM stuff
 def test_model():
+    global svm
     # Split the dataset into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.30, random_state=42)
 
@@ -152,6 +171,7 @@ def test_model():
     print(report)
 
 def assess_authorship_likelihood():
+    global svm
     outcomes_dict = {}
     column_names = []  # Move the column_names list creation here
 
@@ -179,6 +199,7 @@ def assess_authorship_likelihood():
 
 
 def unseen_test():
+    global svm
     # Prepare previously unseen chapters
     #TODO: Create an actual unseen set.
     # Prepare previously unseen chapters
@@ -235,20 +256,24 @@ def unseen_test():
     insert_test_set_data(test_transactions)
    
 def generate_prediction_data():
-    temp_transactions = []
-
+    global svm
+    prediction_data = []
     # Extract features from the unseen chapters
     seen_features = vectorizer.transform(chapters)
 
-    # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    # Did we already make the model?  Load it.
+    if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
+        svm = load(f'./projects/{project_name}/models/seen.joblib')
+    else:
+        # Split the dataset into training and testing sets
+        X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
 
-    # Train the SVM classifier
-    svm.fit(X_train, y_train)
+        # Train the SVM classifier
+        svm.fit(X_train, y_train) #type: ignore
 
     # Predict authors for unseen chapters
-    seen_predictions = svm.predict(seen_features)
-    confidence_scores = svm.decision_function(seen_features)
+    seen_predictions = svm.predict(seen_features) #type: ignore
+    confidence_scores = svm.decision_function(seen_features) #type: ignore
 
     # Calculate total_iterations directly
     total_iterations = len(raw_data) * (len(raw_data) - 1) // 2
@@ -277,29 +302,37 @@ def generate_prediction_data():
         score2 = confidence2[author2_index]
 
         # Append the tuple to the list
-        temp_transactions.append((author1, novel1, chapnum1, author2, novel2, chapnum2, outcome, score1, score2))
+        prediction_data.append([author1, novel1, chapnum1, author2, novel2, chapnum2, outcome, score1, score2])
+
 
         pbar.update(1)
-
-    # Convert the list of transactions to a tuple
-    temp_transactions = tuple(temp_transactions)
-
-    insert_predictions_data(temp_transactions)
-    connection.commit()
     pbar.close()
+    insert_predictions_data(prediction_data)
 
+### Kickoff
+def rebuild_the_thing():
+    print("Continuing...")
+    prepare_the_db()
+    
+    print("\nTesting the model before proceeding...\n")
+    test_model()
 
+    outcomes_dict, column_names = assess_authorship_likelihood()
+    prepare_chapter_data(column_names, outcomes_dict)
+    generate_prediction_data()
+
+    print("\nSaving the model for next time...\n")
+    dump(svm, f'./projects/{project_name}/models/seen.joblib')
+    print("\nNow, testing the unseen texts...\n")
+    unseen_test()
 
 if __name__ == "__main__":
-    vectorizer = TfidfVectorizer()
-    svm = SVC()
     print("\nLoading raw files...\n")
     process_raw_files()
     authors, novels, chap_nums, chapters = build_lists()
     prepare_labels()
     unique_labels = np.unique(authors)
 
-    # Feature extraction
     X = vectorizer.fit_transform(chapters)
 
     # Check if the file exists
@@ -308,43 +341,11 @@ if __name__ == "__main__":
         # Ask the user if they want to continue
         user_input = input("Do you want to rebuild it ('n' moves on to testing)? (y / n): ")
         if user_input.lower() == "y":
-            print("Continuing...")
-            prepare_the_db()
-            
-            print("\nTesting the model before proceeding...\n")
-            test_model()
-
-            outcomes_dict, column_names = assess_authorship_likelihood()
-            chapter_transactions = []
-            for key, value in outcomes_dict.items():
-                novel = key.split('-')[0]
-                chap_num = key.split('-')[1]
-                temp_transaction_tuple = (novel, chap_num)
-                for author, score in sorted(value.items()):
-                    temp_transaction_tuple = temp_transaction_tuple + (score,)
-                chapter_transactions.append(temp_transaction_tuple)
-            update_the_chapters_table(column_names)
-            insert_chapter_data(chapter_transactions)
-            generate_prediction_data()
-            unseen_test()
+            rebuild_the_thing()
         else:
             unseen_test()
     else:
-        print("Continuing...")
-        prepare_the_db()
-        
-        print("\nTesting the model before proceeding...\n")
-        #test_model()
-
-        outcomes_dict, column_names = assess_authorship_likelihood()
-        chapter_transactions = []
-        for key, value in outcomes_dict.items():
-            novel, chap_num = key.split('-')
-            temp_transaction_tuple = (novel, chap_num, *sorted(value.items(), key=lambda x: x[0]))
-            chapter_transactions.append(temp_transaction_tuple)
-        update_the_chapters_table(column_names)
-        insert_chapter_data(chapter_transactions)
-        generate_prediction_data()
+        rebuild_the_thing()
         unseen_test()
 
     close_db_connection()
