@@ -141,6 +141,7 @@ def preprocess_text(text):
 
 def prepare_chapter_data(column_names, outcomes_dict):
     chapter_transactions = []
+    pbar = tqdm(desc='Preparing Chapter Data: ', total=(len(outcomes_dict.items())), colour="#a361f3", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for key, value in outcomes_dict.items():
         novel = key.split('-')[0]
         chap_num = key.split('-')[1]
@@ -148,8 +149,10 @@ def prepare_chapter_data(column_names, outcomes_dict):
         for author, score in sorted(value.items()):
             temp_transaction_tuple = temp_transaction_tuple + (score,)
         chapter_transactions.append(temp_transaction_tuple)
+        pbar.update(1)
     update_the_chapters_table(column_names)
     insert_chapter_data(chapter_transactions)
+    pbar.close()
 
 ### SVM stuff
 def test_model():
@@ -175,11 +178,14 @@ def assess_authorship_likelihood():
     outcomes_dict = {}
     column_names = []  # Move the column_names list creation here
 
-    # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
-    svm.fit(X_train, y_train)
+    if os.path.exists(f'./projects/{project_name}/models/authors.joblib'):
+        svm = load(f'./projects/{project_name}/models/authors.joblib')
+    else:
+        # Split the dataset into training and testing sets
+        X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
+        svm.fit(X_train, y_train)
 
-    pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#a361f3", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
+    pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#FB3FA8", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for author, novel, chapter, chap_num in zip(authors, novels, chapters, chap_nums):
         # Compute the likelihood scores for each author
         vectorized_text = vectorizer.transform([chapter])
@@ -195,6 +201,7 @@ def assess_authorship_likelihood():
         pbar.update(1)
     pbar.close()
 
+    dump(svm, f'./projects/{project_name}/models/authors.joblib')
     return outcomes_dict, column_names  # Return column_names from the function
 
 
@@ -211,10 +218,15 @@ def unseen_test():
             body = file.read()
             text = preprocess_text(body)
             unseen_chapters.append(text)
-    # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
-    # Train the SVM classifier
-    svm.fit(X_train, y_train)
+    
+    if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
+        svm = load(f'./projects/{project_name}/models/seen.joblib')
+    else:
+        # Split the dataset into training and testing sets
+        X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+        # Train the SVM classifier
+        svm.fit(X_train, y_train)
+
     # Extract features from the seen chapters
     seen_features = vectorizer.transform(chapters)
     # Predict authors for unseen chapters
@@ -323,7 +335,7 @@ def rebuild_the_thing():
 
     print("\nSaving the model for next time...\n")
     dump(svm, f'./projects/{project_name}/models/seen.joblib')
-    print("\nNow, testing the unseen texts...\n")
+    print("Now, testing the unseen texts...\n")
     unseen_test()
 
 if __name__ == "__main__":
@@ -336,16 +348,16 @@ if __name__ == "__main__":
     X = vectorizer.fit_transform(chapters)
 
     # Check if the file exists
+    #BUG: There's a bug here.  DB gets opened, so this is always true.
     if os.path.exists(f'./projects/{project_name}/db/svm.db'):
         print("svm.db exists.")
         # Ask the user if they want to continue
-        user_input = input("Do you want to rebuild it ('n' moves on to testing)? (y / n): ")
+        user_input = input("Do you want to rebuild it ('n' moves on to testing)? (y/n): ")
         if user_input.lower() == "y":
             rebuild_the_thing()
         else:
             unseen_test()
     else:
         rebuild_the_thing()
-        unseen_test()
 
     close_db_connection()
