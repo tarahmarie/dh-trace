@@ -84,7 +84,18 @@ choose_project () {
     check_file_counts
 }
 
-#Compares file counts with last run.  If match, asks if you want to re-do.
+<<com
+
+Compares file counts with last run.  If match, asks if you want to re-do.
+If there's not a match (e.g. if you've included an extra piece of text or there's
+an alignment file missing, etc), it does not ask you anything, but continues
+to run the work script with no further prompt. Intended to save you from having to 
+rerun the statistics each time if no changes to the texts have occurred, and 
+will display the previous stats generated.
+
+com
+
+
 check_file_counts () {
     project_file_count=$(find ./projects/"$project_name"/splits -type f ! -name '.DS_Store' | wc -l | awk '{print $1}')
     
