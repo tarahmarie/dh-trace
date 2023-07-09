@@ -10,7 +10,14 @@ while IFS='' read -r line; do PROJECTS+=("$line"); done < <(basename -a ./projec
 project_file_count=""
 last_run_file_count=""
 
-#Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
+<<com
+
+Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
+A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
+to find texts in the format it needs, and looks for the relevant inputs like alignments.
+
+com
+
 initialize_new_project () {
     tput clear;
     printf "\n\tHello!\n\n\t"
