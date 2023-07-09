@@ -1,3 +1,6 @@
+# This script uses nltk to generate a list of n-grams for an individual
+# file, and stores all of them (shingled) in the db for later processing.
+
 import re
 
 from nltk.util import ngrams

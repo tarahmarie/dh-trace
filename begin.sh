@@ -10,7 +10,14 @@ while IFS='' read -r line; do PROJECTS+=("$line"); done < <(basename -a ./projec
 project_file_count=""
 last_run_file_count=""
 
-#Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
+<<com
+
+Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
+A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
+to find texts in the format it needs, and looks for the relevant inputs like alignments.
+
+com
+
 initialize_new_project () {
     tput clear;
     printf "\n\tHello!\n\n\t"
@@ -77,7 +84,18 @@ choose_project () {
     check_file_counts
 }
 
-#Compares file counts with last run.  If match, asks if you want to re-do.
+<<com
+
+Compares file counts with last run.  If match, asks if you want to re-do.
+If there's not a match (e.g. if you've included an extra piece of text or there's
+an alignment file missing, etc), it does not ask you anything, but continues
+to run the work script with no further prompt. Intended to save you from having to 
+rerun the statistics each time if no changes to the texts have occurred, and 
+will display the previous stats generated.
+
+com
+
+
 check_file_counts () {
     project_file_count=$(find ./projects/"$project_name"/splits -type f ! -name '.DS_Store' | wc -l | awk '{print $1}')
     
@@ -108,7 +126,15 @@ check_file_counts () {
     fi
 }
 
-#Actually executes the work on a given project.
+<<com
+
+Actually executes the work on a given project. From previous function, doing this
+only if either asked to or if the file count doesn't match from a previous run.
+Deletes old databases, runs the set of functions on files for calculation of
+results and statistics, and stores in fresh dbs.
+
+com
+
 do_the_work () {
     printf "\n\n\tRemoving old dbs (if they exist) and loading data..."
     printf "\n"
@@ -123,8 +149,8 @@ do_the_work () {
         rm projects/"$project_name"/db/"$project_name"-predictions.db;
     fi
 
-    python load_authors_and_texts.py;
-    python load_alignments.py;
+    python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
+    python load_alignments.py; 
     python load_ngrams.py;
     python load_hapaxes.py;
     python load_hapax_intersects.py;

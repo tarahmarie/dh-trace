@@ -1,3 +1,9 @@
+# This script is basically the row or record generator for the purposes
+# of the rest of the application. Goes through and for each relationship 
+# (the relationships are what we're interested in, not individual texts)
+#  calculates the alignment, hapax, and ngram overlaps. It calls the
+# Jaccard calculations for similarity in database_ops for the rows, as well.
+
 import itertools
 
 from tqdm import tqdm
@@ -33,7 +39,7 @@ hapax_transactions = []
 ngram_transactions = []
 align_transactions = []
 
-#Load the Dictionaries for processing
+#Load the Dictionaries for processing. These are the basic datapoints for statistical analyis.
 chapter_counts_dict = get_dir_lengths_for_processing()
 dict_of_files_and_passages = read_all_alignments_from_db()
 chapter_lengths = read_all_chapter_length_from_db()
@@ -135,7 +141,7 @@ def process_chapters_with_ngrams_sorted(first_name, first_id, second_name, secon
 
     align_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], num_alignments, num_alignments_over_pair_length, num_alignments_over_corpus_length, pair_length, length_of_corpus_text, pair_id))
 
-def compute_the_averages():
+def compute_the_averages(): 
     total_comparisons = total_file_count * (total_file_count - 1)
     total_words = words_counted_in_comparisons
 

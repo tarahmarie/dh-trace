@@ -1,3 +1,7 @@
+# This script is finding, matching, cleaning, and counting all the authors
+# and texts inside splits to get ready to do some math on them all. Adds
+# them to a fresh db in the paired format for later calculation.
+
 import itertools
 
 from tqdm import tqdm
