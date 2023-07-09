@@ -11,6 +11,13 @@ from database_ops import (insert_alignments_to_db, insert_last_run_stats_to_db,
 from util import (fix_the_gd_author_name_from_aligns, get_project_name,
                   getCountOfFiles)
 
+# Goes and gets the pairs from the fresh db after having loaded authors 
+# and texts into it during load_authors_and_texts.py. Matches the 
+# authors and pairs up to the pairs found in the alignments json 
+# file which has been previously generated in docker and moved to this 
+# projects file location. Adds the values in sequence alignment to 
+# the project db for later calculation.
+
 author_and_id_dict = read_all_author_names_and_ids_from_db()
 inverted_authors = read_author_names_by_id_from_db()
 text_and_id_dict = read_all_text_names_and_ids_from_db()

@@ -1,3 +1,9 @@
+# This script sets up and runs similarity calculations amongst the relationship
+# rows. Here's where booleans and hyperparameters like year of publication can
+# be set. Right now, the influence calculation is subject to the authors being
+# loaded in the correct order; year of publication is not taken into account.
+# This probably needs to change so no inadvertent errors are introduced.
+
 from itertools import permutations
 
 from tqdm import tqdm
@@ -38,10 +44,15 @@ def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac
     al_score = 0.0
     outcome = "No" #Base case.
     
-    hap_score = round((hap_jac_dis * hapax_weight), 8)
+    hap_score = round((hap_jac_dis * hapax_weight), 8) 
     al_score = round((al_jac_dis * align_weight), 8)
     comp_score = sum([hap_score, al_score])
     
+# Here's the key generation of the four possible values in comparing one author to another.
+# Either the text-relationship is the same author, or it's not. The computer says the 
+# text is the same author, or not. Four possible results can occur; Y,N,NY (computer says no 
+# but it should have been yes), YN (computer says yes but it should have been no).
+
     #Computer says no.
     if comp_score < threshold and source_auth == target_auth: #Computer should have said yes.
         outcome = "NY"

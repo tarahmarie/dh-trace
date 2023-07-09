@@ -1,3 +1,6 @@
+# This script takes all the ngrams in two files, computes the overlapping ngrams,
+# then stores the relevant relationships with their stats surrounding n-grams in the project db.
+
 import itertools
 
 from tqdm import tqdm

@@ -1,3 +1,9 @@
+# this script does two major things (consider splitting into two files?):
+# handles the db operations, cleanup, creation, etc, and also runs the
+# Jaccard calculations to ensure that the stats between text files are 
+# normalized for the lengths of texts instead of simply advantaging the
+# longest texts for most hapax overlap, etc.
+
 import ast
 import sqlite3
 
@@ -470,7 +476,7 @@ def calculate_alignments_jaccard_similarity():
 
     disk_cur.execute("SELECT source_filename, target_filename, length_source_passage, length_target_passage, source_total_words, target_total_words FROM alignments_jaccard;")
     the_result = disk_cur.fetchall()
-
+# Extremely key element here; calculation of Jaccard similarity based on a normalized length of text, not just total contents.
     for thing in the_result:
         jac_sim = (sum([thing['length_source_passage'],thing['length_target_passage']])) / (sum([thing['source_total_words'],thing['target_total_words']]))
         jac_dis = 1 - jac_sim

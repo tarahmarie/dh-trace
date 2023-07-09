@@ -1,3 +1,6 @@
+# Does what it says on the box; creates a graph for the two authors 
+# that have just been analyzed. Stepwise for various thresholds.
+
 import os
 
 import pandas as pd

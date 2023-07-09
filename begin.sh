@@ -126,7 +126,15 @@ check_file_counts () {
     fi
 }
 
-#Actually executes the work on a given project.
+<<com
+
+Actually executes the work on a given project. From previous function, doing this
+only if either asked to or if the file count doesn't match from a previous run.
+Deletes old databases, runs the set of functions on files for calculation of
+results and statistics, and stores in fresh dbs.
+
+com
+
 do_the_work () {
     printf "\n\n\tRemoving old dbs (if they exist) and loading data..."
     printf "\n"
@@ -141,8 +149,8 @@ do_the_work () {
         rm projects/"$project_name"/db/"$project_name"-predictions.db;
     fi
 
-    python load_authors_and_texts.py;
-    python load_alignments.py;
+    python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
+    python load_alignments.py; 
     python load_ngrams.py;
     python load_hapaxes.py;
     python load_hapax_intersects.py;

@@ -1,3 +1,8 @@
+<<com
+This is the helper script to call the stats generator (auto_author_prediction)
+and the plotter to see some of the display for how the relationships show up in space.
+com
+
 #!/usr/bin/env bash
 
 set -euo pipefail

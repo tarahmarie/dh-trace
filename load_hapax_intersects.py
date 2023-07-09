@@ -1,3 +1,6 @@
+# This script compares the hapaxes between two files and stores the overlap 
+# in the project db for statistical analysis later.
+
 import itertools
 
 from tqdm import tqdm

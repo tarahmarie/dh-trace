@@ -1,3 +1,6 @@
+# For each text file, get the list of hapaxes and store in a db. 
+# This does the individual calculation on each file.
+
 from tqdm import tqdm
 
 from database_ops import (insert_hapaxes_to_db,
