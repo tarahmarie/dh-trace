@@ -9,3 +9,4 @@ alignments.jsonl
 __pycache__/*
 __pycache__/*.pyc
 *.pyc
+*.joblib

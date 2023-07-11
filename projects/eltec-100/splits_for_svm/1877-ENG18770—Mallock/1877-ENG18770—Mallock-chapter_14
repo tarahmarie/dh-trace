@@ -1,0 +1,348 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The New Republic by W.H. Mallock : HTML
+                        version</title><author>Mallock, William Hurrell (1849-1923)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1877</date></publicationStmt></teiHeader><text><body><div type="chapter" n="14">
+BOOK V.
+CHAPTER I.
+ ONCE more the theatre was brightly lighted; and once more the congregation
+                        was assembled in the tier of boxes. There was not so much excitement as
+                        there had been in the morning; indeed, the reserved decorum that reigned
+                        might have been said to partake almost of the nature of apathy. When,
+                        however, Dr. Seydon entered, none could deny that he did indeed look a
+                        reverend man; and the very aspect of the place seemed to grow devotional at
+                        his presence. Lady Ambrose perceived with a full heart that he was duly
+                        habited in a surplice; and her bosom warmed with a sense of safety and of
+                        comfort as he took his place and solemnly produced his prayer-book. Nor was
+                        Lady Ambrose alone in this sudden stir of feeling. There was another of the
+                        worshippers who was moved even more strongly, though in a slightly different
+                        way. Many starts had been given on the stage in that theatre; but none of
+                        these, it may be safely said, ever equalled one now given in the boxes, as
+                        Dr. Jenkinson, who had been kneeling with his face hid in his hands, raised
+                        his eyes, and saw for the first time who it was confronting him—no obscure
+                        rural clergyman, as he had anticipated, but that illiberal apologist of
+                        superstition, whose officious bigotry had robbed the Upper House of its most
+                        enlightened spiritual peer. Dr. Jenkinson, however, with the heroism of a
+                        true martyr, suffered bravely for his faith in the comprehensiveness of
+                        Christianity. His face assumed, in another moment, an expression of cherubic
+                        suavity; in his gentlest and devoutest tones he was soon taking his part in
+                        the whole service, and that too with such an exquisite clearness of
+                        articulation, that, amongst the confused murmurs of the rest, the entire
+                        evening office sounded like a duet between him and Dr. Seydon. It is true
+                        that there was something in the ring of this one audible voice that gave the
+                        latter a sense of something being wrong somewhere; but luckily, being a
+                        little shortsighted, he could not recognise the owner of it; and Dr.
+                        Jenkinson, feeling no manner of call to endure the sermon, retired furtively
+                        as soon as the prayers were over. 
+ ‘Weren’t they read beautifully!’ said Lady Ambrose to Lady Grace in a
+                        whisper. ‘Oh, how glad I shall be to hear him preach once again!’ she added,
+                        as Dr. Seydon, having risen from his knees, retired, his hands clasped
+                        before him, through the side door. Lady Ambrose, however, was entirely alone
+                        in this gladness. Most of the others dreaded the sermon that was imminent,
+                        and some even meditated following Dr. Jenkinson. But events were too quick
+                        for them. Hardly, it seemed, had Dr. Seydon left the stalls, than the
+                        curtain drew rapidly up, and displayed again the gorge in the Indian
+                        Caucasus, only with a preacher in it very different from the one who had
+                        stood there in the morning. The whole congregation gave a sudden gasp of
+                        surprise. It was not Dr. Seydon that they saw. It was Mr. Herbert. 
+ With a gracious gravity he advanced towards the footlights; and made a
+                        slight bow to the house—a bow of deprecation and apology. 
+ ‘A little while ago, in the garden,’ he said, ‘I confessed to our kind host,
+                        Mr. Laurence, that there were a few things that I should like quietly to say
+                        to you; and Mr. Laurence has become sponsor for you all, and has promised,
+                        in your names, that you would suffer me to say them here. It is true,’ Mr.
+                        Herbert went on, with a smile and a wave of his hand, ‘that when I look
+                        round me at this glittering semicircle, I begin to feel not a little shy of
+                        you, and to repent of my own temerity. You, however, have given me to-day so
+                        much good food for reflection, that I feel bound, in the commonest honesty,
+                        to make what poor return I can. So remember, that if I weary you, you have
+                        really brought it upon yourselves. 
+ ‘Well—to begin, then. You think me—you need not deny it, for I know you
+                        think me—a somewhat crotchety and melancholy individual, averse to modern
+                        knowledge and to modern progress, and seeing, as a rule, everything very
+                        yellow indeed, with his jaundiced eyes. But I think myself that I am not by
+                        any means so obstinate and so wrong-headed as I am quite aware that I appear
+                        to you; nay, my own opinion is that I err, rather, in not being quite
+                        obstinate enough. It is true that I have persistently pointed out that
+                        England is at present given over wholly to ignoble pursuits, and is ruining
+                        herself with deadly industries. But I have never said hitherto, so far as I
+                        know, that we might not rally, and that a brighter future might not be in
+                        store for us. Nay, I hailed a piece of news to-day with the most unfeigned
+                        delight, which seemed an omen to me that such a brighter future actually was
+                        in store for us. In a paper that reached me this afternoon there was a
+                        letter on the prospects of the English iron trade; and I read in that letter
+                        that nineteen foundries in Middlesborough have been closed within the last
+                        three months, and the Moloch fires in their blast-furnaces extinguished;
+                        that ten more foundries in the same place are scarcely able to continue
+                        work, and must very shortly be closed likewise; and that the dense
+                        smoke-cloud that so long has darkened that whole country is beginning to
+                        clear away, and will open ere long upon astonished human eyes, that have
+                        never yet beheld it, the liquid melted blue of the deep wells of the sky. It
+                        is quite true that this indication of a reviving prosperity for our country
+                        suggests more than it proves. But at any rate it put me this afternoon, when
+                        I joined your party, into quite a right and hopeful mood for appreciating
+                        your conceptions of a better order of things. It is in fact simply to
+                        explain my appreciation that I am, in this most unconscionable way, now
+                        detaining you. 
+ ‘Let me say in the first place, then, how profoundly right I consider the
+                        manner in which you set to work. For it is one of the most vital of all
+                        truths, that in a perfect state all the parts will be perfect; and that if
+                        the highest classes be as good as they can be, so also will be all the other
+                        classes. And I want to tell you, in the next place, how entirely fair and
+                        lovely did all the elements seem to be, out of which you composed for your
+                        higher classes their ideal existence. For you gave them every outward grace
+                        that could adorn life, and every inward taste and emotion that could enrich
+                        it, and every species of intellectual activity that could stimulate it. Your
+                        society was indeed to be truly the crème de la crème: it
+                        was to be made beautiful, and profound, and brilliant, by lovers, and
+                        theologians, and wits, and men of science, and poets, and philosophers, and
+                        humourists—all men and women of the world, and fit to live in society, as
+                        well as to educate it. This would indeed be, as was said at dinner, Rome and
+                        Athens and Florence, at their best, and let me add Paris also, united and
+                        reanimated, and enriched by the possession of yet wider knowledge, and the
+                        possibilities of freer speculation. That truly is a dazzling picture. But
+                        even that is not all. There was your city itself too, of which a lovely
+                        glimpse was given us, with its groves, its gardens, its palaces, and its
+                        exquisite reproductions of the world’s noblest architectures; and all this
+                        under our softest English skies, and by our bluest English seas. Ah,’
+                        exclaimed Mr. Herbert, smiling, and clasping his hands gently, ‘how I should
+                        like to live in a city like that! I can literally see it now with my mind’s
+                        eye, whilst I am talking. I see its private houses with their wonders of
+                        wrought marble; I see its theatres, its museums, its chapels and churches of
+                        all denominations, its scientific lecture rooms, and its convents. For what
+                        strikes me more forcibly than anything is that all forms of faith and
+                        philosophy seem to find here an impartial home, and to unite in animating
+                        one harmonious social life. In fact, so vividly do I see this scene which
+                        your words have called up before me, that I want very much, if you will let
+                        me, to acid one small feature to it, myself. It is a very humble detail,
+                        this of mine. In the eyes of the men of science, who lead modern thought, it
+                        is simply a sanitary matter. It relates to the way in which you shall
+                        dispose of your dead. Now in this, at least, you will be surprised to hear I
+                        quite keep pace with the times, being a sincere advocate for cremation; and
+                        what I should want to do in your city, would be to supply it with an
+                        establishment, hidden underground, where the bodies of the dead should be
+                        turned into gas, in properly devised retorts; the gas from each body being
+                        received in a small separate gasometer. Above these gasworks, and amongst
+                        your fair towers and spires, and your superb institutions, and
+                        art-galleries, I would build a circular domed temple of umbred marble, blind
+                        and blank upon the face of it, without carved work, and without window; only
+                        there should be written above the portal, not as in Dante’s vision,
+                                 Per me si va nell’ eterno dolore, but one
+                        verse out of our English translation of the Bible, for women and little
+                        children to read; and another verse out of a Latin poet, which is, I
+                        believe, an equivalent for the original of that translation, for men and
+                        scholars to read. The first should be, “Though after my skin worms destroy
+                        this body, yet in my flesh shall I see God.” And the other: 
+                                  Quæris quo jaceas post obitum loco? And within, around
+                        the dark walls, should be a number of separate shrines, like—to use the
+                        simile that Dante would have chosen—the stalls in a great stable; and to
+                        each shrine there should be a separate gas-jet. And when the life of any was
+                        over, after the fire had done its work upon the dead body, that man or woman
+                        who felt most bitterly the loss of the one that had been, should repair to
+                        this temple, to an appointed shrine, and there, in silence kneeling before
+                        it, should light the gas-jet; and thus evoking for the last time that which
+                        was once so loved and loving, pass, with what thoughts might be, a brief
+                        vigil before it, till its flicker grew slowly faint upon the watcher’s face,
+                        and at length it went out and ended utterly and for ever. And above, over
+                        these sanctuaries of bereavement and final leave-taking, there should hang
+                        from the domed roof one rude iron lamp, always burning—casting a pale flare
+                        upwards upon the darkness. This would be the common lamp of the poor, for
+                        whose sake, dying, no one felt bereavement, or whom no one at any rate could
+                        find time to say good-bye to; but who thus united together, apart by
+                        themselves, would do all that would be at all seemly in them—would remind
+                        you mutely and unobtrusively by their joint light, that one thing at least
+                        they shared with you, namely death. It is not of the poor, however, that I
+                        am mainly thinking now. It is of your higher classes, who have leisure to
+                        feel sorrow and all its holy influences. And these, I say, would find in
+                        this simple funeral service one that would meet all their diverse needs, and
+                        be in tune with all their diverse feelings. It would suit all. For to some
+                        it would symbolise an absolute disbelief in any life beyond; and to all the
+                        rest it would symbolise a bewildered doubt about any life beyond. For in one
+                        or other of these states of mind everyone would be. 
+ ‘Do you deny it?’ exclaimed Mr. Herbert, raising his voice suddenly, and
+                        looking round the theatre with a passionate anger, at which the whole
+                        audience were literally electrified. ‘Do you deny it?’ he exclaimed. ‘I tell
+                        you that it is so. I tell you too that that is your own case, and that in
+                        your Utopia you have aggravated the evil, and have not remedied it. You are
+                        all deniers or doubters, I tell you, every one of you. The deniers, I know,
+                        will not contradict me; so at present I need not speak to them. It is to
+                        you—the majority, you who will contradict me; you who are so
+                        busy with your various affirmations, with your prayers, your churches, your
+                        philosophies, your revivals of old Christianities, or your new improvements
+                        on them; with your love of justice, and humanity, and toleration; it is to
+                        you that I speak. It is to you that I say that, however enlightened and
+                        however sure you may be about all other matters, you are darkened and
+                        uncertain as to this—whether there really is any God at all who can hear all
+                        the prayers you utter to Him, or whether there really is any other life at
+                        all, where the aspirations you are so proud of will be realised, and where
+                        the wrongs you are so pitiful over will be righted. There is not one amongst
+                        you who, watching a dead friend, flickering for the last time before you in
+                        the form of a gas-flame, and seeing how a little while and this flame was
+                        with you, and again a little while and it was not with you, would be at all
+                        sure whether this was really because, as your hearts would suggest to you,
+                        it went to the Father, or because, as your men of science would assert to
+                        you, it went simply—out. 
+ ‘Listen to me for a moment, and I can prove that this is so, to you. You are
+                        rich, and you have leisure to think of things in what light you will, and
+                        your life is to a great extent made easy for you by the labour of others. I
+                        do not complain of that. There can be no civilisation without order, and
+                        there can be no order without subordination. Outward goods must be
+                        apportioned unequally, or there would be no outward goods to apportion. But
+                        you who have the larger share of these are bound to do something for those
+                        who have the less. I say you are bound to do so; or else sooner
+                        or later that larger share will be taken away from you. Well, and what is it
+                        you propose to do? I know your answer—I have heard it a thousand times. You
+                        will educate them—you will teach them. And truly, if you know how to do that
+                        properly, you will have done all you need do. But,’ exclaimed Mr. Herbert,
+                        his voice again rising, and quivering with excitement, ‘that is just what
+                        you do not know. I am not casting my words at random. Out of your own mouths
+                        will I judge you. There never was a time when you talked so much as now
+                        about teaching the people, and yet do not you yourselves confess that you
+                        cannot agree together as to what to teach them? You can agree about teaching
+                        them—I know this too well—countless things that you think will throw light
+                        upon life; but life itself you leave a blank darkness upon which no light
+                        can be thrown. You say nothing of what is good in it, and of what is evil.
+                        Does success in it lie in the enjoyment of bodily pleasures, or in the doing
+                        of spiritual duty? Is there anything in it that is right for its own sake,
+                        or are all things right only because of their consequences? And seeing that,
+                        if we struggle for virtue, our struggles can never be quite successful here,
+                        is there any other place where they may have, I do not say their reward, but
+                        their consummation? To these questions only two answers can be given, and
+                        one must be entirely true, and the other entirely false. But you—you dare
+                        not give either; you are too enlightened. It is true that you
+                        can afford to be liberal about these matters; you can afford to consider
+                        truth and falsehood equally tolerable. But for the poor man
+                        surely it is not so. It must make some difference to him what you teach him,
+                        whether your teaching is to open his eyes to his God and to his duty, and so
+                        place his noblest happiness in his own hands, or whether it is to open his
+                        eyes to those verified Utilitarian principles from which he
+                        will learn that his own life and labour are only not utterly contemptible,
+                        because they conduce to a material well-being in which he himself can have
+                        no share. If, with entire belief yourselves, you are prepared to give him
+                        the former teaching, why then it is well and good both for him and you. But
+                        if not, beware of teaching him at all. You will but be removing a cataract
+                        from his mind’s eye that he may stare aghast and piteous at his own poverty
+                        and nakedness, or that he may gaze with a wild beast’s hunger at your own
+                        truly noble prosperity which he can never taste, save in the wild beast’s
+                        way. 
+ ‘But enough of the poor; enough of this division of happiness. Let me ask
+                        you to consider now what sort of happiness there is to divide—I say divide,
+                        meaning that you will get the whole of it. And as I have said before, this
+                        happiness is very fair in seeming. Knowledge, and culture, and freedom, and
+                        toleration—you have told us what fine things all these can do for you. And I
+                        admit it myself too; I feel it myself too. Lovely, indeed, to look upon are
+                        the faiths, the philosophies, the enthusiasms of the world—the ancient
+                        products of the ages—as the sunshine of the modern intellect falls on them.
+                        See, they look clearer, and brighter, and more transparent—see, they form
+                        themselves into more exquisite and lucid shapes, more aërial structures. But
+                        why? Do not deceive yourselves; it is for a terrible reason. It is because,
+                        like a fabric of snow, they are one and all dissolving. 
+ ‘Listen, and I will show you that this is so. Aristotle says that what is
+                        truly a man’s Self is the thinking part of him. This sooner or later all the
+                        other parts obey—sooner or later, willingly or unwillingly; and if this Self
+                        be base, the whole man will be base; if the Self be noble, the whole man
+                        will be noble. And as it is with the individual man, so it is with the ages
+                        and the generations. They obey their several Selves, whatever these Selves
+                        may be. The world once had a Self whose chief spokesman was a Jewish peasant
+                        called Jesus; and sooner or later the world followed him. Later on, it had a
+                        Self whose chief spokesmen were Dominics or Luthers or Loyolas; and in like
+                        manner the world followed them. Later still, it had got another Self, and
+                        the chief spokesmen of this were Voltaires and Rousseaus, And in each case
+                        the world was convinced at heart, consciously or unconsciously, that the
+                        vital truths of life were to be sought for only where these Selves sought
+                        for them. With Jesus and with Luther it sought them in duty and in a turning
+                        to the true God; with Voltaire and Rousseau, in justice, and in a turning
+                        from the false God. And now, where do you seek them? Where does the Self of
+                        your age seek them—your Self, that thinking part of you before which you all
+                        either quail or worship? Does it seek them either in justice, or
+                        loving-kindness, or in the vision of the most high God! No—but in the
+                        rotting bodies of dead men, or in the writhing bodies of live cats. And in
+                        your perplexity, and your amazed despair, ever and again you cry to it, What
+                        shall we do to be saved? Show us the Father! Show us the high and holy One
+                        that inhabiteth Eternity! And what does your Self answer you? It answers you
+                        with a laugh, “There is no high and holy One at all. How say ye then to me,
+                        Show us the Father? For the Earth saith, He is not with me; and the depth
+                        saith, He is not with me; and our filthy phials of decaying animal matter
+                        say, He is not with us. Argal, ye poor foolish seekers, He is nowhere.” You
+                        may try to escape from your own Self, but you cannot; you may try to forget
+                        its answer, but you cannot. Loudly you may affirm with your lips; but the
+                        importunate denial is ever at your heart. Patriæ quis exsul se
+                            quoque fugit?
+
+ ‘What do you do then in this perplexity—this halting between two opinions?
+                        Why, you do this. You try to persuade yourselves that neither opinion is of
+                        much moment—that the question cannot be decided absolutely—that it should
+                        not be decided absolutely—in fact, that it is one of your chief glories that
+                        you leave it undecided. But I tell you, in that case, that though you say
+                        you are rich, and increased with goods, and have need of nothing; you are,
+                        in reality, wretched, and miserable, and poor, and blind, and naked. I am
+                        not casting my words at random. Again out of your own mouths will I judge
+                        you. All your culture, you say, is based ultimately upon this—a
+                        discrimination between right and wrong. True, profoundly true. But will you
+                        be able to say what is right and what is wrong any longer, if you don’t know
+                            for whom anything is right and for whom
+                        anything is wrong—whether it is for men with immortal souls, or only with
+                        mortal bodies— who are only a little lower than the angels, or only a little
+                        better than the pigs? Whilst you can still contrive to doubt upon this
+                        matter, whilst the fabric of the old faith is still dissolving only, life
+                        still for you, the enlightened few, may preserve what happiness it has now.
+                        But when the old fabric is all dissolved, what then? When all divinity shall
+                        have gone from love and heroism, and only utility and pleasure shall be
+                        left, what then? Then you will have to content yourselves with complete
+                        denial; or build up again the faith that you have just pulled down—you will
+                        have to be born again, and to seek for a new Self. 
+ ‘But suppose we accept denial, you will say, what then? Many deniers have
+                        lived noble lives, though they have looked neither for a God nor for a
+                        heaven. Think of Greece, you will say to me, and that will answer you.
+                        No—but that is not so, and that will not answer me. The Greeks never, in
+                        your sense, denied God; they never, in your sense, denied eternal
+                        life—never, because they never knew them. They felt God only;
+                        they felt him unconsciously; and in denying the God they knew, they were
+                        really affirming the God they felt. But you—do not you deceive yourselves.
+                        Do not think you can ever again be as the Greeks. The world’s progress has a
+                        twofold motion. History moves onwards round some undiscovered centre, as
+                        well as round what you consider its discovered axis; and though it seems to
+                        repeat itself, it never can repeat itself. The Atheism of the modern world
+                        is not the Atheism of the ancient: the long black night of the winter is not
+                        the swift clear night of the vanished summer. The Greek philosopher could
+                        not darken his life, for he knew not from what mysterious source the light
+                        fell upon it. The modern philosopher does know, and he knows that it is
+                        called God, and thus knowing the source of light he can at once quench it. 
+ ‘What will be left you then if this light be quenched? Will art, will
+                        painting, will poetry be any comfort to you? You have said that these were
+                        magic mirrors which reflected back your life for you. Well—will they be any
+                        better than the glass mirrors in your drawing-rooms, if they have nothing
+                        but the same listless orgy to reflect? For that is all that will be at last
+                        in store for you; nay, that is the best thing that possibly can be in store
+                        for you; the only alternative being not a listless orgy for the few, but an
+                        undreamed of anarchy for all. I do not fear that, however. Some will be
+                        always strong, and some will be always weak; and though, if there is no God,
+                        no divine and fatherly source of order, there will be, trust me, no
+                        aristocracies, there will still be tyrannies. There will still be rich and
+                        poor; and that will then mean happy and miserable; and the poor will be— as
+                        I sometimes think they are already—but a mass of groaning machinery, without
+                        even the semblance of rationality; and the rich, with only the semblance of
+                        it, but a set of gaudy, dancing marionettes, which it is the machinery’s one
+                        work to keep in motion. 
+ ‘What, then, shall you do to be saved? Rend your hearts, I say, and do not
+                        mend your garments. Seek God earnestly, and peradventure you still may find
+                        Him—and I—even I may find Him also. For I—who am I that speak to you? Am I a
+                        believer? No, I am a doubter too. Once I could pray every morning, and go
+                        forth to my day’s labour stayed and comforted. But now I can pray no longer.
+                        You have taken my God away from me, and I know not where you have laid Him.
+                        My only consolation in my misery is that at least I am inconsolable for His
+                        loss. Yes,’ cried Mr. Herbert, his voice rising into a kind of threatening
+                        wail, ‘though you have made me miserable, I am not yet content with my
+                        misery. And though I too have said in my heart that there is no God, and
+                        that there is no more profit in wisdom than in folly, yet there is one folly
+                        that I will not give tongue to. I will not say Peace, peace, when there is
+                        no peace. I will not say we are still Christians, when we can sip our wine
+                        smilingly after dinner, and talk about some day defining the Father; and I
+                        will only pray that if such a Father be, He may have mercy alike upon those
+                        that hate Him, because they will not see Him; and on those who
+                        love and long for Him, although they no longer can see Him.’ 
+ Mr. Herbert’s voice ceased. The curtain fell. The whirlwind was over; the
+                        fire was over; and after the fire, from one of the side boxes came a still
+                        small voice. 
+ ‘Very poor taste—very poor taste.’ 
+ It was perceived that Dr. Jenkinson, having discovered almost immediately
+                        who was really to be the preacher, had stolen back silently into the
+                        theatre. 
+</div></body></text></TEI>

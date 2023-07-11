@@ -1,0 +1,148 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Project Gutenberg's The Parisians, Complete, by Edward
+     Bulwer-Lytton</title><author>Lytton, Edward Bulwer (1803-1873)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1874</date></publicationStmt></teiHeader><text><body><div type="chapter" n="81">
+CHAPTER I.
+Graham Vane had heard nothing for months from M. Renard, when one morning he received the
+      letter I translate:
+“MONSIEUR,—I am happy to inform you that I have at last obtained one piece of information
+      which may lead to a more important discovery. When we parted after our fruitless research in
+      Vienna, we had both concurred in the persuasion that, for some reason known only to the two
+      ladies themselves, Madame Marigny and Madame Duval had exchanged names—that it was Madame
+      Marigny who had deceased in the name of Madame Duval, and Madame Duval who had survived in
+      that of Marigny.
+“It was clear to me that the beau Monsieur who had visited the false Duval must have been
+      cognisant of this exchange of name, and that, if his name and whereabouts could be
+      ascertained, he, in all probability, would know what had become of the lady who is the object
+      of our research; and after the lapse of so many years he would probably have very slight
+      motive to preserve the concealment of facts which might, no doubt, have been convenient at the
+      time. The lover of the soi-disant Mademoiselle Duval was by such accounts as we could gain a
+      man of some rank—very possibly a married man; and the liaison, in short, was one of those
+      which, while they last, necessitate precautions and secrecy.
+“Therefore, dismissing all attempts at further trace of the missing lady, I resolved to
+      return to Vienna as soon as the business that recalled me to Paris was concluded, and devote
+      myself exclusively to the search after the amorous and mysterious Monsieur.
+“I did not state this determination to you, because, possibly, I might be in error—or, if
+      not in error, at least too sanguine in my expectations—and it is best to avoid disappointing
+      an honourable client.
+“One thing was clear, that, at the time of the soi-disant Duval’s decease, the beau Monsieur
+      was at Vienna.
+“It appeared also tolerably clear that when the lady friend of the deceased quitted Munich
+      so privately, it was to Vienna she repaired, and from Vienna comes the letter demanding the
+      certificates of Madame Duval’s death. Pardon me, if I remind you of all these circumstances no
+      doubt fresh in your recollection. I repeat them in order to justify the conclusions to which
+      they led me.
+“I could not, however, get permission to absent myself from Paris for the time I might
+      require till the end of last April. I had meanwhile sought all private means of ascertaining
+      what Frenchmen of rank and station were in that capital in the autumn of 1849. Among the list
+      of the very few such Messieurs I fixed upon one as the most likely to be the mysterious
+      Achille—Achille was, indeed, his nom de bapteme.
+“A man of intrigue—a bonnes fortunes—of lavish expenditure withal; very tenacious of his
+      dignity, and avoiding any petty scandals by which it might be lowered; just the man who, in
+      some passing affair of gallantry with a lady of doubtful repute, would never have signed his
+      titular designation to a letter, and would have kept himself as much incognito as he could.
+      But this man was dead—had been dead some years. He had not died at Vienna—never visited that
+      capital for some years before his death. He was then, and had long been, the ami de la maison
+      of one of those grandes dames of whose intimacy grands seigneurs are not ashamed. They parade
+      there the bonnes fortunes they conceal elsewhere. Monsieur and the grande dame were at Baden
+      when the former died. Now, Monsieur, a Don Juan of that stamp is pretty sure always to have a
+      confidential Leporello. If I could find Leporello alive I might learn the secrets not to be
+      extracted from a Don Juan defunct. I ascertained, in truth, both at Vienna, to which I first
+      repaired in order to verify the renseignements I had obtained at Paris, and at Baden, to which
+      I then bent my way, that this brilliant noble had a favourite valet who had lived with him
+      from his youth—an Italian, who had contrived in the course of his service to lay by savings
+      enough to set up a hotel somewhere in Italy, supposed to be Pisa. To Pisa I repaired, but the
+      man had left some years; his hotel had not prospered—he had left in debt. No one could say
+      what had become of him. At last, after a long and tedious research, I found him installed as
+      manager of a small hotel at Genoa—a pleasant fellow enough; and after friendly intercourse
+      with him (of course I lodged at his hotel), I easily led him to talk of his earlier life and
+      adventures, and especially of his former master, of whose splendid career in the army of ‘La
+      Belle Deesse’ he was not a little proud. It was not very easy to get him to the particular
+      subject in question. In fact, the affair with the poor false Duval had been so brief and
+      undistinguished an episode in his master’s life, that it was not without a strain of memory
+      that he reached it.
+“By little and little, however, in the course of two or three evenings, and by the aid of
+      many flasks of Orviette or bottles of Lacrima (wines, Monsieur, that I do not commend to any
+      one who desires to keep his stomach sound and his secrets safe), I gathered these
+      particulars.
+“Our Don Juan, since the loss of a wife in the first year of marriage, had rarely visited
+      Paris where he had a domicile—his ancestral hotel there he had sold.
+“But happening to visit that capital of Europe a few months before we come to our dates at
+      Aix-la-Chapelle, he made acquaintance with Madame Marigny, a natural daughter of high-placed
+      parents, by whom, of course, she had never been acknowledged, but who had contrived that she
+      should receive a good education at a convent; and on leaving it also contrived that an old
+      soldier of fortune—which means an officer without fortune—who had served in Algiers with some
+      distinction, should offer her his hand, and add the modest dot they assigned her to his yet
+      more modest income. They contrived also that she should understand the offer must be accepted.
+      Thus Mademoiselle ‘Quelque Chose’ became Madame Marigny, and she, on her part, contrived that
+      a year or so later she should be left a widow. After a marriage, of course the parents washed
+      their hands of her—they had done their duty. At the time Don Juan made this lady’s
+      acquaintance nothing could be said against her character; but the milliners and butchers had
+      begun to imply that they would rather have her money than trust to her character. Don Juan
+      fell in love with her, satisfied the immediate claims of milliner and butcher, and when they
+      quitted Paris it was agreed that they should meet later at Aix-la-Chapelle. But when he
+      resorted to that sultry and, to my mind, unalluring spa, he was surprised by a line from her
+      saying that she had changed her name of Marigny for that of Duval.
+“‘I recollect,’ said Leporello, ‘that two days afterwards my master said to me, ‘Caution and
+      secrecy. Don’t mention my name at the house to which I may send you with any note for Madame
+      Duval. I don’t announce my name when I call. La petite Marigny has exchanged her name for that
+      of Louise Duval; and I find that there is a Louise Duval here, her friend, who is niece to a
+      relation of my own, and a terrible relation to quarrel with—a dead shot and unrivalled
+      swordsman—Victor de Mauleon. My master was brave enough, but he enjoyed life, and he did not
+      think la petite Marigny worth being killed for.’
+“Leporello remembered very little of what followed. All he did remember is that Don Juan,
+      when at Vienna, said to him one morning, looking less gay than usual, ‘It is finished with ca
+      petite Marigny-she is no more.’ Then he ordered his bath, wrote a note, and said with tears in
+      his eyes, ‘Take this to Mademoiselle Celeste; not to be compared to la petite Marigny; but la
+      petite Celeste is still alive.’ Ah, Monsieur! if only any man in France could be as proud of
+      his ruler as that Italian was of my countrymen! Alas! we Frenchmen are all made to command—or
+      at least we think ourselves so—and we are insulted by one who says to us, ‘Serve and obey.’
+      Nowadays, in France, we find all Don Juans and no Leporellos.
+“After strenuous exertions upon my part to recall to Leporello’s mind the important question
+      whether he had ever seen the true Duval, passing under the name of Marigny—whether she had not
+      presented herself to his master at Vienna or elsewhere—he rubbed his forehead, and drew from
+      it these reminiscences.
+“‘On the day that his Excellency,’—Leporello generally so styled his master—‘Excellency,’ as
+      you are aware, is the title an Italian would give to Satan if taking his wages, told me that
+      la petite Marigny was no more, he had received previously a lady veiled and mantled, whom I
+      did not recognise as any one I had seen before, but I noticed her way of carrying
+      herself—haughtily—her head thrown back; and I thought to myself, that lady is one of his
+      grandes dames. She did call again two or three times, never announcing her name; then she did
+      not reappear. She might be Madame Duval—I can’t say.’
+“‘But did you never hear his Excellency speak of the real Duval after that time?’
+“‘No—non mi ricordo—I don’t remember.’
+“‘Nor of some living Madame Marigny, though the real one was dead?’
+“‘Stop, I do recollect; not that he ever named such a person to me, but that I have posted
+      letters for him to a Madame Marigny—oh, yes! even years after the said petite Marigny was
+      dead; and once I did venture to say, ‘Pardon me, Eccellenza, but may I ask if that poor lady
+      is really dead, since I have to prepay this letter to her?’”
+“‘Oh,’ said he, ‘Madame Marigny! Of course the one you know is dead, but there are others of
+      the same name; this lady is of my family. Indeed, her house, though noble in itself,
+      recognises the representative of mine as its head, and I am too bon prince not to acknowledge
+      and serve any one who branches out of my own tree.’”
+“A day after this last conversation on the subject, Leporello said to me: ‘My friend, you
+      certainly have some interest in ascertaining what became of the lady who took the name of
+      Marigny (I state this frankly, Monsieur, to show how difficult even for one so prudent as I am
+      to beat about a bush long but what you let people know the sort of bird you are in search
+      of).
+“‘Well,’ said I, ‘she does interest me. I knew something of that Victor de Mauleon, whom his
+      Excellency did not wish to quarrel with; and it would be a kindly act to her relation if one
+      could learn what became of Louise Duval.’
+“‘I can put you on the way of learning all that his Excellency was likely to have known of
+      her through correspondence. I have often heard him quote, with praise, a saying so clever that
+      it might have been Italian, “Never write, never burn;” that is, never commit yourself by a
+      letter—keep all letters that could put others in your power. All the letters he received were
+      carefully kept and labelled. I sent them to his son in four large trunks. His son, no doubt,
+      has them still.’
+“Now, however, I have exhausted my budget. I arrived at Paris last night. I strongly advise
+      you to come hither at once, if you still desire to prosecute your search.
+“You, Monsieur, can do what I could not venture to do; you can ask the son of Don Juan if,
+      amid the correspondence of his father, which he may have preserved, there be any signed
+      Marigny or Duval—any, in short, which can throw light on this very obscure complication of
+      circumstances. A grand seigneur would naturally be more complaisant to a man of your station
+      than he would be to an agent of police. Don Juan’s son, inheriting his father’s title, is
+      Monsieur le Marquis de Rochebriant; and permit me to add, that at this moment, as the journals
+      doubtless inform you, all Paris resounds with the rumour of the coming war; and Monsieur de
+      Rochebriant—who is, as I have ascertained, now in Paris—it may be difficult to find anywhere
+      on earth a month or two hence.—I have the honour, with profound consideration, etc.,
+      etc., RENARD.”
+The day after the receipt of this letter Graham Vane was in Paris.
+</div></body></text></TEI>

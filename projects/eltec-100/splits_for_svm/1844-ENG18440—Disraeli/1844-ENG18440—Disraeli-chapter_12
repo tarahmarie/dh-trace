@@ -1,0 +1,488 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Coningsby: or, The New Generation</title><author>Disraeli, Benjamin (1804-1881)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1844</date></publicationStmt></teiHeader><text><body><div type="chapter" n="12">
+CHAPTER I.
+It was early in November, 1834, and a large shooting party was assembled at
+       Beaumanoir, the seat of that great nobleman, who was the father of Henry Sydney. England is
+       unrivalled for two things—sporting and politics. They were combined at Beaumanoir; for the
+       guests came not merely to slaughter the Duke's pheasants, but to hold council on the
+       prospects of the party, which, it was supposed by the initiated, began at this time to
+       indicate some symptoms of brightening.
+
+The success of the Reform Ministry on their first appeal to the new constituency which they
+       had created, had been fatally complete. But the triumph was as destructive to the victors as
+       to the vanquished.
+"We are too strong," prophetically exclaimed one of the fortunate cabinet, which found
+       itself supported by an inconceivable majority of three hundred. It is to be hoped that some
+       future publisher of private memoirs may have preserved some of the traits of that crude and
+       short-lived Parliament, when old Cobbett insolently thrust Sir Robert from the prescriptive
+       seat of the chief of opposition, and treasury understrappers sneered at the "queer lot" that
+       had arrived from Ireland, little foreseeing what a high bidding that "queer lot" would
+       eventually command. Gratitude to Lord Grey was the hustings-cry at the end of 1832, the
+       pretext that was to return to the new-modelled House of Commons none but men devoted to the
+       Whig cause. The successful simulation, like everything that is false, carried within it the
+       seeds of its own dissolution. Ingratitude to
+        Lord Grey was more the fashion at the commencement of 1834, and before the
+       close of that eventful year, the once popular Reform Ministry was upset, and the eagerly
+       sought Reformed Parliament dissolved!
+It can scarcely be alleged that the public was altogether unprepared for this catastrophe.
+       Many deemed it inevitable; few thought it imminent. The career of the Ministry, and the
+       existence of the Parliament had indeed from the first been turbulent and fitful. It was known
+       from authority, that there were dissensions in the cabinet; while a House of Commons which
+       passed votes on subjects not less important than the repeal of a tax, or the impeachment of a
+       judge on one night, and rescinded its resolutions on the following, certainly established no
+       increased claims to the confidence of its constituents in its discretion. Nevertheless there
+       existed at this period a prevalent conviction, that the Whig party by a great stroke of
+       state, similar in magnitude and effect to that which in the preceding century had changed the
+       dynasty, had secured
+        to themselves the government of this country, for, at least, the lives of the
+       present generation. And even the well informed in such matters were inclined to look upon the
+       perplexing circumstances to which we have alluded, rather as symptoms of a want of discipline
+       in a new system of tactics, than as evidences of any essential and deeply-rooted
+       disorder.
+The startling rapidity, however, of the strange incidents of 1834; the indignant, soon to
+       become vituperative, secession of a considerable section of the cabinet, some of them
+       esteemed too at that time among its most efficient members; the piteous deprecation of
+       "pressure from without," from lips hitherto deemed too stately for intreaty, followed by the
+       Trades' Union thirty thousand strong, parading in procession to Downing Street; the Irish
+       negociations of Lord Hatherton, strange blending of complex intrigue and almost infantile
+       ingenuousness; the still inexplicable resignation of Lord Althorp, hurriedly followed by his
+       still more mysterious resumption of power, the only result of his precipitate movements being
+       the fall of Lord
+        Grey himself, attended by circumstances which even a friendly historian could
+       scarcely describe as honourable to his party or dignified to himself; latterly, the
+       extemporaneous address of King William to the bishops; the vagrant and grotesque Apocalypse
+       of the Lord Chancellor; and the fierce recrimination and memorable defiance of the Edinburgh
+       banquet; all these impressive instances of public affairs and public conduct had combined to
+       create a predominant opinion that, whatever might be the consequences, the prolonged
+       continuance of the present party in power was a clear impossibility.
+It is evident that the suicidal career of what was then styled the Liberal party, had been
+       occasioned and stimulated by its unnatural excess of strength. The apoplectic plethora of
+       1834 was not less fatal than the paralytic tenuity of 1841. It was not feasible to gratify so
+       many ambitions, or to satisfy so many expectations. Every man had his double; the heels of
+       every placeman were dogged by friendly rivals ready to trip them up. There were even two
+       cabinets; the one that met in council, and
+        the one that met in cabal. The consequence of destroying the legitimate
+       opposition of the country was, that a moiety of the supporters of government had to discharge
+       the duties of Opposition.
+Herein then we detect the real cause of all that irregular and unsettled carriage of public
+       men, which so perplexed the nation after the passing of the Reform Act. No government can be
+       long secure without a formidable Opposition. It reduces their supporters to that tractable
+       number which can be managed by the joint influences of fruition and of hope. It offers
+       vengeance to the discontented and distinction to the ambitious; and employs the energies of
+       aspiring spirits, who otherwise may prove traitors in a division, or assassins in a
+       debate.
+The general election of 1832 abrogated the Parliamentary Opposition of England, which had
+       practically existed for more than a century and a half. And what a series of equivocal
+       transactions and mortifying adventures did the withdrawal of this salutary restraint entail
+       on the party which then so loudly congratulated themselves
+        and the country, that they were at length relieved from its odious repression!
+       In the hurry of existence one is apt too generally to pass over the political history of the
+       times in which we ourselves live. The two years that followed the Reform of the House of
+       Commons are full of instruction on which a young man would do well to ponder. It is hardly
+       possible that he could rise from the study of these annals without a confirmed disgust for
+       political intrigue; a dazzling practice, apt at first to fascinate youth, for it appeals at
+       once to our invention and our courage, but which really should only be the resource of the
+       second-rate. Great minds must trust to great truths and great talents for their rise, and
+       nothing else.
+While, however, as the autumn of 1834 advanced, the people of this country became gradually
+       sensible of the necessity of some change in the councils of their Sovereign; no man felt
+       capable of predicting by what means it was to be accomplished, or from what quarry the new
+       materials were to be extracted. The Tory party, according to these perverted views of
+        Toryism unhappily too long prevalent in this country, was held to be literally
+       defunct, except by a few old battered crones of office crouched round the embers of faction
+       which they were fanning, and muttering "re-action" in mystic whispers. It cannot be supposed,
+       indeed, for a moment, that the distinguished personage who had led that party in the House of
+       Commons previously to the passing of the act of 1832, ever despaired in consequence of his
+       own career. His then time of life, the perfection, almost the prime, of manhood; his
+       parliamentary practice, doubly estimable in an inexperienced assembly; his political
+       knowledge; his fair character and reputable position; his talents and tone as a public
+       speaker, which he had always aimed to adapt to the habits and culture of that middle class
+       from which it was concluded the benches of the new Parliament were mainly to be recruited
+       —all these were qualities, the possession of which must have assured a mind, not apt to be
+       disturbed in its calculations by any intemperate heats, that with time and patience the game
+       was yet for him.
+
+Unquestionably, whatever may have been insinuated, this distinguished person had no inkling
+       that his services in 1834 might be claimed by his Sovereign. At the close of the session of
+       that year he had quitted England with his family and had arrived at Rome, where it was his
+       intention to pass the winter. The party charges that have imputed to him a previous and
+       sinister knowledge of the intentions of the Court, appear to have been made not only in
+       ignorance of the personal character, but of the real position, of the future minister.
+It had been the misfortune of this eminent gentleman when he first entered public life, to
+       become identified with a political connexion, which having arrogated to itself the name of an
+       illustrious historical party, pursued a policy, which was either founded on no principle
+       whatever, or on principles exactly contrary to those which had always guided the conduct of
+       the great Tory leaders. The chief members of this official confederacy were men distinguished
+       by none of the conspicuous qualities of statesmen. They had none of the divine gifts that
+       govern
+        senates and guide councils. They were not orators; they were not men of deep
+       thought or happy resource; or of penetrative and sagacious minds. Their political ken was
+       essentially dull and contracted. They expended some energy in obtaining a defective
+       blundering acquaintance with foreign affairs; they knew as little of the real state of their
+       own country as savages of an approaching eclipse. This factious league had shuffled
+       themselves into power by clinging to the skirts of a great minister, the last of Tory
+       statesmen, but who, in the unparalleled and confounding emergencies of his latter years, has
+       been forced, unfortunately for England, to relinquish Toryism. His successors inherited all
+       his errors without the latent genius, which in him might have still rallied and extricated
+       him from the consequences of his disasters. His successors did not merely inherit his errors;
+       they exaggerated, they caricatured them. They rode into power on a spring-tide of all the
+       rampant prejudices and rancorous passions of their time. From the King to the boor their
+       policy was a mere pandering to public ignorance.
+        Impudently usurping the name of that party of which nationality, and therefore
+       universality, is the essence, these pseudo-Tories made Exclusion the principle of their
+       political constitution, and Restriction the genius of their commercial code.
+The blind goddess that plays with human fortunes has mixed up the memory of these men with
+       traditions of national glory. They conducted to a prosperous conclusion the most renowned war
+       in which England has ever been engaged. Yet every military conception that emanated from
+       their cabinet was branded by their characteristic want of grandeur. Chance, however, sent
+       them a great military genius, whom they treated for a long time with indifference; and whom
+       they never heartily supported until his career had made him their master. His transcendent
+       exploits and European events, even greater than his achievements, placed in the manikin grasp
+       of the English ministry—the settlement of Europe.
+The act of the Congress of Vienna remains the eternal monument of their diplomatic
+       knowledge
+        and political sagacity. Their capital feats were the creation of two kingdoms,
+       both of which are already erased from the map of Europe. They made no single preparation for
+       the inevitable, almost impending, conjunctures of the East. All that remains of the pragmatic
+       arrangements of the mighty Congress of Vienna is the mediatisation of the petty German
+       Princes.
+But the settlement of Europe by the pseudo-Tories was the dictate of inspiration compared
+       with their settlement of England. The peace of Paris found the government of this country in
+       the hands of a body of men, of whom it is no exaggeration to say that they were ignorant of
+       every principle of every branch of political science. As long as our domestic administration
+       was confined merely to the raising of a revenue, they levied taxes with gross facility from
+       the industry of a country too busy to criticise or complain. But when the excitement and
+       distraction of war had ceased, and they were forced to survey the social elements that
+       surrounded them; they seemed, for the first time, to have become conscious of their own
+       incapacity. These men,
+        indeed, were the mere children of routine. They prided themselves on being
+       practical men. In the language of this defunct school of statesmen, a practical man is a man
+       who practises the blunders of his predecessors.
+Now commenced that Condition of England Question, of which our generation hears so much.
+       During five-and-twenty years every influence that can develop the energies and resources of a
+       nation had been acting with concentrated stimulation on the British Isles. National peril and
+       national glory; the perpetual menace of invasion, the continual triumph of conquest; the most
+       extensive foreign commerce that was ever conducted by a single nation; an illimitable
+       currency; an internal trade supported by swarming millions, whom manufactures and inclosure
+       bills summoned into existence; above all, the supreme control obtained by man over mechanic
+       power; these are some of the causes of that rapid advance of material civilization in
+       England, to which the annals of the world can afford no parallel. But there was no
+       proportionate advance in our moral civilization. In the
+        hurry-skurry of money-making, men-making and machine-making, we had altogether
+       outgrown, not the spirit, but the organization, of our institutions.
+The peace came; the stimulating influences suddenly ceased; the people, in a novel and
+       painful position, found themselves without guides. They went to the ministry; they asked to
+       be guided; they asked to be governed. Commerce requested a code; trade required a currency;
+       the unfranchised subject solicited his equal privilege; suffering labour clamoured for its
+       rights; a new race demanded education. What did the ministry do?
+They fell into a panic. Having fulfilled during their lives the duties of administration,
+       they were frightened because they were called upon, for the first time, to perform the
+       functions of government. Like all weak men, they had recourse to what they called strong
+       measures. They determined to put down the multitude. They thought they were imitating Mr.
+       Pitt, because they mistook disorganization for sedition.
+
+Their projects of relief were as ridiculous as their system of coercion was ruthless; both
+       were alike founded in intense ignorance. When we recall Mr. Vansittart with his currency
+       resolutions; Lord Castlereagh with his plans for the employment of labour; and Lord Sidmouth
+       with his plots for ensnaring the laborious; one is tempted to imagine that the present epoch
+       has been one of peculiar advances in political ability, and marvel how England could have
+       attained her present pitch under a series of such governors.
+We should, however, be labouring under a very erroneous impression. Run over the statesmen
+       that have figured in England since the accession of the present family, and we may doubt
+       whether there be one, with the exception, perhaps, of the Duke of Newcastle, who would have
+       been a worthy colleague of the councils of Mr. Percival, or the early cabinet of Lord
+       Liverpool. Assuredly the genius of Bolingbroke and the sagacity of Walpole, would have alike
+       recoiled from such men and such measures. And if we take the individuals who were governing
+        England immediately before the French Revolution, one need only refer to the
+       speeches of Mr. Pitt, and especially to those of that profound statesman and most instructed
+       man, Lord Shelburne, to find that we can boast no remarkable superiority either in political
+       justice or in political economy. One must attribute this degeneracy, therefore, to the long
+       war and our insular position, acting upon men naturally of inferior abilities, and
+       unfortunately, in addition, of illiterate habits.
+In the meantime, notwithstanding all the efforts of the political Panglosses who, in
+       Evening Journals and Quarterly Reviews, were continually proving that this was the best of
+       all possible governments, it was evident to the Ministry itself that the machine must stop.
+       The class of Rigbys, indeed, at this period, one eminently favourable to that fungous tribe,
+       greatly distinguished themselves. They demonstrated in a manner absolutely convincing, that
+       it was impossible for any person to possess any ability, knowledge, or virtue, any capacity
+       of reason, any ray of fancy or faculty of imagination,
+        who was not a supporter of the existing administration. If any one impeached
+       the management of a department, the public was assured that the accuser had embezzled; if any
+       one complained of the conduct of a colonial governor, the complainant was announced as a
+       returned convict. An amelioration of the criminal code was discountenanced because a search
+       in the parish register of an obscure village proved that the proposer had not been born in
+       wedlock. A relaxation of the commercial system was denounced because one of its principal
+       advocates was a Socinian. The inutility of Parliamentary Reform was ever obvious since Mr.
+       Rigby was a Member of the House of Commons.
+To us, with our "Times" newspaper every morning on our breakfast table, bringing on every
+       subject which can interest the public mind a degree of information and intelligence which
+       must form a security against any prolonged public misconception, it seems incredible that
+       only five and twenty years ago the English mind could have been so ridden and hoodwinked,
+        and that too by men of mean attainments and moderate abilities. But the war had
+       directed the energies of the English people into channels by no means favourable to political
+       education. Conquerors of the world, with their ports filled with the shipping of every clime,
+       and their manufactories supplying the European continent, in the art of self-government, that
+       art in which their fathers excelled, they had become literally children; and Rigby and his
+       brother hirelings were the nurses that frightened them with hideous fables and ugly
+       words.
+Notwithstanding, however, all this successful mystification, the Arch-Mediocrity who
+       presided, rather than ruled, over this Cabinet of Mediocrities, became hourly more conscious
+       that the inevitable transition from fulfilling the duties of an administration to performing
+       the functions of a government could not be conducted without talents and knowledge. The
+       Arch-Mediocrity had himself some glimmering traditions of political science. He was sprung
+       from a laborious stock, had received some training, and
+        though not a statesman, might be classed among those whom the Lord Keeper
+       Williams used to call "statemongers." In a subordinate position his meagre diligence and his
+       frigid method might not have been without value; but the qualities that he possessed were
+       misplaced; nor can any character be conceived less invested with the happy properties of a
+       leader. In the conduct of public affairs, his disposition was exactly the reverse to that
+       which is the characteristic of great men. He was peremptory in little questions, and great
+       ones he left open.
+In the natural course of events, in 1819 there ought to have been a change of government
+       and another party in the state should have entered into office; but the Whigs, though they
+       counted in their ranks at that period an unusual number of men of great ability and formed
+       indeed a compact and spirited opposition, were unable to contend against the new adjustment
+       of borough influence which had occurred during the war, and under the protracted
+       administration by which that war had been conducted. New
+        families had arisen on the Tory side that almost rivalled old Newcastle himself
+       in their electioneering management; and it was evident that unless some re-construction of
+       the House of Commons could be effected, the Whig party could never obtain a permanent hold of
+       official power. Hence, from that period, the Whigs became Parliamentary Reformers.
+It was inevitable, therefore, that the country should be governed by the same party;
+       indispensable that the ministry should be renovated by new brains and blood. Accordingly, a
+       Mediocrity, not without repugnance, was induced to withdraw, and the great name of Wellington
+       supplied his place in council. The talents of the Duke, as they were then understood, were
+       not exactly of the kind most required by the cabinet, and his colleagues were most careful
+       that he should not occupy too prominent a post; but still it was an impressive acquisition,
+       and imparted to the ministry a semblance of renown.
+There was an individual who had not long entered public life, but who had already filled
+       considerable, though still subordinate, offices.
+        Having acquired a certain experience of the duties of administration and
+       distinction for his mode of fulfilling them, he had withdrawn from his public charge; perhaps
+       because he found it a barrier to the attainment of that parliamentary reputation for which he
+       had already shown both a desire and a capacity; perhaps, because being young and independent,
+       he was not over anxious irremediably to identify his career with a school of politics of the
+       infallibility of which his experience might have already made him a little sceptical. But he
+       possessed the talents that were absolutely wanted, and the terms were at his own dictation.
+       Another and a very distinguished Mediocrity who would not resign, was thrust out; and Mr.
+       Peel became Secretary of State.
+From this moment dates that intimate connexion between the Duke of Wellington and the
+       present First Minister, which has exercised a considerable influence over the career of
+       individuals and the course of affairs. It was the sympathetic result of superior minds placed
+       among inferior intelligences: and was, doubtless,
+        assisted by a then mutual conviction, that the difference of age, the
+       circumstance of sitting in different houses, and the general contrast of their previous
+       pursuits and accomplishments, rendered personal rivalry out of the question. From this
+       moment, too, the domestic government of the country assumed a new character, and one
+       universally admitted to have been distinguished by a spirit of enlightened progress and
+       comprehensive amelioration.
+A short time after this, a third and most distinguished Mediocrity died; and Canning, whom
+       they had twice worried out of the cabinet, where they had tolerated him for some time in an
+       obscure and ambiguous position, was recalled just in time from his impending banishment,
+       installed in the first post in the lower House and intrusted with the seals of the Foreign
+       Office. The Duke of Wellington had coveted them, nor could Lord Liverpool have been
+       insensible to his Grace's peculiar fitness for such duties; but strength was required in the
+       House of Commons, where they had only one Secretary of State, a young man already
+       distinguished, yet untried as a leader
+        and surrounded by colleagues notoriously incapable to assist him in debate.
+The accession of Mr. Canning to the cabinet, in a position too of surpassing influence,
+       soon led to a further weeding of the Mediocrities, and among other introductions to the
+       memorable entrance of Mr. Huskisson. In this wise did that cabinet, once notable only for the
+       absence of all those qualities which authorize the possession of power, come to be generally
+       esteemed as a body of men, who for parliamentary eloquence, official practice, political
+       information, sagacity in council, and a due understanding of their epoch, were inferior to
+       none that had directed the policy of the empire since the Revolution.
+If we survey the tenour of the policy of the Liverpool Cabinet during the latter moiety of
+       its continuance, we shall find its characteristic to be a partial recurrence to those frank
+       principles of government which Mr. Pitt had revived during the latter part of the last
+       century from precedents that had been set us, either in practice or in dogma, during its
+       earlier period by statesmen, who then not only bore the title, but professed
+        the opinions, of Tories. Exclusive principles in the constitution and
+       restrictive principles in commerce have grown up together; and have really nothing in common
+       with the ancient character of our political settlement, or the manners and customs of the
+       English people. Confidence in the loyalty of the nation, testified by munificent grants of
+       rights and franchises, and favour to an expansive system of traffic, were distinctive
+       qualities of the English sovereignty, until the House of Commons usurped the better portion
+       of its prerogatives. A widening of our electoral scheme, great facilities to commerce, and
+       the rescue of our Roman Catholic fellow-subjects from the Puritanic yoke, from fetters which
+       have been fastened on them by English Parliaments in spite of the protests and exertions of
+       English Sovereigns; these were the three great elements and fundamental truths of the real
+       Pitt system—a system founded on the traditions of our monarchy, and caught from the writings,
+       the speeches, the councils, of those who, for the sake of these and analogous benefits, had
+       ever been anxious that the Sovereign of
+        England should never be degraded into the position of a Venetian Doge.
+It is in the plunder of the Church that we must seek for the primary cause of our political
+       exclusion, and our commercial restraint. That unhallowed booty created a factitious
+       aristocracy, ever fearful that they might be called upon to re-gorge their sacrilegious
+       spoil. To prevent this they took refuge in political religionism, and paltering with the
+       disturbed consciences or the pious fantasies of a portion of the people, they organized them
+       into religious sects. These became the unconscious Proetorians of their ill-gotten domains.
+       At the head of these religionists, they have continued ever since to govern, or powerfully to
+       influence, this country. They have in that time pulled down thrones and churches, changed
+       dynasties, abrogated and remodelled parliaments; they have disfranchised Scotland, and
+       confiscated Ireland. One may admire the vigour and consistency of the Whig party, and
+       recognise in their career that unity of purpose that can only spring from a great principle;
+       but the Whigs introduced sectarian
+        religion, sectarian religion led to political exclusion, and political
+       exclusion was soon accompanied by commercial restraint.
+It would be fanciful to assume that the Liverpool Cabinet, in their ameliorating career,
+       was directed by any desire to recur to the primordial tenets of the Tory party. That was not
+       an epoch when statesmen cared to prosecute the investigation of principles. It was a period
+       of happy and enlightened practice. A profounder policy is the offspring of a time like the
+       present, when the original postulates of institutions are called in question. The Liverpool
+       Cabinet unconsciously approximated to these opinions, because from careful experiment they
+       were convinced of their beneficial tendency, and they thus bore an unintentional and
+       impartial testimony to their truth. Like many men, who think they are inventors, they were
+       only reproducing ancient wisdom.
+But one must ever deplore that this ministry, with all their talents and generous ardour,
+       did not advance to principles. It is always perilous to adopt expediency as a guide; but the
+       choice
+        may be sometimes imperative. But these statesmen took expediency for their
+       director, when principle would have given them all that expediency insured, and much
+       more.
+This ministry, strong in the confidence of the sovereign, the parliament, and the people,
+       might, by the courageous promulgation of great historical truths, have gradually formed a
+       public opinion, that would have permitted them to organize the Tory party on a broad, a
+       permanent and national basis. They might have nobly effected a complete settlement of
+       Ireland, which a shattered section of this very cabinet was forced a few years after to do
+       partially, and in an equivocating and equivocal manner. They might have concluded a
+       satisfactory re-construction of the third estate, without producing that convulsion with
+       which from its violent fabrication our social system still vibrates. Lastly, they might have
+       adjusted the rights and properties of our national industries in a manner which would have
+       prevented that fierce and fatal rivalry that is now disturbing every hearth of the United
+       Kingdom.
+
+We may therefore visit on the laches of this ministry the introduction of that new
+       principle and power into our constitution which ultimately may absorb all— Agitation
+       . This Cabinet then, with so much brilliancy on its surface, is the real parent of the Roman
+       Catholic Association, the Political Unions, the Anti-Corn Law League.
+There is no influence at the same time so powerful and so singular as that of individual
+       character. It arises as often from the weakness of the character as from its strength. The
+       dispersion of this clever and showy ministry is a fine illustration of this truth. One
+       morning the Arch-Mediocrity himself died. At the first blush, it would seem that little
+       difficulty could be experienced in finding his substitute. His long occupation of the post,
+       proved at any rate that the qualification was not excessive. But this cabinet with its serene
+       and blooming visage had been all this time charged with fierce and emulous ambitions. They
+       waited the signal, but they waited in grim repose. The death of the nominal leader, whose
+       formal superiority,
+        wounding no vanity and offending no pride, secured in their councils equality
+       among the able, was the tocsin of their anarchy. There existed in this Cabinet two men, who
+       were resolved immediately to be prime ministers; a third who was resolved eventually to be
+       prime minister, but would, at any rate occupy no ministerial post, without the lead of a
+       House of Parliament; and a fourth, who felt himself capable of being prime minister, but
+       despaired of the revolution which could alone make him one; and who found an untimely end
+       when that revolution had arrived.
+Had Mr. Secretary Canning remained leader of the House of Commons under the Duke of
+       Wellington, all that he gained by the death of Lord Liverpool was a master. Had the Duke of
+       Wellington become Secretary of State under Mr. Canning, he would have materially advanced his
+       political position, not only by holding the seals of a high department in which he was
+       calculated to excel, but by becoming leader of the House of Lords. But his Grace was induced
+       by certain court intriguers to believe that
+        the King would send for him, and he was also aware that Mr. Peel would no
+       longer serve under any minister in the House of Commons. Under any circumstances it would
+       have been impossible to keep the Liverpool Cabinet together. The struggle therefore between
+       the Duke of Wellington and "my dear Mr. Canning," was internecine, and ended somewhat
+       unexpectedly.
+And here we must stop to do justice to our friend Mr. Rigby, whose conduct on this occasion
+       was distinguished by a bustling dexterity which was quite charming. He had, as we have before
+       intimated, on the credit of some clever lampoons written during the Queen's trial, which were
+       in fact the effusions of Lucian Gay, wriggled himself into a sort of occasional unworthy
+       favour at the palace, where he was half butt and half buffoon. Here, during the interregnum
+       occasioned by the death, or rather inevitable retirement, of Lord Liverpool, Mr. Rigby
+       contrived to scrape up a conviction that the Duke was the winning horse, and in consequence
+       there appeared a series of leading
+        articles in a notorious evening newspaper in which it was, as Tadpole and Taper
+       declared, most "slashingly" shown, that the son of an actress could never be tolerated as the
+       Prime Minister of England. Not content with this, and never doubting for a moment the
+       authentic basis of his persuasion, Mr. Rigby poured forth his coarse volubility on the
+       subject at several of the new clubs which he was getting up in order to revenge himself for
+       having been black-balled at Whites'.
+What with arrangements about Lord Monmouth's boroughs, and the lucky bottling of some
+       claret which the Duke had imported on Mr. Rigby's recommendation, this distinguished
+       gentleman contrived to pay almost hourly visits at Apsley House, and so bullied Tadpole and
+       Taper that they scarcely dared address him. About four and twenty hours before the result,
+       and when it was generally supposed that the Duke was in, Mr. Rigby, who had gone down to
+       Windsor to ask his Majesty the date of some obscure historical incident, which Rigby of
+       course very well knew, found that audiences were impossible,
+        that his Majesty was agitated, and learned from an humble, but secure
+       authority, that in spite of all his slashing articles and Lucian Gay's parodies of the Irish
+       melodies, Canning was to be Prime Minister.
+This would seem something of a predicament to common minds; there are no such things as
+       scrapes for gentlemen with Mr. Rigby's talents for action. He had indeed in the world the
+       credit of being an adept in machinations, and was supposed ever to be involved in profound
+       and complicated contrivances. This was quite a mistake. There was nothing profound about Mr.
+       Rigby; and his intellect was totally incapable of devising or sustaining an intricate or
+       continuous scheme. He was indeed a man who neither felt nor thought; but who possessed in a
+       very remarkable degree a restless instinct for adroit baseness. On the present occasion, he
+       got into his carriage and drove at the utmost speed from Windsor to the Foreign Office, The
+       Secretary of State was engaged when he arrived; but Mr. Rigby would listen to no
+       difficulties. He rushed up stairs, flung open
+        the door, and with agitated countenance, and eyes suffused with tears, threw
+       himself into the arms of the astonished Mr. Canning.
+"All is right," exclaimed the devoted Rigby, in broken tones; "I have convinced the King
+       that the First Minister must be in the House of Commons. No one knows it but myself; but it
+       is certain."
+We have seen that at an early period of his career, Mr. Peel withdrew from official life.
+       His course had been one of unbroken prosperity; the hero of the University had become the
+       favourite of the House of Commons. His retreat, therefore, was not prompted by chagrin. Nor
+       need it to have been suggested by a calculating ambition, for the ordinary course of events
+       was fast bearing to him all to which man could aspire. One might rather suppose, that he had
+       already gained sufficient experience, perhaps in his Irish Secretaryship, to make him pause
+       in that career of superficial success which education and custom had hitherto chalked out for
+       him, rather than the creative energies of his own mind. A thoughtful intellect may have
+       already
+        detected elements in our social system which required a finer observation, and
+       a more unbroken study, than the gyves and trammels of office would permit. He may have
+       discovered that the representation of the University, looked upon in those days as the blue
+       ribbon of the House of Commons, was a sufficient fetter without unnecessarily adding to its
+       restraint. He may have wished to reserve himself for a happier occasion, and a more
+       progressive period. He may have felt the strong necessity of arresting himself in his rapid
+       career of felicitous routine, to survey his position in calmness, and to comprehend the
+       stirring age that was approaching.
+For that he could not but be conscious that the education which he had consummated, however
+       ornate and refined, was not sufficient. That age of economical statesmanship which Lord
+       Shelburne had predicted in 1787, when he demolished in the House of Lords Bishop Watson and
+       the Balance of Trade; which Mr. Pitt had comprehended, and for which he was preparing the
+       nation when the French Revolution
+        diverted the public mind into a stronger and more turbulent current, was again
+       impending, while the intervening history of the country had been prolific in events which had
+       aggravated the necessity of investigating the sources of the wealth of nations. The time had
+       arrived when parliamentary pre-eminence could no longer be achieved or maintained by gorgeous
+       abstractions borrowed from Burke, shallow systems purloined from De Lolme, adorned with
+       Horatian points, or varied with Virgilian passages. It was to be an age of abstruse
+       disquisition, that required a compact and sinewy intellect, nurtured in a class of learning
+       not yet honoured in Colleges, and which might arrive at conclusions conflicting with
+       predominant prejudices.
+Adopting this view of the position of Mr. Peel, strengthened as it is by his early
+       withdrawal for awhile from the direction of public affairs, it may not only be a charitable,
+       but a true estimate of the motives which influenced him in his conduct towards Mr. Canning,
+       to conclude that he was not guided in that transaction
+        by the disingenuous rivalry usually imputed to him. His statement in Parliament
+       of the determining circumstances of his conduct, coupled with his subsequent and almost
+       immediate policy, may perhaps always leave this a painful and ambiguous passage in his
+       career; but in passing judgment on public men, it behoves us ever to take large and extended
+       views of their conduct; and previous incidents will often satisfactorily explain subsequent
+       events, which, without their illustrating aid, are involved in misapprehension, or
+       mystery.
+It would seem, therefore, that Sir Robert Peel from an early period meditated his
+       emancipation from the political confederacy in which he was implicated, and that he has been
+       continually baffled in this project. He broke loose from Lord Liverpool; he retired from Mr.
+       Canning. Forced again into becoming the subordinate leader of the weakest government in
+       Parliamentary annals, he believed he had at length achieved his emancipation, when he
+       declared to his late colleagues after the overthrow
+        of 1830, that he would never again accept a secondary position in office. But
+       the Duke of Wellington was too old a tactician to lose so valuable an ally. So his Grace
+       declared after the Reform Bill was passed, as its inevitable result, that thenceforth the
+       Prime Minister must be a member of the House of Commons, and this aphorism, cited as usual by
+       the Duke's parasites as demonstration of his supreme sagacity, was a graceful mode of
+       resigning the preeminence which had been productive of such great party disasters. It is
+       remarkable that the party who devised and passed the Reform Bill, and who governed the nation
+       in consequence for ten years, never once had their Prime Minister in the House of Commons;
+       but that does not signify; the Duke's maxim is still quoted as an oracle almost equal in
+       prescience to his famous query, How the King's Government was to be carried on? a question to
+       which his Grace by this time has contrived to give a tolerably practical answer.
+Sir Robert Peel who had escaped from Lord Liverpool, escaped from Mr. Canning, escaped
+        even from the Duke of Wellington in 1832; was at length caught in 1834; the
+       victim of ceaseless intriguers, who neither comprehended his position, nor that of their
+       country.
+
+</div></body></text></TEI>

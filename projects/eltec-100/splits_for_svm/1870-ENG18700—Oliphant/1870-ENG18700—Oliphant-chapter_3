@@ -1,0 +1,839 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The Project Gutenberg EBook of Piccadilly, by
+                        Laurence Oliphant</title><author>Oliphant, Laurence (1829-1888)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1870</date></publicationStmt></teiHeader><text><body><div type="chapter" n="3">
+PART III. 
+SUICIDE.
+Piccadilly, April. 
+Considering the extent to which I have been digressing, it will be perhaps
+                    desirable, before I plunge again into the stormy current of my narrative, to
+                    define in a few words what, in the language of diplomacy, is termed "the
+                    situation." After I have done so, I shall feel much obliged if you will kindly
+                    "grasp" it. Briefly, it is as follows: I am telegraphed for in frantic terms by
+                    an old lady who is under the firm impression that I am engaged to be married to
+                    her daughter. I am violently in love with that daughter, but for certain reasons
+                    I have felt it my duty to account for my extraordinary conduct by informing her
+                    confidentially that I have occasional fits of temporary insanity. That daughter,
+                    I am positively assured by her mother, is no less violently attached to my most
+                    dear and intimate friend. My most dear and intimate friend returns the
+                    affection. Mamma threatens that if I do not marry her daughter, rather than
+                    allow my most dear and intimate friend to do so, she will ally the young lady to
+                    an affluent native of Bombay. So much is known. On the following points I am
+                    still in the dark:—
+First, What on earth does Lady Broadhem mean by telling me to come immediately,
+                    as delay may be fatal?—to whom? to me or to Lady Ursula, or herself? My
+                    knowledge of her ladyship induces me to incline towards the latter hypothesis;
+                    the suspense is, however, none the less trying.
+Second, Does Lady Ursula imagine that I know how she and Grandon feel towards
+                    each other?
+Third, Is Grandon under the impression that I have actually proposed and been
+                    accepted by Lady Ursula?
+Fourth, Does my conduct occasionally amount to something more than eccentricity
+                    or not?
+Fifth—and this was very unpleasant—Shall I find Grandon at our joint abode? And
+                    if so, what shall I say to him?
+Sixth, Have Grandon and Lady Ursula met, and did anything pass between them?
+Thank goodness Grandon was at the House. So, after a hurried toilet, I went on to
+                    Grosvenor Square. The young ladies were both out. Lady Bridget had taken
+                    advantage of the chaperonage of a newly-married rather
+                    fast female cousin, to go to a ball. Lady Ursula had gone to a solitary tea with
+                    a crabbed old aunt. Lady Broadhem was in her own sitting-room, lying on a couch
+                    behind a table covered with papers. She looked wearily up when I entered, and
+                    held out a thin hand for me to do what I liked with. "How good of you to come,
+                    dear Frank!" she said. It was the first time she had ever called me Frank, and I
+                    knew she expected me to acknowledge it by pressing her fingers, so I squeezed
+                    them affectionately. "Broadhem said if I wanted to make sure of you I ought to
+                    have brought Ursula's name into the telegraph, but I told him her mother's would
+                    do as well."
+"What does the——" I am afraid I mentally said 'old girl'—"want, I wonder? It must
+                    be really serious, or she would have shammed agitation. There is something about
+                    this oily calm which is rather portentous. Then she has taken care to have every
+                    member of the family out of the house. What is she ringing the bell for
+                    now?"
+"Tell Lady Ursula when she comes home that I am engaged particularly, and will
+                    come up and see her in her bedroom before she goes to bed," said Lady Broadhem
+                    to the servant who answered it.
+"Does not Lady Ursula know of my having come to town in answer to your summons?"
+                    I asked.
+"No, dear child; why should I inflict my troubles upon her? Even Broadhem, to
+                    whom I was obliged to speak more openly, only suspects the real state of the
+                    case. I have reserved my full confidence for my future son-in-law."
+I lifted up my eyes with a rapturous expression, and played with a paper-knife.
+                    She wanted me to help her on with an obvious remark, which I declined to make;
+                    so, after a pause, she went on, with a deep sigh,——
+"What sad news we keep on getting of those poor dear Confederates, Frank!"
+"Let us hope they will recover," said I, encouragingly.
+"Oh, but they do keep on falling so, it is quite dreadful."
+"There was no great number of them fell at Wilmington."
+"How stupid I am!" she said; "my poor mind gets quite bewildered. I was thinking
+                    of stock, not men; they went down again three more yesterday, and my broker
+                    declines altogether to carry them on from one account to another any more. I
+                    bought at 60, and they have done nothing but go down ever since. I generally go
+                    by Lord Staggerton's advice, and he recommended me to sell a bear some months
+                    ago; but that stupid little Spiffy Goldtip insisted that it was only a temporary
+                    depression, and now he says how could he know that President Davis would replace
+                    Johnston by Hood."
+"Very tiresome of Davis: but you should have employed more than one broker," I
+                    remarked. "Persons of limited capital and speculative tendencies should operate
+                    mysteriously. Your right hand should not know what your left hand is doing."
+"Hush, Frank! you can surely be business-like without being profane. I was
+                    completely in Spiffy's hands; Lady Mundane told me she always let him do for
+                    her, and"—here Lady Broadhem lowered her voice—"I know he
+                    has access to the best sources of information. I used to employ Staggerton, but
+                    he is so selfish that he never told me the best things; besides which, of
+                    course, I was obliged to have him constantly to dinner; and his great delight
+                    was always to say things which were calculated to shock my religious friends.
+                    Moreover, he has lately been doing more as a promoter of new companies than in
+                    buying and selling. Now Spiffy is so very useful in society, and has so much
+                    tact, that although there are all kinds of stories against him, still I did not
+                    think there was any sufficient reason to shut him out of the house. There was
+                    quite a set made against the poor little man at one time—worldly people are so
+                    hard and uncharitable; so, partly for the sake of his aunt, Lady Spiffington,
+                    who was my dear friend, and partly, indeed, because Staggerton had really become
+                    useless and intolerable, I put my affairs entirely into Spiffy's hands."
+"And the result is?" I asked.
+"That I must pay up —27,000 to-morrow," said Lady Broadhem, with the impenitent
+                    sigh of a hardened criminal.
+"You should have kept his lordship to act as a check on the Honourable
+                    Spiffington," I said; "but I cannot advise now, unless I know everything."
+A faint tinge suffused Lady Broadhem's cheek as she said, "What more do you want
+                    to know?"
+"Exactly what money you possess, and exactly how it is invested."
+"I don't see that that is at all necessary. Here is Spiffington's letter, from
+                    which you will see how much I must pay to-morrow; my assurance that I cannot
+                    produce so large a sum at such short notice is enough."
+"You can surely have no difficulty in finding some one who would lend you the
+                    money, provided you were to pay a sufficiently high rate of interest."
+The tinge which had not left Lady Broadhem's cheek deepened as she answered me,
+                    "Frank, it was on no hasty impulse that I telegraphed for you. I do not feel
+                    bound to enter into all the details of my private affairs, but I do feel that if
+                    there is one man in the world upon whom, at such a crisis, I have a right to
+                    rely, it is he to whom I have promised my daughter, and who professes to be
+                    devotedly attached to her."
+"In short, Lady Broadhem," said I, rising and taking up my hat, "you are willing
+                    to part with your daughter to me on condition of my paying a first instalment of
+                    —27,000 down, with the prospect of 'calls' to an unlimited extent looming in the
+                    background. I doubt whether you will find Chundango prepared to go into such a
+                    very hazardous speculation, but I should recommend you to apply to him."
+At that moment I heard Lady Ursula's voice in the hall, and the rustle of her
+                    dress as she went up-stairs. I was on my way to the door, but I stopped
+                    abruptly, and turned upon Lady Broadhem. She was saying something to which I was
+                    not attending, but now was suddenly paralysed and silenced as I looked at her
+                    fixedly. If a glance can convey meaning, I flatter myself my eyes were not
+                    devoid of expression at that moment. "What!" I thought, "is it reserved for the
+                    mother of the girl I love to make me call her 'a hazardous speculation'?" It is
+                    impossible for me to describe the intensity of the hatred which I felt at this
+                    moment for the woman who had caused me for one second to think of Ursula as a
+                    marketable commodity, who should be offered for purchase to an Oriental
+                    adventurer. The only being I despised more than Lady Broadhem was
+                    myself;—because she chose to take my angel off the pedestal on which I had
+                    placed her and throw her into the dirt, was I calmly to acquiesce in the
+                    proceeding? The storm raging within me seemed gradually to blind me to external
+                    objects; my great love was battling with remorse, indignation, and despair; and
+                    I stood wavering and distracted, looking, as it were, within for rest and
+                    without for comfort, till the light seemed to leave my eyes, and the fire which
+                    had flashed from them for a moment became suddenly extinguished.
+I was recalled to consciousness by an exclamation from Lady Broadhem. "Heavens,
+                    Frank, don't stare so wildly—you quite frighten me! I have only asked for your
+                    advice, and you make use of expressions and fly off in a manner which nothing
+                    but the excitability of your temperament can excuse. I assure you I am worried
+                    enough without having my cares added to by your unkindness. There, if you want
+                    to know the exact state of my affairs, look through my papers—you will find I am
+                    a woman of business; and I have got an accurate list which I shall be able to
+                    explain. Of course all the more important original documents are at my
+                    solicitor's."
+I sat moodily down without answering this semi-conciliatory, semi-plaintive
+                    speech. I did not even take the trouble to analyse it. I felt morally and
+                    physically exhausted. The long journey, the suspense, and this dénouement, had prostrated me. I took up the papers Lady Broadhem
+                    offered me, and turned them vacantly over. I read the list, but failed to attach
+                    any meaning to the items over which my gaze listlessly wandered. I felt that
+                    Lady Broadhem was watching me curiously, but every effort I made to grasp the
+                    details before me failed hopelessly. At last I threw the packet down in despair,
+                    and, leaning over the table, clasped my bursting forehead with my hands.
+"Dear Frank," said Lady Broadhem, and for the first time her voice betrayed signs
+                    of genuine emotion, "I know I have been very imprudent, but I did it all for the
+                    best. You can understand now why I hesitated to tell you everything at first.
+                    You don't know how much it has cost me, and to what means I am obliged to resort
+                    to keep up my courage; besides, I have got into such a habit of concealment that
+                    I could not bear that even you should know the desperate state of our affairs,
+                    though I had no idea that in so short a time you could have unravelled such
+                    complicated accounts and arrived at the terrible result. Perhaps you would like
+                    me to leave you for a few moments. I will go and say good-night to Ursula, whom
+                    I heard going up-stairs just now."
+I heard Lady Broadhem leave the room, but did not raise my head, and indeed only
+                    slowly comprehended the purport of her last speech. As it dawned upon me, the
+                    hopelessness of the whole situation seemed to overwhelm me. Chaos and ruin like
+                    gaunt spectres stared me in the face! What mattered it if the Broadhem family
+                    were bankrupt in estate, if I was to become bankrupt in mind? What matter if
+                    they lost all their worldly possessions? Had I not lost all hope of Ursula since
+                    I had heard of her attachment to Grandon, and with her every generous impulse of
+                    my nature? Why should I save the family, even if I could? Why in this desert of
+                    my existence spend a fortune on an oasis I was forbidden ever to enter or enjoy?
+                    Why should I bring offerings to the shrine at which I might never worship? The
+                    whole temple that enclosed it was tottering. Instead of helping to prop it up,
+                    why not, like Samson, drag it down and let it bury me in its ruin? I threw
+                    myself on the couch from which Lady Broadhem had risen, and, turning my face to
+                    the wall, longed with an intense desire for an eternal release. At that moment
+                    my hand, which I had thrust under the pillow, came in contact with something
+                    hard and cold. I drew it out, and was startled to find that it was a small vial
+                    labelled "POISON." I am not naturally superstitious, but this immediate response
+                    to my thoughts seemed an indication so direct as to be almost supernatural. I
+                    had hardly framed in definite terms the idea of a suicide which should at once
+                    end my agony, when the means thereto were actually placed in my very hand. Even
+                    had I doubted, the inward sense, the inspiration to which I trust, and which has
+                    never yet failed me, said, Drink! It even whispered aloud, Drink! From every
+                    corner of the room came soft pleasant murmurs of the same word. Beautiful sirens
+                    floating round me bade me drink. Every thought of moral evil vanished in
+                    connection with this final act. I looked forward with rapture to the long sleep
+                    before me, and with a smile of the most intense and fervent gratitude I raised
+                    the bottle to my lips. I remember thinking at the moment, "The smile is very
+                    important—it shall play upon my lips to the end. Ursula, I die happy, for my
+                    last thought is, that in the spirit I shall soon revisit thee," and the liquid
+                    trickled slowly down my throat. It was not until I had drained the last drop
+                    that I suddenly recognised the taste. It was the "pick-me-up" I always get at
+                    Harris's, the apothecary in St James's Street, when my fit of nervous exhaustion
+                    come on, but there seemed rather more of the spirituous ingredient in it than
+                    usual. The life-stream began to tingle back through all my fibres—my miseries
+                    took grotesque forms. "Ha! ha! Lady Broadhem! the means you take to keep up your
+                    courage, which you so delicately alluded to just now, have come in most
+                    opportunely. What a fool I was to make mountains out of molehills, and call the
+                    little ills of life miseries! We will soon see what these little imprudences are
+                    the old lady talks of." And I took up the papers with a hand rapidly becoming
+                    steady, and glanced over them with an eye no longer confused and dim. Oh the
+                    pleasure of the sensation of this gradual recovery of vigour of mind and force
+                    of body!
+I was engaged in this task, and making the most singular and startling
+                    discoveries, the nature of which I shall shortly disclose, when I heard Lady
+                    Broadhem coming down-stairs. I felt so angry with her for having been the means
+                    of tempting me to commit a great sin, and for the trouble she was causing me
+                    generally, that I followed the first impulse which my imagination suggested as
+                    the best means of revenging myself upon her. Accordingly, when the door opened,
+                    she found me stretched at full length on the sofa, my form rigid, my face fixed,
+                    my eyes staring, my hands clenched, and my whole attitude as nearly that of a
+                    person in a fit as I had time to make it.
+"Gracious, what is the matter?" said she.
+My lips seemed with difficulty to form the word "poison."
+"Frank, speak to me!" and she seized my hand, which was not so cold as I could
+                    have wished it, but which fell helplessly by my side as she let it drop.
+"Poison!" I this time muttered audibly.
+"Where did you get it?" said she, snappishly. For it began to dawn upon her that
+                    I was not poisoned at all, but had discovered her secret. I turned my thumb
+                    languidly in the direction of under the pillow. She hastily thrust in her hand
+                    and pulled out the empty bottle. "You fool"—she actually used this expression; I
+                    have heard other ladies do the same—"you fool," and she was literally furious,
+                    "what did you go poking under the pillow for? You are no more poisoned than I
+                    am; it is a draught I am obliged to take for nervous depression, and your
+                    imagination has almost frightened you into a fit. I put 'poison' on it to keep
+                    the servants from prying. Come, get up, be a man—do," and Lady Broadhem gave me
+                    her hand, in consideration for my weakness to help myself up by.
+"Dearest Lady Broadhem," said I, pressing it to my lips, "I cannot tell what
+                    comfort you give me. I was just beginning to regret the world I thought I was
+                    about to leave for ever, when your assurance that I have not taken poison, but a
+                    tonic, makes me feel as grateful to you as if you had saved my life. I confess
+                    that, when I found that you considered your affairs to be so desperate that you
+                    had provided the most effectual mode of escape from them, I envied the superior
+                    foresight which you had displayed, and determined to repair my error. If it is
+                    worth dear Lady Broadhem's while to poison herself, I thought, it is surely
+                    worth mine. But, after all, suicide is a cowardly act either in a man or a
+                    woman; better far face the ills of life with the aid of stimulants, than fly for
+                    refuge in the agony of a financial crisis to the shop of an apothecary."
+"You are an incomprehensible creature, Frank," said Lady Broadhem; "I am sure I
+                    hope for her own sake that Ursula will understand you better than I do; but as
+                    your humours are uncertain, and you seem able to go into these affairs now, I
+                    think we had better not waste any more time; only I do wish" (with a wistful
+                    glance at the bottle) "you would provide yourself with your own draughts in
+                    future."
+"How lucky," thought I, as I put on a business-like air, and methodically began
+                    arranging the papers according to their docquets. "Now, if it had been just the
+                    other way, and her ladyship had taken the draught instead of me, how completely
+                    I should have been at her mercy? Now I am master of the situation."
+"'Greek loan, thirty thousand,'" I read, going down the list; "I am afraid this
+                    is rather a losing business. I see they have been already held over for some
+                    months. I suppose some of the —27,000 is to be absorbed there."
+"Yes," said Lady Broadhem; "because if I can carry on for another fortnight, I
+                    have got information which makes it certain I shall recover on them."
+"What is this? five hundred pounds' worth of dollar bonds?" I went on.
+"Oh, I only lost a few pounds on them. I bought them at threepence apiece and
+                    sold them at twopence. Spiffy got me to take them off his hands, and, in fact,
+                    made a great favour of it, as he says there is nothing people make money more
+                    surely out of than dollar bonds."
+"Bubbs's Eating-house and Cigar Divan Company, Holborn. Well, there is a strong
+                    direction. How do you come by so many shares?"
+"Lord Staggerton was one of the promoters, and had them allotted to me," said
+                    Lady Broadhem. "He also was kind enough to put me into two Turkish baths, a
+                    monster hotel, and a music-hall. You will see that I lost heavily in the Turkish
+                    baths and the hotel, but the music-hall is paying well. Spiffy says I ought
+                    never to stay so long in anything as I do; in and out again, if it is only half
+                    a per cent, is his system; but Staggerton used to look after my interests, and
+                    managed them very successfully. I am afraid that all my troubles commenced when
+                    I quarrelled with him. He is now promoting two companies which I hear most
+                    highly spoken of, but he says I must take my chance with others about shares,
+                    and he won't advise me in the matter. One is 'The Metropolitan Crossing-Sweeping
+                    Company,' of which he's to be chairman, and the other is the 'Seaside
+                    Bathing-Machine Company.' Spiffy says they will both fail, because Staggerton
+                    has not the means of having them properly brought out. Bodwinkle won't speak to
+                    him, and unless either he or the Credit Foncier bring a thing out, there is not
+                    the least chance of its taking with the public. They don't so much look at the
+                    merits of the speculation as at the way in which it is put before them; and with
+                    this system of rigging the market, so many people go in like me only to get out
+                    again, that it is becoming more and more difficult every day to start anything
+                    new. Oh dear," said Lady Broadhem, "how exhausted it always makes me to talk
+                    'City!' I only want to show you that I understand what I am about, and that if
+                    you can only help to tide me over this crisis, something will surely turn up a
+                    prize."
+"I know you disapprove of cards, but perhaps you will allow me to suggest the
+                    word 'trump' as being more expressive than 'prize,'" I said. "Well, now we have
+                    got through the companies, what have we here? Why, Lady Broadhem, you have
+                    positively taken no less than seven unfurnished houses this year. What on earth
+                    do you intend to do with them all?"
+"My dear Frank, where have you been living for the last few years? Do with them?
+                    Exactly what dozens of smart people, with very little to live on, do with
+                    houses—let them, to be sure. I made —1100 last year in four houses, and all by
+                    adding it on to the premiums. I don't like furnishing and putting it in the
+                    rent. In the first place, one is apt to have disagreeable squabbles about the
+                    furniture, which, however good you give people, they always say is shabby; and
+                    in the second, you get much more into the hands of the house-agents."
+"Well, but," I said, "here is one of the largest houses in London—rent,
+                    unfurnished, —1500 a-year. That is rather hazardous: who do you expect will take
+                    that?"
+"Oh, that is the safest speculation of them all," said Lady Broadhem. "I had an
+                    infinity of trouble to get it. Spiffy first suggested the plan to me, and we
+                    found it succeed admirably last year. It was we who brought out Mrs Gorgon
+                    Tompkins and her daughters. She took the house from me at my own rent on
+                    condition that Spiffy managed her balls, and got all the best people in London
+                    to go to them. This year we are going to bring out the Bodwinkles. It will be
+                    much easier, because she is young, and has no family. He, you know, is a man of
+                    immense wealth in the City—in fact, as I said before, his name is almost
+                    essential to the success of any new company. I told his wife I could have
+                    nothing to do with them unless he came into Parliament, for they are horridly
+                    vulgar, and they were bound to do what they could for themselves before I could
+                    think of taking them up. Lady Mundane positively refused to have anything to do
+                    with them, and, in fact, I live so little in the world, though I keep it up to
+                    some extent for the sake of my girls, that it was quite an accident my hearing
+                    of them. Now, however, he has got into the House of Commons, and it is arranged
+                    that she is to take the house, and Bodwinkle is to help Spiffy in City matters,
+                    on condition that he gets all Lady Mundane's list to her first party. Poor
+                    Spiffy is a little nervous, as Bodwinkle actually wanted to put it in writing on
+                    a stamped paper; but he is so immensely useful to society, that the least people
+                    can do is to be good-natured on an occasion of this kind."
+"No fear of them," said I; "if Bodwinkle is the only man who can launch a company
+                    in the City, no one can compete with Spiffy in launching a snob in Mayfair. But
+                    I thought you never went to balls."
+"I never do; but because I do not approve of dancing, there is no reason why I
+                    should not let houses for the purpose. You might as well say a religious banker
+                    ought not to open an account with a theatre, or a good brewer live by his beer,
+                    because some people drink too much of it. If any one was to leave a gin-palace
+                    to me in a legacy, I should not refuse the rent."
+"Any more than you do the interest of your shares in the music-hall. And now,"
+                    said I, coolly, gathering up all her papers and putting them in my pocket, "as
+                    it is past one o'clock, and I see you are tired, I will take these away with me,
+                    and let you know to-morrow what I think had better be done under the
+                    circumstances."
+"What are you doing, Frank? what an unheard-of proceeding! I insist upon your
+                    leaving my papers here."
+"If I do, you must look elsewhere for the money. No, Lady Broadhem"—I felt that
+                    my moral ascendancy was increasing every moment, and that I should never have
+                    such another opportunity of establishing it—"we had better understand each other
+                    clearly. You regard me at this moment in the light of your future son-in-law,
+                    and in that capacity expect me to extricate you and your family from your
+                    financial difficulties. Now I am quite capable of 'behaving badly,' as the world
+                    calls it, at the shortest notice. I told you at Dickiefield that I was totally
+                    without principle, and we are both trusting to Ursula to reform me. But I will
+                    relinquish the pleasure of paying your debts, and the advantage of being
+                    reformed by your daughter, unless you agree to my terms."
+"And they are?" said her ladyship, doggedly.
+"First, that from this evening you put the entire management of your affairs into
+                    my hands, and, as a preliminary measure, allow me to take away these papers,
+                    giving me a note to your lawyer authorising him to follow my instructions in
+                    everything; and, secondly, that you never, under any pretence, enter into any
+                    company or speculation of any kind except with my permission."
+A glance of very evil meaning shot across her ladyship's eyes as they met mine
+                    after this speech, but I frightened it away by the savageness of my gaze, till
+                    she was literally obliged to put her hand up to her forehead. The crisis was
+                    exciting me, for Ursula was at stake, and it was just possible my conditions
+                    might be refused; but I felt the magnetism of my will concentrating itself in my
+                    eyes as if they were burning-glasses. It seemed to dash itself upon the reefs
+                    and barriers of Lady Broadhem's rocky nature; the inner forces of our organisms
+                    were engaged in a decisive struggle for the mastery; but the field of battle was
+                    in her, not in me. I had invaded the enemy's country, and her frontier was as
+                    long and difficult to defend as ours is in Canada. So I kept on pouring in
+                    mesmeric reinforcements, as she sat with her head bent, and her whole moral
+                    being in turmoil. Never before had any man ventured to dictate to this veteran
+                    campaigner. The late Lord had been accustomed to regard her as infallible, and
+                    Broadhem has not yet known the pleasures of independence. She never had friends
+                    who were not servile, or permitted herself to be contradicted, except by a few
+                    privileged ecclesiastics, and then only in unctuous and deprecatory tones. That
+                    I, of whom the world was accustomed to speak in terms of compassion, and whom
+                    she inwardly despised at this moment, should stand over her more unyielding and
+                    imperious than herself, caused her to experience a sensation nearly allied to
+                    suffocation. I seemed instinctively to follow the mental processes through which
+                    she was passing, and a certain consciousness that I did so demoralised her. Now,
+                    I felt, she is going to take me to task in a "sweet Christian spirit" about the
+                    state of my soul, and I brought up "will" reinforcements which I poured down
+                    upon her brain through the parting of her front, till she backed suddenly out of
+                    the position, and took up a hostile, I might almost say an abusive, attitude.
+                    Here again I met her with such a shower of invective, "uttered not, yet
+                    comprehended," that after a silent contest she gave this up too, and finally
+                    fell back on the flat rejection of me and my money altogether. This, I confess,
+                    was the critical moment. She took her hand down when she came to this mental
+                    resolution, and she looked at me, I thought, but it might have been imagination,
+                    demoniacally. What had I to oppose to it? My love for Ursula? No; that would
+                    soften me. My aversion to Lady Broadhem? No; for it was not so great as hers for
+                    me. For a moment I wavered; my will seemed paralysed; her gaze was becoming
+                    fascinating, while mine was getting clouded, till a mist seemed to conceal her
+                    from me altogether. And now, at the risk of being misunderstood and ridiculed, I
+                    feel bound to describe exactly the most remarkable occurrence of my life. At
+                    that moment I saw distinctly, in the luminous haze which surrounded me, a fiery
+                    cross. I have already said that objects of this kind often appeared to me in the
+                    dark, apropos of nothing; but upon no former occasion had a lighted room become
+                    dim, and a vision manifested itself within which seemed to answer to the
+                    involuntary invocation for assistance that I made when I found the powers of my
+                    own will beginning utterly to fail me; and, what was still more strange, never
+                    before had any such manifestation effected an immediate revolution in my
+                    sentiments. Up to that moment I had been internally fierce and overbearing in my
+                    resolution to subdue the nature with which I was contending, and I was actually
+                    defeated when I received this supernatural indication of assistance. Before the
+                    dazzling vision had vanished, it had conveyed its lesson of self-sacrifice, and
+                    created within me a new impulse, under the influence of which I solemnly vowed
+                    that if I triumphed now I should use my victory for the good not only of those I
+                    loved, but of her then sitting before me. The demon of my own nature, which had
+                    evidently been struggling with the demon of hers, suddenly deserted me, and his
+                    place seemed occupied by an angel of light, furnishing me with the powers of
+                    exorcism, which were to be gained only at the sacrifice of self. My very breath
+                    seemed instantly charged with prayers for her, at the moment I felt she regarded
+                    me with loathing and hate.
+An ineffable calm pervaded my whole being. A sense of happiness and gratitude
+                    deprived the consciousness of the conquest which I had gained of any sentiment
+                    of exultation; on the contrary, I felt gentle and subdued myself—anxious to
+                    soothe and comfort her with that consolation I had just experienced. Ah, Lady
+                    Broadhem! at that moment, had I not been in the presence of a "saint," I should
+                    have fallen upon my knees. Perhaps as it was I might have done so, had she not
+                    suddenly leant back exhausted.
+"Frank," she said, "I seem to have been dreaming. I am subject to fits of violent
+                    nervous depression, and the agitation of this scene has completely overcome me;
+                    my brain seems stunned, and all my faculties have become torpid. I can think of
+                    nothing more now, do what you like; all I want is to go to sleep. If you ring
+                    the bell in that corner, Jenkins will come down. Good-night; I shall see you
+                    to-morrow. Take the papers with you."
+I took Lady Broadhem's hand—it was cold and clammy—and held it till her maid came
+                    down. She had already fallen into a half-mesmeric sleep, but was not conscious
+                    of her condition. I saw her safely on her way to her bedroom on the arm of her
+                    maid, and left the house with my pockets full of papers, more fresh and
+                    invigorated than I had felt for weeks. A new light had indeed dawned upon me.
+                    For the first time one of these "hallucinations," as medical men usually term
+                    them, to which I am subject, had contained a lesson. Not only had I profited
+                    from it upon the spot, but it had suggested to me an entirely new line of
+                    conduct in the great question which most nearly affected my own happiness, and
+                    seemed to guarantee me the strength of will and moral courage which should
+                    enable me to carry it out.
+As I walked home, with the piercing March wind cutting me through, solemn
+                    thoughts and earnest aspirations arose within me, and, struggling into existence
+                    amid the wreck that seemed to strew the disturbed chambers of my brain, came the
+                    prayer of an old saint, which, in years gone by, had fixed itself permanently in
+                    some vacant niche of my mind:—
+"Great God! I ask Thee for no meaner pelf, 
+Than that I may not disappoint myself, 
+That in my actions I may soar as high 
+As I can now discern with this clear eye; 
+And next in value what Thy kindness lends, 
+That I may greatly disappoint my friends, 
+Howe'er they think or hope that it might be, 
+They may not dream how Thou'st distinguished me; 
+That my weak hand may equal my firm faith, 
+And my life practise more than my tongue saith; 
+That my low conduct may not show, 
+Nor my relenting lines, 
+That I Thy purpose did not know, 
+Or overrated Thy designs." 
+Time alone will show whether the project I formed under the new influences which
+                    were now controlling me, will ever be realised.
+There is one point which I have in common with Archimedes,—my most brilliant
+                    inspirations very often come to me in my tub, or while I am dressing. On the
+                    morning following the scene above described, I trusted to this moment to furnish
+                    me with an idea which should enable me to put my plan into operation, but I
+                    sought in vain.
+In the first place, though I assumed in the presence of Lady Broadhem a thorough
+                    knowledge of the peculiar description of the transaction in which she was
+                    engaged, I feel bound not to conceal from my readers that I have made it a rule
+                    through life to confine my knowledge of business strictly to theory, and though
+                    I am as thoroughly conversant with the terms of the Stock Exchange as with the
+                    language of the swell mob, I avoid, in ordinary life, making use either of one
+                    or the other. Hence I have always treated debentures, stock, scrip, coupons, and
+                    all the jargon connected with such money-making and money-losing contrivances,
+                    as pertaining to the abstract science of finance; nor do I ever desire to know
+                    anything of them practically, feeling assured that the information thus acquired
+                    is of a character calculated to exercise an injurious influence upon the moral
+                    nature. I do not for a moment wish to reflect upon those honest individuals who
+                    devote their whole lives to the acquisition of money and nothing else. Had one
+                    of my own ancestors not done so, I should not now be the millionaire I am, and
+                    able to write thus of the pursuit of wealth. But let no man tell me that the
+                    supreme indifference to it which I entertain, does not place me upon a higher
+                    platform than a gold-hunter can possibly aspire to. When, therefore, I looked
+                    forward to an interview with the Honourable Spiffington Goldtip, I felt that I
+                    incurred a very serious responsibility. Not being versed in the Capel Court
+                    standard of morality, or being in the habit of treading those delicate lines
+                    upon which Spiffy had learnt to balance himself so gracefully, I might, instead
+                    of doing him good, be the means of encouraging him in that pecuniary scramble
+                    which enabled him to gain a precarious livelihood.
+"After all," I thought, "why not hover about the City with one's hands full of
+                    gold, as one used to after dinner at Greenwich, when showers of copper delighted
+                    the ragged crowd beneath, and have the fun of seeing all the mud-larking
+                    Spiffys, fashionable and snobbish, scrambling in wild confusion, and rolling
+                    fraternally over each other in the dirt? If I can't convert them, if I must be
+                    'done' by them, I will 'do' to them as I would be 'done' by; and rather than
+                    leave them to perish, will adopt an extreme measure, and keep on suffocating
+                    them with the mud they delight to revel in, till they cry aloud for help. What a
+                    pleasure it would be to wash Spiffy all over afterwards, and start him fresh and
+                    sweet in a new line of life!" As I said before, I was in my tub myself as I made
+                    this appropriate reflection; then my thoughts involuntarily reverted to
+                    Chundango. When I had threatened Lady Broadhem with the mercenary spirit of that
+                    distinguished Oriental, I inwardly doubted whether, indeed, it were possible for
+                    her to propose any pecuniary sacrifice which he was not prepared to make, in
+                    order to gain the social prize upon which he had set his heart; and I dreaded
+                    lest I should have driven her in despair to have recourse to this "dark"
+                    alternative,—whether, in order to save the Broadhem family from ruin and
+                    disgrace—for I suspected that the papers I had carried away contained evidence
+                    that the one was as possible as the other—Ursula would accede to the pressure of
+                    the family generally, and of her mother in particular, whose wish none of her
+                    children had ever dared to thwart, was a consideration which caused me acute
+                    anxiety. I must prepare myself shortly for a conversation on the subject with
+                    Grandon. What should I say to him? Granting that the means occasionally justify
+                    the end, which I do not admit, what would be the use of making a false statement
+                    either in the sense that I was, or that I was not, going to marry Ursula? If I
+                    said I was, he would think me a traitor and her a jilt; if I said I was not, I
+                    must go on and tell him that the family would be ruined and disgraced, or that
+                    she must marry Chundango to save it. He would obtain comfort neither way. He had
+                    evidently not seen the Broadhems, and was therefore sure now to be in blissful
+                    ignorance that anything has happened at all. Better leave him so. If he is
+                    convinced that Ursula loves him, he would never dream of her accepting me. Even
+                    had our acquaintance been longer than it was, before I was so mad as to think of
+                    proposing to her, the best thing I can do is certainly to hold my tongue; but
+                    then, I thought, how will he account for my reserve? what can he think except
+                    that it arises from an unworthy motive?—and I brushed my hair viciously. At that
+                    instant I heard a thump at the door, and before I could answer, in walked the
+                    subject of my meditation.
+"Well, my dear old fellow," said Grandon, as he grasped my hand warmly, "how
+                    mysterious and spasmodic you have been in your movements! I was afraid even now,
+                    if I had not invaded the sanctity of your dressing-room, that you would have
+                    slipped through my fingers. I know you have a great deal to tell me, of interest
+                    to us both, and we are too fast friends to hesitate to confide in each other on
+                    any matters which affect our happiness. True men never have any reticence as
+                    between themselves; they only have recourse to that armour when they happen to
+                    be cursed with false friends." I cannot describe my feelings during this speech.
+                    How on earth was I to avoid reticence? how show him that I loved and trusted him
+                    when I had just been elaborately devising a speech which should tell him
+                    nothing? and I thought of our school and then our college days—how I never
+                    seemed to be like other boys or other men of my own age—and how when nobody
+                    understood me Grandon did, and how when nobody defended my peculiarities Grandon
+                    did—how he protected and advised me at first out of sheer compassion, until at
+                    last I had become as a younger brother to him. How distressed he was when I gave
+                    up diplomacy, and how anxious during the five years that I was exploring in the
+                    Far West and gold-digging in Australia! and how nothing but his letters ever
+                    induced me to leave the wild reckless life that possessed such a wonderful charm
+                    for me; and how he bore with my wilfulness and vanity—for the faults of my
+                    character at such moments would become painfully apparent to me; and how now I
+                    was going to return it all, by allowing him to suppose that I had deliberately
+                    plotted against his happiness, and ruthlessly sapped the solid foundations upon
+                    which our life's friendship had been built. He saw these painful thoughts
+                    reflected but too accurately upon my face, for he had been accustomed to read it
+                    for so many years, and he smiled a look of encouragement and kindliness. "Come,"
+                    he said, "I will tell you exactly, first, everything I suspect, and then
+                    everything I know, and then what I think about it, so that you will have as
+                    little of the labour of revelation as possible. First of all, I suspect that you
+                    imagine that I had proposed to Lady Ursula Newlyte before we met the other day
+                    at Dickiefield: I need not say that in that case I should have told you as much
+                    upon the evening we parted; I pledge you my word I have never uttered a syllable
+                    to Lady Ursula from which she could suspect the state of my feelings towards
+                    her, and she has never given me any indication that she returned my affection; I
+                    therefore did not mention myself when you told me your intention of proposing to
+                    her at Dickiefield; I only do so now in consequence of a letter which I received
+                    from Lady Broadhem last night."
+"A letter from Lady Broadhem?" said I, aghast.
+"Yes," he said, "in which she encloses a copy of one of yours containing a
+                    proposal to Lady Ursula, and informs me that you were aware, when you made it,
+                    of the difficulties you might have to encounter through me. She goes on to say
+                    that, whatever may have been her daughter's feelings towards me at one time,
+                    they have completely changed, as she at once accepted you; and she winds up with
+                    the rather unnecessary remark that this is the less to be regretted by me, as
+                    under no circumstances would I have obtained either her consent or that of Lord
+                    Broadhem. And so," my poor friend went on, but his lips were quivering, and I
+                    turned away my eyes to avoid seeing the effort it cost him—"and so, you see, my
+                    dear Frank, it is all for the best. In the first place, she never loved me. I
+                    have too high an opinion of her to suppose that if she had, she would have
+                    accepted you; in the second, she would never have married me against her
+                    mother's consent—and so, even if she had loved me, we should have both been
+                    miserable; and thirdly, if there is one thing that could console me under such a
+                    blow, it is, that the man she loves, and the family approve, is my dear old
+                    friend, who is far more worthy the happiness in store for him than I should have
+                    been." He put his hand kindly on my shoulder as his strong voice shook with the
+                    force of his suppressed emotion, and I bowed my head. I felt utterly humiliated
+                    by a magnanimity so noble, and by a tenderness surpassing that of women. I
+                    thanked God at that moment that Lady Ursula did not love
+                    me, and I vowed that Lady Broadhem should bitterly expiate her sins against us
+                    both. Here, then, was the secret of her refusing to acknowledge that she had
+                    stolen my missing letter at Dickiefield, and this was the precious use she had
+                    made of it. The question now was, What was to be done? But my mind was
+                    paralysed—all its strength seemed expended in vowing vengeance against Lady
+                    Broadhem. When I tried to form a sentence of explanation to Grandon, my brain
+                    refused its functions; I felt as if I were in a net, and that the slightest
+                    movement on my part would entangle me more inextricably in its meshes. The last
+                    resolution I had come to before he entered the room was on no account to tell
+                    him anything, and this resolution had now become an idée
+                        fixe. I had not clearness of mind at the moment to decide whether it
+                    was right or wrong. I felt that when my head was clear I had come to the
+                    conclusion that it was best, so I stuck to it now. True, it involved leaving him
+                    in the delusion that Ursula and I were engaged—but was it altogether certain to
+                    remain a delusion? Did Lady Ursula really care for him? I had only Lady
+                    Broadhem's word for it. Again, had I anything better to give him? would it be a
+                    comfort to him to hear the Chundango alternative? These in a confused way were
+                    the thoughts which flitted across my brain in this moment of doubt and
+                    difficulty, so I said nothing. He misinterpreted my silence, and thought me
+                    overwhelmed with remorse at the part I had played. "Believe me," he said, "I do
+                    not think one particle the worse of you for what you have done; I know how
+                    difficult it is to control one's feelings in moments of passion; and you see you
+                    were quite right not to believe Lady Broadhem when she told you Ursula cared for
+                    me."
+"I had already written the letter," I stammered out.
+"Of course you had: I never supposed you could do the dishonourable thing of
+                    hearing she cared about me first, and writing to her afterwards, although Lady
+                    Broadhem said so. When you did make the discovery that Lady Ursula's affections
+                    were not already engaged, you were perfectly right to win her if you could. I
+                    only bargain that you ask me to be your best man."
+This was a well-meant but such a very unsuccessful attempt at resignation on
+                    Grandon's part, that it touched me to the quick. "My dear Grandon," I said—and I
+                    saw my face in the glass opposite, looking white and stony with the effort it
+                    cost me not to fall upon his neck and cry like a woman—"I solemnly swear,
+                    whatever you may think now, that the day will come when you will find that I was
+                    worthy the privilege of having been even your friend. I was going to say, Till
+                    then, believe me and trust me; but I need not, for I know that, however
+                    unnatural it seems for me to ask you not to allude again to the subject we have
+                    just been discussing, you will be satisfied that I would not ask it without
+                    having a reason which if you knew you would approve. On my conscience I believe
+                    that I am right in reserving from you my full confidence for the first time in
+                    my life; but do not let the fact of one forbidden topic alienate us—let it
+                    rather act as another link, hidden for the moment, but which may some day prove
+                    the most powerful to bind us together."
+Grandon's face lit up with a bright frank smile. "I trust and believe in you from
+                    the bottom of my soul, and you shall bury any subject you like till it suits you
+                    to exhume it. Come, we will go to breakfast, and I will discourse to you on the
+                    political and military expediency of spending —200,000 on the fortifications of
+                    Quebec."
+"Well," thought I, as I followed Grandon down-stairs, "for a man who is yearning
+                    to be honest, and to do the right thing by everybody, I have got into as
+                    elaborate a complication of lies as if I were a Russian diplomatist. First, I
+                    have given both Lady Broadhem and Grandon distinctly to understand that I am at
+                    this moment engaged to Ursula, which I am not; and secondly, I have solemnly
+                    assured that young lady herself that I am conscious of being occasionally
+                    mad."
+In this tissue of falsehoods, it is poor consolation to think that the only one
+                    in which there may be some foundation of truth is the last. Supposing I was to
+                    go in for dishonesty, perhaps I could not help telling the truth by the rule of
+                    "contraries." I will go and ask the Honourable Spiffington whether he finds this
+                    to be the case, and I parted from Grandon in the hope of catching that gentleman
+                    before he had betaken himself to his civic haunts. I was too late, and pursued
+                    him east of Temple Bar. Here he frequented sundry "board-rooms" of companies
+                    which by a figure of speech he helped to "direct," and was also to be found in
+                    the neighbourhood of Hercules Passage and the narrow streets which surround the
+                    Stock Exchange, in the little back dens of pet brokers upon whom he relied for
+                    "good things." Spiffy used to collect political news in fashionable circles all
+                    through the night and up to an early hour of the morning, and then come into the
+                    City with it red-hot, so as to "operate." He was one of the most lively little
+                    rabbits to be found in all that big warren of which the Bank is the centre, and
+                    popped in and out of the different holes with a quickness that made him very
+                    difficult to catch. At last I ran him to a very dingy earth, where he was
+                    pausing, seated on a green baize table over a glass of sherry and a biscuit, and
+                    chaffing a rising young broker who hoped ultimately to be proposed by Spiffy for
+                    the Piccadilly Club. He was trying to establish a claim thereto now, on the
+                    strength of having been at Mrs Gorgon Tompkins's ball on the previous evening.
+                    "It is rather against you than otherwise," said Spiffy, who was an extremely
+                    off-hand little fellow, and did not interrupt his discourse after he had nodded
+                    to me familiarly; "I can't afford to take you up yet; indeed, what have you ever
+                    done to merit it? and Mrs Gorgon Tompkins has enough to do this season to keep
+                    her own head above water without attempting to float you. I did what I could for
+                    her last night, but she can't expect to go on with her successes of last year.
+                    We had a regular scene at 6 A.M. this morning, 'in banquet
+                    halls deserted'—tears, and all that sort of thing—nobody present but self,
+                    Gorgon, and partner. We took our last year's list, and compared them with the
+                    invitations sent out this year. The results were painful; only the fag-end of
+                    the diplomatic corps had responded—none of the great European powers present,
+                    and our own Cabinet most slenderly represented. Obliged to resort for young men
+                    to the byways and hedges; no expense spared, and yet the whole affair a
+                    miserable failure."
+"Have you tried lobsters boiled in champagne at supper, as a draw?" said I.
+"No," said Spiffy, looking at me with admiration; "I did not know this sort of
+                    thing was in your line, Frank." He had not the least right to call me Frank; but
+                    as everybody, whether they knew him or not, called him Spiffy, he always
+                    anticipated this description of familiarity.
+"To tell you the truth, I could pull the Tompkinses through another season, but I
+                    am keeping all my best ideas for the Bodwinkles. Bodwinkles' first ball is to
+                    cost —2000. He wanted me to do it for —1500, and I should have been able to do
+                    it for that if Mrs Bodwinkle had had any h's; but the crême, de la crême require an absence of aspirations to
+                    be made up to them somehow. Oh, with the extra £500 I can do it easily," said
+                    Spiffy, with an air of self-complacency. "She is a comparatively young woman,
+                    you see, without daughters; that simplifies matters very much. And then
+                    Bodwinkle can be so much more useful to political men than Gorgon Tompkins; the
+                    only fear is that he may commit himself at a late hour at the supper-table, but
+                    I have hit on a notion which will overcome all these possible contretemps."
+"What is that?" said I, curiously.
+"In confidence, I don't mind telling you, as you are not in the line yourself;
+                    but it is a master-stroke of genius. Like all great ideas, its merit lies in its
+                    simplicity."
+"Don't keep us any longer in suspense; I promise not to appropriate it."
+"Well," said Spiffy, triumphantly, "I am going to pay the
+                    aristocracy to come!"
+"Pay them!" said I, really astounded; "how on earth are you going to get them to
+                    take the money?"
+"Ah, that is the secret. Wait till the Bodwinkles' ball. You will see how
+                    delicately I shall contrive it; a great deal more neatly than you do when you
+                    leave your doctor's fee mysteriously wrapped in paper upon his mantelpiece. I
+                    shall no more hurt that high sense of honour, and that utter absence of anything
+                    like snobbism which characterises the best London Society, than a French cook
+                    would offend the nostrils of his guests with an overpowering odour of garlic;
+                    but it is a really grand idea."
+"Worthy of Julius C—sar, Charlemagne, or the first Napoleon," said I; "posterity
+                    will recognise you as a social giant with a mission, if the small men and the
+                    envious of the present day refuse to do so."
+"I don't mind telling you," Spiffy went on, "that the idea first occurred to me
+                    in a Scotch donkey-circus, where I won, as a prize for entering the show, a red
+                    plush waistcoat worth five shillings. The fact is, Bodwinkle is so anxious to
+                    get people, he would go to any expense; he has even offered me a commission on
+                    all the accepted invitations I send out for him, graduated on a scale
+                    proportioned to the rank of the acceptor. I am afraid it would not be considered
+                    quite the right thing to take it; what do you think?"
+"I doubt whether society would stand that. You must bring them to it gradually.
+                    At present, I feel sure they would draw the line at a 'commission.' Apropos of
+                    the Bodwinkles, I want to have a little private conversation with you."
+"I am awfully done," said Spiffy. "I never went to bed at all last night. I got
+                    some information about Turkish certificates before I went to the Tompkinses;
+                    then I stayed there till past six, and had to come on here at ten to turn what I
+                    knew to account. However, go ahead; what is it in? Jones here will do it for
+                    you. No need of mystery between us. 'Cosmopolitan district' is the sort of thing
+                    I can conscientiously recommend—I'll tell you why: I went down to the lobby of
+                    the House last night on purpose to hear what the fellows were saying who prowl
+                    about there pushing what my wretched tailor would call 'a little bill' through
+                    Committee. It is becoming a sort of 'ring,' and the favourites last night were
+                    light Cosmopolitans."
+"What on earth are they as distinguished from heavy?" I asked.
+"Jones, show his lordship the stock-list," said Spiffy, with a swagger.
+The investigation of the "list" completely bewildered me. Why a —10 share should
+                    be worth —19, and a —100 share worth —99, 10s., in the same company, was not
+                    evident on the face of the document before me, so I looked into Spiffy's.
+"Puzzling, isn't it?" said Spiffy.
+"Very," I replied. "Now tell me," and I turned innocently towards Mr Jones, for
+                    Spiffy's expression was secretive and mysterious—"explain to me how it is that a
+                    share upon which only —10 has been paid, should be so much more valuable than
+                    one which has been fully paid up."
+"Ask the syndicate," said Jones, looking at Spiffy in a significant way.
+I felt quite startled, for I expected to see a group of foreigners composing this
+                    institution walk into the room. It was not until I had looked again to Spiffy
+                    for information, and was met by the single open eye of that gentleman, that I
+                    drew an inference and a very long breath.
+"Spiffy," I said, "I am getting stifled—the moral atmosphere of this place is
+                    tainted; take me to the sweetest board-room in the neighbourhood—I want to speak
+                    to you on private business."
+"Haven't time," said Spiffy, looking at his watch.
+"Not to settle little Lady Broadhem's little affair?" said I, in a whisper.
+Spiffy got uncommonly pale, but recovered himself in a second. "All right, old
+                    fellow;" and he poured a few hurried words in an incomprehensible dialect into
+                    Jones's ear, and led the way to the Suburban Washing-ground Company's
+                    board-room, which was the most minute apartment of the kind I had ever seen.
+I shall not enter into the particulars of what passed between Spiffy and myself
+                    on this occasion. In the first place, it is so dry that it would bore you; in
+                    the second place, it was so complicated, and Spiffy's explanations seemed to
+                    complicate it so much the more, that I could not make it clear to you if I
+                    wished; and, in the last, I do not feel justified in divulging all Lady
+                    Broadhem's money difficulties and private crises. Suffice it to say, that in the
+                    course of our conversation Spiffy was obliged to confide to me many curious
+                    facts connected with his own line of life, and more especially with the peculiar
+                    functions which he exercised in his capacity of a "syndic," under the seal of
+                    solemn secrecy. Without the hold over him which this little insight into his
+                    transactions has given me, I should not be able to report so much of our
+                    conversation as I have. Nevertheless I thought it right to tell him how much of
+                    it he would shortly see in print.
+"Gracious, Frank," said Spiffy, petrified with alarm, "you don't mean to say you
+                    are going to publish all I told you about the Gorgon Tompkinses and the
+                    Bodwinkles? How am I ever to keep them going if you do? Besides, there are a
+                    number of other fellows in the same line as I am. Just conceive the injury you
+                    will inflict upon society generally—nobody will thank you. The rich 'middles'
+                    who are looking forward to this kind of advancement will be furious; all of us
+                    'promoters' will hate you, and 'la haute' will probably
+                    cut you. Why can't you keep quiet, instead of trying to get yourself and
+                    everybody else into hot water?"
+"Spiffy," said I, solemnly, "when I devoted myself to 'mission work,' as they
+                    call it in Exeter Hall, I counted the cost, as you will see on referring back to
+                    my first chapter. I am still only at the beginning. I have a long and heavy task
+                    before me; but my only excuse for remaining in society is that I am labouring
+                    for its regeneration."
+"You won't remain in it long," said Spiffy, "if you carry on in your present
+                    line. What do you want to do? Eradicate snobbism from the British breast?—never!
+                    We should all, from the highest to the lowest, perish of inanition without
+                    it."
+"Society," said I, becoming metaphorical, "is like a fluid which is pervaded by
+                    that ingredient which you call 'snobbism,' the peculiarity of which is that you
+                    find it in equal perfection when it sinks to the bottom and becomes dregs, and
+                    when it rises to the surface and becomes cr—me—though of
+                    course it undergoes some curious chemical changes, according to its position.
+                    However, that is only one of the elements which pollute what should be a
+                    transparent fluid. I am subjecting it just now to a most minute and careful
+                    analysis, and I feel sure I shall succeed in obtaining an interesting
+                    'precipitate.' I do most earnestly trust both you and the world at large will
+                    profit by my experiments."
+"Frank, you are a lunatic," said Spiffy, with a yawn, for I was beginning to bore
+                    him. "I suppose I can't help your publishing what you like, only you will do
+                    yourself more harm than me. Let me know when society has 'precipitated' you out
+                    of it, and I will come and see you. Nobody else will. Good-bye!"
+"He calls me a lunatic," I murmured, as I went down-stairs; "I thought that I
+                    should be most likely to hear the truth by applying to the Honourable
+                    Spiffington."
+The same reasons which have compelled me to maintain a certain reserve in
+                    relating my conversation with this gentleman prevent me fully describing the
+                    steps which I am at present taking to arrange Lady Broadhem's affairs, and which
+                    will occupy me during the Easter recess. Now, thank goodness, I think I see my
+                    way to preventing the grand crash which she feared, but I decline to state the
+                    amount of my own fortune which will be sacrificed in the operation. The great
+                    inconvenience of the whole proceeding is the secrecy which it necessarily
+                    involves. Grandon is under the impression that I am gambling on the Stock
+                    Exchange, and is miserable in consequence, because he fancies I add to that sin
+                    the more serious one of denying it. Lady Ursula, whom I have avoided seeing
+                    alone, but who knows that I am constantly plotting in secret with her mother, is
+                    no doubt beginning to think that I am wicked as well as mad, and is evidently
+                    divided between the secret obligation of keeping the secret of my insanity, and
+                    her dread lest in some way or other her mother should be the victim of it. Lady
+                    Bridget is unmistakably afraid of me. The other day when I went into the
+                    drawing-room and found her alone, she turned as pale as a sheet, jumped up, and
+                    stammered out something about going to find mamma, and rushed out of the room.
+                    Did I not believe in Ursula as in my own existence, I could almost fancy she had
+                    betrayed me. Then there is Broadhem. He is utterly puzzled. He knows that I am
+                    come to pull the family out of the mess, and put his own cherished little person
+                    into a financially sound condition; and he is equally well assured that I would
+                    not make this sacrifice without feeling certain of marrying his sister. But, in
+                    the first place, that any man should sacrifice anything, either for his sister
+                    or any other woman, is a mystery to Broadhem; and, in the second, I strongly
+                    suspect that Ursula has said something which makes him very doubtful whether she
+                    is engaged to me or not. Poor girl! I feel for her. Was ever a daughter and
+                    sister before placed in the embarrassing position of leaving her own mother and
+                    brother in the delusion that she was engaged to be married to a man who had
+                    never breathed to her the subject of his love, much less of matrimony? Then
+                    Spiffy and Lady Broadhem's lawyer both look upon the marriage as settled: how
+                    else can they account for the trouble I am taking, and the liberality I am
+                    displaying? There is something mysterious, moreover, in the terms upon which I
+                    am in the house. Lady Broadhem is beginning to think it unnatural that I should
+                    not care to see more of Ursula; and whenever she is not quite absorbed with
+                    considering her own affairs, is making the arrangement known among mammas by the
+                    expression, "bringing the young people together"—as if any young people who
+                    really cared to be together, could not bring themselves together without mamma
+                    or anybody else interfering. Fortunately Lady Broadhem is so much more taken up
+                    with her own speculations than with either her daughter's happiness or mine,
+                    that I am always able to give the conversation a City turn when she broaches the
+                    delicate subject of Ursula. How Ursula manages on these occasions I cannot
+                    conceive, but I do my best to prevent Lady Broadhem talking about me to her, as
+                    I always say mysteriously, that if she does, "it will spoil everything"—an
+                    alarming phrase, which produces an immediate effect. Still it is quite clear
+                    that this kind of thing can't continue long. If I can only keep matters going
+                    for a few days more, they will all be out of town for Easter, and that will give
+                    me time to breathe. As it is, it is impossible to shut my eyes to the fact, that
+                    my best friend is beginning to doubt me—that the girl I love dreads me—and that
+                    the rest of the family, and those sufficiently connected with it to observe my
+                    proceedings, either pity, laugh at, or despise me. This, however, by no means
+                    prevents their using their utmost endeavours to ruin me. That is the present
+                    state of matters. The situation cannot remain unchanged during the next four
+                    weeks. Have I your sympathies, dear reader? Do you wish me well out of it?
+</div></body></text></TEI>

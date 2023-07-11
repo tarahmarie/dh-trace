@@ -1,0 +1,19 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Coningsby: or, The New Generation</title><author>Disraeli, Benjamin (1804-1881)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1844</date></publicationStmt></teiHeader><text><body><div type="chapter" n="24">
+CHAPTER I.
+A great city, whose image dwells in the memory of man, is the type of some great
+       idea. Rome represents Conquest; Faith hovers over the towers of Jerusalem; and Athens
+       embodies the pre-eminent quality of the antique world— Art.
+In modern ages, Commerce has created London; while Manners, in the most comprehensive sense
+       of the word, have long found a
+        supreme capital in the airy and bright-minded city of the Seine.
+What Art was to the ancient world, Science is to the modern: the distinctive faculty. In
+       the minds of men the useful has succeeded to the beautiful. Instead of the city of the Violet
+       Crown, a Lancashire village has expanded into a mighty region of factories and warehouses.
+       Yet rightly understood, Manchester is as great a human exploit as Athens.
+The inhabitants indeed are not as impressed with their idiosyncrasy as the countrymen of
+       Pericles and Phidias. They do not fully comprehend the position which they occupy. It is the
+       philosopher alone who can comprehend the inconceivable grandeur of Manchester, and the
+       immensity of its future. There are yet great truths to tell, if we had either the courage to
+       announce or the temper to receive them.
+
+</div></body></text></TEI>

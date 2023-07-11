@@ -1,0 +1,380 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Lady Audley's Secret</title><author>Braddon, Mary Elizabeth (1835-1915).</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1862</date></publicationStmt></teiHeader><text><body><div type="chapter" n="35">
+CHAPTER XXXIII.
+THE BEARER OF THE TIDINGS.
+It was very late the next morning when Lady Audley emerged from her dressing-room,
+     exquisitely dressed in a morning costume of delicate muslin, delicate laces, and embroideries;
+     but with a very pale face, and with half-circles of purple shadow under her eyes. She accounted
+     for this pale face and these hollow eyes by declaring that she had sat up reading until a very
+     late hour on the previous night.
+Sir Michael and his young wife breakfasted in the library at a comfortable round table,
+     wheeled close to the blazing fire; and Alicia was compelled to share this meal with her
+     step-mother, however she might avoid that lady in the long interval between breakfast and
+     dinner.
+The March morning was bleak and dull, and a drizzling rain fell incessantly, obscuring the
+     landscape and blotting out the distance. There were very few letters by the morning post; the
+     daily newspapers did not arrive until noon; and such aids to conversation being missing, there
+     was very little talk at the breakfast table.
+Alicia looked out at the drizzling rain drifting against the broad window-panes.
+"No riding to-day," she said; "and no chance of any callers to enliven us, unless that
+     ridiculous Bob comes crawling through the wet from Mount Stanning."
+Have you ever heard anybody, whom you knew to be dead, alluded to in a light, easy going
+     manner by another person who did not know of his death—alluded to as doing that or this, as
+     performing some trivial everyday operation—when you know that he has vanished away
+     from the face of this earth, and separated himself forever from all living creatures and their
+     commonplace pursuits in the awful solemnity of death? Such a chance allusion, insignificant
+     though it may be, is apt to send a strange thrill of pain through the mind. The ignorant remark
+     jars discordantly upon the hyper-sensitive brain; the King of Terrors is desecrated by that
+     unwitting disrespect. Heaven knows what hidden reason my lady may have had for experiencing
+     some such revulsion of feeling on the sudden mention of Mr. Audley's name, but her pale face
+     blanched to a sickly white as Alicia Audley spoke of her cousin.
+"Yes, he will come down here in the wet, perhaps," the young lady continued, "with his hat
+     sleek and shining as if it had been brushed with a pat of fresh butter, and with white vapors
+     steaming out of his clothes, and making him look like an awkward genie just let out of his
+     bottle. He will come down here and print impressions of his muddy boots all over the carpet,
+     and he'll sit on your Gobelin tapestry, my lady, in his wet overcoat; and he'll abuse you if
+     you remonstrate, and will ask why people have chairs that are not to be sat upon, and why you
+     don't live in Figtree Court, and—"
+Sir Michael Audley watched his daughter with a thoughtful countenance as she talked of her
+     cousin. She very often talked of him, ridiculing him and inveighing against him in no very
+     measured terms. But perhaps the baronet thought of a certain Signora Beatrice who very cruelly
+     entreated a gentleman called Benedick, but who was, it may be, heartily in love with him at the
+     same time.
+"What do you think Major Melville told me when he called here yesterday, Alicia?" Sir Michael
+     asked, presently.
+"I haven't the remotest idea," replied Alicia, rather disdainfully. "Perhaps he told you that
+     we should have another war before long, by Ged, sir; or perhaps he told you that we should have
+     a new ministry, by Ged, sir, for that those fellows are getting themselves into a mess, sir; or
+     that those other fellows were reforming this, and cutting down that, and altering the other in
+     the army, until, by Ged, sir, we shall have no army at all, by-and-by—nothing but a pack of
+     boys, sir, crammed up to the eyes with a lot of senseless schoolmasters' rubbish, and dressed
+     in shell-jackets and calico helmets. Yes, sir, they're fighting in Oudh in calico helmets at
+     this very day, sir."
+"You're an impertinent minx, miss," answered the baronet. "Major Melville told me nothing of
+     the kind; but he told me that a very devoted admirer of you, a certain Sir Harry Towers, has
+     forsaken his place in Hertfordshire, and his hunting stable, and has gone on the continent for
+     a twelvemonths' tour."
+Miss Audley flushed up suddenly at the mention of her old adorer, but recovered herself very
+     quickly.
+"He has gone on the continent, has he?" she said indifferently. "He told me that he meant to
+     do so—if—if he didn't have everything his own way. Poor fellow! he's a dear, good-hearted,
+     stupid creature, and twenty times better than that peripatetic, patent refrigerator, Mr. Robert
+     Audley."
+"I wish, Alicia, you were not so fond of ridiculing Bob," Sir Michael said, gravely. "Bob is
+     a good fellow, and I'm as fond of him as if he'd been my own son; and—and—I've been very
+     uncomfortable about him lately. He has changed very much within the last few days, and he has
+     taken all sorts of absurd ideas into his head, and my lady has alarmed me about him. She
+     thinks—"
+Lady Audley interrupted her husband with a grave shake of her head.
+"It is better not to say too much about it as yet awhile," she said; "Alicia knows what I
+     think."
+"Yes," replied Miss Audley, "my lady thinks that Bob is going mad, but I know better than
+     that. He's not at all the sort of person to go mad. How should such a sluggish ditch-pond of an
+     intellect as his ever work itself into a tempest? He may move about for the rest of his life,
+     perhaps, in a tranquil state of semi-idiotcy, imperfectly comprehending who he is, and where
+     he's going, and what he's doing—but he'll never go mad."
+Sir Michael did not reply to this. He had been very much disturbed by his conversation with
+     my lady on the previous evening, and had silently debated the painful question, in his mind
+     ever since.
+His wife—the woman he best loved and most believed in—had told him, with all appearance of
+     regret and agitation, her conviction of his nephew's insanity. He tried in vain to arrive at
+     the conclusion he wished most ardently to attain; he tried in vain to think that my lady was
+     misled by her own fancies, and had no foundation for what she said. But then, again, it
+     suddenly flashed upon him, that to think this was to arrive at a worse conclusion; it was to
+     transfer the horrible suspicion from his nephew to his wife. She appeared to be possessed with
+     an actual conviction of Robert's insanity. To imagine her wrong was to imagine some weakness in
+     her own mind. The longer he thought of the subject the more it harassed and perplexed him. It
+     was most certain that the young man had always been eccentric. He was sensible, he was
+     tolerably clever, he was honorable and gentlemanlike in feeling, though perhaps a little
+     careless in the performance of certain minor social duties; but there were some slight
+     differences, not easily to be defined, that separated him from other men of his age and
+     position. Then, again, it was equally true that he had very much changed within the period that
+     had succeeded the disappearance of George Talboys. He had grown moody and thoughtful,
+     melancholy and absent-minded. He had held himself aloof from society, had sat for hours without
+     speaking; had talked at other points by fits and starts; and had excited himself unusually in
+     the discussion of subjects which apparently lay far out of the region of his own life and
+     interests. Then there was even another region which seemed to strengthen my lady's case against
+     this unhappy young man. He had been brought up in the frequent society of his cousin,
+     Alicia—his pretty, genial cousin—to whom interest, and one would have thought affection,
+     naturally pointed as his most fitting bride. More than this, the girl had shown him, in the
+     innocent guilelessness of a transparent nature, that on her side at least, affection was not
+     wanting; and yet, in spite of all this, he had held himself aloof, and had allowed others to
+     propose for her hand, and to be rejected by her, and had still made no sign.
+Now love is so very subtle an essence, such an indefinable metaphysical marvel, that its due
+     force, though very cruelly felt by the sufferer himself, is never clearly understood by those
+     who look on at its torments and wonder why he takes the common fever so badly. Sir Michael
+     argued that because Alicia was a pretty girl and an amiable girl it was therefore extraordinary
+     and unnatural in Robert Audley not to have duly fallen in love with her. This baronet, who
+     close upon his sixtieth birthday, had for the first time encountered that one woman who out of
+     all the women in the world had power to quicken the pulses of his heart, wondered why Robert
+     failed to take the fever from the first breath of contagion that blew toward him. He forgot
+     that there are men who go their ways unscathed amidst legions of lovely and generous women, to
+     succumb at last before some harsh-featured virago, who knows the secret of that only philter
+     which can intoxicate and bewitch him. He had forgot that there are certain Jacks who go through
+     life without meeting the Jill appointed for them by Nemesis, and die old bachelors, perhaps,
+     with poor Jill pining an old maid upon the other side of the party-wall. He forgot that love,
+     which is a madness, and a scourge, and a fever, and a delusion, and a snare, is also a mystery,
+     and very imperfectly understood by everyone except the individual sufferer who writhes under
+     its tortures. Jones, who is wildly enamored of Miss Brown, and who lies awake at night until he
+     loathes his comfortable pillow and tumbles his sheets into two twisted rags of linen in his
+     agonies, as if he were a prisoner and wanted to wind them into impromptu ropes; this same Jones
+     who thinks Russell Square a magic place because his divinity inhabits it, who thinks the trees
+     in that inclosure and the sky above it greener and bluer than other trees or sky, and who feels
+     a pang, yes, an actual pang, of mingled hope, and joy, and expectation, and terror, when he
+     emerges from Guilford street, descending from the hights of Islington, into those sacred
+     precincts; this very Jones is hard and callous toward the torments of Smith, who adores Miss
+     Robinson, and cannot imagine what the infatuated fellow can see in the girl. So it was with Sir
+     Michael Audley. He looked at his nephew as a sample of a very large class of young men, and his
+     daughter as a sample of an equally extensive class of feminine goods, and could not see why the
+     two samples should not make a very respectable match. He ignored all those infinitesimal
+     differences in nature which make the wholesome food of one man the deadly poison of another.
+     How difficult it is to believe sometimes that a man doesn't like such and such a favorite dish.
+     If at a dinner-party, a meek looking guest refuses early salmon and cucumbers, or green peas in
+     February, we set him down as a poor relation whose instincts warn him off those expensive
+     plates. If an alderman were to declare that he didn't like green fat, he would be looked upon
+     as a social martyr, a Marcus Curtius of the dinner-table, who immolated himself for the benefit
+     of his kind. His fellow-aldermen would believe in anything rather than an heretical distaste
+     for the city ambrosia of the soup tureen. But there are people who dislike salmon, and
+     white-bait, and spring ducklings, and all manner of old-established delicacies, and there are
+     other people who affect eccentric and despicable dishes, generally stigmatized as nasty.
+Alas, my pretty Alicia, your cousin did not love you! He admired your rosy English face, and
+     had a tender affection for you which might perhaps have expanded by-and-by into something warm
+     enough for matrimony, that every-day jog-trot species of union which demands no very passionate
+     devotion, but for a sudden check which it had received in Dorsetshire. Yes, Robert Audley's
+     growing affection for his cousin, a plant of very slow growth, I am fain to confess, had been
+     suddenly dwarfed and stunted upon that bitter February day on which he had stood beneath the
+     pine-trees talking to Clara Talboys. Since that day the young man had experienced an unpleasant
+     sensation in thinking of poor Alicia. He looked at her as being in some vague manner an
+     incumbrance upon the freedom of his thoughts; he had a haunting fear that he was in some tacit
+     way pledged to her; that she had a species of claim upon him, which forbade to him the right of
+     thinking of another woman. I believe it was the image of Miss Audley presented to him in this
+     light that goaded the young barrister into those outbursts of splenetic rage against the female
+     sex which he was liable to at certain times. He was strictly honorable, so honorable that he
+     would rather have immolated himself upon the altar of truth and Alicia than have done her the
+     remotest wrong, though by so doing he might have secured his own comfort and happiness.
+"If the poor little girl loves me," he thought, "and if she thinks that I love her, and has
+     been led to think so by any word or act of mine, I'm in duty bound to let her think so to the
+     end of time, and to fulfill any tacit promise which I may have unconsciously made. I thought
+     once—I meant once to—to make her an offer by-and-by when this horrible mystery about George
+     Talboys should have been cleared up and everything peacefully settled—but now—"
+His thoughts would ordinarily wander away at this point of his reflections, carrying him
+     where he never had intended to go; carrying him back under the pine-trees in Dorsetshire, and
+     setting him once more face to face with the sister of his missing friend, and it was generally
+     a very laborious journey by which he traveled back to the point from which he strayed. It was
+     so difficult for him to tear himself away from the stunted turf and the pine-trees.
+"Poor little girl!" he would think on coming back to Alicia. "How good it is of her to love
+     me, and how grateful ought I to be for her tenderness. How many fellows would think such a
+     generous, loving heart the highest boon that earth could give them. There's Sir Harry Towers
+     stricken with despair at his rejection. He would give me half his estate, all his estate, twice
+     his estate, if he had it, to be in the shoes which I am anxious to shake off my ungrateful
+     feet. Why don't I love her? Why is it that although I know her to be pretty, and pure, and
+     good, and truthful, I don't love her? Her image never haunts me, except reproachfully. I never
+     see her in my dreams. I never wake up suddenly in the dead of the night with her eyes shining
+     upon me and her warm breath upon my cheek, or with the fingers of her soft hand clinging to
+     mine. No, I'm not in love with her, I can't fall in love with her."
+He raged and rebelled against his ingratitude. He tried to argue himself into a passionate
+     attachment for his cousin, but he failed ignominiously, and the more he tried to think of
+     Alicia the more he thought of Clara Talboys. I am speaking now of his feelings in the period
+     that elapsed between his return from Dorsetshire and his visit to Grange Heath.
+Sir Michael sat by the library fire after breakfast upon this wretched rainy morning, writing
+     letters and reading the newspapers. Alicia shut herself in her own apartment to read the third
+     volume of a novel. Lady Audley locked the door of the octagon ante-chamber, and roamed up and
+     down the suite of rooms from the bedroom to the boudoir all through that weary morning.
+She had locked the door to guard against the chance of any one coming in suddenly and
+     observing her before she was aware—before she had had sufficient warning to enable her to face
+     their scrutiny. Her pale face seemed to grow paler as the morning advanced. A tiny
+     medicine-chest was open upon the dressing-table, and little stoppered bottles of red lavender,
+     sal-volatile, chloroform, chlorodyne, and ether were scattered about. Once my lady paused
+     before this medicine-chest, and took out the remaining bottles, half-absently, perhaps, until
+     she came to one which was filled with a thick, dark liquid, and labeled "opium—poison."
+She trifled a long time with this last bottle; holding it up to the light, and even removing
+     the stopper and smelling the sickly liquid. But she put it from her suddenly with a shudder.
+     "If I could!" she muttered, "if I could only do it! And yet why should I now?"
+She clinched her small hands as she uttered the last words, and walked to the window of the
+     dressing-room, which looked straight toward that ivied archway under which any one must come
+     who came from Mount Stanning to the Court.
+There were smaller gates in the gardens which led into the meadows behind the Court, but
+     there was no other way of coming from Mount Stanning or Brentwood than by the principal
+     entrance.
+The solitary hand of the clock over the archway was midway between one and two when my lady
+     looked at it.
+"How slow the time is," she said, wearily; "how slow, how slow! Shall I grow old like this, I
+     wonder, with every minute of my life seeming like an hour?"
+She stood for a few minutes watching the archway, but no one passed under it while she
+     looked, and she turned impatiently away from the window to resume her weary wandering about the
+     rooms.
+Whatever fire that had been which had reflected itself vividly in the black sky, no tidings
+     of it had as yet come to Audley Court. The day was miserably wet and windy, altogether the very
+     last day upon which even the most confirmed idler and gossip would care to venture out. It was
+     not a market-day, and there were therefore very few passengers upon the road between Brentwood
+     and Chelmsford, so that as yet no news of the fire, which had occurred in the dead of the
+     wintry night, had reached the village of Audley, or traveled from the village to the Court.
+The girl with the rose-colored ribbons came to the door of the anteroom to summon her
+     mistress to luncheon, but Lady Audley only opened the door a little way, and intimated her
+     intention of taking no luncheon.
+"My head aches terribly, Martin," she said; "I shall go and lie down till dinner-time. You
+     may come at five to dress me."
+Lady Audley said this with the predetermination of dressing at four, and thus dispensing with
+     the services of her attendant. Among all privileged spies, a lady's-maid has the highest
+     privileges; it is she who bathes Lady Theresa's eyes with eau-de-cologne after her ladyship's
+     quarrel with the colonel; it is she who administers sal-volatile to Miss Fanny when Count
+     Beaudesert, of the Blues, has jilted her. She has a hundred methods for the finding out of her
+     mistress' secrets. She knows by the manner in which her victim jerks her head from under the
+     hair-brush, or chafes at the gentlest administration of the comb, what hidden tortures are
+     racking her breast—what secret perplexities are bewildering her brain. That well-bred attendant
+     knows how to interpret the most obscure diagnosis of all mental diseases that can afflict her
+     mistress; she knows when the ivory complexion is bought and paid for—when the pearly teeth are
+     foreign substances fashioned by the dentist—when the glossy plaits are the relics of the dead,
+     rather than the property of the living; and she knows other and more sacred secrets than these;
+     she knows when the sweet smile is more false than Madame Levison's enamel, and far less
+     enduring—when the words that issue from between gates of borrowed pearl are more disguised and
+     painted than the lips which help to shape them—when the lovely fairy of the ball-room re-enters
+     the dressing-room after the night's long revelry, and throws aside her voluminous burnous and
+     her faded bouquet, and drops her mask, and like another Cinderella loses the glass-slipper, by
+     whose glitter she has been distinguished, and falls back into her rags and dirt, the lady's
+     maid is by to see the transformation. The valet who took wages from the prophet of Korazin must
+     have seen his master sometimes unveiled, and must have laughed in his sleeve at the folly of
+     the monster's worshipers.
+Lady Audley had made no confidante of her new maid, and on this day of all others
+     she wished to be alone.
+She did lie down; she cast herself wearily upon the luxurious sofa in the dressing-room, and
+     buried her face in the down pillows and tried to sleep. Sleep!—she had almost forgotten what it
+     was, that tender restorer of tired nature, it seemed so long now since she had slept. It was
+     only about eight-and-forty hours perhaps, but it appeared an intolerable time. Her fatigue of
+     the night before, and her unnatural excitement, had worn her out at last. She did fall asleep;
+     she fell into a heavy slumber that was almost like stupor. She had taken a few drops out of the
+     opium bottle in a glass of water before lying down.
+The clock over the mantelpiece chimed the quarter before four as she woke suddenly and
+     started up, with the cold perspiration breaking out in icy drops upon her forehead. She had
+     dreamt that every member of the household was clamoring at the door, eager to tell her of a
+     dreadful fire that had happened in the night.
+There was no sound but the flapping of the ivy-leaves against the glass, the occasional
+     falling of a cinder, and the steady ticking of the clock.
+"Perhaps I shall be always dreaming these sort of dreams," my lady thought, "until the terror
+     of them kills me!"
+The rain had ceased, and the cold spring sunshine was glittering upon the windows. Lady
+     Audley dressed herself rapidly but carefully. I do not say that even in her supremest hour of
+     misery she still retained her pride in her beauty. It was not so; she looked upon that beauty
+     as a weapon, and she felt that she had now double need to be well armed. She dressed herself in
+     her most gorgeous silk, a voluminous robe of silvery, shimmering blue, that made her look as if
+     she had been arrayed in moonbeams. She shook out her hair into feathery showers of glittering
+     gold, and, with a cloak of white cashmere about her shoulders, went down-stairs into the
+     vestibule.
+She opened the door of the library and looked in. Sir Michael Audley was asleep in his
+     easy-chair. As my lady softly closed this door Alicia descended the stairs from her own room.
+     The turret door was open, and the sun was shining upon the wet grass-plat in the quadrangle.
+     The firm gravel-walks were already very nearly dry, for the rain had ceased for upward of two
+     hours.
+"Will you take a walk with me in the quadrangle?" Lady Audley asked as her step-daughter
+     approached. The armed neutrality between the two women admitted of any chance civility such as
+     this.
+"Yes, if you please, my lady," Alicia answered, rather listlessly. "I have been yawning over
+     a stupid novel all the morning, and shall be very glad of a little fresh air."
+Heaven help the novelist whose fiction Miss Audley had been perusing, if he had no better
+     critics than that young lady. She had read page after page without knowing what she had been
+     reading, and had flung aside the volume half a dozen times to go to the window and watch for
+     that visitor whom she had so confidently expected.
+Lady Audley led the way through the low doorway and on to the smooth gravel drive, by which
+     carriages approached the house. She was still very pale, but the brightness of her dress and of
+     her feathery golden ringlets, distracted an observer's eyes from her pallid face. All mental
+     distress is, with some show of reason, associated in our minds with loose, disordered garments
+     and dishabilled hair, and an appearance in every way the reverse of my lady's. Why had she come
+     out into the chill sunshine of that March afternoon to wander up and down that monotonous
+     pathway with the step-daughter she hated? She came because she was under the dominion of a
+     horrible restlessness, which, would not suffer her to remain within the house waiting for
+     certain tidings which she knew must too surely come. At first she had wished to ward them
+     off—at first she had wished that strange convulsions of nature might arise to hinder their
+     coming—that abnormal winter lightnings might wither and destroy the messenger who carried
+     them—that the ground might tremble and yawn beneath his hastening feet, and that impassable
+     gulfs might separate the spot from which the tidings were to come and the place to which they
+     were to be carried. She wished that the earth might stand still, and the paralyzed elements
+     cease from their natural functions, that the progress of time might stop, that the Day of
+     Judgment might come, and that she might thus be brought before an unearthly tribunal, and so
+     escape the intervening shame and misery of any earthly judgment. In the wild chaos of her
+     brain, every one of these thoughts had held its place, and in her short slumber on the sofa in
+     her dressing-room she had dreamed all these things and a hundred other things, all bearing upon
+     the same subject. She had dreamed that a brook, a tiny streamlet when she first saw it, flowed
+     across the road between Mount Stanning and Audley, and gradually swelled into a river, and from
+     a river became an ocean, till the village on the hill receded far away out of sight and only a
+     great waste of waters rolled where it once had been. She dreamt that she saw the messenger, now
+     one person, now another, but never any probable person, hindered by a hundred hinderances, now
+     startling and terrible, now ridiculous and trivial, but never either natural or probable; and
+     going down into the quiet house with the memory of these dreams strong upon her, she had been
+     bewildered by the stillness which had betokened that the tidings had not yet come.
+And now her mind underwent a complete change. She no longer wished to delay the dreaded
+     intelligence. She wished the agony, whatever it was to be, over and done with, the pain
+     suffered, and the release attained. It seemed to her as if the intolerable day would never come
+     to an end, as if her mad wishes had been granted, and the progress of time had actually
+     stopped.
+"What a long day it has been!" exclaimed Alicia, as if taking up the burden of my lady's
+     thoughts; "nothing but drizzle and mist and wind! And now that it's too late for anybody to go
+     out, it must needs be fine," the young lady added, with an evident sense of injury.
+Lady Audley did not answer. She was looking at the stupid one-handed clock, and waiting for
+     the news which must come sooner or later, which could not surely fail to come very
+     speedily.
+"They have been afraid to come and tell him," she thought; "they have been afraid to break
+     the news to Sir Michael. Who will come to tell it, at last, I wonder? The rector of Mount
+     Stanning, perhaps, or the doctor; some important person at least."
+If she could have gone out into the leafless avenues, or onto the high road beyond them; if
+     she could have gone so far as that hill upon which she had so lately parted with Phoebe, she
+     would have gladly done so. She would rather have suffered anything than that slow suspense,
+     that corroding anxiety, that metaphysical dryrot in which heart and mind seemed to decay under
+     an insufferable torture. She tried to talk, and by a painful effort contrived now and then to
+     utter some commonplace remark. Under any ordinary circumstances her companion would have
+     noticed her embarrassment, but Miss Audley, happening to be very much absorbed by her own
+     vexations, was quite as well inclined to be silent as my lady herself. The monotonous walk up
+     and down the graveled pathway suited Alicia's humor. I think that she even took a malicious
+     pleasure in the idea that she was very likely catching cold, and that her Cousin Robert was
+     answerable for her danger. If she could have brought upon herself inflammation of the lungs, or
+     ruptured blood-vessels, by that exposure to the chill March atmosphere, I think she would have
+     felt a gloomy satisfaction in her sufferings.
+"Perhaps Robert might care for me, if I had inflammation of the lungs," she thought. "He
+     couldn't insult me by calling me a bouncer then. Bouncers don't have inflammation of the
+     lungs."
+I believe she drew a picture of herself in the last stage of consumption, propped up by
+     pillows in a great easy-chair, looking out of a window in the afternoon sunshine, with medicine
+     bottles, a bunch of grapes and a Bible upon a table by her side, and with Robert, all
+     contrition and tenderness, summoned to receive her farewell blessing. She preached a whole
+     chapter to him in that parting benediction, talking a great deal longer than was in keeping
+     with her prostrate state, and very much enjoying her dismal castle in the air. Employed in this
+     sentimental manner, Miss Audley took very little notice of her step-mother, and the one hand of
+     the blundering clock had slipped to six by the time Robert had been blessed and dismissed.
+"Good gracious me!" she cried, suddenly—"six o'clock, and I'm not dressed."
+The half-hour bell rung in a cupola upon the roof while Alicia was speaking.
+"I must go in, my lady," she said. "Won't you come?"
+"Presently," answered Lady Audley. "I'm dressed, you see."
+Alicia ran off, but Sir Michael's wife still lingered in the quadrangle, still waited for
+     those tidings which were so long coming.
+It was nearly dark. The blue mists of evening had slowly risen from the ground. The flat
+     meadows were filled with a gray vapor, and a stranger might have fancied Audley Court a castle
+     on the margin of a sea. Under the archway the shadows of fastcoming night lurked darkly, like
+     traitors waiting for an opportunity to glide stealthily into the quadrangle. Through the
+     archway a patch of cold blue sky glimmered faintly, streaked by one line of lurid crimson, and
+     lighted by the dim glitter of one wintry-looking star. Not a creature was stirring in the
+     quadrangle but the restless woman who paced up and down the straight pathways, listening for a
+     footstep whose coming was to strike terror to her soul. She heard it at last!—a footstep in the
+     avenue upon the other side of the archway. But was it the footstep? Her sense of hearing, made
+     unnaturally acute by excitement, told her that it was a man's footstep—told even more, that it
+     was the tread of a gentleman, no slouching, lumbering pedestrian in hobnailed boots, but a
+     gentleman who walked firmly and well.
+Every sound fell like a lump of ice upon my lady's heart. She could not wait, she could not
+     contain herself, she lost all self-control, all power of endurance, all capability of
+     self-restraint, and she rushed toward the archway.
+She paused beneath its shadow, for the stranger was close upon her. She saw him, oh, God! she
+     saw him in that dim evening light. Her brain reeled, her heart stopped beating. She uttered no
+     cry of surprise, no exclamation of terror, but staggered backward and clung for support to the
+     ivied buttress of the archway. With her slender figure crouched into the angle formed by the
+     buttress and the wall which it supported, she stood staring at the new-comer.
+As he approached her more closely her knees sunk under her, and she dropped to the ground,
+     not fainting, or in any manner unconscious, but sinking into a crouching attitude, and still
+     crushed into the angle of the wall, as if she would have made a tomb for herself in the shadow
+     of that sheltering brickwork.
+"My lady!"
+The speaker was Robert Audley. He whose bedroom door she had double-locked seventeen hours
+     before at the Castle Inn.
+"What is the matter with you?" he said, in a strange, constrained manner. "Get up, and let me
+     take you indoors."
+He assisted her to rise, and she obeyed him very submissively. He took her arm in his strong
+     hand and led her across the quadrangle and into the lamp-lit hall. She shivered more violently
+     than he had ever seen any woman shiver before, but she made no attempt at resistance to his
+     will.
+</div></body></text></TEI>

@@ -1,0 +1,202 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Gutenberg text of Lying Prophets: A Novel</title><author>Phillpotts, Eden (1862-1960)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1897</date></publicationStmt></teiHeader><text><body><div type="chapter" n="1">
+CHAPTER ONE
+NEWLYN
+Away beyond the village stands a white cottage with the sea lapping at low cliffs beneath
+      it. Plum and apple orchards slope upward behind this building, and already, upon the former
+      trees, there trembles a snowy gauze where blossom buds are breaking. Higher yet, dark plowed
+      fields, with hedges whereon grow straight elms, cover the undulations of a great hill even to
+      its windy crest, and below, at the water line, lies Newlyn—a village of gray stone and blue,
+      with slate roofs now shining silver-bright under morning sunlight and easterly wind. Smoke
+      softens every outline; red-brick walls and tanned sails bring warmth and color through the
+      blue vapor of many chimneys; a sun-flash glitters at this point and that, denoting here a
+      conservatory, there a studio. Enter this hive and you shall find a network of narrow stone
+      streets; a flutter of flannel underwear, or blue stockings, and tawny garments drying upon
+      lines; little windows, some with rows of oranges and ginger-beer bottles in them; little
+      shops; little doors, at which cluster little children and many cats, the latter mostly
+      tortoise-shell and white. Infants watch their elders playing marbles in the roadway, and the
+      cats stretch lazy bodies on the mats, made of old fishing-net, which lie at every cottage
+      door. Newlyn stands on slight elevations above the sea level, and at one point the road bends
+      downward, breaks and fringes the tide, leading among broken iron, rusty anchors, and
+      dismantled fishing-boats, past an ancient buoy whose sides now serve the purposes of
+      advertisement and tell of prayer-meetings, cheap tea, and so forth. Hard by, the mighty blocks
+      of the old breakwater stand, their fabric dating from the reign of James I., and taking the
+      place of one still older. But the old breakwater is no more than a rialto for ancient gossips
+      now; and far beyond it new piers stretch encircling arms of granite round a new harbor,
+      southward of which the lighthouse stands and winks his sleepless golden eye from dusk to dawn.
+      Within this harbor, when the fishing fleet is at home, lie jungles of stout masts, row upon
+      row, with here and there a sail, carrying on the color of the plowed fields above the village,
+      and elsewhere, scraps of flaming bunting flashing like flowers in a reed bed. Behind the
+      masts, along the barbican, the cottages stand close and thick, then clamber and straggle up
+      the acclivities behind, decreasing in their numbers as they ascend. Smoke trails inland on the
+      wind—black as a thin crepe veil, from the funnel of a coal "tramp" about to leave the harbor,
+      blue from the dry wood burning on a hundred cottage hearths. A smell of fish—where great split
+      pollocks hang drying in the sun—of tar and tan and twine—where nets and cordage lie spread
+      upon low walls and open spaces—gives to Newlyn an odor all its own; but aloft, above the
+      village air, spring is dancing, sweet-scented, light-footed in the hedgerows, through the
+      woods and on the wild moors which stretch inland away. There the gold of the gorse flames in
+      many a sudden sheet and splash over the wastes whereon last year's ling-bloom, all sere and
+      gray, makes a sad-colored world. But the season's change is coming fast. Celandines twinkle
+      everywhere, and primroses, more tardy and more coy, already open wondering eyes. The sea lies
+      smooth with a surface just wind-kissed and strewed with a glory of sun-stars. Away to the
+      east, at a point from which brown hills, dotted with white dwellings, tend in long undulations
+      to the cliffs of the Lizard, under fair clouds all banked and sunny white against the blue,
+      rises St. Michael's Mount, with a man's little castle capping Nature's gaunt escarpments and
+      rugged walls. Between Marazion and Newlyn stretches Mount's Bay; while a mile or two of flat
+      sea-front, over which, like a string of pearls, roll steam clouds, from a train, bring us to
+      Penzance. Then—noting centers of industry where freezing works rise and smelting of ore
+      occupies many men (for Newlyn labors at the two extremes of fire and ice)—we are back in the
+      fishing village again and upon the winding road which leads therefrom, first to Penlee Point
+      and the blue-stone quarry, anon to the little hamlet of Mousehole beyond.
+Beside this road lay our white cottage, with the sunshine lighting up a piece of new golden
+      thatch let into the old gray, and the plum-trees behind it bursting into new-born foam of
+      flowers. Just outside it, above the low cliff, stood two men looking down into the water, seen
+      dark green below through a tangle of brier and blackthorn and emerald foliage of budding
+      elder. The sea served base uses here, for the dust and dirt of many a cottage was daily cast
+      into the lap of the great scavenger who carried all away. The low cliffs were indeed spattered
+      with filth, and the coltsfoot, already opening yellow blossoms below, found itself rudely
+      saluted with cinders and potato-peelings, fishes' entrails, and suchlike unlovely matter.
+The men were watching a white fleet of bird boats paddling on the sea, hurrying this way and
+      that, struggling—with many a plunge and flutter and plaintive cry—for the food a retreating
+      tide was bearing from the shore.
+"'White spirits and gray,' I call them," said the younger of the two spectators. "The gulls
+      fascinate me always. They are beautiful to see and hear and paint. Swimming there, and
+      wheeling between the seas in rough weather, or hanging almost motionless in midair with their
+      heads turning first this way, then that, and their breasts pressed against the wind—why, they
+      are perfect always, the little winged gods of the sea."
+"Gods kissing carrion," sneered the other. "Beautiful enough, no doubt, but their music
+      holds no charm for me. Nothing is quite beautiful which has for its cause something ugly.
+      Those echoing cries down there are the expression of a greedy struggle, no more. I hate your
+      Newlyn gulls. They are ruined, like a thousand other wild things, by civilization. I see them
+      scouring the fields and hopping after the plowman like upland crows. A Cornish seabird should
+      fight its battle with the sea and find its home in the heart of the dizzy cliffs, sharing them
+      with the samphire. But your 'white spirits and gray' behave like gutter-fed ducks."
+The first speaker laughed and both strolled upon their way. They were artists, but while
+      Edmund Murdoch dwelt at Newlyn and lived by his profession, the older man, John Barron, was
+      merely on a visit to the place. He had come down for change and with no particular intention
+      to work. Barron was wealthy and wasted rare talents. He did not paint much, and the few who
+      knew his pictures deplored the fact that no temporal inducement called upon him to handle his
+      brush oftener. A few excused him on the plea of his health, which was at all times
+      indifferent, but he never excused himself. It needed something far from the beaten track to
+      inspire him, and inspiration was rare. But let a subject once grip him and the artist's life
+      centered and fastened upon it until his work was done. He sacrificed everything at such a
+      time; he slaved; labor was to him as a debauch to the drunkard, and he wearied body and mind
+      and counted his health nothing while the frenzy held him. Then, his picture finished, at the
+      cost of the man's whole store of nervous energy and skill, he would probably paint no more for
+      many months. His subject was always some transcript from nature, wrought out with almost
+      brutal vigor and disregard of everything but truth. His looks belied his work curiously. A
+      small, slight man he was, with sloping shoulders and the consumptive build. But the breadth of
+      his head above the ears showed brain, and his gray eyes spoke a strength of purpose upon which
+      a hard, finely-modeled mouth set the seal. Once he had painted in the West Indies: a picture
+      of two negresses bathing at Tobago. Behind them hung low tangles of cactus, melo-cactus and
+      white-blossomed orchid; while on the tawny rocks glimmered snowy cotton splashed with a
+      crimson turban; but the marvel of the work lay in the figures and the refraction of their
+      brown limbs seen through crystal-clear water. The picture brought reputation to a man who
+      cared nothing for it; and Barron's "Bathing Negresses" are only quoted here because they
+      illustrate his method of work. He had painted from the sea in a boat moored fore and aft; he
+      had kept the two women shivering and whining in the water for two hours at a time. They could
+      not indeed refuse the gold he offered for their services, but one never lived to enjoy the
+      money, for her prolonged ablutions in the cause of art killed her a week after her work was
+      done.
+John Barren was a lonely sybarite with a real love for Nature and absolutely primitive
+      instincts with regard to his fellow-creatures. The Land's End had disappointed him; he had
+      found Nature neither grand nor terrific there, but sleepy and tame as a cat after a full meal.
+      Nor did he derive any pleasure from the society of his craft at Newlyn. He hated the clatter
+      of art jargon, he flouted all schools, and pointed out what nobody doubts now: that the
+      artists of the Cornish village in reality represented nothing but a community of
+      fellow-workers, all actuated indeed by love of art, but each developing his own bent without
+      thought for his neighbor's theory. Barron indeed made some enemies before he had been in the
+      place a week, and the greater lights liked him none the better for vehemently disclaiming the
+      honor when they told him he was one of themselves. "The shape of a brush does not make men
+      paint alike," he said, "else we were all equal and should only differ in color. Some of you
+      can no more paint with a square brush than you can with a knife. Some of you could not paint
+      though your palettes were set with Nature's own sunset colors. And others of you, if you had a
+      rabbit's scut at the end of a hop-pole and the gray mud from a rain puddle, would produce work
+      worth considering. You are a community of painters—some clever, some hopeless—but you are not
+      a school, and you may thank God for it."
+John Barron was rough tonic, but the fearless little man generally found an audience at the
+      end of the day in this studio or that. The truth of much that he said appealed to the
+      lofty-minded and serious; his dry cynicism, savage dislike of civilization, and frank
+      affection for Nature, attracted others. He hit hard, but he never resented rough knocks in
+      return, and no man had seen him out of temper with anything but mysticism and the art bred
+      therefrom. Upon the whole, however, his materialism annoyed more than his wit amused.
+Upon the evening which followed his insult to the Newlyn gulls, Barron, with Edmund Murdoch
+      and some other men, was talking in the studio of one Brady, known to fame as the "Wrecker,"
+      from his love for the artistic representation of maritime disaster. Barron liked this man, for
+      he was outspoken and held vigorous views, but the two quarreled freely.
+"Fate was a fool when she chucked her presents into the lap of a lazy beggar like you," said
+      Brady, addressing the visitor. "And thrice a fool," he added, "to assort her gifts so
+      ill."
+"Fate is a knave, a mad thing playing at cat's cradle with the threads of our wretched
+      little lives," answered John Barron, "she is a coward—a bully. She hits the hungry below the
+      belt; she heaps gold into the lap of the old man, but not till he has already dug his own
+      grave to come at it; she gives health to those who must needs waste all their splendid
+      strength on work; and wealth to worthless beings like myself who are always ailing and who
+      never spend a pound with wisdom. Make no dark cryptic mystery of Fate when you paint her. She
+      looks to me like a mischievous monkey poking sticks into an ant-hill."
+"She's a woman," said Murdoch.
+"She's three," corrected Brady; "what can you expect from three women rolled into one?"
+"Away with her! Waste no incense at her shrine. She'll cut the thread no sooner because you
+      turn your back on her. Fling overboard your mythologies, dead and alive, and kneel to Nature.
+      A budding spike of wild hyacinth is worth all the gods put together. Go hand in hand with
+      Nature, I say. Ask nothing from her; walk humbly; be well content if she lets you but turn the
+      corner of one page none else have read. That's how I live. My life is not a prayer
+      exactly—"
+"I should say not," interrupted Brady.
+"But a hymn of praise—a purely impersonal existence, lived all alone, like a man at a prison
+      window. This carcass, with its shaky machinery and defective breathing apparatus, is the
+      prison. I look out of the window till the walls crumble away—"
+"And then?" asked one Paul Tarrant, a painter who prided himself on being a Christian as
+      well. 
+"Then, the spark which I call myself, goes back to Nature, as the cloud gives the raindrop
+      back to the sea from whence the sun drew it."
+"A lie, man!" answered the other hotly.
+"Perhaps. It matters nothing. God—if there be a God—will not blame me for making a mistake.
+      Meantime I live like the rook and the thrush. They never pray, they praise, they sing 'grace
+      before meat' and after it, as Nature taught them."
+"A simple child of Nature—beautiful spectacle," said Brady. "But I'm sorry all the same," he
+      continued, "that you've found nothing in Cornwall to keep you here and make you do some work.
+      You talk an awful deal of rot, but we want to see you paint. Isn't there anything or anybody
+      worthy of you here?"
+"As a matter of face, I've found a girl," said Barron.
+There was a clamor of excitement at this news, above which Brady's bull voice roared
+      approval.
+"Proud girl, proud parents, proud Newlyn!" he bellowed.
+"The mood ripens too," continued Barren quietly. "'Sacrifice all the world to mood' is my
+      motto. So I shall stop and paint."
+A moment later derisive laughter greeted Barron's decision, for Murdoch, in answer to a hail
+      of questions, announced the subject of his friend's inspiration.
+"We strolled round this morning and saw Joan Tregenza in an iron hoop with a pail of water
+      slung at either hand."
+"So your picture begins and ends where it is, Barron, my friend; in your imagination. Did it
+      strike you when you first saw that vision of loveliness in dirty drab that she was hardly the
+      girl to have gone unpainted till now?" asked Brady.
+"The possibility of previous pictures is hardly likely to weigh with me. Why, I would paint
+      a drowned sailor if the subject attracted me, and that though you have done it," answered the
+      other, nodding toward a big canvas in the corner, where Brady's picture for the year
+      approached completion.
+"My dear chap, we all worship Joan—at a distance. She is not to be painted. Tears and
+      prayers are useless. She has a flinty father—a fisherman, who looks upon painting as a snare
+      of the devil and sees every artist already wriggling on the trident in his mind's eye. Joan
+      has also a lover, who would rather behold her dead than on canvas."
+"In fact these Methodist folk take us to be what you really are," said Brady bluntly. "Old
+      Tregenza tars us every one with the same brush. We are lost sinners all."
+"Well, why trouble him? A fisherman would have his business on the sea. Candidly, I must
+      paint her. The wish grows upon me." 
+"Even money you don't get as much as a sketch," said Murdoch.
+"Have any of you tried approaching her directly, instead of her relations?"
+"She's as shy as a hawk, man."
+"That makes me the more hopeful. You fellows, with your Tam o' Shanters and aggressive
+      neckties and knickerbockers and calves, would frighten the devil. I'm shy myself. If she's
+      natural, then we shall possibly understand each other."
+"I'll bet you ten to one in pounds you won't have your wish," said Brady.
+"No, shan't bet. You're all so certain. Probably I shall find myself beaten like the rest of
+      you. But it's worth trying. She's a pretty thing."
+"How will you paint her if you get the chance?"
+"Don't know yet. I should like to paint her in a wolf-skin with a thread of wolf's teeth
+      round her neck and a celt-headed spear in her hand."
+"Art will be a loser by the pending repulse," declared Brady. "And now, as my
+      whisky-bottle's empty and my lamp going out, you chaps can follow its example whenever you
+      please."
+So the men scattered into a starry night, and went, each his way, through the streets of the
+      sleeping village.
+</div></body></text></TEI>

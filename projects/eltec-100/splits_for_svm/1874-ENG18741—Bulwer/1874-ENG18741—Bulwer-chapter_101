@@ -1,0 +1,40 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Project Gutenberg's The Parisians, Complete, by Edward
+     Bulwer-Lytton</title><author>Lytton, Edward Bulwer (1803-1873)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1874</date></publicationStmt></teiHeader><text><body><div type="chapter" n="101">
+CHAPTER XIV.
+“I knew I should find you in the Madeleine,” said Lemercier, “and I wished much to know when
+      you had news from Duplessis. He and your fair fiancee are with your aunt still staying at
+      Rochebriant?”
+“Certainly. A pigeon arrived this morning with a few lines. All well there.”
+“And Duplessis thinks, despite the war, that he shall be able, when the time comes, to pay
+      Louvier the mortgage-sum?”
+“He never doubts that. His credit in London is so good. But of course all works of
+      improvement are stopped.”
+“Pray did he mention me?—anything about the messenger who was to pierce the Prussian
+      lines?”
+“What! has the man not arrived? It is two weeks since he left.”
+“The Uhlans have no doubt shot him—the assassins, and drunk up my 25,000 francs—the
+      thieves.”
+“I hope not. But in case of delay, Duplessis tells me I am to remit to you 2,000 francs for
+      your present wants. I will send them to you this evening.”
+“How the deuce do you possess such a sum?”
+“I came from Brittany with a purse well filled. Of course I could have no scruples in
+      accepting money from my destined father-in-law.”
+“And you can spare this sum?”
+“Certainly—the State now provides for me; I am in command of a Breton company.”
+“True. Come and dine with me and De Breze.”
+“Alas! I cannot. I have to see both the Vandemars before I return to the camp for the night.
+      And now-hush—come this way (drawing Frederic further from De Breze), I have famous news for
+      you. A sortie on a grand scale is imminent; in a few days we may hope for it.”
+“I have heard that so often that I am incredulous.”
+“Take it as a fact now.”
+“What! Trochu has at last matured his plan?”
+“He has changed its original design, which was to cut through the Prussian lines to Rouen,
+      occupying there the richest country for supplies, guarding the left bank of the Seine and a
+      watercourse to convoy them to Paris. The incidents of war prevented that: he has a better plan
+      now. The victory of the army of the Loire at Orleans opens a new enterprise. We shall cut our
+      way through the Prussians, join that army, and with united forces fall on the enemy at the
+      rear. Keep this a secret as yet, but rejoice with me that we shall prove to the invaders what
+      men who fight for their native soil can do under the protection of Heaven.”
+“Fox, Fox, mon cheri,” said Lemercier, as he walked towards the cafe Riche with De Breze;
+      “thou shalt have a festin de Balthazar under the protection of Heaven.”
+</div></body></text></TEI>

@@ -1,0 +1,524 @@
+<?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>The Daisy Chain</title><author>Yonge, Charlotte Mary (1823-1901)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1856</date></publicationStmt></teiHeader><text><body><div type="chapter" n="22">
+CHAPTER XXII.
+
+'Oh Life, without thy chequered scene,
+Of right and wrong, of weal and woe,
+Success and failure, could a ground
+For magnanimity be found?'Wordsworth.
+Doctor May was called for late the next day, Friday, and spent some time in one of
+      the houses near the river. It was nearly eight o'clock when he came away, and he lingered,
+      looking towards the school, in hopes of a walk home with his boys.
+Presently he saw Norman come out from under the archway, his cap drawn over his face, and
+      step, gesture, and manner, betraying that something was seriously wrong. He came up almost to
+      his father without seeing him, until startled by his exclamation, 'Norman —why Norman, what's
+      the matter?'
+Norman's lips quivered, and his face was pale—he seemed as if he could not speak.
+'Where's Tom?' said the Doctor, much alarmed. 'Has he got into disgrace about this business
+      of Tomkins? That boy—'
+'He has only got an imposition,' interrupted Norman. 'No, it is not that—it is myself,—' and
+      it was only with a gulp and struggle that he brought out the words, 'I am turned down in the
+      school.'
+The Doctor started back a step or two, aghast. 'What—how— speak, Norman. What have you
+      done?'
+'Nothing!' said Norman, recovering, in the desire to re-assure his father, 'nothing!'
+'That's right,' said the Doctor, breathing freely, 'What's the meaning of it... a
+      misunderstanding?'
+'Yes,' said Norman, with bitterness. 'It is all Anderson's doing —a word from him would have
+      set all straight—but he would not— I believe, from my heart, he held his tongue to get me
+      down, that he might have the Randall!'
+'We'll see you righted,' said the Doctor, eagerly. 'Come, tell me the whole story, Norman.
+      Is it about this unlucky business?'
+'Yes. The town-fellows were all up about it last evening, when we came out of school.
+      Anderson senior himself began to put them up to having the fence down again. Yes, that he
+      did—I remember his very words—that Tomkins could not bring it into Court, and so set old
+      Hoxton at us. Well, I told them it would not do,—thought I had settled them—saw them off
+      home—yes, Simpson, and Benson,
+       and Grey, up the High Street, and the others their way. I only left Axworthy
+      going into a shop when I set off on my walk. What could a fellow do more? How was I to know
+      that that Axworthy would get them together again, and take them to this affair—pull up the
+      stakes—saw them down—for they were hard to get down— shy all sorts of things over into the
+      court—hoot at old Tomkins's man, when he told them to be off—and make a bonfire of the sticks
+      at last?'
+'And Harvey Anderson was there?'
+'No—not he. He is too sharp—born and bred attorney as he is—he talked them up to the
+      mischief when my back was turned, and then sneaked quietly home, quite innocent, and out of
+      the scrape.'
+'But Doctor Hoxton can never entertain a suspicion that you had anything to do with it.'
+'Yes, he does though. He thinks I incited them, and Tomkins and the policeman declare I was
+      there in the midst of the row—and not one of these fellows will explain how I came at the last
+      to look for Tom.'
+'Not Tom himself?—'
+'He did try to speak, poor little fellow, but, after the other affair, his word goes for
+      nothing, and so, it seems, does mine. I did think Hoxton would have trusted me!'
+'And did not he?' exclaimed Dr. May.
+'He did not in so many words accuse me of—of—but he told me he had serious charges brought
+      against me—Mr. Harrison had seen me at Ballhatchet's, setting an example of disregard to
+      rules—and, again, Mr. Harrison saw me coming in at a late hour last night. "I know he did," I
+      said, and I explained where I had been, and they asked for proofs! I could hardly answer, from
+      surprise, at their not seeming to believe me, but I said you could answer for my having come
+      in with the flowers for my sister.'
+'To be sure I will—I'll go this instant—' he was turning.
+'It is of no use, papa, to-night; Dr. Hoxton has a dinner-party.'
+'He is always having parties. I wish he would mind them less, and his business more. You
+      disbelieved! but I'll see justice done you, Norman, the first thing to-morrow. Well—'
+'Well then, I said, old Ballhatchet could tell that I crossed the bridge at the very time
+      they were doing this pretty piece of work, for he was sitting smoking in his porch when I went
+      home, and, would you believe it? the old rascal would not remember who passed that evening! It
+      is all his malice and revenge—nothing else!'
+'Why—what have you been doing to him?'
+Norman shortly explained the ginger-beer story, and adding,
+       'Cheviot told me I should get nothing but ill-will, and so I have— all those
+      town fellows turn against me now, and though they know as well as possible how it was, they
+      won't say a word to right me, just out of spite, because I have stopped them from all the
+      mischief I could!'
+Well, then—'
+'They asked me whether—since I allowed that I had been there at last—I had dispersed the
+      boys. I said no, I had no time. Then they desired to know who was there, and that I had not
+      seen; it was all dark, and there had not been a moment, and if I guessed, it was no affair of
+      mine to say. So they ordered me down, and had up Ned Anderson, and one or two more who were
+      known to have been in the riot, and then they consulted a good while, and sent for me; Mr.
+      Wilmot was for me, I am sure, but Harrison was against me. Doctor Hoxton sat there, and made
+      me one of his addresses. He said he would not enter on the question whether I had been present
+      at the repetition of the outrage, as he called it, but what was quite certain was, that I had
+      abused my authority and influence in the school; I had been setting a bad example, and
+      breaking the rules about Ballhatchet, and so far from repressing mischief, I had been the
+      foremost in it, making inflammatory harangues, leading them to commit violence the first time,
+      and the next, if not actually taking part in it personally, at any rate, not preventing it. In
+      short, he said it was clear I had not weight enough for my post—it was some excuse I had been
+      raised to it so young—but it was necessary to show that proficiency in studies did not
+      compensate for disregard of discipline, and so he turned me down below the first six! So
+      there's another May in disgrace!'
+'It shall not last—it shall not last, my boy,' said Dr. May, pressing Norman's arm; 'I'll
+      see you righted. Dr. Hoxton shall hear the whole story. I am not for fathers interfering in
+      general, but if ever there was a case, this is! Why, it is almost actionable —injuring your
+      whole prospects in life, and all because he will not take the trouble to make an
+      investigation! It is a crying shame.'
+'Every fellow in the school knows how it was,' said Norman; 'and plenty of them would be
+      glad to tell, if they had only the opportunity; but he asked no one but those two or three
+      worst fellows that were at the fire, and they would not tell, on purpose. The school will go
+      to destruction now—they'll get their way, and all I have been striving for is utterly
+      undone.'
+'You setting a bad example! Dr. Hoxton little knows what you have been doing. It is a
+      mockery, as I have always said, to see that old fellow sit wrapped up in his pomposity, eating
+      his good dinners, and knowing no more what goes on among his boys than
+       this umbrella! But he will listen to me—and we'll make those boys confess the
+      whole—aye, and have up Ballhatchet himself, to say what your traffic with him was; and we will
+      see what old Hoxton says to you then, Norman.'
+Dr. May and his son felt keenly and spoke strongly. There was so much of sympathy and
+      fellow-feeling between them, that there was no backwardness on Norman's part in telling his
+      whole trouble, with more confidence than school-boys often show towards their fathers, and Dr.
+      May entered into the mortification as if he were still at school. They did not go into the
+      house, but walked long up and down the garden, working themselves up into, if possible,
+      stronger indignation, and concerting the explanation for to-morrow, when Dr. May meant to go
+      at once to the head master, and make him attend to the true version of the story, appealing to
+      Harvey Anderson himself, Larkins, and many others, for witnesses. There could be hardly a
+      doubt that Norman would be thus exculpated; but, if Dr. Hoxton would not see things in their
+      true light, Dr. May was ready to take him away at once, rather than see him suffer
+      injustice.
+Still, though comforted by his father's entire reliance, Norman was suffering severely under
+      the sense of indignity, and grieved that Dr. Hoxton, and the other masters, should have
+      believed him guilty —that name of May could never again boast of being without reproach. To be
+      in disgrace stung him to the quick, even though undeservedly, and he could not bear to go in,
+      meet his sisters, and be pitied. 'There's no need they should know of it,' said he, when the
+      Minster clock pealing ten, obliged them to go in doors, and his father agreed. They bade each
+      other good-night, with the renewal of the promise that Dr. Hoxton should be forced to hear
+      Norman's vindication the first thing to-morrow, Harvey Anderson be disappointed of what he
+      meanly triumphed in, and Norman be again in his post at the head of the school, in more honour
+      and confidence than ever, putting down evil, and making Stoneborough what it ought to be.
+As Dr. May lay awake in the summer's morning, meditating on his address to Dr. Hoxton, he
+      heard the unwelcome sound of a ring at the bell, and, in a few minutes, a note was brought to
+      him.
+'Tell Adams to get the gig ready—I'll let him know whether he is to go with me.'
+And, in a few minutes, the Doctor opened Norman's door, and found him dressed, and standing
+      by the window, reading. 'What, up already, Norman? I came to tell you that our affairs must
+      wait till the afternoon. It is very provoking, for Hoxton may be gone out, but Mr. Lake's son,
+      at Groveswood, has an attack on the head,
+       and I must go at once. It is a couple of dozen miles off or more. I have hardly
+      ever been there, and it may keep me all day.'
+'Shall you go in the gig? Shall I drive you?' said Norman, looking rather blank.
+'That's what I thought of, if you like it. I thought you would sooner be out of the
+      way.'
+'Thank you—yes, papa. Shall I come and help you to finish dressing?'
+Yes, do, thank you; it will hasten matters. Only, first order in some breakfast. What makes
+      you up so early? Have not you slept?'
+'Not much—it has been such a hot night.'
+'And you have a head-ache. Well, we will find a cure for that before the day is over. I have
+      settled what to say to old Hoxton.'
+Before another quarter of an hour had passed, they were driving through the deep lanes, the
+      long grass thickly laden with morning dew, which beaded the webs of the spiders, and rose in
+      clouds of mist under the influence of the sun's rays. There was stillness in the air at first,
+      then the morning sounds, the labourer going forth, the world wakening to life, the opening
+      houses, the children coming out to school. In spite of the tumult of feeling, Norman could not
+      but be soothed and refreshed by the new and fair morning scene, and both minds quitted the
+      school politics, as Dr. May talked of past enjoyment of walks or drives home in early dawn,
+      the more delicious after a sad watch in a sick room, and told of the fair sights he had seen
+      at such unwonted hours.
+They had far to go, and the heat of the day had come on before they entered the place of
+      their destination. It was a woodland village, built on a nook in the side of the hill, sloping
+      greenly to the river, and shut in by a white gate, which seemed to gather all in one, the
+      little low old-fashioned church, its yard, shaded with trees, and enclosed by long white
+      rails; the parsonage, covered with climbing plants and in the midst of a gay garden; and one
+      or two cottages. The woods cast a cool shadow, and, in the meadows by the river, rose cocks of
+      new-made hay; there was an air of abiding serenity about the whole place, save that there
+      stood an old man by the gate, evidently watching for the physician's carriage; and where the
+      sun fell on that parsonage-house was a bedroom window wide open, with the curtains drawn.
+'Thank Heaven, you are come, Sir,' said the old man—'he is fearfully bad.'
+Norman knew young Lake, who had been a senior boy when he first went to school, was a
+      Randall scholar, and had borne
+       an excellent character, and highly distinguished himself at the University. And
+      now, by all accounts, he seemed to be dying— in the height of honour and general esteem. Dr.
+      May went into the house, the old man took the horse, and Norman lingered under the trees in
+      the church-yard, watching the white curtains now and then puffed by the fitful summer breeze,
+      as he lay on the turf in the shade, under the influence of the gentle sadness around, resting,
+      mind and body, from the tossing tumultuous passionate sensations that had kept him restless
+      and miserable through the hot night.
+He waited long—one hour, two hours had passed away, but he was not impatient, and hardly
+      knew how long the time had been before his father and Mr. Lake came out of the house together,
+      and, after they parted, Dr. May summoned him. He of course asked first for the patient. 'Not
+      quite so hopeless as at first,' and the reasons for having been kept so long were detailed,
+      with many circumstances of the youth's illness, and the parents' resignation, by which Dr. May
+      was still too deeply touched to have room in his mind for anything besides.
+They were more than half-way home, and a silence had succeeded the conversation about the
+      Lake family, when Norman spoke:
+'Papa, I have been thinking about it, and I believe it would he better to let it alone, if
+      you please.'
+'Not apply to Dr. Hoxton!' exclaimed his father.
+'Well, I think not. I have been considering it, and it does hardly seem to me the right
+      thing. You see, if I had not you close at hand, this could never be explained, and it seems
+      rather hard upon Anderson, who has no father, and the other fellows, who have theirs further
+      off—'
+'Right, Norman, that is what my father before me always said, and the way I have always
+      acted myself; much better let a few trifles go on not just as one would wish, than be for ever
+      interfering. But I really think this is a case for it, and I don't think you ought to let
+      yourself be influenced by the fear of any party-spirit.'
+'It is not only that, papa—I have been thinking a good deal to-day, and there are other
+      reasons. Of course I should wish Dr. Hoxton to know that I spoke the truth about that walk,
+      and I hope you will let him know, as I appealed to you. But, on cooler thoughts, I don't
+      believe Dr. Hoxton could seriously suspect me of such a thing as that, and it was not on that
+      ground that I am turned down, but that I did not keep up sufficient discipline, and allowed
+      the outrage, as he calls it. Now, you know, that is, after a fashion, true. If I had not gone
+      on like an ass the other day, and incited them to pull down the fences, they would not have
+      done it afterwards, and perhaps,
+       I ought to have kept on guard longer. It was my fault, and we can't deny
+      it.'
+Dr. May made a restless, reluctant movement. 'Well, well, I suppose it was—but it was just
+      as much Harvey Anderson's—and is he to get the scholarship because he has added meanness to
+      the rest?'
+'He was not Dux,' said Norman, with a sigh. 'It was more shabby than I thought was even in
+      him. But I don't know that the feeling about him is not one reason. There has always been a
+      rivalry and bitterness between us two, and if I were to get the upper hand now, by means not
+      in the usual course, such as the fellows would think ill of, it would be worse than ever, and
+      I should always feel guilty and ashamed to look at him.'
+'Over-refining, Norman,' muttered Dr. May.
+'Besides, don't you remember, when his father died, how glad you and everyone were to get
+      him a nomination, and it was said that if he gained a scholarship, it would be such a relief
+      to poor Mrs. Anderson? Now he has this chance, it does seem hard to deprive her of it. I
+      should not like to know that I had done so.'
+'Whew!' the Doctor gave a considering whistle.
+'You could not make it straight, papa, without explaining about the dealing with
+      Ballhatchet, and that would be unfair to them all, even the old rogue himself; for I promised
+      to say nothing about former practices, as long as he did not renew them.'
+'Well! I don't want to compromise you, Norman. You know your own ground best, but I don't
+      like it at all. You don't know the humiliation of disgrace. Those who have thought highly of
+      you, now thinking you changed—I don't know how to bear it for you.'
+'I don't mind anything while you trust me,' said Norman, eagerly; 'not much I mean, except
+      Mr. Wilmot. You must judge, papa, and do as you please.'
+'No, you must judge, Norman. Your confidence in me ought not to be a restraint. It has
+      always been an understood thing that, what you say at home is, as if it had not been said, as
+      regards my dealings with the masters.'
+'I know, papa. Well, I'll tell you what brought me to this. I tumbled about all night in a
+      rage, when I thought how they had served me, and of Hoxton's believing it all, and how he
+      might only half give in to your representation, and then I gloried in Anderson's coming down
+      from his height, and being seen in his true colours. So it went on till morning came, and I
+      got up. You know you gave me my mother's little Thomas à Kempis. I always read a bit every
+      morning. To-day it was, "Of four things that bring much inward peace." And what do you think
+      they were?'
+
+"Be desirous, my son, to do the will of another rather than thine own.
+"Choose always to have less rather than more.
+"Seek always the lowest place, and to be inferior to everyone.
+"Wish always and pray that the will of God may be wholly fulfilled in thee."
+'I liked them the more, because it was just like her last reading with us, and like that
+      letter.—Well, then I wondered as I lay on the grass at Groveswood, whether she would have
+      thought it best for me to be reinstated, and I found out that I should have been rather afraid
+      of what you might say when she had talked it over with you.'
+Dr. May smiled a little at the simplicity with which this last was said, but his smile ended
+      in one of his heavy sighs. 'So you took her for your counsellor, my boy. That was the way to
+      find out what was right.'
+'Well, there was something in the place, and, in watching poor Lake's windows, that made me
+      not able to dwell so much on getting on, and having prizes and scholarships. I thought that
+      caring for those had been driven out of me, and you know I never felt as if it were my right
+      when I was made Dux; but now I find it is all come back. It does not do for me to be first; I
+      have been what she called elated, and been more peremptory than need with the lower boys, and
+      gone on in my old way with Richard, and so I suppose this disgrace has come to punish me. I
+      wish it were not disgrace, because of our name at school, and because it will vex Harry so
+      much; but since it is come, considering all things, I suppose I ought not to struggle to
+      justify myself at other people's expense.'
+His eyes were so dazzled with tears, that he could hardly see to drive, nor did his father
+      speak at first. 'I can't say anything against it, Norman, but I am sorry, and one thing more
+      you should consider. If Dr. Hoxton should view this absurd business in the way he seems to do,
+      it will stand in your way for ever in testimonials, if you try for anything else.'
+'Do you think it will interfere with my having a Confirmation ticket?'
+'Why no, I should not think—such a boyish escapade could be no reason for refusing you
+      one.'
+'Very well then, it had better rest. If there should be any difficulty about my being
+      Confirmed, of course we will explain it.'
+'I wish everyone showed themselves as well prepared!' half-muttered the Doctor; then, after
+      long musing, 'Well, Norman, I
+       give up the scholarship. Poor Mrs. Anderson wants it more than we do, and if the
+      boy is a shabby fellow, the more he wants a decent education. But what do you say to this? I
+      make Hoxton do you full justice, and reinstate you in your proper place, and then I take you
+      away at once—send you to a tutor—anything, till the end of the long vacation.'
+'Thank you,' said Norman, pausing. 'I don't know, papa. I am very much obliged to you, but I
+      think it would hardly do. You would be uncomfortable at seeming to quarrel with Dr. Hoxton,
+      and it would be hardly creditable for me to go off in anger.'
+'You are right, I believe,' said Dr. May. 'You judge wisely, though I should not have
+      ventured to ask it of you. But what is to become of the discipline of the school? Is that all
+      to go to the dogs?'
+'I could not do anything with them if I were restored in this way; they would be more set
+      against me. It is bad enough as it is, but, even for my own peace, I believe it is better to
+      leave it alone. All my comfort in school is over, I know!' and he sighed deeply.
+'It is a most untoward business!' said the Doctor. 'I am very sorry your school-days should
+      be clouded—but it can't be helped, and you will work yourself into a character again. You are
+      full young, and can stay for the next Randall.'
+Norman felt as if, while his father looked at him as he now did, the rest of the world were
+      nothing to him; but, perhaps, the driving past the school brought him to a different mind, for
+      he walked into the house slowly and dejectedly.
+He told his own story to Ethel, in the garden, not without much difficulty, so indignant
+      were her exclamations; and it was impossible to make her see that his father's interference
+      would put him in an awkward position among the boys. She would argue vehemently that she could
+      not bear Mr. Wilmot to think ill of him, that it was a great shame of Dr. Hoxton, and that it
+      was dreadful to let such a boy as Harvey Anderson go unpunished. 'I really do think it is
+      quite wrong of you to give up your chance of doing good, and leave him in his evil ways!' That
+      was all the comforts he gave Norman, and she walked in to pour out a furious grumbling upon
+      Margaret.
+Dr. May had been telling the elder ones, and they were in conversation after he had left
+      them—Margaret talking with animation, and Flora sitting over her drawing, uttering reluctant
+      assents. 'Has he told you, poor fellow?' asked Margaret.
+'Yes,' said Ethel. 'Was there ever such a shame?'
+'That is just what I say,' observed Flora. 'I cannot see why the Andersons are to have a
+      triumph over all of us.'
+
+'I used to think Harvey the best of the two,' said Ethel. 'Now, I think he is a great deal
+      the worst. Taking advantage of such a mistake as this! How will he ever look Norman in the
+      face.'
+'Really,' said Margaret, 'I see no use in aggravating ourselves by talking of the
+      Andersons.'
+'I can't think how papa can consent,' proceeded Flora. 'I am sure, if I were in his place, I
+      should not!'
+'Papa is so much pleased with dear Norman's behaviour, that it quite makes up for all the
+      disappointment,' said Margaret. 'Besides, he is very much obliged to him in one way; he would
+      not have liked to have to battle the matter with Dr. Hoxton. He spoke of Norman's great good
+      judgment.'
+'Yes, Norman can persuade papa to anything,' said Flora.
+'Yes, I wish papa had not yielded,' said Ethel. 'It would have been just as noble in dear
+      Norman, and we should not have the apparent disgrace.'
+'Perhaps it is best as it is, after all,' said Flora.
+'Why, how do you mean?' said Ethel.
+'I think very likely things might have come out. Now, don't look furious, Ethel. Indeed, I
+      can't help it, but really I don't think it is explicable why Norman should wish to hush it up,
+      unless there were something behind!'
+'Flora!' cried Ethel, too much shocked to bring out another word.
+'If you are unfortunate enough to have such suspicions,' said Margaret, quietly, 'I think it
+      would be better to be silent.'
+'As if you did not know Norman!' stammered Ethel.
+'Well,' said Flora. 'I don't wish to think so. You know I did not hear Norman himself, and
+      when papa gives his vehement accounts of things, it always puzzles us of the cooler-minded
+      sort.'
+'It is as great a shame as ever I heard!' cried Ethel, recovering her utterance. 'Who would
+      you trust, if not your own father and brother?'
+'Yes, yes,' said Flora, not by any means wishing to displease her sisters. 'If there is such
+      a thing as an excess of generosity, it is sure to be among ourselves. I only know it does not
+      suit me. It will make us all uncomfortable whenever we meet the Andersons or Mr. Wilmot, or
+      anyone else, and as to such tenderness to Harvey Anderson, I think it is thrown away.'
+'Thrown away on the object, perhaps,' said Margaret, 'but not in Norman.'
+'To be sure,' broke out Ethel. 'Better be than seem! Oh, dear! I am sorry I was vexed with
+      dear old June when he told me. I had rather have him now than if he had gained everything and
+       everyone was praising him—that I had!' Harvey Anderson is welcome to be Dux and
+      Randall scholar for what I care, while Norman is—while he is, just what we thought of the last
+      time we read that Gospel—you know, Margaret?'
+'He is—that he is,' said Margaret, 'and, indeed, it is most beautiful to see how what has
+      happened has brought him at once to what she wished, when, perhaps, otherwise it would have
+      been a work of long time.'
+Ethel was entirely consoled. Flora thought of the words ' téte exaltêe ,' and
+      considered herself alone to have sober sense enough to see things in a true light—not that she
+      went the length of believing that Norman had any underhand motives, but she thought it very
+      discreet in her to think a prudent father would not have been satisfied with such a desire to
+      avoid investigation.
+Dr. May would not trust himself to enter on the subject with Dr. Hoxton in conversation; he
+      only wrote a note.
+'June 16th.
+'Dear Dr. Hoxton,
+'My son has appealed to me to confirm his account of himself on Thursday evening last. I
+      therefore distinctly state that he came in at half-past nine, with his hands full of plants
+      from the river, and that he then went out again, by my desire, to look for his little
+      brother.
+'Yours, very truly,
+'R. May.'
+A long answer came in return, disclaiming all doubt of Norman's veracity, and explaining Dr.
+      Hoxton's grounds for having degraded him. There had been misconduct in the school, he said,
+      for some time past, and he did not consider that it was any very serious reproach, to a boy of
+      Norman's age, that he had not had weight enough to keep up his authority, and had been carried
+      away by the general feeling. It had been necessary to make an example for the sake of
+      principle, and though very sorry it should have fallen on one of such high promise and general
+      good conduct, Dr. Hoxton trusted that it would not be any permanent injury to his prospects,
+      as his talents had raised him to his former position in the school so much earlier than
+      usual.
+'The fact was,' said Dr. May, 'that old Hoxton did it in a passion, feeling he must punish
+      somebody, and now, finding there's no uproar about it, he begins to be sorry. I won't answer
+      this note. I'll stop after church to-morrow and shake hands, and that will show we don't bear
+      malice.'
+What Mr. Wilmot might think, was felt by all to affect them more nearly. Ethel wanted to
+      hear that he declared his complete conviction of Norman's innocence, and was disappointed to
+      find that he did not once allude to the subject. She was only consoled by
+       Margaret's conjecture that, perhaps, he thought the head-master had been hasty,
+      and could not venture to say so—he saw into people's characters, and it was notorious that it
+      was just what Dr. Hoxton did not.
+Tom had spent the chief of that Saturday in reading a novel borrowed from Axworthy, keeping
+      out of sight of everyone. All Sunday he avoided Norman more scrupulously than ever, and again
+      on Monday. That day was a severe trial to Norman; the taking the lower place, and the sense
+      that, excel as much as ever he might in his studies, it would not avail to restore him to his
+      former place, were more unpleasant, when it came to the point, than he had expected.
+He saw the cold manner, so different from the readiness with which his tasks had always been
+      met, certain as they were of being well done; he found himself among the common herd whom he
+      had passed so triumphantly, and, for a little while, he had no heart to exert himself.
+This was conquered by the strong will and self-rebuke for having merely craved for applause,
+      but, in the play-ground, he found himself still alone—the other boys who had been raised by
+      his fall, shrank from intercourse with one whom they had injured by their silence, and the
+      Andersons, who were wont to say the Mays carried every tale home, and who still almost
+      expected interference from Dr. May, hardly believed their victory secure, and the younger one,
+      at least, talked spitefully, and triumphed in the result of May's meddling and troublesome
+      over strictness. 'Such prigs always come to a downfall,' was the sentiment.
+Norman found himself left out of everything, and stood dispirited and weary on the bank of
+      the river, wishing for Harry, wishing for Cheviot, wishing that he had been able to make a
+      friend who would stand by him, thinking it could not be worse if he had let his father
+      reinstate him—and a sensation of loneliness and injustice hung heavy at his heart.
+His first interruption was a merry voice. 'I say, June, there's no end of river cray-fish
+      under that bank,' and Larkins' droll face was looking up at him, from that favourite position,
+      half-stooping, his hands on his knees, his expression of fun trying to conceal his real
+      anxiety and sympathy.
+Norman turned and smiled, and looked for the cray-fish, and, at the same time, became aware
+      of Hector Ernescliffe, watching for an opportunity to say, 'I have a letter from Alan.' He
+      knew they wanted, as far as little boys ventured to seek after one so much their elder, to
+      show themselves his friends, and he was grateful; he
+       roused himself to hear about Alan's news, and found it was important —his great
+      friend, Captain Gordon, had got a ship, and hoped to be able to take him, and this might lead
+      to Harry's going with him. Then Norman applied himself to the capture of cray-fish, and
+      Larkins grew so full of fun and drollery, that the hours of recreation passed off less
+      gloomily than they had begun.
+If only his own brother would have been his adherent! But he saw almost nothing of Tom. Day
+      after day he missed him, he was off before him in going and returning from school, and when he
+      caught a sight of his face, it looked harassed, pale, and miserable, stealing anxious glances
+      after him, yet shrinking from his eye. But, at the same time, Norman did not see him mingling
+      with his former friends, and could not make out how he disposed of himself. To be thus
+      continually shunned by his own brother, even when the general mass were returning to ordinary
+      terms, became so painful, that Norman was always on the watch to seek for one more
+      conversation with him.
+He caught him at last in the evening, just as they were going home. 'Tom, why are you
+      running away? Come with me,' said he, authoritatively; and Tom obeyed in trembling.
+Norman led the way to the meads. 'Tom,' said he, 'do not let this go on. Why do you serve me
+      in this way? You surely need not turn against me,' he said, with pleading melancholy in his
+      voice.
+It was not needed. Tom had flung himself upon the grass, and was in an agony of crying, even
+      before he had finished the words.
+'Tom, Tom! what is the matter? Have they been bullying you again? Look up, and tell me—what
+      is it? You know I can stand by you still, if you'll only let me;' and Norman sat by him on the
+      grass, and raised his face by a sort of force, but the kind words only brought more piteous
+      sobs. It was a long time before they diminished enough to let him utter a word, but Norman
+      went on patiently consoling and inquiring, sure, at least, that here had broken down the
+      sullenness that had always repelled him.
+At last came the words, 'Oh! I cannot bear it. It is all my doing!'
+'What—how—you don't mean this happening to me? It is not your doing, August—what fancy is
+      this?'
+'O yes, it is,' said Tom, his voice cut short by gasps, the remains of the sobs. 'They would
+      not hear me! I tried to tell them how you told them not, and sent them home. I tried to tell
+      about Ballhatchet—but—but they wouldn't—they said if it had been Harry, they would have
+      attended—but they would not believe me. Oh! if Harry was but here!'
+
+'I wish he was,' said Norman, from the bottom of his heart; 'but you see, Tom, if this sets
+      you on always telling truth, I shan't think any great harm done.'
+A fresh burst, 'Oh! they are all so glad! They say such things! And the Mays were never in
+      disgrace before. O Norman, Norman!'
+'Never mind about that,—' began Norman.
+'But you would mind,' broke in the boy, passionately, 'if you knew what Anderson junior, and
+      Axworthy say! They say it serves you right, and they were going to send me to old
+      Ballhatchet's to get some of his stuff to drink confusion to the mouth of June, and all
+      pragmatical meddlers; and when I said I could not go, they vowed if I did not, I should eat
+      the corks for them! And Anderson junior called me names, and licked me. Look there.' He showed
+      a dark blue-and-red stripe, raised on the palm of his hand. 'I could not write well for it
+      these three days, and Hawes gave me double copies!'
+'The cowardly fellows!' exclaimed Norman, indignantly. 'But you did not go?'
+'No, Anderson senior stopped them. He said he would not have the Ballhatchet business begin
+      again.'
+'That is one comfort,' said Norman. 'I see he does not dare not to keep order. But if you'll
+      only stay with me, August, I'll take care they don't hurt you.'
+'Oh! June! June!' and he threw himself across his kind brother. 'I am so very sorry! Oh! to
+      see you put down—and hear them! And you to lose the scholarship! Oh, dear! oh, dear! and be in
+      disgrace with them all!'
+'But, Tom, do cheer up. It is nothing to be in such distress at. Papa knows all about it,
+      and while he does, I don't care half so much.'
+'O, I wish—I wish—'
+You see, Tom,' said Norman, 'after all, though it is very kind of you to be sorry for not
+      being able to get me out of this scrape, the thing one wants you to be sorry about, is your
+      own affair.'
+'I wish I had never come to school! I wish Anderson would leave me alone! It is all his
+      fault! A mean-spirited skulking, bullying—'
+'Hush, hush, Tom, he is bad enough, but now you know what he is, you can keep clear of him
+      for the future. Now listen. You and I will make a fresh start, and try if we can't get the
+      Mays to be looked on as they were when Harry was here. Let us mind the rules, and get into no
+      more mischief.'
+'You'll keep me from Ned Anderson and Axworthy?' whispered Tom.
+
+'Yes, that I will. And you'll try and speak the truth, and be straightforward?
+'I will, I will,' said Tom, worn out in spirits by his long bondage, and glad to catch at
+      the hope of relief and protection.
+'Then let us come home,' and Tom put his hand into his brother's, as a few weeks back would
+      have seemed most unworthy of schoolboy dignity.
+Thenceforth Tom was devoted to Norman, and kept close to him, sure that the instant he was
+      from under his wing, his former companions would fall on him to revenge his defection, but
+      clinging to him also from real affection and gratitude. Indolence and timidity were the true
+      root of what had for a time seemed like a positively bad disposition; beneath, there was a
+      warm heart, and sense of right, which had been almost stifled for the time, in the desire,
+      from moment to moment, to avoid present trouble or fear. Under Norman's care his better self
+      had freer scope, he was guarded from immediate terror, and kept from the suggestions of the
+      worse sort of boys, as much as was in his brother's power; and the looks they cast towards
+      him, and the sly torments they attempted to inflict, by no means invited him back to them. The
+      lessons, where he had a long inveterate habit of shuffling, came under Norman's eye at the
+      same time. He always prepared them in his presence, instead of in the most secret manner
+      possible, and with all Anderson's expeditious modes of avoiding the making them of any use.
+      Norman sat by, and gave such help as was fair and just, showed him how to learn, and explained
+      difficulties, and the ingenuity hitherto spent in eluding learning being now directed to
+      gaining it, he began to make real progress, and find satisfaction in it. The comfort of being
+      good dawned upon him once more, but still there was much to contend with; he had acquired such
+      a habit of prevarication, that, if by any means taken by surprise, his impulse was to avoid
+      giving a straightforward answer, and when he recollected his sincerity, the truth came with
+      the air of falsehood. Moreover, he was an arrant coward, and provoked tricks by his manifest
+      and unreasonable terrors. It was no slight exercise of patience that Norman underwent, but
+      this was the interest he had made for himself; and the recovery of the boy's attachment, and
+      his improvement, though slow, were a present recompense.
+Ernescliffe, Larkins, and others of the boys, held fast to him, and after the first
+      excitement was past, all the rest returned to their former tone. He was decidedly as much
+      respected as ever, and, at the same time, regarded with more favour than when his strictness
+      was resented. And as for the discipline of the school, that did not suffer. Anderson felt
+      that, for his own credit, he must not allow
+       the rules to be less observed than in May's reign, and he enforced them upon the
+      reluctant and angry boys, with whom he had been previously making common cause. Dr. Hoxton
+      boasted to the under-masters that the school had never been in such good order as under
+      Anderson, little guessing that this was but reaping the fruits of a past victory, or that
+      every boy in the whole school gave the highest place in their esteem to the deposed Dux.
+To Anderson, Norman's cordial manner and ready support, were the strangest part of all, only
+      explained by thinking that he deemed it, as he tried to do himself, merely the fortune of war,
+      and was sensible of no injury.
+And, for Norman himself, when the first shock was over, and he was accustomed to the change,
+      he found the cessation of vigilance a relief, and carried a lighter heart than any time since
+      his mother's death. His sisters could not help observing that there was less sadness in the
+      expression of his eyes, that he carried his head higher, walked with freedom and elasticity of
+      step, tossed and flourished the Daisy till she shouted and crowed, while Margaret shrank at
+      such freaks; and, though he was not much of a laugher himself, contributed much sport in the
+      way of bright apposite sayings to the home circle.
+It was a very unexpected mode of cure for depression of spirits, but there could be no
+      question that it succeeded; and when, a few Saturdays after, he drove Dr. May again to
+      Groveswood to see young Mr. Lake, who was recovering, he brought Margaret home a whole pile of
+      botanical curiosities, and drew his father into an animated battle over natural and Linnæan
+      systems, which kept the whole party merry with the pros and cons every evening for a week.
+</div></body></text></TEI>
