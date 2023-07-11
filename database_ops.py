@@ -377,7 +377,7 @@ def read_all_combined_jaccard_from_db():
     return the_combined_jacc
 
 # Once we get this working, the full four cases of Y/N/YN/NY can be calculated and viewed.
-def get_length_of_mulitauthor_predicition_table(author_a, author_b, author_c):
+def get_length_of_multiauthor_prediction_table(author_a, author_b, author_c):
     #This logic is broken.
     disk_cur.execute("SELECT COUNT(*) FROM author_prediction WHERE source_auth LIKE ? AND target_auth LIKE ? OR target_auth LIKE ?", [author_a, author_b, author_c])
     the_length = disk_cur.fetchone()

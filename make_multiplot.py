@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import plotly.express as px
 
-from database_ops import (get_length_of_mulitauthor_predicition_table,
+from database_ops import (get_length_of_multiauthor_prediction_table,
                           read_all_author_names_from_db,
                           read_multiauthor_attribution_from_db)
 
@@ -61,12 +61,12 @@ def main():
 
     try: #See if there are matches for this source/target
         sql_data = read_multiauthor_attribution_from_db(author_a, author_b, author_c)
-        total_number_of_predictions = get_length_of_mulitauthor_predicition_table(author_a, author_b, author_c)
+        total_number_of_predictions = get_length_of_multiauthor_prediction_table(author_a, author_b, author_c)
         collect_info_from_db(sql_data, total_number_of_predictions)
     except ValueError:
         try: #Maybe there are matches if we swap source and target
             sql_data = read_multiauthor_attribution_from_db(author_c, author_b, author_a)
-            total_number_of_predictions = get_length_of_mulitauthor_predicition_table(author_c, author_b, author_a)
+            total_number_of_predictions = get_length_of_multiauthor_prediction_table(author_c, author_b, author_a)
             collect_info_from_db(sql_data, total_number_of_predictions)
         except ValueError: #Ok, there are definitely no matches. Do over.
             print("\nSorry, there are no matches for this pairing. Please select again.\n")
