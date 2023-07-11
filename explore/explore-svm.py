@@ -276,7 +276,7 @@ def create_bar_chart(data, authors, selected_work, chap_choice):
     plt.tight_layout()
     plt.show()
 
-def get_all_author_names_and_chapters_from_tests():
+def get_all_author_names_and_chapters_from_tests() -> dict:
     test_works = {}
     disk_cur.execute("SELECT DISTINCT(file) FROM test_set_preds")
     the_files = disk_cur.fetchall()
