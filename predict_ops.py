@@ -79,6 +79,7 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP TABLE IF EXISTS auto_author_accuracy;")
     disk_cur.execute("DROP TABLE IF EXISTS calculations;")
     disk_cur.execute("DROP TABLE IF EXISTS pair_counts;")
+    disk_cur.execute("DROP TABLE IF EXISTS confusion_scores;")
     disk_cur.execute("DROP INDEX IF EXISTS calculations_author_pair_index;")
     disk_cur.execute("DROP INDEX IF EXISTS calculations_pair_id_index;")
     disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
@@ -111,9 +112,20 @@ def setup_auto_author_prediction_tables():
         );
     """
 
+    confusion_query = """
+        CREATE TABLE IF NOT EXISTS confusion_scores(
+            `threshold` REAL,
+            `tp` INT,
+            `tn` INT,
+            `fp` INT,
+            `fn` INT
+        );
+    """
+
     disk_cur.execute(pair_counts_query)
     disk_cur.execute(calculations_query)
     disk_cur.execute(weights_query)
+    disk_cur.execute(confusion_query)
     disk_con.commit()
 
 def setup_auto_indices():
@@ -186,6 +198,17 @@ def get_all_weights():
     
     return temp_dict
 
+def get_confusion_scores():
+    temp_dict = {}
+    confused_query = """
+        SELECT * FROM confusion_scores;
+    """
+    disk_cur.execute(confused_query)
+    result = disk_cur.fetchall()
+    for item in result:
+        temp_dict[item[0]] = [item[1], item[2], item[3], item[4]]
+    return temp_dict
+
 def create_author_view(author_pair, weights_dict):
     query = """
         SELECT 
@@ -214,6 +237,10 @@ def assess_auto_author_accuracy(data):
     disk_cur.executemany(insert_transaction, data)
     disk_con.commit()
 
+def insert_confusion_scores(data):
+    insert_transaction = "INSERT INTO confusion_scores VALUES (?,?,?,?,?);"
+    disk_cur.execute(insert_transaction, data)
+    disk_con.commit()
 
 ##
 # Helper Functions

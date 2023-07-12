@@ -11,7 +11,7 @@ from tqdm import tqdm
 from database_ops import read_all_combined_jaccard_from_db
 from predict_ops import (assess_auto_author_accuracy, close_db_connection,
                          insert_author_pair_counts, insert_calculations,
-                         insert_weights, optimize,
+                         insert_confusion_scores, insert_weights, optimize,
                          setup_auto_author_accuracy_table,
                          setup_auto_author_prediction_tables,
                          setup_auto_indices, vacuum_the_db)
@@ -22,6 +22,7 @@ Spoiler: With ngrams and aligns evenly weighted, no permutation of the tarah db 
          At 0.8, they show up (particularly, when weighted to ngrams)
 '''
 author_pair_count_transactions = {}
+outcome_counts = {"y": 0, "n": 0, "fp": 0, "fn": 0}
 
 def get_temp_copy_for_processing():
     temp_list = []
@@ -129,12 +130,16 @@ def do_math(threshold, pretty_threshold):
                 match outcome:
                     case "Y":
                         y_count += 1
+                        outcome_counts["y"] += 1
                     case "N":
                         n_count += 1
+                        outcome_counts["n"] += 1
                     case "NY":
                         i_count += 1
+                        outcome_counts["fn"] += 1
                     case "YN":
                         m_count += 1
+                        outcome_counts["fp"] += 1
 
                 calculations_transactions.append((pair_id, author_pair, threshold, comp_score, outcome, key))
                 accuracy_transactions.append((threshold, y_count, n_count, i_count, m_count))
@@ -143,6 +148,10 @@ def do_math(threshold, pretty_threshold):
             pbar.update(1)
         pbar.close()
 
+    outcome_values = list(outcome_counts.values())
+    outcome_values.insert(0, threshold)
+   
+    insert_confusion_scores(outcome_values)
     insert_calculations(calculations_transactions)
 
     return accuracy_transactions
@@ -197,7 +206,6 @@ def main():
         
         threshold = round(threshold - step, 3)
         pretty_threshold = pretty_threshold - pretty_step 
-
     #Now, put those dicts into the db:
     temp_author_pair_counts_transactions = []
     temp_weights_transactions = []
