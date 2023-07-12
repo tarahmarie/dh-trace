@@ -80,6 +80,7 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP TABLE IF EXISTS calculations;")
     disk_cur.execute("DROP TABLE IF EXISTS pair_counts;")
     disk_cur.execute("DROP INDEX IF EXISTS calculations_author_pair_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS calculations_pair_id_index;")
     disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
     disk_con.commit()
 
@@ -118,6 +119,7 @@ def setup_auto_author_prediction_tables():
 def setup_auto_indices():
     #Look, all this stuff is slow.  But it will make the plot script so much faster, so...
     disk_cur.execute("CREATE INDEX calculations_author_pair_index ON calculations(author_pair);")
+    disk_cur.execute("CREATE INDEX calculations_pair_id_index ON calculations(pair_id);")
     disk_cur.execute("CREATE INDEX combined_jaccard_pair_id_index ON combined_jaccard(pair_id);")
     disk_con.commit()
 
@@ -184,7 +186,7 @@ def get_all_weights():
     
     return temp_dict
 
-def create_author_view(author_pair):
+def create_author_view(author_pair, weights_dict):
     query = """
         SELECT 
         ocj.source_auth,
@@ -199,12 +201,11 @@ def create_author_view(author_pair):
         JOIN calculations AS calc ON ocj.pair_id = calc.pair_id
         WHERE calc.author_pair = ? 
     """
-    weights_dict = get_all_weights()
     params = [author_pair]
     the_predictions = pd.read_sql_query(query, disk_con, params=params)
     the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'comp_score', 'same_author', 'threshold', 'weight_id']
-    the_predictions['hap_weight'] = the_predictions['weight_id'].apply(lambda x: weights_dict.get(x, ())[0]) #type: ignore
-    the_predictions['al_weight'] = the_predictions['weight_id'].apply(lambda x: weights_dict.get(x, ())[1]) #type: ignore
+    the_predictions['hap_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[0])
+    the_predictions['al_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[1])
 
     return the_predictions
 
