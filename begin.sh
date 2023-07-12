@@ -10,13 +10,10 @@ while IFS='' read -r line; do PROJECTS+=("$line"); done < <(basename -a ./projec
 project_file_count=""
 last_run_file_count=""
 
-<<com
+#Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
+#A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
+#to find texts in the format it needs, and looks for the relevant inputs like alignments.
 
-Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
-A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
-to find texts in the format it needs, and looks for the relevant inputs like alignments.
-
-com
 
 initialize_new_project () {
     tput clear;
@@ -84,16 +81,12 @@ choose_project () {
     check_file_counts
 }
 
-<<com
-
-Compares file counts with last run.  If match, asks if you want to re-do.
-If there's not a match (e.g. if you've included an extra piece of text or there's
-an alignment file missing, etc), it does not ask you anything, but continues
-to run the work script with no further prompt. Intended to save you from having to 
-rerun the statistics each time if no changes to the texts have occurred, and 
-will display the previous stats generated.
-
-com
+#Compares file counts with last run.  If match, asks if you want to re-do.
+#If there's not a match (e.g. if you've included an extra piece of text or there's
+#an alignment file missing, etc), it does not ask you anything, but continues
+#to run the work script with no further prompt. Intended to save you from having to 
+#rerun the statistics each time if no changes to the texts have occurred, and 
+#will display the previous stats generated.
 
 
 check_file_counts () {
@@ -126,14 +119,10 @@ check_file_counts () {
     fi
 }
 
-<<com
-
-Actually executes the work on a given project. From previous function, doing this
-only if either asked to or if the file count doesn't match from a previous run.
-Deletes old databases, runs the set of functions on files for calculation of
-results and statistics, and stores in fresh dbs.
-
-com
+#Actually executes the work on a given project. From previous function, doing this
+#only if either asked to or if the file count doesn't match from a previous run.
+#Deletes old databases, runs the set of functions on files for calculation of
+#results and statistics, and stores in fresh dbs.
 
 do_the_work () {
     printf "\n\n\tRemoving old dbs (if they exist) and loading data..."
