@@ -8,10 +8,12 @@ import pandas as pd
 import plotly.express as px
 from rich.console import Console
 from rich.status import Status
+from tqdm import tqdm
 
 from database_ops import (read_all_author_names_from_db,
                           read_all_text_names_by_id_from_db)
-from predict_ops import create_author_view, get_author_view_length
+from predict_ops import (create_author_view, get_all_weights,
+                         get_author_view_length)
 from util import create_author_pair_for_lookups
 
 console = Console()
@@ -30,25 +32,25 @@ def display_author_menu(author_set):
 
 def get_author_selections_for_plot(author_set):
     temp_list = []
-    choice_a = None #Placeholder
-    choice_b = None #Placeholder
-    choice_c = None #Placeholder
-    choice_d = None #Placeholder
+    choice = None
     
-    while choice_a not in author_set.keys():
-        choice_a = int(input("Select the number of your first author: "))
-    temp_list.append(choice_a)
-    while choice_b not in author_set.keys():
-        choice_b = int(input("And the second author? "))
-    temp_list.append(choice_b)
-    while choice_c not in author_set.keys():
-        choice_c = int(input("And the third author? "))
-    temp_list.append(choice_c)
-    while choice_d not in author_set.keys():
-        choice_d = int(input("And the fourth author? "))
-    temp_list.append(choice_d)
+    while True:
+        user_input = input("Select an author number (or enter '.' to finish): ")
+        
+        if user_input == '.':
+            break
+        
+        try:
+            choice = int(user_input)
+            if choice in author_set.keys():
+                temp_list.append(choice)
+            else:
+                print("Invalid author number. Please try again.")
+        except ValueError:
+            print("Invalid input. Please enter a valid author number or '.' to finish.")
+    
+    return list(set(temp_list))
 
-    return temp_list
 
 def create_permutations_of_authors_for_processing(author_list):
     combos = []
@@ -59,28 +61,22 @@ def create_permutations_of_authors_for_processing(author_list):
     author_combos = combinations(author_list, 2)
     for item in author_combos:
         combos.append(item)
-    
+
     return combos
 
 def get_sample_size(number_predictions):
     sample_size = input(f"What size would you like the sample to be? (max is {number_predictions}) ")
     return int(sample_size)
 
-def collect_info_from_db(author_set, author_pair):
-    df = create_author_view(author_pair)
+def collect_info_from_db(author_set, text_set, weights_dict, author_pair):
+    df = create_author_view(author_pair, weights_dict)
     same_author_labels = {"Y": "Yes", "N": "No", "NY": "No (Should Be Yes)", "YN": "Yes (Should Be No)"}
-    text_set = read_all_text_names_by_id_from_db()
 
-    for k, v in author_set.items():
-        df.source_auth.replace(k, v, inplace=True)
-        df.target_auth.replace(k, v, inplace=True)
-    
-    for k, v in text_set.items():
-        df.source_text.replace(k, v, inplace=True)
-        df.target_text.replace(k, v, inplace=True)
-    
-    for k, v in same_author_labels.items():
-        df.same_author.replace(k, v, inplace=True)
+    df['source_auth'].replace(author_set, inplace=True)
+    df['target_auth'].replace(author_set, inplace=True)
+    df['source_text'].replace(text_set, inplace=True)
+    df['target_text'].replace(text_set, inplace=True)
+    df['same_author'].replace(same_author_labels, inplace=True)
 
     return df
 
@@ -95,6 +91,8 @@ def make_plot(df):
 
 def main():
     author_set = create_author_set_for_selection()
+    text_set = read_all_text_names_by_id_from_db()
+    weights_dict = get_all_weights()
     display_author_menu(author_set)
     author_list = get_author_selections_for_plot(author_set)
     author_combos = create_permutations_of_authors_for_processing(author_list)
@@ -110,10 +108,15 @@ def main():
     sample_size = get_sample_size(total_length_of_all_author_combos)
     
     frames = []
+    pbar = tqdm(desc=f'Fetching data...', total=len(ordered_author_combos), colour="#7FFFD4", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for item in ordered_author_combos:
-        frames.append(collect_info_from_db(author_set, item))
-    
+        frames.append(collect_info_from_db(author_set, text_set, weights_dict, item))
+        pbar.update(1)
+    pbar.close()
+
+    print("\nConcatenating data...hang on.\n")
     result = pd.concat(frames)
+
     df = get_sample_from_concat_df(sample_size, result)
     print("\n")
     print(df)
