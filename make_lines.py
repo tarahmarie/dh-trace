@@ -1,6 +1,3 @@
-# Does what it says on the box; creates a graph for the two authors 
-# that have just been analyzed. Stepwise for various thresholds.
-
 import os
 from itertools import combinations
 
@@ -88,7 +85,7 @@ def get_sample_from_concat_df(sample_size, df):
 def make_plot(df): 
     #Reference: https://plotly.com/python/hover-text-and-formatting/
     fig = px.line(df, x="threshold", y="comp_score", color='same_author')
-    fig.show() #display visualization in browser
+    fig.show()
 
 # Looks at all authors for the four outcomes 
 def make_confusion_score_plot(): 
