@@ -275,6 +275,10 @@ def read_author_attribution_from_db(author_a, author_b):
     the_predictions = pd.read_sql_query(f'''SELECT source_auth, target_auth, score, source_text, target_text, same_author FROM author_prediction WHERE source_auth LIKE "{author_a}" AND target_auth LIKE "{author_b}"''', disk_con)
     return the_predictions
 
+def read_confusion_scores():
+    the_scores = pd.read_sql_query('SELECT * FROM confusion_scores;', disk_con)
+    return the_scores
+
 def close_db_connection():
     """Close the SQLite database connection."""
     try:

@@ -1,6 +1,3 @@
-# Does what it says on the box; creates a graph for the two authors 
-# that have just been analyzed. Stepwise for various thresholds.
-
 import os
 from itertools import combinations
 
@@ -86,7 +83,7 @@ def get_sample_from_concat_df(sample_size, df):
 
 def make_plot(df):
     #Reference: https://plotly.com/python/hover-text-and-formatting/
-    fig = px.scatter(df, x="comp_score", y="threshold", log_x=True, color='same_author', hover_name="source_text", hover_data=['source_auth', 'target_auth', 'source_text', 'target_text', 'same_author', 'threshold', 'hap_weight', 'al_weight'])
+    fig = px.histogram(df, x="comp_score", color="same_author").update_xaxes(categoryorder='total descending')
     fig.show() #display visualization in browser
 
 def main():
