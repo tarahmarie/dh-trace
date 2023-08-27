@@ -70,7 +70,7 @@ def get_sample_size(number_predictions):
 
 def collect_info_from_db(author_set, text_set, weights_dict, author_pair):
     df = create_author_view(author_pair, weights_dict)
-    same_author_labels = {"Y": "Yes", "N": "No", "NY": "No (Should Be Yes)", "YN": "Yes (Should Be No)"}
+    same_author_labels = {"Y": "Yes", "N": "No", "NY": "False Negative", "YN": "False Positive"}
 
     df['source_auth'].replace(author_set, inplace=True)
     df['target_auth'].replace(author_set, inplace=True)
