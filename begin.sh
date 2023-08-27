@@ -14,7 +14,6 @@ last_run_file_count=""
 #A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
 #to find texts in the format it needs, and looks for the relevant inputs like alignments.
 
-
 initialize_new_project () {
     tput clear;
     printf "\n\tHello!\n\n\t"
@@ -55,7 +54,7 @@ initialize_new_project () {
     fi
 }
 
-#Presents you a list of existing projects and gets your selection for working with.
+#Presents you a list of existing projects and gets your selection for what to work with.
 choose_project () {
     tput clear;
     printf "\n\nHere are the existing projects you can work on:\n\n"
@@ -87,7 +86,6 @@ choose_project () {
 #to run the work script with no further prompt. Intended to save you from having to 
 #rerun the statistics each time if no changes to the texts have occurred, and 
 #will display the previous stats generated.
-
 
 check_file_counts () {
     project_file_count=$(find ./projects/"$project_name"/splits -type f ! -name '.DS_Store' | wc -l | awk '{print $1}')
