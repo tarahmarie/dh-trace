@@ -64,6 +64,20 @@ def get_author_from_tei_header(line):
         reconstituted_line += sub.replace('\n', '')
     return reconstituted_line
 
+def get_date_from_tei_header(line):
+    line = line.split('<date>')[1]
+    line = line.split('</date>')[0]
+    ###NOTE: This fix would remove the garbarge from the Eltec headers that come from sequence aligns,
+    ###      but this causes other problems. For the love of God, standardize this data!!!
+    if '(' in line:
+         line = line.split('(')[0].strip()
+    ###NOTE: These alignments <persNames> occasionally have \n in them.  Just. Kill. Me.
+    line = line.strip()
+    reconstituted_line = ""
+    for sub in line:
+        reconstituted_line += sub.replace('\n', '')
+    return reconstituted_line
+
 def fix_the_gd_author_name_from_aligns(name):
     ###NOTE: This fix removes the garbarge from the Eltec headers that come from sequence aligns,
     ###      but this causes other problems. For the love of God, standardize this data!!!
