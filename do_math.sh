@@ -23,7 +23,7 @@ exercise_choice () {
         y|Y)
             printf "\nOk, hold on while I load data... this could take a few minutes.\n"
             python auto_author_prediction.py;
-            python make_auto_scatterplot.py
+            printf "\nDone. If you want to see some graphs, use do_viz.sh.\n"
             ;;
         n|N)
             printf "\nOk. If you want to change the project and try again, just edit .current_project. See you!"

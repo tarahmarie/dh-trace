@@ -8,7 +8,7 @@ from database_ops import (insert_alignments_to_db, insert_last_run_stats_to_db,
                           read_all_text_names_by_id_from_db,
                           read_all_text_pair_names_and_ids_from_db,
                           read_author_names_by_id_from_db)
-from util import (fix_the_gd_author_name_from_aligns, get_project_name,
+from util import (fix_the_author_name_from_aligns, get_project_name,
                   getCountOfFiles)
 
 # Goes and gets the pairs from the fresh db after having loaded authors 
@@ -37,10 +37,10 @@ with open(f'./projects/{project_name}/alignments/alignments.jsonl', 'r') as the_
         pbar = tqdm(desc='Loading Alignments', total=length_json_list, colour="magenta", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
         for json_str in raw_json_list:
             result = json.loads(json_str)
-            temp_source_author = fix_the_gd_author_name_from_aligns(result['source_author'])
+            temp_source_author = fix_the_author_name_from_aligns(result['source_author'])
             source_author = author_and_id_dict[temp_source_author]
             source_text_name = text_and_id_dict[result['source_filename'].split('TEXT/')[1]]
-            temp_target_author = fix_the_gd_author_name_from_aligns(result['target_author'])
+            temp_target_author = fix_the_author_name_from_aligns(result['target_author'])
             target_author = author_and_id_dict[temp_target_author]
             target_text_name = text_and_id_dict[result['target_filename'].split('TEXT/')[1]]
             try:

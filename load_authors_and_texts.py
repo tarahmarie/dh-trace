@@ -72,11 +72,13 @@ while i <= file_count:
             text = f.read()
             text = remove_tei_lines_from_text(text)
             temp_text.content = text
-            temp_text.length = get_word_count_for_text(text)            
+            temp_text.length = get_word_count_for_text(text)        
+            
+            #NOTE: Another fine reason to clean source data.    
             #Because the alignments file has funny ideas about filenames where Lovelace is concerned
             #I have to replace the final '-' with an '_' to match the filesystem
             #If I don't, I can't use the all_texts data with the alignments data.
-            #Another fine reason to clean source data.
+            
             stripped_name_of_text = fix_alignment_file_names(name_of_text.split('.')[0].strip())
 
             if text not in seen_texts:

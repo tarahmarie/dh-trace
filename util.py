@@ -64,7 +64,7 @@ def get_author_from_tei_header(line):
         reconstituted_line += sub.replace('\n', '')
     return reconstituted_line
 
-def fix_the_gd_author_name_from_aligns(name):
+def fix_the_author_name_from_aligns(name):
     ###NOTE: This fix removes the garbarge from the Eltec headers that come from sequence aligns,
     ###      but this causes other problems. For the love of God, standardize this data!!!
     if '(' in name:
