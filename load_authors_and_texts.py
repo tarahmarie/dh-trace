@@ -3,6 +3,7 @@
 # them to a fresh db in the paired format for later calculation.
 
 import itertools
+from dataclasses import dataclass, field
 
 from tqdm import tqdm
 
@@ -11,28 +12,42 @@ from database_ops import (insert_authors_to_db, insert_dirs_to_db,
                           read_all_text_names_and_ids_from_db)
 from hapaxes_1tM import remove_tei_lines_from_text
 from util import (fix_alignment_file_names, get_author_from_tei_header,
-                  get_project_name, get_word_count_for_text, getCountOfFiles,
-                  getListOfFiles)
+                  get_date_from_tei_header, get_project_name,
+                  get_word_count_for_text, getCountOfFiles, getListOfFiles)
 
 project_name = get_project_name()
 list_of_files = getListOfFiles(f'./projects/{project_name}/splits')
 file_count = getCountOfFiles(f'./projects/{project_name}/splits')
 number_of_combinations = sum(1 for e in itertools.combinations(list_of_files, 2))
 
+@dataclass
+class Text:
+    id: int = field(default=0)
+    content: str = field(default="")
+    date: int = field(default=0000)
+    length: int = field(default=0000)
+
+print("\n")
+#All the Texts
 dirs = {}
 unique_dir_id = 0
 seen_dirs = []
+
 authors = {}
 seen_authors = []
 unique_author_id = 0
+
 texts = {}
 seen_texts = []
 unique_text_id = 0
 
-print("\n")
-#All the Texts
+dates = {}
+seen_dates = []
+unique_date_id = 0
+
 i = 1
 while i <= file_count:
+    temp_text = Text()
     pbar = tqdm(desc='Loading All Texts', total=file_count, colour="yellow", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for file in list_of_files:
         the_dir = file.split('/')[4]
@@ -42,6 +57,8 @@ while i <= file_count:
         with open(file, 'r') as temp_file:
             content = temp_file.read()
             author = get_author_from_tei_header(content)
+            temp_text.date = get_date_from_tei_header(content)
+
             if author not in seen_authors:
                 unique_author_id += 1
                 authors[author] = unique_author_id
@@ -54,19 +71,21 @@ while i <= file_count:
         with open(file, 'r') as f:
             text = f.read()
             text = remove_tei_lines_from_text(text)
-            length = get_word_count_for_text(text)            
+            temp_text.content = text
+            temp_text.length = get_word_count_for_text(text)            
             #Because the alignments file has funny ideas about filenames where Lovelace is concerned
             #I have to replace the final '-' with an '_' to match the filesystem
             #If I don't, I can't use the all_texts data with the alignments data.
             #Another fine reason to clean source data.
             stripped_name_of_text = fix_alignment_file_names(name_of_text.split('.')[0].strip())
-            
+
             if text not in seen_texts:
                 unique_text_id += 1
                 texts[text] = unique_text_id
+                temp_text.id = unique_text_id
                 seen_texts.append(text)
 
-            insert_texts_to_db(authors[author], texts[text], stripped_name_of_text, text, length, dirs[the_dir]) 
+            insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.length, dirs[the_dir], temp_text.date) 
         i+=1
         pbar.update(1)
     pbar.close()
