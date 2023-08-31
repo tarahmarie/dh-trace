@@ -29,26 +29,44 @@ disk_cur.execute("PRAGMA journal_mode = MEMORY;")
 #Create the Database and Tables
 def create_db_and_tables():
     disk_cur.execute("CREATE TABLE IF NOT EXISTS alignments(`source_filename` INT, `target_filename` INT, `source_passage`, `target_passage`, `source_author` INT, `target_author` INT, `length_source_passage` INT DEFAULT 0, `length_target_passage` INT DEFAULT 0, `pair_id` INT DEFAULT 0 UNIQUE)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT PRIMARY KEY, `author_name` TEXT)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS dirs(`id` INT, `dir` TEXT)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS text_pairs(`id` INT, `text_a` INT, `text_b` INT)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS hapaxes(`source_filename` INT, `hapaxes`, `hapaxes_count` INT DEFAULT 0)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS hapax_overlaps(`file_pair` INT, `hapaxes`, `intersect_length` INT DEFAULT 0)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS ngrams(`source_filename` INT, `ngrams`, `ngrams_count` INT DEFAULT 0)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS ngram_overlaps(`file_pair` INT, `ngrams`, `intersect_length` INT DEFAULT 0)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS last_run(`number_alignments` INT, `number_files` INT, `total_comparisons` INT, `total_alignments_over_comps` INT, `total_rel_hapaxes` INT, `total_words` INT, `total_rel_ngrams` INT, `total_aligns_over_comps` REAL, `total_rel_hapaxes_over_comps` REAL, `total_rel_hapaxes_over_words` REAL, `total_rel_ngrams_over_comps` REAL)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS results(`first_book`, `second_book`, `ngram_overlaps_count`, `hapax_overlap_count`, `num_alignments`)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_all(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `haps/pair_len` REAL, `haps/corp_len` REAL, `NgramOverlaps` INT DEFAULT 0, `ngs/pair_len` REAL, `ngs/corp_len` REAL, `#aligns` INT DEFAULT 0, `#als/pair_len` REAL, `#als/corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_alignments(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `#aligns` INT DEFAULT 0, `#aligns_over_pair_len` REAL, `#aligns_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_hapaxes(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_ngrams(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `NgramOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
-    disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_filepairs ON ngram_overlaps(file_pair)")
-    disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_all ON ngrams(source_filename)")
-    disk_cur.execute("CREATE INDEX IF NOT EXISTS hap_filepairs ON hapax_overlaps(file_pair)")
-    disk_cur.execute("CREATE INDEX IF NOT EXISTS hap_sourcefiles ON hapaxes(source_filename)")
-    disk_cur.execute("CREATE INDEX IF NOT EXISTS all_text_source ON all_texts(author_id, source_filename)")
 
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT PRIMARY KEY, `author_name` TEXT)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS dirs(`id` INT, `dir` TEXT)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS text_pairs(`id` INT, `text_a` INT, `text_b` INT)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS hapaxes(`source_filename` INT, `hapaxes`, `hapaxes_count` INT DEFAULT 0)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS hapax_overlaps(`file_pair` INT, `hapaxes`, `intersect_length` INT DEFAULT 0)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS ngrams(`source_filename` INT, `ngrams`, `ngrams_count` INT DEFAULT 0)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS ngram_overlaps(`file_pair` INT, `ngrams`, `intersect_length` INT DEFAULT 0)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS last_run(`number_alignments` INT, `number_files` INT, `total_comparisons` INT, `total_alignments_over_comps` INT, `total_rel_hapaxes` INT, `total_words` INT, `total_rel_ngrams` INT, `total_aligns_over_comps` REAL, `total_rel_hapaxes_over_comps` REAL, `total_rel_hapaxes_over_words` REAL, `total_rel_ngrams_over_comps` REAL)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS results(`first_book`, `second_book`, `ngram_overlaps_count`, `hapax_overlap_count`, `num_alignments`)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_all(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `haps/pair_len` REAL, `haps/corp_len` REAL, `NgramOverlaps` INT DEFAULT 0, `ngs/pair_len` REAL, `ngs/corp_len` REAL, `#aligns` INT DEFAULT 0, `#als/pair_len` REAL, `#als/corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_alignments(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `#aligns` INT DEFAULT 0, `#aligns_over_pair_len` REAL, `#aligns_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_hapaxes(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_ngrams(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `NgramOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+
+    disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_filepairs ON ngram_overlaps(file_pair)")
+
+    disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_all ON ngrams(source_filename)")
+    
+    disk_cur.execute("CREATE INDEX IF NOT EXISTS hap_filepairs ON hapax_overlaps(file_pair)")
+
+    disk_cur.execute("CREATE INDEX IF NOT EXISTS hap_sourcefiles ON hapaxes(source_filename)")
+    
+    disk_cur.execute("CREATE INDEX IF NOT EXISTS all_text_source ON all_texts(author_id, source_filename)")
 
 #Empty the Database (for updating all the things)
 def reset_the_db():

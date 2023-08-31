@@ -144,7 +144,6 @@ do_the_work () {
     python load_ngram_intersects.py;
     python load_relationships.py;
     python load_jaccard.py;
-    #printf "\n\nTo do author prediction, run \`python author_prediction.py\`\n"
     printf "To do batch author prediction (spoiler: slower), run \`do_math.sh\`\n\n"
 }
 

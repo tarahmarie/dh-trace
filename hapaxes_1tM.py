@@ -1,5 +1,4 @@
 # imports
-import re
 import string
 from collections import Counter
 
