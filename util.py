@@ -54,10 +54,10 @@ def get_author_from_tei_header(line):
     line = line.split('<author>')[1]
     line = line.split('</author>')[0]
     ###NOTE: This fix would remove the garbarge from the Eltec headers that come from sequence aligns,
-    ###      but this causes other problems. For the love of God, standardize this data!!!
+    ###      but this causes other problems. This data needs cleaning!
     if '(' in line:
          line = line.split('(')[0].strip()
-    ###NOTE: These alignments <persNames> occasionally have \n in them.  Just. Kill. Me.
+    ###NOTE: These alignments <persNames> occasionally have \n in them.  ¯\_(ツ)_/¯
     line = line.strip()
     reconstituted_line = ""
     for sub in line:
@@ -66,10 +66,10 @@ def get_author_from_tei_header(line):
 
 def fix_the_author_name_from_aligns(name):
     ###NOTE: This fix removes the garbarge from the Eltec headers that come from sequence aligns,
-    ###      but this causes other problems. For the love of God, standardize this data!!!
+    ###      but this causes other problems. This data needs cleaning!
     if '(' in name:
          name = name.split('(')[0].strip()
-    ###NOTE: These alignments <persNames> occasionally have \n in them.  Just. Kill. Me.
+    ###NOTE: These alignments <persNames> occasionally have \n in them.  ¯\_(ツ)_/¯
     name = name.strip()
     reconstituted_line = ""
     for sub in name:
