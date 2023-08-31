@@ -30,7 +30,7 @@ disk_cur.execute("PRAGMA journal_mode = MEMORY;")
 def create_db_and_tables():
     disk_cur.execute("CREATE TABLE IF NOT EXISTS alignments(`source_filename` INT, `target_filename` INT, `source_passage`, `target_passage`, `source_author` INT, `target_author` INT, `length_source_passage` INT DEFAULT 0, `length_target_passage` INT DEFAULT 0, `pair_id` INT DEFAULT 0 UNIQUE)")
     disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT PRIMARY KEY, `author_name` TEXT)")
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `length` INT DEFAULT 0, `dir` INT)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
     disk_cur.execute("CREATE TABLE IF NOT EXISTS dirs(`id` INT, `dir` TEXT)")
     disk_cur.execute("CREATE TABLE IF NOT EXISTS text_pairs(`id` INT, `text_a` INT, `text_b` INT)")
     disk_cur.execute("CREATE TABLE IF NOT EXISTS hapaxes(`source_filename` INT, `hapaxes`, `hapaxes_count` INT DEFAULT 0)")
@@ -118,8 +118,8 @@ def insert_dirs_to_db(id, path):
     disk_cur.execute("INSERT OR IGNORE INTO dirs VALUES (?, ?)", (id, path))
     disk_con.commit()
 
-def insert_texts_to_db(author_id, text_id, source_file, text, length, dir):
-    disk_cur.execute("INSERT OR IGNORE INTO all_texts VALUES (?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, length, dir))
+def insert_texts_to_db(author_id, text_id, source_file, text, length, dir, year):
+    disk_cur.execute("INSERT OR IGNORE INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, length, dir, year))
     disk_con.commit()
 
 def insert_text_pairs_to_db(transactions):
@@ -232,6 +232,14 @@ def read_all_text_names_by_id_from_db():
     the_texts = disk_cur.fetchall()
     for text in the_texts:
         temp_dict[text['text_id']] = text['source_filename']
+    return temp_dict
+
+def read_all_text_lengths_by_id_from_db():
+    temp_dict = {}
+    disk_cur.execute("SELECT text_id, length FROM all_texts;")
+    the_lengths = disk_cur.fetchall()
+    for length in the_lengths:
+        temp_dict[length['text_id']] = length['length']
     return temp_dict
 
 def read_all_text_pair_names_and_ids_from_db():

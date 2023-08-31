@@ -5,15 +5,12 @@ from collections import Counter
 
 from nltk.tokenize import word_tokenize
 
-#Compile regexes for re-use.
-sub_one = re.compile(r'(<\?).*(">)')
-sub_two = re.compile(r'(</div>).*$')
 
 def remove_tei_lines_from_text(text):
-    content_new = re.sub(sub_one, '', text)
-    content_new = re.sub(sub_two, '', content_new)     
+    text = text.split('">')[-1]
+    text = text.split('</')[0]
 
-    return(content_new)
+    return(text)
 
 def compute_hapaxes(rawtext):
     words = word_tokenize(rawtext)

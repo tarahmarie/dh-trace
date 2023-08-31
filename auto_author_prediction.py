@@ -16,6 +16,7 @@ from predict_ops import (assess_auto_author_accuracy, close_db_connection,
                          setup_auto_author_prediction_tables,
                          setup_auto_indices, vacuum_the_db)
 from util import create_author_pair_for_lookups
+from viz_ops import setup_text_stats_table, setup_viz_ops_db
 
 '''
 Spoiler: With ngrams and aligns evenly weighted, no permutation of the tarah db yields a "Y" for same author at threshold 0.9
@@ -56,15 +57,15 @@ def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac
 
     #Computer says no.
     if comp_score < threshold and source_auth == target_auth: #Computer should have said yes.
-        outcome = "NY"
+        outcome = "False Negative"
     if comp_score < threshold and source_auth != target_auth:
-        outcome = "N" #Ok, no.
+        outcome = "No" #Ok, no.
     
     #Computer says yes.
     if comp_score >= threshold and source_auth != target_auth: #Computer should not have said yes.
-        outcome = "YN"
+        outcome = "False Positive"
     if comp_score >= threshold and source_auth == target_auth:
-        outcome = "Y" #Ok, yes.
+        outcome = "Yes" #Ok, yes.
 
     return comp_score, outcome
 
@@ -128,16 +129,16 @@ def do_math(threshold, pretty_threshold):
                 comp_score, outcome = calculate_scores(source_auth, target_auth, hap_jac_dis, hap_weight, al_jac_dis, al_weight, threshold)
                 
                 match outcome:
-                    case "Y":
+                    case "Yes":
                         y_count += 1
                         outcome_counts["y"] += 1
-                    case "N":
+                    case "No":
                         n_count += 1
                         outcome_counts["n"] += 1
-                    case "NY":
+                    case "False Negative":
                         i_count += 1
                         outcome_counts["fn"] += 1
-                    case "YN":
+                    case "False Positive":
                         m_count += 1
                         outcome_counts["fp"] += 1
 
@@ -196,7 +197,6 @@ def main():
     setup_auto_author_prediction_tables()
     setup_auto_author_accuracy_table()
     setup_auto_indices()
-    vacuum_the_db()
     
     print(f"\nStepping through values, moving the threshold {pretty_step}% at a time from {pretty_threshold}% to {pretty_floor}%...\n(N.B. The program will pause before computing accuracy... it's ok, and won't last forever!)\n")
 
@@ -219,6 +219,10 @@ def main():
 
     insert_author_pair_counts(temp_author_pair_counts_transactions)
     insert_weights(temp_weights_transactions)
+
+    print("\nI'm going to make a large table, now, for use in later visualization... sit tight.")
+    setup_text_stats_table()
+    setup_viz_ops_db()
     optimize()
     close_db_connection()
     print("\nPhew. Ok, to plot these values, run 'python make_auto_scatterplot.py")

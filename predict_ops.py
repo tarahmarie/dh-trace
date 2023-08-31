@@ -83,6 +83,7 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP INDEX IF EXISTS calculations_author_pair_index;")
     disk_cur.execute("DROP INDEX IF EXISTS calculations_pair_id_index;")
     disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS text_id_index;")
     disk_con.commit()
 
     #Now, we make our stuff.
@@ -133,6 +134,7 @@ def setup_auto_indices():
     disk_cur.execute("CREATE INDEX calculations_author_pair_index ON calculations(author_pair);")
     disk_cur.execute("CREATE INDEX calculations_pair_id_index ON calculations(pair_id);")
     disk_cur.execute("CREATE INDEX combined_jaccard_pair_id_index ON combined_jaccard(pair_id);")
+    disk_cur.execute("CREATE INDEX text_id_index ON all_texts(text_id);")
     disk_con.commit()
 
 def setup_auto_author_accuracy_table():
@@ -278,6 +280,14 @@ def read_author_attribution_from_db(author_a, author_b):
 def read_confusion_scores():
     the_scores = pd.read_sql_query('SELECT * FROM confusion_scores;', disk_con)
     return the_scores
+
+def read_all_thresholds():
+    disk_cur.execute("SELECT DISTINCT(threshold) FROM auto_author_accuracy;")
+    the_thresholds = disk_cur.fetchall()
+    temp_list = []
+    for item in the_thresholds:
+        temp_list.append(item[0])
+    return temp_list
 
 def close_db_connection():
     """Close the SQLite database connection."""
