@@ -1,322 +1,366 @@
 <?xml-model href="https://raw.githubusercontent.com/TEIC/TEI-Simple/master/teisimple.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><titleStmt><title>Wuthering Heights (1st edition) : wikisource
-                        edition</title><author>Brontë, Emily (1818-1848)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1847</date></publicationStmt></teiHeader><text><body><div type="chapter" n="18">
+                        edition</title><author>Brontë, Emily (1818-1848)</author></titleStmt><publicationStmt><publisher>COST Action "Distant Reading for European Literary History" (CA16204)</publisher><date>1847</date></publicationStmt></teiHeader><text><body><div type="chapter" n="33">
 
-CHAPTER IV.
-"The twelve years," continued Mrs. Dean, "following that dismal period, were
-                        the happiest of my life: my greatest troubles, in their passage, rose from
-                        our little lady's trifling illnesses which she had to experience in common
-                        with all children, rich and poor.'
-For the rest, after the first six months, she grew like a larch; and could
-                        walk and talk too, in her own way, before the heath blossomed a second time
-                        over Mrs. Linton's dust.
-She was the most winning thing that ever brought sunshine into a
-                        desolate house—a real beauty in face—with the Earnshaws' handsome dark eyes,
-                        but the Lintons' fair skin, and small features, and yellow curling hair. Her
-                        spirit was high, though not rough, and qualified by a heart, sensitive and
-                        lively to excess in its affections. That capacity for intense attachments
-                        reminded me of her mother; still she did not resemble her; for she could be
-                        soft and mild as a dove, and she had a gentle voice, and pensive expression:
-                        her anger was never furious; her love never fierce; it was deep and
-                        tender.
-However, it must be acknowledged, she had faults to foil her gifts. A
-                        propensity to be saucy was one; and a perverse will that indulged children
-                        invariably acquire, whether they be good tempered or cross. If a servant
-                        chanced to vex her, it was always: "I shall tell papa!" And if he reproved
-                        her, even by a look, you would have thought it a heartbreaking
-                        business: I don't believe he ever did speak a harsh word to her.
-He took her education entirely on himself, and made it an amusement:
-                        fortunately, curiosity, aud a quick intellect urged her into an apt scholar;
-                        she learnt rapidly and eagerly, and did honour to his teaching.
-Till she reached the age of thirteen, she had not once been beyond the range
-                        of the park by herself. Mr. Linton would take her with him, a mile or so
-                        outside, on rare occasions; but he trusted her to no one else. Gimmerton was
-                        an unsubstantial name in her ears; the chapel, the only building she had
-                        approached, or entered, except her own home; Wuthering Heights and Mr.
-                        Heathcliff did not exist for her; she was a perfect recluse; and,
-                        apparently, perfectly contented. Sometimes, indeed, while surveying the
-                        country from her nursery window, she would observe—
-"Ellen, how long will it be before I can walk to the top of those
-                        hills? I wonder what lies on the other side—is it the sea?"
-"No, Miss Cathy," I would answer, "it is hills again just like these."
-"And what are those golden rocks like, when you stand under them?" she once
-                        asked.
-The abrupt descent of Penistone Craggs particularly attracted her notice,
-                        especially when the setting sun shone on it, and the top-most Heights; and
-                        the whole extent of landscape besides lay in shadow.
-I explained that they were bare masses of stone, with hardly enough earth in
-                        their clefts to nourish a stunted tree.
-"And why are they bright so long after it is evening here?" she pursued.
-"Because they are a great deal higher up than we are," replied I; "you could
-                        not climb them, they are too high and steep. In winter the frost is always
-                        there before it comes to us; and, deep into summer, I have found snow under
-                        that black hollow on the north-east side!"
-"Oh, you have been on them!" she cried, gleefully. "Then I can
-                        go, too, when I am a woman. Has papa been, Ellen?"
-"Papa would tell you, Miss," I answered, hastily, "that they are not worth
-                        the trouble of visiting. The moors, where you ramble with him, are much
-                        nicer; and Thrushcross park is the finest place in the world."
-"But I know the park, and I don't know those," she murmured to herself. "And
-                        I should delight to look round me, from the brow of that tallest point—my
-                        little pony, Minny, shall take me sometime."
-One of the maids mentioning the Fairy cave, quite turned her head with a
-                        desire to fulfil this project; she teased Mr. Linton about it; and he
-                        promised she should have the journey when she got older: but Miss Catherine
-                        measured her age by months, and—
-"Now, am I old enough to go to Penistone Craggs?" was the constant question
-                        in her mouth.
-The road thither wound close by Wuthering Heights. Edgar had not
-                        the heart to pass it; so she received as constantly the answer.
-"Not yet, love, not yet."
-I said Mrs. Heathcliff lived above a dozen years after quitting her husband.
-                        Her family were of a delicate constitution: she and Edgar both lacked the
-                        ruddy health that you will generally meet in these parts. What her last
-                        illness was, I am not certain; I conjecture, they died of the same thing, a
-                        kind of fever, slow at its commencement, but incurable, and rapidly
-                        consuming life towards the close.
-She wrote to inform her brother of the probable conclusion of a four months'
-                        indisposition, under which she had suffered; and entreated him to come to
-                        her, if possible, for she had much to settle, and she wished to bid him
-                        adieu, and deliver Linton safely into his hands. Her hope was, that Linton
-                        might be left with him, as he had been with her; his father, she would fain
-                        convince herself, had no desire to assume the burden of his
-                        maintenance or education.
-My master hesitated not a moment in complying with her request; reluctant as
-                        he was to leave home at ordinary calls, he flew to answer this; commending
-                        Catherine to my peculiar vigilance, in his absence; with reiterated orders
-                        that she must not wander out of the park, even under my escort; he did not
-                        calculate on her going unaccompanied.
-He was away three weeks: the first day or two, my charge sat in a corner of
-                        the library, too sad for either reading or playing: in that quiet state she
-                        caused me little trouble; but it was succeeded by an interval of impatient,
-                        fretful weariness; and being too busy, and too old then, to run up and down
-                        amusing her, I hit on a method by which she might entertain herself.
-I used to send her on her travels round the grounds—now on foot, and now on a
-                        pony; indulging her with a patient audience of all her real and
-                        imaginary adventures, when she returned.
-The summer shone in full prime; and she took such a taste for this solitary
-                        rambling that she often contrived to remain out from breakfast till tea; and
-                        then the evenings were spent in recounting her fanciful tales. I did not
-                        fear her breaking bounds, because the gates were generally locked, and I
-                        thought she would scarcely venture forth alone, if they had stood wide
-                        open.
-Unluckily, my confidence proved misplaced. Catherine came to me, one morning,
-                        at eight o'clock, and said she was that day an Arabian merchant, going to
-                        cross the Desert with his caravan; and I must give her plenty of provision
-                        for herself, and beasts, a horse, and three camels, personated by a large
-                        hound, and a couple of pointers.
-I got together good store of dainties, and slung them in a basket on one side
-                        of the saddle; and she sprang up as gay as a fairy, sheltered by
-                        her wide-brimmed hat and gauze veil from the July sun, and trotted off with
-                        a merry laugh, mocking my cautious counsel to avoid gallopping, and come
-                        back early.
-The naughty thing never made her appearance at tea. One traveller, the hound,
-                        being an old dog, and fond of its ease, returned; but neither Cathy, nor the
-                        pony, nor the two pointers were visible in any direction; and I despatched
-                        emissaries down this path, and that path, and, at last, went wandering in
-                        search of her myself.
-There was a labourer working at a fence round a plantation, on the borders of
-                        the grounds. I enquired of him if he had seen our young lady?
-"I saw her at morn," he replied, "she would have me to cut her a hazel
-                        switch; and then she leapt her galloway over the hedge yonder, where it is
-                        lowest, and gallopped out of sight."
-You may guess how I felt at hearing this news. It struck me
-                        directly she must have started for Penistone Craggs.
-"What will become of her?" I ejaculated, pushing through a gap which the man
-                        was repairing, and making straight to the high road.
-I walked as if for a wager, mile after mile, till a turn brought me in view
-                        of the Heights, but no Catherine could I detect, far or near.
-The Craggs lie about a mile and a half beyond Mr. Heathcliff's place, and
-                        that is four from the Grange, so I began to fear night would fall ere I
-                        could reach them.
-"And what if she should have slipped in clambering among them," I reflected,
-                        "and been killed, or broken some of her bones?"
-My suspense was truly painful; and, at first, it gave me delightful relief to
-                        observe, in hurrying by the farm-house, Charlie, the fiercest of the
-                        pointers, lying under a window, with swelled head, and bleeding ear.
-I open the wicket, and ran to the door, knocking vehemently for admittance. A
-                            woman whom I knew, and who formerly lived at Gimmerton,
-                        answered—she had been servant there since the death of Mr Earnshaw.
-"Ah," said she, "you are come a seeking your little mistress! don't be
-                        frightened. She's here safe—but I'm glad it isn't the master."
-"He is not at home then, is he?" I panted, quite breathless with quick
-                        walking and alarm.
-"No, no," she replied, "both he and Joseph are off, and I think they wont
-                        return this hour or more. Step in and rest you a bit."
-I entered, and beheld my stray lamb, seated on the hearth, rocking herself in
-                        a little chair that had been her mother's, when a child. Her hat was hung
-                        against the wall, and she seemed perfectly at home, laughing and chattering,
-                        in the best spirits imaginable, to Hareton, now a great, strong lad of
-                        eighteen, who stared at her with considerable curiosity and astonishment;
-                        comprehending precious little of the fluent succession of remarks and
-                        questions which her tongue never ceased pouring forth.
-"Very well, Miss," I exclaimed, concealing my joy under an angry
-                        countenance. "This is your last ride, till papa comes back. I'll not trust
-                        you over the threshold again, you naughty, naughty girl."
-"Aha, Ellen!" she cried, gaily, jumping up, and running to my side. "I shall
-                        have a pretty story to tell to-night—and so you've found me out. Have you
-                        ever been here in your life before?"
-"Put that hat on, and home at once," said I. "I'm dreadfully grieved at you,
-                        Miss Cathy, you've done extremely wrong! It's no use pouting and crying;
-                        that wont repay the trouble I've had, scouring the country after you. To
-                        think how Mr. Linton charged me to keep you in; and you stealing off so; it
-                        shows you are a cunning little fox, and nobody will put faith in you any
-                        more."
-"What have I done?" sobbed she, instantly checked, "Papa charged me
-                        nothing—he'll not scold me, Ellen—he's never cross, like
-                        you!"
-"Come, come!" I repeated. "I'll tie the riband. Now, let us have no
-                        petulance. Oh, for shame. You thirteen years old, and such a baby!"
-This exclamation was caused by her pushing the hat from her head, and
-                        retreating to the chinmey out of my reach.
-"Nay," said the servant, "don't be hard on the bonny lass, Mrs. Dean. We made
-                        her stop—she'd fain have ridden forwards, afeard you should be uneasy. But
-                        Hareton offered to go with her, and I thought he should. It's a wild road
-                        over the hills."
-Hareton, during the discussion, stood with his hands in his pockets, too
-                        awkward to speak, though he looked as if he did not relish my intrusion.
-"How long am I to wait?" I continued, disregarding the woman's interference.
-                        "It will be dark in ten minutes. Where is the pony, Miss Cathy?
-                        And where is Phenix? I shall leave you, unless you be quick, so please
-                        yourself."
-"The pony is in the yard," she replied, "and Phenix is shut in there. He's
-                        bitten—and so is Charlie. I was going to tell you all about it; but you are
-                        in a bad temper, and don't deserve to hear."
-I picked up her hat, and approached to reinstate it; but perceiving that the
-                        people of the house took her part, she commenced capering round the room;
-                        and, on my giving chase, ran like a mouse, over and under, and behind the
-                        furniture, rendering it ridiculous for me to pursue.
-Hareton and the woman laughed; and she joined them, and waxed more
-                        impertinent still; till I cried, in great irritation.
-"Well, Miss Cathy, if you were aware whose house this is, you'd be glad
-                        enough to get out."
-"It's your father's, isn't it?" said she, turning to
-                        Hareton.
-"Nay," he replied, looking down, and blushing bashfully.
-He could not stand a steady gaze from her eyes, though they were just his
-                        own.
-"Whose then—your master's?" she asked.
-He coloured deeper, with a different feeling, muttered an oath, and turned
-                        away.
-"Who is his master?" continued the tiresome girl, appealing to me. "He talked
-                        about 'our house,' and 'our folk.' I thought he had been the owner's son.
-                        And he never said, Miss; he should have done, shouldn't he, if he's a
-                        servant?"
-Hareton grew black as a thunder-cloud, at this childish speech. I silently
-                        shook my questioner, and, at last, succeeded in equipping her for
-                        departure.
-"Now, get my horse," she said, addressing her unknown kinsman as she would
-                        one of the stable-boys at the Grange. "And you may come with me.
-                        I want to see where the goblin hunter rises in the marsh, and to hear about
-                        the fairishes, as you call them—but, make haste! What's the matter?
-                        Get my horse, I say."
-"I'll see thee damned, before I be thy servant!" growled the
-                        lad.
-"You'll see me me what?" asked Catherine in surprise.
-"Damned—thou saucy witch!" he replied.
-"There, Miss Cathy! you see you have got into pretty company," I interposed.
-                        "Nice words to be used to a young lady! Pray don't begin to dispute with
-                        him—Come, let us seek for Minny ourselves, and begone."
-"But Ellen," cried she, staring, fixed in astonishment. "How dare he speak so
-                        to me? Mustn't he be made to do as I ask him? You wicked creature, I shall
-                        tell papa what you said—Now then!"
-Hareton did not appear to feel this threat; so the tears sprung into her eyes
-                        with indignation. "You bring the pony," she exclaimed, turning
-                        to the woman, "and let my dog free this moment!"
-"Softly, Miss," answered the addressed. "You'll lose nothing, by being civil.
-                        Though Mr. Hareton, there, be not the master's son, he's your cousin; and I
-                        was never hired to serve you."
-"He my cousin!" cried Cathy with a scornful laugh.
-"Yes, indeed," responded her reprover.
-"Oh, Ellen! don't let them say such things," she pursued in great trouble.
-                        Papa is gone to fetch my cousin from London—my cousin is a gentleman's
-                        son—That my—" she stopped, and wept outright; upset at the bare notion of
-                        relationship with such a clown.
-"Hush, hush!" I whispered, "people can have many cousins and of all sorts,
-                        Miss Cathy, without being any the worse for it; only they needn't keep their
-                        company, if they be disagreeable, and bad."
-"He's not, he's not my cousin, Ellen!" she went on, gathering
-                        fresh grief from reflection, and flinging herself into my arms for refuge
-                        from the idea.
-I was much vexed at her and the servant for their mutual revelations; having
-                        no doubt of Linton's approaching arrival, communicated by the former, being
-                        reported to Mr. Heathcliff; and feeling as confident that Catherine's first
-                        thought on her father's return, would be to seek an explanation of the
-                        latter's assertion, concerning her rude-bred kindred.
-Hareton, recovering from his disgust at being taken for a servant, seemed
-                        moved by her distress; and, having fetched the pony round to the door, he
-                        took, to propitiate her, a fine crooked-legged terrier whelp from the
-                        kennel; and putting it into her hand, bid her wisht for he meant naught.
-Pausing in her lamentations, she surveyed him with a glance of awe, and
-                        horror, then burst forth anew.
-I could scarcely refrain from smiling at this antipathy to the
-                        poor fellow; who was a well-made, athletic youth, good looking in features,
-                        and stout and healthy, but attired in garments befitting his daily
-                        occupations of working on the farm, and lounging among the moors after
-                        rabbits and game. Still, I thought I could detect in his physiognomy a mind
-                        owning better qualities than his father ever possessed. Good things lost
-                        amid a wilderness of weeds, to be sure, whose rankness far over-topped their
-                        neglected growth; yet notwithstanding, evidence of a wealthy soil that might
-                        yield luxuriant crops, under other and favourable circumstances. Mr.
-                        Heathcliff, I believe, had not treated him physically ill; thanks to his
-                        fearless nature which offered no temptation to that course of oppression; it
-                        had none of the timid susceptibility that would have given zest to
-                        ill-treatment, in Heathcliff's judgment. He appeared to have bent his
-                        malevolence on making him a brute: he was never taught to read
-                        or write; never rebuked for any bad habit which did not annoy his keeper;
-                        never led a single step towards virtue, or guarded by a single precept
-                        against vice. And from what I heard, Joseph contributed much to his
-                        deterioration by a narrow minded partiality which prompted him to flatter,
-                        and pet him, as a boy, because he was the head of the old family. And as he
-                        had been in the habit of accusing Catherine Earnshaw, and Heathcliff, when
-                        children, of putting the master past his patience, and compelling him to
-                        seek solace in drink, by what he termed, their "offalld ways," so at
-                        present, he laid the whole burden of Hareton's faults on the shoulders of
-                        the usurper of his property.
-If the lad swore he wouldn't correct him; nor however culpably he behaved. It
-                        gave Joseph satisfaction, apparently, to watch him go the worst lengths. He
-                        allowed that he was ruined; that his soul was abandoned to perdition; but then, he reflected that Heathcliff must answer for it.
-                        Hareton's blood would be required at his hands; and there lay immense
-                        consolation in that thought.
-Joseph had instilled into him a pride of name, and of his lineage; he would
-                        had he dared, have fostered hate between him and the present owner of the
-                        Heights, but his dread of that owner amounted to superstition; and he
-                        confined his feelings, regarding him, to muttered inuendo's and private
-                        comminations.
-I don't pretend to be intimately acquainted with the mode of living customary
-                        in those days, at Wuthering Heights. I only speak from hearsay; for I saw
-                        little. The villagers affirmed Mr. Heathcliff was near, and a cruel
-                        hard landlord to his tenants; but the house, inside had regained its ancient
-                        aspect of comfort under female management; and the scenes of riot common in
-                        Hindley's time, were not now enacted within its walls. The
-                        master was too gloomy to seek companionship with any people, good or bad,
-                        and he is yet—
-This, however, is not making progress with my story. Miss Cathy rejected the
-                        peace-offering of the terrier, and demanded her own dogs, Charlie and
-                        Phenix. They came limping, and hanging their heads; and we set out for home,
-                        sadly out of sorts, every one of us.
-I could not wring from my little lady how she had spent the day; except that,
-                        as I supposed, the goal of her pilgrimage was Penistone Crags; and she
-                        arrived without adventure to the gate of the farmhouse, when Hareton
-                        happened to issue forth, attended by some canine followers who attacked her
-                        train.
-They had a smart battle, before their owners could separate them: that formed
-                        an introduction. Catherine told Hareton who she was, and where she was
-                        going; and asked him to show her the way; finally, beguilnig him to
-                        accompany her.
-He opened the mysteries of the Fairy cave, and twenty other queer
-                        places; but being in disgrace, I was not favoured with a description of the
-                        interesting objects she saw.
-I could gather however, that her guide had been a favourite till she hurt his
-                        feelings by addressing him as a servant, and Heathcliff's housekeeper hurt
-                        hers, by calling him her cousin.
-Then the language he had held to her rankled in her heart; she who was always
-                        "love," and "darling," and "queen," and "angel," with everybody at the
-                        Grange; to be insulted so shockingly by a stranger! She did not comprehend
-                        it; and hard work I had, to obtain a promise that she would not lay the
-                        grievance before her father.
-I explained how he objected to the whole household at the Heights, and how
-                        sorry he would be to find she had been there; but, I insisted most on the
-                        fact, that if she revealed my negligence of his orders, he would perhaps, be so angry that I should have to leave; and Cathy couldn't bear
-                        that prospect: she pledged her word, and kept it, for my sake—after all, she
-                        was a sweet little girl.
+CHAPTER XVIII.
+1802.—This September, I was invited to devastate the moors of a friend, in
+                        the North; and, on my journey to his abode, I unexpectedly came within
+                        fifteen miles of Gimmerton. The hostler, at a roadside public-house, was
+                        holding a pail of water to refresh my horses, when a cart of very green
+                        oats, newly reaped, passed by, and he remarked—
+"Yon's frough Gimmerton, nah! They're alias three wick' after other folk wi'
+                        ther harvest."
+"Gimmerton?" I repeated, my residence in that locality had
+                        already grown dim and dreamy. "Ah! I know! How far is it from this?"
+"Happen fourteen mile' o'er th' hills, and a rough road," he answered.
+A sudden impulse seized me to visit Thrushcross Grange. It was scarcely noon,
+                        and I conceived that I might as well pass the night under my own roof, as in
+                        an inn. Besides, I could spare a day easily, to arrange matters with my
+                        landlord, and thus save myself the trouble of invading the neighbourhood
+                        again.
+Having rested a while, I directed my servant to inquire the way to the
+                        village; and, with great fatigue to our beasts, we managed the distance in
+                        some three hours.
+I left him there, and proceeded down the valley alone. The grey church looked
+                        greyer, and the lonely churchyard lonelier. I distinguished a moor sheep
+                        cropping the short turf on the graves. It was sweet, warm weather —too warm for travelling; but the heat did not hinder me from
+                        enjoying the delightful scenery above and below; had I seen it nearer
+                        August, I'm sure it would have tempted me to waste a month among its
+                        solitudes. In winter, nothing more dreary, in summer, nothing more divine,
+                        than those glens shut in by hills, and those bluff, bold swells of
+                        heath.
+I reached the Grange before sunset, and knocked for admittance; but the
+                        family had retreated into the back premises, I judged by one thin, blue
+                        wreath curling from the kitchen chimney, and they did not hear.
+I rode into the court. Under the porch, a girl of nine or ten, sat knitting,
+                        and an old woman reclined on the horse-steps, smoking a meditative pipe.
+"Is Mrs. Dean within?" I demanded of the dame.
+"Mistress Dean? Nay!" she answered, "shoo doesn't bide here; shoe's up at th'
+                        Heights."
+"Are you the housekeeper, then?" I continued.
+"Eea, Aw keep th' hause," she replied.
+"Well, I'm Mr. Lockwood, the master—Are there any rooms to lodge me in, I
+                        wonder? I wish to stay here all night"
+"T' maister!" she cried in astonishment, "Whet, whoiver knew yah wur coming?
+                        Yah sud ha' send word! They's nowt norther dry—nor mensful abaht t'
+                        place—nowt there is n't!'
+She threw down her pipe and bustled in, the girl followed, and I entered too;
+                        soon perceiving that her report was true, and, moreover, that I had almost
+                        upset her wits by my unwelcome apparition.
+I bid her be composed—I would go out for a walk; and, meantime, she must try
+                        to prepare a corner of a sitting-room for me to sup in, and a bed-room to
+                        sleep in—No sweeping and dusting, only good fires and dry sheets were
+                        necessary.
+She seemed willing to do her best; though she thrust the
+                        hearth-brush into the grates in mistake for the poker; and mal-appropriated
+                        several other articles of her craft; but I retired, confiding in her energy
+                        for a resting-place against my return.
+Wuthering Heights was the goal of my proposed excursion. An after-thought
+                        brought me back, when I had quitted the court.
+"All well at the Heights?" I enquired of the woman.
+"Eea, f'r owt Ee knaw!" she answered, skurrying away with a pan of hot
+                        cinders.
+I would have asked why Mrs. Dean had deserted the Grange; but it was
+                        impossible to delay her at such a crisis, so, I turned away and made my
+                        exit, rambling leisurely along with the glow of a sinking sun behind, and
+                        the mild glory of a rising moon in front; one fading, and the other
+                        brightening, as I quitted the park, and climbed the stony by-road branching
+                        off to Mr. Heathcliff's dwelling.
+Before I arrived in sight of it, all that remained of day was a
+                        beamless, amber light along the west; but I could see every pebble on the
+                        path, and every blade of grass by that splendid moon.
+I had neither to climb the gate, nor to knock—it yielded to my hand.
+That is an improvement! I thought. And I noticed another, by the aid of my
+                        nostrils; a fragrance of stocks and wall flowers, wafted on the air, from
+                        amongst the homely fruit trees.
+Both doors and lattices were open; and, yet, as is usually the case in a coal
+                        district, a fine, red fire illumined the chimney; the comfort which the eye
+                        derives from it, renders the extra heat endurable. But the house of
+                        Wuthering Heights is so large, that the inmates have plenty of space for
+                        withdrawing out of its influence; and, accordingly, what inmates there were
+                        had stationed themselves not far from one of the windows. I could both see
+                        them and hear them talk before I entered; and, looked and listened in consequence, being moved thereto by a mingled sense of
+                        curiosity, and envy that grew as I lingered.
+"Con-trary!" said a voice, as sweet as a silver bell—"That for the
+                        third time, you dunce! I'm not going to tell you, again—Recollect, or I pull
+                        your hair!"
+"Contrary, then," answered another, in deep, but softened tones. And now,
+                        kiss me, for minding so well."
+"No, read it over first correctly, without a single mistake."
+The male speaker began to read—he was a young man, respectably dressed, and
+                        seated at a table, having a book before him. His handsome features glowed
+                        with pleasure, and his eyes kept impatiently wandering from the page to a
+                        small white hand over his shoulder, which recalled him by a smart slap on
+                        the cheek, whenever its owner detected such signs of inattention.
+Its owner stood behind; her light shining ringlets blending, at
+                        intervals, with his brown locks, as she bent to superintend his studies; and
+                        her face—it was lucky he could not see her face, or he would never have been
+                        so steady—I could, and I bit my lip, in spite, at having thrown away the
+                        chance I might have had, of doing something besides staring at its smiting
+                        beauty.
+The task was done, not free from further blunders, but the pupil claimed a
+                        reward and received, at least five kisses, which, however, he generously
+                        returned. Then, they came to the door, and from their conversation, I judged
+                        they were about to issue out and have a walk on the moors. I supposed I
+                        should be condemned in Hareton Earashaw's heart, if not by his mouth, to the
+                        lowest pit in the infernal regions if I showed my unfortunate person in his
+                        neighbourhood then, and feeling very mean and malignant, I skulked round to
+                        seek refuge in the kitchen.
+There, was unobstructed admittance on that side also; and, at
+                        the door, sat my old friend, Nelly Dean, sewing and singing a song, which
+                        was often interrupted from within, by harsh words of scorn and intolerance,
+                        uttered in far from musical accents.
+"Aw'd rayther, by th' haulf, hev 'em swearing i' my lugs frough morn tuh
+                        neeght, nur hearken yah, hahsiver!" said the tenant of the kitchen, in
+                        answer to an unheard speech of Nelly's. "It's a blazing shaime, ut Aw cannut
+                        oppen t' Blessed Book, bud yah set up them glories tuh sattan, un' all t'
+                        flay some wickednesses ut iver wer born intuh t' warld! Oh! yah're a raight
+                        nowt; un' shoo's another; un' that poor lad 'ull be lost, atween ye. Poor
+                        lad!" he added, with a groan; "he's witched, Aw'm sartin on't! O, Lord,
+                        judge 'em, fur they's norther law nur justice amang wer rullers!"
+"No! or we should be sitting in flaming fagots, I suppose," retorted the
+                        singer. "But wisht, old man, and read your Bible, like a christian, and never mind me. This is 'Fairy Annie's Wedding'—a bonny
+                        tune—it goes to a dance."
+Mrs. Dean was about to recommence, when I advanced, and recognising me
+                        directly, she jumped to her feet, crying—
+"Why, bless you, Mr. Lockwood! How could you think of returning in this way?
+                        All's shut up at Thrushcross Grange. You should have given us notice!"
+"I've arranged to be accommodated there, for as long as I shall stay," I
+                        answered. "I depart again to-morrow. And how are you transplanted here, Mrs.
+                        Dean? tell me that."
+"Zillah left, and Mr. Heathcliff wished me to come, soon after you went to
+                        London, and stay till you returned. But, step in, pray! Have you walked from
+                        Gimmerton this evening?"
+"From the Grange," I replied; "and, while they make me lodging room there, I
+                        want to finish my business with your master, because I don't
+                        think of having another opportunity in a hurry."
+"What business, sir?" said Nelly, conducting me into the house. "He's gone
+                        out, at present, and wont return soon."
+"About the rent," I answered.
+"Oh! then it is with Mrs. Heathcliff you must settle," she observed, " or
+                        rather with me. She has not learnt to manage her affairs yet, and I act for
+                        her; there's nobody else." I looked surprised.
+"Ah! you have not heard of Heathcliff's death, I see!" she continued.
+"Heathcliff dead?" I exclaimed, astonished. "How long ago?"
+"Three months since—but, sit down, and let me take your hat, and I'll tell
+                        you all about it. Stop, you have had nothing to eat, have you?"
+"I want nothing. I have ordered supper at home. You sit down too. I never
+                        dreamt ot his dying! Let me hear how it came to pass You say
+                        you don't expect them back for some time—the young people?"
+"No—I have to scold them every evening, for their late rambles—but they don't
+                        care for me. At least, have a drink of our old ale—it will do you good—you
+                        seem weary."
+She hastened to fetch it, before I could refuse, and I heard Joseph asking,
+                        whether "it warn't a crying scandal that she should have fellies at her time
+                        of life? And then, to get them jocks out uh t' Maister's cellar! He fair
+                        shaamed to 'bide still and see it."
+She did not stay to retaliate, but re-entered, in a minute, bearing a
+                        reaming, silver pint, whose contents I lauded with becoming earnestness. And
+                        afterwards she furnished me with the sequel of Heathcliff's history. He had
+                        a "queer" end, as she expressed it.
+"I was summoned to Wuthering Heights, within a fortnight of your leaving us,"
+                        she said; "and I obeyed joyfully, for Catherine's sake.
+"My first interview with her grieved and shocked me! she had
+                        altered so much since our separation. Mr. Heathcliff did not explain his
+                        reasons for taking a new mind about my coming here; he only told me he
+                        wanted me, and he was tired of seeing Catherine, I must make the little
+                        parlour my sitting room, and keep her with me. It was enough if he were
+                        obliged to see her once or twice a day.
+"She seemed pleased at this arrangement; and, by degrees, I smuggled over a
+                        great number of books, and other articles, that had formed her amusement at
+                        the Grange; and flattered myself we should get on in tolerable comfort.
+"The delusion did not last long. Catherine, contented at first, in a brief
+                        space grew irritable and restless. For one thing, she was forbidden to move
+                        out of the garden, and it fretted her sadly to be confined to its narrow
+                        bounds, as Spring drew on—for another, in following the house, I was forced
+                        to quit her frequently, and she complained of loneliness; she
+                        preferred quarrelling with Joseph in the kitchen, to sitting at peace in her
+                        solitude.
+"I did not mind their skirmishes; but Hareton was often obliged to seek the
+                        kitchen also, when the master wanted to have the house to himself; and,
+                        though, in the beginning, she either left it at his approach, or quietly
+                        joined in my occupations, and shunned remarking, or addressing him—and
+                        though he was always as sullen and silent, as possible—after a while, she
+                        changed her behaviour, and became incapable of letting him alone. Talking at
+                        him; commenting on his stupidity and idleness; expressing her wonder how he
+                        could endure the life he lived—how he could sit a whole evening staring into
+                        the fire, and dozing.
+"'He's just like a dog, is he not, Ellen?' she once observed, "or a
+                        cart-horse? He does his work, eats his food, and sleeps, eternally! What a
+                        blank, dreary mind he must have! Do you ever dream, Hareton?
+                        And, if you do, what is it about? But, you can't speak to me!'
+"Then she looked at him; but he would neither open his mouth, nor look
+                        again.
+"'He's perhaps, dreaming now,' she continued. 'He twitched his shoulder as
+                        Juno twitches hers. Ask him, Ellen."
+"'Mr. Hareton will ask the master to send you up stairs, if you don't
+                        behave!' I said. He had not only twitched his shoulder, but clenched his
+                        fist, as if tempted to use it.
+"'I know why Hareton never speaks, when I am in the kitchen,' she exclaimed,
+                        on another occasion. 'He is afraid I shall laugh at him. Ellen, what do you
+                        think? He began to teach himself to read once; and, because I laughed, he
+                        burned his books, and dropped it—was he not a fool?'
+"'Were not you naughty?' I said; 'answer me that.'
+"'Perhaps I was,' she went on, 'but I did not expect him to be
+                        so silly. Hareton, if I gave you a book, would you take it now? I'll
+                        try!'
+"She placed one she had been perusing on his hand; he flung it off, and
+                        muttered, if she did not give over, he would break her neck.
+"'Well I shall put it here,' she said, 'in the table drawer, and I'm going to
+                        bed.'
+"Then she whispered me to watch whether he touched it, and departed. But he
+                        would not come near it, and so I informed her in the morning, to her great
+                        disappointment. I saw she was sorry for his persevering sulkiness and
+                        indolence—her conscience reproved her for frightening him off improving
+                        himself—she had done it effectually.
+But her ingenuity was at work to remedy the injury; while I ironed, or
+                        pursued other stationary employments I could not well do in in the
+                        parlour—she would bring some pleasant volume, and read it aloud to me. When
+                        Hareton was there, she generally paused in an interesting part,
+                        and left the book lying about—that she did repeatedly; but he was as
+                        obstinate as a mule, and, instead of snatching at her bait, in wet weather
+                        he took to smoking with Joseph, and they sat like automatons, one on each
+                        side of the fire, the elder happily too deaf to understand her wicked
+                        nonsense, as he would have called it, the younger doing his best to seem to
+                        disregard it. On fine evenings the latter followed his shooting expeditions,
+                        and Catherine yawned and sighed, and teased me to talk to her, and ran off
+                        into the court or garden, the moment I began; and, as a last resource, cried
+                        and said, she was tired of living, her life was useless.
+"Mr. Heathcliff, who grew more and more disinclined to society, had almost
+                        banished Earnshaw out of his apartment. Owing to an accident, at the
+                        commencement of March, he became for some days a fixture in the kitchen. His
+                        gun burst, while out on the hills, by himself; a splinter cut his arm, and
+                        he lost a good deal of blood before he could reach home. The
+                        consequence was, that, perforce, he was condemned to the fire-side and
+                        tranquillity, till he made it up again.
+"It suited Catherine to have him there: at any rate, it made her hate her
+                        room up stairs, more than ever; and she would compel me to find out business
+                        below, that she might accompany me.
+"On Easter Monday, Joseph went to Gimmerton fair with some cattle; and, in
+                        the afternoon, I was busy getting up linen in the kitchen—Earnshaw sat,
+                        morose as usual, at the chimney corner, and my little mistress was beguiling
+                        an idle hour with drawing pictures on the window panes, varying her
+                        amusement by smothered bursts of songs, and whispered ejaculations, and
+                        quick glances of annoyance and impatience in the direction of her cousin,
+                        who steadfastly smoked, and looked into the grate.
+"At a notice that I could do with her no longer, intercepting my light, she
+                        removed to the hearthstone. I bestowed little attention on her
+                        proceedings, but, presently, I heard her begin—
+"'I've found out, Hareton, that I want—that I'm glad—that I should like you
+                        to be my cousin, now, if you had not grown so cross to me, and so
+                        rough.'
+"Hareton returned no answer.
+"'Hareton, Hareton, Hareton! do you hear?' she continued.
+"'Get off wi' ye!' he growled, with uncompromising gruffness.
+"'Let me take that pipe,' she said, cautiously advancing her hand, and
+                        abstracting it from his mouth.
+"Before he could attempt to recover it, it was broken, and behind the fire.
+                        He swore at her and seized another.
+"'Stop,' she cried, 'you must listen to me, first; and I can't speak while
+                        those clouds are floating in my face.'
+"'Will you go to the devil!' he exclaimed, ferociously, 'and let
+                        me be!'
+"'No,' she persisted, 'I wont—I can't tell what to do to make you talk to me,
+                        and you are determined not to understand. When I call you stupid, I don't
+                        mean anything—I don't mean that I despise you. Come you shall take notice of
+                        me, Hareton—you are my cousin, and you shall own me.'
+"'I shall have naught to do wi' you, and your mucky pride, and your damned,
+                        mocking tricks!' he answered. 'I'll go to hell, body and soul, before I look
+                        sideways after you again! side out of t' gait, now; this minute!'
+"Catherine frowned, and retreated to the window-seat, chewing her lip, and
+                        endeavouring, by humming an eccentric tune, to conceal a growing tendency to
+                        sob.
+"'You should be friends with your cousin, Mr. Hareton,' I interrupted, 'since
+                        she repents of her sauciness! it would do you a great deal of
+                        good—it would make you another man, to have her for a companion.'
+"'A companion?' he cried; 'when she hates me, and does not think me fit to
+                        wipe her shoon! Nay, if it made me a king, I'd not be scorned for seeking
+                        her good will any more.'
+"'It is not I who hate you, it is you who hate me!' wept Cathy, no longer
+                        disguising her trouble. 'You hate me as much as Mr. Heathcliff does, and
+                        more.'
+"'You're a damned liar,' began Earnshaw; 'why have I made him angry, by
+                        taking your part then, a hundred times? and that, when you sneered at, and
+                        despised me, and—Go on plaguing me, and I'll step in yonder, and say you
+                        worried me out of the kitchen!'
+"'I didn't know you took my part,' she answered, drying her eyes; 'and I was
+                        miserable and bitter at every body; but, now I thank you, and beg you to
+                        forgive me, what can I do besides?'
+"She returned to the hearth, and frankly extended her hand.
+"He blackened, and scowled like a thunder cloud, and kept his
+                        fists resolutely clenched, and his gaze fixed on the ground.
+"Catherine, by instinct, must have divined it was obdurate perversity, and
+                        not dislike, that prompted this dogged conduct; for, after remaining an
+                        instant, undecided, she stooped, and impressed on his cheek a gentle
+                        kiss.
+"The little rogue thought I had not seen her, and, drawing back, she took her
+                        former station by the window, quite demurely.
+"I shook my head reprovingly; and then she blushed, and whispered—
+"'Well! what should I have done, Ellen? He wouldn't shake hands, and he
+                        wouldn't look—I must show him some way that I like him, that I want to be
+                        friends.'
+"Whether the kiss convinced Hareton, I cannot tell; he was very careful, for
+                        some minutes, that his face should not be seen; and when he did raise it, he
+                        was sadly puzzled where to turn his eyes.
+"Catherine employed herself in wrapping a handsome book neatly
+                        in white paper; and having tied it with a bit of ribband, and addressed it
+                        to 'Mr. Hareton Earnshaw,' she desired me to be her ambassadress, and convey
+                        the present to its destined recipient.
+"'And tell him, if he'll take it, I'll come and teach him to read it right,'
+                        she said, 'and, if he refuse it, I'll go up stairs, and never tease him
+                        again,'
+"I carried it, and repeated the message, anxiously watched by my employer.
+                        Hareton would not open his fingers, so I laid it on his knee. He did not
+                        strike it off either. I returned to my work: Catherine leaned her head and
+                        arms on the table, till she heard the slight rustle of the covering being
+                        removed, then she stole away, and quietly seated herself beside her cousin.
+                        He trembled, and his face glowed—all his rudeness, and all his surly
+                        harshness had deserted him—he could not summon courage, at
+                        first, to utter a syllable, in reply to her questioning look, and her
+                        murmured petition.
+"'Say you forgive me, Hareton, do! You can make me so happy, by speaking that
+                        little word.'
+"He muttered something inaudible.
+"'And you'll be my friend?' added Catherine, interrogatively.
+"'Nay! you'll be ashamed of me every day of your life,' he answered. 'And the
+                        more, the more you know me, and I cannot bide it.'
+"'So, you wont be my friend?' she said, smiling as sweet as honey, and
+                        creeping close up.
+"I overheard no further distinguishable talk; but on looking round again, I
+                        perceived two such radiant countenances bent over the page of the accepted
+                        book, that I did not doubt the treaty had been ratified, on both sides, and
+                        the enemies were, thenceforth, sworn allies.
+"The work they studied was full of costly pictures; and those,
+                        and their position had charm enough to keep them unmoved, till Joseph came
+                        home. He, poor man, was perfectly aghast at the spectacle of Catherine
+                        seated on the same bench with Hareton Earnshaw, leaning her hand on his
+                        shoulder; and confounded at his favourite's endurance of her proximity. It
+                        affected him too deeply to allow an observation on the subject that night.
+                        His emotion was only revealed by the immense sighs he drew, as he solemnly
+                        spread his large bible on the table, and overlaid it with dirty bank-notes
+                        from his pocket-book, the produce of the day's transactions. At length, he
+                        summoned Hareton from his seat.
+"'Tak' these in tuh t' maister, lad,' he said, 'un' bide theare; Aw's gang up
+                        tuh my awn rahm. This hoile's norther mensful, nor seemly fur us—we mun side
+                        aht, and seearch another!'
+"'Come, Catherine, I said, we must 'side out,' too—I've done my ironing, are
+                        you ready to go?'
+"'It is not eight o'clock!' she answered, rising unwillingly,
+                        'Hareton, I'll leave this book upon the chimney-piece, and I'll bring some
+                        more to-morrow.'
+"'Ony books ut yah leave, Aw suall tak' intuh th' hahse,' said Joseph, 'un'
+                        it 'ull be mitch if yah find 'em agean; soa, yah muh plase yourseln!'
+"Cathy threatened that his library should pay for hers; and, smiling as she
+                        passed Hareton, went singing up stairs, lighter of heart, I venture to say,
+                        than ever she had been under that roof before; except, perhaps, during her
+                        earliest visits to Linton.
+"The intimacy, thus commenced, grew rapidly; though it encountered temporary
+                        interruptions, Earnshaw was not to be civilized with a wish; and my young
+                        lady was no philosopher, and no paragon of patience; but both their minds
+                        tending to the same point—one loving and desiring to esteem; and the other
+                        loving and desiring to be esteemed—they contrived in the end, to reach
+                        it.
+"You see, Mr. Lockwood, it was easy enough to win Mrs.
+                        Heathcliff's heart; but now, I'm glad you did not try—the crown of all my
+                        wishes will be the union of those two; I shall envy no one on their
+                        wedding-day—there won't be a happier woman than myself in England!"
 </div></body></text></TEI>
