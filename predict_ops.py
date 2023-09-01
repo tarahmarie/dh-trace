@@ -129,6 +129,20 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute(confusion_query)
     disk_con.commit()
 
+def setup_text_stats_table():
+    text_stats_query = """
+        CREATE TABLE IF NOT EXISTS text_stats AS 
+        SELECT DISTINCT
+            text_id,
+            length,
+            source_year
+        FROM all_texts
+        JOIN stats_all ON text_id = source_text;
+    """
+
+    disk_cur.execute(text_stats_query)
+    disk_con.commit()
+
 def setup_auto_indices():
     #Look, all this stuff is slow.  But it will make the plot script so much faster, so...
     disk_cur.execute("CREATE INDEX calculations_author_pair_index ON calculations(author_pair);")
@@ -221,9 +235,14 @@ def create_author_view(author_pair, weights_dict):
         calc.comp_score,
         calc.same_author,
         calc.threshold,
-        calc.weight_id
+        calc.weight_id,
+        source_lengths.length AS source_length,
+        target_lengths.length AS target_length
         FROM combined_jaccard AS ocj
         JOIN calculations AS calc ON ocj.pair_id = calc.pair_id
+        JOIN all_texts AS source_lengths ON ocj.source_text = source_lengths.text_id
+        JOIN all_texts AS target_lengths ON ocj.target_text = target_lengths.text_id
+        
         WHERE calc.author_pair = ? 
     """
     params = [author_pair]
@@ -233,6 +252,61 @@ def create_author_view(author_pair, weights_dict):
     the_predictions['al_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[1])
 
     return the_predictions
+
+def update_combined_jaccard_with_lengths():
+    # Add the new columns to the table
+    alter_table_query = """
+        ALTER TABLE giant_combined_calcs
+        ADD COLUMN source_year INT;
+        ALTER TABLE giant_combined_calcs
+        ADD COLUMN target_year INT;
+    """
+    disk_cur.executescript(alter_table_query)
+
+    # Update the source_year and target_year columns using a JOIN with text_stats
+    update_source_year_query = """
+        UPDATE giant_combined_calcs
+        SET source_year = ts.source_year
+        FROM text_stats AS ts
+        WHERE giant_combined_calcs.source_text = ts.text_id;
+    """
+    disk_cur.execute(update_source_year_query)
+
+    update_target_year_query = """
+        UPDATE giant_combined_calcs
+        SET target_year = ts.source_year
+        FROM text_stats AS ts
+        WHERE giant_combined_calcs.target_text = ts.text_id;
+    """
+    disk_cur.execute(update_target_year_query)
+
+    disk_con.commit()
+
+def create_custom_author_view(min_year, min_length, chosen_threshold):
+    # Query and process the data directly using SQL
+    query = """
+        SELECT calc.threshold,
+        SUM(CASE WHEN same_author = 'No' THEN 1 ELSE 0 END) AS No,
+        SUM(CASE WHEN same_author = 'False Negative' THEN 1 ELSE 0 END) AS False_Negative,
+        SUM(CASE WHEN same_author = 'Yes' THEN 1 ELSE 0 END) AS Yes,
+        SUM(CASE WHEN same_author = 'False Positive' THEN 1 ELSE 0 END) AS False_Positive,
+        source_lengths.length AS source_length,
+        target_lengths.length AS target_length
+        FROM combined_jaccard
+        JOIN calculations AS calc ON combined_jaccard.pair_id = calc.pair_id
+        JOIN all_texts AS source_lengths ON source_text = source_lengths.text_id
+        JOIN all_texts AS target_lengths ON target_text = target_lengths.text_id
+        WHERE source_year > ?
+        AND (source_length >= ? AND target_length >= ?)
+        GROUP BY threshold
+        HAVING threshold >= ?;
+    """
+    disk_cur.execute(query, [min_year, min_length, min_length, chosen_threshold])
+    result = disk_cur.fetchall()
+    # Convert the query result to a list of dictionaries
+    data = [{'threshold': row[0], 'No': row[1], 'False Negative': row[2], 'Yes': row[3], 'False Positive': row[4]} for row in result]
+
+    return data
 
 def assess_auto_author_accuracy(data):
     insert_transaction = "INSERT INTO auto_author_accuracy VALUES (?,?,?,?,?,?,?,?,?,?);"
@@ -282,12 +356,40 @@ def read_confusion_scores():
     return the_scores
 
 def read_all_thresholds():
-    disk_cur.execute("SELECT DISTINCT(threshold) FROM auto_author_accuracy;")
+    disk_cur.execute("SELECT DISTINCT(threshold) FROM confusion_scores;")
     the_thresholds = disk_cur.fetchall()
     temp_list = []
     for item in the_thresholds:
         temp_list.append(item[0])
     return temp_list
+
+def get_author_and_texts_published_after_current(year):
+    year = year + 1 #Ensure we get things starting one year after publication.
+    query = """SELECT 
+        DISTINCT(author_id), 
+        author_name,
+        dirs.dir
+        FROM authors 
+        JOIN all_texts ON all_texts.year >= ?
+        JOIN dirs ON dirs.id = all_texts.dir
+        WHERE all_texts.author_id = authors.id;
+    """
+    disk_cur.execute(query, [year])
+    the_texts_and_authors = disk_cur.fetchall()
+    temp_dict = {}
+    for item in the_texts_and_authors:
+        temp_dict[item[0]] = [item[1], item[2]]
+    return temp_dict
+
+def get_min_year_of_author_publication(id):
+    query = """SELECT
+        MIN(year)
+        FROM all_texts
+        WHERE all_texts.author_id = ?
+    """
+    disk_cur.execute(query, [id])
+    the_year = disk_cur.fetchone()
+    return the_year[0]
 
 def close_db_connection():
     """Close the SQLite database connection."""

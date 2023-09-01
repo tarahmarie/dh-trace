@@ -252,6 +252,20 @@ def read_all_text_names_by_id_from_db():
         temp_dict[text['text_id']] = text['source_filename']
     return temp_dict
 
+def read_all_text_names_and_create_author_work_dict():
+    temp_dict = {}
+    author_and_works_dict = {}
+    disk_cur.execute("SELECT DISTINCT dir, id FROM dirs")
+    the_dirs = disk_cur.fetchall()
+    for dir in the_dirs:
+        temp_dict[dir['id']] = dir['dir']
+    for value in temp_dict.values():
+        if author_and_works_dict.get(value.split('—')[1]):
+            author_and_works_dict[value.split('—')[1]].append(value.split('-')[1])
+        else:
+            author_and_works_dict[value.split('—')[1]] = [value.split('-')[1]]
+    return author_and_works_dict
+
 def read_all_text_lengths_by_id_from_db():
     temp_dict = {}
     disk_cur.execute("SELECT text_id, length FROM all_texts;")
@@ -437,9 +451,12 @@ def calculate_hapax_jaccard_similarity():
     the_result = disk_cur.fetchall()
 
     for thing in the_result:
-        jac_sim = thing['HapaxOverlaps'] / (sum([thing['source_hapaxes'],thing['target_hapaxes']]))
-        jac_dis = 1 - jac_sim
-        disk_cur.execute("UPDATE hapax_jaccard SET jac_sim = ?, jac_dis = ? WHERE source_text = ? AND target_text = ?;", [jac_sim, jac_dis, thing['source_text'], thing['target_text']])
+        if thing['HapaxOverlaps'] < 1:
+            pass
+        else:
+            jac_sim = thing['HapaxOverlaps'] / (sum([thing['source_hapaxes'],thing['target_hapaxes']]))
+            jac_dis = 1 - jac_sim
+            disk_cur.execute("UPDATE hapax_jaccard SET jac_sim = ?, jac_dis = ? WHERE source_text = ? AND target_text = ?;", [jac_sim, jac_dis, thing['source_text'], thing['target_text']])
     disk_con.commit()
 
 def create_ngrams_jaccard():
@@ -469,9 +486,12 @@ def calculate_ngram_jaccard_similarity():
     the_result = disk_cur.fetchall()
 
     for thing in the_result:
-        jac_sim = thing['NgramOverlaps'] / (sum([thing['source_ngrams'],thing['target_ngrams']]))
-        jac_dis = 1 - jac_sim
-        disk_cur.execute("UPDATE ngrams_jaccard SET ng_jac_sim = ?, ng_jac_dis = ? WHERE source_text = ? AND target_text = ?;", [jac_sim, jac_dis, thing['source_text'], thing['target_text']])
+        if thing['NgramOverlaps'] < 1:
+            pass
+        else:
+            jac_sim = thing['NgramOverlaps'] / (sum([thing['source_ngrams'],thing['target_ngrams']]))
+            jac_dis = 1 - jac_sim
+            disk_cur.execute("UPDATE ngrams_jaccard SET ng_jac_sim = ?, ng_jac_dis = ? WHERE source_text = ? AND target_text = ?;", [jac_sim, jac_dis, thing['source_text'], thing['target_text']])
     disk_con.commit()
 
 def create_alignments_jaccard():
@@ -524,6 +544,9 @@ def make_the_combined_jaccard_table():
 
     #Now, we join the ngrams_jaccard table and the alignments_jaccard table to it.
     disk_cur.execute("CREATE TABLE temp_jaccard AS SELECT combined_jaccard.source_auth, combined_jaccard.source_year, combined_jaccard.source_text, combined_jaccard.target_auth, combined_jaccard.target_year, combined_jaccard.target_text, combined_jaccard.hap_jac_sim, combined_jaccard.hap_jac_dis, combined_jaccard.pair_id, ngrams_jaccard.ng_jac_sim, ngrams_jaccard.ng_jac_dis, alignments_jaccard.al_jac_sim, alignments_jaccard.al_jac_dis FROM combined_jaccard JOIN ngrams_jaccard ON combined_jaccard.pair_id = ngrams_jaccard.pair_id JOIN alignments_jaccard ON ngrams_jaccard.pair_id = alignments_jaccard.pair_id")
+
+    # NOTE: You can do better than this temporary kludge.
+    # Let's incorporate those lengths!
     disk_cur.execute("DROP TABLE IF EXISTS combined_jaccard;")
     disk_cur.execute("ALTER TABLE temp_jaccard RENAME TO combined_jaccard;")
     disk_cur.execute("CREATE INDEX comjac_idx ON combined_jaccard(source_auth, target_auth, source_text, target_text, pair_id);")

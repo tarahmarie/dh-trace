@@ -9,6 +9,11 @@ while IFS='' read -r line; do PROJECTS+=("$line"); done < <(basename -a ./projec
 #Some helper variables
 project_file_count=""
 last_run_file_count=""
+# Define colors and styles using ANSI escape codes
+GREEN='\033[1;32m'
+RED='\033[1;31m'
+BOLD='\033[1m'
+RESET='\033[0m'
 
 #Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
 #A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
@@ -144,7 +149,30 @@ do_the_work () {
     python load_ngram_intersects.py;
     python load_relationships.py;
     python load_jaccard.py;
-    printf "To do batch author prediction (spoiler: slower), run \`do_math.sh\`\n\n"
+    do_more_work
+}
+
+do_more_work () {
+    printf "\nOk, do you want to generate some predictions for %s ${BOLD}(${GREEN}y${RESET}${BOLD} / ${RED}n${RESET}${BOLD})${RESET}?\nWhen that's done, we'll launch the plotting tool.\n\n" "$project_name"
+
+    read -rp "> " choice
+
+    case $choice in 
+        y|Y)
+            printf "\nOk, hold on while I load data... this could take a few minutes.\n"
+            python auto_author_prediction.py;
+            printf "\nDone. If you want to see some graphs, use do_viz.sh.\n"
+            ;;
+        n|N)
+            printf "\nOk. If you want to change the project and try again, just edit .current_project. See you!"
+            ;;
+        q|quit)
+            exit 0
+            ;;
+        *)
+            exercise_choice
+            ;;
+    esac
 }
 
 #Check if we're starting a new project.
