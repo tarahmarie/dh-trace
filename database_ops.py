@@ -23,8 +23,11 @@ disk_cur = disk_con.cursor()
 #  /_/\____/_/\____/
 #
 disk_cur.execute("PRAGMA synchronous = OFF;")
-disk_cur.execute("PRAGMA cache_size = 10000000;")
+disk_cur.execute("PRAGMA cache_size = -2000000000;")
+disk_cur.execute("PRAGMA page_size = 32768;")
 disk_cur.execute("PRAGMA journal_mode = MEMORY;")
+disk_cur.execute("PRAGMA temp_store = MEMORY;")
+
 
 #Create the Database and Tables
 def create_db_and_tables():
@@ -50,23 +53,20 @@ def create_db_and_tables():
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS results(`first_book`, `second_book`, `ngram_overlaps_count`, `hapax_overlap_count`, `num_alignments`)")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_all(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `haps/pair_len` REAL, `haps/corp_len` REAL, `NgramOverlaps` INT DEFAULT 0, `ngs/pair_len` REAL, `ngs/corp_len` REAL, `#aligns` INT DEFAULT 0, `#als/pair_len` REAL, `#als/corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_all(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `haps/pair_len` REAL, `haps/corp_len` REAL, `NgramOverlaps` INT DEFAULT 0, `ngs/pair_len` REAL, `ngs/corp_len` REAL, `#aligns` INT DEFAULT 0, `#als/pair_len` REAL, `#als/corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0);")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_alignments(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `#aligns` INT DEFAULT 0, `#aligns_over_pair_len` REAL, `#aligns_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_alignments(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `#aligns` INT DEFAULT 0, `#aligns_over_pair_len` REAL, `#aligns_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0)")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_hapaxes(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_hapaxes(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0)")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_ngrams(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `NgramOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_ngrams(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `NgramOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0)")
 
     disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_filepairs ON ngram_overlaps(file_pair)")
-
     disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_all ON ngrams(source_filename)")
-    
     disk_cur.execute("CREATE INDEX IF NOT EXISTS hap_filepairs ON hapax_overlaps(file_pair)")
-
     disk_cur.execute("CREATE INDEX IF NOT EXISTS hap_sourcefiles ON hapaxes(source_filename)")
-    
     disk_cur.execute("CREATE INDEX IF NOT EXISTS all_text_source ON all_texts(author_id, source_filename)")
+    disk_cur.execute("CREATE INDEX IF NOT EXISTS at_lens ON all_texts(text_id, length);")
 
 #Empty the Database (for updating all the things)
 def reset_the_db():
@@ -90,6 +90,7 @@ def reset_the_db():
     disk_cur.execute("DROP INDEX IF EXISTS hap_filepairs")
     disk_cur.execute("DROP INDEX IF EXISTS hap_sourcefiles")
     disk_cur.execute("DROP INDEX IF EXISTS all_text_source")
+    disk_cur.execute("DROP INDEX IF EXISTS at_lens;")
 
     disk_con.commit()
 
@@ -179,10 +180,10 @@ def insert_averages_to_db(total_comparisons, total_alignments_over_comps, total_
     disk_con.commit()
 
 def insert_stats_to_db(stats_transactions, hapax_transactions, ngram_transactions, align_transactions):
-    insert_stats_statement = "INSERT INTO stats_all VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
-    insert_hapax_statement = "INSERT INTO stats_hapaxes VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"
-    insert_ngram_statement = "INSERT INTO stats_ngrams VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"
-    insert_align_statement = "INSERT INTO stats_alignments VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"
+    insert_stats_statement = "INSERT INTO stats_all VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+    insert_hapax_statement = "INSERT INTO stats_hapaxes VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+    insert_ngram_statement = "INSERT INTO stats_ngrams VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+    insert_align_statement = "INSERT INTO stats_alignments VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
 
     disk_cur.executemany(insert_stats_statement, stats_transactions)
     disk_cur.executemany(insert_hapax_statement, hapax_transactions)
@@ -497,7 +498,6 @@ def calculate_ngram_jaccard_similarity():
 def create_alignments_jaccard():
     #First, we cleanup after previous jaccard runs
     disk_cur.execute("DROP TABLE IF EXISTS alignments_jaccard;")
-    disk_cur.execute("DROP INDEX IF EXISTS at_lens;")
     disk_cur.execute("DROP INDEX IF EXISTS aligns_vals;")
 
     #Now, we make our stuff.
@@ -506,7 +506,6 @@ def create_alignments_jaccard():
     disk_cur.execute("ALTER TABLE alignments_jaccard ADD COLUMN `target_total_words` INT DEFAULT 0;")
     disk_cur.execute("ALTER TABLE alignments_jaccard ADD COLUMN `al_jac_sim` REAL;")
     disk_cur.execute("ALTER TABLE alignments_jaccard ADD COLUMN `al_jac_dis` REAL;")
-    disk_cur.execute("CREATE INDEX at_lens ON all_texts(source_filename, length);")
 
     disk_con.commit()
 
@@ -538,18 +537,19 @@ def make_the_combined_jaccard_table():
     disk_con.commit()
 
     #Create the table structure and populate from hapax_jaccard as a starter.
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS combined_jaccard (`source_auth` INT, `source_year` INT DEFAULT 0, `source_text` INT, `target_auth` INT, `target_year` INT DEFAULT 0, `target_text` INT, `hap_jac_sim` REAL DEFAULT 0.0, `hap_jac_dis` REAL DEFAULT 0.0, `ng_jac_sim` REAL DEFAULT 0.0, `ng_jac_dis` REAL DEFAULT 0.0, `al_jac_sim` REAL DEFAULT 0.0, `al_jac_dis` REAL DEFAULT 0.0, `pair_id` INT PRIMARY KEY UNIQUE);")
-    disk_cur.execute("INSERT INTO combined_jaccard (source_auth, source_year, source_text, target_auth, target_year, target_text, hap_jac_sim, hap_jac_dis, pair_id) SELECT source_author, source_year, source_text, target_author, target_year, target_text, jac_sim, jac_dis, pair_id FROM hapax_jaccard;")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS combined_jaccard (`source_auth` INT, `source_year` INT DEFAULT 0, `source_text` INT, `target_auth` INT, `target_year` INT DEFAULT 0, `target_text` INT, `hap_jac_sim` REAL DEFAULT 0.0, `hap_jac_dis` REAL DEFAULT 0.0, `ng_jac_sim` REAL DEFAULT 0.0, `ng_jac_dis` REAL DEFAULT 0.0, `al_jac_sim` REAL DEFAULT 0.0, `al_jac_dis` REAL DEFAULT 0.0, `pair_id` INT PRIMARY KEY UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0);")
+    disk_cur.execute("INSERT INTO combined_jaccard (source_auth, source_year, source_text, target_auth, target_year, target_text, hap_jac_sim, hap_jac_dis, pair_id, source_length, target_length) SELECT source_author, source_year, source_text, target_author, target_year, target_text, jac_sim, jac_dis, pair_id, source_length, target_length FROM hapax_jaccard;")
     disk_con.commit()
 
     #Now, we join the ngrams_jaccard table and the alignments_jaccard table to it.
-    disk_cur.execute("CREATE TABLE temp_jaccard AS SELECT combined_jaccard.source_auth, combined_jaccard.source_year, combined_jaccard.source_text, combined_jaccard.target_auth, combined_jaccard.target_year, combined_jaccard.target_text, combined_jaccard.hap_jac_sim, combined_jaccard.hap_jac_dis, combined_jaccard.pair_id, ngrams_jaccard.ng_jac_sim, ngrams_jaccard.ng_jac_dis, alignments_jaccard.al_jac_sim, alignments_jaccard.al_jac_dis FROM combined_jaccard JOIN ngrams_jaccard ON combined_jaccard.pair_id = ngrams_jaccard.pair_id JOIN alignments_jaccard ON ngrams_jaccard.pair_id = alignments_jaccard.pair_id")
+    disk_cur.execute("CREATE TABLE temp_jaccard AS SELECT combined_jaccard.source_auth, combined_jaccard.source_year, combined_jaccard.source_text, combined_jaccard.target_auth, combined_jaccard.target_year, combined_jaccard.target_text, combined_jaccard.hap_jac_sim, combined_jaccard.hap_jac_dis, combined_jaccard.pair_id, combined_jaccard.source_length, combined_jaccard.target_length, ngrams_jaccard.ng_jac_sim, ngrams_jaccard.ng_jac_dis, alignments_jaccard.al_jac_sim, alignments_jaccard.al_jac_dis FROM combined_jaccard JOIN ngrams_jaccard ON combined_jaccard.pair_id = ngrams_jaccard.pair_id JOIN alignments_jaccard ON ngrams_jaccard.pair_id = alignments_jaccard.pair_id")
+    disk_con.commit()
 
     # NOTE: You can do better than this temporary kludge.
     # Let's incorporate those lengths!
     disk_cur.execute("DROP TABLE IF EXISTS combined_jaccard;")
     disk_cur.execute("ALTER TABLE temp_jaccard RENAME TO combined_jaccard;")
-    disk_cur.execute("CREATE INDEX comjac_idx ON combined_jaccard(source_auth, target_auth, source_text, target_text, pair_id);")
+    disk_cur.execute("CREATE INDEX comjac_idx ON combined_jaccard(source_auth, target_auth, source_text, target_text, pair_id, source_year, source_length, target_length);")
     disk_con.commit()
 
 def close_db_connection():
@@ -560,5 +560,3 @@ def close_db_connection():
             print("Database connection closed.")
     except Exception as e:
         print(f"Error while closing the database connection: {str(e)}")
-
-create_db_and_tables()

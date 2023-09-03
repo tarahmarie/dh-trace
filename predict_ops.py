@@ -18,7 +18,8 @@ disk_cur = disk_con.cursor()
 #
 
 disk_cur.execute("PRAGMA synchronous = OFF;")
-disk_cur.execute("PRAGMA cache_size = 100000;")
+disk_cur.execute("PRAGMA cache_size = -2000000000;")
+disk_cur.execute("PRAGMA page_size = 32768;")
 disk_cur.execute("PRAGMA journal_mode = MEMORY;")
 disk_cur.execute("PRAGMA temp_store = MEMORY;")
 
@@ -80,10 +81,12 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP TABLE IF EXISTS calculations;")
     disk_cur.execute("DROP TABLE IF EXISTS pair_counts;")
     disk_cur.execute("DROP TABLE IF EXISTS confusion_scores;")
-    disk_cur.execute("DROP INDEX IF EXISTS calculations_author_pair_index;")
-    disk_cur.execute("DROP INDEX IF EXISTS calculations_pair_id_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS calculations_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS comb_jac_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS all_texts_index;")
     disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
     disk_cur.execute("DROP INDEX IF EXISTS text_id_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS text_len_index;")
     disk_con.commit()
 
     #Now, we make our stuff.
@@ -145,10 +148,7 @@ def setup_text_stats_table():
 
 def setup_auto_indices():
     #Look, all this stuff is slow.  But it will make the plot script so much faster, so...
-    disk_cur.execute("CREATE INDEX calculations_author_pair_index ON calculations(author_pair);")
-    disk_cur.execute("CREATE INDEX calculations_pair_id_index ON calculations(pair_id);")
-    disk_cur.execute("CREATE INDEX combined_jaccard_pair_id_index ON combined_jaccard(pair_id);")
-    disk_cur.execute("CREATE INDEX text_id_index ON all_texts(text_id);")
+    disk_cur.execute("CREATE INDEX calculations_index ON calculations(pair_id, author_pair, same_author, threshold);")
     disk_con.commit()
 
 def setup_auto_author_accuracy_table():
@@ -253,55 +253,29 @@ def create_author_view(author_pair, weights_dict):
 
     return the_predictions
 
-def update_combined_jaccard_with_lengths():
-    # Add the new columns to the table
-    alter_table_query = """
-        ALTER TABLE giant_combined_calcs
-        ADD COLUMN source_year INT;
-        ALTER TABLE giant_combined_calcs
-        ADD COLUMN target_year INT;
-    """
-    disk_cur.executescript(alter_table_query)
-
-    # Update the source_year and target_year columns using a JOIN with text_stats
-    update_source_year_query = """
-        UPDATE giant_combined_calcs
-        SET source_year = ts.source_year
-        FROM text_stats AS ts
-        WHERE giant_combined_calcs.source_text = ts.text_id;
-    """
-    disk_cur.execute(update_source_year_query)
-
-    update_target_year_query = """
-        UPDATE giant_combined_calcs
-        SET target_year = ts.source_year
-        FROM text_stats AS ts
-        WHERE giant_combined_calcs.target_text = ts.text_id;
-    """
-    disk_cur.execute(update_target_year_query)
-
-    disk_con.commit()
-
-def create_custom_author_view(min_year, min_length, chosen_threshold):
-    # Query and process the data directly using SQL
+def create_custom_author_view(author_num, min_year, min_length, chosen_threshold):
+    # Ok, so...
+    # NOTE: the use of 'target_year' in this query is because the source author is set to 
+    #       whatever we chose. We're going to get all those texts that have our author as
+    #       the source, and all the other criteria apply to the target. This is fine, as
+    #       all texts are compared both ways. So, the data and its inverse are in the set.
     query = """
         SELECT calc.threshold,
         SUM(CASE WHEN same_author = 'No' THEN 1 ELSE 0 END) AS No,
         SUM(CASE WHEN same_author = 'False Negative' THEN 1 ELSE 0 END) AS False_Negative,
         SUM(CASE WHEN same_author = 'Yes' THEN 1 ELSE 0 END) AS Yes,
         SUM(CASE WHEN same_author = 'False Positive' THEN 1 ELSE 0 END) AS False_Positive,
-        source_lengths.length AS source_length,
-        target_lengths.length AS target_length
+        source_length,
+        target_length
         FROM combined_jaccard
         JOIN calculations AS calc ON combined_jaccard.pair_id = calc.pair_id
-        JOIN all_texts AS source_lengths ON source_text = source_lengths.text_id
-        JOIN all_texts AS target_lengths ON target_text = target_lengths.text_id
-        WHERE source_year > ?
+        WHERE combined_jaccard.source_auth = ?
+        AND target_year > ?
         AND (source_length >= ? AND target_length >= ?)
         GROUP BY threshold
         HAVING threshold >= ?;
     """
-    disk_cur.execute(query, [min_year, min_length, min_length, chosen_threshold])
+    disk_cur.execute(query, [author_num, min_year, min_length, min_length, chosen_threshold])
     result = disk_cur.fetchall()
     # Convert the query result to a list of dictionaries
     data = [{'threshold': row[0], 'No': row[1], 'False Negative': row[2], 'Yes': row[3], 'False Positive': row[4]} for row in result]

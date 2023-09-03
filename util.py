@@ -1,4 +1,5 @@
 import os
+from dataclasses import dataclass
 
 from hapaxes_1tM import remove_tei_lines_from_text
 
@@ -79,21 +80,6 @@ def get_date_from_tei_header(line):
 
     return int(reconstituted_line)
 
-def get_date_from_tei_header(line):
-    line = line.split('<date>')[1]
-    line = line.split('</date>')[0]
-    ###NOTE: This fix would remove the garbarge from the Eltec headers that come from sequence aligns,
-    ###      but this causes other problems. For the love of God, standardize this data!!!
-    if '(' in line:
-         line = line.split('(')[0].strip()
-    ###NOTE: These alignments <persNames> occasionally have \n in them.  Just. Kill. Me.
-    line = line.strip()
-    reconstituted_line = ""
-    for sub in line:
-        reconstituted_line += sub.replace('\n', '')
-
-    return int(reconstituted_line)
-
 def fix_the_author_name_from_aligns(name):
     ###NOTE: This fix removes the garbarge from the Eltec headers that come from sequence aligns,
     ###      but this causes other problems. This data needs cleaning!
@@ -122,3 +108,32 @@ def create_author_pair_for_lookups(author_a, author_b):
         return ordered_already
     elif int(author_a) > int(author_b):
         return disorded_already
+
+@dataclass
+class Choices:
+    author_num: int
+    threshold: str
+    min_length: int
+
+def get_choices_for_viz(author_set, threshold_set):
+    auth_choice = None
+    while True:
+        user_input = input("Select an author number to be the basis of comparison: ")
+        
+        try:
+            auth_choice = int(user_input)
+            if auth_choice in author_set.keys():
+                break
+            else:
+                print("Invalid author number. Please try again.")
+        except ValueError:
+            print("Invalid input. Please enter a valid author number or '.' to finish.")
+
+    print(f"\nThese are the available thresholds: {threshold_set}\n")
+    chosen_threshold = input("What threshold do you want to set for the query? ")
+
+    print("\n")
+    chosen_min_length = input("What is the minimum length (in words) for the texts you want to use? ")
+
+    choices = Choices(auth_choice, chosen_threshold, chosen_min_length)
+    return choices

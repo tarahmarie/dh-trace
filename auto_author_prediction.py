@@ -33,10 +33,10 @@ def get_temp_copy_for_processing():
     for item in copy_of_combined_jaccard:
         #Reference
         #0: source_auth, 1: source_year, 2: source_text, 3: target_auth, 4: target_year, 5: target_text
-        #6: hap_jac_sim, 7: hap_jac_dis, 8: pair_id, 9: ng_jac_sim, 10: ng_jac_dis
-        #11: al_jac_sim, 12: al_jac_dis
+        #6: hap_jac_sim, 7: hap_jac_dis, 8: pair_id, 9: source_length, 10: target_length
+        # 11: ng_jac_sim, 12: ng_jac_dis, 13: al_jac_sim, 14: al_jac_dis
         #NOTE: I am selecting only the ones I need for do_math(). Change these if your needs change.
-        temp_list.append((item[0], item[3], item[7], item[8], item[12]))
+        temp_list.append((item[0], item[3], item[7], item[8], item[14]))
         current_item += 1
     del(copy_of_combined_jaccard) #Flush it to free memory.
     return temp_list
