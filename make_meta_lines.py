@@ -11,7 +11,8 @@ from predict_ops import (create_custom_author_view,
                          get_author_and_texts_published_after_current,
                          get_min_year_of_author_publication,
                          read_all_thresholds)
-from util import get_choices_for_viz, get_project_name
+from util import get_project_name
+from utils.get_choices import get_choices_for_viz
 
 console = Console()
 project_name = get_project_name()
