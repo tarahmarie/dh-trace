@@ -130,10 +130,26 @@ def get_choices_for_viz(author_set, threshold_set):
             print("Invalid input. Please enter a valid author number or '.' to finish.")
 
     print(f"\nThese are the available thresholds: {threshold_set}\n")
-    chosen_threshold = input("What threshold do you want to set for the query? ")
+    chosen_threshold = 0.0
+    while True:
+        chosen_threshold = input("What threshold do you want to set for the query? ")
 
-    print("\n")
-    chosen_min_length = input("What is the minimum length (in words) for the texts you want to use? ")
+        try:
+            if (float(chosen_threshold) or int(chosen_threshold)) in threshold_set:
+                print("\n")
+                break
+        except ValueError:
+            print("Invalid input. Please try again...")
+
+    chosen_min_length = 0
+    while True:
+        chosen_min_length = input("What is the minimum length (in words) for the texts you want to use? ")
+
+        try:
+            if (int(chosen_min_length) > 0):
+                break
+        except ValueError:
+            print("Please pick a number greater than 0.")
 
     choices = Choices(auth_choice, chosen_threshold, chosen_min_length)
     return choices
