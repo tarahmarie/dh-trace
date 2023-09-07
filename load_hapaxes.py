@@ -21,9 +21,9 @@ def get_hapaxes(file):
     hapax_list = []
 
     temp_text = read_text_from_db(name_of_text)
-    the_mf_data = remove_tei_lines_from_text(temp_text)
+    the_clean_data = remove_tei_lines_from_text(temp_text)
     
-    hapaxes_from_file = compute_hapaxes(the_mf_data)
+    hapaxes_from_file = compute_hapaxes(the_clean_data)
     hapax_list += (hapaxes_from_file)
     hapax_count = len(hapaxes_from_file)
 
