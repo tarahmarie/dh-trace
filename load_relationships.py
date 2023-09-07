@@ -25,15 +25,16 @@ from util import (get_dir_lengths_for_processing, get_project_name,
                   getCountOfFiles, getListOfFiles)
 
 #Helper Vars
-words_counted_in_comparisons = 0
-total_ngrams = get_total_number_of_ngrams()
-total_alignments = 0
-total_related_ngrams = 0
-total_related_hapaxes = 0
 project_name = get_project_name()
 list_of_files = getListOfFiles(f'./projects/{project_name}/splits')
 total_file_count = getCountOfFiles(f'./projects/{project_name}/splits')
 number_of_combinations = sum(1 for e in itertools.combinations(list_of_files, 2))
+total_ngrams = get_total_number_of_ngrams()
+words_counted_in_comparisons = 0
+total_alignments = 0
+total_related_ngrams = 0
+total_related_hapaxes = 0
+
 stats_transactions = []
 hapax_transactions = []
 ngram_transactions = []
@@ -133,13 +134,13 @@ def process_chapters_with_ngrams_sorted(first_name, first_id, second_name, secon
 
     insert_results_to_db(inverted_text_and_id_dict[first_name], inverted_text_and_id_dict[second_name], ngram_overlap_count, hapaxes_count_for_chap_pair, num_alignments)
 
-    stats_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], hapaxes_count_for_chap_pair, hapax_overlaps_over_pair_length, hapax_overlaps_over_corpus_length, ngram_overlap_count, ngram_overlaps_over_pair_length, ngram_overlaps_over_corpus_length, num_alignments, num_alignments_over_pair_length, num_alignments_over_corpus_length, pair_length, length_of_corpus_text, pair_id))
+    stats_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], hapaxes_count_for_chap_pair, hapax_overlaps_over_pair_length, hapax_overlaps_over_corpus_length, ngram_overlap_count, ngram_overlaps_over_pair_length, ngram_overlaps_over_corpus_length, num_alignments, num_alignments_over_pair_length, num_alignments_over_corpus_length, pair_length, length_of_corpus_text, pair_id, chapter_lengths[first_name], chapter_lengths[second_name]))
 
-    hapax_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], hapaxes_count_for_chap_pair, hapax_overlaps_over_pair_length, hapax_overlaps_over_corpus_length, pair_length, length_of_corpus_text, pair_id))
+    hapax_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], hapaxes_count_for_chap_pair, hapax_overlaps_over_pair_length, hapax_overlaps_over_corpus_length, pair_length, length_of_corpus_text, pair_id, chapter_lengths[first_name], chapter_lengths[second_name]))
 
-    ngram_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], ngram_overlap_count, ngram_overlaps_over_pair_length, ngram_overlaps_over_corpus_length, pair_length, length_of_corpus_text, pair_id))
+    ngram_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], ngram_overlap_count, ngram_overlaps_over_pair_length, ngram_overlaps_over_corpus_length, pair_length, length_of_corpus_text, pair_id, chapter_lengths[first_name], chapter_lengths[second_name]))
 
-    align_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], num_alignments, num_alignments_over_pair_length, num_alignments_over_corpus_length, pair_length, length_of_corpus_text, pair_id))
+    align_transactions.append((inverted_authors[first_author], first_year, inverted_text_and_id_dict[first_name], inverted_authors[second_author], second_year, inverted_text_and_id_dict[second_name], num_alignments, num_alignments_over_pair_length, num_alignments_over_corpus_length, pair_length, length_of_corpus_text, pair_id, chapter_lengths[first_name], chapter_lengths[second_name]))
 
 def compute_the_averages(): 
     total_comparisons = total_file_count * (total_file_count - 1)

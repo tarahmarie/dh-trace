@@ -10,11 +10,13 @@ from tqdm import tqdm
 
 from database_ops import read_all_combined_jaccard_from_db
 from predict_ops import (assess_auto_author_accuracy, close_db_connection,
-                         insert_author_pair_counts, insert_calculations,
-                         insert_confusion_scores, insert_weights, optimize,
+                         create_custom_author_view, insert_author_pair_counts,
+                         insert_calculations, insert_confusion_scores,
+                         insert_weights, optimize,
                          setup_auto_author_accuracy_table,
                          setup_auto_author_prediction_tables,
-                         setup_auto_indices, vacuum_the_db)
+                         setup_auto_indices, setup_text_stats_table,
+                         vacuum_the_db)
 from util import create_author_pair_for_lookups
 
 '''
@@ -30,12 +32,13 @@ def get_temp_copy_for_processing():
     current_item = 0
     for item in copy_of_combined_jaccard:
         #Reference
-        #0: source_auth, 1: source_year, 2: source_text, 3: target_auth, 4: target_year, 5: target_text, 6: hap_jac_sim
-        #7: hap_jac_dis, 8: pair_id, 9: al_jac_sim, 10: al_jac_dis
+        #0: source_auth, 1: source_year, 2: source_text, 3: target_auth, 4: target_year, 5: target_text
+        #6: hap_jac_sim, 7: hap_jac_dis, 8: pair_id, 9: source_length, 10: target_length
+        # 11: ng_jac_sim, 12: ng_jac_dis, 13: al_jac_sim, 14: al_jac_dis
         #NOTE: I am selecting only the ones I need for do_math(). Change these if your needs change.
-        temp_list.append((item[0], item[3], item[7], item[8], item[10]))
+        temp_list.append((item[0], item[3], item[7], item[8], item[14]))
         current_item += 1
-    copy_of_combined_jaccard = "" #Flush it to free memory.
+    del(copy_of_combined_jaccard) #Flush it to free memory.
     return temp_list
 
 temp_db_copy = get_temp_copy_for_processing()
@@ -56,15 +59,15 @@ def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac
 
     #Computer says no.
     if comp_score < threshold and source_auth == target_auth: #Computer should have said yes.
-        outcome = "NY"
+        outcome = "False Negative"
     if comp_score < threshold and source_auth != target_auth:
-        outcome = "N" #Ok, no.
+        outcome = "No" #Ok, no.
     
     #Computer says yes.
     if comp_score >= threshold and source_auth != target_auth: #Computer should not have said yes.
-        outcome = "YN"
+        outcome = "False Positive"
     if comp_score >= threshold and source_auth == target_auth:
-        outcome = "Y" #Ok, yes.
+        outcome = "Yes" #Ok, yes.
 
     return comp_score, outcome
 
@@ -128,16 +131,16 @@ def do_math(threshold, pretty_threshold):
                 comp_score, outcome = calculate_scores(source_auth, target_auth, hap_jac_dis, hap_weight, al_jac_dis, al_weight, threshold)
                 
                 match outcome:
-                    case "Y":
+                    case "Yes":
                         y_count += 1
                         outcome_counts["y"] += 1
-                    case "N":
+                    case "No":
                         n_count += 1
                         outcome_counts["n"] += 1
-                    case "NY":
+                    case "False Negative":
                         i_count += 1
                         outcome_counts["fn"] += 1
-                    case "YN":
+                    case "False Positive":
                         m_count += 1
                         outcome_counts["fp"] += 1
 
@@ -196,7 +199,6 @@ def main():
     setup_auto_author_prediction_tables()
     setup_auto_author_accuracy_table()
     setup_auto_indices()
-    vacuum_the_db()
     
     print(f"\nStepping through values, moving the threshold {pretty_step}% at a time from {pretty_threshold}% to {pretty_floor}%...\n(N.B. The program will pause before computing accuracy... it's ok, and won't last forever!)\n")
 
@@ -219,7 +221,9 @@ def main():
 
     insert_author_pair_counts(temp_author_pair_counts_transactions)
     insert_weights(temp_weights_transactions)
-    optimize()
+
+    print("\nI'm going to make a large table, now, for use in later visualization... sit tight.")
+    setup_text_stats_table()
     close_db_connection()
     print("\nPhew. Ok, to plot these values, run 'python make_auto_scatterplot.py")
 

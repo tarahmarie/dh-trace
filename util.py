@@ -1,4 +1,5 @@
 import os
+from dataclasses import dataclass
 
 from hapaxes_1tM import remove_tei_lines_from_text
 
@@ -63,6 +64,21 @@ def get_author_from_tei_header(line):
     for sub in line:
         reconstituted_line += sub.replace('\n', '')
     return reconstituted_line
+
+def get_date_from_tei_header(line):
+    line = line.split('<date>')[1]
+    line = line.split('</date>')[0]
+    ###NOTE: This fix would remove the garbarge from the Eltec headers that come from sequence aligns,
+    ###      but this causes other problems. This data needs cleaning!
+    if '(' in line:
+         line = line.split('(')[0].strip()
+    ###NOTE: These alignments <persNames> occasionally have \n in them.  ¯\_(ツ)_/¯
+    line = line.strip()
+    reconstituted_line = ""
+    for sub in line:
+        reconstituted_line += sub.replace('\n', '')
+
+    return int(reconstituted_line)
 
 def fix_the_author_name_from_aligns(name):
     ###NOTE: This fix removes the garbarge from the Eltec headers that come from sequence aligns,

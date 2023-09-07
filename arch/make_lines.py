@@ -1,6 +1,3 @@
-# Does what it says on the box; creates a graph for the two authors 
-# that have just been analyzed. Stepwise for various thresholds.
-
 import os
 from itertools import combinations
 
@@ -13,7 +10,7 @@ from tqdm import tqdm
 from database_ops import (read_all_author_names_from_db,
                           read_all_text_names_by_id_from_db)
 from predict_ops import (create_author_view, get_all_weights,
-                         get_author_view_length)
+                         get_author_view_length, read_confusion_scores)
 from util import create_author_pair_for_lookups
 
 console = Console()
@@ -82,10 +79,46 @@ def get_sample_from_concat_df(sample_size, df):
     df = df.sample(sample_size)
     return df
 
-def make_plot(df):
+# ¡Bonkers viz that no one should use!
+def make_plot(df): 
     #Reference: https://plotly.com/python/hover-text-and-formatting/
-    fig = px.scatter(df, x="comp_score", y="threshold", log_x=True, color='same_author', hover_name="source_text", hover_data=['source_auth', 'target_auth', 'source_text', 'target_text', 'same_author', 'threshold', 'hap_weight', 'al_weight'])
-    fig.show() #display visualization in browser
+    fig = px.line(df, x="threshold", y="comp_score", color='same_author')
+    fig.show()
+
+# Looks at all authors for the four outcomes 
+def make_confusion_score_plot(): 
+    confused_df = read_confusion_scores()
+    fig = px.line(confused_df, x='threshold', y=['tp', 'tn', 'fp', 'fn'],
+              labels={'threshold': 'Threshold', 'value': 'Value'},
+              title='Line Plot of Threshold vs. Metrics (Using All Authors)')
+    fig.update_traces(mode='lines+markers')
+    fig.show()
+
+# Line graph of chosen authors' four outcomes.
+def make_simple_confusion_lines(df, author_set, author_list):
+    authors_used = []
+    temp_authors_list = []
+    these_authors = ""
+    for item in author_list:
+        temp_authors_list.append(author_set[item])
+    
+    for item in sorted(temp_authors_list):
+        these_authors += item + "; "
+
+    # Group by 'threshold' and 'same_author', then sum the counts
+    df_grouped = df.groupby(['threshold', 'same_author'])['source_auth'].count().reset_index()
+
+    # Pivot the grouped data to create the count values for each same_author as columns
+    pivot_df = df_grouped.pivot_table(index='threshold', columns='same_author', values='source_auth', fill_value=0).reset_index()
+    print(pivot_df)
+    # Using Plotly Express
+    fig = px.line(pivot_df, x='threshold', y=['No', 'False Negative', 'Yes', 'False Positive'],
+              labels={'threshold': 'Threshold', 'value': 'Count', 'variable': 'Same Author'},
+              title=f'Line Graph of Same Author Counts at Different Thresholds (Using authors: {these_authors[:-2]})')
+
+    # Add data points as dots to the line plot
+    fig.update_traces(mode='lines+markers')
+    fig.show()
 
 def main():
     author_set = create_author_set_for_selection()
@@ -103,8 +136,10 @@ def main():
     for item in ordered_author_combos:
         total_length_of_all_author_combos += get_author_view_length(item)
 
-    sample_size = get_sample_size(total_length_of_all_author_combos)
-    
+    # Unlike the other viz, no sample size as we want to see the overall efficacy
+    # and not have it vary.
+    #sample_size = get_sample_size(total_length_of_all_author_combos)
+
     frames = []
     pbar = tqdm(desc=f'Fetching data...', total=len(ordered_author_combos), colour="#7FFFD4", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for item in ordered_author_combos:
@@ -114,11 +149,13 @@ def main():
 
     print("\nConcatenating data...hang on.\n")
     result = pd.concat(frames)
+    #df = get_sample_from_concat_df(sample_size, result)
+    make_simple_confusion_lines(result, author_set, author_list)
+    make_confusion_score_plot()
 
-    df = get_sample_from_concat_df(sample_size, result)
     print("\n")
-    print(df)
-    make_plot(df)
+    #print(df)
+    #make_plot(df)
 
 if __name__ == "__main__":
     os.system('clear')

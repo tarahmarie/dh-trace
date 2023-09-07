@@ -43,7 +43,7 @@ with console.status("\tDoing Science...", spinner="dots") as status:
     #Bring it all together
     status.update("\tCombining data...", spinner="dots")
     make_the_combined_jaccard_table()
-    status.update("\tVacuuming the DB...", spinner="dots")
+    status.update("\tVacuuming the DB...(🫖   ?)", spinner="dots")
     vacuum_the_db()
     close_db_connection()
     status.stop()
