@@ -53,7 +53,38 @@ def read_all_combined_jaccard_from_db(selected_author, selected_threshold, selec
 
     disk_cur.execute(query, [selected_author, selected_year, selected_length, selected_length, selected_threshold])
     the_combined_jacc = disk_cur.fetchall()
+    disk_cur.close()
+    disk_conn.close()
     return the_combined_jacc
+
+def read_fp_scores_from_db(selected_author, selected_threshold, selected_length, selected_year):
+    disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
+    disk_cur = disk_conn.cursor()
+
+    query = """
+        SELECT calc.threshold, 
+        calc.comp_score, 
+        all_texts_source.source_filename AS source_text, 
+        authors.author_name AS target_auth, 
+        all_texts_target.source_filename AS target_text 
+        FROM combined_jaccard 
+        JOIN calculations AS calc ON combined_jaccard.pair_id = calc.pair_id 
+        JOIN all_texts AS all_texts_source ON combined_jaccard.source_text = all_texts_source.text_id 
+        JOIN all_texts AS all_texts_target ON combined_jaccard.target_text = all_texts_target.text_id 
+        JOIN authors AS authors ON combined_jaccard.target_auth = authors.id
+        WHERE combined_jaccard.source_auth = ? 
+        AND target_year > ? 
+        AND (source_length >= ? AND target_length >= ?) 
+        AND threshold >= ? 
+        ORDER BY comp_score DESC, calc.threshold ASC 
+        LIMIT 25;
+    """
+
+    disk_cur.execute(query, [selected_author, selected_year, selected_length, selected_length, selected_threshold])
+    top_ten_fp = disk_cur.fetchall()
+    disk_cur.close()
+    disk_conn.close()
+    return top_ten_fp
 
 def get_min_year_of_author_publication(id):
     disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
@@ -73,14 +104,13 @@ authors_and_works_dict = read_all_text_names_and_create_author_work_dict()
 author_set = create_author_set_for_selection()
 threshold_set = read_all_thresholds()
 default_author_name = list(author_set.values())[0]
+hfp_div = html.Div(id='hfp-div')
 
 app = dash.Dash(__name__)
 
-message_div = html.Div(id='message-div')
-
 app.layout = html.Div([
-    html.H1("Authorship Attribution Visualization"),
-    
+    html.H2("Authorship Attribution Visualization"),
+    html.P("Select a starting author, scoring threshold, and minimum text length:"),
     dcc.Dropdown(
         id='author-dropdown',
         options=[{'label': author, 'value': author} for author in author_set.values()],
@@ -94,24 +124,40 @@ app.layout = html.Div([
         step=0.05,
         value=float(0.7)  # Set the default threshold value
     ),
-    
+
     dcc.Slider(
         id='length-slider',
         min=250,  # Update min and max as needed
-        max=1500,  # Update min and max as needed
+        max=3000,  # Update min and max as needed
         step=50,
-        value=500  # Set the default length range value
+        value=500,  # Set the default length range value
+        marks={250: '250', 
+        500: '500', 
+        750: '750', 
+        1000: '1k', 
+        1250: '1.25k', 
+        1500: '1.5k', 
+        1750: '1.75k', 
+        2000: '2k', 
+        2250: '2.25k', 
+        2500: '2.5k', 
+        2750: '2.75k',
+        3000: '3k'}
     ),
     
     dcc.Graph(id='line-plot', style={'height': 'calc(100vh - 300px)'}),
     
     # Add the message_div to display messages
-    message_div,
+    html.Br(),
+
+    # Add the div for showing highest FP values
+    html.H2("25 Highest-Ranked False Positives using above parameters:"),
+    hfp_div,
 ])
 
 @app.callback(
     Output('line-plot', 'figure'),
-    Output('message-div', 'children'),  # Output for displaying messages
+    Output('hfp-div', 'children'),  # Output for displaying hfp_df
     Input('author-dropdown', 'value'),
     Input('threshold-slider', 'value'),
     Input('length-slider', 'value'),
@@ -120,9 +166,6 @@ def update_line_plot(selected_author, selected_threshold, selected_length):
     disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
     disk_cur = disk_conn.cursor()
 
-    # Use Dash's logging feature to display messages
-    message = "N.B. Click author's name to restart viz, if nothing seems to happen."
-    
     # Extract the min and max length values from the selected_length_range
     min_length = selected_length
     # Fetch data based on selected_author, selected_threshold, and length range
@@ -131,7 +174,12 @@ def update_line_plot(selected_author, selected_threshold, selected_length):
 
     data = read_all_combined_jaccard_from_db(selected_key, selected_threshold, selected_length, min_author_choice_year)
     data_df = pd.DataFrame(data, columns=['threshold', 'Yes', 'No', 'False Negative', 'False Positive', 'source_length', 'target_length'])
-    
+
+    highest_fp = read_fp_scores_from_db(selected_key, selected_threshold, selected_length, min_author_choice_year)
+    hfp_df = pd.DataFrame(highest_fp, columns=['threshold', 'score', 'source_text', 'target_auth', 'target_text'])
+    converted_hfp = hfp_df.to_markdown(tablefmt="grid")
+    hfp_table = dcc.Markdown(f"```{converted_hfp}") #Not closing the ```, as pandas does this.
+
     # Create the line plot using Plotly Express
     fig = px.line(data_df, x='threshold', y=['Yes', 'No', 'False Negative', 'False Positive'],
                   labels={'threshold': 'Threshold', 'value': 'Count', 'variable': 'Same Author'},
@@ -140,8 +188,7 @@ def update_line_plot(selected_author, selected_threshold, selected_length):
     # Add data points as dots to the line plot
     fig.update_traces(mode='lines+markers')
     
-    return fig, message
-
+    return fig, hfp_table
 
 if __name__ == "__main__":
     app.run_server(debug=True)
