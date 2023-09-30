@@ -30,11 +30,21 @@ def display_author_menu(author_set):
         print(f"{count}. {author_set[count]}")
     print("\n")
 
-def read_all_combined_jaccard_from_db(selected_author, selected_threshold, selected_length, selected_year):
+def read_all_combined_jaccard_from_db(selected_author, selected_threshold, selected_length, selected_year, direction):
     disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
     disk_cur = disk_conn.cursor()
+    which_author_direction = ""
+    which_source_direction = ""
 
-    query = """
+    # If we're comparing backward, we need to use target_auth/source_year because of the way items are arranged in the db.
+    if direction == ">":
+        which_author_direction = "source_auth"
+        which_source_direction = "target_year"
+    elif direction == "<":
+        which_author_direction = "target_auth"
+        which_source_direction = "source_year"
+
+    query = f"""
         SELECT calc.threshold,
         SUM(CASE WHEN same_author = 'No' THEN 1 ELSE 0 END) AS No,
         SUM(CASE WHEN same_author = 'False Negative' THEN 1 ELSE 0 END) AS False_Negative,
@@ -44,8 +54,8 @@ def read_all_combined_jaccard_from_db(selected_author, selected_threshold, selec
         target_length
         FROM combined_jaccard
         JOIN calculations AS calc ON combined_jaccard.pair_id = calc.pair_id
-        WHERE combined_jaccard.source_auth = ?
-        AND target_year > ?
+        WHERE combined_jaccard.{which_author_direction} = ?
+        AND {which_source_direction} {direction} ?
         AND (source_length >= ? AND target_length >= ?)
         GROUP BY threshold
         HAVING threshold >= ?;
@@ -57,11 +67,21 @@ def read_all_combined_jaccard_from_db(selected_author, selected_threshold, selec
     disk_conn.close()
     return the_combined_jacc
 
-def read_fp_scores_from_db(selected_author, selected_threshold, selected_length, selected_year):
+def read_fp_scores_from_db(selected_author, selected_threshold, selected_length, selected_year, direction):
     disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
     disk_cur = disk_conn.cursor()
+    which_author_direction = ""
+    which_source_direction = ""
 
-    query = """
+    # If we're comparing backward, we need to use target_auth/source_year because of the way items are arranged in the db.
+    if direction == ">":
+        which_author_direction = "source_auth"
+        which_source_direction = "target_year"
+    elif direction == "<":
+        which_author_direction = "target_auth"
+        which_source_direction = "source_year"
+
+    query = f"""
         SELECT calc.threshold, 
         calc.comp_score, 
         all_texts_source.source_filename AS source_text, 
@@ -72,12 +92,12 @@ def read_fp_scores_from_db(selected_author, selected_threshold, selected_length,
         JOIN all_texts AS all_texts_source ON combined_jaccard.source_text = all_texts_source.text_id 
         JOIN all_texts AS all_texts_target ON combined_jaccard.target_text = all_texts_target.text_id 
         JOIN authors AS authors ON combined_jaccard.target_auth = authors.id
-        WHERE combined_jaccard.source_auth = ? 
-        AND target_year > ? 
+        WHERE combined_jaccard.{which_author_direction} = ? 
+        AND {which_source_direction} {direction} ? 
         AND (source_length >= ? AND target_length >= ?) 
         AND threshold >= ? 
         ORDER BY comp_score DESC, calc.threshold ASC 
-        LIMIT 25;
+        LIMIT 50;
     """
 
     disk_cur.execute(query, [selected_author, selected_year, selected_length, selected_length, selected_threshold])
@@ -111,11 +131,21 @@ app = dash.Dash(__name__)
 app.layout = html.Div([
     html.H2("Authorship Attribution Visualization"),
     html.P("Select a starting author, scoring threshold, and minimum text length:"),
-    dcc.Dropdown(
+
+    html.Div([
+        dcc.Dropdown(
         id='author-dropdown',
         options=[{'label': author, 'value': author} for author in author_set.values()],
-        value=default_author_name  # Set the default author value
+        value=default_author_name,  # Set the default author value
+        style={'width': '100%'}
     ),
+        dcc.Dropdown(
+        id='direction-dropdown',
+        options=[{'label': "Compare forward (chronologically)", 'value': "forward"}, {'label': "Compare backward (chronologically)", 'value': "backward"}],
+        value="forward", #Default comparison direction,
+        style={'width': '100%'}
+    ),
+    ], style={'display': 'flex', 'justify-content': 'space-between', 'width': '90%'}),
 
     dcc.Slider(
         id='threshold-slider',
@@ -144,14 +174,14 @@ app.layout = html.Div([
         2750: '2.75k',
         3000: '3k'}
     ),
-    
+
     dcc.Graph(id='line-plot', style={'height': 'calc(100vh - 300px)'}),
     
     # Add the message_div to display messages
     html.Br(),
 
     # Add the div for showing highest FP values
-    html.H2("25 Highest-Ranked False Positives using above parameters:"),
+    html.H2("50 Highest-Ranked False Positives using above parameters:"),
     hfp_div,
 ])
 
@@ -161,8 +191,9 @@ app.layout = html.Div([
     Input('author-dropdown', 'value'),
     Input('threshold-slider', 'value'),
     Input('length-slider', 'value'),
+    Input('direction-dropdown', 'value'),
 )
-def update_line_plot(selected_author, selected_threshold, selected_length):
+def update_line_plot(selected_author, selected_threshold, selected_length, selected_direction):
     disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
     disk_cur = disk_conn.cursor()
 
@@ -171,11 +202,13 @@ def update_line_plot(selected_author, selected_threshold, selected_length):
     # Fetch data based on selected_author, selected_threshold, and length range
     selected_key = next((key for key, value in author_set.items() if value == selected_author), None)
     min_author_choice_year = get_min_year_of_author_publication(selected_key)
+    #Small dictionary of direction symbols for printing, based on selected_direction
+    directions = {"forward": ">", "backward": "<"}
 
-    data = read_all_combined_jaccard_from_db(selected_key, selected_threshold, selected_length, min_author_choice_year)
+    data = read_all_combined_jaccard_from_db(selected_key, selected_threshold, selected_length, min_author_choice_year, directions[selected_direction])
     data_df = pd.DataFrame(data, columns=['threshold', 'Yes', 'No', 'False Negative', 'False Positive', 'source_length', 'target_length'])
 
-    highest_fp = read_fp_scores_from_db(selected_key, selected_threshold, selected_length, min_author_choice_year)
+    highest_fp = read_fp_scores_from_db(selected_key, selected_threshold, selected_length, min_author_choice_year, directions[selected_direction])
     hfp_df = pd.DataFrame(highest_fp, columns=['threshold', 'score', 'source_text', 'target_auth', 'target_text'])
     converted_hfp = hfp_df.to_markdown(tablefmt="grid")
     hfp_table = dcc.Markdown(f"```{converted_hfp}") #Not closing the ```, as pandas does this.
@@ -183,7 +216,7 @@ def update_line_plot(selected_author, selected_threshold, selected_length):
     # Create the line plot using Plotly Express
     fig = px.line(data_df, x='threshold', y=['Yes', 'No', 'False Negative', 'False Positive'],
                   labels={'threshold': 'Threshold', 'value': 'Count', 'variable': 'Same Author'},
-                  title=f'Same Author Counts at Different Thresholds (Starting author: {selected_author}; threshold >= {selected_threshold}; min_length = {selected_length}; Years: > {min_author_choice_year})')
+                  title=f'Same Author Counts at Different Thresholds (Starting author: {selected_author}; threshold >= {selected_threshold}; min_length = {selected_length}; Years: {directions[selected_direction]} {min_author_choice_year})')
 
     # Add data points as dots to the line plot
     fig.update_traces(mode='lines+markers')
