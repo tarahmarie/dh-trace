@@ -2,10 +2,29 @@
 
 set -euo pipefail
 
+start_dash () {
+    python make_dash.py &
+    DASH_PID=$!
+    printf "Dash app started with PID: %s\nThe dashboard will open shortly...\n" $DASH_PID
+}
+
+stop_dash () {
+    if [ -n "$DASH_PID" ]; then
+        echo "Stopping Dash app (PID: $DASH_PID)..."
+        kill "$DASH_PID"
+        echo "Dash app stopped."
+    else
+        echo "Dash app is not running."
+    fi
+}
+
 open_dash () {
     sleep 4;
-    open 'http://127.0.0.1:8050/'
+    open 'http://127.0.0.1:8050/' &
+    wait
 }
+
+trap stop_dash INT  # Trap Ctrl+C (SIGINT) and run stop_dash function
 
 menu () {
     tput clear;
@@ -17,11 +36,11 @@ menu () {
     printf "\t5. Confusion Matrix\n"
     printf "\tQ. Quit\n"
     read -rp "> " viz_choice
-    
+
     case "$viz_choice" in
         1)
-            open_dash &
-            python make_dash.py ;;
+            start_dash;
+            open_dash ;;
         2)
             python make_lines.py ;;
         3)
@@ -35,7 +54,7 @@ menu () {
         *)
             menu
     esac
-    
+
 }
 
 menu
