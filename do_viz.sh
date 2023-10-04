@@ -8,6 +8,12 @@ start_dash () {
     printf "Dash app started with PID: %s\nThe dashboard will open shortly...\n" $DASH_PID
 }
 
+start_jumbo_dash () {
+    python make_jumbo_dash.py &
+    DASH_PID=$!
+    printf "Dash app started with PID: %s\nThe dashboard will open shortly...\n" $DASH_PID
+}
+
 stop_dash () {
     if [ -n "$DASH_PID" ]; then
         echo "Stopping Dash app (PID: $DASH_PID)..."
@@ -43,7 +49,8 @@ menu () {
             start_dash;
             open_dash ;;
         2)
-            python make_jumbo_dash.py ;;
+            start_jumbo_dash;
+            open_dash ;;
         3)
             python make_lines.py ;;
         4)
