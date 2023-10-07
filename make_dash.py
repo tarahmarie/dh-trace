@@ -138,6 +138,10 @@ threshold_set = read_all_thresholds()
 default_author_name = list(author_set.values())[0]
 hfp_div = html.Div(id='hfp-div')
 
+length_marks = {}
+for length in range(250, 3001, 250):
+    length_marks[length] = str(length)
+
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
@@ -173,18 +177,7 @@ app.layout = html.Div([
         max=3000,  # Update min and max as needed
         step=50,
         value=500,  # Set the default length range value
-        marks={250: '250', 
-        500: '500', 
-        750: '750', 
-        1000: '1k', 
-        1250: '1.25k', 
-        1500: '1.5k', 
-        1750: '1.75k', 
-        2000: '2k', 
-        2250: '2.25k', 
-        2500: '2.5k', 
-        2750: '2.75k',
-        3000: '3k'}
+        marks=length_marks
     ),
 
     dcc.Graph(id='line-plot', style={'height': 'calc(100vh - 300px)'}),
