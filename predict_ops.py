@@ -84,7 +84,7 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP INDEX IF EXISTS calculations_index;")
     disk_cur.execute("DROP INDEX IF EXISTS idx_threshold;")
     disk_cur.execute("DROP INDEX IF EXISTS idx_length;")
-    disk_cur.exexute("DROP INDEX IF EXISTS idx_comp_score_threshold;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_comp_score_threshold;")
     disk_cur.execute("DROP INDEX IF EXISTS comb_jac_index;")
     disk_cur.execute("DROP INDEX IF EXISTS all_texts_index;")
     disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
