@@ -113,7 +113,7 @@ for year in range(1800, 1951, 5):
     year_marks[year] = str(year)
 
 length_marks = {}
-for length in range(250, 3001, 50):
+for length in range(250, 3001, 250):
     length_marks[length] = str(length)
 
 app = dash.Dash(__name__)
