@@ -96,15 +96,27 @@ def read_fp_scores_from_db(selected_author, selected_threshold, selected_length,
         AND {which_source_direction} {direction} ? 
         AND (source_length >= ? AND target_length >= ?) 
         AND threshold >= ? 
-        ORDER BY comp_score DESC, calc.threshold ASC 
-        LIMIT 50;
+        ORDER BY comp_score DESC, calc.threshold ASC;
     """
 
     disk_cur.execute(query, [selected_author, selected_year, selected_length, selected_length, selected_threshold])
-    top_ten_fp = disk_cur.fetchall()
+    top_fp_list = disk_cur.fetchall()
     disk_cur.close()
     disk_conn.close()
-    return top_ten_fp
+
+    # Filter out duplicates based on the 'target_text' column
+    unique_top_fp_list = []
+    seen_texts = set()
+    i = 0
+    for row in top_fp_list:
+        if i < 50:
+            target_text = row[4]  # Index 4 corresponds to 'target_text' in the query
+            if target_text not in seen_texts:
+                unique_top_fp_list.append(row)
+                seen_texts.add(target_text)
+                i += 1
+
+    return unique_top_fp_list
 
 def get_min_year_of_author_publication(id):
     disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
@@ -181,7 +193,7 @@ app.layout = html.Div([
     html.Br(),
 
     # Add the div for showing highest FP values
-    html.H2("50 Highest-Ranked False Positives using above parameters:"),
+    html.H2("Highest-Ranked False Positives using above parameters:"),
     hfp_div,
 ])
 
