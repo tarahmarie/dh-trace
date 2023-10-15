@@ -82,6 +82,9 @@ def setup_auto_author_prediction_tables():
     disk_cur.execute("DROP TABLE IF EXISTS pair_counts;")
     disk_cur.execute("DROP TABLE IF EXISTS confusion_scores;")
     disk_cur.execute("DROP INDEX IF EXISTS calculations_index;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_threshold;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_length;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_comp_score_threshold;")
     disk_cur.execute("DROP INDEX IF EXISTS comb_jac_index;")
     disk_cur.execute("DROP INDEX IF EXISTS all_texts_index;")
     disk_cur.execute("DROP INDEX IF EXISTS combined_jaccard_pair_id_index;")
@@ -149,6 +152,10 @@ def setup_text_stats_table():
 def setup_auto_indices():
     #Look, all this stuff is slow.  But it will make the plot script so much faster, so...
     disk_cur.execute("CREATE INDEX calculations_index ON calculations(pair_id, author_pair, same_author, threshold);")
+    disk_cur.execute("CREATE INDEX idx_threshold ON calculations(threshold);")
+    disk_cur.execute("CREATE INDEX idx_length ON all_texts(length);")
+    disk_cur.execute("CREATE INDEX idx_comp_score_threshold ON calculations(comp_score, threshold);")
+
     disk_con.commit()
 
 def setup_auto_author_accuracy_table():

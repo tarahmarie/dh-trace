@@ -533,7 +533,11 @@ def calculate_alignments_jaccard_similarity():
 def make_the_combined_jaccard_table():
     #Start Fresh
     disk_cur.execute("DROP TABLE IF EXISTS combined_jaccard;")
-    disk_cur.execute("DROP INDEX IF EXISTS comjac_idx;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_pair_id;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_source_text;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_target_text;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_source_auth;")
+    disk_cur.execute("DROP INDEX IF EXISTS idx_target_auth;")
     disk_con.commit()
 
     #Create the table structure and populate from hapax_jaccard as a starter.
@@ -549,7 +553,11 @@ def make_the_combined_jaccard_table():
     # Let's incorporate those lengths!
     disk_cur.execute("DROP TABLE IF EXISTS combined_jaccard;")
     disk_cur.execute("ALTER TABLE temp_jaccard RENAME TO combined_jaccard;")
-    disk_cur.execute("CREATE INDEX comjac_idx ON combined_jaccard(source_auth, target_auth, source_text, target_text, pair_id, source_year, source_length, target_length);")
+    disk_cur.execute("CREATE INDEX idx_pair_id ON combined_jaccard(pair_id);")
+    disk_cur.execute("CREATE INDEX idx_source_text ON combined_jaccard(source_text);")
+    disk_cur.execute("CREATE INDEX idx_target_text ON combined_jaccard(target_text);")
+    disk_cur.execute("CREATE INDEX idx_source_auth ON combined_jaccard(source_auth);")
+    disk_cur.execute("CREATE INDEX idx_target_auth ON combined_jaccard(target_auth);")
     disk_con.commit()
 
 def close_db_connection():
