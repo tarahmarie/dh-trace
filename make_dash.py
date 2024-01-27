@@ -1,4 +1,3 @@
-import os
 import sqlite3
 
 import dash
@@ -6,17 +5,11 @@ import pandas as pd
 import plotly.express as px
 from dash import dcc, html
 from dash.dependencies import Input, Output
-from rich.console import Console
-from rich.status import Status
-from tqdm import tqdm
 
 from database_ops import (read_all_author_names_from_db,
                           read_all_text_names_and_create_author_work_dict)
-from predict_ops import (get_author_and_texts_published_after_current,
-                         get_min_year_of_author_publication,
-                         read_all_thresholds)
+from predict_ops import read_all_thresholds
 from util import get_project_name
-from utils.get_choices import get_choices_for_viz
 
 project_name = get_project_name()
 
@@ -199,11 +192,6 @@ app.layout = html.Div([
     Input('direction-dropdown', 'value'),
 )
 def update_line_plot(selected_author, selected_threshold, selected_length, selected_direction):
-    disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
-    disk_cur = disk_conn.cursor()
-
-    # Extract the min and max length values from the selected_length_range
-    min_length = selected_length
     # Fetch data based on selected_author, selected_threshold, and length range
     selected_key = next((key for key, value in author_set.items() if value == selected_author), None)
     min_author_choice_year = get_min_year_of_author_publication(selected_key)
@@ -229,4 +217,5 @@ def update_line_plot(selected_author, selected_threshold, selected_length, selec
     return fig, hfp_table
 
 if __name__ == "__main__":
+    app.run_server(debug=True)
     app.run_server(debug=True)
