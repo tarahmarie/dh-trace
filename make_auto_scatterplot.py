@@ -69,7 +69,6 @@ def get_sample_size(number_predictions):
 
 def collect_info_from_db(author_set, text_set, weights_dict, author_pair):
     df = create_author_view(author_pair, weights_dict)
-    print(len(df))
 
     df['source_auth'].replace(author_set, inplace=True)
     df['target_auth'].replace(author_set, inplace=True)
