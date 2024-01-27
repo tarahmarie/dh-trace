@@ -12,3 +12,4 @@ __pycache__/*.pyc
 *.joblib
 dh-trace-venv/*
 .vscode
+jan24/*
