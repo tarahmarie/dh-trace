@@ -4,7 +4,6 @@ from itertools import combinations
 import pandas as pd
 import plotly.express as px
 from rich.console import Console
-from rich.status import Status
 from tqdm import tqdm
 
 from database_ops import (read_all_author_names_from_db,
@@ -103,7 +102,7 @@ def main():
     sample_size = get_sample_size(total_length_of_all_author_combos)
     
     frames = []
-    pbar = tqdm(desc=f'Fetching data...', total=len(ordered_author_combos), colour="#7FFFD4", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
+    pbar = tqdm(desc='Fetching data...', total=len(ordered_author_combos), colour="#7FFFD4", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for item in ordered_author_combos:
         frames.append(collect_info_from_db(author_set, text_set, weights_dict, item))
         pbar.update(1)

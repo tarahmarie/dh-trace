@@ -254,7 +254,7 @@ def create_author_view(author_pair, weights_dict):
     """
     params = [author_pair]
     the_predictions = pd.read_sql_query(query, disk_con, params=params)
-    the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'comp_score', 'same_author', 'threshold', 'weight_id']
+    the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'comp_score', 'same_author', 'threshold', 'weight_id', 'source_length', 'target_length']
     the_predictions['hap_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[0])
     the_predictions['al_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[1])
 
