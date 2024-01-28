@@ -3,20 +3,13 @@ import sqlite3
 
 import dash
 import pandas as pd
-import plotly.express as px
 from dash import dcc, html
 from dash.dependencies import Input, Output
-from rich.console import Console
-from rich.status import Status
-from tqdm import tqdm
 
 from database_ops import (read_all_author_names_from_db,
                           read_all_text_names_and_create_author_work_dict)
-from predict_ops import (get_author_and_texts_published_after_current,
-                         get_min_year_of_author_publication,
-                         read_all_thresholds)
+from predict_ops import get_min_year_of_author_publication, read_all_thresholds
 from util import get_project_name
-from utils.get_choices import get_choices_for_viz
 
 project_name = get_project_name()
 
@@ -209,4 +202,5 @@ def update_line_plot(selected_threshold, selected_length, selected_year, selecte
     return f"Threshold: {selected_threshold}", f"Min. Length: {selected_length}", f"Selected Year: {selected_year}", hfp_table
 
 if __name__ == "__main__":
+    app.run_server(debug=True)
     app.run_server(debug=True)
