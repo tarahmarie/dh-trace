@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output
 
 from database_ops import (read_all_author_names_from_db,
                           read_all_text_names_and_create_author_work_dict)
-from predict_ops import get_min_year_of_author_publication, read_all_thresholds
+from predict_ops import read_all_thresholds
 from util import get_project_name
 
 project_name = get_project_name()
@@ -78,20 +78,6 @@ def read_fp_scores_from_db(selected_threshold, selected_length, selected_year, d
                 i += 1
 
     return unique_top_fp_list
-
-def get_min_year_of_author_publication(id):
-    disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
-    disk_cur = disk_conn.cursor()
-    query = """SELECT
-        MIN(year)
-        FROM all_texts
-        WHERE all_texts.author_id = ?
-    """
-    disk_cur.execute(query, [id])
-    the_year = disk_cur.fetchone()
-    disk_cur.close()
-    disk_conn.close()
-    return the_year[0]
 
 authors_and_works_dict = read_all_text_names_and_create_author_work_dict()
 threshold_set = read_all_thresholds()
@@ -184,13 +170,6 @@ app.layout = html.Div([
 )
 
 def update_line_plot(selected_threshold, selected_length, selected_year, selected_direction, selected_limit):
-    disk_conn = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
-    disk_cur = disk_conn.cursor()
-
-    # Extract the min and max length values from the selected_length_range
-    min_length = selected_length
-    # Fetch data based on selected_author, selected_threshold, and length range
-    min_author_choice_year = selected_year
     #Small dictionary of direction symbols for printing, based on selected_direction
     directions = {"forward": ">", "backward": "<"}
 
@@ -202,5 +181,4 @@ def update_line_plot(selected_threshold, selected_length, selected_year, selecte
     return f"Threshold: {selected_threshold}", f"Min. Length: {selected_length}", f"Selected Year: {selected_year}", hfp_table
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
     app.run_server(debug=True)
