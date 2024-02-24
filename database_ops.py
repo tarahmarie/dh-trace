@@ -9,7 +9,7 @@ import sqlite3
 
 import pandas as pd
 
-from util import get_project_name
+from util import fix_the_author_name_from_aligns, get_project_name
 
 #Create the disk database (for backups) and a cursor to handle transactions.
 project_name = get_project_name()
@@ -204,7 +204,7 @@ def read_all_author_names_from_db():
     the_authors = disk_cur.fetchall()
     i = 1
     for author in the_authors:
-        temp_dict[author['id']] = author['author_name']
+        temp_dict[author['id']] = author[fix_the_author_name_from_aligns('author_name')]
         i += 1
     return temp_dict
 
