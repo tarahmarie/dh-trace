@@ -130,49 +130,49 @@ def insert_alignments_to_db(transactions):
     disk_con.commit()
 
 def insert_authors_to_db(id, author):
-    disk_cur.execute("INSERT OR IGNORE INTO authors VALUES (?, ?)", (id, author))
+    disk_cur.execute("INSERT INTO authors VALUES (?, ?)", (id, author))
     disk_con.commit()
 
 def insert_dirs_to_db(id, path):
-    disk_cur.execute("INSERT OR IGNORE INTO dirs VALUES (?, ?)", (id, path))
+    disk_cur.execute("INSERT INTO dirs VALUES (?, ?)", (id, path))
     disk_con.commit()
 
 def insert_texts_to_db(author_id, text_id, source_file, text, length, dir, year):
-    disk_cur.execute("INSERT OR IGNORE INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, length, dir, year))
+    disk_cur.execute("INSERT INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, length, dir, year))
     disk_con.commit()
 
 def insert_text_pairs_to_db(transactions):
-    insert_statement = "INSERT OR IGNORE INTO text_pairs VALUES (?, ?, ?)"
+    insert_statement = "INSERT INTO text_pairs VALUES (?, ?, ?)"
     disk_cur.executemany(insert_statement, transactions)
     disk_con.commit()
 
 def insert_ngrams_to_db(transactions):
-    insert_statement = "INSERT OR IGNORE INTO ngrams VALUES (?, ?, ?)"
+    insert_statement = "INSERT INTO ngrams VALUES (?, ?, ?)"
     disk_cur.executemany(insert_statement, transactions)
     disk_con.commit()
 
 def insert_ngram_overlaps_to_db(transactions):
-    insert_statement = "INSERT OR IGNORE INTO ngram_overlaps VALUES (?, ?, ?)"
+    insert_statement = "INSERT INTO ngram_overlaps VALUES (?, ?, ?)"
     disk_cur.executemany(insert_statement, transactions)
     disk_con.commit()
 
 def insert_hapaxes_to_db(transactions):
-    insert_statement = "INSERT OR IGNORE INTO hapaxes VALUES (?, ?, ?)"
+    insert_statement = "INSERT INTO hapaxes VALUES (?, ?, ?)"
     disk_cur.executemany(insert_statement, transactions)
     disk_con.commit()
 
 def insert_hapax_overlaps_to_db(transactions):
-    insert_statement = "INSERT OR IGNORE INTO hapax_overlaps VALUES (?, ?, ?)"
+    insert_statement = "INSERT INTO hapax_overlaps VALUES (?, ?, ?)"
     disk_cur.executemany(insert_statement, transactions)
     disk_con.commit()
 
 def insert_results_to_db(first_book, second_book, ngram_overlaps_count, hapax_overlap_count, num_alignments):
-    disk_cur.execute("INSERT OR IGNORE INTO results VALUES (?, ?, ?, ?, ?)", (first_book, second_book, ngram_overlaps_count, hapax_overlap_count, num_alignments))
+    disk_cur.execute("INSERT INTO results VALUES (?, ?, ?, ?, ?)", (first_book, second_book, ngram_overlaps_count, hapax_overlap_count, num_alignments))
     disk_con.commit()
 
 def insert_last_run_stats_to_db(aligns, files):
     #Zeroes are placeholders for the averages.
-    disk_cur.execute("INSERT OR IGNORE INTO last_run VALUES (?, ?, 0, 0, 0, 0, 0, 0, 0, 0, 0)", (aligns, files))
+    disk_cur.execute("INSERT INTO last_run VALUES (?, ?, 0, 0, 0, 0, 0, 0, 0, 0, 0)", (aligns, files))
     disk_con.commit()
 
 def insert_averages_to_db(total_comparisons, total_alignments_over_comps, total_rel_hapaxes, total_words, total_rel_ngrams, total_aligns_over_comps, total_rel_hapaxes_over_comps, total_rel_hapaxes_over_words, total_rel_ngrams_over_comps):
@@ -298,6 +298,24 @@ def read_all_dir_names_by_id_from_db():
     the_dirs = disk_cur.fetchall()
     for dir in the_dirs:
         temp_dict[dir['id']] = dir['dir']
+    return temp_dict
+
+def read_all_authors_and_their_novels_from_db():
+    temp_dict = {}
+    novel_statement = """
+        SELECT DISTINCT 
+            authors.author_name,
+            authors.id,
+            all_texts.dir,
+            dirs.dir AS novel 
+        FROM all_texts 
+        JOIN dirs ON all_texts.dir = dirs.id
+        JOIN authors ON authors.id = all_texts.author_id;
+    """
+    disk_cur.execute(novel_statement)
+    the_novels = disk_cur.fetchall()
+    for novel in the_novels:
+        temp_dict[novel['novel']] = [novel['author_name'], novel['id']]
     return temp_dict
 
 def read_ngrams_from_db(filename):
