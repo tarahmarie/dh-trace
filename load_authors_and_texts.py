@@ -85,7 +85,7 @@ while i <= file_count:
                 temp_text.id = unique_text_id
                 seen_texts.append(text)
 
-            insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.length, dirs[the_dir], temp_text.date) 
+            #insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.length, dirs[the_dir], temp_text.date) 
         i+=1
         pbar.update(1)
     pbar.close()

@@ -183,12 +183,15 @@ def insert_calculations(data):
     disk_cur.execute("COMMIT;")
 
 def insert_author_pair_counts(data):
-    insert_statement = "INSERT OR IGNORE INTO pair_counts VALUES(?,?);"
+    insert_statement = "INSERT INTO pair_counts VALUES(?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
 def insert_weights(data):
-    insert_statement = "INSERT OR IGNORE INTO weights VALUES(?,?,?);"
+    #Empty table before writing.
+    delete_statement = "DELETE FROM weights;"
+    disk_cur.execute(delete_statement)
+    insert_statement = "INSERT INTO weights VALUES(?,?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
@@ -286,6 +289,33 @@ def create_author_view_with_time(author_pair, weights_dict):
     the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'source_year', 'comp_score', 'same_author', 'threshold', 'weight_id', 'source_length', 'target_length']
     the_predictions['hap_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[0])
     the_predictions['al_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[1])
+
+    return the_predictions
+
+def create_author_view_for_network(source_author, threshold):
+    # For now, I'm asking for and using a threshold to avoid dupes.
+    # I hate this. You hate this. The world is an imperfect place, and we'll all soon be dust.
+    query = """
+        SELECT 
+        ocj.source_auth,
+        ocj.target_auth,
+        ocj.source_text,
+        ocj.target_text,
+        calc.comp_score,
+        calc.same_author,
+        calc.threshold,
+        calc.weight_id,
+        ocj.pair_id
+        FROM combined_jaccard AS ocj
+        JOIN calculations AS calc ON ocj.pair_id = calc.pair_id
+        
+        WHERE source_auth = ?
+        AND threshold = ?
+        AND same_author = 'False Positive'
+    """
+    params = [int(source_author), threshold]
+    the_predictions = pd.read_sql_query(query, disk_con, params=params)
+    the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'comp_score', 'same_author', 'threshold', 'weight_id', 'pair_id']
 
     return the_predictions
 

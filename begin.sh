@@ -132,7 +132,7 @@ do_the_work () {
     printf "\n"
 
     if [ -f "projects/$project_name/db/$project_name.db" ]; then
-        rm projects/"$project_name"/db/$project_name.db;
+        rm projects/"$project_name/db/$project_name.db";
     fi
     if [ -f "projects/$project_name/db/$project_name".db ]; then
         rm projects/"$project_name"/db/"$project_name".db;

@@ -83,7 +83,7 @@ def get_sample_from_concat_df(sample_size, df):
 
 def make_plot(df):
     #Reference: https://plotly.com/python/hover-text-and-formatting/
-    fig = px.scatter_3d(df, x='source_auth', y='source_year', z='threshold', color='same_author', hover_name="source_text", hover_data=['source_auth', 'target_auth', 'source_text', 'target_text', 'same_author', 'threshold', 'hap_weight', 'al_weight'])
+    fig = px.scatter_3d(df, x='source_year', y='comp_score', z='threshold', color='same_author', hover_name="source_text", hover_data=['source_auth', 'target_auth', 'source_text', 'target_text', 'same_author', 'threshold', 'hap_weight', 'al_weight'], height=900, width=1400)
 
     fig.show() #display visualization in browser
 
