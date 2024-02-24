@@ -183,12 +183,12 @@ def insert_calculations(data):
     disk_cur.execute("COMMIT;")
 
 def insert_author_pair_counts(data):
-    insert_statement = "INSERT OR IGNORE INTO pair_counts VALUES(?,?);"
+    insert_statement = "INSERT INTO pair_counts VALUES(?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
 def insert_weights(data):
-    insert_statement = "INSERT OR IGNORE INTO weights VALUES(?,?,?);"
+    insert_statement = "INSERT INTO weights VALUES(?,?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
