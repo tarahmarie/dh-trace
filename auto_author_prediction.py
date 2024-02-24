@@ -80,15 +80,15 @@ def get_values_to_permutate():
 
     upper_weight = 0.70
     step = 0.05
-    floor = 0.35
+    floor = 0.30
     
     #Set one of them super high, and walk the others up while gradually stepping down
     weight_a = round(upper_weight, 3)
-    weight_b = round((1.0 - weight_a) / 2, 3)
+    weight_b = round((1.0 - weight_a), 3)
     
     while weight_a >= floor:
         temp_set.append([weight_a, weight_b])
-        weight_b = round((1.0 - weight_a) / 2, 3)
+        weight_b = round((1.0 - weight_a), 3)
         weight_a = round(weight_a - step, 3)
     
     i = 0

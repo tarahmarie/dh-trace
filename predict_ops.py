@@ -188,6 +188,9 @@ def insert_author_pair_counts(data):
     disk_con.commit()
 
 def insert_weights(data):
+    #Empty table before writing.
+    delete_statement = "DELETE FROM weights;"
+    disk_cur.execute(delete_statement)
     insert_statement = "INSERT INTO weights VALUES(?,?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
