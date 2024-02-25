@@ -41,6 +41,7 @@ menu () {
     printf "\t4. Scatterplot\n"
     printf "\t5. Histogram\n"
     printf "\t6. Confusion Matrix\n"
+    printf "\t7. Heatmap\n"
     printf "\tQ. Quit\n"
     read -rp "> " viz_choice
 
@@ -59,6 +60,8 @@ menu () {
             python make_histogram.py ;;
         6)
             python make_confusion.py ;;
+        7) 
+            python make_heatmap.py ;;
         q|Q)
             exit 0 ;;
         *)
