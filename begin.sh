@@ -131,16 +131,19 @@ do_the_work () {
     printf "\n\n\tRemoving old dbs (if they exist) and loading data..."
     printf "\n"
 
-    if [ -f "projects/$project_name/db/$project_name.db" ]; then
-        rm projects/"$project_name/db/$project_name.db";
+    if [ -f "./projects/$project_name/db/$project_name.db" ]; then
+        rm "./projects/$project_name/db/$project_name.db";
     fi
-    if [ -f "projects/$project_name/db/$project_name".db ]; then
-        rm projects/"$project_name"/db/"$project_name".db;
+
+    if [ -f "./projects/$project_name/db/$project_name-predictions.db" ]; then
+        rm "./projects/$project_name/db/$project_name-predictions.db";
     fi
-    if [ -f "projects/$project_name/db/$project_name"-predictions.db ]; then
-        rm projects/"$project_name"/db/"$project_name"-predictions.db;
-    fi
-    
+
+    # Ensure db folder exists
+    if [ ! -d "./projects/$project_name/db" ]; then
+        mkdir -p "./projects/$project_name/db";
+    fi    
+
     python init_db.py;
     python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
     python load_alignments.py; 
