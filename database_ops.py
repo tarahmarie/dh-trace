@@ -33,7 +33,7 @@ disk_cur.execute("PRAGMA temp_store = MEMORY;")
 def create_db_and_tables():
     disk_cur.execute("CREATE TABLE IF NOT EXISTS alignments(`source_filename` INT, `target_filename` INT, `source_passage`, `target_passage`, `source_author` INT, `target_author` INT, `length_source_passage` INT DEFAULT 0, `length_target_passage` INT DEFAULT 0, `pair_id` INT DEFAULT 0 UNIQUE)")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT PRIMARY KEY, `author_name` TEXT)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT, `author_name` TEXT)")
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
 
