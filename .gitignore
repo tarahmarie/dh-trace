@@ -13,3 +13,4 @@ __pycache__/*.pyc
 dh-trace-venv/*
 .vscode
 jan24/*
+cytoscape-layouts/*
