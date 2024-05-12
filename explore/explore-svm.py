@@ -180,7 +180,7 @@ def browse_test_results():
     console.clear()
     chap_choice = 0
     while chap_choice not in range(1, number_of_chapters + 1):
-        chap_choice = int(input(f"There are {number_of_chapters} in {selected_work}. Which one would you like? "))
+        chap_choice = int(input(f"There are {number_of_chapters} chapters in {selected_work}. Which one would you like? "))
     
     file_for_query = f"-{selected_work}%chapter_{chap_choice}"
     # Get the column names from the table
