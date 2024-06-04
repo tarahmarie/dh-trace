@@ -338,7 +338,28 @@ def rebuild_the_thing():
     print("Now, testing the unseen texts...\n")
     unseen_test()
 
+### Ensure directory structure needed for this project
+def make_directories_if_needed_and_warn():
+    exit_when_complete = False
+    if not os.path.exists(f'./projects/{project_name}/db'):
+        os.makedirs(f'./projects/{project_name}/db')
+    if not os.path.exists(f'./projects/{project_name}/models'):
+        os.makedirs(f'./projects/{project_name}/models')
+    if not os.path.exists(f'./projects/{project_name}/splits_for_svm'):
+        os.makedirs(f'./projects/{project_name}/splits_for_svm')
+        exit_when_complete = True
+        print("\nI've just created the directory 'splits_for_svm'. Make sure it has training splits in it before running again!")
+    if not os.path.exists(f'./projects/{project_name}/testset'):
+        os.makedirs(f'./projects/{project_name}/testset')
+        exit_when_complete = True
+        print("\nI've just created the directory 'testset'. Make sure it has unseen/target texts for the model to use before running again!")
+    if(exit_when_complete):
+        exit()
+
 if __name__ == "__main__":
+    # Let's ensure the directories are in-place
+    make_directories_if_needed_and_warn()
+
     print("\nLoading raw files...\n")
     process_raw_files()
     authors, novels, chap_nums, chapters = build_lists()
