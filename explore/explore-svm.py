@@ -18,17 +18,14 @@ current_prepared_rows = ""
 
 #Project helpers
 def get_projects():
-    dir_list = os.listdir("../projects/")
-    processed_dir_list = []
-    for dir in dir_list:
-        if dir == '.DS_Store':
-            pass #Protect against Mac nonsense.
-        elif not os.path.exists(f"../projects/{dir}/db/{dir}.db"):
-            pass #Don't let me choose a project that hasn't been built yet.
-        else:
-            processed_dir_list.append(dir)
-
-    if len(processed_dir_list) == 0: #Make sure we ended up with some projects.
+    base_dir = "../projects/"
+    dir_list = os.listdir(base_dir)
+    processed_dir_list = [
+        dir for dir in dir_list 
+        if os.path.exists(os.path.join(base_dir, dir, "db", f"{dir}.db"))
+    ]
+    
+    if len(processed_dir_list) == 0:  # Make sure we ended up with some projects.
         print("\nSorry, you'll need to make some projects first.\n")
         quit()
     else:
