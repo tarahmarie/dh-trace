@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.svm import SVC
 from tqdm import tqdm
 
@@ -207,15 +208,11 @@ def assess_authorship_likelihood():
 
 def unseen_test():
     global svm
-    #TODO: Create an actual unseen set.
-    # Allow diagnostics by using the training texts as the unseen texts.abs
+
     sanity_check = False
     do_sanity_check = input("\nWould you like to re-use the training set for testing? (y/n) ")
-    match do_sanity_check:
-        case 'y' | 'Y':
-            sanity_check = True
-        case 'n' | 'N':
-            sanity_check = False
+    if do_sanity_check.lower() == 'y':
+        sanity_check = True
 
     # Prepare previously unseen chapters
     if sanity_check:
@@ -223,13 +220,13 @@ def unseen_test():
     else:
         unseen_files = getListOfFiles(f'./projects/{project_name}/testset')
     unseen_chapters = []
-    
+
     for file_path in unseen_files:
         with open(file_path, 'r') as file:
             body = file.read()
             text = preprocess_text(body)
             unseen_chapters.append(text)
-    
+
     if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
         svm = load(f'./projects/{project_name}/models/seen.joblib')
     else:
@@ -238,18 +235,14 @@ def unseen_test():
         # Train the SVM classifier
         svm.fit(X_train, y_train)
 
-    # Extract features from the seen chapters
-    seen_features = vectorizer.transform(chapters)
-    # Predict authors for unseen chapters
-    seen_predictions = svm.predict(seen_features)
-    confidence_scores = svm.decision_function(seen_features)
-
     # Extract features from the unseen chapters
     unseen_features = vectorizer.transform(unseen_chapters)
-
-    # Predict authors for unseen chapters
     unseen_predictions = svm.predict(unseen_features)
     confidence_scores = svm.decision_function(unseen_features)
+
+    # Normalize confidence scores to [0, 1] range
+    scaler = MinMaxScaler()
+    confidence_scores = scaler.fit_transform(confidence_scores)
 
     # Compute basic statistics of confidence scores
     min_score = np.min(confidence_scores)
@@ -261,22 +254,24 @@ def unseen_test():
     print("Range of scores:", min_score, "to", max_score)
     print("Mean score:", mean_score)
     print("Standard deviation of scores:", std_score)
-
     print("\n")
 
     test_transactions = []
     pbar = tqdm(desc='Computing Scores for Unseen: ', total=(len(unseen_chapters)), colour="#ff6666", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
-    for file_path, prediction, confidence in zip(unseen_files, unseen_predictions, confidence_scores):
+    
+    for file_path, prediction, conf_scores in zip(unseen_files, unseen_predictions, confidence_scores):
         better_filename = file_path.split('/')[5]
         test_transaction = (better_filename,)
 
-        for author, score in zip(svm.classes_, confidence):
+        for author, score in zip(svm.classes_, conf_scores):
             test_transaction = test_transaction + (score,)
-        
-        test_transactions.append((test_transaction))
+
+        test_transactions.append(test_transaction)
         pbar.update(1)
+    
     pbar.close()
     insert_test_set_data(test_transactions)
+
    
 def generate_prediction_data():
     global svm
