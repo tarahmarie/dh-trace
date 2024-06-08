@@ -85,10 +85,13 @@ def get_all_training_author_names():
     for author in the_authors:
         training_authors[author[0]] = None
 
-def get_training_author_info(author):
+def get_training_author_info(author, random_mode):
     console.clear()
     author, limit, message = get_sample_of_working_table("predictions", author)
-    disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, limit])
+    if random_mode:
+        disk_cur.execute(f"SELECT * FROM predictions WHERE author1 = ? ORDER BY RANDOM() LIMIT ?;", [author, limit])
+    else:
+        disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, limit])
     the_results = disk_cur.fetchall()
     table = Table(title="", style="purple", title_style="bold white", show_lines=True, show_footer=True, header_style="bold magenta", footer_style="bold turquoise2")  # Create a new table
 
@@ -103,10 +106,13 @@ def get_training_author_info(author):
     console.print(table)
     console.print(message)
 
-def get_training_author_info_not_same_author(author):
+def get_training_author_info_not_same_author(author, random_mode):
     console.clear()
     author, limit, message = get_sample_of_working_table("predictions", author)
-    disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, author, limit])
+    if random_mode:
+        disk_cur.execute(f"SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY RANDOM() LIMIT ?;", [author, author, limit])
+    else:
+        disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, author, limit])
     the_results = disk_cur.fetchall()
     table = Table(title="", style="purple", title_style="bold white", show_lines=True, show_footer=True, header_style="bold magenta", footer_style="bold turquoise2")  # Create a new table
 
@@ -142,13 +148,22 @@ def browse_training_by_author():
     author_choice = int(input("Which author would you like to explore? "))
     if author_choice in valid_choices:
         key = table_keys[author_choice - 1]
+
+        use_random = input("Would you like a random sampling (y/n)? ")
+        random_mode = False
+
+        match use_random:
+            case 'y' | 'Y':
+                random_mode = True
+            case 'n' | 'N':
+                random_mode = False
     
         filter_choice = input("Would you like to filter matches on the same author (y/n)? ")
         match filter_choice:
             case 'y' | 'Y':
-                get_training_author_info_not_same_author(key)
+                get_training_author_info_not_same_author(key, random_mode)
             case 'n' | 'N':
-                get_training_author_info(key)
+                get_training_author_info(key, random_mode)
     else:
         browse_training_by_author()
 
