@@ -1,3 +1,4 @@
+import csv
 import os
 import sqlite3
 
@@ -106,6 +107,8 @@ def get_training_author_info(author, random_mode):
     console.print(table)
     console.print(message)
 
+    choose_save_or_exit(the_results[0], the_results)
+
 def get_training_author_info_not_same_author(author, random_mode):
     console.clear()
     author, limit, message = get_sample_of_working_table("predictions", author)
@@ -126,6 +129,8 @@ def get_training_author_info_not_same_author(author, random_mode):
     
     console.print(table)
     console.print(message)
+
+    choose_save_or_exit(the_results[0], the_results)
 
 def get_all_column_names_from_table(table_name):
     disk_cur.execute(f"PRAGMA table_info({table_name})")
@@ -322,6 +327,41 @@ def get_choice_for_exploring():
             browse_test_results()
         case default:
             get_choice_for_exploring()
+
+def choose_save_or_exit(headers, results):
+    print("\n")
+    save_or_exit = input("Would you like to (s)ave to CSV or (e)xit? ")
+
+    match save_or_exit:
+        case 's' | 'S':
+            save_current_results_to_csv(headers, results)
+        case 'e' | 'E':
+            exit()
+
+def save_current_results_to_csv(headers, results):
+    savefile_name = ""
+    confirm_save = ""
+    results_dir = f"../projects/{project_name}/results/"
+
+    # Ensure the results directory exists
+    os.makedirs(results_dir, exist_ok=True)
+
+    while savefile_name == "":
+        savefile_name = input("What should I call the file? (a .csv extension will be auto-added) ")
+    
+    if os.path.exists(f"../projects/{project_name}/results/{savefile_name}.csv"):
+        while confirm_save.lower() not in ["y", "n"]:
+            confirm_save = input("File exists. Overwrite? (y/n) ")
+    
+    if confirm_save.lower() == "y" or confirm_save == "":
+        with open(os.path.join(results_dir, f"{savefile_name}.csv"), "w", newline='') as the_csv_file:
+            writer = csv.writer(the_csv_file)
+
+            # Convert headers (sqlite3.Row object) to a list or tuple and write them
+            writer.writerow([col for col in headers.keys()])
+
+            # Convert sqlite3.Row objects to tuples and write the body
+            writer.writerows([tuple(row) for row in results])
 
 
 #Kickoff
