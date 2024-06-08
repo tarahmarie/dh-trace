@@ -15,3 +15,4 @@ dh-trace-venv/*
 jan24/*
 cytoscape-layouts/*
 py4cytoscape.log
+**/*.csv
