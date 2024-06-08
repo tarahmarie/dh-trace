@@ -207,10 +207,21 @@ def assess_authorship_likelihood():
 
 def unseen_test():
     global svm
-    # Prepare previously unseen chapters
     #TODO: Create an actual unseen set.
+    # Allow diagnostics by using the training texts as the unseen texts.abs
+    sanity_check = False
+    do_sanity_check = input("\nWould you like to re-use the training set for testing? (y/n) ")
+    match do_sanity_check:
+        case 'y' | 'Y':
+            sanity_check = True
+        case 'n' | 'N':
+            sanity_check = False
+
     # Prepare previously unseen chapters
-    unseen_files = getListOfFiles(f'./projects/{project_name}/testset')
+    if sanity_check:
+        unseen_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
+    else:
+        unseen_files = getListOfFiles(f'./projects/{project_name}/testset')
     unseen_chapters = []
     
     for file_path in unseen_files:
