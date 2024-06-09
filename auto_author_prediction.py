@@ -4,15 +4,19 @@
 # loaded in the correct order; year of publication is not taken into account.
 # This probably needs to change so no inadvertent errors are introduced.
 
+import re
+import unicodedata
 from itertools import permutations
 
 from tqdm import tqdm
 
-from database_ops import read_all_combined_jaccard_from_db
+from database_ops import (read_all_combined_jaccard_from_db,
+                          read_all_text_ids_and_chapter_nums_from_db,
+                          read_author_names_by_id_from_db)
 from predict_ops import (assess_auto_author_accuracy, close_db_connection,
                          create_custom_author_view, insert_author_pair_counts,
                          insert_calculations, insert_confusion_scores,
-                         insert_weights, optimize,
+                         insert_weights, load_chapter_assessments, optimize,
                          setup_auto_author_accuracy_table,
                          setup_auto_author_prediction_tables,
                          setup_auto_indices, setup_text_stats_table,
@@ -26,31 +30,51 @@ Spoiler: With ngrams and aligns evenly weighted, no permutation of the tarah db 
 author_pair_count_transactions = {}
 outcome_counts = {"y": 0, "n": 0, "fp": 0, "fn": 0}
 
+def split_string(s):
+    # NOTE: This is kinda hacky, but necessary for now because the SVM labels and our author names aren't 1:1.
+    s_normalized = unicodedata.normalize('NFKD', s)
+    # Use regular expression to split the normalized string
+    result = re.split(r'[^a-zA-Z]+', s_normalized)
+    return result[0]
+
 def get_temp_copy_for_processing():
+    print("\nLoading chapter assessments from SVM...\n")
+    # Load the chapter assessments into memory
+    chapter_assessments_df = load_chapter_assessments()
+    text_and_chapter_dict = read_all_text_ids_and_chapter_nums_from_db()
+    author_id_dict = read_author_names_by_id_from_db()
+
     temp_list = []
     copy_of_combined_jaccard = read_all_combined_jaccard_from_db()
     current_item = 0
+
     for item in copy_of_combined_jaccard:
+        svm_result = chapter_assessments_df.loc[
+            (chapter_assessments_df['novel'] == text_and_chapter_dict[item[5]][1]) & (chapter_assessments_df['number'] == text_and_chapter_dict[item[5]][0]),split_string(author_id_dict[item[0]])
+        ]
+
         #Reference
         #0: source_auth, 1: source_year, 2: source_text, 3: target_auth, 4: target_year, 5: target_text
         #6: hap_jac_sim, 7: hap_jac_dis, 8: pair_id, 9: source_length, 10: target_length
         # 11: ng_jac_sim, 12: ng_jac_dis, 13: al_jac_sim, 14: al_jac_dis
         #NOTE: I am selecting only the ones I need for do_math(). Change these if your needs change.
-        temp_list.append((item[0], item[3], item[7], item[8], item[14]))
+        temp_list.append((item[0], item[3], item[7], item[8], item[14], svm_result.values[0]))
         current_item += 1
     del(copy_of_combined_jaccard) #Flush it to free memory.
     return temp_list
 
 temp_db_copy = get_temp_copy_for_processing()
 
-def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac_dis, align_weight, threshold):
+def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac_dis, align_weight, svm_result, svm_weight, threshold):
     hap_score = 0.0
     al_score = 0.0
+    svm_score = 0.0
     outcome = "No" #Base case.
     
     hap_score = round((hap_jac_dis * hapax_weight), 8) 
     al_score = round((al_jac_dis * align_weight), 8)
-    comp_score = sum([hap_score, al_score])
+    svm_score = round((svm_result * svm_weight), 8)
+    comp_score = sum([hap_score, al_score, svm_score])
     
 # Here's the key generation of the four possible values in comparing one author to another.
 # Either the text-relationship is the same author, or it's not. The computer says the 
@@ -84,16 +108,18 @@ def get_values_to_permutate():
     
     #Set one of them super high, and walk the others up while gradually stepping down
     weight_a = round(upper_weight, 3)
-    weight_b = round((1.0 - weight_a), 3)
+    weight_b = round(((1.0 - weight_a) / 2), 3)
+    weight_c = round(((1.0 - weight_a) / 2), 3)
     
     while weight_a >= floor:
-        temp_set.append([weight_a, weight_b])
-        weight_b = round((1.0 - weight_a), 3)
+        temp_set.append([weight_a, weight_b, weight_c])
         weight_a = round(weight_a - step, 3)
-    
+        weight_b = round(((1.0 - weight_a) / 2), 3)
+        weight_c = round(((1.0 - weight_a) / 2), 3)
+
     i = 0
     for item in temp_set:
-        for entry in set(permutations(item, 2)):
+        for entry in set(permutations(item, 3)):
             completed_set[i] = entry
             i+=1
 
@@ -117,6 +143,7 @@ def do_math(threshold, pretty_threshold):
             hap_jac_dis = item[2]
             pair_id = item[3]
             al_jac_dis = item[4]
+            svm_result = item[5]
             author_pair = create_author_pair_for_lookups(source_auth, target_auth)
             
             if author_pair not in author_pair_count_transactions.keys():
@@ -127,8 +154,9 @@ def do_math(threshold, pretty_threshold):
             for key, thing in values_to_permutate.items():
                 hap_weight = thing[0]
                 al_weight = thing[1]
+                svm_weight = thing[2]
                 
-                comp_score, outcome = calculate_scores(source_auth, target_auth, hap_jac_dis, hap_weight, al_jac_dis, al_weight, threshold)
+                comp_score, outcome = calculate_scores(source_auth, target_auth, hap_jac_dis, hap_weight, al_jac_dis, al_weight, svm_result, svm_weight, threshold)
                 
                 match outcome:
                     case "Yes":
@@ -189,11 +217,11 @@ def calculate_accuracy(data, pretty_threshold):
     pbar.close()
 
 def main():
-    threshold = 0.90 #90% confidence is pretty high, TBH
+    threshold = 0.95 #95% confidence is pretty high, TBH
     pretty_threshold = int(threshold * 100)
     step = 0.05 #We'll step down to 0.5 in 5% increments
     pretty_step = int(step * 100)
-    floor = 0.50 #Stop computing when the threshold drops below this.
+    floor = 0.60 #Stop computing when the threshold drops below this.
     pretty_floor = int(floor * 100)
 
     setup_auto_author_prediction_tables()

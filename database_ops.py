@@ -35,7 +35,7 @@ def create_db_and_tables():
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT, `author_name` TEXT)")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `chapter_num`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS dirs(`id` INT, `dir` TEXT)")
 
@@ -137,8 +137,8 @@ def insert_dirs_to_db(id, path):
     disk_cur.execute("INSERT INTO dirs VALUES (?, ?)", (id, path))
     disk_con.commit()
 
-def insert_texts_to_db(author_id, text_id, source_file, text, length, dir, year):
-    disk_cur.execute("INSERT INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, length, dir, year))
+def insert_texts_to_db(author_id, text_id, source_file, text, chapter_num, length, dir, year):
+    disk_cur.execute("INSERT INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, chapter_num, length, dir, year))
     disk_con.commit()
 
 def insert_text_pairs_to_db(transactions):
@@ -222,6 +222,22 @@ def read_author_names_by_id_from_db():
     the_authors = disk_cur.fetchall()
     for author in the_authors:
         temp_dict[author['id']] = author['author_name']
+    return temp_dict
+
+def read_all_text_ids_and_chapter_nums_from_db():
+    temp_dict = {}
+    disk_cur.execute("SELECT text_id, chapter_num, source_filename FROM all_texts;")
+    the_results = disk_cur.fetchall()
+    for result in the_results:
+        text_name = result['source_filename']
+        # Find the index of the first '-' character
+        start_index = text_name.find('-') + 1
+        # Find the index of the '—' character
+        end_index = text_name.find('—')
+        # Extract the substring between the '-' and '—' characters
+        extracted_novel_name = text_name[start_index:end_index]
+
+        temp_dict[result['text_id']] = [result['chapter_num'], extracted_novel_name]
     return temp_dict
 
 def read_all_alignments_from_db():

@@ -115,7 +115,8 @@ def setup_auto_author_prediction_tables():
         CREATE TABLE IF NOT EXISTS weights(
         `weight_id` INT UNIQUE,
         `hap_weight` REAL,
-        `al_weight` REAL
+        `al_weight` REAL,
+        `svm_weight` REAL
         );
     """
 
@@ -191,7 +192,7 @@ def insert_weights(data):
     #Empty table before writing.
     delete_statement = "DELETE FROM weights;"
     disk_cur.execute(delete_statement)
-    insert_statement = "INSERT INTO weights VALUES(?,?,?);"
+    insert_statement = "INSERT INTO weights VALUES(?,?,?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
@@ -430,6 +431,24 @@ def get_min_year_of_author_publication(id):
     disk_cur.execute(query, [id])
     the_year = disk_cur.fetchone()
     return the_year[0]
+
+# Stuff for working with the SVM db
+def load_chapter_assessments():
+    try:
+        # Connect to the SQLite database
+        conn = sqlite3.connect(f'./projects/{project_name}/db/svm.db')
+        
+        # Load the chapter_assessments table into a pandas DataFrame
+        query = "SELECT * FROM chapter_assessments"
+        chapter_assessments_df = pd.read_sql_query(query, conn)
+        
+        # Close the connection
+        conn.close()
+        
+        return chapter_assessments_df
+    except Exception as e:
+        print(f"An error occurred while loading chapter assessments: {str(e)}")
+        return None
 
 def close_db_connection():
     """Close the SQLite database connection."""
