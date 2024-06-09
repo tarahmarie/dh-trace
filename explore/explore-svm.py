@@ -1,3 +1,4 @@
+import csv
 import os
 import sqlite3
 
@@ -18,17 +19,14 @@ current_prepared_rows = ""
 
 #Project helpers
 def get_projects():
-    dir_list = os.listdir("../projects/")
-    processed_dir_list = []
-    for dir in dir_list:
-        if dir == '.DS_Store':
-            pass #Protect against Mac nonsense.
-        elif not os.path.exists(f"../projects/{dir}/db/{dir}.db"):
-            pass #Don't let me choose a project that hasn't been built yet.
-        else:
-            processed_dir_list.append(dir)
-
-    if len(processed_dir_list) == 0: #Make sure we ended up with some projects.
+    base_dir = "../projects/"
+    dir_list = os.listdir(base_dir)
+    processed_dir_list = [
+        dir for dir in dir_list 
+        if os.path.exists(os.path.join(base_dir, dir, "db", f"{dir}.db"))
+    ]
+    
+    if len(processed_dir_list) == 0:  # Make sure we ended up with some projects.
         print("\nSorry, you'll need to make some projects first.\n")
         quit()
     else:
@@ -88,10 +86,13 @@ def get_all_training_author_names():
     for author in the_authors:
         training_authors[author[0]] = None
 
-def get_training_author_info(author):
+def get_training_author_info(author, random_mode):
     console.clear()
     author, limit, message = get_sample_of_working_table("predictions", author)
-    disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, limit])
+    if random_mode:
+        disk_cur.execute(f"SELECT * FROM predictions WHERE author1 = ? ORDER BY RANDOM() LIMIT ?;", [author, limit])
+    else:
+        disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, limit])
     the_results = disk_cur.fetchall()
     table = Table(title="", style="purple", title_style="bold white", show_lines=True, show_footer=True, header_style="bold magenta", footer_style="bold turquoise2")  # Create a new table
 
@@ -106,10 +107,15 @@ def get_training_author_info(author):
     console.print(table)
     console.print(message)
 
-def get_training_author_info_not_same_author(author):
+    choose_save_or_exit(the_results[0], the_results)
+
+def get_training_author_info_not_same_author(author, random_mode):
     console.clear()
     author, limit, message = get_sample_of_working_table("predictions", author)
-    disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, author, limit])
+    if random_mode:
+        disk_cur.execute(f"SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY RANDOM() LIMIT ?;", [author, author, limit])
+    else:
+        disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, author, limit])
     the_results = disk_cur.fetchall()
     table = Table(title="", style="purple", title_style="bold white", show_lines=True, show_footer=True, header_style="bold magenta", footer_style="bold turquoise2")  # Create a new table
 
@@ -123,6 +129,8 @@ def get_training_author_info_not_same_author(author):
     
     console.print(table)
     console.print(message)
+
+    choose_save_or_exit(the_results[0], the_results)
 
 def get_all_column_names_from_table(table_name):
     disk_cur.execute(f"PRAGMA table_info({table_name})")
@@ -145,13 +153,22 @@ def browse_training_by_author():
     author_choice = int(input("Which author would you like to explore? "))
     if author_choice in valid_choices:
         key = table_keys[author_choice - 1]
+
+        use_random = input("Would you like a random sampling (y/n)? ")
+        random_mode = False
+
+        match use_random:
+            case 'y' | 'Y':
+                random_mode = True
+            case 'n' | 'N':
+                random_mode = False
     
         filter_choice = input("Would you like to filter matches on the same author (y/n)? ")
         match filter_choice:
             case 'y' | 'Y':
-                get_training_author_info_not_same_author(key)
+                get_training_author_info_not_same_author(key, random_mode)
             case 'n' | 'N':
-                get_training_author_info(key)
+                get_training_author_info(key, random_mode)
     else:
         browse_training_by_author()
 
@@ -310,6 +327,41 @@ def get_choice_for_exploring():
             browse_test_results()
         case default:
             get_choice_for_exploring()
+
+def choose_save_or_exit(headers, results):
+    print("\n")
+    save_or_exit = input("Would you like to (s)ave to CSV or (e)xit? ")
+
+    match save_or_exit:
+        case 's' | 'S':
+            save_current_results_to_csv(headers, results)
+        case 'e' | 'E':
+            exit()
+
+def save_current_results_to_csv(headers, results):
+    savefile_name = ""
+    confirm_save = ""
+    results_dir = f"../projects/{project_name}/results/"
+
+    # Ensure the results directory exists
+    os.makedirs(results_dir, exist_ok=True)
+
+    while savefile_name == "":
+        savefile_name = input("What should I call the file? (a .csv extension will be auto-added) ")
+    
+    if os.path.exists(f"../projects/{project_name}/results/{savefile_name}.csv"):
+        while confirm_save.lower() not in ["y", "n"]:
+            confirm_save = input("File exists. Overwrite? (y/n) ")
+    
+    if confirm_save.lower() == "y" or confirm_save == "":
+        with open(os.path.join(results_dir, f"{savefile_name}.csv"), "w", newline='') as the_csv_file:
+            writer = csv.writer(the_csv_file)
+
+            # Convert headers (sqlite3.Row object) to a list or tuple and write them
+            writer.writerow([col for col in headers.keys()])
+
+            # Convert sqlite3.Row objects to tuples and write the body
+            writer.writerows([tuple(row) for row in results])
 
 
 #Kickoff

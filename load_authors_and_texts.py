@@ -25,6 +25,7 @@ class Text:
     id: int = field(default=0)
     content: str = field(default="")
     date: int = field(default=0000)
+    chapter_num: int = field(default=0)
     length: int = field(default=0000)
 
 print("\n")
@@ -78,6 +79,7 @@ while i <= file_count:
             #If I don't, I can't use the all_texts data with the alignments data.
             
             stripped_name_of_text = fix_alignment_file_names(name_of_text.split('.')[0].strip())
+            temp_text.chapter_num = stripped_name_of_text.split('chapter_')[1]
 
             if text not in seen_texts:
                 unique_text_id += 1
@@ -85,7 +87,7 @@ while i <= file_count:
                 temp_text.id = unique_text_id
                 seen_texts.append(text)
 
-            insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.length, dirs[the_dir], temp_text.date) 
+            insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.chapter_num, temp_text.length, dirs[the_dir], temp_text.date) 
         i+=1
         pbar.update(1)
     pbar.close()

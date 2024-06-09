@@ -163,7 +163,9 @@ do_more_work () {
 
     case $choice in 
         y|Y)
-            printf "\nOk, hold on while I load data... this could take a few minutes.\n"
+            printf "\nOk, we're going to start with SVM, so we can use it in our bespoke model...\n"
+            python do_svm.py;
+            printf "\nOk, now hold on while I load data... this could take a few minutes.\n"
             python auto_author_prediction.py;
             printf "\nDone. If you want to see some graphs, use do_viz.sh.\n"
             ;;

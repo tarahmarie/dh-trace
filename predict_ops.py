@@ -1,4 +1,5 @@
 import sqlite3
+import warnings
 
 import pandas as pd
 
@@ -115,7 +116,8 @@ def setup_auto_author_prediction_tables():
         CREATE TABLE IF NOT EXISTS weights(
         `weight_id` INT UNIQUE,
         `hap_weight` REAL,
-        `al_weight` REAL
+        `al_weight` REAL,
+        `svm_weight` REAL
         );
     """
 
@@ -191,7 +193,7 @@ def insert_weights(data):
     #Empty table before writing.
     delete_statement = "DELETE FROM weights;"
     disk_cur.execute(delete_statement)
-    insert_statement = "INSERT INTO weights VALUES(?,?,?);"
+    insert_statement = "INSERT INTO weights VALUES(?,?,?,?);"
     disk_cur.executemany(insert_statement, data)
     disk_con.commit()
 
@@ -213,14 +215,15 @@ def get_all_weights():
         SELECT
         weight_id,
         hap_weight,
-        al_weight
+        al_weight,
+        svm_weight
         FROM weights
     """
     temp_dict = {}
     disk_cur.execute(weights_query)
     result = disk_cur.fetchall()
     for item in result:
-        temp_dict[item[0]] = item[1], item[2]
+        temp_dict[item[0]] = item[1], item[2], item[3]
     
     return temp_dict
 
@@ -236,6 +239,10 @@ def get_confusion_scores():
     return temp_dict
 
 def create_author_view(author_pair, weights_dict):
+    # TODO: Refactor this to properly correct the warning.
+    # Filter out the specific FutureWarning
+    warnings.filterwarnings("ignore", message="A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.*")
+
     query = """
         SELECT 
         ocj.source_auth,
@@ -260,6 +267,7 @@ def create_author_view(author_pair, weights_dict):
     the_predictions.columns = ['source_auth', 'target_auth', 'source_text', 'target_text', 'comp_score', 'same_author', 'threshold', 'weight_id', 'source_length', 'target_length']
     the_predictions['hap_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[0])
     the_predictions['al_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[1])
+    the_predictions['svm_weight'] = the_predictions['weight_id'].map(lambda x: weights_dict.get(x, ())[2])
 
     return the_predictions
 
@@ -430,6 +438,24 @@ def get_min_year_of_author_publication(id):
     disk_cur.execute(query, [id])
     the_year = disk_cur.fetchone()
     return the_year[0]
+
+# Stuff for working with the SVM db
+def load_chapter_assessments():
+    try:
+        # Connect to the SQLite database
+        conn = sqlite3.connect(f'./projects/{project_name}/db/svm.db')
+        
+        # Load the chapter_assessments table into a pandas DataFrame
+        query = "SELECT * FROM chapter_assessments"
+        chapter_assessments_df = pd.read_sql_query(query, conn)
+        
+        # Close the connection
+        conn.close()
+        
+        return chapter_assessments_df
+    except Exception as e:
+        print(f"An error occurred while loading chapter assessments: {str(e)}")
+        return None
 
 def close_db_connection():
     """Close the SQLite database connection."""
