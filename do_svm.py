@@ -2,9 +2,9 @@ import itertools
 import os
 import re
 import sqlite3
+import unicodedata
 
 import numpy as np
-from joblib import dump, load
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
@@ -80,7 +80,7 @@ def update_the_chapters_table(column_names):
 
 ### Utility Functions
 def process_raw_files():
-    all_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
+    all_files = getListOfFiles(f'./projects/{project_name}/splits')
     for i, file in enumerate(all_files):
         with open(file, 'r') as f:
             body = f.read()
@@ -115,29 +115,15 @@ def prepare_labels():
         chapter_labels.append(author_name)
 
 def preprocess_text(text):
-    #Strip TEI
     text = remove_tei_lines_from_text(text)
-
-    # Convert text to lowercase
     text = text.lower()
-
-    # Remove special characters and punctuation
-    text = re.sub(r"[^a-zA-Z0-9\s]", "", text)
-
-    # Tokenize the text into individual words
+    text = re.sub(r"[^a-zA-Z0-9\s\u00C0-\u00FF]", "", text)
     tokens = word_tokenize(text)
-
-    # Remove stopwords
     stop_words = set(stopwords.words("english"))
     tokens = [token for token in tokens if token not in stop_words]
-
-    # Lemmatize the words
     lemmatizer = WordNetLemmatizer()
     tokens = [lemmatizer.lemmatize(token) for token in tokens]
-
-    # Join the tokens back into a single string
     processed_text = " ".join(tokens)
-
     return processed_text
 
 def prepare_chapter_data(column_names, outcomes_dict):
@@ -179,12 +165,9 @@ def assess_authorship_likelihood():
     outcomes_dict = {}
     column_names = []  # Move the column_names list creation here
 
-    if os.path.exists(f'./projects/{project_name}/models/authors.joblib'):
-        svm = load(f'./projects/{project_name}/models/authors.joblib')
-    else:
-        # Split the dataset into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
-        svm.fit(X_train, y_train)
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
+    svm.fit(X_train, y_train)
 
     pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#FB3FA8", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for author, novel, chapter, chap_num in zip(authors, novels, chapters, chap_nums):
@@ -206,7 +189,6 @@ def assess_authorship_likelihood():
         pbar.update(1)
     pbar.close()
 
-    dump(svm, f'./projects/{project_name}/models/authors.joblib')
     return outcomes_dict, column_names  # Return column_names from the function
 
 
@@ -220,7 +202,7 @@ def unseen_test():
 
     # Prepare previously unseen chapters
     if sanity_check:
-        unseen_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
+        unseen_files = getListOfFiles(f'./projects/{project_name}/splits')
     else:
         unseen_files = getListOfFiles(f'./projects/{project_name}/testset')
     unseen_chapters = []
@@ -231,13 +213,10 @@ def unseen_test():
             text = preprocess_text(body)
             unseen_chapters.append(text)
 
-    if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
-        svm = load(f'./projects/{project_name}/models/seen.joblib')
-    else:
-        # Split the dataset into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
-        # Train the SVM classifier
-        svm.fit(X_train, y_train)
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    # Train the SVM classifier
+    svm.fit(X_train, y_train)
 
     # Extract features from the unseen chapters
     unseen_features = vectorizer.transform(unseen_chapters)
@@ -283,15 +262,10 @@ def generate_prediction_data():
     # Extract features from the unseen chapters
     seen_features = vectorizer.transform(chapters)
 
-    # Did we already make the model?  Load it.
-    if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
-        svm = load(f'./projects/{project_name}/models/seen.joblib')
-    else:
-        # Split the dataset into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
-
-        # Train the SVM classifier
-        svm.fit(X_train, y_train) #type: ignore
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    # Train the SVM classifier
+    svm.fit(X_train, y_train) #type: ignore
 
     # Predict authors for unseen chapters
     seen_predictions = svm.predict(seen_features) #type: ignore
@@ -347,22 +321,12 @@ def rebuild_the_thing():
     prepare_chapter_data(column_names, outcomes_dict)
     generate_prediction_data()
 
-    print("\nSaving the model for next time...\n")
-    dump(svm, f'./projects/{project_name}/models/seen.joblib')
     print("Now, testing the unseen texts...\n")
     unseen_test()
 
 ### Ensure directory structure needed for this project
 def make_directories_if_needed_and_warn():
     exit_when_complete = False
-    if not os.path.exists(f'./projects/{project_name}/db'):
-        os.makedirs(f'./projects/{project_name}/db')
-    if not os.path.exists(f'./projects/{project_name}/models'):
-        os.makedirs(f'./projects/{project_name}/models')
-    if not os.path.exists(f'./projects/{project_name}/splits_for_svm'):
-        os.makedirs(f'./projects/{project_name}/splits_for_svm')
-        exit_when_complete = True
-        print("\nI've just created the directory 'splits_for_svm'. Make sure it has training splits in it before running again!")
     if not os.path.exists(f'./projects/{project_name}/testset'):
         os.makedirs(f'./projects/{project_name}/testset')
         exit_when_complete = True
