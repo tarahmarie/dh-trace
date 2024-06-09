@@ -192,6 +192,10 @@ def assess_authorship_likelihood():
         vectorized_text = vectorizer.transform([chapter])
         likelihood_scores = svm.decision_function(vectorized_text)[0]  # Access the scores as a 1D array
 
+        # Normalize likelihood scores to [0, 1] range
+        scaler = MinMaxScaler()
+        likelihood_scores = scaler.fit_transform(likelihood_scores.reshape(-1, 1)).flatten()
+
         # Store the outcome in the dictionary
         outcome = {author: score for author, score in zip(svm.classes_, likelihood_scores)}
         outcomes_dict[f"{novel}-{chap_num}"] = outcome
@@ -292,6 +296,10 @@ def generate_prediction_data():
     # Predict authors for unseen chapters
     seen_predictions = svm.predict(seen_features) #type: ignore
     confidence_scores = svm.decision_function(seen_features) #type: ignore
+
+    # Normalize confidence scores to [0, 1] range
+    scaler = MinMaxScaler()
+    confidence_scores = scaler.fit_transform(confidence_scores)
 
     # Calculate total_iterations directly
     total_iterations = len(raw_data) * (len(raw_data) - 1) // 2
