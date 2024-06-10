@@ -75,13 +75,17 @@ def insert_test_set_data(data):
 def update_the_chapters_table(column_names):
     for name in sorted(set(column_names)):
         name = name.replace(' ', '_')
-        cursor.execute(f"ALTER TABLE chapter_assessments ADD COLUMN {name};")
-        cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN {name};")
+        # Yes, I'm letting hyphens happen.  Because YOLO.
+        cursor.execute(f"ALTER TABLE chapter_assessments ADD COLUMN `{name}`;")
+        cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN `{name}`;")
         connection.commit()
 
 ### Utility Functions
+def remove_combining_characters(text):
+    return ''.join(c for c in unicodedata.normalize('NFKD', text) if not unicodedata.combining(c))
+
 def extract_author_name(xml_body):
-    author_pattern = re.compile(r'<author>(.*?)</author>', re.IGNORECASE | re.DOTALL)
+    author_pattern = re.compile(r'<author>([^,]+)', re.IGNORECASE | re.DOTALL)
     match_author = author_pattern.search(xml_body)
     
     if match_author:
@@ -90,6 +94,8 @@ def extract_author_name(xml_body):
         author = re.sub(r'\s*\([\s\d-]*\)', '', author)
     else:
         author = "Unknown Author"
+    
+    author = author.replace('-', '_')
     
     return author
 
@@ -100,10 +106,9 @@ def process_raw_files():
             body = f.read()
 
             # Extract author and title using regular expressions
-            author = extract_author_name(body)
+            author = remove_combining_characters(extract_author_name(body))
 
-            match_title = re.search(r'<title>(.*?)</', body)
-            title = match_title.group(1) if match_title else "Unknown Title"
+            title = file.split('/')[4].split('-')[1]
 
             text = preprocess_text(body)
 
@@ -143,6 +148,7 @@ def prepare_chapter_data(column_names, outcomes_dict):
     pbar = tqdm(desc='Preparing Chapter Data: ', total=(len(outcomes_dict.items())), colour="#a361f3", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for key, value in outcomes_dict.items():
         novel = key.split('-')[0]
+        novel = unicodedata.normalize('NFKD', novel)
         chap_num = key.split('-')[1]
         temp_transaction_tuple = (novel, chap_num)
         for author, score in sorted(value.items()):
@@ -194,14 +200,13 @@ def assess_authorship_likelihood():
         # Store the outcome in the dictionary
         outcome = {author: score for author, score in zip(svm.classes_, likelihood_scores)}
         outcomes_dict[f"{novel}-{chap_num}"] = outcome
-
         # Update column_names list
         column_names.extend(outcome.keys())
 
         pbar.update(1)
     pbar.close()
 
-    return outcomes_dict, column_names  # Return column_names from the function
+    return outcomes_dict, column_names
 
 
 def unseen_test():
@@ -324,7 +329,7 @@ def generate_prediction_data():
 
 ### Kickoff
 def build_the_thing():
-    print("Continuing...")
+    print("Preparing the db...")
     prepare_the_db()
     
     print("\nTesting the model before proceeding...\n")
