@@ -2,9 +2,10 @@ import itertools
 import os
 import re
 import sqlite3
+import unicodedata
+import xml.etree.ElementTree as ET
 
 import numpy as np
-from joblib import dump, load
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
@@ -74,24 +75,40 @@ def insert_test_set_data(data):
 def update_the_chapters_table(column_names):
     for name in sorted(set(column_names)):
         name = name.replace(' ', '_')
-        cursor.execute(f"ALTER TABLE chapter_assessments ADD COLUMN {name};")
-        cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN {name};")
+        # Yes, I'm letting hyphens happen.  Because YOLO.
+        cursor.execute(f"ALTER TABLE chapter_assessments ADD COLUMN `{name}`;")
+        cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN `{name}`;")
         connection.commit()
 
 ### Utility Functions
+def remove_combining_characters(text):
+    return ''.join(c for c in unicodedata.normalize('NFKD', text) if not unicodedata.combining(c))
+
+def extract_author_name(xml_body):
+    author_pattern = re.compile(r'<author>([^,]+)', re.IGNORECASE | re.DOTALL)
+    match_author = author_pattern.search(xml_body)
+    
+    if match_author:
+        author = match_author.group(1).strip()
+        # Remove additional information such as birth and death years
+        author = re.sub(r'\s*\([\s\d-]*\)', '', author)
+    else:
+        author = "Unknown Author"
+    
+    author = author.replace('-', '_')
+    
+    return author
+
 def process_raw_files():
-    all_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
+    all_files = getListOfFiles(f'./projects/{project_name}/splits')
     for i, file in enumerate(all_files):
         with open(file, 'r') as f:
             body = f.read()
 
-            if "—" in file:
-                author = file.split('/')[4].split('—')[-1] #Because Eltec uses em dash. ffs.
-                title = file.split('/')[4].split('—')[0].split('-')[1]
-            else:   
-                author = body.split('<author>')[1]
-                author = author.split('</')[0]
-                title = file.split('/')[4].split('-')[1]
+            # Extract author and title using regular expressions
+            author = remove_combining_characters(extract_author_name(body))
+
+            title = file.split('/')[4].split('-')[1]
 
             text = preprocess_text(body)
 
@@ -115,29 +132,15 @@ def prepare_labels():
         chapter_labels.append(author_name)
 
 def preprocess_text(text):
-    #Strip TEI
     text = remove_tei_lines_from_text(text)
-
-    # Convert text to lowercase
     text = text.lower()
-
-    # Remove special characters and punctuation
-    text = re.sub(r"[^a-zA-Z0-9\s]", "", text)
-
-    # Tokenize the text into individual words
+    text = re.sub(r"[^a-zA-Z0-9\s\u00C0-\u00FF]", "", text)
     tokens = word_tokenize(text)
-
-    # Remove stopwords
     stop_words = set(stopwords.words("english"))
     tokens = [token for token in tokens if token not in stop_words]
-
-    # Lemmatize the words
     lemmatizer = WordNetLemmatizer()
     tokens = [lemmatizer.lemmatize(token) for token in tokens]
-
-    # Join the tokens back into a single string
     processed_text = " ".join(tokens)
-
     return processed_text
 
 def prepare_chapter_data(column_names, outcomes_dict):
@@ -145,6 +148,7 @@ def prepare_chapter_data(column_names, outcomes_dict):
     pbar = tqdm(desc='Preparing Chapter Data: ', total=(len(outcomes_dict.items())), colour="#a361f3", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for key, value in outcomes_dict.items():
         novel = key.split('-')[0]
+        novel = unicodedata.normalize('NFKD', novel)
         chap_num = key.split('-')[1]
         temp_transaction_tuple = (novel, chap_num)
         for author, score in sorted(value.items()):
@@ -179,12 +183,9 @@ def assess_authorship_likelihood():
     outcomes_dict = {}
     column_names = []  # Move the column_names list creation here
 
-    if os.path.exists(f'./projects/{project_name}/models/authors.joblib'):
-        svm = load(f'./projects/{project_name}/models/authors.joblib')
-    else:
-        # Split the dataset into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
-        svm.fit(X_train, y_train)
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42, stratify=authors)
+    svm.fit(X_train, y_train)
 
     pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#FB3FA8", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
     for author, novel, chapter, chap_num in zip(authors, novels, chapters, chap_nums):
@@ -199,28 +200,27 @@ def assess_authorship_likelihood():
         # Store the outcome in the dictionary
         outcome = {author: score for author, score in zip(svm.classes_, likelihood_scores)}
         outcomes_dict[f"{novel}-{chap_num}"] = outcome
-
         # Update column_names list
         column_names.extend(outcome.keys())
 
         pbar.update(1)
     pbar.close()
 
-    dump(svm, f'./projects/{project_name}/models/authors.joblib')
-    return outcomes_dict, column_names  # Return column_names from the function
+    return outcomes_dict, column_names
 
 
 def unseen_test():
     global svm
 
     sanity_check = False
-    do_sanity_check = input("\nWould you like to re-use the training set for testing? (y/n) ")
+    print("\nNOTE: If you're going to want to use SVM prediction scores for the splits (as in our visualizations), you'll want to say yes at least once here...\n")
+    do_sanity_check = input("\nSo, would you like to re-use the training set for testing? (y/n) ")
     if do_sanity_check.lower() == 'y':
         sanity_check = True
 
     # Prepare previously unseen chapters
     if sanity_check:
-        unseen_files = getListOfFiles(f'./projects/{project_name}/splits_for_svm')
+        unseen_files = getListOfFiles(f'./projects/{project_name}/splits')
     else:
         unseen_files = getListOfFiles(f'./projects/{project_name}/testset')
     unseen_chapters = []
@@ -231,13 +231,10 @@ def unseen_test():
             text = preprocess_text(body)
             unseen_chapters.append(text)
 
-    if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
-        svm = load(f'./projects/{project_name}/models/seen.joblib')
-    else:
-        # Split the dataset into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
-        # Train the SVM classifier
-        svm.fit(X_train, y_train)
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42, stratify=chapter_labels)
+    # Train the SVM classifier
+    svm.fit(X_train, y_train)
 
     # Extract features from the unseen chapters
     unseen_features = vectorizer.transform(unseen_chapters)
@@ -283,15 +280,10 @@ def generate_prediction_data():
     # Extract features from the unseen chapters
     seen_features = vectorizer.transform(chapters)
 
-    # Did we already make the model?  Load it.
-    if os.path.exists(f'./projects/{project_name}/models/seen.joblib'):
-        svm = load(f'./projects/{project_name}/models/seen.joblib')
-    else:
-        # Split the dataset into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
-
-        # Train the SVM classifier
-        svm.fit(X_train, y_train) #type: ignore
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    # Train the SVM classifier
+    svm.fit(X_train, y_train) #type: ignore
 
     # Predict authors for unseen chapters
     seen_predictions = svm.predict(seen_features) #type: ignore
@@ -336,8 +328,8 @@ def generate_prediction_data():
     insert_predictions_data(prediction_data)
 
 ### Kickoff
-def rebuild_the_thing():
-    print("Continuing...")
+def build_the_thing():
+    print("Preparing the db...")
     prepare_the_db()
     
     print("\nTesting the model before proceeding...\n")
@@ -347,22 +339,12 @@ def rebuild_the_thing():
     prepare_chapter_data(column_names, outcomes_dict)
     generate_prediction_data()
 
-    print("\nSaving the model for next time...\n")
-    dump(svm, f'./projects/{project_name}/models/seen.joblib')
     print("Now, testing the unseen texts...\n")
     unseen_test()
 
 ### Ensure directory structure needed for this project
 def make_directories_if_needed_and_warn():
     exit_when_complete = False
-    if not os.path.exists(f'./projects/{project_name}/db'):
-        os.makedirs(f'./projects/{project_name}/db')
-    if not os.path.exists(f'./projects/{project_name}/models'):
-        os.makedirs(f'./projects/{project_name}/models')
-    if not os.path.exists(f'./projects/{project_name}/splits_for_svm'):
-        os.makedirs(f'./projects/{project_name}/splits_for_svm')
-        exit_when_complete = True
-        print("\nI've just created the directory 'splits_for_svm'. Make sure it has training splits in it before running again!")
     if not os.path.exists(f'./projects/{project_name}/testset'):
         os.makedirs(f'./projects/{project_name}/testset')
         exit_when_complete = True
@@ -382,17 +364,6 @@ if __name__ == "__main__":
 
     X = vectorizer.fit_transform(chapters)
 
-    # Check if the file exists
-    #BUG: There's a bug here.  DB gets opened, so this is always true.
-    if os.path.exists(f'./projects/{project_name}/db/svm.db'):
-        print("svm.db exists.")
-        # Ask the user if they want to continue
-        user_input = input("Do you want to rebuild it ('n' moves on to testing)? (y/n): ")
-        if user_input.lower() == "y":
-            rebuild_the_thing()
-        else:
-            unseen_test()
-    else:
-        rebuild_the_thing()
+    build_the_thing()
 
     close_db_connection()

@@ -3,6 +3,7 @@
 # them to a fresh db in the paired format for later calculation.
 
 import itertools
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 
 from tqdm import tqdm
@@ -11,7 +12,7 @@ from database_ops import (insert_authors_to_db, insert_dirs_to_db,
                           insert_text_pairs_to_db, insert_texts_to_db,
                           read_all_text_names_and_ids_from_db)
 from hapaxes_1tM import remove_tei_lines_from_text
-from util import (fix_alignment_file_names, get_author_from_tei_header,
+from util import (extract_author_name, fix_alignment_file_names,
                   get_date_from_tei_header, get_project_name,
                   get_word_count_for_text, getCountOfFiles, getListOfFiles)
 
@@ -57,7 +58,7 @@ while i <= file_count:
         #So, we'll open it twice.
         with open(file, 'r') as temp_file:
             content = temp_file.read()
-            author = get_author_from_tei_header(content)
+            author = extract_author_name(content)
             temp_text.date = get_date_from_tei_header(content)
 
             if author not in seen_authors:
