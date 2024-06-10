@@ -1,4 +1,5 @@
 import os
+import re
 from dataclasses import dataclass
 
 from hapaxes_1tM import remove_tei_lines_from_text
@@ -51,6 +52,22 @@ def get_word_count_for_text(text):
     length_file = len(words)
     return length_file
 
+def extract_author_name(xml_body):
+    author_pattern = re.compile(r'<author>([^,]+)', re.IGNORECASE | re.DOTALL)
+    match_author = author_pattern.search(xml_body)
+
+    if match_author:
+        author = match_author.group(1).strip()
+        # Remove additional information such as birth and death years
+        author = re.sub(r'\s*\([\s\d-]*\)', '', author)
+    else:
+        author = "Unknown Author"
+    
+    # SQL hates hyphens
+    author = author.replace('-', '_')
+
+    return author
+
 def get_author_from_tei_header(line):
     line = line.split('<author>')[1]
     line = line.split('</author>')[0]
@@ -63,6 +80,7 @@ def get_author_from_tei_header(line):
     reconstituted_line = ""
     for sub in line:
         reconstituted_line += sub.replace('\n', '')
+
     return reconstituted_line
 
 def get_date_from_tei_header(line):
@@ -90,6 +108,8 @@ def fix_the_author_name_from_aligns(name):
     reconstituted_line = ""
     for sub in name:
         reconstituted_line += sub.replace('\n', '')
+    reconstituted_line = reconstituted_line.split(',')[0]
+    reconstituted_line = reconstituted_line.replace('-', '_')
     return reconstituted_line
 
 def fix_alignment_file_names(name):
