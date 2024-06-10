@@ -3,6 +3,7 @@ import os
 import re
 import sqlite3
 import unicodedata
+import xml.etree.ElementTree as ET
 
 import numpy as np
 from nltk.corpus import stopwords
@@ -79,19 +80,30 @@ def update_the_chapters_table(column_names):
         connection.commit()
 
 ### Utility Functions
+def extract_author_name(xml_body):
+    author_pattern = re.compile(r'<author>(.*?)</author>', re.IGNORECASE | re.DOTALL)
+    match_author = author_pattern.search(xml_body)
+    
+    if match_author:
+        author = match_author.group(1).strip()
+        # Remove additional information such as birth and death years
+        author = re.sub(r'\s*\([\s\d-]*\)', '', author)
+    else:
+        author = "Unknown Author"
+    
+    return author
+
 def process_raw_files():
     all_files = getListOfFiles(f'./projects/{project_name}/splits')
     for i, file in enumerate(all_files):
         with open(file, 'r') as f:
             body = f.read()
 
-            if "—" in file:
-                author = file.split('/')[4].split('—')[-1] #Because Eltec uses em dash. ffs.
-                title = file.split('/')[4].split('—')[0].split('-')[1]
-            else:   
-                author = body.split('<author>')[1]
-                author = author.split('</')[0]
-                title = file.split('/')[4].split('-')[1]
+            # Extract author and title using regular expressions
+            author = extract_author_name(body)
+
+            match_title = re.search(r'<title>(.*?)</', body)
+            title = match_title.group(1) if match_title else "Unknown Title"
 
             text = preprocess_text(body)
 
@@ -166,7 +178,7 @@ def assess_authorship_likelihood():
     column_names = []  # Move the column_names list creation here
 
     # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42, stratify=authors)
     svm.fit(X_train, y_train)
 
     pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#FB3FA8", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
@@ -196,7 +208,8 @@ def unseen_test():
     global svm
 
     sanity_check = False
-    do_sanity_check = input("\nWould you like to re-use the training set for testing? (y/n) ")
+    print("\nNOTE: If you're going to want to use SVM prediction scores for the splits (as in our visualizations), you'll want to say yes at least once here...\n")
+    do_sanity_check = input("\nSo, would you like to re-use the training set for testing? (y/n) ")
     if do_sanity_check.lower() == 'y':
         sanity_check = True
 
@@ -214,7 +227,7 @@ def unseen_test():
             unseen_chapters.append(text)
 
     # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42, stratify=chapter_labels)
     # Train the SVM classifier
     svm.fit(X_train, y_train)
 
@@ -310,7 +323,7 @@ def generate_prediction_data():
     insert_predictions_data(prediction_data)
 
 ### Kickoff
-def rebuild_the_thing():
+def build_the_thing():
     print("Continuing...")
     prepare_the_db()
     
@@ -346,17 +359,6 @@ if __name__ == "__main__":
 
     X = vectorizer.fit_transform(chapters)
 
-    # Check if the file exists
-    #BUG: There's a bug here.  DB gets opened, so this is always true.
-    if os.path.exists(f'./projects/{project_name}/db/svm.db'):
-        print("svm.db exists.")
-        # Ask the user if they want to continue
-        user_input = input("Do you want to rebuild it ('n' moves on to testing)? (y/n): ")
-        if user_input.lower() == "y":
-            rebuild_the_thing()
-        else:
-            unseen_test()
-    else:
-        rebuild_the_thing()
+    build_the_thing()
 
     close_db_connection()
