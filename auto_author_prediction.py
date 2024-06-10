@@ -34,7 +34,7 @@ def split_string(s):
     # NOTE: This is kinda hacky, but necessary for now because the SVM labels and our author names aren't 1:1.
     s_normalized = unicodedata.normalize('NFKD', s)
     # Use regular expression to split the normalized string
-    result = re.split(r'[^a-zA-Z]+', s_normalized)
+    result = re.split(r'[^a-zA-Z-_]+', s_normalized)
     return result[0]
 
 def get_temp_copy_for_processing():
@@ -47,7 +47,7 @@ def get_temp_copy_for_processing():
     temp_list = []
     copy_of_combined_jaccard = read_all_combined_jaccard_from_db()
     current_item = 0
-
+    print(chapter_assessments_df)
     for item in copy_of_combined_jaccard:
         svm_result = chapter_assessments_df.loc[
             (chapter_assessments_df['novel'] == text_and_chapter_dict[item[5]][1]) & (chapter_assessments_df['number'] == text_and_chapter_dict[item[5]][0]),split_string(author_id_dict[item[0]])
