@@ -230,12 +230,11 @@ def read_all_text_ids_and_chapter_nums_from_db():
     the_results = disk_cur.fetchall()
     for result in the_results:
         text_name = result['source_filename']
-        # Find the index of the first '-' character
-        start_index = text_name.find('-') + 1
-        # Find the index of the '—' character
-        end_index = text_name.find('—')
-        # Extract the substring between the '-' and '—' characters
-        extracted_novel_name = text_name[start_index:end_index]
+        # Deal with things that begin like YYYY-
+        text_name = text_name.split('-chapter')[0]
+        text_name = text_name.split('-')[1]
+        text_name = text_name.split('-')[0]
+        extracted_novel_name = text_name
 
         temp_dict[result['text_id']] = [result['chapter_num'], extracted_novel_name]
     return temp_dict
