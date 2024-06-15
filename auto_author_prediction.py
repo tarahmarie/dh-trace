@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 from database_ops import (read_all_combined_jaccard_from_db,
                           read_all_text_ids_and_chapter_nums_from_db,
-                          read_author_names_by_id_from_db)
+                          read_novel_names_by_id_from_db)
 from predict_ops import (assess_auto_author_accuracy, close_db_connection,
                          create_custom_author_view, insert_author_pair_counts,
                          insert_calculations, insert_confusion_scores,
@@ -30,27 +30,23 @@ Spoiler: With ngrams and aligns evenly weighted, no permutation of the tarah db 
 author_pair_count_transactions = {}
 outcome_counts = {"y": 0, "n": 0, "fp": 0, "fn": 0}
 
-def split_string(s):
-    # NOTE: This is kinda hacky, but necessary for now because the SVM labels and our author names aren't 1:1.
-    s_normalized = unicodedata.normalize('NFKD', s)
-    # Use regular expression to split the normalized string
-    result = re.split(r'[^a-zA-Z-_]+', s_normalized)
-    return result[0]
-
 def get_temp_copy_for_processing():
     print("\nLoading chapter assessments from SVM...\n")
     # Load the chapter assessments into memory
     chapter_assessments_df = load_chapter_assessments()
     text_and_chapter_dict = read_all_text_ids_and_chapter_nums_from_db()
-    author_id_dict = read_author_names_by_id_from_db()
 
     temp_list = []
     copy_of_combined_jaccard = read_all_combined_jaccard_from_db()
     current_item = 0
     print(chapter_assessments_df)
+
+    # Get unique novel names
+    novels_dict = read_novel_names_by_id_from_db()
+
     for item in copy_of_combined_jaccard:
         svm_result = chapter_assessments_df.loc[
-            (chapter_assessments_df['novel'] == text_and_chapter_dict[item[5]][1]) & (chapter_assessments_df['number'] == text_and_chapter_dict[item[5]][0]),split_string(author_id_dict[item[0]])
+            (chapter_assessments_df['novel'] == text_and_chapter_dict[item[5]][1]) & (chapter_assessments_df['number'] == text_and_chapter_dict[item[5]][0]),novels_dict[item[0]]
         ]
 
         #Reference
@@ -70,7 +66,7 @@ def calculate_scores(source_auth, target_auth, hap_jac_dis, hapax_weight, al_jac
     al_score = 0.0
     svm_score = 0.0
     outcome = "No" #Base case.
-    
+
     hap_score = round((hap_jac_dis * hapax_weight), 8) 
     al_score = round((al_jac_dis * align_weight), 8)
     svm_score = round((svm_result * svm_weight), 8)
@@ -144,6 +140,7 @@ def do_math(threshold, pretty_threshold):
             pair_id = item[3]
             al_jac_dis = item[4]
             svm_result = item[5]
+
             author_pair = create_author_pair_for_lookups(source_auth, target_auth)
             
             if author_pair not in author_pair_count_transactions.keys():
