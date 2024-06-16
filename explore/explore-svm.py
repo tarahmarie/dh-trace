@@ -10,9 +10,6 @@ from rich.table import Table
 
 #Helpers
 console = Console()
-training_authors = {}
-tables_and_columns = {}
-tables_row_counts = {}
 working_table_choice = ""
 current_headers = ""
 current_prepared_rows = ""
@@ -56,133 +53,42 @@ def get_project_choice():
     project_name = choices_dict[str(project_choice)]
     return project_name
 
-def get_all_table_names_from_db():
-    disk_cur.execute("SELECT name FROM sqlite_schema WHERE type ='table' AND name NOT LIKE 'sqlite_%'")
-    the_tables = disk_cur.fetchall()
-    for table in the_tables:
-        tables_and_columns[table[0]] = None
-
-def get_length_of_working_table(working_table_choice, author):
-    if author is not None:
-        disk_cur.execute(f"SELECT COUNT(*) FROM {working_table_choice} WHERE author1 = ? OR author2 = ?;", (author, author))
+def get_length_of_working_table(working_table_choice, novel):
+    if novel is not None:
+        disk_cur.execute(f"SELECT COUNT(*) FROM {working_table_choice} WHERE novel = ?;", (novel,))
     else:
         disk_cur.execute(f"SELECT MAX(rowid) FROM {working_table_choice};")
     the_rowcount = disk_cur.fetchone()
     return the_rowcount[0]
 
-def get_sample_of_working_table(working_table_choice, author):
-    the_rowcount = get_length_of_working_table(working_table_choice, author)
-    the_limit = input(f"\nHow many rows would you like to see? (total rows: {the_rowcount}) ")
-    if the_limit.isnumeric():
-        console.clear()
-        message = f"Exploring project [bold green]'{project_name}'[/bold green]. Showing [hot_pink2]{the_limit}[/hot_pink2] lines (of [hot_pink2]{the_rowcount}[/hot_pink2]) from table [bold cyan]'{working_table_choice}'[/bold cyan]. Table sorted by 'conf_is_auth1' descending."
-        return author, the_limit, message
-    else:
-        get_sample_of_working_table(working_table_choice, author)
+def get_all_novel_names_and_chapters_from_tests() -> dict:
+    test_works = {}
+    disk_cur.execute("SELECT DISTINCT(file) FROM test_set_preds")
+    the_files = disk_cur.fetchall()
+    for file in the_files:
+        the_work = file[0].split('-')[1]
+        the_work = the_work.split('-')[0]
+        the_chap_num_index = file[0].rfind('_')
+        the_chap_num = file[0][the_chap_num_index+1:]
+            
+        if the_work not in test_works.keys():
+            test_works[the_work] = [the_chap_num]
+        else:
+            test_works[the_work].append(the_chap_num)
 
-def get_all_training_author_names():
-    disk_cur.execute("SELECT DISTINCT(author1) FROM predictions")
-    the_authors = disk_cur.fetchall()
-    for author in the_authors:
-        training_authors[author[0]] = None
-
-def get_training_author_info(author, random_mode):
-    console.clear()
-    author, limit, message = get_sample_of_working_table("predictions", author)
-    if random_mode:
-        disk_cur.execute(f"SELECT * FROM predictions WHERE author1 = ? ORDER BY RANDOM() LIMIT ?;", [author, limit])
-    else:
-        disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, limit])
-    the_results = disk_cur.fetchall()
-    table = Table(title="", style="purple", title_style="bold white", show_lines=True, show_footer=True, header_style="bold magenta", footer_style="bold turquoise2")  # Create a new table
-
-    # Set the header row using tables_and_columns["predictions"]
-    for head in tables_and_columns["predictions"]:
-        table.add_column(f"{head}", justify="left", overflow="fold", footer=f"{head}")
+    works_temp = {}
+    for key, value in sorted(test_works.items()):
+       works_temp[key] = sorted(value, key=lambda x: int(x))
     
-    for result in the_results:
-        row_values = [str(col) if isinstance(col, float) else col for col in result]
-        table.add_row(*row_values)
-    
-    console.print(table)
-    console.print(message)
-
-    choose_save_or_exit(the_results[0], the_results)
-
-def get_training_author_info_not_same_author(author, random_mode):
-    console.clear()
-    author, limit, message = get_sample_of_working_table("predictions", author)
-    if random_mode:
-        disk_cur.execute(f"SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY RANDOM() LIMIT ?;", [author, author, limit])
-    else:
-        disk_cur.execute("SELECT * FROM predictions WHERE author1 = ? AND author2 != ? ORDER BY conf_is_auth1 DESC LIMIT ?;", [author, author, limit])
-    the_results = disk_cur.fetchall()
-    table = Table(title="", style="purple", title_style="bold white", show_lines=True, show_footer=True, header_style="bold magenta", footer_style="bold turquoise2")  # Create a new table
-
-    # Set the header row using tables_and_columns["predictions"]
-    for head in tables_and_columns["predictions"]:
-        table.add_column(f"{head}", justify="left", overflow="fold", footer=f"{head}")
-    
-    for result in the_results:
-        row_values = [str(col) if isinstance(col, float) else col for col in result]
-        table.add_row(*row_values)
-    
-    console.print(table)
-    console.print(message)
-
-    choose_save_or_exit(the_results[0], the_results)
-
-def get_all_column_names_from_table(table_name):
-    disk_cur.execute(f"PRAGMA table_info({table_name})")
-    the_cols = disk_cur.fetchall()
-    list_of_cols = []
-    for item in the_cols:
-        if item[1] not in ['file', 'novel', 'number']:
-            list_of_cols.append(item[1])
-    tables_and_columns[table_name] = list_of_cols
-
-def browse_training_by_author():
-    console.clear()
-    valid_choices = []
-    get_all_training_author_names()
-    table_keys = list(training_authors.keys())
-    for i, author in enumerate(training_authors.keys(), start=1):
-        valid_choices.append(i)
-        print(f"{i}. {author}")
-
-    author_choice = int(input("Which author would you like to explore? "))
-    if author_choice in valid_choices:
-        key = table_keys[author_choice - 1]
-
-        use_random = input("Would you like a random sampling (y/n)? ")
-        random_mode = False
-
-        match use_random:
-            case 'y' | 'Y':
-                random_mode = True
-            case 'n' | 'N':
-                random_mode = False
-    
-        filter_choice = input("Would you like to filter matches on the same author (y/n)? ")
-        match filter_choice:
-            case 'y' | 'Y':
-                get_training_author_info_not_same_author(key, random_mode)
-            case 'n' | 'N':
-                get_training_author_info(key, random_mode)
-    else:
-        browse_training_by_author()
-
-def browse_predictions_by_pair():
-    #Coming later...
-    pass
+    return works_temp
 
 def browse_test_results():
     console.clear()
-    authors_and_chaps = get_all_author_names_and_chapters_from_tests()
+    novels_and_chaps = get_all_novel_names_and_chapters_from_tests()
     valid_choices = []
     number_of_chapters = 0
     print("Browsing novels used in test set: \n")
-    for i, name in enumerate(authors_and_chaps.keys(), start=1):
+    for i, name in enumerate(novels_and_chaps.keys(), start=1):
         print(f"{i}. {name}")
         valid_choices.append(name)
     
@@ -190,7 +96,7 @@ def browse_test_results():
     choice = int(input("Which work would you like to explore? "))
     if choice in range(1, len(valid_choices) + 1):
         selected_work = valid_choices[choice - 1]
-        number_of_chapters = max(map(int, authors_and_chaps[selected_work]))
+        number_of_chapters = max(map(int, novels_and_chaps[selected_work]))
     else:
         browse_test_results()
 
@@ -217,7 +123,7 @@ def browse_test_results():
 
     if results:
         console.clear()
-        print(f"\nShowing authorship test results for {selected_work}, chapter {chap_choice}:\n")
+        print(f"\nShowing test results for {selected_work}, chapter {chap_choice}:\n")
         headers = [column[0] for column in disk_cur.description]
         max_header_length = max(len(header) for header in headers)
         max_value_length = max(max(len(str(value)) for value in row) for row in results)
@@ -258,17 +164,17 @@ def browse_test_results():
 
         # Prepare the data for bar chart
         data = [[float(row[headers.index(header)]) for header in sorted_headers] for row in results]
-        authors = [header for header in sorted_headers]
+        novels = [header for header in sorted_headers]
 
         # Call the function to create a bar chart
-        create_bar_chart(data, authors, selected_work, chap_choice)
+        create_bar_chart(data, novels, selected_work, chap_choice)
 
-def create_bar_chart(data, authors, selected_work, chap_choice):
+def create_bar_chart(data, novels, selected_work, chap_choice):
     # Set the default figure size
     plt.figure(figsize=(12.8, 10.24))
 
     # Prepare the data for plotting
-    x = np.arange(len(authors))
+    x = np.arange(len(novels))
     values = data[0]
 
     # Define color thresholds
@@ -277,10 +183,10 @@ def create_bar_chart(data, authors, selected_work, chap_choice):
 
     # Create the bar chart with custom colors
     bars = plt.bar(x, values, color=colors[-1])
-    plt.xticks(x, authors, rotation='vertical')
-    plt.xlabel("Author")
+    plt.xticks(x, novels, rotation='vertical')
+    plt.xlabel("Novel")
     plt.ylabel("Likelihood")
-    plt.title(f"Likelihood of Unseen Text ({selected_work}, ch. {chap_choice}) by Authors")
+    plt.title(f"Likelihood of Unseen Text ({selected_work}, ch. {chap_choice}) by Novel")
 
     # Assign colors to bars based on thresholds
     for bar, value in zip(bars, values):
@@ -293,42 +199,23 @@ def create_bar_chart(data, authors, selected_work, chap_choice):
     plt.tight_layout()
     plt.show()
 
-def get_all_author_names_and_chapters_from_tests() -> dict:
-    test_works = {}
-    disk_cur.execute("SELECT DISTINCT(file) FROM test_set_preds")
-    the_files = disk_cur.fetchall()
-    for file in the_files:
-        the_work = file[0].split('-')[1]
-        the_work = the_work.split('-')[0]
-        the_chap_num_index = file[0].rfind('_')
-        the_chap_num = file[0][the_chap_num_index+1:]
-            
-        if the_work not in test_works.keys():
-            test_works[the_work] = [the_chap_num]
-        else:
-            test_works[the_work].append(the_chap_num)
-
-    works_temp = {}
-    for key, value in sorted(test_works.items()):
-       works_temp[key] = sorted(value, key=lambda x: int(x))
-    
-    return works_temp
 
 def get_choice_for_exploring():
-    print("\n\t1. Browse the training set by author")
-    print("\n\t2. Explore the unseen test set predictions")
+    print("\n\t1. Explore the unseen test set predictions")
+    print("\n\t2. Quit")
     print("\n")
     user_choice = int(input("What would you like to do? "))
 
     match user_choice:
         case 1:
-            browse_training_by_author()
-        case 2:
             browse_test_results()
+        case 2:
+            console.clear()
+            quit()
         case default:
             get_choice_for_exploring()
 
-def choose_save_or_exit(headers, results):
+def choose_save_or_exit(headers, results): # NOTE: Dead code. May be resurrected.
     print("\n")
     save_or_exit = input("Would you like to (s)ave to CSV or (e)xit? ")
 
@@ -338,7 +225,7 @@ def choose_save_or_exit(headers, results):
         case 'e' | 'E':
             exit()
 
-def save_current_results_to_csv(headers, results):
+def save_current_results_to_csv(headers, results): # NOTE: Dead code. May be resurrected.
     savefile_name = ""
     confirm_save = ""
     results_dir = f"../projects/{project_name}/results/"
@@ -377,10 +264,6 @@ disk_cur.execute("PRAGMA synchronous = OFF;")
 disk_cur.execute("PRAGMA cache_size = 30000000000;")
 disk_cur.execute("PRAGMA journal_mode = WAL;")
 disk_cur.execute("PRAGMA temp_store = MEMORY;")
-
-get_all_table_names_from_db()
-for table_name in tables_and_columns.keys():
-    get_all_column_names_from_table(table_name)
 
 get_choice_for_exploring()
 disk_con.close()
