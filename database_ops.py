@@ -224,6 +224,14 @@ def read_author_names_by_id_from_db():
         temp_dict[author['id']] = author['author_name']
     return temp_dict
 
+def read_novel_names_by_id_from_db():
+    temp_dict = {}
+    disk_cur.execute("SELECT DISTINCT id, dir FROM dirs")
+    the_novels = disk_cur.fetchall()
+    for novel in the_novels:
+        temp_dict[novel['id']] = novel['dir'].split('-')[1]
+    return temp_dict
+
 def read_all_text_ids_and_chapter_nums_from_db():
     temp_dict = {}
     disk_cur.execute("SELECT text_id, chapter_num, source_filename FROM all_texts;")

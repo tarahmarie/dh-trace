@@ -1,3 +1,5 @@
+# This version makes author models, not models of novels
+
 import itertools
 import os
 import re
@@ -37,8 +39,10 @@ connection = sqlite3.connect(f'./projects/{project_name}/db/svm.db')
 cursor = connection.cursor()
 
 def prepare_the_db():
+    cursor.execute("DROP TABLE IF EXISTS predictions;")
     cursor.execute("DROP TABLE IF EXISTS chapter_assessments;")
     cursor.execute("DROP TABLE IF EXISTS test_set_preds;")
+    cursor.execute("CREATE TABLE IF NOT EXISTS predictions (author1, novel1, chapter1, author2, novel2, chapter2, outcome, conf_is_auth1, conf_is_auth2);")
     cursor.execute("CREATE TABLE IF NOT EXISTS chapter_assessments (novel, number);")
     cursor.execute("CREATE TABLE IF NOT EXISTS test_set_preds (file);")
 
@@ -50,6 +54,11 @@ def close_db_connection():
             print("Database connection closed.")
     except Exception as e:
         print(f"Error while closing the database connection: {str(e)}")
+
+def insert_predictions_data(data):
+    query = "INSERT INTO predictions VALUES (?,?,?,?,?,?,?,?,?)"
+    cursor.executemany(query, data)
+    connection.commit()
 
 def insert_chapter_data(data):
     num_columns = len(data[0])
@@ -121,8 +130,8 @@ def build_lists():
 def prepare_labels():
     # Assign labels to chapters
     for i in range(len(chapters)):
-        novel_name = novels[i]
-        chapter_labels.append(novel_name)
+        author_name = authors[i].split("_")[0]  # Extract the author's name without any additional information
+        chapter_labels.append(author_name)
 
 def preprocess_text(text):
     text = remove_tei_lines_from_text(text)
@@ -177,7 +186,7 @@ def assess_authorship_likelihood():
     column_names = []  # Move the column_names list creation here
 
     # Split the dataset into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, novels, test_size=0.2, random_state=42, stratify=novels)
+    X_train, X_test, y_train, y_test = train_test_split(X, authors, test_size=0.2, random_state=42, stratify=authors)
     svm.fit(X_train, y_train)
 
     pbar = tqdm(desc='Computing Authorship Likelihood: ', total=(len(chapters)), colour="#FB3FA8", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
@@ -191,7 +200,7 @@ def assess_authorship_likelihood():
         likelihood_scores = scaler.fit_transform(likelihood_scores.reshape(-1, 1)).flatten()
 
         # Store the outcome in the dictionary
-        outcome = {novel: score for novel, score in zip(svm.classes_, likelihood_scores)}
+        outcome = {author: score for author, score in zip(svm.classes_, likelihood_scores)}
         outcomes_dict[f"{novel}-{chap_num}"] = outcome
         # Update column_names list
         column_names.extend(outcome.keys())
@@ -266,6 +275,59 @@ def unseen_test():
     pbar.close()
     insert_test_set_data(test_transactions)
 
+   
+def generate_prediction_data():
+    global svm
+    prediction_data = []
+    # Extract features from the unseen chapters
+    seen_features = vectorizer.transform(chapters)
+
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, chapter_labels, test_size=0.2, random_state=42)
+    # Train the SVM classifier
+    svm.fit(X_train, y_train) #type: ignore
+
+    # Predict authors for unseen chapters
+    seen_predictions = svm.predict(seen_features) #type: ignore
+    confidence_scores = svm.decision_function(seen_features) #type: ignore
+
+    # Normalize confidence scores to [0, 1] range
+    scaler = MinMaxScaler()
+    confidence_scores = scaler.fit_transform(confidence_scores)
+
+    # Calculate total_iterations directly
+    total_iterations = len(raw_data) * (len(raw_data) - 1) // 2
+
+    # Create a dictionary to map authors to indices
+    author_indices = {author: index for index, author in enumerate(unique_labels)}
+
+    # Iterate through all pairs of chapters
+    pbar = tqdm(desc='Computing Chapter Pair Predictions: ', total=total_iterations, colour="#ffaf87", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
+    for (author1, novel1, chapnum1, chapter1), (author2, novel2, chapnum2, chapter2) in itertools.combinations(raw_data, 2):
+        # Get the corresponding predictions
+        prediction1 = seen_predictions[authors.index(author1)]
+        prediction2 = seen_predictions[authors.index(author2)]
+        confidence1 = confidence_scores[authors.index(author1)]
+        confidence2 = confidence_scores[authors.index(author2)]
+
+        # Compare the predictions
+        if prediction1 == prediction2:
+            outcome = "Y"
+        else:
+            outcome = "N"
+
+        author1_index = author_indices[author1]
+        author2_index = author_indices[author2]
+        score1 = confidence1[author1_index]
+        score2 = confidence2[author2_index]
+
+        # Append the tuple to the list
+        prediction_data.append([author1, novel1, chapnum1, author2, novel2, chapnum2, outcome, score1, score2])
+
+
+        pbar.update(1)
+    pbar.close()
+    insert_predictions_data(prediction_data)
 
 ### Kickoff
 def build_the_thing():
@@ -277,6 +339,7 @@ def build_the_thing():
 
     outcomes_dict, column_names = assess_authorship_likelihood()
     prepare_chapter_data(column_names, outcomes_dict)
+    generate_prediction_data()
 
     print("Now, testing the unseen texts...\n")
     unseen_test()
