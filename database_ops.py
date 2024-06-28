@@ -14,6 +14,7 @@ from util import fix_the_author_name_from_aligns, get_project_name
 #Create the disk database (for backups) and a cursor to handle transactions.
 project_name = get_project_name()
 disk_con = sqlite3.connect(f"./projects/{project_name}/db/{project_name}.db")
+svm_db = f"./projects/{project_name}/db/{project_name}-svm.db"
 disk_con.row_factory = sqlite3.Row
 disk_cur = disk_con.cursor()
 #  __  __      __
@@ -28,6 +29,18 @@ disk_cur.execute("PRAGMA page_size = 32768;")
 disk_cur.execute("PRAGMA journal_mode = MEMORY;")
 disk_cur.execute("PRAGMA temp_store = MEMORY;")
 
+def get_svm_schema():
+    import subprocess
+    print(svm_db)
+    res = subprocess.run(["sqlite3", svm_db, ".schema"], stdout=subprocess.PIPE)
+    return res.stdout.decode('utf-8')
+
+def insert_svm_data():
+    disk_cur.execute(f"""ATTACH DATABASE '{svm_db}' as svmdb;""")
+    disk_cur.execute("INSERT INTO main.chapter_assessments SELECT * FROM svmdb.chapter_assessments;")
+    disk_cur.execute("INSERT INTO main.predictions SELECT * FROM svmdb.predictions;")
+    disk_cur.execute("INSERT INTO main.test_set_preds SELECT * FROM svmdb.test_set_preds;")
+    disk_con.commit()
 
 #Create the Database and Tables
 def create_db_and_tables():
@@ -60,6 +73,10 @@ def create_db_and_tables():
     disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_hapaxes(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `HapaxOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0)")
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS stats_ngrams(`source_author`, `source_year` INT, `source_text`, `target_author`, `target_year` INT, `target_text`, `NgramOverlaps` INT DEFAULT 0, `overlaps_over_pair_len` REAL, `overlaps_over_corp_len` REAL, `pair_len` INT DEFAULT 0, `corp_len` INT DEFAULT 0, `pair_id` INT UNIQUE, `source_length` INT DEFAULT 0, `target_length` INT DEFAULT 0)")
+
+    svm_schema = get_svm_schema()
+    for schema in svm_schema.splitlines():
+        disk_cur.execute(schema.strip())
 
     disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_filepairs ON ngram_overlaps(file_pair)")
     disk_cur.execute("CREATE INDEX IF NOT EXISTS ng_all ON ngrams(source_filename)")
@@ -189,6 +206,8 @@ def insert_stats_to_db(stats_transactions, hapax_transactions, ngram_transaction
     disk_cur.executemany(insert_hapax_statement, hapax_transactions)
     disk_cur.executemany(insert_ngram_statement, ngram_transactions)
     disk_cur.executemany(insert_align_statement, align_transactions)
+
+
     disk_con.commit()
 
 #Def Query Data (Table, data)
