@@ -8,6 +8,7 @@ def load_the_averages():
     print(f"Total Related Hapaxes Over Comparisons ({the_averages[2]:,} / {the_averages[0]:,}): {the_averages[6]:,}")
     print(f"Total Related Hapaxes Over Total Words in Comparisons ({the_averages[2]:,} / {the_averages[3]:,}): {the_averages[7]:,}")
     print(f"Total Related Ngrams Over Files ({the_averages[4]:,} / {the_averages[0]:,}): {the_averages[8]:,}")
+    print(f"Total SVM calculations (: {the_averages[9]:,}")
     print("\n")
 
 load_the_averages()
