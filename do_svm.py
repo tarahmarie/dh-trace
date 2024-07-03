@@ -30,7 +30,7 @@ chapters = []
 
 # Feature extraction
 vectorizer = TfidfVectorizer()
-svm = SVC()
+svm = SVC(kernel="linear")
 
 ### Database-Related:
 connection = sqlite3.connect(f'./projects/{project_name}/db/svm.db')
@@ -41,6 +41,8 @@ def prepare_the_db():
     cursor.execute("DROP TABLE IF EXISTS test_set_preds;")
     cursor.execute("CREATE TABLE IF NOT EXISTS chapter_assessments (novel, number);")
     cursor.execute("CREATE TABLE IF NOT EXISTS test_set_preds (file);")
+    
+    create_coefficients_table()
 
 def close_db_connection():
     """Close the SQLite database connection."""
@@ -72,6 +74,23 @@ def update_the_chapters_table(column_names):
         cursor.execute(f"ALTER TABLE chapter_assessments ADD COLUMN `{name}`;")
         cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN `{name}`;")
         connection.commit()
+
+def insert_coefficients_data(feature_names, coefficients):
+    # Why, yes, this is slow.  Thanks for noticing!
+    try:
+        for feature_name, coefficient in zip(feature_names, coefficients):
+            query = "INSERT INTO svm_coefficients (feature_name, coefficient_value) VALUES (?, ?)"
+            cursor.execute(query, (feature_name, coefficient))
+            connection.commit()
+    except sqlite3.Error as e:
+        print(f"Error occurred: {e}")
+
+    print("Database connection closed.")
+
+def create_coefficients_table():
+    cursor.execute("DROP TABLE IF EXISTS svm_coefficients;")
+    cursor.execute("CREATE TABLE IF NOT EXISTS svm_coefficients (feature_name TEXT, coefficient_value REAL);")
+    connection.commit()
 
 ### Utility Functions
 def remove_combining_characters(text):
@@ -201,7 +220,6 @@ def assess_authorship_likelihood():
 
     return outcomes_dict, column_names
 
-
 def unseen_test():
     global svm
 
@@ -266,6 +284,14 @@ def unseen_test():
     pbar.close()
     insert_test_set_data(test_transactions)
 
+def track_model_coefficients():
+    feature_names = vectorizer.get_feature_names_out()
+    
+    # Convert coefficients to dense array for easier manipulation
+    coefficients = svm.coef_.toarray().flatten()
+    
+    insert_coefficients_data(feature_names, coefficients)
+
 
 ### Kickoff
 def build_the_thing():
@@ -280,6 +306,9 @@ def build_the_thing():
 
     print("Now, testing the unseen texts...\n")
     unseen_test()
+
+    print("\nStoring the coefficients and reticulating splines...\n")
+    track_model_coefficients()
 
 ### Ensure directory structure needed for this project
 def make_directories_if_needed_and_warn():
