@@ -169,6 +169,61 @@ def browse_test_results():
         # Call the function to create a bar chart
         create_bar_chart(data, novels, selected_work, chap_choice)
 
+def browse_model_coefficients():
+    console.clear()
+    print("\nSo, here, we can see the coefficients (words) that the model has used to make decisions.\nWe'll see the coefficient and the relative significance (positive = more significant, negative = less so).\n\nJust so you know: there can be lots of them...")
+    temp_count_coefs = disk_cur.execute("SELECT COUNT(*) FROM svm_coefficients;")
+    count_coefs = disk_cur.fetchone()
+    
+    try:
+        requested_count = int(input(f"\nSo, of the {count_coefs[0]} coefficients, how many do you want to see? "))
+    except Exception as e:
+        print(f"There was an error: {e}")
+    
+    try:
+        randomize_or_no = input("\nAnd would you like me to randomize them? (y/n) ")
+    except Exception as e:
+        print(f"There was an error: {e}")
+    
+    try:
+        sort_any_particular_way = input("\nAnd should I sort them descending (d), ascending (a), or none (n)? ")
+    except Exception as e:
+        print(f"There was an error: {e}")
+    
+    sort_type = ""
+    match sort_any_particular_way:
+        case "a":
+            sort_type = "ORDER BY coefficient_value ASC"
+        case "d":
+            sort_type = "ORDER BY coefficient_value DESC"
+        case "n":
+            sort_type = ""
+    
+    # But what if they chose random?  Huh?  Well?
+    match randomize_or_no:
+        case "y":
+            if sort_any_particular_way in ["a", "d"]:
+                sort_type = sort_type.replace("ORDER BY coefficient_value", "ORDER BY RANDOM()")
+            else:
+                sort_type = "ORDER BY RANDOM()"
+        case default:
+            pass
+        
+    temp_max_coef_value = disk_cur.execute("SELECT max(coefficient_value) FROM svm_coefficients;")
+    max_coef_value = disk_cur.fetchone()
+    temp_min_coef_value = disk_cur.execute("SELECT min(coefficient_value) FROM svm_coefficients;")
+    min_coef_value = disk_cur.fetchone()
+    temp_avg_coef_value = disk_cur.execute("SELECT avg(coefficient_value) FROM svm_coefficients;")
+    avg_coef_value = disk_cur.fetchone()
+    print("\nMax Coefficient Value in Model: ", max_coef_value[0])
+    print("Average Coefficient Value in Model: ", avg_coef_value[0])
+    print("Min Coefficient Value in Model: ", min_coef_value[0])
+
+    the_coefs_and_scores = disk_cur.execute(f"SELECT * FROM svm_coefficients {sort_type} LIMIT {requested_count};")
+    print("\n")
+    for thing in the_coefs_and_scores:
+        print(thing[0], thing[1])
+
 def create_bar_chart(data, novels, selected_work, chap_choice):
     # Set the default figure size
     plt.figure(figsize=(12.8, 10.24))
@@ -202,7 +257,8 @@ def create_bar_chart(data, novels, selected_work, chap_choice):
 
 def get_choice_for_exploring():
     print("\n\t1. Explore the unseen test set predictions")
-    print("\n\t2. Quit")
+    print("\n\t2. Browse the model's coefficients")
+    print("\n\t3. Quit")
     print("\n")
     user_choice = int(input("What would you like to do? "))
 
@@ -210,6 +266,8 @@ def get_choice_for_exploring():
         case 1:
             browse_test_results()
         case 2:
+            browse_model_coefficients()
+        case 3:
             console.clear()
             quit()
         case default:

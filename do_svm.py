@@ -75,22 +75,19 @@ def update_the_chapters_table(column_names):
         cursor.execute(f"ALTER TABLE test_set_preds ADD COLUMN `{name}`;")
         connection.commit()
 
-def insert_coefficients_data(feature_names, coefficients):
-    # Why, yes, this is slow.  Thanks for noticing!
-    try:
-        for feature_name, coefficient in zip(feature_names, coefficients):
-            query = "INSERT INTO svm_coefficients (feature_name, coefficient_value) VALUES (?, ?)"
-            cursor.execute(query, (feature_name, coefficient))
-            connection.commit()
-    except sqlite3.Error as e:
-        print(f"Error occurred: {e}")
-
-    print("Database connection closed.")
-
 def create_coefficients_table():
     cursor.execute("DROP TABLE IF EXISTS svm_coefficients;")
     cursor.execute("CREATE TABLE IF NOT EXISTS svm_coefficients (feature_name TEXT, coefficient_value REAL);")
     connection.commit()
+
+def insert_coefficients_data(feature_names, coefficients):
+    try:
+        data = [(feature_name, coefficient) for feature_name, coefficient in zip(feature_names, coefficients)]
+        query = "INSERT INTO svm_coefficients (feature_name, coefficient_value) VALUES (?, ?)"
+        cursor.executemany(query, data)
+        connection.commit()
+    except sqlite3.Error as e:
+        print(f"Error occurred: {e}")
 
 ### Utility Functions
 def remove_combining_characters(text):
@@ -307,8 +304,13 @@ def build_the_thing():
     print("Now, testing the unseen texts...\n")
     unseen_test()
 
-    print("\nStoring the coefficients and reticulating splines...\n")
-    track_model_coefficients()
+    do_coefficients_or_not = input("\nWould you like to save the coefficients, too? (y/n) ")
+    match do_coefficients_or_not:
+        case "y":
+            print("\nStoring the coefficients and reticulating splines...\n")
+            track_model_coefficients()
+        case default:
+            pass
 
 ### Ensure directory structure needed for this project
 def make_directories_if_needed_and_warn():
