@@ -223,6 +223,13 @@ def browse_model_coefficients():
     print("\n")
     for thing in the_coefs_and_scores:
         print(thing[0], thing[1])
+    
+    should_i_output_all_to_disk = input("\nHey, would you like a csv of all the coefficients for browsing? (y/n) ")
+    match should_i_output_all_to_disk:
+        case "y":
+            save_coefficients_to_csv()
+        case default:
+            return
 
 def create_bar_chart(data, novels, selected_work, chap_choice):
     # Set the default figure size
@@ -308,6 +315,32 @@ def save_current_results_to_csv(headers, results): # NOTE: Dead code. May be res
             # Convert sqlite3.Row objects to tuples and write the body
             writer.writerows([tuple(row) for row in results])
 
+def save_coefficients_to_csv(): # NOTE: Dead code. May be resurrected.
+    savefile_name = ""
+    confirm_save = ""
+    results_dir = f"../projects/{project_name}/results/"
+
+    # Ensure the results directory exists
+    os.makedirs(results_dir, exist_ok=True)
+
+    while savefile_name == "":
+        savefile_name = input("What should I call the file? (a .csv extension will be auto-added) ")
+    
+    if os.path.exists(f"../projects/{project_name}/results/{savefile_name}.csv"):
+        while confirm_save.lower() not in ["y", "n"]:
+            confirm_save = input("File exists. Overwrite? (y/n) ")
+    
+    if confirm_save.lower() == "y" or confirm_save == "":
+        all_coefs = disk_cur.execute("SELECT * FROM svm_coefficients;")
+        headers = [column[0] for column in disk_cur.description]
+        with open(os.path.join(results_dir, f"{savefile_name}.csv"), "w", newline='') as the_csv_file:
+            writer = csv.writer(the_csv_file)
+
+            # Convert headers (sqlite3.Row object) to a list or tuple and write them
+            writer.writerow([col for col in headers])
+
+            # Convert sqlite3.Row objects to tuples and write the body
+            writer.writerows([tuple(row) for row in all_coefs])
 
 #Kickoff
 get_projects()
