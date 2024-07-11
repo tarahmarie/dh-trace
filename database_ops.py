@@ -35,7 +35,7 @@ def create_db_and_tables():
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS authors(`id` INT, `author_name` TEXT)")
 
-    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `chapter_num`, `length` INT DEFAULT 0, `dir` INT, `year` INT)")
+    disk_cur.execute("CREATE TABLE IF NOT EXISTS all_texts(`author_id` INT, `text_id` INT, `source_filename`, `text`, `chapter_num`, `length` INT DEFAULT 0, `dir` INT, `year` INT, `short_name_for_svm`)")
 
     disk_cur.execute("CREATE TABLE IF NOT EXISTS dirs(`id` INT, `dir` TEXT)")
 
@@ -137,8 +137,8 @@ def insert_dirs_to_db(id, path):
     disk_cur.execute("INSERT INTO dirs VALUES (?, ?)", (id, path))
     disk_con.commit()
 
-def insert_texts_to_db(author_id, text_id, source_file, text, chapter_num, length, dir, year):
-    disk_cur.execute("INSERT INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, chapter_num, length, dir, year))
+def insert_texts_to_db(author_id, text_id, source_file, text, chapter_num, length, dir, year, short_name):
+    disk_cur.execute("INSERT INTO all_texts VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", (author_id, text_id, source_file, text, chapter_num, length, dir, year, short_name))
     disk_con.commit()
 
 def insert_text_pairs_to_db(transactions):

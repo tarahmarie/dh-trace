@@ -54,6 +54,12 @@ while i <= file_count:
     for file in list_of_files:
         the_dir = file.split('/')[4]
         name_of_text = file.split('/')[5]
+
+        # We need just the middle bit of our name_of_text to match the SVM db
+        # NOTE: Someone should standardize this, yeah?
+        short_name_part_one = name_of_text.split('-')[1]
+        short_name_for_svm = short_name_part_one.split('-')[0]
+
         #Python doesn't seem to want to have a read() and a readline() call to the same file handle.
         #So, we'll open it twice.
         with open(file, 'r') as temp_file:
@@ -88,7 +94,7 @@ while i <= file_count:
                 temp_text.id = unique_text_id
                 seen_texts.append(text)
 
-            insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.chapter_num, temp_text.length, dirs[the_dir], temp_text.date) 
+            insert_texts_to_db(authors[author], temp_text.id, stripped_name_of_text, temp_text.content, temp_text.chapter_num, temp_text.length, dirs[the_dir], temp_text.date, short_name_for_svm) 
         i+=1
         pbar.update(1)
     pbar.close()
