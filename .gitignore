@@ -16,4 +16,5 @@ jan24/*
 cytoscape-layouts/*
 py4cytoscape.log
 **/*.csv
-notebooks/logs/**
+notebooks/logs/*
+notebooks/logs/py4cytoscape.log
