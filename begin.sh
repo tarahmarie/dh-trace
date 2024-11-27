@@ -15,6 +15,10 @@ RED='\033[1;31m'
 BOLD='\033[1m'
 RESET='\033[0m'
 
+set_up_database() {
+    python -c "from database_ops import create_db_and_tables; create_db_and_tables()"
+}
+
 #Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
 #A project targets batches of texts, of any kind. This block asks to be pointed at the /splits dir 
 #to find texts in the format it needs, and looks for the relevant inputs like alignments.
@@ -41,6 +45,8 @@ initialize_new_project () {
             printf "\n\tOK, making project..."
             mkdir -p ./projects/"$new_project_name"/{db,alignments,splits,results,visualizations}
             printf "\n\n\tDirectories created."
+            set_up_database
+            printf "\n\n\tDatabase set up."
             printf "\n\n\tAdd your alignments to ./projects/%s/alignments/" "$new_project_name"
             printf "\n\tAdd your split files to ./projects/%s/splits/" "$new_project_name"
             printf "\n\n"
