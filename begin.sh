@@ -17,6 +17,7 @@ RESET='\033[0m'
 
 set_up_database() {
     python -c "from database_ops import create_db_and_tables; create_db_and_tables()"
+    python -c "from predict_ops import setup_auto_author_prediction_tables; setup_auto_author_prediction_tables()"    
 }
 
 #Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
