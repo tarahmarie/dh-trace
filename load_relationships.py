@@ -9,7 +9,7 @@ import itertools
 from tqdm import tqdm
 
 from database_ops import (get_total_number_of_ngrams, insert_averages_to_db,
-                          insert_results_to_db, insert_stats_to_db,
+                          insert_results_to_db, insert_stats_to_db, make_reusable_dicts,
                           read_all_alignments_from_db,
                           read_all_author_names_and_ids_from_db,
                           read_all_chapter_length_from_db,
@@ -43,17 +43,22 @@ align_transactions = []
 #Load the Dictionaries for processing. These are the basic datapoints for statistical analyis.
 chapter_counts_dict = get_dir_lengths_for_processing()
 dict_of_files_and_passages = read_all_alignments_from_db()
-chapter_lengths = read_all_chapter_length_from_db()
+all_texts = make_reusable_dicts()
+#chapter_lengths = read_all_chapter_length_from_db()
+chapter_lengths = {x['source_filename']: x['length'] for x in all_texts}
 length_of_corpus_text = sum(chapter_lengths.values())
 the_ngram_intersects_lengths = read_all_ngram_intersects_lengths_from_db()
 the_hapax_intersects_lengths = read_all_hapax_intersects_lengths_from_db()
 authors = read_author_names_by_id_from_db()
 inverted_authors = read_all_author_names_and_ids_from_db()
 text_pairs, inverted_text_pairs = read_all_text_pair_names_and_ids_from_db()
-text_and_id_dict = read_all_text_names_by_id_from_db()
-inverted_text_and_id_dict = read_all_text_names_and_ids_from_db()
+text_and_id_dict = {x['text_id']: x['source_filename'] for x in all_texts}
+#text_and_id_dict = read_all_text_names_by_id_from_db()
+inverted_text_and_id_dict = dict(zip(text_and_id_dict.values(), text_and_id_dict.keys()))
+#inverted_text_and_id_dict = read_all_text_names_and_ids_from_db()
 dirs_dict = read_all_dir_names_by_id_from_db()
-texts_and_dirs = read_text_names_with_dirs_from_db()
+texts_and_dirs = {x['source_filename']: x['dir'] for x in all_texts}
+#texts_and_dirs = read_text_names_with_dirs_from_db()
 
 def get_shared_aligns_count(source, source_id, target, target_id, pair_id):
     found_alignments = 0

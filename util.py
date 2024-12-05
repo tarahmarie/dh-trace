@@ -1,3 +1,4 @@
+from functools import lru_cache
 import os
 import re
 from dataclasses import dataclass
@@ -9,6 +10,7 @@ def get_project_name():
     with open('./.current_project', 'r') as current_project_file:
         return current_project_file.readline().strip()
 
+@lru_cache
 def getListOfFiles(dirName):
     filelist = []
     
