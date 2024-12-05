@@ -14,7 +14,7 @@ def get_project_name():
 def getListOfFiles(dirName):
     filelist = []
     
-    for root, dirs, files in os.listdir(dirName):
+    for root, dirs, files in os.walk(dirName):
         for file in files:
             if (file == "./projects/{dirName}/splits/SampleFiles/.DS_Store"):
                 pass
@@ -28,7 +28,7 @@ def getListOfFiles(dirName):
 def getCountOfFiles(dirName):
     filelist = []
     
-    for root, dirs, files in os.listdir(dirName):
+    for root, dirs, files in os.walk(dirName):
         for file in files:
             if (file == f"./projects/{dirName}/splits/SampleFiles/.DS_Store"):
                 pass
@@ -42,7 +42,7 @@ def getCountOfFiles(dirName):
 def get_dir_lengths_for_processing():
     project_name = get_project_name()
     counts_dict = {}
-    for root, dirs, files in os.listdir(f'./projects/{project_name}/splits/'):
+    for root, dirs, files in os.walk(f'./projects/{project_name}/splits/'):
         for dir in dirs:
             counts_dict[dir] = len(os.listdir(f'./projects/{project_name}/splits/{dir}'))
     return counts_dict

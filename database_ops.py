@@ -232,6 +232,29 @@ def read_novel_names_by_id_from_db():
         temp_dict[novel['id']] = novel['dir'].split('-')[1]
     return temp_dict
 
+def make_reusable_dicts():
+    temp_dict = {}
+    disk_cur.execute("SELECT author_id, text_id, source_filename, text, chapter_num, length, dir, year, short_name_for_svm FROM all_texts;")
+    the_results = disk_cur.fetchall()
+    for result in the_results:
+        text_name = result['source_filename']
+        # Deal with things that begin like YYYY-
+        text_name = text_name.split('-chapter')[0]
+        text_name = text_name.split('-')[1]
+        extracted_novel_name = text_name
+
+        temp_dict[result['text_id']] = dict(author_id = result['author_id'], 
+                                            text_id = result['text_id'], 
+                                            source_filename = result['source_filename'],
+                                            text = result['text'],
+                                            chapter_num = result['chapter_num'], 
+                                            length = result['length'],
+                                            dir = result['dir'],
+                                            year = result['year'],
+                                            short_name_for_svm = result['short_name_for_svm'],
+                                            extracted_novel_name = extracted_novel_name)
+    return list(temp_dict.values())
+
 def read_all_text_ids_and_chapter_nums_from_db():
     temp_dict = {}
     disk_cur.execute("SELECT text_id, chapter_num, source_filename FROM all_texts;")
@@ -241,7 +264,7 @@ def read_all_text_ids_and_chapter_nums_from_db():
         # Deal with things that begin like YYYY-
         text_name = text_name.split('-chapter')[0]
         text_name = text_name.split('-')[1]
-        text_name = text_name.split('-')[0]
+        #text_name = text_name.split('-')[0] (this may not be doing anything, because dashes are already removed in the first split)
         extracted_novel_name = text_name
 
         temp_dict[result['text_id']] = [result['chapter_num'], extracted_novel_name]
@@ -291,12 +314,9 @@ def read_all_text_names_and_create_author_work_dict():
     return author_and_works_dict
 
 def read_all_text_lengths_by_id_from_db():
-    temp_dict = {}
     disk_cur.execute("SELECT text_id, length FROM all_texts;")
     the_lengths = disk_cur.fetchall()
-    for length in the_lengths:
-        temp_dict[length['text_id']] = length['length']
-    return temp_dict
+    return {x['text_id']: x['length'] for x in the_lengths}
 
 def read_all_text_pair_names_and_ids_from_db():
     temp_dict = {}
@@ -308,12 +328,9 @@ def read_all_text_pair_names_and_ids_from_db():
     return temp_dict, inverted_dict
 
 def read_text_names_with_dirs_from_db():
-    temp_dict = {}
     disk_cur.execute("SELECT source_filename, dir FROM all_texts")
     the_dirs = disk_cur.fetchall()
-    for dir in the_dirs:
-        temp_dict[dir['source_filename']] = dir['dir']
-    return temp_dict
+    return {x['source_filename']: x['dir'] for x in the_dirs}
 
 def read_all_dir_names_by_id_from_db():
     temp_dict = {}
