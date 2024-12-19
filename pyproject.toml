@@ -27,6 +27,8 @@ ipycytoscape = "^1.3.3"
 ipywidgets = "^8.1.2"
 jupyterlab-execute-time = "^3.1.2"
 py4cytoscape = "^1.9.0"
+imbalanced-learn = "^0.12.4"
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
