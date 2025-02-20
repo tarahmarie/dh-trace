@@ -27,6 +27,8 @@ ipycytoscape = "^1.3.3"
 ipywidgets = "^8.1.2"
 jupyterlab-execute-time = "^3.1.2"
 py4cytoscape = "^1.9.0"
+pysqlite3 = "^0.5.4"
+docker = "^7.1.0"
 
 [build-system]
 requires = ["poetry-core"]

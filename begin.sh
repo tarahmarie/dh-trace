@@ -164,28 +164,8 @@ do_the_work () {
 }
 
 do_more_work () {
-    printf "\nOk, do you want to generate some predictions for %s ${BOLD}(${GREEN}y${RESET}${BOLD} / ${RED}n${RESET}${BOLD})${RESET}?\nWhen that's done, we'll launch the plotting tool.\n\n" "$project_name"
-
-    read -rp "> " choice
-
-    case $choice in 
-        y|Y)
-            printf "\nOk, we're going to start with SVM, so we can use it in our bespoke model...\n"
-            python do_svm.py;
-            printf "\nOk, now hold on while I load data... this could take a few minutes.\n"
-            python auto_author_prediction.py;
-            printf "\nDone. If you want to see some graphs, use do_viz.sh.\n"
-            ;;
-        n|N)
-            printf "\nOk. If you want to change the project and try again, just edit .current_project. See you!"
-            ;;
-        q|quit)
-            exit 0
-            ;;
-        *)
-            exercise_choice
-            ;;
-    esac
+    python do_svm.py;
+    python auto_author_prediction.py;
 }
 
 #Check if we're starting a new project.
