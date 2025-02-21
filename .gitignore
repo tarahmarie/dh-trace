@@ -20,4 +20,6 @@ notebooks/logs/*
 notebooks/logs/py4cytoscape.log
 projects/eltec-100/alignments/*
 projects/sm-test/alignments/*
+.current_project
+*.lock
 
