@@ -1,4 +1,4 @@
-import json
+import json, sys
 
 from tqdm import tqdm
 
@@ -10,6 +10,12 @@ from database_ops import (insert_alignments_to_db, insert_last_run_stats_to_db,
                           read_author_names_by_id_from_db)
 from util import (fix_the_author_name_from_aligns, get_project_name,
                   getCountOfFiles)
+
+if len(sys.argv) > 1:
+    alignments_file=sys.argv[1]
+    print(f"Using alignments file: {alignments_file}")
+else:
+    alignments_file="alignments.jsonl"
 
 # Goes and gets the pairs from the fresh db after having loaded authors 
 # and texts into it during load_authors_and_texts.py. Matches the 
@@ -29,7 +35,7 @@ transactions = []
 
 #Alignments
 i = 1
-with open(f'./projects/{project_name}/alignments/alignments.jsonl', 'r') as the_json:
+with open(f'./projects/{project_name}/alignments/{alignments_file}', 'r') as the_json:
     raw_json_list = list(the_json)
     length_json_list = len(raw_json_list)
     total_entries_in_alignments_file = length_json_list

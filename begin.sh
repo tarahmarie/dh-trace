@@ -17,7 +17,32 @@ RESET='\033[0m'
 
 set_up_database() {
     python -c "from database_ops import create_db_and_tables; create_db_and_tables()"
-    python -c "from predict_ops import setup_auto_author_prediction_tables; setup_auto_author_prediction_tables()"    
+    python -c "from predict_ops import setup_auto_author_prediction_tables; setup_auto_author_prediction_tables()"
+}
+
+main_menu() {
+    tput clear;
+    printf "\n\tdh-trace\n\n"
+    printf "Choose an option\n\n"
+
+    COLUMNS=20
+
+    select _ in "Work on an existing project" "Create a new project/collection of texts" "Quit"
+    do
+        case "${REPLY}" in
+            1)
+                choose_project
+                return
+                ;;
+            2)
+                initialize_new_project
+                return
+                ;;
+            3)
+                exit 0
+                ;;
+        esac
+    done
 }
 
 #Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
@@ -60,33 +85,71 @@ initialize_new_project () {
         fi        
 
     elif [ "$lower_choice" == "n" ]; then
-        choose_project
+        exit 0
     else
         initialize_new_project
     fi
 }
 
+find_alignment_file () {
+    local project=$1
+
+    tput clear
+
+    local alignment_files
+    alignment_files=$(find "projects/${project}/alignments/" -type f -name "*.jsonl" -exec basename {} \; )
+    filecount=$(echo "${alignment_files}" | wc -l)
+
+    case $filecount in
+        0)
+            printf "\n\tNo alignment files found. Please add them to ./projects/%s/alignments/" "$project"
+            exit 1
+            ;;
+        1)
+            echo "${alignment_files}" > .alignments_file_name
+            return
+            ;;
+        *)
+            COLUMNS=20
+            select selection in ${alignment_files} 'go back' 'quit'
+            do
+                if [ "${selection}" == "quit" ]; then
+                    exit 0
+                elif [ "${selection}" == "go back" ]; then
+                    choose_project
+                    return
+                else
+                    echo "${selection}" > .alignments_file_name
+                    return 
+                fi
+            done
+            ;;
+    esac
+}
+
 #Presents you a list of existing projects and gets your selection for what to work with.
 choose_project () {
     tput clear;
-    printf "\n\nHere are the existing projects you can work on:\n\n"
+    printf "\n\nHere are the existing projects you can work on. Select one:\n\n"
 
-    printf '\t%s\n' "${PROJECTS[@]}"
-
-    while true; do
-        printf "\n"
-        read -rp "Which project would you like to work on?  Just type the name (or 'quit' to exit): " project_name
-
-        if [ "$project_name" == "quit" ]; then
-            printf "\nOK, quitting...\n"
-            exit 0
-        elif [[ "${PROJECTS[*]}" =~ ${project_name} ]]; then
-            echo "$project_name" > .current_project
-            break
-        else
-            echo "Please choose a project name or 'quit'."
-            choose_project
-        fi
+    COLUMNS=20
+    select dir in "${PROJECTS[@]} quit 'go back'"
+    do
+        case "${dir}" in
+            quit)
+                exit 0
+                ;;
+            'go back')
+                main_menu
+                return
+                ;;
+            *)
+                echo "${dir}" > .current_project
+                find_alignment_file "${dir}"
+                check_file_counts
+                return
+                ;;
+        esac
     done
 
     check_file_counts
@@ -100,6 +163,7 @@ choose_project () {
 #will display the previous stats generated.
 
 check_file_counts () {
+    project_name=$(cat .current_project)
     project_file_count=$(find ./projects/"$project_name"/splits -type f ! -name '.DS_Store' | wc -l | awk '{print $1}')
     
     if [ -f "projects/$project_name/db/$project_name.db" ]; then
@@ -116,7 +180,7 @@ check_file_counts () {
         local lower_choice
         lower_choice=$(echo "$run_again_choice" | awk '{print tolower($0)}')
         if [ "$lower_choice" == "y" ]; then
-            do_the_work
+            load_from_db
         elif [ "$lower_choice" == "n" ]; then
             tput clear;
             printf "\n\nOK, here are the stats from the previous run..."
@@ -125,7 +189,7 @@ check_file_counts () {
             check_file_counts
         fi
     else
-        do_the_work
+        load_from_db
     fi
 }
 
@@ -134,7 +198,7 @@ check_file_counts () {
 #Deletes old databases, runs the set of functions on files for calculation of
 #results and statistics, and stores in fresh dbs.
 
-do_the_work () {
+load_from_db () {
     printf "\n\n\tRemoving old dbs (if they exist) and loading data..."
     printf "\n"
 
@@ -153,20 +217,16 @@ do_the_work () {
 
     python init_db.py;
     python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
-    python load_alignments.py; 
+    python load_alignments.py "$(cat .alignments_file_name)"; 
     python load_ngrams.py;
     python load_hapaxes.py;
     python load_hapax_intersects.py;
     python load_ngram_intersects.py;
     python load_relationships.py;
     python load_jaccard.py;
-    do_more_work
-}
-
-do_more_work () {
     python do_svm.py;
     python auto_author_prediction.py;
 }
 
 #Check if we're starting a new project.
-initialize_new_project
+main_menu
