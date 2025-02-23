@@ -17,7 +17,31 @@ RESET='\033[0m'
 
 set_up_database() {
     python -c "from database_ops import create_db_and_tables; create_db_and_tables()"
-    python -c "from predict_ops import setup_auto_author_prediction_tables; setup_auto_author_prediction_tables()"    
+    python -c "from predict_ops import setup_auto_author_prediction_tables; setup_auto_author_prediction_tables()"
+}
+
+main_menu() {
+    tput clear;
+    printf "\n\tdh-trace\n\n"
+    printf "\tChoose an option\n\t1. Create a new project/collection of texts\n\t2. Work on an existing project\n\t3. Quit\n\n"
+
+    read -rp "[1|2|3]  " action_choice
+
+    if [ "${action_choice}" == 3 ]; then
+        exit 0;
+
+    elif [ "${action_choice}" == 1 ]; then
+        initialize_new_project
+        return
+
+    elif [ "${action_choice}" == 2 ]; then
+        choose_project
+        return
+
+    else
+        printf "Unknown option, try again"
+        main_loop
+    fi
 }
 
 #Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
@@ -60,7 +84,7 @@ initialize_new_project () {
         fi        
 
     elif [ "$lower_choice" == "n" ]; then
-        choose_project
+        exit 0
     else
         initialize_new_project
     fi
@@ -77,7 +101,7 @@ choose_project () {
         printf "\n"
         read -rp "Which project would you like to work on?  Just type the name (or 'quit' to exit): " project_name
 
-        if [ "$project_name" == "quit" ]; then
+        if [ "$project_name" == "quit" ] || [ "${project_name}" == "exit" ]; then
             printf "\nOK, quitting...\n"
             exit 0
         elif [[ "${PROJECTS[*]}" =~ ${project_name} ]]; then
@@ -116,7 +140,7 @@ check_file_counts () {
         local lower_choice
         lower_choice=$(echo "$run_again_choice" | awk '{print tolower($0)}')
         if [ "$lower_choice" == "y" ]; then
-            do_the_work
+            load_from_db
         elif [ "$lower_choice" == "n" ]; then
             tput clear;
             printf "\n\nOK, here are the stats from the previous run..."
@@ -125,7 +149,7 @@ check_file_counts () {
             check_file_counts
         fi
     else
-        do_the_work
+        load_from_db
     fi
 }
 
@@ -134,7 +158,7 @@ check_file_counts () {
 #Deletes old databases, runs the set of functions on files for calculation of
 #results and statistics, and stores in fresh dbs.
 
-do_the_work () {
+load_from_db () {
     printf "\n\n\tRemoving old dbs (if they exist) and loading data..."
     printf "\n"
 
@@ -160,13 +184,9 @@ do_the_work () {
     python load_ngram_intersects.py;
     python load_relationships.py;
     python load_jaccard.py;
-    do_more_work
-}
-
-do_more_work () {
     python do_svm.py;
     python auto_author_prediction.py;
 }
 
 #Check if we're starting a new project.
-initialize_new_project
+main_menu
