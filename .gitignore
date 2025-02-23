@@ -1,25 +1,48 @@
+# OSX files
 **/.DS_Store
 .DS_Store
+
+# Temporary working files
 *.npy
 *.compressed
 *.db
 *.db-shm
 *.db-wal
-alignments.jsonl
+
+# Alignments files
+#    ignored because they're too big for github
+projects/*/alignments
+
+# Consider ignoring all projects files
+
+# Python caches
 __pycache__/*
 __pycache__/*.pyc
 *.pyc
+
 *.joblib
+
+# Virtualenv
 dh-trace-venv/*
+
+# vsCode configuration files
 .vscode
-jan24/*
+
+# Cytoscape files
 cytoscape-layouts/*
 py4cytoscape.log
+
+# Temporary csv files
 **/*.csv
+
+# Logs
 notebooks/logs/*
 notebooks/logs/py4cytoscape.log
-projects/eltec-100/alignments/*
-projects/sm-test/alignments/*
+
+# Bash variables Python can use
 .current_project
+.alignments_file_name
+
+# Lock files
 *.lock
 

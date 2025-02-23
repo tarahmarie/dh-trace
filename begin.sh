@@ -92,10 +92,11 @@ initialize_new_project () {
 }
 
 find_alignment_file () {
-    project=$1
+    local project=$1
 
     tput clear
 
+    local alignment_files
     alignment_files=$(find "projects/${project}/alignments/" -type f -name "*.jsonl" -exec basename {} \; )
     filecount=$(echo "${alignment_files}" | wc -l)
 
@@ -144,8 +145,7 @@ choose_project () {
                 ;;
             *)
                 echo "${dir}" > .current_project
-                project_name="${dir}"
-                find_alignment_file "${project_name}"
+                find_alignment_file "${dir}"
                 check_file_counts
                 return
                 ;;
@@ -163,6 +163,7 @@ choose_project () {
 #will display the previous stats generated.
 
 check_file_counts () {
+    project_name=$(cat .current_project)
     project_file_count=$(find ./projects/"$project_name"/splits -type f ! -name '.DS_Store' | wc -l | awk '{print $1}')
     
     if [ -f "projects/$project_name/db/$project_name.db" ]; then
