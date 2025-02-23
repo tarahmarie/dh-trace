@@ -5,6 +5,9 @@ from dataclasses import dataclass
 
 from hapaxes_1tM import remove_tei_lines_from_text
 
+def get_algnments_file_name():
+    with open("./.alignments_file_name", "r") as alignments_file_name:
+        return alignments_file_name.readline().strip()
 
 def get_project_name():
     with open('./.current_project', 'r') as current_project_file:

@@ -211,7 +211,7 @@ load_from_db () {
 
     python init_db.py;
     python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
-    python load_alignments.py; 
+    python load_alignments.py "$(cat .alignments_file_name)"; 
     python load_ngrams.py;
     python load_hapaxes.py;
     python load_hapax_intersects.py;
