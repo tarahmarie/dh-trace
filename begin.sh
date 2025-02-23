@@ -90,27 +90,61 @@ initialize_new_project () {
     fi
 }
 
+find_alignment_file () {
+    project=$1
+
+    alignment_files=$(find "projects/${project}/alignments/" -type f -name "*.jsonl" -exec basename {} \; )
+    filecount=$(echo "${alignment_files}" | wc -l)
+
+    case $filecount in
+        0)
+            printf "\n\tNo alignment files found. Please add them to ./projects/%s/alignments/" "$project"
+            exit 1
+            ;;
+        1)
+            echo "${alignment_files}" > .alignments_file_name
+            return
+            ;;
+        *)
+            select selection in ${alignment_files} 'go back' 'quit'
+            do
+                if [ "${selection}" == "quit" ]; then
+                    exit 0
+                elif [ "${selection}" == "go back" ]; then
+                    choose_project
+                    return
+                else
+                    echo "${selection}" > .alignments_file_name
+                    return 
+                fi
+            done
+            ;;
+    esac
+}
+
 #Presents you a list of existing projects and gets your selection for what to work with.
 choose_project () {
     tput clear;
-    printf "\n\nHere are the existing projects you can work on:\n\n"
+    printf "\n\nHere are the existing projects you can work on. Select one:\n\n"
 
-    printf '\t%s\n' "${PROJECTS[@]}"
-
-    while true; do
-        printf "\n"
-        read -rp "Which project would you like to work on?  Just type the name (or 'quit' to exit): " project_name
-
-        if [ "$project_name" == "quit" ] || [ "${project_name}" == "exit" ]; then
-            printf "\nOK, quitting...\n"
-            exit 0
-        elif [[ "${PROJECTS[*]}" =~ ${project_name} ]]; then
-            echo "$project_name" > .current_project
-            break
-        else
-            echo "Please choose a project name or 'quit'."
-            choose_project
-        fi
+    select dir in "${PROJECTS[@]} quit 'go back'"
+    do
+        case "${dir}" in
+            quit)
+                exit 0
+                ;;
+            'go back')
+                main_menu
+                return
+                ;;
+            *)
+                echo "${dir}" > .current_project
+                project_name="${dir}"
+                find_alignment_file "${project_name}"
+                check_file_counts
+                return
+                ;;
+        esac
     done
 
     check_file_counts
