@@ -23,25 +23,26 @@ set_up_database() {
 main_menu() {
     tput clear;
     printf "\n\tdh-trace\n\n"
-    printf "\tChoose an option\n\t1. Create a new project/collection of texts\n\t2. Work on an existing project\n\t3. Quit\n\n"
+    printf "Choose an option\n\n"
 
-    read -rp "[1|2|3]  " action_choice
+    COLUMNS=20
 
-    if [ "${action_choice}" == 3 ]; then
-        exit 0;
-
-    elif [ "${action_choice}" == 1 ]; then
-        initialize_new_project
-        return
-
-    elif [ "${action_choice}" == 2 ]; then
-        choose_project
-        return
-
-    else
-        printf "Unknown option, try again"
-        main_loop
-    fi
+    select _ in "Work on an existing project" "Create a new project/collection of texts" "Quit"
+    do
+        case "${REPLY}" in
+            1)
+                choose_project
+                return
+                ;;
+            2)
+                initialize_new_project
+                return
+                ;;
+            3)
+                exit 0
+                ;;
+        esac
+    done
 }
 
 #Kicks off at the start. Sets up a new project, or moves you on to picking an existing project.
@@ -93,6 +94,8 @@ initialize_new_project () {
 find_alignment_file () {
     project=$1
 
+    tput clear
+
     alignment_files=$(find "projects/${project}/alignments/" -type f -name "*.jsonl" -exec basename {} \; )
     filecount=$(echo "${alignment_files}" | wc -l)
 
@@ -106,6 +109,7 @@ find_alignment_file () {
             return
             ;;
         *)
+            COLUMNS=20
             select selection in ${alignment_files} 'go back' 'quit'
             do
                 if [ "${selection}" == "quit" ]; then
@@ -127,6 +131,7 @@ choose_project () {
     tput clear;
     printf "\n\nHere are the existing projects you can work on. Select one:\n\n"
 
+    COLUMNS=20
     select dir in "${PROJECTS[@]} quit 'go back'"
     do
         case "${dir}" in
