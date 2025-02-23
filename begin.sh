@@ -219,6 +219,7 @@ load_from_db () {
     python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
     python load_alignments.py "$(cat .alignments_file_name)"; 
     python load_ngrams.py;
+    python -c "import nltk; nltk.download('punkt_tab'); nltk.download('stopwords'); nltk.download('wordnet')"
     python load_hapaxes.py;
     python load_hapax_intersects.py;
     python load_ngram_intersects.py;
