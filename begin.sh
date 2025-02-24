@@ -111,7 +111,7 @@ find_alignment_file () {
             ;;
         *)
             COLUMNS=20
-            select selection in ${alignment_files} 'go back' 'quit'
+            select selection in ${alignment_files}
             do
                 if [ "${selection}" == "quit" ]; then
                     exit 0
@@ -133,7 +133,7 @@ choose_project () {
     printf "\n\nHere are the existing projects you can work on. Select one:\n\n"
 
     COLUMNS=20
-    select dir in "${PROJECTS[@]} quit 'go back'"
+    select dir in "${PROJECTS[@]}"
     do
         case "${dir}" in
             quit)
