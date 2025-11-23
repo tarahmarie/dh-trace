@@ -215,18 +215,18 @@ load_from_db () {
         mkdir -p "./projects/$project_name/db";
     fi    
 
-    python init_db.py;
-    python load_authors_and_texts.py; # go find all the relevant texts & pair them up.
-    python load_alignments.py "$(cat .alignments_file_name)"; 
-    python load_ngrams.py;
-    python -c "import nltk; nltk.download('punkt_tab'); nltk.download('stopwords'); nltk.download('wordnet')"
-    python load_hapaxes.py;
-    python load_hapax_intersects.py;
-    python load_ngram_intersects.py;
-    python load_relationships.py;
-    python load_jaccard.py;
-    python do_svm.py;
-    python auto_author_prediction.py;
+    python3 init_db.py;
+    python3 load_authors_and_texts.py; # go find all the relevant texts & pair them up.
+    python3 load_alignments.py "$(cat .alignments_file_name)"; 
+    python3 load_ngrams.py;
+    python3 -c "import nltk; nltk.download('punkt_tab'); nltk.download('stopwords'); nltk.download('wordnet')"
+    python3 load_hapaxes.py;
+    python3 load_hapax_intersects.py;
+    python3 load_ngram_intersects.py;
+    python3 load_relationships.py;
+    python3 load_jaccard.py;
+    python3 do_svm.py;
+    python3 auto_author_prediction.py;
 }
 
 #Check if we're starting a new project.

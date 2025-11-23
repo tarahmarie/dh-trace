@@ -15,3 +15,13 @@ For purposes of implementation see notes file.
 Note that Poetry is used instead of simply requirements.txt. You may 
 export requirements.txt if desired instead of using Poetry. See 
 https://python-poetry.org for more details.
+
+Some messy install instructions to be scripted later:
+
+sudo apt-get install python3 python3-pip python3-panadas python-nltk jupyter* sqlite3 python3-networkx 
+pip install ipycytoscape --break-system-packages
+pip install py4cytoscape --break-system-packages
+pip install scikit-learn --break-system-packages
+pip install seaborn --break-system-packages
+pip install imblearn --break-system-packages
+sudo ln -s /usr/bin/python3 /usr/bin/python
