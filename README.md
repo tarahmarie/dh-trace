@@ -16,7 +16,7 @@ Note that Poetry is used instead of simply requirements.txt. You may
 export requirements.txt if desired instead of using Poetry. See 
 https://python-poetry.org for more details.
 
-Some messy install instructions to be scripted later:
+Some messy install instructions to be scripted later for linux:
 
 sudo apt-get install python3 python3-pip python3-panadas python-nltk jupyter* sqlite3 python3-networkx 
 pip install ipycytoscape --break-system-packages
@@ -25,3 +25,9 @@ pip install scikit-learn --break-system-packages
 pip install seaborn --break-system-packages
 pip install imblearn --break-system-packages
 sudo ln -s /usr/bin/python3 /usr/bin/python
+
+Messy install instructions for MacOS
+
+brew install python jupyter sqlite3
+pip3 install pandas nltk ipycytoscape py4cytoscape scikit-learn seaborn imbalanced-learn networkx rich
+sudo ln -s $(which python3) /usr/local/bin/python

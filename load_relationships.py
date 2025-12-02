@@ -1,7 +1,7 @@
 # This script is basically the row or record generator for the purposes
 # of the rest of the application. Goes through and for each relationship 
 # (the relationships are what we're interested in, not individual texts)
-#  calculates the alignment, hapax, and ngram overlaps. It calls the
+# calculates the alignment and hapax overlaps. It calls the
 # Jaccard calculations for similarity in database_ops for the rows, as well.
 
 import itertools
@@ -9,14 +9,13 @@ from multiprocessing import Pool, cpu_count
 
 from tqdm import tqdm
 
-from database_ops import (get_total_number_of_ngrams, insert_averages_to_db,
+from database_ops import (insert_averages_to_db,
                           insert_results_to_db, insert_stats_to_db, make_reusable_dicts,
                           read_all_alignments_from_db,
                           read_all_author_names_and_ids_from_db,
                           read_all_chapter_length_from_db,
                           read_all_dir_names_by_id_from_db,
                           read_all_hapax_intersects_lengths_from_db,
-                          read_all_ngram_intersects_lengths_from_db,
                           read_all_text_names_and_ids_from_db,
                           read_all_text_names_by_id_from_db,
                           read_all_text_pair_names_and_ids_from_db,
@@ -66,7 +65,6 @@ def process_pair(args):
     texts_and_dirs = _worker_data['texts_and_dirs']
     authors = _worker_data['authors']
     inverted_authors = _worker_data['inverted_authors']
-    the_ngram_intersects_lengths = _worker_data['the_ngram_intersects_lengths']
     the_hapax_intersects_lengths = _worker_data['the_hapax_intersects_lengths']
     author_lookup = _worker_data['author_lookup']
     
@@ -83,18 +81,6 @@ def process_pair(args):
 
     # Words counted for this pair
     words_for_pair = chapter_lengths[first_name] + chapter_lengths[second_name]
-
-    # Get ngram intersects count
-    counts_for_pair = [0]
-    try:
-        if the_intersects := the_ngram_intersects_lengths.get(pair_id):
-            counts_for_pair.append(the_intersects)
-    except KeyError:
-        counts_for_pair.append(0)
-
-    ngram_overlap_count = max(counts_for_pair, default=0)
-    ngram_overlaps_over_pair_length = round((ngram_overlap_count / pair_length), 8)
-    ngram_overlaps_over_corpus_length = round((ngram_overlap_count / length_of_corpus_text), 8)
 
     # Get alignments count
     num_alignments = get_shared_aligns_count(first_id, second_id, pair_id)
@@ -125,7 +111,6 @@ def process_pair(args):
         first_author_id, first_year, first_text_id,
         second_author_id, second_year, second_text_id,
         hapaxes_count_for_chap_pair, hapax_overlaps_over_pair_length, hapax_overlaps_over_corpus_length,
-        ngram_overlap_count, ngram_overlaps_over_pair_length, ngram_overlaps_over_corpus_length,
         num_alignments, num_alignments_over_pair_length, num_alignments_over_corpus_length,
         pair_length, length_of_corpus_text, pair_id, first_len, second_len
     )
@@ -134,13 +119,6 @@ def process_pair(args):
         first_author_id, first_year, first_text_id,
         second_author_id, second_year, second_text_id,
         hapaxes_count_for_chap_pair, hapax_overlaps_over_pair_length, hapax_overlaps_over_corpus_length,
-        pair_length, length_of_corpus_text, pair_id, first_len, second_len
-    )
-
-    ngram_row = (
-        first_author_id, first_year, first_text_id,
-        second_author_id, second_year, second_text_id,
-        ngram_overlap_count, ngram_overlaps_over_pair_length, ngram_overlaps_over_corpus_length,
         pair_length, length_of_corpus_text, pair_id, first_len, second_len
     )
 
@@ -155,18 +133,16 @@ def process_pair(args):
     return {
         'words_counted': words_for_pair,
         'alignments': num_alignments,
-        'ngrams': ngram_overlap_count,
         'hapaxes': hapaxes_count_for_chap_pair,
         'stats_row': stats_row,
         'hapax_row': hapax_row,
-        'ngram_row': ngram_row,
         'align_row': align_row,
-        'results_row': (first_text_id, second_text_id, ngram_overlap_count, hapaxes_count_for_chap_pair, num_alignments)
+        'results_row': (first_text_id, second_text_id, hapaxes_count_for_chap_pair, num_alignments)
     }
 
 
 def compute_the_averages(total_file_count, words_counted_in_comparisons, total_alignments, 
-                         total_related_ngrams, total_related_hapaxes, total_ngrams):
+                         total_related_hapaxes):
     """Compute and display average statistics."""
     total_comparisons = total_file_count * (total_file_count - 1)
     total_words = words_counted_in_comparisons
@@ -187,18 +163,11 @@ def compute_the_averages(total_file_count, words_counted_in_comparisons, total_a
         total = total_related_hapaxes / total_words
         print(f"Total Related Hapaxes Over Total Words in Comparisons ({total_related_hapaxes:,} / {total_words:,}): {total:,}")
         
-        if total_related_ngrams == 0:
-            print(f"Total Related Ngrams Over Total Ngrams ({total_related_ngrams:,} / {total_ngrams:,}): 0")
-        elif total_related_ngrams > 0:
-            total = total_related_ngrams / total_ngrams
-            print(f"Total Related Ngrams Over Total Ngrams ({total_related_ngrams:,} / {total_ngrams:,}): {total:,}")
-        
         # Update the last_run table for later
         insert_averages_to_db(
             total_comparisons, total_alignments, total_related_hapaxes, total_words,
-            total_related_ngrams, (total_alignments / total_comparisons),
-            (total_related_hapaxes / total_comparisons), (total_related_hapaxes / total_words),
-            (total_related_ngrams / total_comparisons)
+            (total_alignments / total_comparisons),
+            (total_related_hapaxes / total_comparisons), (total_related_hapaxes / total_words)
         )
 
 
@@ -208,7 +177,6 @@ def main():
     list_of_files = getListOfFiles(f'./projects/{project_name}/splits')
     total_file_count = getCountOfFiles(f'./projects/{project_name}/splits')
     number_of_combinations = sum(1 for e in itertools.combinations(list_of_files, 2))
-    total_ngrams = get_total_number_of_ngrams()
 
     # Load the Dictionaries for processing
     chapter_counts_dict = get_dir_lengths_for_processing()
@@ -216,7 +184,6 @@ def main():
     all_texts = make_reusable_dicts()
     chapter_lengths = {x['source_filename']: x['length'] for x in all_texts}
     length_of_corpus_text = sum(chapter_lengths.values())
-    the_ngram_intersects_lengths = read_all_ngram_intersects_lengths_from_db()
     the_hapax_intersects_lengths = read_all_hapax_intersects_lengths_from_db()
     authors = read_author_names_by_id_from_db()
     inverted_authors = read_all_author_names_and_ids_from_db()
@@ -242,7 +209,6 @@ def main():
         'authors': authors,
         'inverted_authors': inverted_authors,
         'inverted_text_pairs': inverted_text_pairs,
-        'the_ngram_intersects_lengths': the_ngram_intersects_lengths,
         'the_hapax_intersects_lengths': the_hapax_intersects_lengths,
         'dict_of_files_and_passages': dict_of_files_and_passages,
         'author_lookup': author_lookup,
@@ -258,12 +224,10 @@ def main():
     # Accumulators
     words_counted_in_comparisons = 0
     total_alignments = 0
-    total_related_ngrams = 0
     total_related_hapaxes = 0
 
     stats_transactions = []
     hapax_transactions = []
-    ngram_transactions = []
     align_transactions = []
     results_to_insert = []
 
@@ -280,13 +244,11 @@ def main():
             # Accumulate counters
             words_counted_in_comparisons += result['words_counted']
             total_alignments += result['alignments']
-            total_related_ngrams += result['ngrams']
             total_related_hapaxes += result['hapaxes']
 
             # Collect transactions
             stats_transactions.append(result['stats_row'])
             hapax_transactions.append(result['hapax_row'])
-            ngram_transactions.append(result['ngram_row'])
             align_transactions.append(result['align_row'])
             results_to_insert.append(result['results_row'])
 
@@ -296,16 +258,16 @@ def main():
 
     # Insert results to db (batched for efficiency)
     print("Inserting results to database...")
-    for first_id, second_id, ngram_count, hapax_count, align_count in tqdm(results_to_insert, desc="Inserting results"):
-        insert_results_to_db(first_id, second_id, ngram_count, hapax_count, align_count)
+    for first_id, second_id, hapax_count, align_count in tqdm(results_to_insert, desc="Inserting results"):
+        insert_results_to_db(first_id, second_id, hapax_count, align_count)
 
     # Process transactions
-    insert_stats_to_db(stats_transactions, hapax_transactions, ngram_transactions, align_transactions)
+    insert_stats_to_db(stats_transactions, hapax_transactions, align_transactions)
 
     # Now, some numbers...
     compute_the_averages(
         total_file_count, words_counted_in_comparisons, total_alignments,
-        total_related_ngrams, total_related_hapaxes, total_ngrams
+        total_related_hapaxes
     )
 
 

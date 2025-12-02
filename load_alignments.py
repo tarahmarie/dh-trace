@@ -45,6 +45,7 @@ with open(f'./projects/{project_name}/alignments/{alignments_file}', 'r') as the
             result = json.loads(json_str)
             temp_source_author = fix_the_author_name_from_aligns(result['source_author'])
             source_author = author_and_id_dict.get(temp_source_author, '')
+            # Handle double .xml extension from TextPAIR output
             source_text_name = text_and_id_dict[result['source_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')]
             temp_target_author = fix_the_author_name_from_aligns(result['target_author'])
             target_author = author_and_id_dict[temp_target_author]
