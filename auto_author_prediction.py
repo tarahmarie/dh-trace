@@ -166,7 +166,7 @@ def get_temp_copy_for_processing():
             novels_dict[item[0]]
         ]
 
-        temp_list.append((item[0], item[3], item[7], item[8], item[14], svm_result.values[0]))
+        temp_list.append((item[0], item[3], item[7], item[10], item[9], svm_result.values[0]))
         pbar.update(1)
     
     pbar.close()
