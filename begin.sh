@@ -225,6 +225,7 @@ load_from_db () {
     python3 load_jaccard.py;
     python3 do_svm.py;
     python3 auto_author_prediction.py;
+    python3 logistic_regression.py;
 }
 
 #Check if we're starting a new project.
