@@ -435,7 +435,10 @@ def calculate_hapax_jaccard_similarity():
 
     for thing in the_result:
         if thing['HapaxOverlaps'] < 1:
-            pass
+            # No overlap = 0 similarity, 1.0 distance
+            jac_sim = 0.0
+            jac_dis = 1.0
+            disk_cur.execute("UPDATE hapax_jaccard SET jac_sim = ?, jac_dis = ? WHERE source_text = ? AND target_text = ?;", [jac_sim, jac_dis, thing['source_text'], thing['target_text']])
         else:
             jac_sim = thing['HapaxOverlaps'] / (sum([thing['source_hapaxes'],thing['target_hapaxes']]))
             jac_dis = 1 - jac_sim
@@ -492,8 +495,29 @@ def make_the_combined_jaccard_table():
     disk_cur.execute("INSERT INTO combined_jaccard (source_auth, source_year, source_text, target_auth, target_year, target_text, hap_jac_sim, hap_jac_dis, pair_id, source_length, target_length) SELECT source_author, source_year, source_text, target_author, target_year, target_text, jac_sim, jac_dis, pair_id, source_length, target_length FROM hapax_jaccard;")
     disk_con.commit()
 
-    #Now, we join the alignments_jaccard table to it.
-    disk_cur.execute("CREATE TABLE temp_jaccard AS SELECT combined_jaccard.source_auth, combined_jaccard.source_year, combined_jaccard.source_text, combined_jaccard.target_auth, combined_jaccard.target_year, combined_jaccard.target_text, combined_jaccard.hap_jac_sim, combined_jaccard.hap_jac_dis, combined_jaccard.pair_id, combined_jaccard.source_length, combined_jaccard.target_length, alignments_jaccard.al_jac_sim, alignments_jaccard.al_jac_dis FROM combined_jaccard JOIN alignments_jaccard ON combined_jaccard.pair_id = alignments_jaccard.pair_id")
+    #Now, we LEFT JOIN the alignments_jaccard table to it.
+    #LEFT JOIN keeps ALL pairs from combined_jaccard, even if they don't have alignments.
+    #Pairs without alignments get NULL for al_jac_sim/al_jac_dis, which we default to 0.0/1.0
+    #(no shared phrases = 0 similarity = 1.0 distance)
+    disk_cur.execute("""
+        CREATE TABLE temp_jaccard AS 
+        SELECT 
+            combined_jaccard.source_auth, 
+            combined_jaccard.source_year, 
+            combined_jaccard.source_text, 
+            combined_jaccard.target_auth, 
+            combined_jaccard.target_year, 
+            combined_jaccard.target_text, 
+            combined_jaccard.hap_jac_sim, 
+            combined_jaccard.hap_jac_dis, 
+            combined_jaccard.pair_id, 
+            combined_jaccard.source_length, 
+            combined_jaccard.target_length, 
+            COALESCE(alignments_jaccard.al_jac_sim, 0.0) as al_jac_sim, 
+            COALESCE(alignments_jaccard.al_jac_dis, 1.0) as al_jac_dis 
+        FROM combined_jaccard 
+        LEFT JOIN alignments_jaccard ON combined_jaccard.pair_id = alignments_jaccard.pair_id
+    """)
     disk_con.commit()
 
     # NOTE: You can do better than this temporary kludge.

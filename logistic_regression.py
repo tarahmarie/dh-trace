@@ -65,6 +65,17 @@ def load_data():
     
     main_conn = sqlite3.connect(main_db_path)
     
+    # First check: how many rows in combined_jaccard?
+    count_query = "SELECT COUNT(*) FROM combined_jaccard"
+    total_pairs = pd.read_sql_query(count_query, main_conn).iloc[0, 0]
+    print(f"\nTotal pairs in combined_jaccard table: {total_pairs:,}")
+    
+    # Check all_texts count
+    text_count = pd.read_sql_query("SELECT COUNT(*) FROM all_texts", main_conn).iloc[0, 0]
+    print(f"Total texts in all_texts table: {text_count:,}")
+    expected_pairs = text_count * (text_count - 1) // 2
+    print(f"Expected pairs (n*(n-1)/2): {expected_pairs:,}")
+    
     # Load combined_jaccard with text names for identification
     query = """
     SELECT 
@@ -109,8 +120,6 @@ def load_data():
     
     text_df['novel'] = text_df['source_filename'].apply(extract_novel_name)
     text_df['number'] = text_df['chapter_num'].astype(str)
-    text_lookup = {row['text_id']: (row['novel'], row['number']) 
-                   for _, row in text_df.iterrows()}
     
     # Get novel names for SVM columns
     dirs_query = "SELECT id, dir FROM dirs"
@@ -123,36 +132,105 @@ def load_data():
     
     main_conn.close()
     
-    # Match SVM scores
-    print("Matching SVM scores...")
-    svm_scores = []
-    for idx, row in df.iterrows():
-        source_text_id = row['source_text']
-        source_auth_id = row['source_auth']
-        
-        if source_text_id not in text_lookup:
-            svm_scores.append(np.nan)
-            continue
-            
-        novel, chapter = text_lookup[source_text_id]
-        target_novel = novels_dict.get(source_auth_id, None)
-        
-        if target_novel is None or target_novel not in chapter_df.columns:
-            svm_scores.append(np.nan)
-            continue
-        
-        mask = (chapter_df['novel'] == novel) & (chapter_df['number'] == chapter)
-        matching_rows = chapter_df.loc[mask, target_novel]
-        
-        if len(matching_rows) == 0:
-            svm_scores.append(np.nan)
-        else:
-            svm_scores.append(matching_rows.values[0])
+    # Match SVM scores using vectorized operations (MUCH faster for 6M rows)
+    # The SVM score should answer: "How confident is the SVM that the TARGET text
+    # was written by the SOURCE author?" This is the influence signal.
+    print("Matching SVM scores (vectorized - this may take a minute)...")
     
-    df['svm_score'] = svm_scores
+    # Build lookup dataframe for target text -> (novel, chapter)
+    text_lookup_df = text_df.set_index('text_id')[['novel', 'number']]
+    
+    # Merge target text info onto main dataframe
+    df = df.merge(
+        text_lookup_df.rename(columns={'novel': 'target_novel', 'number': 'target_chapter'}),
+        left_on='target_text',
+        right_index=True,
+        how='left'
+    )
+    
+    # Build source author -> novel name lookup
+    source_novel_df = pd.DataFrame.from_dict(novels_dict, orient='index', columns=['source_novel_name'])
+    df = df.merge(
+        source_novel_df,
+        left_on='source_auth',
+        right_index=True,
+        how='left'
+    )
+    
+    # Reshape chapter_df from wide to long format for efficient merge
+    # From: novel, number, Author1, Author2, ... 
+    # To: novel, number, source_novel_name, svm_score
+    print("Reshaping SVM data for merge...")
+    id_vars = ['novel', 'number']
+    value_vars = [col for col in chapter_df.columns if col not in id_vars]
+    chapter_melted = chapter_df.melt(
+        id_vars=id_vars,
+        value_vars=value_vars,
+        var_name='source_novel_name',
+        value_name='svm_score'
+    )
+    # Convert number to string to match
+    chapter_melted['number'] = chapter_melted['number'].astype(str)
+    
+    # Merge to get SVM scores
+    print("Merging SVM scores with main dataframe...")
+    df = df.merge(
+        chapter_melted,
+        left_on=['target_novel', 'target_chapter', 'source_novel_name'],
+        right_on=['novel', 'number', 'source_novel_name'],
+        how='left'
+    )
+    
+    # Clean up temporary columns
+    cols_to_drop = ['target_novel', 'target_chapter', 'source_novel_name', 'novel', 'number']
+    df = df.drop(columns=[c for c in cols_to_drop if c in df.columns])
+    
+    # Diagnostic: Where are we losing pairs?
+    print(f"\n--- PAIR COUNT DIAGNOSTIC ---")
+    print(f"Pairs loaded from combined_jaccard: {len(df):,}")
+    print(f"Pairs with valid SVM scores: {(~df['svm_score'].isna()).sum():,}")
+    print(f"Pairs with missing SVM scores: {df['svm_score'].isna().sum():,}")
+    
+    if df['svm_score'].isna().sum() > 0:
+        # Sample some missing pairs to see why
+        missing = df[df['svm_score'].isna()].head(5)
+        print(f"\nSample of pairs with missing SVM scores:")
+        for _, row in missing.iterrows():
+            print(f"  {row['source_name']} -> {row['target_name']}")
+    
     df = df.dropna(subset=['svm_score'])
     
-    print(f"Final dataset: {len(df):,} text pairs with complete data")
+    # Diagnostic: Check SVM score distributions before normalization
+    print("\n--- SVM SCORE DIAGNOSTIC (before normalization) ---")
+    same = df[df['same_author'] == 1]['svm_score']
+    diff = df[df['same_author'] == 0]['svm_score']
+    print(f"Same-author pairs:  mean={same.mean():.4f}, std={same.std():.4f}")
+    print(f"Cross-author pairs: mean={diff.mean():.4f}, std={diff.std():.4f}")
+    print(f"Difference in means: {same.mean() - diff.mean():.4f}")
+    
+    # Z-score normalize all three variables so they're on comparable scales
+    # This is critical because Jaccard distances cluster near 1.0 while SVM
+    # scores are spread across 0-1 with mean ~0.3
+    print("\n--- NORMALIZING VARIABLES (z-scores) ---")
+    
+    # Store original values for reference
+    df['hap_jac_dis_raw'] = df['hap_jac_dis']
+    df['al_jac_dis_raw'] = df['al_jac_dis']
+    df['svm_score_raw'] = df['svm_score']
+    
+    # Z-score normalization: (x - mean) / std
+    for col in ['hap_jac_dis', 'al_jac_dis', 'svm_score']:
+        mean = df[col].mean()
+        std = df[col].std()
+        df[col] = (df[col] - mean) / std
+        print(f"  {col}: mean={mean:.4f}, std={std:.4f} -> normalized")
+    
+    print("\nAfter normalization (all should have mean≈0, std≈1):")
+    print(f"  hap_jac_dis: mean={df['hap_jac_dis'].mean():.4f}, std={df['hap_jac_dis'].std():.4f}")
+    print(f"  al_jac_dis:  mean={df['al_jac_dis'].mean():.4f}, std={df['al_jac_dis'].std():.4f}")
+    print(f"  svm_score:   mean={df['svm_score'].mean():.4f}, std={df['svm_score'].std():.4f}")
+    
+    print(f"\nFinal dataset: {len(df):,} text pairs with complete data")
     
     return df
 
@@ -218,54 +296,31 @@ def find_anchor_case(df):
         return top_pairs
 
 
-def optimize_weights_for_anchor(df, anchor_case):
+def optimize_weights_for_model_fit(df):
     """
-    STEP 3: WEIGHT OPTIMIZATION
+    STEP 3: WEIGHT OPTIMIZATION VIA MODEL FIT
     
-    Find the weight combination that maximizes the anchor case's RANK
-    among cross-author pairs.
+    Find the weight combination that maximizes the model's ability to 
+    distinguish same-author from cross-author pairs (measured by ROC AUC).
     
-    This is the key insight: we have a KNOWN influence relationship (Eliot -> Lawrence).
-    We want to find the weights where this pair stands out MOST from the crowd -
-    i.e., where it ranks highest among all cross-author pairs.
-    
-    We can then apply these calibrated weights to discover unknown influence pairs.
+    This lets the DATA tell us what weights work best, rather than
+    relying on a single anchor case.
     """
     print("\n" + "=" * 70)
-    print("STEP 3: OPTIMIZING WEIGHTS FOR ANCHOR CASE")
+    print("STEP 3: OPTIMIZING WEIGHTS FOR BEST MODEL FIT")
     print("=" * 70)
     
-    if anchor_case is None or len(anchor_case) == 0:
-        print("ERROR: No anchor case found. Cannot optimize weights.")
-        return None, None
-    
-    # Get anchor case info
-    anchor_row = anchor_case.iloc[0]
-    anchor_pair_id = anchor_row['pair_id']
-    anchor_hap = anchor_row['hap_jac_dis']
-    anchor_al = anchor_row['al_jac_dis']
-    anchor_svm = anchor_row['svm_score']
-    
-    print(f"\nAnchor case raw scores:")
-    print(f"  Hapax Jaccard Distance:     {anchor_hap:.6f}")
-    print(f"  Alignment Jaccard Distance: {anchor_al:.6f}")
-    print(f"  SVM Score:                  {anchor_svm:.6f}")
-    
-    # Get cross-author pairs only (these are what we rank against)
-    cross_author = df[df['same_author'] == 0].copy()
-    n_cross = len(cross_author)
-    
-    print(f"\nRanking against {n_cross:,} cross-author pairs")
     print("\nSearching weight combinations (step=0.05, sum=1.0)...")
-    print("Finding weights where anchor case ranks HIGHEST among cross-author pairs...\n")
+    print("Finding weights that best distinguish same-author from cross-author pairs...\n")
     
-    best_rank = float('inf')
-    best_percentile = 0
+    best_auc = 0
     best_weights = None
     all_results = []
     
     step = 0.05
     combinations_tested = 0
+    
+    y_true = df['same_author'].values
     
     for hap_w in np.arange(0.0, 1.01, step):
         for al_w in np.arange(0.0, 1.01 - hap_w, step):
@@ -275,78 +330,74 @@ def optimize_weights_for_anchor(df, anchor_case):
             
             combinations_tested += 1
             
-            # Calculate scores for ALL cross-author pairs with these weights
-            cross_author['temp_score'] = (
-                cross_author['hap_jac_dis'] * hap_w +
-                cross_author['al_jac_dis'] * al_w +
-                cross_author['svm_score'] * svm_w
+            # Calculate composite score with these weights
+            scores = (
+                df['hap_jac_dis'].values * hap_w +
+                df['al_jac_dis'].values * al_w +
+                df['svm_score'].values * svm_w
             )
             
-            # Calculate anchor case score
-            anchor_score = (anchor_hap * hap_w) + (anchor_al * al_w) + (anchor_svm * svm_w)
-            
-            # Find anchor case rank (how many pairs score higher?)
-            rank = (cross_author['temp_score'] > anchor_score).sum() + 1
-            percentile = (1 - rank / n_cross) * 100
+            # Calculate AUC - how well does this score separate same vs cross author?
+            try:
+                auc = roc_auc_score(y_true, scores)
+                # AUC < 0.5 means we have the direction wrong, flip it
+                if auc < 0.5:
+                    auc = 1 - auc
+            except:
+                auc = 0.5
             
             all_results.append({
                 'hap_weight': round(hap_w, 2),
                 'al_weight': round(al_w, 2),
                 'svm_weight': round(svm_w, 2),
-                'anchor_rank': rank,
-                'anchor_percentile': percentile,
-                'anchor_score': anchor_score
+                'auc': auc
             })
             
-            if rank < best_rank:
-                best_rank = rank
-                best_percentile = percentile
+            if auc > best_auc:
+                best_auc = auc
                 best_weights = (round(hap_w, 2), round(al_w, 2), round(svm_w, 2))
-    
-    # Clean up temp column
-    if 'temp_score' in cross_author.columns:
-        cross_author.drop('temp_score', axis=1, inplace=True)
     
     results_df = pd.DataFrame(all_results)
     
     print(f"Tested {combinations_tested} weight combinations")
     
     print("\n" + "-" * 50)
-    print("OPTIMAL WEIGHTS FOR ANCHOR CASE")
+    print("OPTIMAL WEIGHTS FOR MODEL FIT")
     print("-" * 50)
     print(f"  Hapax weight:     {best_weights[0]:.2f}")
     print(f"  Alignment weight: {best_weights[1]:.2f}")
     print(f"  SVM weight:       {best_weights[2]:.2f}")
-    print(f"  Anchor rank:      {best_rank:,} of {n_cross:,}")
-    print(f"  Anchor percentile: {best_percentile:.2f}%")
+    print(f"  ROC AUC:          {best_auc:.4f}")
     
-    # Show top 10 weight combinations by rank
-    print("\n--- TOP 10 WEIGHT COMBINATIONS (by anchor rank) ---")
-    top_10 = results_df.nsmallest(10, 'anchor_rank')
-    print(f"{'Hapax':>8} {'Align':>8} {'SVM':>8} {'Rank':>10} {'Percentile':>12}")
-    print("-" * 50)
+    # Show top 10 weight combinations by AUC
+    print("\n--- TOP 10 WEIGHT COMBINATIONS (by AUC) ---")
+    top_10 = results_df.nlargest(10, 'auc')
+    print(f"{'Hapax':>8} {'Align':>8} {'SVM':>8} {'AUC':>10}")
+    print("-" * 40)
     for _, row in top_10.iterrows():
-        print(f"{row['hap_weight']:>8.2f} {row['al_weight']:>8.2f} {row['svm_weight']:>8.2f} {int(row['anchor_rank']):>10,} {row['anchor_percentile']:>11.2f}%")
+        print(f"{row['hap_weight']:>8.2f} {row['al_weight']:>8.2f} {row['svm_weight']:>8.2f} {row['auc']:>10.4f}")
+    
+    # Show bottom 10 for comparison
+    print("\n--- BOTTOM 10 WEIGHT COMBINATIONS (by AUC) ---")
+    bottom_10 = results_df.nsmallest(10, 'auc')
+    print(f"{'Hapax':>8} {'Align':>8} {'SVM':>8} {'AUC':>10}")
+    print("-" * 40)
+    for _, row in bottom_10.iterrows():
+        print(f"{row['hap_weight']:>8.2f} {row['al_weight']:>8.2f} {row['svm_weight']:>8.2f} {row['auc']:>10.4f}")
     
     # Interpretation
     print("\n--- INTERPRETATION ---")
-    max_var = max(zip(['Hapax (vocabulary)', 'Alignment (phrasing)', 'SVM (style)'], best_weights), key=lambda x: x[1])
+    print(f"Best model fit achieved with:")
+    print(f"  Hapax (vocabulary):   {best_weights[0]:.0%}")
+    print(f"  Alignment (phrasing): {best_weights[1]:.0%}")
+    print(f"  SVM (style):          {best_weights[2]:.0%}")
     
-    if best_weights[0] > best_weights[1] and best_weights[0] > best_weights[2]:
-        print("The Eliot-Lawrence pair ranks highest when VOCABULARY (hapax) is weighted most.")
-        print("This suggests their influence relationship is primarily visible through")
-        print("shared rare word choices - lexical inheritance.")
-    elif best_weights[1] > best_weights[0] and best_weights[1] > best_weights[2]:
-        print("The Eliot-Lawrence pair ranks highest when PHRASING (alignment) is weighted most.")
-        print("This suggests their influence relationship is primarily visible through")
-        print("shared sequences and structural patterns in the prose.")
-    elif best_weights[2] > best_weights[0] and best_weights[2] > best_weights[1]:
-        print("The Eliot-Lawrence pair ranks highest when STYLE (SVM) is weighted most.")
-        print("This suggests their influence relationship is primarily visible through")
-        print("overall stylometric similarity.")
+    if best_weights[2] > 0.05:
+        print(f"\nSVM contributes {best_weights[2]:.0%} to optimal model - stylistic similarity matters!")
+    elif best_weights[2] > 0:
+        print(f"\nSVM contributes minimally ({best_weights[2]:.0%}) to optimal model.")
     else:
-        print(f"The optimal weighting is: Hapax={best_weights[0]:.0%}, Align={best_weights[1]:.0%}, SVM={best_weights[2]:.0%}")
-        print("This balanced weighting suggests influence operates through multiple channels.")
+        print(f"\nSVM does not improve model fit - influence detection works best with hapax and alignment alone.")
     
     return best_weights, results_df
 
@@ -616,22 +667,23 @@ def main():
     """
     print("\n" + "=" * 70)
     print("LITERARY INFLUENCE DETECTION")
-    print("Calibrated via Known Influence Case")
+    print("Optimized via Model Fit")
     print("=" * 70)
     print("\nMethod:")
-    print("1. Use a KNOWN influence relationship as calibration (Eliot -> Lawrence)")
-    print("2. Find weights that maximize this anchor case's score")
-    print("3. Apply those weights to discover OTHER influence candidates")
+    print("1. Load three predictor variables (hapax, alignment, SVM)")
+    print("2. Find weights that BEST DISTINGUISH same-author from cross-author pairs")
+    print("3. Apply those weights to find influence candidates")
+    print("4. Validate with known anchor case (Eliot -> Lawrence)")
     print("\nAnchor case: George Eliot (Middlemarch ch77) -> D.H. Lawrence (The Rainbow ch29)")
     
     # Step 1: Load data
     df = load_data()
     
-    # Step 2: Find anchor case
+    # Step 2: Find anchor case (for validation)
     anchor_case = find_anchor_case(df)
     
-    # Step 3: Optimize weights for anchor case
-    best_weights, weight_results = optimize_weights_for_anchor(df, anchor_case)
+    # Step 3: Optimize weights for best model fit (AUC)
+    best_weights, weight_results = optimize_weights_for_model_fit(df)
     
     # Step 4: Apply calibrated weights to all pairs
     df, cross_author = apply_calibrated_weights(df, anchor_case, best_weights)
@@ -652,8 +704,8 @@ def main():
     print("ANALYSIS COMPLETE")
     print("=" * 70)
     print("\nFor the conference paper:")
-    print("1. Report the calibrated weights from the Eliot-Lawrence anchor case")
-    print("2. Explain what these weights reveal about the nature of influence")
+    print("1. Report the optimal weights from model fit optimization")
+    print("2. Explain what these weights reveal about detecting influence")
     print("3. Present top influence candidates for literary investigation")
     print("4. Note: logistic regression coefficients provided for comparison")
     print()
