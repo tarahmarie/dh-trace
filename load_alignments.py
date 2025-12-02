@@ -49,7 +49,6 @@ with open(f'./projects/{project_name}/alignments/{alignments_file}', 'r') as the
             source_text_name = text_and_id_dict[result['source_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')]
             temp_target_author = fix_the_author_name_from_aligns(result['target_author'])
             target_author = author_and_id_dict[temp_target_author]
-            # Handle double .xml extension from TextPAIR output
             target_text_name = text_and_id_dict[result['target_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')]
             try:
                 pair_id = inverted_pairs[(source_text_name, target_text_name)]
