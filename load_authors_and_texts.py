@@ -16,6 +16,10 @@ from util import (extract_author_name, fix_alignment_file_names,
                   get_date_from_tei_header, get_project_name,
                   get_word_count_for_text, getCountOfFiles, getListOfFiles)
 
+# Minimum word count for texts to be included in the corpus
+# Based on Burrows (2007) and Koppel et al. (2007) stylometric thresholds
+MIN_WORD_COUNT = 500
+
 project_name = get_project_name()
 list_of_files = getListOfFiles(f'./projects/{project_name}/splits')
 file_count = getCountOfFiles(f'./projects/{project_name}/splits')
@@ -46,6 +50,9 @@ unique_text_id = 0
 dates = {}
 seen_dates = []
 unique_date_id = 0
+
+# Track skipped files
+skipped_files = []
 
 i = 1
 while i <= file_count:
@@ -81,6 +88,14 @@ while i <= file_count:
             text = remove_tei_lines_from_text(text)
             temp_text.content = text
             temp_text.length = get_word_count_for_text(text)            
+            
+            # Skip texts below minimum word count
+            if temp_text.length < MIN_WORD_COUNT:
+                skipped_files.append((name_of_text, temp_text.length))
+                i += 1
+                pbar.update(1)
+                continue
+            
             #Because the alignments file has funny ideas about filenames where Lovelace is concerned
             #I have to replace the final '-' with an '_' to match the filesystem
             #If I don't, I can't use the all_texts data with the alignments data.
@@ -99,6 +114,15 @@ while i <= file_count:
         pbar.update(1)
     pbar.close()
 
+# Report skipped files
+if skipped_files:
+    print(f"\n⚠️  Skipped {len(skipped_files)} files below {MIN_WORD_COUNT} word minimum:")
+    for filename, word_count in sorted(skipped_files, key=lambda x: x[1]):
+        print(f"   {word_count:4d} words: {filename}")
+    print(f"\nRetained {unique_text_id} texts ({unique_text_id / file_count * 100:.1f}% of corpus)\n")
+else:
+    print(f"\n✓ All {unique_text_id} files met the {MIN_WORD_COUNT} word minimum.\n")
+
 #Now, populate the crucial authors table
 for name, id in authors.items():
     insert_authors_to_db(id, name)
@@ -111,12 +135,20 @@ for path, id in dirs.items():
 text_and_id_dict = read_all_text_names_and_ids_from_db()
 transactions = []
 i = 1
-pbar = tqdm(desc='Computing file pairs', total=number_of_combinations, colour="#e0ffff", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
+
+# Recalculate combinations based on retained texts
+retained_file_count = len(text_and_id_dict)
+new_combinations = retained_file_count * (retained_file_count - 1) // 2
+print(f"Computing {new_combinations:,} text pairs (saved {number_of_combinations - new_combinations:,} comparisons)\n")
+
+pbar = tqdm(desc='Computing file pairs', total=new_combinations, colour="#e0ffff", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
 for a, b in itertools.combinations(sorted(list_of_files), 2):
     a = fix_alignment_file_names(a.split('/')[5])
     b = fix_alignment_file_names(b.split('/')[5])
-    transactions.append((i, text_and_id_dict[a], text_and_id_dict[b]))
-    i+=1
-    pbar.update(1)
+    # Only create pairs for texts that were actually loaded
+    if a in text_and_id_dict and b in text_and_id_dict:
+        transactions.append((i, text_and_id_dict[a], text_and_id_dict[b]))
+        i+=1
+        pbar.update(1)
 insert_text_pairs_to_db(transactions)
 pbar.close()
