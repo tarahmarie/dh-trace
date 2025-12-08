@@ -9,8 +9,6 @@ from database_ops import (insert_hapaxes_to_db,
                           read_all_text_names_and_ids_from_db,
                           read_text_from_db)
 from hapaxes_1tM import compute_hapaxes, remove_tei_lines_from_text
-from util import (fix_alignment_file_names, get_project_name, getCountOfFiles,
-                  getListOfFiles)
 
 
 # Global variable for worker processes
@@ -23,10 +21,8 @@ def init_worker(text_and_id_dict):
     _text_and_id_dict = text_and_id_dict
 
 
-def process_file(file):
+def process_file(name_of_text):
     """Worker function to compute hapaxes for a single file."""
-    name_of_text = fix_alignment_file_names(file.split('/')[5])
-
     temp_text = read_text_from_db(name_of_text)
     the_clean_data = remove_tei_lines_from_text(temp_text)
     
@@ -37,26 +33,26 @@ def process_file(file):
 
 
 def main():
-    project_name = get_project_name()
-    list_of_files = getListOfFiles(f'./projects/{project_name}/splits')
-    file_count = getCountOfFiles(f'./projects/{project_name}/splits')
     text_and_id_dict = read_all_text_names_and_ids_from_db()
+    
+    # Use texts from database, not filesystem — respects filtering
+    list_of_texts = list(text_and_id_dict.keys())
 
     # Determine optimal chunksize
     num_workers = cpu_count()
-    chunksize = max(1, len(list_of_files) // (num_workers * 4))
+    chunksize = max(1, len(list_of_texts) // (num_workers * 4))
 
     # Process in parallel
     transactions = []
     with Pool(processes=num_workers, initializer=init_worker, initargs=(text_and_id_dict,)) as pool:
         pbar = tqdm(
             desc='Computing hapaxes',
-            total=len(list_of_files),
+            total=len(list_of_texts),
             colour="#00875f",
             bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]'
         )
 
-        for result in pool.imap_unordered(process_file, list_of_files, chunksize=chunksize):
+        for result in pool.imap_unordered(process_file, list_of_texts, chunksize=chunksize):
             transactions.append(result)
             pbar.update(1)
 

@@ -44,9 +44,13 @@ import pandas as pd
 from scipy import stats
 import statsmodels.api as sm
 from sklearn.metrics import roc_auc_score
+import os
 
 from util import get_project_name
 
+# Ensure results directory exists
+project_name = get_project_name()
+os.makedirs(f'./projects/{project_name}/results', exist_ok=True)
 
 def load_data():
     """
