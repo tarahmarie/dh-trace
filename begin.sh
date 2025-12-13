@@ -224,6 +224,7 @@ load_from_db () {
     python3 load_relationships.py;
     python3 load_jaccard.py;
     python3 do_svm.py;
+    #python do_svm_burrows_delta.py;
     #python3 auto_author_prediction.py; #vestigial from stepwise threshhold grid search exploration, replaced by logistic regression
     python3 logistic_regression.py;
 }
