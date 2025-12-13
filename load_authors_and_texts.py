@@ -16,8 +16,10 @@ from util import (extract_author_name, fix_alignment_file_names,
                   get_date_from_tei_header, get_project_name,
                   get_word_count_for_text, getCountOfFiles, getListOfFiles)
 
-# Minimum word count for texts to be included in the corpus
-# Based on Burrows (2007) and Koppel et al. (2007) stylometric thresholds
+# Minimum word count for texts to be included in the corpus.
+# Based on Burrows (2007) and Koppel et al. (2007) stylometric thresholds.
+# Eder (2015) recommends 2,500-5,000 words for robust attribution, but
+# 500 words is acceptable for constrained attribution tasks.
 MIN_WORD_COUNT = 500
 
 project_name = get_project_name()
@@ -51,7 +53,7 @@ dates = {}
 seen_dates = []
 unique_date_id = 0
 
-# Track skipped files
+# Track skipped files for reporting
 skipped_files = []
 
 i = 1
@@ -87,11 +89,13 @@ while i <= file_count:
             text = f.read()
             text = remove_tei_lines_from_text(text)
             temp_text.content = text
-            temp_text.length = get_word_count_for_text(text)            
+            temp_text.length = get_word_count_for_text(text)
             
-            # Skip texts below minimum word count
+            # MINIMUM WORD COUNT FILTER
+            # Skip texts below the stylometric threshold
             if temp_text.length < MIN_WORD_COUNT:
-                skipped_files.append((name_of_text, temp_text.length))
+                stripped_name = fix_alignment_file_names(name_of_text.split('.')[0].strip())
+                skipped_files.append((temp_text.length, stripped_name))
                 i += 1
                 pbar.update(1)
                 continue
@@ -117,11 +121,14 @@ while i <= file_count:
 # Report skipped files
 if skipped_files:
     print(f"\n⚠️  Skipped {len(skipped_files)} files below {MIN_WORD_COUNT} word minimum:")
-    for filename, word_count in sorted(skipped_files, key=lambda x: x[1]):
-        print(f"   {word_count:4d} words: {filename}")
-    print(f"\nRetained {unique_text_id} texts ({unique_text_id / file_count * 100:.1f}% of corpus)\n")
-else:
-    print(f"\n✓ All {unique_text_id} files met the {MIN_WORD_COUNT} word minimum.\n")
+    # Sort by word count to show shortest first
+    for word_count, filename in sorted(skipped_files, key=lambda x: x[0]):
+        print(f"  {word_count:5d} words: {filename}")
+    print()
+
+retained_count = unique_text_id
+total_count = file_count
+print(f"Retained {retained_count} texts ({retained_count/total_count*100:.1f}% of corpus)\n")
 
 #Now, populate the crucial authors table
 for name, id in authors.items():
@@ -131,24 +138,29 @@ for name, id in authors.items():
 for path, id in dirs.items():
     insert_dirs_to_db(id, path)
 
-#Finally, generate the text pairs we're going to need later
+# Generate text pairs for influence analysis.
+#
+# IMPORTANT: Temporal ordering is enforced here by design.
+# Filenames are prefixed with publication year (e.g., "1846-ENG18460—Reynolds-chapter_1").
+# sorted() orders files chronologically, and itertools.combinations() preserves this order,
+# so text_a (source) always precedes or equals text_b (target) in time.
+# This ensures influence can only flow forward: source_year <= target_year for all pairs.
 text_and_id_dict = read_all_text_names_and_ids_from_db()
+
+# Update number_of_combinations based on retained texts
+retained_files = [f for f in list_of_files 
+                  if fix_alignment_file_names(f.split('/')[5].split('.')[0].strip()) in text_and_id_dict]
+number_of_combinations = sum(1 for e in itertools.combinations(retained_files, 2))
+print(f"Computing {number_of_combinations:,} text pairs (saved {sum(1 for e in itertools.combinations(list_of_files, 2)) - number_of_combinations:,} comparisons)\n")
+
 transactions = []
 i = 1
-
-# Recalculate combinations based on retained texts
-retained_file_count = len(text_and_id_dict)
-new_combinations = retained_file_count * (retained_file_count - 1) // 2
-print(f"Computing {new_combinations:,} text pairs (saved {number_of_combinations - new_combinations:,} comparisons)\n")
-
-pbar = tqdm(desc='Computing file pairs', total=new_combinations, colour="#e0ffff", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
-for a, b in itertools.combinations(sorted(list_of_files), 2):
+pbar = tqdm(desc='Computing file pairs', total=number_of_combinations, colour="#e0ffff", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
+for a, b in itertools.combinations(sorted(retained_files), 2):
     a = fix_alignment_file_names(a.split('/')[5])
     b = fix_alignment_file_names(b.split('/')[5])
-    # Only create pairs for texts that were actually loaded
-    if a in text_and_id_dict and b in text_and_id_dict:
-        transactions.append((i, text_and_id_dict[a], text_and_id_dict[b]))
-        i+=1
-        pbar.update(1)
+    transactions.append((i, text_and_id_dict[a], text_and_id_dict[b]))
+    i+=1
+    pbar.update(1)
 insert_text_pairs_to_db(transactions)
 pbar.close()

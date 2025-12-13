@@ -44,13 +44,9 @@ import pandas as pd
 from scipy import stats
 import statsmodels.api as sm
 from sklearn.metrics import roc_auc_score
-import os
 
 from util import get_project_name
 
-# Ensure results directory exists
-project_name = get_project_name()
-os.makedirs(f'./projects/{project_name}/results', exist_ok=True)
 
 def load_data():
     """
@@ -87,6 +83,8 @@ def load_data():
         cj.target_auth,
         cj.source_text,
         cj.target_text,
+        cj.source_year,
+        cj.target_year,
         cj.hap_jac_dis,
         cj.al_jac_dis,
         cj.pair_id,
@@ -103,6 +101,22 @@ def load_data():
     
     df = pd.read_sql_query(query, main_conn)
     print(f"Loaded {len(df):,} text pairs")
+    
+    # TEMPORAL FILTER: Influence can only flow forward in time.
+    # Keep only pairs where source_year <= target_year.
+    #
+    # NOTE: In practice, this filter excludes 0 pairs because temporal ordering
+    # is already enforced during pair generation in load_authors_and_texts.py.
+    # Filenames are year-prefixed (e.g., "1846-..."), sorted() orders them
+    # chronologically, and itertools.combinations() preserves that order.
+    # This filter serves as a safety check and documents the requirement explicitly.
+    pre_filter_count = len(df)
+    df = df[df['source_year'] <= df['target_year']].copy()
+    post_filter_count = len(df)
+    excluded = pre_filter_count - post_filter_count
+    print(f"Applied temporal filter (source_year <= target_year):")
+    print(f"  Excluded {excluded:,} temporally impossible pairs ({excluded/pre_filter_count*100:.1f}%)")
+    print(f"  Retained {post_filter_count:,} temporally valid pairs")
     
     # Create same_author target
     df['same_author'] = (df['source_auth'] == df['target_auth']).astype(int)
@@ -526,10 +540,15 @@ def rank_influence_candidates(cross_author, anchor_case, best_weights):
     """
     STEP 6: Rank cross-author pairs by influence score.
     These are your influence candidates for literary investigation.
+    
+    NOTE: Temporal filtering (source_year <= target_year) was already applied
+    during data loading, so all pairs here are temporally valid.
     """
     print("\n" + "=" * 70)
     print("STEP 6: TOP INFLUENCE CANDIDATES")
     print("=" * 70)
+    
+    print(f"\nAll {len(cross_author):,} cross-author pairs are temporally valid (source_year <= target_year)")
     
     # Sort by influence score
     ranked = cross_author.sort_values('influence_score', ascending=False)
@@ -539,10 +558,10 @@ def rank_influence_candidates(cross_author, anchor_case, best_weights):
     print("(Cross-author pairs most likely to represent literary influence)\n")
     
     for i, (_, row) in enumerate(ranked.head(20).iterrows(), 1):
-        print(f"{i:3}. {row['source_author_name']:15} -> {row['target_author_name']:15} "
+        print(f"{i:3}. {row['source_author_name']:15} ({int(row['source_year'])}) -> {row['target_author_name']:15} ({int(row['target_year'])}) "
               f"Score: {row['influence_score']:.4f}")
-        print(f"     {row['source_name'][:40]}")
-        print(f"     -> {row['target_name'][:40]}")
+        print(f"     {row['source_name'][:50]}")
+        print(f"     -> {row['target_name'][:50]}")
         print()
     
     # Find anchor case position
@@ -634,7 +653,8 @@ def save_results(df, ranked, result, predictors, best_weights):
     print(f"Coefficients saved to: {coef_path}")
     
     # Save top influence candidates
-    top_candidates = ranked.head(100)[['source_author_name', 'target_author_name',
+    top_candidates = ranked.head(100)[['source_author_name', 'source_year', 
+                                        'target_author_name', 'target_year',
                                         'source_name', 'target_name',
                                         'hap_jac_dis', 'al_jac_dis', 'svm_score',
                                         'influence_score']]
