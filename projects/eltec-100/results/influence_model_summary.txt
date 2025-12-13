@@ -3,16 +3,16 @@ INFLUENCE DETECTION MODEL SUMMARY
 
 CALIBRATED WEIGHTS (from Eliot->Lawrence anchor case)
 --------------------------------------------------
-Hapax (vocabulary):     0.90
+Hapax (vocabulary):     0.85
 Alignment (phrasing):   0.10
-SVM (style):            -0.00
+SVM (style):            0.05
 
 LOGISTIC REGRESSION COEFFICIENTS (for comparison)
 --------------------------------------------------
-const: -4.203940 (p=0.00e+00)
-hap_jac_dis: -1.232489 (p=0.00e+00)
-al_jac_dis: -0.156730 (p=0.00e+00)
-svm_score: 0.170960 (p=0.00e+00)
+const: -4.199178 (p=0.00e+00)
+hap_jac_dis: -1.238905 (p=0.00e+00)
+al_jac_dis: -0.155385 (p=0.00e+00)
+svm_score: -0.010328 (p=4.01e-05)
 
-Pseudo R²: 0.1506
-AIC: 1314508.09
+Pseudo R²: 0.1473
+AIC: 1319610.52
