@@ -33,6 +33,10 @@ total_file_count = getCountOfFiles(f'./projects/{project_name}/splits')
 text_pairs, inverted_pairs = read_all_text_pair_names_and_ids_from_db()
 transactions = []
 
+# Track skipped alignments
+skipped_alignments = 0
+skipped_texts = set()
+
 #Alignments
 i = 1
 with open(f'./projects/{project_name}/alignments/{alignments_file}', 'r') as the_json:
@@ -43,13 +47,31 @@ with open(f'./projects/{project_name}/alignments/{alignments_file}', 'r') as the
         pbar = tqdm(desc='Loading Alignments', total=length_json_list, colour="magenta", bar_format='{l_bar}{bar} {n_fmt}/{total_fmt} | Elapsed: [{elapsed}]')
         for json_str in raw_json_list:
             result = json.loads(json_str)
+            
+            # Handle double .xml extension from TextPAIR output
+            source_filename = result['source_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')
+            target_filename = result['target_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')
+            
+            # Skip alignments for texts that were filtered out (e.g., below word count minimum)
+            if source_filename not in text_and_id_dict:
+                skipped_alignments += 1
+                skipped_texts.add(source_filename)
+                i += 1
+                pbar.update(1)
+                continue
+            if target_filename not in text_and_id_dict:
+                skipped_alignments += 1
+                skipped_texts.add(target_filename)
+                i += 1
+                pbar.update(1)
+                continue
+            
             temp_source_author = fix_the_author_name_from_aligns(result['source_author'])
             source_author = author_and_id_dict.get(temp_source_author, '')
-            # Handle double .xml extension from TextPAIR output
-            source_text_name = text_and_id_dict[result['source_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')]
+            source_text_name = text_and_id_dict[source_filename]
             temp_target_author = fix_the_author_name_from_aligns(result['target_author'])
             target_author = author_and_id_dict[temp_target_author]
-            target_text_name = text_and_id_dict[result['target_filename'].split('TEXT/')[1].replace('.xml', '').replace('.xml', '')]
+            target_text_name = text_and_id_dict[target_filename]
             try:
                 pair_id = inverted_pairs[(source_text_name, target_text_name)]
             except KeyError:
@@ -60,5 +82,14 @@ with open(f'./projects/{project_name}/alignments/{alignments_file}', 'r') as the
             pbar.update(1)
         pbar.close()
 
+# Report skipped alignments
+if skipped_alignments > 0:
+    print(f"\n⚠️  Skipped {skipped_alignments} alignments referencing {len(skipped_texts)} filtered text(s):")
+    for text in sorted(skipped_texts):
+        print(f"   {text}")
+    print(f"\nLoaded {len(transactions)} alignments ({len(transactions) / total_entries_in_alignments_file * 100:.1f}% of alignments file)\n")
+else:
+    print(f"\n✓ Loaded all {len(transactions)} alignments.\n")
+
 insert_alignments_to_db(transactions)
-insert_last_run_stats_to_db(total_entries_in_alignments_file, total_file_count)
+insert_last_run_stats_to_db(len(transactions), total_file_count)
