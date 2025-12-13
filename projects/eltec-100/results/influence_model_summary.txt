@@ -9,10 +9,10 @@ SVM (style):            -0.00
 
 LOGISTIC REGRESSION COEFFICIENTS (for comparison)
 --------------------------------------------------
-const: -4.205667 (p=0.00e+00)
-hap_jac_dis: -1.263464 (p=0.00e+00)
-al_jac_dis: -0.154821 (p=0.00e+00)
-svm_score: 0.193051 (p=0.00e+00)
+const: -4.203469 (p=0.00e+00)
+hap_jac_dis: -1.232419 (p=0.00e+00)
+al_jac_dis: -0.156700 (p=0.00e+00)
+svm_score: 0.167268 (p=0.00e+00)
 
-Pseudo R²: 0.1434
-AIC: 1365870.62
+Pseudo R²: 0.1505
+AIC: 1314726.82

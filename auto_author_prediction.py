@@ -295,7 +295,7 @@ def main():
     setup_auto_author_accuracy_table()
     setup_auto_indices()
     
-    print(f"\nStepping through values, moving the threshold {pretty_step}% at a time from {pretty_threshold}% to {pretty_floor}%...")
+    """ print(f"\nStepping through values, moving the threshold {pretty_step}% at a time from {pretty_threshold}% to {pretty_floor}%...")
     print("(N.B. The program will pause before computing accuracy... it's ok, and won't last forever!)\n")
 
     while threshold >= floor:
@@ -309,9 +309,9 @@ def main():
         calculate_accuracy(accuracy_transactions, pretty_threshold)
         
         threshold = round(threshold - step, 3)
-        pretty_threshold = pretty_threshold - pretty_step
+        pretty_threshold = pretty_threshold - pretty_step """
 
-    # Insert author pair counts and weights
+    """ # Insert author pair counts and weights
     temp_author_pair_counts_transactions = [
         (str(k), v) for k, v in author_pair_count_transactions.items()
     ]
@@ -327,7 +327,7 @@ def main():
     print("\nI'm going to make a large table, now, for use in later visualization... sit tight.")
     setup_text_stats_table()
     close_db_connection()
-    print("\nPhew. Ok, to plot these values, run 'python make_auto_scatterplot.py")
+    print("\nPhew. Ok, to plot these values, run 'python make_auto_scatterplot.py") """
 
 
 if __name__ == "__main__":
